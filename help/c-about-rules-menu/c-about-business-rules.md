@@ -84,10 +84,10 @@ Nella procedura seguente si presuppone che si stia utilizzando Visual Rule Build
 
    Sulla [!DNL Business Rules] pagina, utilizzate la **[!UICONTROL Filter by tag]** funzione per filtrare le regole che corrispondono a una determinata etichetta. 1. Nella [!DNL Business Rule Builder] pagina, impostate gli attivatori e le azioni che desiderate utilizzare.
 
-       **Opzioni trigger**
- I     
- trigger     sono le condizioni che devono essere soddisfatte per l&#39;esecuzione di una regola business. Quando una regola business ha più attivatori, puoi configurare il modo in cui i trigger rispondono utilizzando uno dei tre metodi seguenti:
-   
+   **Opzioni trigger**
+
+   I trigger sono le condizioni che devono essere soddisfatte per l&#39;esecuzione di una regola business. Quando una regola business ha più attivatori, puoi configurare il modo in cui i trigger rispondono utilizzando uno dei tre metodi seguenti:
+
    * Una risposta in cui tutti i trigger devono essere veri (impostazione predefinita), come nell&#39;esempio seguente:
 
       `if a AND b AND c then ...`
