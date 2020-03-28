@@ -7,7 +7,7 @@ title: Informazioni su Simulator
 topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
 
 ---
 
@@ -52,28 +52,28 @@ Consultate [Aggiunta di una nuova regola](c-about-rules-menu/c-about-business-ru
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Simula in tempo reale </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simula in tempo reale</span> </p> </td> 
       <td colname="col2"> <p>Alternativamente tra la simulazione dell’ambiente live o dell’ambiente di visualizzazione. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Mostra/Nascondi regole di elaborazione </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Mostra/Nascondi regole di elaborazione</span> </p> </td> 
       <td colname="col2"> <p>Mostra o nasconde tutte le regole di elaborazione attivate invece delle sole regole di business. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Modifica data simulazione </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Modifica data simulazione</span> </p> </td> 
       <td colname="col2"> <p>Simulare i risultati della ricerca per una data specificata. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Simula su PC </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simula su PC</span> </p> </td> 
       <td colname="col2"> <p>Simulare i risultati della ricerca come se si stesse utilizzando un personal computer. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Simula su dispositivo mobile </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simula su dispositivo mobile</span> </p> </td> 
       <td colname="col2"> <p>Simulare i risultati della ricerca come se steste utilizzando un cellulare o un tablet. </p> <p>Quando selezionate questa opzione, potete scegliere tra le seguenti opzioni associate: </p> 
         <ul id="ul_2A9901418212486A8EE67A78CB99CBE4"> 
-        <li id="li_B210E954DF0D44C397718112C72C2103"> <b>Dispositivo</b> <p>Simulare i risultati della ricerca su un cellulare o un tablet. </p> </li> 
-        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b>Risoluzione</b> <p>In base al dispositivo selezionato, potete scegliere la risoluzione associata. </p> </li> 
-        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b>Vista orizzontale</b> <p>Visualizzare l’aspetto orizzontale dei risultati della ricerca simulata sul dispositivo selezionato. </p> </li> 
+        <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">Dispositivo</span></b> <p>Simulare i risultati della ricerca su un cellulare o un tablet. </p> </li> 
+        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">Risoluzione</span></b> <p>In base al dispositivo selezionato, potete scegliere la risoluzione associata. </p> </li> 
+        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">Vista orizzontale</span></b> <p>Visualizzare l’aspetto orizzontale dei risultati della ricerca simulata sul dispositivo selezionato. </p> </li> 
         </ul> </td> 
       </tr> 
     </tbody> 
