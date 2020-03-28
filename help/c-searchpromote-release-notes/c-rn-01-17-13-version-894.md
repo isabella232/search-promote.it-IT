@@ -7,7 +7,7 @@ title: Search&amp;Promote 8.9.4 - Note sulla versione (17/01/2013)
 topic: Release Notes,Site search and merchandising
 uuid: a9d550f6-0a23-4c71-b123-c31b997e7384
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -39,19 +39,19 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
    Consultate [Visualizzazione del rapporto Termini o dei termini di ricerca Null...](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
-* Aprite Rapporti > Rapporto termini ricerca Null, selezionate un intervallo di tempo e visualizzate il rapporto. Fate clic su una parola nel rapporto per aprire la ricerca, quindi fate di nuovo clic su Visualizza rapporto. Il numero di ricerche per la parola chiave selezionata è aumentato due volte. Questo problema è stato adesso risolto.
+* Apri **[!UICONTROL Reports > Null Search Terms Report]**, seleziona uno slot e visualizza il rapporto. Fate clic su una parola nel rapporto per aprire la ricerca, quindi fate di nuovo clic su Visualizza rapporto. Il numero di ricerche per la parola chiave selezionata è aumentato due volte. Questo problema è stato adesso risolto.
 
    Consultate [Visualizzazione del rapporto Termini o dei termini di ricerca Null...](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
-* È stata eseguita un&#39;ottimizzazione delle prestazioni quando si inviano live le Regole aziendali.
+* È stata realizzata un&#39;ottimizzazione delle prestazioni quando si inviano live le regole aziendali.
 
    Vedere [Informazioni sulle regole](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD)aziendali.
 
-* La capacità di rimuovere in Breadcrumb non funzionava sempre.
+* La capacità di rimuovere in [!DNL Breadcrumbs] non funzionava sempre.
 
    Consultate [Le Breadcrumb](../c-about-design-menu/c-about-breadcrumbs.md#concept_FB8A943C594A4A1593B118141DA61F03).
 
-* A meno che non sia stato utilizzato Rigenera, la funzione Ri-classifica non consentiva l&#39;entrata in vigore di eventuali regole di classificazione modificate nei risultati della ricerca.
+* A meno che non sia stata utilizzata la rigenerazione, la feature di riclassificazione non ha consentito l’entrata in vigore di eventuali regole di classificazione modificate nei risultati della ricerca.
 
    Vedere [Informazioni sulle regole](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397)di classificazione.
 
