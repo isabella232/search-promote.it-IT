@@ -7,7 +7,7 @@ title: Search&amp;Promote 8.16.0 - Note sulla versione (18/9/2014)
 topic: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -50,5 +50,5 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * The Index Connector **[!UICONTROL Strip HTML]** setting was always displaying as checked.
 * Inconsistent search results were experienced with the **[!UICONTROL Common Phrases]** feature.
 * La visualizzazione dei nomi degli attributi risultava troncata nei riepiloghi degli elenchi delle regole.
-* L&#39;invio live di una singola regola aziendale comportava l&#39;invio live di tutte le regole aziendali.
+* Vivere una singola regola aziendale significava imporre live tutte le regole aziendali.
 
