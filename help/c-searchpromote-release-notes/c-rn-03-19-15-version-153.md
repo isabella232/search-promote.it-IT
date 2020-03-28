@@ -7,7 +7,7 @@ title: Search&amp;Promote 15.3.1 - Note sulla versione (24/03/2015)
 topic: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * Risultati di ricerca di base vuoti per la modalità di ricerca &quot;incorporata&quot;, per una ricerca contenente caratteri giapponesi.
 * La conversione Tika dei file .docx di Word ora popola l&#39; `title` attributo.
 * Corretti messaggi errati di tipo &quot;banner duplicato&quot; nel **[!UICONTROL Banner]** manager.
-* I banner Dynamic Media Classic ora non supportano il protocollo.
+* [!DNL Dynamic Media Classic] i banner ora non supportano il protocollo.
 * Talvolta l’attributo **[!UICONTROL Table Name]** campo era nascosto quando si modificavano i campi definiti dall’utente nell’interfaccia utente Metadati, anche quando **[!UICONTROL Dynamic Facets]** era abilitato per l’account.
 * **[!UICONTROL Recent Searches]** i caratteri non ASCII non vengono più codificati in più lettere.
 * I campi MDI possono essere compilati senza ricorrere a Filtro basato su script.
