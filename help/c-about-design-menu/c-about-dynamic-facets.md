@@ -8,7 +8,7 @@ title: I facet dinamici
 topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -169,7 +169,7 @@ Vedi anche
 
    Accertatevi di specificare `__dynamic_facets` l’elemento `gsname` nel `guided-facet-rail` tag . Questo tag è una barra laterale predefinita riservata all’output di eventuali facet dinamici restituiti per una determinata ricerca.
 
-   Facoltativamente, puoi modificare questa barra facet speciale anche tramite Regole > Regole aziendali e utilizzando il Generatore di regole avanzate come illustrato di seguito.
+   Facoltativamente potete anche modificare questa barra facet speciale tramite **[!UICONTROL Rules > Business Rules]** e utilizzando la **[!UICONTROL Advanced Rule Builder]** vista qui sotto.
 
    ![](assets/dynamicfacetrail_businessrule.png)
 
