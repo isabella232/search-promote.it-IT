@@ -7,14 +7,12 @@ title: Ricerca di moduli
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
 
 ---
 
 
 # Ricerca di moduli{#search-forms}
-
-## Ricerca di moduli {#concept_915FFF20FF644830B7B3C6E00F416BCB}
 
 ## Uso delle raccolte nei moduli di ricerca {#reference_5A079AEEEFB84457892EF0870D0605C3}
 
@@ -133,22 +131,22 @@ La procedura per la configurazione dei set di frame è la seguente:
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
    <td colname="col02"> <p>Aggiungere il modulo alla cornice desiderata nella pagina Web. </p> </td> 
-   <td colname="col2"> <p> <a href="../c-appendices/c-searchforms.md#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Aggiunta del codice del modulo di ricerca a una cornice dell'utente in corso... </a> </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Aggiunta del codice del modulo di ricerca a una cornice dell'utente in corso... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col02"> <p>Impostate il frame di destinazione per la pagina dei risultati di ricerca. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Impostazione del frame di destinazione per la pagina dei risultati di ricerca </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Impostazione del frame di destinazione per la pagina dei risultati di ricerca </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col02"> <p>Impostate la destinazione per i collegamenti creati dalla pagina dei risultati della ricerca. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Impostazione della destinazione per i collegamenti provenienti dai risultati della ricerca... </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Impostazione della destinazione per i collegamenti provenienti dai risultati della ricerca... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col02"> <p>Modificate le pagine delle cornici di navigazione per evitare che vengano indicizzate. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Modifica delle pagine delle cornici di navigazione per impedirne l’utilizzo... </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Modifica delle pagine delle cornici di navigazione per impedirne l’utilizzo... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
