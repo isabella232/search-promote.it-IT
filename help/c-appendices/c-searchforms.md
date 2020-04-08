@@ -7,7 +7,7 @@ title: Ricerca di moduli
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
+source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
 
 ---
 
@@ -151,7 +151,7 @@ La procedura per la configurazione dei set di frame è la seguente:
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Verificare il modulo di ricerca. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Verifica del modulo di ricerca </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Verifica del modulo di ricerca </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -286,7 +286,7 @@ Utilizzando il seguente modulo di ricerca avanzato di esempio, il resto di quest
 
 È possibile visualizzare l&#39;intero codice HTML del modulo di ricerca avanzata dell&#39;esempio precedente.
 
-Vedere Codice [HTML per moduli di ricerca](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)avanzati.
+Vedere Codice [HTML per moduli di ricerca](#reference_9AAD4A46B68D4D48865508982CB86DB9)avanzati.
 
 Consultate [Configurazione della funzione di completamento automatico del CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
@@ -435,7 +435,7 @@ Vedere [Copia del codice HTML del modulo di ricerca in corso...](../c-about-auto
 
 Il codice del modulo HTML utilizzato per generare il modulo di ricerca avanzata che viene visualizzato nella parte superiore dell&#39;argomento Modulo di ricerca avanzata di esempio.
 
-Vedere [Esempio di modulo](../c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)di ricerca avanzato.
+Vedere [Esempio di modulo](#reference_82E1051918744EBA88A01E9E6AE42C4A)di ricerca avanzato.
 
 Se utilizzate questo codice, ricordate di sostituire il `sp_a` valore di `sp99999999` con il numero di account effettivo.
 
