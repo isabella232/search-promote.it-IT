@@ -8,7 +8,10 @@ title: Informazioni sul menu di ricerca per indicizzazione
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: 77a4e88c7bf47b637030e3935a39dfdf4f175e80
+source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+workflow-type: tm+mt
+source-wordcount: '11115'
+ht-degree: 0%
 
 ---
 
@@ -644,7 +647,7 @@ Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-
 
 ## Informazioni sull&#39;indicizzazione di file musicali MP3 {#section_AD2E28BEEE3E46629E2B05C34A963673}
 
-Se selezionate l&#39;opzione **[!UICONTROL Text in MP3 Music Files]** sulla [!DNL Content Types] pagina, un file MP3 viene sottoposto a ricerca per indicizzazione in uno dei due modi disponibili. Il primo e più comune metodo è rappresentato da un tag href di ancoraggio in un file HTML come illustrato di seguito:
+Se selezionate l&#39;opzione **[!UICONTROL Text in MP3 Music Files]** sulla [!DNL Content Types] pagina, un file MP3 viene sottoposto a ricerca per indicizzazione in uno dei due modi disponibili. Il primo e più comune metodo è rappresentato da un tag href di ancoraggio in un file HTML, come illustrato di seguito:
 
 ```
 <a href="MP3-file-URL"></a>
@@ -1016,12 +1019,12 @@ Vedere anche [Informazioni sul connettore indice](../c-about-settings-menu/c-abo
       {body} 
       &lt;/body&gt;&lt;/html&gt; </code> </p> <p>L'elemento <span class="codeph"> &lt;title&gt; </span> viene generato solo quando esiste una mappatura nel campo di metadati Titolo. Analogamente, l'elemento <span class="codeph"> &lt;body&gt; </span> viene generato solo quando esiste una mappatura nel campo di metadati Body. </p> <p> <b>Importante</b>: Non è supportato l'assegnazione di valori al tag meta dell'URL predefinito. </p> <p>Per tutte le altre mappature, vengono generati <span class="codeph"> &lt;meta&gt; </span> tag per ogni campo con dati trovati nel documento originale. </p> <p>I campi per ciascun documento vengono aggiunti alla cache. Per ogni documento scritto nella cache, viene generato anche un collegamento come negli esempi seguenti: </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>La mappatura della configurazione deve avere un campo identificato come Chiave primaria. Questa mappatura costituisce la chiave utilizzata quando i dati vengono estratti dalla cache. </p> <p>Il crawler riconosce l’ <span class="codeph"> indice URL: prefisso </span> dello schema, che può quindi accedere ai dati memorizzati nella cache locale. </p> </td> 
+      .... </code> </p> <p>La mappatura della configurazione deve avere un campo identificato come Chiave primaria. Questa mappatura costituisce la chiave utilizzata quando i dati vengono estratti dalla cache. </p> <p>Il crawler riconosce l’ <span class="codeph"> indice URL: </span> il prefisso dello schema, che può quindi accedere ai dati memorizzati nella cache locale. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Eseguire la ricerca per indicizzazione del set di documenti memorizzato nella cache. </p> </td> 
-   <td colname="col3"> <p>L' <span class="codeph"> indice: I </span> collegamenti vengono aggiunti all’elenco in sospeso del crawler e elaborati nella normale sequenza di ricerca per indicizzazione. </p> </td> 
+   <td colname="col3"> <p>L' <span class="codeph"> indice: </span> i collegamenti vengono aggiunti all’elenco in sospeso del crawler e vengono elaborati nella normale sequenza di ricerca per indicizzazione. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
@@ -1060,7 +1063,7 @@ Ad esempio, supponiamo che si disponga della seguente regola di riscrittura:
 RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 ```
 
-Questa regola converte qualsiasi URL che termina con `.xml` un collegamento del connettore indice. Il crawler riconosce e riscrive lo schema `index:` URL. Il processo di download viene reindirizzato attraverso il server Apache del connettore indice sul master. Ogni documento scaricato viene esaminato utilizzando lo stesso pattern di espressione regolare utilizzato con Feeds. In questo caso, tuttavia, il documento HTML prodotto non viene salvato nella cache. Viene invece consegnato direttamente al crawler per l’elaborazione dell’indice.
+Questa regola converte qualsiasi URL che termina con `.xml` un collegamento del connettore indice. Il crawler riconosce e riscrive lo schema `index:` URL. Il processo di download viene reindirizzato attraverso il server Apache del connettore indice sul server principale. Ogni documento scaricato viene esaminato utilizzando lo stesso pattern di espressione regolare utilizzato con Feeds. In questo caso, tuttavia, il documento HTML prodotto non viene salvato nella cache. Viene invece consegnato direttamente al crawler per l’elaborazione dell’indice.
 
 ## Come configurare più connettori indice {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
@@ -1100,7 +1103,7 @@ Quando si aggiunge un connettore indice, è possibile utilizzare la funzione **[
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Testo </p> </td> 
-   <td colname="col2"> <p>Determina il valore del carattere di delimitazione provando prima le tabulazioni e poi le barre verticali ( <span class="codeph"> | </span>) e infine virgole ( <span class="codeph"> , </span>). Se avete già specificato un valore di delimitazione prima di aver fatto clic su <span class="uicontrol"> Mappe di installazione </span>, tale valore viene utilizzato. </p> <p>Lo schema di adattamento ottimale si traduce nella compilazione dei campi Mappa con gli specchietti ai valori appropriati di Tag e Campo. Inoltre, viene visualizzato un esempio dei dati analizzati. Accertatevi di selezionare <span class="uicontrol"> Intestazioni nella prima riga </span> se si è certi che il file include una riga di intestazione. La funzione di configurazione utilizza queste informazioni per identificare meglio le voci di mappa risultanti. </p> </td> 
+   <td colname="col2"> <p>Determina il valore del delimitatore provando prima le tabulazioni, poi le barre verticali ( <span class="codeph"> | </span>) e infine virgole ( <span class="codeph"> , </span>). Se avete già specificato un valore di delimitazione prima di aver fatto clic su <span class="uicontrol"> Mappe di installazione </span>, tale valore viene utilizzato. </p> <p>Lo schema di adattamento ottimale si traduce nella compilazione dei campi Mappa con gli specchietti ai valori appropriati di Tag e Campo. Inoltre, viene visualizzato un esempio dei dati analizzati. Accertatevi di selezionare <span class="uicontrol"> Intestazioni nella prima riga </span> se si è certi che il file include una riga di intestazione. La funzione di configurazione utilizza queste informazioni per identificare meglio le voci di mappa risultanti. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Feed </p> </td> 
@@ -1108,7 +1111,7 @@ Quando si aggiunge un connettore indice, è possibile utilizzare la funzione **[
   </tr> 
   <tr> 
    <td colname="col1"> <p>XML </p> </td> 
-   <td colname="col2"> <p>Scarica l’URL di un singolo documento rappresentativo, non l’elenco dei collegamenti principali. Questo singolo documento viene analizzato utilizzando lo stesso meccanismo utilizzato con i feed, e i risultati vengono visualizzati. </p> <p>Prima di fare clic su <span class="uicontrol"> Aggiungi </span> per salvare la configurazione, accertatevi di ripristinare l’URL nel documento dell’elenco dei collegamenti master. </p> </td> 
+   <td colname="col2"> <p>Scarica l’URL di un singolo documento rappresentativo, non l’elenco di collegamenti principale. Questo singolo documento viene analizzato utilizzando lo stesso meccanismo utilizzato con i feed, e i risultati vengono visualizzati. </p> <p>Prima di fare clic su <span class="uicontrol"> Aggiungi </span> per salvare la configurazione, accertati di ripristinare l’URL nel documento dell’elenco di collegamenti principale. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1152,8 +1155,8 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       <td colname="col2"> <p>Origine dei dati. Il tipo di origine dati selezionato influisce sulle opzioni risultanti disponibili nella pagina <span class="wintitle"> Index Connector Add </span> . Potete scegliere tra le seguenti opzioni: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Testo </span> <p>File di testo semplici, delimitati da virgole, delimitati da tabulazioni o altri formati delimitati in modo coerente. Ogni riga di testo delimitata da una nuova riga corrisponde a un singolo documento e viene analizzata utilizzando il delimitatore specificato. </p> <p>Potete mappare ciascun valore, o colonna, su un campo di metadati, a cui fa riferimento il numero di colonna, a partire da 1 (uno). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Scarica un documento XML master che contiene più "righe" di informazioni. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Scarica un documento XML master contenente collegamenti ( 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Scarica un documento XML principale che contiene più "righe" di informazioni. </p> </li> 
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Scarica un documento XML principale contenente collegamenti ( 
       <userinput>
         &lt;a&gt; 
       </userinput>) in singoli documenti XML. </p> </li> 
@@ -1248,7 +1251,7 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Percorso file </p> </td> 
-      <td colname="col2"> <p>Specifica il percorso del documento XML master che contiene più "righe" di informazioni. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> </td> 
+      <td colname="col2"> <p>Specifica il percorso del documento XML principale che contiene più "righe" di informazioni. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Percorso file incrementale </p> </td> 
@@ -1348,7 +1351,7 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Percorso file </p> </td> 
-      <td colname="col2"> <p>Specifica il percorso del documento XML master che contiene i collegamenti ( 
+      <td colname="col2"> <p>Specifica il percorso del documento XML principale contenente i collegamenti ( 
       <userinput>
         &lt;a&gt; 
       </userinput>) in singoli documenti XML. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> </td> 
