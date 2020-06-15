@@ -8,7 +8,10 @@ title: Informazioni sul menu Metadati
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: cf2707d124bd3f3a864610bcf41dda5e5670fc90
+source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+workflow-type: tm+mt
+source-wordcount: '8064'
+ht-degree: 1%
 
 ---
 
@@ -527,12 +530,12 @@ Vedere anche [Informazioni sull&#39;utilizzo dell&#39;anteprima quando si aggiun
       {body} 
       &lt;/body&gt;&lt;/html&gt; </code> </p> <p>L'elemento <span class="codeph"> &lt;title&gt; </span> viene generato solo quando esiste una mappatura nel campo di metadati Titolo. Analogamente, l'elemento <span class="codeph"> &lt;body&gt; </span> viene generato solo quando esiste una mappatura nel campo di metadati Body. </p> <p> <b>Importante</b>: L'assegnazione di valori al tag meta dell'URL predefinito non è supportata. </p> <p>Per tutte le altre mappature, vengono generati <span class="codeph"> &lt;meta&gt; </span> tag per ogni campo con dati trovati nel documento originale. </p> <p>I campi per ciascun documento vengono aggiunti alla cache. Per ogni documento scritto nella cache, viene generato anche un collegamento come negli esempi seguenti: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>La mappatura della configurazione deve avere un campo identificato come Chiave primaria. Questa mappatura costituisce la chiave utilizzata quando i dati vengono estratti dalla cache. </p> <p>Il crawler riconosce l’ <span class="codeph"> indice URL: prefisso </span> dello schema, che può quindi accedere ai dati memorizzati nella cache locale. </p> </td> 
+      .... </code> </p> <p>La mappatura della configurazione deve avere un campo identificato come Chiave primaria. Questa mappatura costituisce la chiave utilizzata quando i dati vengono estratti dalla cache. </p> <p>Il crawler riconosce l’ <span class="codeph"> indice URL: </span> il prefisso dello schema, che può quindi accedere ai dati memorizzati nella cache locale. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Eseguire la ricerca per indicizzazione del set di documenti memorizzato nella cache. </p> </td> 
-   <td colname="col3"> <p>L' <span class="codeph"> indice: I </span> collegamenti vengono aggiunti all’elenco in sospeso del crawler e elaborati nella normale sequenza di ricerca per indicizzazione. </p> </td> 
+   <td colname="col3"> <p>L' <span class="codeph"> indice: </span> i collegamenti vengono aggiunti all’elenco in sospeso del crawler e vengono elaborati nella normale sequenza di ricerca per indicizzazione. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
@@ -558,7 +561,7 @@ Quando si aggiunge un Caricatore attributi, è possibile utilizzare la funzione 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Testo </p> </td> 
-   <td colname="col2"> <p>Determina il valore del carattere di delimitazione provando prima le tabulazioni e poi le barre verticali ( <span class="codeph"> | </span>) e infine virgole ( <span class="codeph"> , </span>). Se avete già specificato un valore di delimitazione prima di aver fatto clic su <span class="uicontrol"> Mappe di installazione </span>, tale valore viene utilizzato. </p> <p>Lo schema di adattamento ottimale si traduce nella compilazione dei campi Mappa con gli specchietti ai valori appropriati di Tag e Campo. Inoltre, viene visualizzato un esempio dei dati analizzati. Accertatevi di selezionare <span class="uicontrol"> Intestazioni nella prima riga </span> se si è certi che il file include una riga di intestazione. La funzione di configurazione utilizza queste informazioni per identificare meglio le voci di mappa risultanti. </p> </td> 
+   <td colname="col2"> <p>Determina il valore del delimitatore provando prima le tabulazioni, poi le barre verticali ( <span class="codeph"> | </span>) e infine virgole ( <span class="codeph"> , </span>). Se avete già specificato un valore di delimitazione prima di aver fatto clic su <span class="uicontrol"> Mappe di installazione </span>, tale valore viene utilizzato. </p> <p>Lo schema di adattamento ottimale si traduce nella compilazione dei campi Mappa con gli specchietti ai valori appropriati di Tag e Campo. Inoltre, viene visualizzato un esempio dei dati analizzati. Accertatevi di selezionare <span class="uicontrol"> Intestazioni nella prima riga </span> se si è certi che il file include una riga di intestazione. La funzione di configurazione utilizza queste informazioni per identificare meglio le voci di mappa risultanti. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Feed </p> </td> 
@@ -614,7 +617,7 @@ Prima che gli effetti della nuova definizione e della definizione abilitata sian
       <td colname="col2"> <p>Origine dei dati. Il tipo di origine dati selezionato influisce sulle opzioni risultanti disponibili nella pagina <span class="wintitle"> Attribute Loader Add </span> . Potete scegliere tra le seguenti opzioni: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Testo </span> <p>File di testo semplici, delimitati da virgole, delimitati da tabulazioni o altri formati delimitati in modo coerente. Ogni riga di testo delimitata da una nuova riga corrisponde a un singolo documento e viene analizzata utilizzando il delimitatore specificato. </p> <p>Potete mappare ciascun valore, o colonna, su un campo di metadati, a cui fa riferimento il numero di colonna, a partire da 1 (uno). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Scarica un documento XML master che contiene più "righe" di informazioni. </p> </li> 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Scarica un documento XML principale che contiene più "righe" di informazioni. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -694,7 +697,7 @@ Prima che gli effetti della nuova definizione e della definizione abilitata sian
       </tr> 
       <tr> 
       <td colname="col1"> <p>Percorso file </p> </td> 
-      <td colname="col2"> <p>Specifica il percorso del documento XML master che contiene più "righe" di informazioni. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> </td> 
+      <td colname="col2"> <p>Specifica il percorso del documento XML principale che contiene più "righe" di informazioni. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protocollo </p> </td> 
