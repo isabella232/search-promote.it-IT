@@ -7,7 +7,10 @@ title: Espressioni regolari
 topic: Appendices,Site search and merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 7b883870bb16284d8070a21547cdb62cc79d7632
+workflow-type: tm+mt
+source-wordcount: '1058'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +118,7 @@ Consultate anche [Configurazione di un indice incrementale di un sito Web](../c-
 
       Questo `^` ha un significato speciale solo se si verifica per la prima volta nella stringa. È possibile utilizzare `-` (segno meno) per indicare un intervallo di caratteri consecutivi, inclusi i caratteri del set di codici supplementari. Ad esempio, [0-9] equivale a [0123456789].
 
-      I caratteri che specificano l&#39;intervallo devono provenire dallo stesso set di codici. Quando i caratteri provengono da set di codici diversi, uno dei caratteri che specifica l’intervallo corrisponde. Questo `-` `^`significato speciale viene perso se si verifica prima (dopo l&#39;eventuale iniziale) o dopo l&#39;ultima nella stringa. La `]` (parentesi quadre destra) non termina con una stringa di questo tipo quando si tratta del primo carattere al suo interno, dopo un&#39;eventuale `^`parentesi iniziale. Ad esempio, []a-f] corrisponde a una `]` (parentesi quadre destra) o a una delle lettere ASCII da a a f incluso. I quattro caratteri elencati come caratteri speciali sopra si trovano all&#39;interno di una tale stringa di caratteri.
+      I caratteri che specificano l&#39;intervallo devono provenire dallo stesso set di codici. Quando i caratteri provengono da set di codici diversi, uno dei caratteri che specifica l’intervallo corrisponde. Questo `-` `^`significato speciale viene perso se si verifica prima (dopo l&#39;eventuale iniziale) o dopo l&#39;ultima nella stringa. La `]` (parentesi quadre destra) non termina con una stringa di questo tipo quando si tratta del primo carattere al suo interno, dopo un&#39;eventuale `^`parentesi iniziale. Ad esempio, `[]a-f]` corrisponde a una `]` (parentesi quadre destra) o a una delle lettere ASCII da a a f incluso. I quattro caratteri elencati come caratteri speciali sopra si trovano all&#39;interno di una tale stringa di caratteri.
 
 **Regole per la creazione di espressioni regolari da espressioni regolari con un carattere**
 
@@ -125,7 +128,7 @@ Per creare espressioni regolari a partire da espressioni regolari a un carattere
 * Un&#39;espressione regolare di un carattere seguita da un `*` (asterisco) è un&#39;espressione regolare che corrisponde a zero o più occorrenze dell&#39;espressione regolare di un carattere, che può essere un carattere set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
 * Un&#39;espressione regolare di un carattere seguita da un `?` (punto interrogativo) è un&#39;espressione regolare che corrisponde a zero o a una occorrenza dell&#39;espressione regolare di un carattere, che può essere un carattere set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
 * Un&#39;espressione regolare di un carattere seguita da un segno `+` (più) è un&#39;espressione regolare che corrisponde a una o più occorrenze dell&#39;espressione regolare di un carattere, che può essere un carattere set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
-* Un&#39;espressione regolare con un carattere seguita da `{m}`, `{m,}`o `{m,n}` è un&#39;espressione regolare che corrisponde a un intervallo di occorrenze dell&#39;espressione regolare con un carattere. i valori di m e n devono essere numeri interi non negativi inferiori a 256; corrisponde `{m}` esattamente a m occorrenze; corrisponde `{m,}` ad almeno m occorrenze; corrisponde `{m,n}` a qualsiasi numero di occorrenze tra m e n incluso. Ogni volta che esiste una scelta, l&#39;espressione regolare corrisponde al maggior numero possibile di occorrenze.
+* Un&#39;espressione regolare con un carattere seguita da `{m}`, `{m,}`o `{m,n}` è un&#39;espressione regolare che corrisponde a un intervallo di occorrenze dell&#39;espressione regolare con un carattere. i valori di m e n devono essere numeri interi non negativi inferiori a 256; `{m}` corrisponde esattamente a m occorrenze; `{m,}` corrisponde ad almeno m occorrenze; `{m,n}` corrisponde a qualsiasi numero di occorrenze tra m e n incluso. Ogni volta che esiste una scelta, l&#39;espressione regolare corrisponde al maggior numero possibile di occorrenze.
 * La concatenazione di espressioni regolari è un&#39;espressione regolare che corrisponde alla concatenazione delle stringhe corrispondenti a ciascun componente dell&#39;espressione regolare.
 * Un&#39;espressione regolare racchiusa tra le sequenze di caratteri ( e ) è un&#39;espressione regolare che corrisponde a qualsiasi corrispondenza dell&#39;espressione regolare non adornata.
 * Un&#39;espressione regolare seguita da una `|` (barra verticale) seguita da un&#39;espressione regolare è un&#39;espressione regolare che corrisponde alla prima espressione regolare (prima della barra verticale) o alla seconda espressione regolare (dopo la barra verticale).
