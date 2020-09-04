@@ -8,7 +8,10 @@ title: Completamento automatico
 topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
-source-git-commit: 439100ab96f4b597c55b1c1ae38a5778c208e896
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 1%
 
 ---
 
@@ -159,20 +162,15 @@ Consultate [Configurazione della funzione di completamento automatico del CSS](c
       </tr> 
       <tr> 
       <td colname="col1"> <p>Rimuovere queste parole e frasi </p> </td> 
-      <td colname="col2"> <p> Le voci in questa area non vengono visualizzate nell'elenco di parole completo automatico. </p> <p> Fare clic su <span class="uicontrol"> Modifica </span> per visualizzare l'elenco o per aggiungere parole ed espressioni all'elenco. Al termine, fate clic su <span class="uicontrol"> Salva modifiche </span>. </p> <p> In questo elenco sono consentite espressioni regolari. Per specificare un'espressione regolare in questo elenco, iniziare la riga con 
-        <userinput>
-          regexp 
-        </userinput> seguito da un singolo spazio, seguito dall'espressione regolare. Vengono rimosse tutte le righe dell'elenco di parole che corrispondono all'espressione regolare. </p> <p> <b>Importante</b>: È consigliabile utilizzare espressioni regolari solo se in precedenza sono state utilizzate con esse in altre applicazioni. </p> <p>Consultate <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> </td> 
+      <td colname="col2"> <p> Le voci in questa area non vengono visualizzate nell'elenco di parole completo automatico. </p> <p> Fare clic su <span class="uicontrol"> Modifica </span> per visualizzare l'elenco o per aggiungere parole ed espressioni all'elenco. Al termine, fate clic su <span class="uicontrol"> Salva modifiche </span>. </p> <p> In questo elenco sono consentite espressioni regolari. Per specificare un'espressione regolare in questo elenco, iniziare la riga con <code>regexp</code> seguito da un singolo spazio, seguito dall'espressione regolare. Vengono rimosse tutte le righe dell'elenco di parole che corrispondono all'espressione regolare. </p> <p> <b>Importante</b>: È consigliabile utilizzare espressioni regolari solo se in precedenza sono state utilizzate con esse in altre applicazioni. </p> <p>Consultate <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ignora maiuscole </p> </td> 
-      <td colname="col2"> <p>Vengono rimosse le voci duplicate nell'elenco di parole complete automaticamente che differiscono solo in lettere maiuscole e minuscole; tutte le voci dell'elenco di parole sono forzate a essere minuscole. </p> <p>Se desiderate che i suggerimenti di completamento automatico siano visualizzati come "prima lettera maiuscola" o "tutte maiuscole", aggiungete il 
-        <userinput>
-          text-transform: capitalize; 
-        </userinput>  oppure  
-        <userinput>
-          text-transform: maiuscolo; 
-        </userinput> Proprietà del testo CSS per il contenuto CSS con completamento automatico, in "/* stili per l'elemento risultato */". </p> <p>Consultate <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Configurazione della funzione di completamento automatico del CSS </a>. </p> </td> 
+      <td colname="col2"> <p>Vengono rimosse le voci duplicate nell'elenco di parole complete automaticamente che differiscono solo in lettere maiuscole e minuscole; tutte le voci dell'elenco di parole sono forzate a essere minuscole. </p> <p>Se desiderate che i suggerimenti di completamento automatico vengano visualizzati come "prima lettera con maiuscole" o "tutte le didascalie", aggiungete le proprietà di testo <code>
+          text-transform : capitalize; 
+        </code> o <code>
+          text-transform : uppercase; 
+        </code> CSS al contenuto CSS di completamento automatico, in "/* stili per l'elemento risultato */". </p> <p>Consultate <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Configurazione della funzione di completamento automatico del CSS </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aggiorna su reindicizzazione </p> </td> 
