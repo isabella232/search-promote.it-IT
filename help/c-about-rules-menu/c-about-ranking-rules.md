@@ -1,6 +1,6 @@
 ---
-description: Puoi utilizzare Regole di classificazione per controllare il posizionamento o la classificazione relativi dei risultati di ricerca di un cliente in base al contenuto di tag meta contenuto e alle relative metriche di Adobe Analytics.
-seo-description: Puoi utilizzare Regole di classificazione per controllare il posizionamento o la classificazione relativi dei risultati di ricerca di un cliente in base al contenuto di tag meta contenuto e alle relative metriche di Adobe Analytics.
+description: Potete utilizzare Regole di classificazione per controllare il posizionamento relativo o la classificazione dei risultati di ricerca di un cliente in base al contenuto di tag meta contenuti e  metriche Adobe Analytics correlate.
+seo-description: Potete utilizzare Regole di classificazione per controllare il posizionamento relativo o la classificazione dei risultati di ricerca di un cliente in base al contenuto di tag meta contenuti e  metriche Adobe Analytics correlate.
 seo-title: Informazioni sulle regole di classificazione
 solution: Target
 subtopic: Ranking Rules
@@ -8,20 +8,23 @@ title: Informazioni sulle regole di classificazione
 topic: Rules,Site search and merchandising
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
 translation-type: tm+mt
-source-git-commit: f4f69e6bdb37fb39045f8f25cffa4bf616834e54
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4647'
+ht-degree: 0%
 
 ---
 
 
 # Informazioni sulle regole di classificazione{#about-ranking-rules}
 
-Puoi utilizzare Regole di classificazione per controllare il posizionamento o la classificazione relativi dei risultati di ricerca di un cliente in base al contenuto di tag meta contenuto e alle relative metriche di Adobe Analytics.
+Potete utilizzare Regole di classificazione per controllare il posizionamento relativo o la classificazione dei risultati di ricerca di un cliente in base al contenuto di tag meta contenuti e  metriche Adobe Analytics correlate.
 
 ## Utilizzo delle regole di classificazione {#concept_F555C076759B4E81B925441CFE707397}
 
-Le regole di classificazione vengono definite per influenzare il posizionamento relativo dei documenti all&#39;interno dei risultati di ricerca, in base al contenuto di ciascun documento. Potete basare le regole di classificazione sia sul contenuto dei tag meta, sulle metriche di Adobe Analytics (se l&#39;account è configurato per lavorare con Adobe Analytics), o sulle metriche HBX di Adobe Analytics (se l&#39;account è configurato per lavorare con Adobe Analytics HBX).
+Le regole di classificazione vengono definite per influenzare il posizionamento relativo dei documenti all&#39;interno dei risultati di ricerca, in base al contenuto di ciascun documento. Potete basare le regole di classificazione sia sul contenuto di tag meta,  metriche Adobe Analytics (se l&#39;account è configurato per lavorare con  Adobe Analytics), o  metriche Adobe Analytics HBX (se l&#39;account è configurato per lavorare con  Adobe Analytics HBX).
 
-Potete impostare pagine Web che contengono meta tag con le caratteristiche desiderate, ad esempio un determinato marchio o prezzo, o pagine Web con indicatori di prestazioni chiave di Adobe Analytics, come visualizzatori univoci, da classificare più in alto rispetto alle pagine Web che non lo sono. Le caratteristiche &quot;desiderabili&quot; sono facilmente aggiornate aggiungendo o modificando regole di classificazione e quindi reindicizzando il sito Web.
+È possibile impostare pagine Web che contengono meta tag con caratteristiche desiderate, ad esempio un determinato marchio o prezzo, o pagine Web con indicatori prestazioni chiave di Adobe Analytics desiderabili  indicatori prestazioni chiave di, come visualizzatori univoci, per ottenere una classificazione più elevata rispetto alle pagine Web che non lo sono. Le caratteristiche &quot;desiderabili&quot; sono facilmente aggiornate aggiungendo o modificando regole di classificazione e quindi reindicizzando il sito Web.
 
 Se sono definiti più tag meta di tipo &quot;rank&quot;, è possibile creare raccolte separate di regole da utilizzare nel calcolo dei vari campi di classificazione. È possibile aggiungere un gruppo di regole di classifica, da assegnare poi a uno dei campi Rank definiti. I gruppi di regole contengono in genere una o più definizioni di regole, ma possono anche fare riferimento ad altri gruppi di regole, per cui potete creare uno o più gruppi di regole comunemente utilizzate che vengono condivisi durante il calcolo dei diversi gruppi.
 
@@ -59,24 +62,22 @@ Prima di poter utilizzare le regole di classificazione, è necessario completare
       <ol id="ol_28ABB980143948DFA79AC4360AAB7556"> 
       <li id="li_544075CFA0964C6F8FAF7941AAA9ECCC"> Nel menu del prodotto, fate clic su <span class="uicontrol"> Impostazioni </span> &gt; <span class="uicontrol"> Metadati </span> &gt; <span class="uicontrol"> Definizioni </span>. </li> 
       <li id="li_F237F13B89E8425080C15D3BD697652C"> Nella pagina Definizioni, fare clic su <span class="uicontrol"> Aggiungi nuovo campo </span>. </li> 
-      <li id="li_2A839874D71D45FEA661B3D3B8BE2A86"> Nella pagina Aggiungi campo, nel campo di testo Nome <span class="uicontrol"> campo </span> , digitare 
-      <userinput>
+      <li id="li_2A839874D71D45FEA661B3D3B8BE2A86"> Nella pagina Aggiungi campo digitare <span class="uicontrol"> ; nel campo di testo Nome </span> campo <code>
         rank 
-      </userinput>; nel campo di testo Nome <span class="uicontrol"> tag metadati </span> , digitare 
-      <userinput>
+      </code>; nel campo di testo Nome <span class="uicontrol"> tag metadati </span> , digitare <code>
         rank 
-      </userinput>; nell'elenco a discesa <span class="uicontrol"> Tipo di dati </span> , selezionare <span class="uicontrol"> Classifica </span>. Lasciate invariate tutte le altre opzioni di campo. <p>Vedere il parametro di query <span class="codeph"> sp_sr </span> in parametri CGI di ricerca <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> back-end </a>. </p> </li> 
+      </code>; nell'elenco a discesa <span class="uicontrol"> Tipo di dati </span> , selezionare <span class="uicontrol"> Classifica </span>. Lasciate invariate tutte le altre opzioni di campo. <p>Vedere il parametro di query <span class="codeph"> sp_sr </span> in parametri CGI di ricerca <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> back-end </a>. </p> </li> 
       <li id="li_8E91AF4BE51A4A41ABBF9680DDE0B7CE">Fai clic su <span class="uicontrol">Aggiungi </span>. </li> 
       </ol> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Per creare regole di classificazione basate sulle metriche di Adobe Analytics </p> </td> 
+      <td colname="col1"> <p>Creazione di regole di classificazione basate su  metriche Adobe Analytics </p> </td> 
       <td colname="col2"> <p> 
       <ol id="ol_BE57CBC303D941778B10D855ADC93C68"> 
-      <li id="li_8DF5D8F924B24ECBBD2D93C76C69D00C"> Accertati di aver configurato l’autenticazione Adobe Analytics dall’interno della ricerca nel sito/merchandising. <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_8AA93F6273B747F9B4DE9E8DFBCBDC42" type="task" format="dita" scope="local"> Impostazione dell'autenticazione delle metriche di Adobe Analytics </a>. </p> </li> 
-      <li id="li_CF7DD073FC5A432DADBD282AA8BB9920"> Seleziona e aggiungi una suite di rapporti disponibile. <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"> Aggiunta di una suite di rapporti di Adobe Analytics </a>. </p> </li> 
-      <li id="li_9A63448577D04E028DF211D8715F943A"> Configurate l'elenco delle metriche di Adobe Analytics da rendere disponibili per la creazione di nuove regole di classificazione. <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche di Adobe Analytics di una suite di rapporti </a>. </p> </li> 
-      <li id="li_1ACA3611D9B44AC394604CD89209C966"> Caricate le metriche Adobe Analytics iniziali per le pagine del sito Web. <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181" type="task" format="dita" scope="local"> Caricamento di dati di Adobe Analytics </a>. </p> </li> 
+      <li id="li_8DF5D8F924B24ECBBD2D93C76C69D00C"> Accertatevi di aver impostato  autenticazione Adobe Analytics dall'interno della ricerca nel sito/merchandising. <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_8AA93F6273B747F9B4DE9E8DFBCBDC42" type="task" format="dita" scope="local"> Impostazione 'autenticazione delle metriche Adobe Analytics </a>. </p> </li> 
+      <li id="li_CF7DD073FC5A432DADBD282AA8BB9920"> Seleziona e aggiungi una suite di rapporti disponibile. <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"> Aggiunta di una suite di rapporti Adobe Analytics  </a>. </p> </li> 
+      <li id="li_9A63448577D04E028DF211D8715F943A"> Configura l'elenco  metriche Adobe Analytics che desideri rendere disponibili per la creazione di nuove regole di classificazione. <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche Adobe Analytics  di una suite di rapporti </a>. </p> </li> 
+      <li id="li_1ACA3611D9B44AC394604CD89209C966"> Caricate le metriche Adobe Analytics  iniziali per le pagine del sito Web. <p>Vedere <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181" type="task" format="dita" scope="local"> Caricamento  dati Adobe Analytics </a>. </p> </li> 
       </ol> </p> </td> 
       </tr> 
     </tbody> 
@@ -203,9 +204,9 @@ Consultate [Configurazione della classificazione](../c-about-rules-menu/c-about-
 1. Nella [!DNL Define Ranking Rules] pagina, fate clic **[!UICONTROL Add Rule]** per aggiungere una nuova regola di classificazione o per aggiungere un riferimento a un set di regole.
 1. Nella [!DNL Add Ranking Rule] pagina, impostate le opzioni desiderate. I campi contrassegnati con un asterisco (*) sono obbligatori.
 
-   Il tipo di origine dati selezionato influisce sulle scelte disponibili nell&#39;elenco a [!DNL Data Source Name] discesa. Ad esempio, se hai selezionato **[!UICONTROL Meta Tag]** come Tipo origine dati, il Nome origine dati fa riferimento al nome di un tag meta nelle pagine del sito Web. Se hai selezionato **[!UICONTROL Adobe Analytics Metric (Number)]**, Nome origine dati fa riferimento a uno dei nomi delle metriche di Adobe Analytics selezionati in una suite di rapporti, come trovato nella **[!UICONTROL Edit Adobe Analytics Metrics]** pagina in ricerca/merchandising del sito.
+   Il tipo di origine dati selezionato influisce sulle scelte disponibili nell&#39;elenco a [!DNL Data Source Name] discesa. Ad esempio, se hai selezionato **[!UICONTROL Meta Tag]** come Tipo origine dati, il Nome origine dati fa riferimento al nome di un tag meta nelle pagine del sito Web. Se hai selezionato **[!UICONTROL Adobe Analytics Metric (Number)]**, Nome origine dati fa riferimento a uno dei nomi delle metriche Adobe Analytics  che hai selezionato in una suite di rapporti, come trovato nella **[!UICONTROL Edit Adobe Analytics Metrics]** pagina in ricerca/merchandising del sito.
 
-   Consultate [Modifica delle metriche di Adobe Analytics di una suite](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664)di rapporti.
+   Consultate [Modifica delle metriche Adobe Analytics  di una suite](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664)di rapporti.
 
    <table> 
     <thead> 
@@ -220,12 +221,12 @@ Consultate [Configurazione della classificazione](../c-about-rules-menu/c-about-
       <td colname="col2"> <p>Determina le caratteristiche dell'origine dati utilizzata come input per questa regola di classificazione. </p> <p>I tipi di origine dati che puoi selezionare includono: 
       <ul id="ul_B0A97BF0E314495985F44A642C86918D"> 
       <li id="li_4D8BDE32853540809AE78FF5FF5677A1"> <span class="uicontrol"> Tag Meta </span> <p> Basa questa regola su dati numerici o di testo memorizzati in un tag meta denominato sulle pagine del sito Web. </p> </li> 
-      <li id="li_4976C31D67254C7F81D554EC49DDBB40"> <span class="uicontrol"> Metrica di Adobe Analytics (numero) </span> <p>Basa questa regola su una metrica Adobe Analytics numerica associata alle pagine del sito. </p> </li> 
+      <li id="li_4976C31D67254C7F81D554EC49DDBB40"> <span class="uicontrol">  Adobe Analytics Metric (numero) </span> <p>Basa questa regola su una metrica Adobe Analytics  numerica associata alle pagine del sito. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome origine dati </p> </td> 
-      <td colname="col2"> <p>Se hai scelto <span class="uicontrol"> Meta Tag </span> come Tipo origine dati, questo è il nome di un tag meta che si trova all'interno delle pagine del tuo sito Web. I nomi nel menu a discesa provengono dall’elenco di valori di metadati definiti configurati in Impostazioni &gt; Metadati &gt; Definizioni. </p> <p>Consultate <a scope="local" href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita"> Aggiunta di un nuovo campo tag meta </a>. </p> <p>Se hai scelto Adobe Analytics Metric (Numero) come Tipo origine dati, questo è il nome di una metrica Adobe Analytics. I nomi nel menu a discesa provengono dall'elenco definito delle metriche Adobe Analytics disponibili configurate in Impostazioni &gt; Adobe Analytics &gt; Metrics &gt; Edit (Impostazioni &gt; Adobe Analytics &gt; Metriche &gt; Modifica). </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche di Adobe Analytics di una suite di rapporti </a>. </p> <p>Se il nome della metrica di Adobe Analytics selezionato non è già definito in <span class="uicontrol"> Settings </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitions </span>(Impostazioni &gt; Metadati &gt;Definizioni), vengono visualizzati un campo di testo e un pulsante Add (Aggiungi). Immettete il nome del nome del campo metadati (il nome del campo di metadati non può superare i 20 caratteri), quindi fate clic su <span class="uicontrol"> Aggiungi </span>. </p> <p>Quando le pagine vengono incontrate con più chiavi Adobe Analytics, come con una pagina di prodotto che visualizza più prodotti, Combinazione composita specifica come gestire i valori delle metriche Adobe Analytics multipli associati a tale pagina. Selezionate una delle seguenti opzioni: </p> <p> 
+      <td colname="col2"> <p>Se hai scelto <span class="uicontrol"> Meta Tag </span> come Tipo origine dati, questo è il nome di un tag meta che si trova all'interno delle pagine del tuo sito Web. I nomi nel menu a discesa provengono dall’elenco di valori di metadati definiti configurati in Impostazioni &gt; Metadati &gt; Definizioni. </p> <p>Consultate <a scope="local" href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita"> Aggiunta di un nuovo campo tag meta </a>. </p> <p>Se hai scelto  Adobe Analytics Metric (Number) come Tipo origine dati, questo è il nome di una metrica Adobe Analytics . I nomi nel menu a discesa provengono dall'elenco definito  metriche Adobe Analytics configurate in Impostazioni &gt;  Adobe Analytics &gt; Metriche &gt; Modifica. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche Adobe Analytics  di una suite di rapporti </a>. </p> <p>Se il nome della metrica Adobe Analytics  selezionata non è già definito in <span class="uicontrol"> Settings </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitions </span>(Impostazioni &gt; Metadati &gt;Definizioni), vengono visualizzati un campo di testo e un pulsante Add (Aggiungi). Immettete il nome del campo metadati (il nome del campo di metadati non può superare i 20 caratteri), quindi fate clic su <span class="uicontrol"> Aggiungi </span>. </p> <p>Quando si incontrano pagine con più chiavi Adobe Analytics , come con una pagina di prodotto che visualizza più prodotti, Combinazione composita specifica come gestire i valori delle metriche Adobe Analytics  multipli associati a tale pagina. Selezionate una delle seguenti opzioni: </p> <p> 
       <ul id="ul_D6E51748BB3949048A37C1895F2C0A58"> 
       <li id="li_04F00F382A264C96A519B0D975E25E94"> <span class="uicontrol"> Sum </span> <p>Restituisce la somma dei valori delle metriche. </p> </li> 
       <li id="li_FA44219B663F4CC197BD3A094EB84396"> <span class="uicontrol"> Media </span> <p>Restituisce la media dei valori (la somma divisa per il numero di valori). </p> </li> 
@@ -240,15 +241,14 @@ Consultate [Configurazione della classificazione](../c-about-rules-menu/c-about-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valori/Rank </p> </td> 
-      <td colname="col2"> <p>È costituito da una delle funzioni integrate di classificazione, o da contenuti Origini dati eventualmente presenti con i ranghi desiderati. </p> <p>Se hai scelto <span class="uicontrol"> Adobe Analytics Metric (Number) </span> come Tipo origine dati, ti verrà presentato un elenco a discesa con le seguenti opzioni: 
+      <td colname="col2"> <p>È costituito da una delle funzioni integrate di classificazione, oppure da contenuti Origini dati eventualmente presenti con i ranghi desiderati. </p> <p>Se hai scelto <span class="uicontrol"> Adobe Analytics Metric (Number) </span> come Tipo origine dati, viene visualizzato un elenco a discesa con le seguenti opzioni: 
       <ul id="ul_104906B6AA8547BAB6979AA37C4FAB90"> 
-      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Classificazione automatica per ordine (impostazione predefinita) </span> <p>Calcola un livello basato sulla posizione relativa del documento, in base alla metrica Adobe Analytics. Ad esempio, più vicino è la posizione del documento al documento di primo livello, più alto è il suo rango. </p> </li> 
-      <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Classificazione automatica per valore </span> <p>Calcola un livello in base al valore relativo del documento, in base alla metrica Adobe Analytics. Ad esempio, più il valore del documento è vicino a quello del documento di primo livello, più alto sarà il suo rango. </p> </li> 
+      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Classificazione automatica per ordine (impostazione predefinita) </span> <p>Calcola un livello basato sulla posizione relativa del documento, in base alla relativa metrica Adobe Analytics . Ad esempio, più vicino è la posizione del documento al documento di primo livello, più alto è il suo rango. </p> </li> 
+      <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Classificazione automatica per valore </span> <p>Calcola un livello in base al valore relativo del documento, in base alla relativa metrica Adobe Analytics . Ad esempio, più il valore del documento è vicino a quello del documento di primo livello, più alto sarà il suo rango. </p> </li> 
       <li id="li_457DE44D6ADA40619DC77220BF12318E"> <span class="uicontrol"> Personalizzato </span> <p>Specifica le impostazioni personalizzate. Ad esempio, un'origine dati con il nome "brand" potrebbe contenere il nome del marchio per un particolare prodotto. Potete specificare l'importanza relativa di ciascun marchio inserendo il relativo elenco con il relativo rango. </p> </li> 
-      </ul> </p> <p>I valori di classifica restituiti dai calcoli di Auto-Rank sono compresi tra 0,0 (minimo) e 1,0 (massimo). Non vengono regolati in base agli intervalli definiti per il campo Classifica in Impostazioni &gt; Metadati &gt; Definizioni. </p> <p>Nell'esempio seguente, se l'Origine dati del marchio per un particolare risultato di ricerca corrisponde esattamente a "DKNY", la classificazione applicata per quel risultato è 0,5. In caso contrario, se il marchio è "Levis", la classificazione applicata è 0,1. Il contenuto Origine dati deve corrispondere al valore impostato. In altre parole, se il contenuto Origine dati è "Levis Corp.", non corrisponderà al valore "Levis". Il caso viene ignorato, quindi "DKNY" corrisponde a "dkny" e "Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>Come opzione più avanzata, potete specificare i valori come espressioni regolari. Ad esempio, supponiamo che alcune delle pagine del sito contengano un valore di marchio "Levis" e che altre pagine del sito contengano un valore di marchio "Levis jeans". È possibile utilizzare un'espressione regolare specificata con la parola chiave 
-      <userinput>
+      </ul> </p> <p>I valori di classifica restituiti dai calcoli di Auto-Rank sono compresi tra 0,0 (minimo) e 1,0 (massimo). Non vengono regolati in base agli intervalli definiti per il campo Classifica in Impostazioni &gt; Metadati &gt; Definizioni. </p> <p>Nell'esempio seguente, se l'Origine dati del marchio per un particolare risultato di ricerca corrisponde esattamente a "DKNY", la classificazione applicata per quel risultato è 0,5. In caso contrario, se il marchio è "Levis", la classificazione applicata è 0,1. Il contenuto Origine dati deve corrispondere al valore impostato. In altre parole, se il contenuto Origine dati è "Levis Corp.", non corrisponderà al valore "Levis". Il caso viene ignorato, quindi "DKNY" corrisponde a "dkny" e "Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>Come opzione più avanzata, potete specificare i valori come espressioni regolari. Ad esempio, supponiamo che alcune delle pagine del sito contengano un valore di marchio "Levis" e che altre pagine del sito contengano un valore di marchio "Levis jeans". È possibile utilizzare un'espressione regolare specificata con la parola chiave <code>
         regexp 
-      </userinput>. </p> <p>Consultate <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> <p>Nell'esempio seguente, a un documento dei risultati della ricerca contenente il contenuto del marchio "Levis jeans" viene assegnato un rango pari a 0,1. Come per il confronto standard, per le espressioni regolari viene ignorato il carattere maiuscolo/minuscolo. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
+      </code>. </p> <p>Consultate <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> <p>Nell'esempio seguente, a un documento dei risultati della ricerca contenente il contenuto del marchio "Levis jeans" viene assegnato un rango pari a 0,1. Come per il confronto standard, per le espressioni regolari viene ignorato il carattere maiuscolo/minuscolo. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Classifica predefinita </p> </td> 
@@ -266,6 +266,7 @@ Consultate [Configurazione della classificazione](../c-about-rules-menu/c-about-
    * `-1.0` è &quot;Classifica minima (visualizza più in basso nei risultati della ricerca).&quot;
    * `0.0` è &quot;Classificazione neutra (non modificate l’ordine dei risultati della ricerca).&quot;
    * `1.0` è &quot;Classificazione massima (visualizzazione superiore nei risultati della ricerca.&quot;
+
    I gradi definiti devono essere compresi nello stesso intervallo per ogni regola. Gli intervalli di classificazione devono anche corrispondere agli intervalli definiti per il campo Classifica in **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
 
    Consultate [Aggiunta di un nuovo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)tag meta.
