@@ -7,7 +7,10 @@ title: Modelli
 topic: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: ca4156f80d7dbb85d2d56b6caf7c0f560299d86e
+workflow-type: tm+mt
+source-wordcount: '15139'
+ht-degree: 2%
 
 ---
 
@@ -81,13 +84,13 @@ Le dichiarazioni sono speciali tag di dichiarazione guidata che potete impostare
   <tr> 
    <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
-     <!--In search-eng 1/31/13--> <span class="codeph"> &lt;Guidata-Results [gsname="nomericerca"]&gt;&lt;/Guided-Results&gt; </span> </p> </td> 
+     <!--In search-eng 1/31/13--> <span class="codeph"> &lt;Guidata-Results [gsname="search name"]&gt;&lt;/Guided-Results&gt; </span> </p> </td> 
    <td colname="col2"> <p>Il tag dei risultati guidati definisce i limiti di un ciclo di risultati. È possibile accedere a qualsiasi set di risultati specificando un attributo <span class="codeph"> gsname </span> . Se non <span class="codeph"> </span> viene fornito alcun nome gsname, vengono visualizzati i risultati di ricerca predefiniti. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> 
-     <!--In search-eng 1/31/13--> <span class="codeph"> &lt;Guidata-result-link [gsname="fieldname"] [attr="value"]+&gt;&lt;/led-result-link&gt; </span> </p> </td> 
+     <!--In search-eng 1/31/13--> <span class="codeph"> &lt;linked-result-link [gsname="fieldname"] [attr="value"]+&gt;&lt;/led-result-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Per creare un collegamento a un dato risultato, utilizzate il <span class="codeph"> tag </span> guidato-risultato-collegamento. Definendo un attributo <span class="codeph"> gsname </span> , potete utilizzare un campo dall'indice invece del tag standard "loc" che fa riferimento all'"search-url". È possibile trasmettere anche tutti gli altri attributi, come class e target, che vengono generati nel tag di ancoraggio risultante. </p> </td> 
   </tr> 
   <tr> 
@@ -130,19 +133,19 @@ Le dichiarazioni sono speciali tag di dichiarazione guidata che potete impostare
   <tr> 
    <td colname="col01"> <p>7 </p> </td> 
    <td colname="col1"> <p> 
-     <!--In search-eng version, 1/31/13--> <span class="codeph"> &lt;guidate-result-found [gsname="search name"]/&gt; </span> </p> </td> 
+     <!--In search-eng version, 1/31/13--> <span class="codeph"> &lt;guidati-result-found [gsname="search name"]/&gt; </span> </p> </td> 
    <td colname="col2"> <p>Restituisce un 1 se la richiesta di ricerca back-end ha restituito risultati e 0 in caso contrario. Se non <span class="codeph"> </span> viene specificato alcun nome gsname, il tag considera la ricerca primaria. Questo tag è utile per trasmettere la logica alle routine JavaScript. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>8 </p> </td> 
    <td colname="col1"> <p> 
-     <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;Guidata-result-total [gsname="search name"]/&gt; </span> </p> </td> 
+     <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;guidate-result-total [gsname="search name"]/&gt; </span> </p> </td> 
    <td colname="col2"> <p>Restituisce il numero totale di risultati nell'insieme di risultati specificato. Presuppone la ricerca predefinita quando non <span class="codeph"> viene fornito alcun nome gsname </span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>9 </p> </td> 
    <td colname="col1"> <p> 
-     <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;Guidata-Results-lower [gsname="search name"]/&gt; </span> </p> </td> 
+     <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;Guidata-result-lower [gsname="search name"]/&gt; </span> </p> </td> 
    <td colname="col2"> <p>Restituisce il numero risultato del risultato inferiore sulla pagina per l'insieme di risultati specificato. Presuppone la ricerca predefinita quando non <span class="codeph"> viene fornito alcun nome gsname </span> . </p> </td> 
   </tr> 
   <tr> 
@@ -208,7 +211,7 @@ Le dichiarazioni sono speciali tag di dichiarazione guidata che potete impostare
     &amp;lt;navigare-risultato-attributo-tabella&amp;nbsp;gsname=&quot;download&quot;&amp;gt;
     &amp;nbsp;&amp;nbsp;&amp;lt;li&amp;gt;
     &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;;nbsp;&amp;nbsp;&amp;lt;a&amp;nbsp;href=&quot;&amp;lt;Guad-result-attribute-table-field-field&amp;nbsp;gsname=&quot;download_link&quot;&amp;nbsp;/&amp;gt;&quot;&amp;
-    &amp;nbsp;&amp;nbsp;&amp;nbsp;nbsp;namp; bsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;led-result-attribute-table-field&amp;nbsp;gsname=&quot;download_title&quot;&amp;nbsp;/&amp;gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;nbsp;namp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;namp; bsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;led-result-attribute-table-field&amp;nbsp;gsname=&quot;download_title&quot;&amp;nbsp;/&amp;gt;
     &amp;nbsp;;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/a&amp;gt;&amp;nbsp;(&amp;lt;led-result-field&amp;nbsp;gsname=&quot;title&quot;/&amp;gt;)
     &amp;nbsp;&amp;nbsp;&amp;nbsp; t;/li&amp;gt;
     &amp;lt;/led-result-attribute-table&amp;gt;
@@ -222,8 +225,8 @@ Le dichiarazioni sono speciali tag di dichiarazione guidata che potete impostare
   <tr> 
    <td colname="col01"> <p>18 </p> </td> 
    <td colname="col1"> <p> 
-     <!--NEW for S&P 8.17.0 release in October 2014--> <span class="codeph"> &lt;Guided-trace [gsname="search name"]/&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Trasmette le informazioni di traccia trovate all'interno dei dati di traccia nella sezione generale dell'output di dati JSON dal modello di trasporto per la ricerca specificata. </p> <p>Se non viene specificato alcun nome di ricerca, <span class="codeph"> viene utilizzato </span> il valore predefinito. </p> </td> 
+     <!--NEW for S&P 8.17.0 release in October 2014--> <span class="codeph"> &lt;traccia guidata [gsname="search name"]/&gt; </span> </p> </td> 
+   <td colname="col2"> <p>Invia le informazioni di traccia trovate all'interno dei dati di traccia nella sezione generale dell'output di dati JSON dal modello di trasporto per la ricerca specificata. </p> <p>Se non viene specificato alcun nome di ricerca, <span class="codeph"> viene utilizzato </span> il valore predefinito. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>19 </p> </td> 
@@ -268,7 +271,7 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
-     <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;guida-facet&gt;&lt;/guida-facet-rail&gt; </span> </p> </td> 
+     <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;guida a facet-rail&gt;&lt;/guide-facet-rail&gt; </span> </p> </td> 
    <td colname="col2"> <p> Definisce una sezione del modello di presentazione che viene utilizzata come pattern ripetuto per ciascun facet nella barra dei facet. </p> <p> Ogni facet appartenente alla barra sfaccettatura utilizza questa sezione per valutarne l'output. </p> <p>Esempio di barra laterale: </p> <p> <code class="syntax html"> &lt;guided-facet-rail&gt; 
       &nbsp;&nbsp;&lt;guided-facet&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-facet-display-name/&gt; 
@@ -288,13 +291,13 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   <tr> 
    <td colname="col01"> <p>4 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Updated to match current search-eng version 1/31/13--> <span class="codeph"> &lt;nome facet-guidato=" <span class="varname"> nome facetname </span>" height=" <span class="varname"> 60px </span>" width=" <span class="varname"> 120px </span>"&gt;&lt;/facet guidato&gt; </span> </p> </td> 
+     <!--Updated to match current search-eng version 1/31/13--> <span class="codeph"> &lt;facet-facet gsname=" <span class="varname"> facetname </span>" height=" <span class="varname"> 60px </span>" width=" <span class="varname"> 120px </span>"&gt;&lt;/led-facet&gt; </span> </p> </td> 
    <td colname="col2"> <p>Utilizzate il tag facet <span class="codeph"> guidato </span> per definire un'area all'interno della quale tutti i tag facet si riferiscono a un facet specifico. Questo tag è anche un tag booleano che nasconde tutto il contenuto se non esistono valori nel facet. In tal caso, non ha senso trasmettere i valori di facet). </p> <p>Gli attributi relativi a altezza e larghezza sono facoltativi e le dimensioni sono specificate in pixel (px). Il Generatore di regole visive (VRB) utilizza questi due attributi e visualizza una casella puntata come segnaposto interattivo quando il facet è nascosto. </p> <p> Quando il nome visualizzato è nel facet e il facet è nascosto, anche il nome viene nascosto. Tuttavia, se il nome è all’esterno del facet, potete nascondere il nome solo se intorno a esso è racchiuso un tag di <span class="codeph"> area </span> o un tag <span class="codeph"> guidato-se-facet visibile </span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>5 </p> </td> 
    <td colname="col1"> <p> 
-     <!--NEW, brought in from search-eng version, 1/31/13--> &lt; <span class="codeph"> &lt;Guided-if[-not]-facet-long [gsname="facetname"]&gt;&lt;/Guided-if[-not]-facet-long&gt;&gt; </span> </p> </td> 
+     <!--NEW, brought in from search-eng version, 1/31/13--> <span class="codeph"> &lt;guidate-if[-not]-facet-long [gsname="facetname"]&gt;&lt;/guidate-if[-not]-facet-long&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questo tag condizionale è true quando il numero di valori di facet supera la soglia di lunghezza definita nella configurazione. Utilizzatelo per visualizzare un facet come elemento dell'interfaccia utente diverso (ad esempio un elenco troncato o una casella di scorrimento) quando l'elenco è troppo lungo. </p> <p> <code class="syntax xml"> &lt;guided-facet&nbsp;name="category"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-if-facet-long&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select&gt; 
@@ -314,7 +317,7 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   <tr> 
    <td colname="col01"> <p>6 </p> </td> 
    <td colname="col1"> <p> 
-     <!--NEW, brought in from search-eng version, 1/31/13--> &lt; <span class="codeph"> [Facet-selected-se[-not]-facet-selected [gsname="facetname"]&gt;&lt;/Guided-if[-not]-facet-selected&gt; </span> </p> </td> 
+     <!--NEW, brought in from search-eng version, 1/31/13--> <span class="codeph"> &lt;facet-selected-guide-if[-not]-facet-selected [gsname="facetname"]&gt;&lt;/led-if[-not]-facet-selected&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questo tag condizionale è true quando si fa clic almeno una volta sul facet e si seleziona un valore facet. Viene utilizzato per mostrare o nascondere i tag HTML o gs a seconda che sia stato fatto clic su un facet. </p> <p> <code class="syntax html"> &lt;guided-facet&nbsp;name="category"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-if-facet-selected&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;facet&nbsp;has&nbsp;been&nbsp;selected.&nbsp;&nbsp;You&nbsp;can&nbsp;no&nbsp;longer&nbsp;refine&nbsp;it. 
@@ -330,7 +333,7 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   <tr> 
    <td colname="col01"> <p>7 </p> </td> 
    <td colname="col1"> <p> 
-     <!--NEW, brought in from search-eng version, 1/31/13--> &lt; <span class="codeph"> &lt;Guided-if[-not]-facet-single [gsname="facetname"]&gt;&lt;/Guided-if[-not]-facet-single&gt; </span> </p> </td> 
+     <!--NEW, brought in from search-eng version, 1/31/13--> <span class="codeph"> &lt;Guidata-if[-not]-facet-single [gsname="facetname"]&gt;&lt;/Guidata-if[-not]-facet-single&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questo tag condizionale è true se è presente un solo valore facet. Usate il tag per modificare la visualizzazione del facet quando non è in grado di perfezionare i risultati. </p> <p> <code class="syntax html"> &lt;guided-facet&nbsp;name="category"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-if-facet-single&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facet&nbsp;is&nbsp;not&nbsp;refinable. 
@@ -346,7 +349,7 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   <tr> 
    <td colname="col01"> <p>8 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Added 7/15/2014--> &lt; <span class="codeph"> &lt;Guided-if[-not]-facet-multiselect [gsname="facetname"]&gt;&lt;/Guided-if[-not]-facet-multiselect&gt; </span> </p> </td> 
+     <!--Added 7/15/2014--> <span class="codeph"> &lt;guidate-if[-not]-facet-multiselect [gsname="facetname"]&gt;&lt;/led-if[-not]-facet-multiselect&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questo tag condizionale è true se il facet è a selezione multipla. Utilizzate il tag per modificare la visualizzazione del facet all'interno dei tag <span class="codeph"> &lt;guida-facet-rail&gt; </span> o <span class="codeph"> &lt;facet-dynamic-facet&gt; </span> . </p> <p> 
 
     &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;guide-if-facet-multiselect&amp;gt;
@@ -361,15 +364,15 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   <tr> 
    <td colname="col01"> <p>9 </p> </td> 
    <td colname="col1"> <p> 
-     <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;valori dei facet guidati [gsname=" <span class="varname"> facetname </span>"]&gt;&lt;/valori dei facet guidati&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Si tratta del tag iteratore del ciclo di valori facet. È possibile definirlo nel contesto di un blocco di facet <span class="codeph"> guidato denominato, nel qual caso è possibile omettere il </span> <span class="codeph"> gsname <span class="varname"> </span> </span>. Oppure, potete definirlo al di fuori di qualsiasi <span class="codeph"> blocco di facet </span> guidato, ma richiederebbe l' <span class="codeph"> <span class="varname"> attributo gsname </span> </span> per identificare quale set di valori di facet viene visualizzato. </p> <p>Potete inoltre utilizzare questo tag per visualizzare i valori dei facet al di fuori del contesto di un blocco dei facet <span class="codeph"> guidato denominato </span> . Potete fare riferimento direttamente a un facet specifico utilizzando l' <span class="codeph"> attributo <span class="varname"> gsname </span> </span> . </p> <p> <code class="syntax html"> &lt;script&gt; 
+     <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;valore facet-guidato [gsname=" <span class="varname"> facetname </span>"]&gt;&lt;/valori facet-guidati&gt; </span> </p> </td> 
+   <td colname="col2"> <p>Si tratta del tag iteratore del ciclo del valore facet. È possibile definirlo nel contesto di un blocco di facet <span class="codeph"> guidato denominato, nel qual caso è possibile omettere il </span> <span class="codeph"> gsname <span class="varname"> </span> </span>. Oppure, potete definirlo al di fuori di qualsiasi <span class="codeph"> blocco di facet </span> guidato, ma richiederebbe l' <span class="codeph"> <span class="varname"> attributo gsname </span> </span> per identificare quale set di valori di facet viene visualizzato. </p> <p>Potete inoltre utilizzare questo tag per visualizzare i valori dei facet al di fuori del contesto di un blocco dei facet <span class="codeph"> guidato denominato </span> . Potete fare riferimento direttamente a un facet specifico utilizzando l' <span class="codeph"> attributo <span class="varname"> gsname </span> </span> . </p> <p> <code class="syntax html"> &lt;script&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;registerFacetValues('category',&nbsp;'&lt;guided-facet-values&nbsp;gsname="category"&gt;&lt;guided-facet-value/&gt;,&lt;/guided-facet-values&gt;'); 
       &lt;/script&gt; </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>10 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Updated to match search-eng version 1/31/13--> &lt;valore facet-guidato <span class="codeph"> [escape="html|url|js|json|0"]/&gt; </span> </p> </td> 
+     <!--Updated to match search-eng version 1/31/13--> <span class="codeph"> &lt;Valore facet-guidato [escape="html|url|js|json|0"]/&gt; </span> </p> </td> 
    <td colname="col2"> <p>Invia la stringa del valore facet corrente. </p> <p>Per impostazione predefinita, il valore è con escape HTML. Potete utilizzare l'opzione escape per modificare la modalità di escape del valore. </p> </td> 
   </tr> 
   <tr> 
@@ -381,7 +384,7 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   <tr> 
    <td colname="col01"> <p>12 </p> </td> 
    <td colname="col1"> <p> 
-     <!--NEW, brought in from search-eng version, 1/31/13--> <span class="codeph"> &lt;linked-facet-value-link [attr="value"]+&gt;&lt;/led-facet-value-link&gt; </span> </p> </td> 
+     <!--NEW, brought in from search-eng version, 1/31/13--> <span class="codeph"> &lt;link-facet-value-link [attr="value"]+&gt;&lt;/Guided-facet-value-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Crea un collegamento intorno alla stringa del valore del facet su cui il visitatore del sito può fare clic. Il percorso viene generato automaticamente per limitare i risultati in base al valore del facet corrente. Supporta il passaggio di qualsiasi attributo direttamente al tag di ancoraggio. </p> <p> <code class="syntax html"> &lt;guided-facet-values&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-facet-value-link&nbsp;class="facetlink"&gt;&lt;guided-facet-value&nbsp;/&gt;&lt;/guided-facet-value-link&gt; 
       &lt;/guided-facet-values&gt; </code> </p> </td> 
@@ -422,14 +425,15 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   <tr> 
    <td colname="col01"> <p>15 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Updated to match search-eng version 1/31/13--> <span class="codeph"> &lt;facet-undo-link gsname=" <span class="varname"> facetname </span>"&gt;&lt;/swe-facet-undo-link&gt; </span> </p> </td> 
+     <!--Updated to match search-eng version 1/31/13--> <span class="codeph"> &lt;facet-undo-link gsname=", <span class="varname"> facetname </span>"&gt;&lt;/guide-facet-undo-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Visualizza un collegamento di annullamento per un dato facet. Se sono presenti facet a selezione multipla, questo collegamento deseleziona tutti i valori del facet specificato. Date un nome alla facet. Se il facet non è attualmente selezionato, il collegamento è il percorso corrente. </p> <p>Esempio di utilizzo di questo tag: </p> <p> <code class="syntax html"> &lt;guided-if-facet-selected&nbsp;gsname="category"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-facet-undo-link&nbsp;gsname="category"&gt;Undo&nbsp;Category&lt;/guided-facet-undo-link&gt; 
       &lt;/guided-if-facet-selected&gt; </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>16 </p> </td> 
-   <td colname="col1"> <p> <varname></varname> </p> </td> 
+   <td colname="col1"> <p> <code> &lt;guided-if-facet-long [gsname="facetname"]&gt; 
+      &lt;guided-else-facet-long&gt;&lt;/guided-if-facet-long&gt; </code> </p> </td> 
    <td colname="col2"> <p>Questo tag condizionale è true quando il numero di valori di facet supera la soglia di lunghezza definita nella configurazione. Utilizzatelo per visualizzare un facet come elemento dell'interfaccia utente diverso (ad esempio un elenco troncato o una casella di scorrimento) quando l'elenco è troppo lungo. </p> <p> <code class="syntax html"> &lt;guided-facet&nbsp;gsname="category"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-if-facet-long&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="long_facet"&gt; 
@@ -466,7 +470,8 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   </tr> 
   <tr> 
    <td colname="col01"> <p>18 </p> </td> 
-   <td colname="col1"> <p> <varname></varname> </p> </td> 
+   <td colname="col1"> <p> <code> &lt;guided-if-facet-single [gsname="facetname"]&gt; 
+      &lt;guided-else-facet-single&gt;&lt;/guided-if-facet-single&gt; </code> </p> </td> 
    <td colname="col2"> <p>Questo tag condizionale è true se è presente un solo valore facet. Può essere utilizzato per modificare la visualizzazione del facet quando non è in grado di perfezionare i risultati. </p> <p> <code class="syntax html"> &lt;guided-facet&nbsp;gsname="category"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-if-facet-single&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facet&nbsp;is&nbsp;not&nbsp;refinable. 
@@ -481,8 +486,9 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   </tr> 
   <tr> 
    <td colname="col01"> <p>19 </p> </td> 
-   <td colname="col1"> <p> <varname></varname> </p> </td> 
-   <td colname="col2"> <p>Questa condizione consente di verificare se il facet specificato contiene alcun valore. Potete utilizzarlo per visualizzare un altro facet invece di uno vuoto. </p> </td> 
+   <td colname="col1"> <p> <code> &lt;guided-if-facet-has-values [gsname="facetname"]&gt; 
+      &lt;guided-else-facet-has-values&gt;&lt;/guided-if-facet-has-values&gt; </code> </p> </td> 
+   <td colname="col2"> <p>Questa condizione consente di verificare se il facet specificato ha alcun valore. Potete utilizzarlo per visualizzare un altro facet invece di uno vuoto. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>20 </p> </td> 
@@ -568,7 +574,8 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   </tr> 
   <tr> 
    <td colname="col01"> <p>32 </p> </td> 
-   <td colname="col1"> <p> <varname></varname> </p> </td> 
+   <td colname="col1"> <p> <code> &lt;guided-if-facet-value-matches facetname="facetname" value="value"&gt;&lt;guided-else-facet-value-matches&gt; 
+      &lt;/guided-if-facet-value-matches&gt; </code> </p> </td> 
    <td colname="col2"> <p>Visualizza in modo condizionale il codice HTML quando il facet specificato ha il valore "value" selezionato o singolo. Questo set di tag viene spesso utilizzato per visualizzare un facet basato sul valore selezionato in un altro facet. </p> </td> 
   </tr> 
   <tr> 
@@ -578,7 +585,7 @@ Consultate [I facet](../c-about-design-menu/c-about-dynamic-facets.md#concept_E6
   </tr> 
   <tr> 
    <td colname="col01"> <p>34 </p> </td> 
-   <td colname="col1"> <p> <varname></varname>
+   <td colname="col1"> <p> 
 
     &amp;lt;/Guided-if-facet[-not]-visible&amp;gt; &lt;/code> &lt;/p> &lt;/td>
 <td colname="col2"> <p>Il contenuto racchiuso da questo tag viene nascosto o rivelato in base allo stato di visibilità del facet. Se una regola business nasconde o rivela il facet direttamente, qualsiasi contenuto all’interno del facet viene nascosto o rivelato. Non è necessario che questi tag siano racchiusi intorno al facet. </p> <p> Un utilizzo comune di questo tag consiste nel nascondere il nome visualizzato quando il nome è all’esterno del facet. Se si racchiude il tag intorno al nome visualizzato, il nome scompare quando il facet è nascosto. </p> <p>Questo tag sostituisce l'area e offre molti degli stessi vantaggi di utilizzo delle aree. </p> </td> 
@@ -607,7 +614,7 @@ Consultate [Le Breadcrumb](../c-about-design-menu/c-about-breadcrumbs.md#concept
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Matched search-eng version, 2/1/2013--> &lt;collegamento-percorso-percorso-guida [gsname="goto|remove|drop"] [attr="valore"]+&gt;&lt;/percorso-percorso-percorso-percorso-guida&gt; <span class="codeph"></span> </p> </td> 
+     <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;link-breadcrumb-guide [gsname="goto|remove|drop"] [attr="value"]+&gt;&lt;/links-breadcrumb-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Crea un collegamento nel percorso di navigazione. Il comportamento predefinito è il comportamento "goto". Se il collegamento si comporta in modo diverso, utilizzate l'attributo <span class="codeph"> gsname <span class="varname"> </span> </span> facoltativo per specificare "remove" o "drop". Qualsiasi attributo incluso nel tag viene passato al tag di ancoraggio risultante. </p> <p> <code class="syntax html"> &lt;guided-breadcrumb&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-breadcrumb-link&nbsp;gsname="remove"&nbsp;class="bc_link"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-breadcrumb-value/&gt; 
@@ -627,7 +634,7 @@ Consultate [Le Breadcrumb](../c-about-design-menu/c-about-breadcrumbs.md#concept
   <tr> 
    <td colname="col01"> <p>4 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Updated to search-eng version, 2/1/2013--> <span class="codeph"> &lt;etichetta-breadcrumb-guida /&gt; </span> </p> </td> 
+     <!--Updated to search-eng version, 2/1/2013--> <span class="codeph"> &lt;etichetta di breadcrumb guidata /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Il tag label genera un'etichetta per un valore di breadcrumb che specifica quale facet è stato selezionato per generare l'elemento breadcrumb. Viene utilizzato solo nel contesto di un blocco <span class="codeph"> di breadcrumb guidato </span> . </p> <p> <code class="syntax html"> &lt;guided-breadcrumb&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-breadcrumb-link&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-breadcrumb-label/&gt;:&nbsp;&lt;guided-breadcrumb-value/&gt; 
@@ -679,13 +686,13 @@ Vedere [Informazioni sui menu](../c-about-design-menu/c-about-menus.md#concept_6
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;Guided-menu-item-link [attr="value"]+&gt;&lt;/led-menu-item-link&gt; </span> </p> </td> 
+     <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;linked-menu-item-link [attr="value"]+&gt;&lt;/led-menu-item-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Fornisce l’URL per ridefinire la ricerca corrente per la voce di menu. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;unità di menu-menu-elemento-opzione [attr="value"]+ /&gt; </span> </p> </td> 
+     <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;menu-menu-elemento-opzione [attr="value"]+ /&gt; </span> </p> </td> 
    <td colname="col2"> <p>In genere, un menu viene visualizzato in un controllo di selezione su un modello. Questo tag semplifica la creazione del controllo di selezione perché genera l’HTML per generare l’opzione per il controllo selezionato. </p> <p>Ad esempio, il seguente blocco di codice: </p> <p> <code class="syntax html"> &lt;select&nbsp;name="sort"&nbsp;onchange="gcGo(this);"&gt; 
       &lt;guided-menu&nbsp;gsname="sort"&gt; 
       &lt;guided-menu-item-option/&gt; 
@@ -748,13 +755,13 @@ I tag di navigazione delle pagine possono essere utilizzati per creare un set di
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;pagina-collegamento-guidato [attr="valore"]+&gt;&lt;/pagina-collegamento-guidato&gt; </span> </p> </td> 
+     <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;pagina-collegamento guidato [attr="value"]+&gt;&lt;/pagina-collegamento guidato&gt; </span> </p> </td> 
    <td colname="col2"> <p>Crea un collegamento nella navigazione della pagina. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Matched search-eng version, 2/1/2013--> &lt;nome_pagina-collegamento-guida="first|prev|next|last|viewall|viewpages" [attr="valore"]+&gt;&lt;/linked-page-link&gt; <span class="codeph"></span> </p> </td> 
+     <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;nome_pagina-collegamento-guidato="first|prev|next|last|viewall|viewpages" [attr="valore"]+&gt;&lt;/linked-page-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Crea un collegamento alla prima, alla precedente, alla successiva o all’ultima pagina. Può anche creare un collegamento per visualizzare tutte le pagine su una pagina. </p> </td> 
   </tr> 
   <tr> 
@@ -827,7 +834,7 @@ I tag di navigazione delle pagine possono essere utilizzati per creare un set di
    <td colname="col01"> <p>12 </p> </td> 
    <td colname="col1"> <p> <code> &lt;guided-pagination gsname= 
       "pagination_name"&gt;&lt;/guided-pagination&gt; </code> </p> </td> 
-   <td colname="col2"> <p>Utilizzare il <span class="codeph"> tag di impaginazione guidata </span> per definire un'area in cui tutti i tag di impaginazione si riferiscono a un'impostazione di impaginazione specifica nel caso in cui siano definite poche impostazioni di navigazione pagina. </p> </td> 
+   <td colname="col2"> <p>Utilizzare il <span class="codeph"> tag di impaginazione guidata </span> per definire un'area in cui tutti i tag di impaginazione si riferiscono a un'impostazione di impaginazione specifica, nel caso in cui siano definite poche impostazioni di navigazione pagina. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>13 </p> </td> 
@@ -1107,7 +1114,7 @@ Utilizzate i seguenti tag per testare e visualizzare lo store in cui si trova l&
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;nome-area-guida="area"&gt; &lt;zona-area-guida&gt; &lt;/zona-se-guidata&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Questo insieme di tag consente di verificare se una zona è attualmente visualizzata. È utile quando in altre aree della pagina sono presenti contenuti che si desidera visualizzare solo quando viene visualizzata la zona. </p> </td> 
+   <td colname="col2"> <p>Questo insieme di tag consente di verificare se una zona è attualmente visualizzata. È utile quando altrove sulla pagina sono presenti contenuti che si desidera visualizzare solo quando la zona è visualizzata. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1205,7 +1212,7 @@ I seguenti tag sono disponibili per consentire di eseguire operazioni più avanz
   <tr> 
    <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Updated to match search-eng, 2/1/2013--> <span class="codeph"> &lt;percorso-corrente-guidata [escape="html|url|js|json|0"] /&gt; </span> </p> </td> 
+     <!--Updated to match search-eng, 2/1/2013--> <span class="codeph"> &lt;percorso-corrente-guidato [escape="html|url|js|json|0"] /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Fornisce il percorso corrente utilizzato. In genere viene utilizzato per creare un collegamento che viene aggiunto a un nuovo parametro alla ricerca esistente. Per impostazione predefinita, il percorso è privo di URL. È possibile specificare quale modalità di escape si desidera utilizzare tramite il parametro escape. </p> <p>Esempio: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="&lt;guided-current-path&nbsp;/&gt;&amp;lang=fr"&gt; 
       French&nbsp;Version </code> </p> <p>In questo esempio, una regola di elaborazione della ricerca utilizza lang per selezionare la versione francese. </p> <p>Il percorso corrente ha sempre almeno un parametro di query. Se non esistono altri parametri di query, viene impostato su <span class="codeph"> q=* </span> per facilitare l'aggiunta di ulteriori parametri. </p> </td> 
   </tr> 
@@ -1220,7 +1227,7 @@ I seguenti tag sono disponibili per consentire di eseguire operazioni più avanz
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
-     <!--Updated to match search-eng, 2/1/2013--> <span class="codeph"> &lt;nome utente-query-param="parametro_query" [escape="html|url"] /&gt; </span> </p> </td> 
+     <!--Updated to match search-eng, 2/1/2013--> <span class="codeph"> &lt;nome utente-param-query-guidate="parametro_query" [escape="html|url"] /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Consente di acquisire il valore esistente di un parametro di query nell'URL. Se il parametro non esiste, questo tag restituisce una stringa vuota. Se non si specifica un'opzione di escape, la stringa restituita viene generata automaticamente in HTML, è possibile specificare l'escape HTML o URL. </p> <p>Esempio: </p> <p> 
 
     &amp;lt;Guest-query-param&amp;nbsp;gsname=&quot;q&quot;&amp;nbsp;/&amp;gt;
@@ -1269,7 +1276,7 @@ I seguenti tag sono disponibili per consentire di eseguire operazioni più avanz
   <tr> 
    <td colname="col01"> <p>8 </p> </td> 
    <td colname="col1"> <p> 
-     <!--NEW 1/17/2013--> <span class="codeph"> &lt;ricerca guidata-se-fall-through&gt;&lt;/ricerca guidata-se-fall-through&gt; </span> </p> </td> 
+     <!--NEW 1/17/2013--> <span class="codeph"> &lt;ricerca guidata-se-fall-through&gt;&lt;/guidata-se-fall-through&gt; </span> </p> </td> 
    <td colname="col2"> <p>Verifica se il numero di ricerche di base è maggiore di uno. </p> </td> 
   </tr> 
   <tr> 
@@ -1360,13 +1367,13 @@ I seguenti tag sono disponibili per consentire di eseguire operazioni più avanz
   </tr> 
   <tr> 
    <td colname="col01"> <p>25 </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;modalità di simulazione-guida&gt; &lt;modalità guidata-altro-simulatore&gt; &lt;/modalità guidata-se-simulatore&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;modalità guidata se-simulatore&gt; &lt;modalità guidata-altro-simulatore&gt; &lt;/modalità guidata-se-simulatore-modalità&gt; </span> </p> </td> 
    <td colname="col2"> <p>Consente di rilevare quando si visualizza la ricerca in Simulator o in Visual Rule Builder. In genere viene utilizzato per visualizzare ulteriori informazioni di debug. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>26 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guida-se-tnt-business-rules&gt; &lt;guida-else-tnt-business-rules&gt; &lt;/guidata-se-tnt-business-rules&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Consente di rilevare se esistono regole di business che fanno riferimento a una campagna <span class="keyword"> Adobe Target </span> . In genere viene utilizzato come parte dell'integrazione con <span class="keyword"> Adobe Target </span> per impedire che i server <span class="keyword"> Target </span> vengano colpiti quando non è necessario. </p> </td> 
+   <td colname="col2"> <p>Consente di rilevare se sono presenti regole di business che fanno riferimento a una <span class="keyword"> campagna Adobe Target </span> . Viene normalmente utilizzato come parte dell'integrazione con <span class="keyword"> Adobe Target </span> per impedire che i server <span class="keyword"> Target </span> vengano colpiti quando non è necessario. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>27 </p> </td> 
@@ -1420,7 +1427,7 @@ Consultate [Cercare i tag](../c-appendices/c-templates.md#reference_F7AA3FF60231
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;General&gt;&lt;/general&gt; </span> </p> </td> 
-   <td colname="col2"> <p>I tag racchiudono i tag dei modelli di ricerca che forniscono dati di riepilogo in base al set di risultati. In genere, questi tag contengono tag di ricerca per il numero totale di risultati, il risultato inferiore e il risultato più alto. È possibile definire un numero qualsiasi di campi globali aggiuntivi desiderati con il tag campo <span class="codeph"> generale </span> , come nell'esempio seguente: </p> <p> <code class="syntax html"> &lt;general&gt; 
+   <td colname="col2"> <p>I tag racchiudono i tag dei modelli di ricerca che forniscono dati di riepilogo basati sul set di risultati. In genere, questi tag contengono tag di ricerca per il numero totale di risultati, il risultato inferiore e il risultato più alto. È possibile definire un numero qualsiasi di campi globali aggiuntivi desiderati con il tag campo <span class="codeph"> generale </span> , come nell'esempio seguente: </p> <p> <code class="syntax html"> &lt;general&gt; 
       &nbsp;&nbsp;&lt;total&gt;&lt;search-total&nbsp;/&gt;&lt;/total&gt; 
       &nbsp;&nbsp;&lt;lower&gt;&lt;search-lower&nbsp;/&gt;&lt;/lower&gt; 
       &nbsp;&nbsp;&lt;upper&gt;&lt;search-upper&nbsp;/&gt;&lt;/upper&gt; 
@@ -1638,7 +1645,7 @@ Consultate [I tag](../c-appendices/c-templates.md#section_D4DC7B4560144663972E8D
   <tr> 
    <td colname="col01"> <p>12 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-display-field-values name="field-name"&gt; ...&lt;search-display-field-values&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Questo tag crea un ciclo per l’enumerazione dei valori dei campi di metadati (url, title, desc, keys, target, body, alt, data, charset e lingua o campi definiti in <span class="uicontrol"> Opzioni </span> &gt; <span class="uicontrol"> Metadati </span> &gt; <span class="uicontrol"> Definizioni </span>) per il risultato corrente. Non nidificate questo tag all'interno di un altro tag <span class="codeph"> &lt;search-display-field-values&gt; </span> . L'attributo <span class="codeph"> name </span> specifica il nome del campo contenente i valori da enumerare. Questo tag è particolarmente utile per i campi con l’attributo <span class="uicontrol"> Consenti elenchi </span> selezionato (in <span class="uicontrol"> Opzioni </span> &gt; <span class="uicontrol"> Metadati </span> &gt; <span class="uicontrol"> Definizioni </span>). </p> </td> 
+   <td colname="col2"> <p>Questo tag crea un ciclo per l’enumerazione dei valori dei campi di metadati (url, title, desc, keys, target, body, alt, data, charset e lingua o campi definiti in <span class="uicontrol"> Opzioni </span> &gt; <span class="uicontrol"> Metadati </span> &gt; <span class="uicontrol"> Definizioni </span>) per il risultato corrente. Non nidificate questo tag all'interno di un altro tag <span class="codeph"> &lt;search-display-field-values&gt; </span> . L'attributo <span class="codeph"> name </span> specifica il nome del campo contenente i valori da enumerare. Questo tag è particolarmente utile per i campi con l’attributo <span class="uicontrol"> Elenchi consentiti  </span> selezionato (in <span class="uicontrol"> Opzioni </span> &gt; <span class="uicontrol"> Metadati </span> &gt; <span class="uicontrol"> Definizioni </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>13 </p> </td> 
@@ -1753,12 +1760,12 @@ Consultate [I tag](../c-appendices/c-templates.md#section_D4DC7B4560144663972E8D
   <tr> 
    <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-link target="frame-name" hbx-enable="yes/no" hbx-linboy-name="field-name" hbx-linboy-none="text" hbx-linboy-length="XX" &gt; ... &lt;/search-link&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Questa coppia di tag crea un collegamento di ancoraggio intorno all’HTML tra di essi. Quando si fa clic sul collegamento, viene visualizzata la pagina dei risultati. Un attributo di destinazione facoltativo specifica la finestra con nome in cui i browser compatibili con i frame devono visualizzare la pagina dei risultati. </p> <p>Impostate l'attributo hbx-enabled su "yes" per sfruttare le analisi disponibili tramite HBX. Impostate hbx-linboy-name sul nome di un campo Meta-data da monitorare. Ad esempio, per tenere traccia dei risultati di ricerca in base al numero SKU, impostare hbx-line-name sul nome del campo Meta-data che contiene le informazioni SKU. </p> <p>I campi tipo data non sono attualmente supportati. Il valore hbx-linboy-name viene aggiunto all’ID del collegamento nell’ancoraggio generato. Il valore dell'attributo hbx-linboy-none viene aggiunto all'ID del collegamento ogni volta che il campo metadati denominato è vuoto. Il valore di hbx-linboy-length limita il numero di caratteri recuperati e visualizzati dal tag Meta. Il numero predefinito di caratteri è 12. </p> </td> 
+   <td colname="col2"> <p>Questa coppia di tag crea un collegamento di ancoraggio intorno all’HTML tra di essi. Quando si fa clic sul collegamento, viene visualizzata la pagina dei risultati. Un attributo di destinazione facoltativo specifica la finestra con nome in cui i browser compatibili con i frame devono visualizzare la pagina dei risultati. </p> <p>Impostate l'attributo hbx-enabled su "yes" per sfruttare l'analisi disponibile tramite HBX. Impostate hbx-linboy-name sul nome di un campo Meta-data da monitorare. Ad esempio, per tenere traccia dei risultati di ricerca in base al numero SKU, impostare hbx-line-name sul nome del campo Meta-data che contiene le informazioni SKU. </p> <p>I campi tipo data non sono attualmente supportati. Il valore hbx-linboy-name viene aggiunto all’ID del collegamento nell’ancoraggio generato. Il valore dell'attributo hbx-linboy-none viene aggiunto all'ID del collegamento ogni volta che il campo metadati denominato è vuoto. Il valore di hbx-linboy-length limita il numero di caratteri recuperati e visualizzati dal tag Meta. Il numero predefinito di caratteri è 12. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-smart-link target="frame-name" hbx-enable="yes/no" hbx-linboy-name="field-name" hbx-linboy-none="text" hbx-linboy-length="XX"&gt; ... &lt;/search-smart-link&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Questa coppia di tag è simile a <span class="codeph"> &lt;search-link&gt; ... &lt;/search-link&gt; </span> tag. Quando si fa clic sui collegamenti di ancoraggio generati, viene visualizzata la pagina dei risultati, ma con lo scorrimento della pagina fino al tag di ancoraggio più vicino prima del risultato. Per i collegamenti PDF, il visualizzatore Acrobat visualizza la pagina che contiene il risultato. Un attributo di destinazione facoltativo specifica la finestra con nome in cui i browser compatibili con i frame devono visualizzare la pagina dei risultati. </p> <p>Impostate l'attributo hbx-enabled su "yes" per sfruttare le analisi disponibili tramite HBX. Impostate hbx-linboy-name sul nome di un campo Meta-data da monitorare. Ad esempio, per tenere traccia dei risultati di ricerca in base al numero SKU, impostare hbx-line-name sul nome del campo Meta-data che contiene le informazioni SKU. </p> <p>I campi tipo data non sono attualmente supportati. Il valore hbx-linboy-name viene aggiunto all’ID del collegamento nell’ancoraggio generato. Il valore dell'attributo hbx-linboy-none viene aggiunto all'ID del collegamento ogni volta che il campo metadati denominato è vuoto. Il valore di hbx-linboy-length limita il numero di caratteri recuperati e visualizzati dal tag Meta. Il numero predefinito di caratteri è 12. </p> </td> 
+   <td colname="col2"> <p>Questa coppia di tag è simile a <span class="codeph"> &lt;search-link&gt; ... &lt;/search-link&gt; </span> tag. Quando si fa clic sui collegamenti di ancoraggio generati, viene visualizzata la pagina dei risultati, ma con lo scorrimento della pagina fino al tag di ancoraggio più vicino prima del risultato. Per i collegamenti PDF, il visualizzatore Acrobat  visualizza la pagina che contiene il risultato. Un attributo di destinazione facoltativo specifica la finestra con nome in cui i browser compatibili con i frame devono visualizzare la pagina dei risultati. </p> <p>Impostate l'attributo hbx-enabled su "yes" per sfruttare l'analisi disponibile tramite HBX. Impostate hbx-linboy-name sul nome di un campo Meta-data da monitorare. Ad esempio, per tenere traccia dei risultati di ricerca in base al numero SKU, impostare hbx-line-name sul nome del campo Meta-data che contiene le informazioni SKU. </p> <p>I campi tipo data non sono attualmente supportati. Il valore hbx-linboy-name viene aggiunto all’ID del collegamento nell’ancoraggio generato. Il valore dell'attributo hbx-linboy-none viene aggiunto all'ID del collegamento ogni volta che il campo metadati denominato è vuoto. Il valore di hbx-linboy-length limita il numero di caratteri recuperati e visualizzati dal tag Meta. Il numero predefinito di caratteri è 12. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
@@ -1949,7 +1956,7 @@ I seguenti tag avanzati restituiscono valori di campo e dati correlati dall’in
 
 ## Tag loop elenco valori campo {#section_0717FA09F0FC449CB916883B0500A60E}
 
-I seguenti tag avanzati enumerano e producono i valori dei campi e i dati correlati dall&#39;intero set di risultati di ricerca utilizzando un costrutto di ripetizione. Questi tag producono solo output per i campi specificati dai parametri `sp-sfvl-field` CGI nella query di ricerca.
+I seguenti tag avanzati enumerano e restituiscono i valori dei campi e i dati correlati dall&#39;intero set di risultati di ricerca utilizzando un costrutto di looping. Questi tag producono solo output per i campi specificati dai parametri `sp-sfvl-field` CGI nella query di ricerca.
 
 <table> 
  <thead> 
@@ -2294,7 +2301,7 @@ Tag che consentono di controllare lo stato di selezione predefinito per le casel
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-select&gt; ... &lt;/search-select&gt; </span> </p> <p> <span class="codeph"> &lt;opzione di ricerca&gt; ... &lt;/search-option&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Le caselle di riepilogo a discesa in un tag <span class="codeph"> &lt;form&gt; </span> iniziano con un tag <span class="codeph"> &lt;select&gt; </span> e terminano con un tag <span class="codeph"> &lt;/select&gt; </span> . Il <span class="codeph"> nome </span> del parametro CGI associato è elencato all'interno del tag <span class="codeph"> &lt;select&gt; </span> . Il tag <span class="codeph"> &lt;select&gt; </span> è un elenco di <span class="codeph"> &lt;option&gt; </span> tag che specificano i valori da visualizzare all'interno della casella di riepilogo. </p> <p>I <span class="codeph"> &lt;search-select&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span>, <span class="codeph"> &lt;search-option&gt; </span>e <span class="codeph"> &lt;/search-option&gt; </span> forniscono funzionalità simili al <span class="codeph"> &lt;search-input&gt; </span> tag. In altre parole, la parola <span class="codeph"> selezionata </span> viene aggiunta automaticamente alla fine del tag <span class="codeph"> &lt;opzione&gt; </span> inviato al browser se il <span class="codeph"> nome </span> nel tag &lt;search-select&gt; <span class="codeph"> è elencato come parametro CGI e se il valore </span> <span class="codeph"> </span> <span class="codeph"> </span> <span class="codeph"> </span> di tale parametro CGI è elencato come il valore  in un particolare tag &lt;search-option&gt;. In questo modo, è possibile impostare automaticamente la casella di riepilogo predefinita nel risultato della ricerca come la query corrente. </p> <p>Ad esempio, una casella di riepilogo tipica avrà il seguente aspetto: </p> <p> <code class="syntax html"> &lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
+   <td colname="col2"> <p>Le caselle di riepilogo a discesa in un tag <span class="codeph"> &lt;form&gt; </span> iniziano con un tag <span class="codeph"> &lt;select&gt; </span> e terminano con un tag <span class="codeph"> &lt;/select&gt; </span> . Il <span class="codeph"> nome </span> del parametro CGI associato è elencato all'interno del tag <span class="codeph"> &lt;select&gt; </span> . Il tag <span class="codeph"> &lt;select&gt; </span> è un elenco di <span class="codeph"> &lt;option&gt; </span> tag che specificano i valori da visualizzare all'interno della casella di riepilogo. </p> <p>I <span class="codeph"> &lt;search-select&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span>, <span class="codeph"> &lt;search-option&gt; </span>e <span class="codeph"> &lt;/search-option&gt; </span> offrono funzionalità simili al <span class="codeph"> &lt;search-input&gt; </span> tag . In altre parole, la parola <span class="codeph"> selezionata </span> viene aggiunta automaticamente alla fine del tag <span class="codeph"> &lt;opzione&gt; </span> inviato al browser se il <span class="codeph"> nome </span> nel tag &lt;search-select&gt; <span class="codeph"> è elencato come parametro CGI e se il valore </span> <span class="codeph"> </span> <span class="codeph"> </span> <span class="codeph"> </span> di tale parametro CGI è elencato come il valore  in un particolare tag &lt;search-option&gt;. In questo modo, è possibile impostare automaticamente la casella di riepilogo predefinita nel risultato della ricerca come la query corrente. </p> <p>Ad esempio, una casella di riepilogo tipica avrà il seguente aspetto: </p> <p> <code class="syntax html"> &lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
       &lt;option&nbsp;value="any"&nbsp;selected&gt;Anywhere&lt;/option&gt; 
       &lt;option&nbsp;value="title"&gt;Title&lt;/option&gt; 
       &lt;option&nbsp;value="desc"&gt;Description&lt;/option&gt; 
@@ -2575,19 +2582,19 @@ La tabella seguente contiene gli identificatori della lingua per ciascuna lingua
   </tr> 
   <tr> 
    <td colname="col1"> <p>Portoghese (Brasile) </p> </td> 
-   <td colname="col2"> <p> pt_BR </p> </td> 
+   <td colname="col2"> <p> sk_BR </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Portoghese (Portogallo) </p> </td> 
-   <td colname="col2"> <p> pt_PT </p> </td> 
+   <td colname="col2"> <p> ru </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Russo (ex Unione Sovietica) </p> </td> 
-   <td colname="col2"> <p> ru_SU </p> </td> 
+   <td colname="col2"> <p> Portogallo </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Slovacco (Slovacchia) </p> </td> 
-   <td colname="col2"> <p> sk_SK </p> </td> 
+   <td colname="col2"> <p> ) sk_SK </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Slovacco (Slovenia) </p> </td> 
