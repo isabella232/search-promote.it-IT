@@ -8,7 +8,10 @@ title: Informazioni sul menu Ricerca
 topic: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '11182'
+ht-degree: 1%
 
 ---
 
@@ -56,82 +59,78 @@ Per ottenere risultati di ricerca più specifici, potete utilizzare i seguenti s
   <tr> 
    <td colname="col1"> <p>Utilizzare più parole </p> </td> 
    <td colname="col2"> <p>Esempio: 
-     <userinput>
-       il nostro prodotto gratuito 
-     </userinput> </p> <p>Le query con più parole restituiscono risultati più precisi rispetto alle query con una sola parola. </p> <p>Ad esempio, 
-     <userinput>
-       il nostro prodotto gratuito 
-     </userinput> restituisce risultati più rilevanti rispetto a 
-     <userinput>
-       prodotto 
-     </userinput>. </p> <p>Ricorda che i risultati rilevanti vengono restituiti anche se non contengono tutti i termini della query. </p> </td> 
+     <code>
+       our free product 
+     </code> </p> <p>Le query con più parole restituiscono risultati più precisi rispetto alle query con una sola parola. </p> <p>Ad esempio, <code>
+       our free product 
+     </code> restituisce risultati più rilevanti rispetto a <code>
+       product 
+     </code>. </p> <p>Ricorda che i risultati rilevanti vengono restituiti anche se non contengono tutti i termini della query. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Usa parole simili </p> </td> 
    <td colname="col2"> <p>Esempio: 
-     <userinput>
-       sicurezza della privacy 
-     </userinput> </p> <p>Più parole simili possono essere utilizzate in una query di ricerca, più rilevanti saranno i risultati della ricerca. </p> </td> 
+     <code>
+       safe secure privacy security 
+     </code> </p> <p>Più parole simili possono essere utilizzate in una query di ricerca, più rilevanti saranno i risultati della ricerca. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Utilizzare la maiuscola appropriata </p> </td> 
    <td colname="col2"> <p>Esempio: 
-     <userinput>
-       Riferimento modello di ricerca 
-     </userinput> </p> <p>Capitalizzare i nomi propri. Se si utilizza una parola minuscola, il motore di ricerca corrisponde a tutte le maiuscole/minuscole della parola. </p> <p>Ad esempio, se immetti 
-     <userinput>
+     <code>
+       Search Template Reference 
+     </code> </p> <p>Capitalizzare i nomi propri. Se si utilizza una parola minuscola, il motore di ricerca corrisponde a tutte le maiuscole/minuscole della parola. </p> <p>Ad esempio, se digitate <code>
        search 
-     </userinput>, il motore di ricerca restituisce tutti i documenti che contengono le parole "search", "Search" e "SEARCH". Tuttavia, se digitate 
-     <userinput>
-       Ricerca 
-     </userinput>, il motore di ricerca restituisce documenti che contengono solo la parola maiuscola. </p> </td> 
+     </code>, il motore di ricerca restituisce tutti i documenti che contengono le parole "search", "Search" e "SEARCH". Tuttavia, se si digita <code>
+       Search 
+     </code>, il motore di ricerca restituisce documenti che contengono solo la parola maiuscola. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Usa virgolette </p> </td> 
    <td colname="col2"> <p>Esempio: 
-     <userinput>
-       "il nostro impegno" 
-     </userinput> </p> <p>Utilizzate le virgolette per trovare parole che devono apparire adiacenti, come "il nostro impegno verso di voi". Senza le citazioni circostanti, i risultati della ricerca includono le parole "nostro", "pegno", "a" e "tu", ma non necessariamente in quell'ordine. Al contrario, le parole possono essere visualizzate ovunque e in qualsiasi ordine all'interno del documento. </p> <p> se si utilizza il modulo di ricerca avanzata con pulsanti di scelta per <span class="uicontrol"> qualsiasi </span>, <span class="uicontrol"> tutto </span>e <span class="uicontrol"> frase </span>, è possibile utilizzare solo le virgolette quando <span class="uicontrol"> sono </span> selezionate. Le citazioni vengono ignorate se <span class="uicontrol"> è selezionata tutta </span> o <span class="uicontrol"> frase </span> . </p> </td> 
+     <code>
+       "our pledge to you" 
+     </code> </p> <p>Utilizzate le virgolette per trovare parole che devono apparire adiacenti, come "il nostro impegno verso di voi". Senza le citazioni circostanti, i risultati della ricerca includono le parole "nostro", "pegno", "a" e "tu", ma non necessariamente in quell'ordine. Al contrario, le parole possono essere visualizzate ovunque e in qualsiasi ordine all'interno del documento. </p> <p> se si utilizza il modulo di ricerca avanzata con pulsanti di scelta per <span class="uicontrol"> qualsiasi </span>, <span class="uicontrol"> tutto </span>e <span class="uicontrol"> frase </span>, è possibile utilizzare solo le virgolette quando <span class="uicontrol"> sono </span> selezionate. Le citazioni vengono ignorate se <span class="uicontrol"> è selezionata tutta </span> o <span class="uicontrol"> frase </span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Usa + (più) o - (meno) </p> </td> 
    <td colname="col2"> <p>Esempio: 
-     <userinput>
+     <code>
        +"template language" 
-     </userinput> </p> <p>Utilizzate + per indicare che nei risultati della ricerca deve essere visualizzato un termine o una frase di ricerca. </p> <p>Utilizzate - per indicare che un termine o una frase di ricerca deve essere assente dai risultati della ricerca. </p> <p>È necessario includere una frase tra virgolette. Non lasciate spazi tra il segno più o meno e il termine di ricerca, come nell’esempio precedente. </p> <p> se si utilizza il modulo di ricerca avanzata con pulsanti di scelta per <span class="uicontrol"> qualsiasi </span>, <span class="uicontrol"> tutto </span>e <span class="uicontrol"> frase </span>, è possibile utilizzare solo le virgolette quando <span class="uicontrol"> sono </span> selezionate. I modificatori più e meno vengono ignorati se <span class="uicontrol"> è selezionata tutta </span> o <span class="uicontrol"> frase </span> . </p> </td> 
+     </code> </p> <p>Utilizzate + per indicare che nei risultati della ricerca deve essere visualizzato un termine o una frase di ricerca. </p> <p>Utilizzate - per indicare che un termine o una frase di ricerca deve essere assente dai risultati della ricerca. </p> <p>È necessario includere una frase tra virgolette. Non lasciate spazi tra il segno più o meno e il termine di ricerca, come nell’esempio precedente. </p> <p> se si utilizza il modulo di ricerca avanzata con pulsanti di scelta per <span class="uicontrol"> qualsiasi </span>, <span class="uicontrol"> tutto </span>e <span class="uicontrol"> frase </span>, è possibile utilizzare solo le virgolette quando <span class="uicontrol"> sono </span> selezionate. I modificatori più e meno vengono ignorati se <span class="uicontrol"> è selezionata tutta </span> o <span class="uicontrol"> frase </span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Utilizzare le ricerche nei campi </p> </td> 
    <td colname="col2"> <p>Esempi: </p> <p> 
      <ul id="ul_F7CFF7652894402E8D19D6BA49792530"> 
       <li id="li_27492EF933C5437CB2C499746EC8CF39"> 
-       <userinput>
-         titolo:informazioni 
-       </userinput> </li> 
+       <code>
+         title:about 
+       </code> </li> 
       <li id="li_BD21505122104FD0B16A4DAD777811DA"> 
-       <userinput>
-         desc: "Il nostro team" 
-       </userinput> </li> 
+       <code>
+         desc:"Our Team" 
+       </code> </li> 
       <li id="li_8264630F8B3D46BF872EFEB1D69DB6BE"> 
-       <userinput>
-         chiavi:login 
-       </userinput> </li> 
+       <code>
+         keys:login 
+       </code> </li> 
       <li id="li_EBB81CBFC6DA45E99A524890DCD56E9F"> 
-       <userinput>
-         corpo:protezione 
-       </userinput> </li> 
+       <code>
+         body:security 
+       </code> </li> 
       <li id="li_6A852E35D6984A2C94144AB6C6D2DFA0"> 
-       <userinput>
+       <code>
          alt:"join now" 
-       </userinput> </li> 
+       </code> </li> 
       <li id="li_F4C5699360484D12ACD62BBFB84A7904"> 
-       <userinput>
+       <code>
          url:help 
-       </userinput> </li> 
+       </code> </li> 
       <li id="li_B2DBBA2239E74D98868D92B3EDEF5B51"> 
-       <userinput>
+       <code>
          target:Adobe 
-       </userinput> </li> 
+       </code> </li> 
      </ul> </p> <p>Le ricerche per i campi consentono di creare ricerche specifiche per le parole che vengono visualizzate in una parte specifica di un documento. </p> <p>È possibile eseguire una ricerca di campo nel testo del corpo (corpo:), nel testo del titolo (titolo:), nel testo alt (alt:), nella descrizione meta (desc:), nelle parole della chiave meta (chiavi:), nell’URL (url:) o nelle parole chiave meta target (target:). Utilizzate lettere minuscole per il nome del campo e immediatamente seguite da due punti. Non ci sono spazi tra i due punti e il termine di ricerca. </p> <p>Le ricerche dei campi sono seguite solo da una parola o una frase. Le frasi devono essere racchiuse tra virgolette. </p> <p>se si utilizza il modulo di ricerca avanzata con una casella di riepilogo per il nome del campo, è possibile immettere solo i nomi dei campi prima di una parola o di una frase quando <span class="uicontrol"> è </span> selezionata una qualsiasi. Se nella casella di riepilogo è selezionato un altro campo Modulo di ricerca avanzato, i nomi dei campi specifici vengono ignorati. </p> </td> 
   </tr> 
   <tr> 
@@ -139,27 +138,24 @@ Per ottenere risultati di ricerca più specifici, potete utilizzare i seguenti s
    <td colname="col2"> <p>Esempi: </p> <p> 
      <ul id="ul_D8E3867EB15641B0A6E55AD546CCB4DD"> 
       <li id="li_CB8B8FC15EB14B13BB33BB69F5206303"> 
-       <userinput>
+       <code>
          wh* 
-       </userinput> </li> 
+       </code> </li> 
       <li id="li_5350A934648C4C81BD6C0875061B426B"> 
-       <userinput>
+       <code>
          "wh* are" 
-       </userinput> </li> 
+       </code> </li> 
       <li id="li_7965A2F7186F40039D2F0736299D11B1"> 
-       <userinput>
+       <code>
          415-*-* 
-       </userinput> </li> 
-     </ul> </p> <p>Le ricerche con caratteri jolly consentono di espandere il numero di corrispondenze per una particolare richiesta. Il carattere * viene utilizzato come carattere jolly. </p> <p>Ad esempio, se cerchi 
-     <userinput>
+       </code> </li> 
+     </ul> </p> <p>Le ricerche con caratteri jolly consentono di espandere il numero di corrispondenze per una particolare richiesta. Il carattere * viene utilizzato come carattere jolly. </p> <p>Ad esempio, la ricerca <code>
        wh* 
-     </userinput> trova le parole "cosa", "perché", "quando", "se" e qualsiasi altra parola che inizia con "wh". Cercando *lei* trova le parole "qui", "se", "insieme", "raduno", e qualsiasi altra parola che contenga "lei" ovunque all'interno della parola. </p> <p>È possibile combinare i caratteri jolly con i modificatori + e -, le virgolette per le frasi e gli identificatori di ricerca dei campi. </p> <p>La ricerca 
-     <userinput>
+     </code> trova le parole "cosa", "perché", "quando", "se" e qualsiasi altra parola che inizia con "wh". Cercando *lei* trova le parole "qui", "se", "insieme", "raduno", e qualsiasi altra parola che contenga "lei" ovunque all'interno della parola. </p> <p>È possibile combinare i caratteri jolly con i modificatori + e -, le virgolette per le frasi e gli identificatori di ricerca dei campi. </p> <p>La ricerca <code>
        +wh* -se*ch 
-     </userinput> trova tutte le pagine con una parola che inizia con "wh" e non contiene una parola che inizia con "se" e termina con "ch". </p> <p>La ricerca 
-     <userinput>
+     </code> trova tutte le pagine con una parola che inizia con "wh" e non contiene una parola che inizia con "se" e termina con "ch". </p> <p>La ricerca <code>
        "wh* are" 
-     </userinput> trova le frasi "dove sono", "cosa sono", "perché sono", e così via. </p> </td> 
+     </code> trova le frasi "dove sono", "cosa sono", "perché sono", e così via. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -212,7 +208,7 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       </tr> 
       <tr> 
       <td colname="col1"> <p>Account </p> </td> 
-      <td colname="col2"> <p>Questa opzione è disponibile solo se come origine avete scelto <span class="uicontrol"> Search&amp;Promote </span> . </p> <p>Consente di selezionare l'account di ricerca/merchandising del sito a cui si desidera eseguire la ricerca. In genere, una ricerca viene eseguita nell'account in uso. Tuttavia, il modello di presentazione può utilizzare una ricerca back-end per qualsiasi altro account. </p> </td> 
+      <td colname="col2"> <p>Questa opzione è disponibile solo se avete scelto <span class="uicontrol"> Search&amp;Promote </span> come origine. </p> <p>Consente di selezionare l'account di ricerca/merchandising del sito a cui si desidera eseguire la ricerca. In genere, una ricerca viene eseguita nell'account in uso. Tuttavia, il modello di presentazione può utilizzare una ricerca back-end per qualsiasi altro account. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome server/IP </p> </td> 
@@ -240,7 +236,7 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tipo Di Ricerca </p> </td> 
-      <td colname="col2"> <p>Questa opzione è disponibile solo se come origine avete scelto <span class="uicontrol"> Search&amp;Promote </span> . </p> <p>Consente di selezionare uno dei tre tipi di ricerca seguenti. </p> <p> 
+      <td colname="col2"> <p>Questa opzione è disponibile solo se avete scelto <span class="uicontrol"> Search&amp;Promote </span> come origine. </p> <p>Consente di selezionare uno dei tre tipi di ricerca seguenti. </p> <p> 
         <ul id="ul_2F6FA9EFD8DB49EEAB866C3D070E2644"> 
           <li id="li_ECFEBEDD86FF4DE2BB768423B3B91B5E"> <span class="uicontrol"> tutto </span> <p>Cerca documenti che contengono tutte le parole della stringa di query. </p> <p>L'uso di "+" e "-" prima che le parole di ricerca siano disattivate e tali caratteri vengano ignorati. </p> </li> 
           <li id="li_62EB215BDDE74DF0BF76B3BD5B96776F"> <span class="uicontrol"> qualsiasi </span> <p>È consentito l'uso di prefissi di parole "+" e "-". </p> </li> 
@@ -249,11 +245,11 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       </tr> 
       <tr> 
       <td colname="col1"> <p>Raccolta </p> </td> 
-      <td colname="col2"> <p>Questa opzione è disponibile solo se come origine avete scelto <span class="uicontrol"> Search&amp;Promote </span> . </p> <p>Identifica la raccolta all'interno dell'indice in cui si desidera eseguire la ricerca. </p> </td> 
+      <td colname="col2"> <p>Questa opzione è disponibile solo se avete scelto <span class="uicontrol"> Search&amp;Promote </span> come origine. </p> <p>Identifica la raccolta all'interno dell'indice in cui si desidera eseguire la ricerca. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Promosearch </p> </td> 
-      <td colname="col2"> <p>Questa opzione è disponibile solo se come origine avete scelto <span class="uicontrol"> Search&amp;Promote </span> . </p> <p>Consente di utilizzare una selezione casuale dai risultati della ricerca, in base al <span class="uicontrol"> numero di risultati </span> specificato. </p> <p>Promosearch è un concetto legacy. Di conseguenza, si consiglia di utilizzare il nuovo sistema di gestione dei banner nella ricerca del sito/merchandising. </p> <p>Consultate <a href="../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA" type="concept" format="dita" scope="local"> I Banner </a>. </p> </td> 
+      <td colname="col2"> <p>Questa opzione è disponibile solo se avete scelto <span class="uicontrol"> Search&amp;Promote </span> come origine. </p> <p>Consente di utilizzare una selezione casuale dai risultati della ricerca, in base al <span class="uicontrol"> numero di risultati </span> specificato. </p> <p>Promosearch è un concetto legacy. Di conseguenza, si consiglia di utilizzare il nuovo sistema di gestione dei banner nella ricerca del sito/merchandising. </p> <p>Consultate <a href="../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA" type="concept" format="dita" scope="local"> I Banner </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Applica parametri facet </p> </td> 
@@ -345,7 +341,7 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       </tr> 
       <tr> 
       <td colname="col1"> <p>Account </p> </td> 
-      <td colname="col2"> <p>Questa opzione è disponibile solo se come origine avete scelto <span class="uicontrol"> Search&amp;Promote </span> . </p> <p>Consente di selezionare l'account di ricerca/merchandising del sito a cui si desidera eseguire la ricerca. In genere, una ricerca viene eseguita nell'account in uso. Tuttavia, il modello di presentazione può utilizzare una ricerca back-end per qualsiasi altro account. </p> </td> 
+      <td colname="col2"> <p>Questa opzione è disponibile solo se avete scelto <span class="uicontrol"> Search&amp;Promote </span> come origine. </p> <p>Consente di selezionare l'account di ricerca/merchandising del sito a cui si desidera eseguire la ricerca. In genere, una ricerca viene eseguita nell'account in uso. Tuttavia, il modello di presentazione può utilizzare una ricerca back-end per qualsiasi altro account. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome server/IP </p> </td> 
@@ -373,7 +369,7 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tipo Di Ricerca </p> </td> 
-      <td colname="col2"> <p>Questa opzione è disponibile solo se come origine avete scelto <span class="uicontrol"> Search&amp;Promote </span> . </p> <p>Consente di selezionare uno dei tre tipi di ricerca seguenti. </p> <p> 
+      <td colname="col2"> <p>Questa opzione è disponibile solo se avete scelto <span class="uicontrol"> Search&amp;Promote </span> come origine. </p> <p>Consente di selezionare uno dei tre tipi di ricerca seguenti. </p> <p> 
         <ul id="ul_E1D8B3DE9DB24DE4813D53F6298A03A6"> 
           <li id="li_C3DD7AA7699B477A9EE0731CFC012630"> <span class="uicontrol"> tutto </span> <p>Cerca documenti che contengono tutte le parole della stringa di query. </p> <p>L'uso di "+" e "-" prima che le parole di ricerca siano disattivate e tali caratteri vengano ignorati. </p> </li> 
           <li id="li_4C66B9EFEFA042908A4D3730F9F54EB0"> <span class="uicontrol"> qualsiasi </span> <p>È consentito l'uso di prefissi di parole "+" e "-". </p> </li> 
@@ -382,11 +378,11 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       </tr> 
       <tr> 
       <td colname="col1"> <p>Raccolta </p> </td> 
-      <td colname="col2"> <p>Questa opzione è disponibile solo se come origine avete scelto <span class="uicontrol"> Search&amp;Promote </span> . </p> <p>Identifica la raccolta all'interno dell'indice in cui si desidera eseguire la ricerca. </p> </td> 
+      <td colname="col2"> <p>Questa opzione è disponibile solo se avete scelto <span class="uicontrol"> Search&amp;Promote </span> come origine. </p> <p>Identifica la raccolta all'interno dell'indice in cui si desidera eseguire la ricerca. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Promosearch </p> </td> 
-      <td colname="col2"> <p>Questa opzione è disponibile solo se come origine avete scelto <span class="uicontrol"> Search&amp;Promote </span> . </p> <p>Consente di utilizzare una selezione casuale dai risultati della ricerca, in base al <span class="uicontrol"> numero di risultati </span> specificato. </p> <p>Promosearch è un concetto legacy. Di conseguenza, si consiglia di utilizzare il nuovo sistema di gestione dei banner nella ricerca del sito/merchandising. </p> <p>Consultate <a href="../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA" type="concept" format="dita" scope="local"> I Banner </a>. </p> </td> 
+      <td colname="col2"> <p>Questa opzione è disponibile solo se avete scelto <span class="uicontrol"> Search&amp;Promote </span> come origine. </p> <p>Consente di utilizzare una selezione casuale dai risultati della ricerca, in base al <span class="uicontrol"> numero di risultati </span> specificato. </p> <p>Promosearch è un concetto legacy. Di conseguenza, si consiglia di utilizzare il nuovo sistema di gestione dei banner nella ricerca del sito/merchandising. </p> <p>Consultate <a href="../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA" type="concept" format="dita" scope="local"> I Banner </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Applica parametri facet </p> </td> 
@@ -986,7 +982,7 @@ Una volta che il sito Web è sottoposto a ricerca per indicizzazione, potete gen
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Adobe Recommendations </p> </td> 
-   <td colname="col2"> <p>Recommendations i feed forniscono funzionalità di sindacazione dei dati con Adobe Recommendations. </p> </td> 
+   <td colname="col2"> <p>Recommendations i feed forniscono funzionalità di sindacazione dei dati con  Adobe Recommendations. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Feed generico </p> </td> 
@@ -1075,7 +1071,7 @@ t_creating_a_feed.xml
       <tr> 
       <td colname="col1"> <p>2 </p> </td> 
       <td colname="col2"> <p>Mappe campo </p> </td> 
-      <td colname="col3"> <p>Consente di mappare i campi di feed specifici del fornitore ai campi di metadati di ricerca del sito/merchandising. Questo passaggio di mappatura nella procedura guidata è importante perché consente ai feed di correlare le informazioni tra i campi nell'indice e i campi nei dati del feed. Nella maggior parte dei casi, ad eccezione dei feed <span class="wintitle"> generici </span>, le correlazioni vengono salvate in un modello di ricerca generato dinamicamente. </p> <p>Ogni riga della tabella Mappe <span class="wintitle"> campo </span> rappresenta una mappatura campo. Nella colonna Aggiungi/Rimuovi della tabella, fare clic su <span class="uicontrol"> + </span> per aggiungere una nuova riga di mappatura campo; fare clic su <span class="uicontrol"> - </span> per eliminare dalla tabella la riga di mappatura del campo attualmente selezionata. Per associare un campo di feed a un campo di ricerca del sito/merchandising, utilizzate i rispettivi elenchi a discesa per scegliere i campi desiderati. </p> <p> <b>Mappature dei campi per Adobe Recommendations</b> </p> <p>Il feed di dati di Recommendations è un file CSV, colonne di dati separati da virgole. L’ordine di aspetto di ciascuna mappatura nella tabella Mappe campo è importante in quanto determinano l’ordine delle colonne nel file di feed CSV. Crea le righe di mappature nel seguente ordine: ogni riga è obbligatoria: </p> <p> 
+      <td colname="col3"> <p>Consente di mappare i campi di feed specifici del fornitore ai campi di metadati di ricerca del sito/merchandising. Questo passaggio di mappatura nella procedura guidata è importante perché consente ai feed di correlare le informazioni tra i campi nell'indice e i campi nei dati del feed. Nella maggior parte dei casi, ad eccezione dei feed <span class="wintitle"> generici </span>, le correlazioni vengono salvate in un modello di ricerca generato dinamicamente. </p> <p>Ogni riga della tabella Mappe <span class="wintitle"> campo </span> rappresenta una mappatura campo. Nella colonna Aggiungi/Rimuovi della tabella, fare clic su <span class="uicontrol"> + </span> per aggiungere una nuova riga di mappatura campo; fare clic su <span class="uicontrol"> - </span> per eliminare dalla tabella la riga di mappatura del campo attualmente selezionata. Per associare un campo di feed a un campo di ricerca del sito/merchandising, utilizzate i rispettivi elenchi a discesa per scegliere i campi desiderati. </p> <p> <b>Mappature dei campi per  Adobe Recommendations</b> </p> <p>Il feed di dati di Recommendations è un file CSV, colonne di dati separati da virgole. L’ordine di aspetto di ciascuna mappatura nella tabella Mappe campo è importante in quanto determinano l’ordine delle colonne nel file di feed CSV. Crea le righe di mappature nel seguente ordine: ogni riga è obbligatoria: </p> <p> 
         <ol id="ol_49C739D04DD340168DC6C1F794544C35"> 
           <li id="li_A95D9C5A353746A3A0D38F200AC2EEA2"> id </li> 
           <li id="li_044763D4C7054CEB948C94590735D74F"> name </li> 
@@ -1229,10 +1225,9 @@ t_creating_a_feed.xml
           <!--If <uicontrol>Manual Upload</uicontrol> is dimmed (inactive), the account is currently processing this feed or another feed. An account only works with one feed at a time. --> </p> </li> 
         <li id="li_2D9ECAFB8E8544D39B486F7BC3DCE589"> <span class="uicontrol"> Metodo di caricamento </span> <p>La maggior parte dei feed offre due modi per distribuire i file: FTP e rete di contenuti ospitati. </p> <p>Il metodo di caricamento consigliato per l'invio del feed di dati è <span class="uicontrol"> FTP </span>. Google Merchant Center ospita un server FTP a questo scopo. Consulta la Guida di Google Merchant Center per informazioni sulla configurazione di un account Google FTP separato per questo feed Google Product Search. </p> 
           <ul id="ul_BC0D8B541068407883CAC948496DBD0A"> 
-          <li id="li_DB28CA23C94A4AF09E1A0EB06DF8F40C"> <span class="uicontrol"> FTP </span> <p>I server di ricerca e merchandising del sito utilizzano l'FTP passivo. </p> <p>L'FTP è l'unico modo per inviare un file a un altro server. </p> <p> <span class="uicontrol"> Server FTP </span> - Specifica il nome del server FTP. In questo caso, 
-            <userinput>
+          <li id="li_DB28CA23C94A4AF09E1A0EB06DF8F40C"> <span class="uicontrol"> FTP </span> <p>I server di ricerca e merchandising del sito utilizzano l'FTP passivo. </p> <p>L'FTP è l'unico modo per inviare un file a un altro server. </p> <p> <span class="uicontrol"> Server FTP </span> - Specifica il nome del server FTP. In questo caso, lo è <code>
               uploads.google.com 
-            </userinput>. Non includete il protocollo o il precedente "ftp://". </p> <p> <span class="uicontrol"> Nome utente FTP </span> - Specifica il nome dell'account FTP. </p> <p> <span class="uicontrol"> Password FTP </span> - Specifica la password dell'account FTP. </p> <p> <span class="uicontrol"> Nome file FTP </span> - Specifica il nome del file da trasmettere. Questo nome è un modello se il feed genera più file, in genere incrementando un numero alla fine del nome ma prima dell’estensione. Ad esempio: basename.xml, basename1.xml, basename2.xml, ... , basename-Nth.xml </p> <p> <span class="uicontrol"> Directory FTP </span> - Se è richiesto un percorso di directory specifico, inseritelo qui. Non includete il nome del file nel percorso. </p> </li> 
+            </code>. Non includete il protocollo o il precedente "ftp://". </p> <p> <span class="uicontrol"> Nome utente FTP </span> - Specifica il nome dell'account FTP. </p> <p> <span class="uicontrol"> Password FTP </span> - Specifica la password dell'account FTP. </p> <p> <span class="uicontrol"> Nome file FTP </span> - Specifica il nome del file da trasmettere. Questo nome è un modello se il feed genera più file, in genere incrementando un numero alla fine del nome ma prima dell’estensione. Ad esempio: basename.xml, basename1.xml, basename2.xml, ... , basename-Nth.xml </p> <p> <span class="uicontrol"> Directory FTP </span> - Se è richiesto un percorso di directory specifico, inseritelo qui. Non includete il nome del file nel percorso. </p> </li> 
           <li id="li_5990927146434DAF89273F4636D21437"> <span class="uicontrol"> Rete di contenuti ospitati </span> <p>Content Network è lo strumento di trasmissione dei file dai server Web di ricerca e merchandising dei siti. Il destinatario del feed lo richiama dai server Web utilizzando una richiesta HTTP. </p> <p> 
             <!--After the base filename is entered and the feed is successfully saved, the URL of the Content Network file is displayed on the Verification panel of the wizard. The URL becomes active after the feed is successfully processed. The vendor can get the feed data from this URL. Multiple files use the same URL path. However, be sure that you replace or change the filename according to the enumeration scheme. --> </p> </li> 
           </ul> </li> 
@@ -1298,7 +1293,7 @@ t_creating_a_feed.xml
           <li id="li_EAE504436CD84452BA04BE51855A2BEF"> <span class="uicontrol"> Rete di contenuti ospitati </span> <p>Content Network è il modo in cui distribuire i file dai server Web di ricerca e merchandising dei siti. Il destinatario del feed lo richiama dai server Web utilizzando una richiesta HTTP. </p> <p> 
             <!--After the base filename is entered and the feed is successfully saved, the URL of the Content Network file is displayed on the Verification panel of the wizard. The URL becomes active after the feed is successfully processed. The vendor can get the feed data from this URL. Multiple files use the same URL path. However, be sure that you replace or change the filename according to the enumeration scheme. --> </p> </li> 
           </ul> </li> 
-        </ul> <p>Entrambi i metodi di caricamento richiedono la specifica dell’URL utilizzato da Google per recuperare il sitemap, nel <span class="wintitle"> campo URL del sito principale </span> . Anche il nome del file sitemap è determinato qui. Se la mappa del sito è grande, potrebbero esistere più file e la convenzione di denominazione prevede di allegare un numero di indice alla fine del file a partire dal numero 1. Il primo file o file di indice non ha un indice, come in <span class="codeph"> sitemap.xml </span>, <span class="codeph"> sitemap1.xml </span>, <span class="codeph"> sitemap2.xml </span> ... sitemap12.xml <span class="codeph"> </span>. </p> <p>Se scegliete <span class="uicontrol"> Hosted Content Network </span> come metodo di caricamento, l’URL dei file ha gli stessi nomi file, ma l’URL ha il percorso e il nome host del servizio di hosting. Di conseguenza, potete reindirizzare le richieste per il sitemap alla rete di contenuti ospitati. Anche i file dovrebbero essere estratti dalla stessa posizione. </p> <p>Dopo che i file di feed sono stati creati e inviati alla destinazione intermedia, Google viene inserito in un ping e li informa che il feed sitemap è pronto. </p> </td> 
+        </ul> <p>Entrambi i metodi di caricamento richiedono la specifica dell’URL utilizzato da Google per recuperare il sitemap, nel <span class="wintitle"> campo URL del sito principale </span> . Anche il nome del file sitemap è determinato qui. Se la mappa del sito è grande, potrebbero esistere più file e la convenzione di denominazione prevede di allegare un numero di indice alla fine del file a partire dal numero 1. Il primo file o file di indice non ha un indice, come in <span class="codeph"> sitemap.xml </span>, <span class="codeph"> sitemap1.xml </span>, <span class="codeph"> sitemap2.xml </span> ... <span class="codeph"> sitemap12.xml </span>. </p> <p>Se scegliete <span class="uicontrol"> Hosted Content Network </span> come metodo di caricamento, l’URL dei file ha gli stessi nomi file, ma l’URL ha il percorso e il nome host del servizio di hosting. Di conseguenza, potete reindirizzare le richieste per il sitemap alla rete di contenuti ospitati. Anche i file dovrebbero essere estratti dalla stessa posizione. </p> <p>Dopo che i file di feed sono stati creati e inviati alla destinazione intermedia, Google viene inserito in un ping e li informa che il feed sitemap è pronto. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>5 </p> </td> 
