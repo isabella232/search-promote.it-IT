@@ -8,9 +8,9 @@ title: Informazioni sul menu Metadati
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8039'
 ht-degree: 1%
 
 ---
@@ -68,10 +68,9 @@ Prima che gli effetti della nuova definizione del tag meta siano visibili ai cli
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome/i tag meta </p> </td> 
-      <td colname="col2"> <p>Determina il contenuto associato al campo definito. </p> <p>L'elenco dei nomi può contenere fino a 255 caratteri. Inoltre, name può contenere qualsiasi carattere consentito nell'attributo name di un tag meta HTML. </p> <p>È possibile specificare più tag meta in un'unica definizione di campo. </p> <p>I valori multipli devono essere separati da virgola e il nome del tag meta più a sinistra trovato in una determinata pagina Web ha la precedenza. </p> <p>Ad esempio, si supponga di aver definito un campo denominato "auth". Al nome del campo sono associati i tag meta "author, dc.author". In questo caso, il contenuto del tag meta "author" viene indicizzato e ricercato su quello di "dc.author" se entrambi i tag meta vengono visualizzati su una pagina Web. </p> <p>I campi definiti dall’utente devono avere nella definizione almeno un nome di tag meta. I campi predefiniti non devono avere un tag meta associato. Tuttavia, se vengono specificati uno o più tag meta, il contenuto dei tag meta sostituisce l'origine dati corrente per ciascun tag. </p> <p>Ad esempio, se il tag meta "dc.title" è associato al campo "title" predefinito, il contenuto del tag meta "dc.title" viene indicizzato sopra a quello del tag 
-      <userinput>
+      <td colname="col2"> <p>Determina il contenuto associato al campo definito. </p> <p>L'elenco dei nomi può contenere fino a 255 caratteri. Inoltre, name può contenere qualsiasi carattere consentito nell'attributo name di un tag meta HTML. </p> <p>È possibile specificare più tag meta in un'unica definizione di campo. </p> <p>I valori multipli devono essere separati da virgola e il nome del tag meta più a sinistra trovato in una determinata pagina Web ha la precedenza. </p> <p>Ad esempio, si supponga di aver definito un campo denominato "auth". Al nome del campo sono associati i tag meta "author, dc.author". In questo caso, il contenuto del tag meta "author" viene indicizzato e ricercato su quello di "dc.author" se entrambi i tag meta vengono visualizzati su una pagina Web. </p> <p>I campi definiti dall’utente devono avere nella definizione almeno un nome di tag meta. I campi predefiniti non devono avere un tag meta associato. Tuttavia, se vengono specificati uno o più tag meta, il contenuto dei tag meta sostituisce l'origine dati corrente per ciascun tag. </p> <p>Ad esempio, se il tag meta "dc.title" è associato al campo "title" predefinito, il contenuto del tag meta "dc.title" viene indicizzato su quello del <code>
         &lt;title&gt; 
-      </userinput> per qualsiasi documento specifico. </p> <p>Esempi: </p> <p> 
+      </code> tag per qualsiasi documento specifico. </p> <p>Esempi: </p> <p> 
       <ul id="ul_0132E15FC19E4C0CA13CD5A12EA3BBEC"> 
       <li id="li_ECD3B194FECB4C2090CAEC8449320D3F"> dc.date </li> 
       <li id="li_09C76BC7AC7348859D01989697212E31"> description </li> 
@@ -96,38 +95,31 @@ Prima che gli effetti della nuova definizione del tag meta siano visibili ai cli
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Consenti elenchi </p> </td> 
-      <td colname="col2"> <p>Disponibile solo se è selezionato il tipo di dati <span class="uicontrol"> Testo </span>, o <span class="uicontrol"> Numero </span> . </p> <p>I valori delimitati da indice separato nel contenuto di metadati di questo campo. </p> <p>Ad esempio, il contenuto "Rosso, Giallo, Verde, Blu" viene trattato come quattro valori separati invece di uno quando è selezionata l’opzione "Consenti elenchi". Questo trattamento è particolarmente utile con la ricerca di intervallo (utilizzando 
-      <userinput>
+      <td colname="col1"> <p>elenchi consentiti  </p> </td> 
+      <td colname="col2"> <p>Disponibile solo se è selezionato il tipo di dati <span class="uicontrol"> Testo </span>, o <span class="uicontrol"> Numero </span> . </p> <p>I valori delimitati da indice separato nel contenuto di metadati di questo campo. </p> <p>Ad esempio, il contenuto "Rosso, Giallo, Verde, Blu" viene trattato come quattro valori separati invece di uno quando si seleziona " Elenchi consentiti". Questo trattamento è particolarmente utile con la ricerca intervallo (utilizzando <code>
         sp_q_min 
-      </userinput>, 
-      <userinput>
+      </code>, <code>
         sp_q_max 
-      </userinput>oppure 
-      <userinput>
+      </code>, o <code>
         sp_q_exact 
-      </userinput>) e con 
-      <userinput>
-        &lt;elenco valori-campo-ricerca&gt; 
-      </userinput>, 
-      <userinput>
+      </code>) e con <code>
+        &lt;search-field-value-list&gt; 
+      </code>, <code>
         &lt;search-field-values&gt; 
-      </userinput>, e 
-      <userinput>
+      </code>, e <code>
         &lt;search-display-field-values&gt; 
-      </userinput>. </p> <p>Non disponibile se è selezionato il tipo di dati Versione. </p> </td> 
+      </code>. </p> <p>Non disponibile se è selezionato il tipo di dati Versione. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Facet dinamico </p> </td> 
       <td colname="col2"> <p> 
-        <!--NEW 2/2/2014--> <p>Nota:  Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivarlo e utilizzarlo. Una volta attivato, viene visualizzato nell'interfaccia utente. </p> </p> <p>Imposta il facet identificato come dinamico. </p> <p>I facet sono composti sopra i campi dei tag meta. Un campo tag meta è un livello di ricerca di base basso livello di Adobe Search&amp;Promote. I facet fanno invece parte di GS (Guided Search), il livello di presentazione di alto livello di Adobe Search&amp;Promote. I facet dispongono di campi di tag meta, tuttavia, i campi di tag meta non conoscono i facet. </p> <p>Consultate <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> I facet dinamici </a>. </p> </td> 
+        <!--NEW 2/2/2014--> <p>Nota:  Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivarlo e utilizzarlo. Dopo essere stato attivato, viene visualizzato nell'interfaccia utente. </p> </p> <p>Imposta il facet identificato come dinamico. </p> <p>I facet sono composti sopra i campi dei tag meta. Un campo tag meta è un livello di ricerca di base basso di  Search&amp;Promote Adobe. I facet fanno invece parte di GS (Guided Search), il livello di presentazione di alto livello del Search&amp;Promote  Adobe. I facet dispongono di campi di tag meta, tuttavia, i campi di tag meta non conoscono i facet. </p> <p>Consultate <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> I facet dinamici </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Consenti deduplicazione </p> </td> 
-      <td colname="col2"> <p>Selezionare questa opzione per abilitare la deduplicazione per questo campo. In altre parole, consente di specificare il campo in fase di ricerca tramite 
-        <userinput>
+      <td colname="col2"> <p>Selezionare questa opzione per abilitare la deduplicazione per questo campo. Questo campo può essere specificato in fase di ricerca tramite il parametro <code>
           sp_dedupe_field 
-        </userinput> Cercate il parametro CGI. </p> <p>Consultate <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Cercare i parametri CGI </a>. </p> </td> 
+        </code> CGI di ricerca. </p> <p>Consultate <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Cercare i parametri CGI </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome tabella </p> </td> 
@@ -135,7 +127,7 @@ Prima che gli effetti della nuova definizione del tag meta siano visibili ai cli
       </tr> 
       <tr> 
       <td colname="col1"> <p>Delimitatori elenco </p> </td> 
-      <td colname="col2"> <p>Disponibile solo se <span class="uicontrol"> Consenti elenchi </span> è selezionata. </p> <p>Specifica quali caratteri separano i singoli valori dell'elenco. È possibile specificare più caratteri, ciascuno dei quali è trattato come un separatore di valori. </p> </td> 
+      <td colname="col2"> <p>Disponibile solo se <span class="uicontrol"> Elenchi consentiti </span> è selezionato. </p> <p>Specifica quali caratteri separano i singoli valori dell'elenco. È possibile specificare più caratteri, ciascuno dei quali è trattato come un separatore di valori. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ricerca per impostazione predefinita </p> </td> 
@@ -143,7 +135,7 @@ Prima che gli effetti della nuova definizione del tag meta siano visibili ai cli
       </tr> 
       <tr> 
       <td colname="col1"> <p>Campo aggiornamento verticale </p> </td> 
-      <td colname="col2"> <p> <p>Nota:  Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivarlo e utilizzarlo. Una volta attivato, viene visualizzato nell'interfaccia utente. </p> </p> <p>Imposta il campo identificato come campo Aggiornamento verticale. </p> <p>I campi Aggiornamento verticale sono candidati per l’aggiornamento mediante il processo di aggiornamento verticale ( <span class="uicontrol"> Indice </span> &gt; Aggiornamento <span class="uicontrol"> verticale </span>). A causa del modo in cui vengono eseguiti gli aggiornamenti verticali, non è possibile effettuare ricerche di contenuto in questi campi nelle ricerche in testo libero. Selezionando questa opzione, il contenuto del campo non viene aggiunto all'indice "word" durante qualsiasi operazione di indicizzazione. Consente inoltre di aggiornare il campo durante un'operazione di aggiornamento verticale. </p> <p>Per ulteriori informazioni sugli aggiornamenti verticali, consultate <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Informazioni sull'aggiornamento verticale </a>. </p> </td> 
+      <td colname="col2"> <p> <p>Nota:  Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivarlo e utilizzarlo. Dopo essere stato attivato, viene visualizzato nell'interfaccia utente. </p> </p> <p>Imposta il campo identificato come campo Aggiornamento verticale. </p> <p>I campi Aggiornamento verticale sono candidati per l’aggiornamento mediante il processo di aggiornamento verticale ( <span class="uicontrol"> Indice </span> &gt; Aggiornamento <span class="uicontrol"> verticale </span>). A causa del modo in cui vengono eseguiti gli aggiornamenti verticali, non è possibile effettuare ricerche di contenuto in questi campi nelle ricerche in testo libero. Selezionando questa opzione, il contenuto del campo non viene aggiunto all'indice "word" durante qualsiasi operazione di indicizzazione. Consente inoltre di aggiornare il campo durante un'operazione di aggiornamento verticale. </p> <p>Per ulteriori informazioni sugli aggiornamenti verticali, consultate <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Informazioni sull'aggiornamento verticale </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Rilevanza </p> </td> 
@@ -151,10 +143,9 @@ Prima che gli effetti della nuova definizione del tag meta siano visibili ai cli
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ordinamento </p> </td> 
-      <td colname="col2"> <p>Specifica quando i risultati vengono ordinati in base al campo con nome, in base al 
-        <userinput>
+      <td colname="col2"> <p>Specifica quando i risultati vengono ordinati in base al campo denominato, tramite il parametro <code>
           sp_s 
-        </userinput> Cercate il parametro CGI. </p> <p>Consultate <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Cercare i parametri CGI </a>. </p> </td> 
+        </code> CGI di ricerca. </p> <p>Consultate <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Cercare i parametri CGI </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Lingua </p> </td> 
@@ -186,16 +177,13 @@ Prima che gli effetti della nuova definizione del tag meta siano visibili ai cli
       </tr> 
       <tr> 
       <td colname="col1"> <p>Unità predefinite </p> </td> 
-      <td colname="col2"> <p>Disponibile solo se il tipo di dati <span class="uicontrol"> Posizione </span> è selezionato come Tipo di dati. </p> <p>Controlla il trattamento dei valori di distanza per le ricerche di prossimità. </p> <p>Se impostate le unità predefinite su <span class="uicontrol"> Miglia </span>, eventuali criteri di distanza minima/massima per la ricerca di prossimità applicati a questo campo (tramite 
-      <userinput>
+      <td colname="col2"> <p>Disponibile solo se il tipo di dati <span class="uicontrol"> Posizione </span> è selezionato come Tipo di dati. </p> <p>Controlla il trattamento dei valori di distanza per le ricerche di prossimità. </p> <p>Se impostate le unità predefinite su <span class="uicontrol"> Miglia </span>, tutti i criteri di distanza minima/massima della ricerca di prossimità applicati a questo campo (tramite i parametri CGI <code>
         sp_q_min[_#] 
-      </userinput> o 
-      <userinput>
+      </code> o di <code>
         sp_q_max[_#] 
-      </userinput> Cerca parametri CGI) è trattata come miglia, altrimenti come chilometri. </p> <p>Questa opzione controlla anche le unità di distanza predefinite applicate all'output del 
-      <userinput>
+      </code> Ricerca) vengono trattati come miglia, altrimenti come chilometri. </p> <p>Questa opzione controlla anche le unità di distanza predefinite applicate all’output del tag modello di <code>
         &lt;Search-Display-Field&gt; 
-      </userinput> il tag del modello di risultati della ricerca applicato a un campo di output della ricerca di prossimità. </p> <p>Consultate <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> La ricerca di prossimità </a>. </p> </td> 
+      </code> risultati di ricerca quando applicato a un campo di output di ricerca di prossimità. </p> <p>Consultate <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> La ricerca di prossimità </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Creare una descrizione dell'intervallo? </p> </td> 
@@ -258,7 +246,7 @@ Prima che gli effetti della nuova definizione del tag meta siano visibili ai cli
       <td colname="col1"> <p>Test con maggiore di? </p> </td> 
       <td colname="col2"> <p>Disponibile solo se <span class="uicontrol"> è selezionata l'opzione Crea descrizione intervallo </span> e se è selezionata l'opzione <span class="uicontrol"> Campo intervallo </span> . </p> <p>Ciascun valore viene confrontato con i valori in Valori <span class="uicontrol"> intervallo </span>, elaborati in ordine <i><b>decrescente</b></i> , per impostazione predefinita viene confrontato utilizzando l'operatore Maggiore o Uguale (&gt;=), arrestandosi una volta completato il test. Questo significa che con un set di valori <span class="uicontrol"> Range </span> come "10 20 50 100 1000" il valore 100 sarà compreso tra 100 e 1000, in quanto 100 è effettivamente &gt;= 100. Se si desidera impostare un valore compreso tra 50 e 100, selezionare questa opzione per fare in modo che i confronti utilizzino l'operatore Maggiore di (&gt;). </p> <p>Ad esempio, per ciascuno dei valori di questo campo, quando questa opzione è selezionata: 
       <ul id="ul_969621B1BD914FA5BD73ED21F8841010"> 
-      <li id="li_157BEFDA7D0E44C481F4E4BC9046EF24">se il valore è minore o uguale a (&lt;=) il valore più piccolo nei valori <span class="uicontrol"> dell'intervallo </span>, viene utilizzato il formato <span class="uicontrol"> "Minore di" </span> </li> 
+      <li id="li_157BEFDA7D0E44C481F4E4BC9046EF24">se il valore è minore o uguale a (&lt;=) il valore più piccolo in Valori <span class="uicontrol"> intervallo </span>, viene utilizzato il formato <span class="uicontrol"> "Minore di" </span> </li> 
       <li id="li_737EE666CA6243A8864E17A311CF3ACC">se il valore è maggiore di (&gt;) il valore più grande in <span class="uicontrol"> Valori intervallo </span>, verrà utilizzato il formato <span class="uicontrol"> "Maggiore di" </span> </li> 
       <li id="li_353A9820F7F74CCCBB3281EC4CB48734">in caso contrario, verrà trovato un intervallo in cui il valore del campo rientra tra due valori <span class="uicontrol"> Range consecutivi </span> (maggiore o uguale a (&gt;=) il valore minore e minore di (&lt;) il valore maggiore), e verrà utilizzato il formato <span class="uicontrol"> Intermedio </span> </li> 
     </ul> </p> <p>e, se non è selezionato: 
@@ -410,7 +398,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> append|replace </span> </p> </td> 
-   <td colname="col2"> <p>Scegliete "append" per aggiungere il valore della definizione di iniezione ("Adobe: Contattaci" o "In vendita!" negli esempi di cui sopra) al contenuto dei campi esistenti. Scegliete "replace" per sovrascrivere il contenuto del campo esistente con il valore definito. Se un campo al momento non ha contenuto, il valore definito viene aggiunto automaticamente, indipendentemente dall'opzione (accoda o sostituisce) utilizzata. </p> </td> 
+   <td colname="col2"> <p>Scegliete "append" per aggiungere il valore della definizione di iniezione ("Adobe : Contattaci" o "In vendita!" negli esempi di cui sopra) al contenuto dei campi esistenti. Scegliete "replace" per sovrascrivere il contenuto del campo esistente con il valore definito. Se un campo al momento non ha contenuto, il valore definito viene aggiunto automaticamente, indipendentemente dall'opzione (accoda o sostituisce) utilizzata. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> field </span> </p> </td> 
@@ -446,7 +434,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
  </tbody> 
 </table>
 
-Consultate anche [Selezione dei tipi di contenuto per la ricerca per indicizzazione e l’indicizzazione](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
+Consultate anche [Selezione dei tipi di contenuto per la ricerca per indicizzazione e per indicizzazione](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
 ## Aggiunta di definizioni di iniezione di campi {#task_E86566FA1FF74CF68115C0ADA05172AE}
 
@@ -480,7 +468,7 @@ Consente [!DNL Attribute Loader] di definire ulteriori origini di input per l’
 
 >[!NOTE]
 >
->Per utilizzare Caricatore attributi, potrebbe essere necessario che sia attivato nel vostro account dal rappresentante commerciale Adobe o dal supporto Adobe.
+>Per utilizzare Attribute Loader, potrebbe essere necessario che sia attivato nell&#39;account dal rappresentante dell&#39;account  Adobe o dal supporto  Adobe.
 
 È possibile utilizzare un&#39;origine di input di feed di dati per accedere al contenuto memorizzato in un modulo diverso da quello che viene generalmente scoperto in un sito Web. A tale scopo, è possibile utilizzare uno dei metodi disponibili per la ricerca per indicizzazione. I dati provenienti da queste origini possono quindi essere inseriti nei dati provenienti dal contenuto sottoposto a ricerca per indicizzazione.
 
@@ -590,7 +578,7 @@ Ogni configurazione di Caricatore attributi definisce un&#39;origine dati e mapp
 
 >[!NOTE]
 >
->Per utilizzare Caricatore attributi, potrebbe essere necessario che sia attivato nel vostro account dal rappresentante commerciale Adobe o dal supporto Adobe.
+>Per utilizzare Attribute Loader, potrebbe essere necessario che sia attivato nell&#39;account dal rappresentante dell&#39;account  Adobe o dal supporto  Adobe.
 
 Prima che gli effetti della nuova definizione e della definizione abilitata siano visibili ai clienti, ricreate l’indice del sito.
 
@@ -712,7 +700,7 @@ Prima che gli effetti della nuova definizione e della definizione abilitata sian
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome </p> </td> 
-      <td colname="col2"> <p>Identifica l'elemento XML che è possibile utilizzare per identificare singole righe XML nel file di origine dati specificato. </p> <p>Ad esempio, nel seguente frammento Feed di un documento Adobe XML, il valore dell'elemento è <span class="codeph"> record </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifica l'elemento XML che è possibile utilizzare per identificare singole righe XML nel file di origine dati specificato. </p> <p>Ad esempio, nel seguente frammento Feed di un documento XML di un Adobe , il valore del tag elemento è <span class="codeph"> record </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; 
         &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
@@ -763,7 +751,7 @@ Prima che gli effetti della nuova definizione e della definizione abilitata sian
       <td colname="col1"> <p>Mappa </p> </td> 
       <td colname="col2"> <p>Consente di specificare le mappature XML da elemento a metadati utilizzando le espressioni XPath. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Specifica una rappresentazione XPath dei dati XML analizzati. Utilizzando il documento Adobe XML di esempio riportato sopra, sotto l'opzione Tag elemento, è possibile mapparlo utilizzando la sintassi seguente: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Specifica una rappresentazione XPath dei dati XML analizzati. Utilizzando l'esempio  documento XML dell'Adobe precedente, sotto l'opzione Tag elemento, è possibile mappare il file utilizzando la seguente sintassi: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>La sintassi di cui sopra è la seguente: </p> <p> 
@@ -774,7 +762,7 @@ Prima che gli effetti della nuova definizione e della definizione abilitata sian
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi <span class="codeph"> </span> elemento meta contenuto all'interno di un <span class="codeph"> elemento di </span> metadati, contenuto all'interno dell' <span class="codeph"> elemento del </span> record, il cui attributo name è <span class="codeph"> description </span><span class="codeph"> </span>, viene mappato sul corpo del campo di metadati . </p> </li> 
         </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Consultate <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Definisce il valore dell'attributo name utilizzato per ciascun tag <span class="codeph"> &lt;meta&gt; </span> generato. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che <span class="uicontrol"> Field diventi </span> un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l'account corrente. </p> <p>Se necessario, il valore <span class="uicontrol"> Campo </span> può essere un campo di metadati non definito. Talvolta, un campo di metadati non definito è utile per creare contenuto utilizzato da <span class="wintitle"> Filtraggio script </span>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni Sul Filtro Degli Script </a>. </p> <p>Quando Attribute Loader elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati mediante un delimitatore di virgola. Tuttavia, supponiamo che il valore <span class="wintitle"> Campo corrispondente </span> sia un campo di metadati definito. Inoltre, il campo dispone dell'attributo <span class="wintitle"> Consenti elenchi </span> impostato. In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che <span class="uicontrol"> Field diventi </span> un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l'account corrente. </p> <p>Se necessario, il valore <span class="uicontrol"> Campo </span> può essere un campo di metadati non definito. Talvolta, un campo di metadati non definito è utile per creare contenuto utilizzato da <span class="wintitle"> Filtraggio script </span>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni Sul Filtro Degli Script </a>. </p> <p>Quando Attribute Loader elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati mediante un delimitatore di virgola. Tuttavia, supponiamo che il valore <span class="wintitle"> Campo corrispondente </span> sia un campo di metadati definito. Inoltre, tale campo ha l'attributo <span class="wintitle"> Elenchi consentiti </span> impostato. In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chiave primaria? </span> <p>Solo un campo è identificato come chiave primaria. Questo campo verrà utilizzato come "chiave esterna" per corrispondere ai dati del Caricatore attributi con il documento corrispondente nell'indice. </p> </li> 
       <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> Rimuovere il codice HTML? </span> <p>Quando questa opzione è selezionata, tutti i tag HTML trovati nei dati di questo campo vengono rimossi. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Azione </span> <p>Consente di aggiungere righe alla mappa o rimuovere righe dalla mappa. L'ordine delle righe non è importante. </p> </li> 
@@ -806,7 +794,7 @@ Prima che gli effetti della nuova definizione e della definizione abilitata sian
 
 >[!NOTE]
 >
->Per utilizzare Caricatore attributi, potrebbe essere necessario che sia attivato nel vostro account dal rappresentante commerciale Adobe o dal supporto Adobe.
+>Per utilizzare Attribute Loader, potrebbe essere necessario che sia attivato nell&#39;account dal rappresentante dell&#39;account  Adobe o dal supporto  Adobe.
 
 Non tutte le opzioni di caricamento attributi possono essere modificate, ad esempio Nome o Tipo del caricatore attributi, dall&#39;elenco a [!DNL Type] discesa.
 
@@ -839,7 +827,7 @@ Non tutte le opzioni di caricamento attributi possono essere modificate, ad esem
 
 >[!NOTE]
 >
->Per utilizzare Caricatore attributi, potrebbe essere necessario che sia attivato nel vostro account dal rappresentante commerciale Adobe o dal supporto Adobe.
+>Per utilizzare Attribute Loader, potrebbe essere necessario che sia attivato nell&#39;account dal rappresentante dell&#39;account  Adobe o dal supporto  Adobe.
 
 Durante la copia della definizione di Caricatore attributi, la definizione copiata è disabilitata per impostazione predefinita. Per abilitare o &quot;attivare&quot; la definizione, è necessario modificarla dalla [!DNL Attribute Loader Edit] pagina e selezionare **[!UICONTROL Enable]**.
 
@@ -871,7 +859,7 @@ Vedere [Modifica della definizione](../c-about-settings-menu/c-about-metadata-me
 
 >[!NOTE]
 >
->Per utilizzare Caricatore attributi, potrebbe essere necessario che sia attivato nel vostro account dal rappresentante commerciale Adobe o dal supporto Adobe.
+>Per utilizzare Attribute Loader, potrebbe essere necessario che sia attivato nell&#39;account dal rappresentante dell&#39;account  Adobe o dal supporto  Adobe.
 
 **Per rinominare una definizione di Caricatore attributi**
 
@@ -968,7 +956,7 @@ Dopo aver aggiunto alla [!DNL Attribute Loader Definitions] pagina la definizion
 
 >[!NOTE]
 >
->Per utilizzare Caricatore attributi, potrebbe essere necessario che sia attivato nel vostro account dal rappresentante commerciale Adobe o dal supporto Adobe.
+>Per utilizzare Attribute Loader, potrebbe essere necessario che sia attivato nell&#39;account dal rappresentante dell&#39;account  Adobe o dal supporto  Adobe.
 
 **Per visualizzare le impostazioni di una definizione di Caricatore attributi**
 
@@ -994,7 +982,7 @@ Vedere [Caricamento dei dati](../c-about-settings-menu/c-about-metadata-menu.md#
 
 >[!NOTE]
 >
->Per utilizzare Caricatore attributi, potrebbe essere necessario che sia attivato nel vostro account dal rappresentante commerciale Adobe o dal supporto Adobe.
+>Per utilizzare Attribute Loader, potrebbe essere necessario che sia attivato nell&#39;account dal rappresentante dell&#39;account  Adobe o dal supporto  Adobe.
 
 **Per eliminare una definizione di Caricatore attributi**
 
