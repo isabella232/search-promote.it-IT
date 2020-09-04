@@ -8,7 +8,10 @@ title: Indice con script
 topic: Index,Site search and merchandising
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 1%
 
 ---
 
@@ -68,89 +71,77 @@ Per tutte le date ordinali inferiori al 10, è richiesto uno zero iniziale quand
    <td colname="col2"> <p>Ogni blocco di testo può contenere tutti i comandi di azione desiderati. Le seguenti opzioni di comando azione corrispondono a quelle per l'indicizzazione incrementale standard: </p> <p> 
      <ul id="ul_8E1435350A0F416BB8F7826CD3886E74"> 
       <li id="li_22181666628C48A28A6A0BA1F7CA8E77"> 
-       <userinput>
+       <code>
          add 
-       </userinput> <p>Utilizzate con URL. Il robot di ricerca indicizza solo gli URL specificati che sono stati modificati dall’ultima operazione di indicizzazione. Inoltre, il robot di ricerca segue i collegamenti contenuti in documenti specifici e indicizza solo i documenti che sono stati modificati. </p> <p>Potete seguire l’URL con 
-        <userinput>
+       </code> <p>Utilizzate con URL. Il robot di ricerca indicizza solo gli URL specificati che sono stati modificati dall’ultima operazione di indicizzazione. Inoltre, il robot di ricerca segue i collegamenti contenuti in documenti specifici e indicizza solo i documenti che sono stati modificati. </p> <p>Potete seguire l’URL con <code>
           nofollow 
-        </userinput>  oppure  
-        <userinput>
+        </code> o <code>
           noindex 
-        </userinput> parole chiave come nell’esempio seguente: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
+        </code> parole chiave come nell’esempio seguente: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
       <li id="li_8E47BF07DB24417083883F5BF40D6B9E"> 
-       <userinput>
+       <code>
          update 
-       </userinput> <p>Utilizzate con la maschera URL. Il robot di ricerca trova e aggiorna tutti i documenti che corrispondono alla maschera URL specificata. </p> <p>Potete seguire l’URL con 
-        <userinput>
+       </code> <p>Utilizzate con la maschera URL. Il robot di ricerca trova e aggiorna tutti i documenti che corrispondono alla maschera URL specificata. </p> <p>Potete seguire l’URL con <code>
           nofollow 
-        </userinput>  oppure  
-        <userinput>
+        </code> o <code>
           noindex 
-        </userinput> parole chiave come nell’esempio seguente: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
+        </code> parole chiave come nell’esempio seguente: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
       <li id="li_B3EC8B1670D54F66A1D8411A694EF7E4"> 
-       <userinput>
+       <code>
          include 
-       </userinput>  oppure  
-       <userinput>
+       </code> o 
+       <code>
          exclude 
-       </userinput> <p>Utilizzate con la maschera URL. Il robot di ricerca trova e indicizza ("include") o ignora i documenti ("exclude") in base al tipo di maschera specificata. </p> <p>Ad esempio, </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p> oppure  </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
+       </code> <p>Utilizzate con la maschera URL. Il robot di ricerca trova e indicizza ("include") o ignora i documenti ("exclude") in base al tipo di maschera specificata. </p> <p>Ad esempio, </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p> oppure  </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
       <li id="li_050B54B735F0475E93806455FA6DC6A5"> 
-       <userinput>
+       <code>
          include-date 
-       </userinput>  oppure  
-       <userinput>
+       </code> o 
+       <code>
          exclude-date 
-       </userinput> <p>Utilizzate con la maschera URL. Il robot di ricerca trova e indicizza ("include") o ignora i documenti ("exclude") in base sia all'URL che alla data dei documenti. Sono disponibili i seguenti tipi di maschere: </p> <p> 
+       </code> <p>Utilizzate con la maschera URL. Il robot di ricerca trova e indicizza ("include") o ignora i documenti ("exclude") in base sia all'URL che alla data dei documenti. Sono disponibili i seguenti tipi di maschere: </p> <p> 
         <ul id="ul_23A15CB492214B86BE84D8E6EA1820AE"> 
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
-          <userinput>
-            includi giorni NNN 
-          </userinput> <p>Il robot di ricerca indicizza tutti i documenti che corrispondono alla maschera URL specificata e che sono giorni NNN o più vecchi. </p> <p>Potete seguire la maschera URL con le parole chiave 
-           <userinput>
+          <code>
+            include-days NNN 
+          </code> <p>Il robot di ricerca indicizza tutti i documenti che corrispondono alla maschera URL specificata e che sono giorni NNN o più vecchi. </p> <p>Potete seguire la maschera URL con le parole chiave <code>
              nofollow 
-           </userinput>, 
-           <userinput>
+           </code>, <code>
              noindex 
-           </userinput>e/o 
-           <userinput>
-             data server 
-           </userinput>. </p> </li> 
+           </code>e/o <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_983A10E2ED5D434EA9031F32143F4EF4"> 
-          <userinput>
-            include data AAAA-MM-GG 
-          </userinput> <p> Il robot di ricerca indicizza tutti i documenti che corrispondono alla maschera URL specificata e che hanno la stessa data di AAAA-MM-GG, dove "AAAA" è l'anno di 4 cifre, "MM" è il mese di una o due cifre (1-12), e "GG" è il giorno di una o due cifre (1-31). </p> <p>Potete seguire la maschera URL con le parole chiave 
-           <userinput>
+          <code>
+            include-date YYYY-MM-DD 
+          </code> <p> Il robot di ricerca indicizza tutti i documenti che corrispondono alla maschera URL specificata e che hanno la stessa data di AAAA-MM-GG, dove "AAAA" è l'anno di 4 cifre, "MM" è il mese di una o due cifre (1-12), e "GG" è il giorno di una o due cifre (1-31). </p> <p>Potete seguire la maschera URL con le parole chiave <code>
              nofollow 
-           </userinput>, 
-           <userinput>
+           </code>, <code>
              noindex 
-           </userinput>e/o 
-           <userinput>
-             data server 
-           </userinput>. </p> </li> 
+           </code>e/o <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_733CE1B748024CECA7FBE00D7BC7B88A"> 
-          <userinput>
-            exclude-Days NNN 
-          </userinput> <p> Disattiva l’indicizzazione di tutti i documenti che corrispondono alla maschera URL specificata e che sono giorni NNN o più vecchi. </p> <p>Potete seguire la maschera URL con la parola chiave 
-           <userinput>
-             data server 
-           </userinput>. </p> </li> 
+          <code>
+            exclude-days NNN 
+          </code> <p> Disattiva l’indicizzazione di tutti i documenti che corrispondono alla maschera URL specificata e che sono giorni NNN o più vecchi. </p> <p>Potete seguire la maschera URL con la parola chiave <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_90056A0B96CC4DA3854711860A15CE89"> 
-          <userinput>
+          <code>
             exclude-date YYYY-MM-DD 
-          </userinput> <p>Disattiva l’indicizzazione di tutti i documenti che corrispondono alla maschera URL specificata e che hanno la stessa data o meno della data AAAA-MM-GG. </p> <p>Potete seguire la maschera URL con la parola chiave 
-           <userinput>
-             data server 
-           </userinput>. </p> </li> 
+          </code> <p>Disattiva l’indicizzazione di tutti i documenti che corrispondono alla maschera URL specificata e che hanno la stessa data o meno della data AAAA-MM-GG. </p> <p>Potete seguire la maschera URL con la parola chiave <code>
+             server-date 
+           </code>. </p> </li> 
         </ul> </p> </li> 
       <li id="li_AA78F22B60FE4535BE73BA87A8992C08"> 
-       <userinput>
+       <code>
          delete 
-       </userinput> <p>Specificate gli URL. Il robot di ricerca rimuove dall’indice i documenti identificati dall’URL. </p> </li> 
+       </code> <p>Specificate gli URL. Il robot di ricerca rimuove dall’indice i documenti identificati dall’URL. </p> </li> 
       <li id="li_9C63061568AA4D57A4FEBCF6DB9194EC"> 
-       <userinput>
+       <code>
          deletemask 
-       </userinput> <p>Il robot di ricerca rimuove dall’indice i documenti che corrispondono alla maschera URL specificata. </p> </li> 
+       </code> <p>Il robot di ricerca rimuove dall’indice i documenti che corrispondono alla maschera URL specificata. </p> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
