@@ -7,7 +7,10 @@ title: I banner
 topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4810'
+ht-degree: 1%
 
 ---
 
@@ -28,25 +31,25 @@ Esistono due metodi per aggiungere annunci banner al sito Web.
 
 Il primo metodo consiste nell’aggiungere i banner tramite Target, Search&amp;Promote. I banner sono snippet di codice HTML visualizzati al momento della ricerca nel sito Web da parte di un cliente. Il banner può includere testo o immagine in formato GIF, JPEG o PNG, oppure una combinazione di entrambi. Potete scegliere tra dimensioni predefinite o definire dimensioni personalizzate per adattare la pagina. Il codice HTML utilizzato per visualizzare il banner può anche specificare elementi quali lo stile del font da utilizzare e il bordo. Questo metodo di aggiunta di un banner offre funzionalità di base e non richiede software aggiuntivo.
 
-Il secondo metodo consiste nell’usare Adobe Dynamic Media Classic, un servizio di gestione e pubblicazione per contenuti multimediali dinamici. Un account Adobe Dynamic Media Classic valido consente di gestire e distribuire i contenuti dei banner direttamente a Target, Search&amp;Promote, utilizzando Dynamic Media Classic. Nella ricerca del sito/merchandising, puoi configurare l’accesso al tuo account Dynamic Media Classic. Quindi aprite il browser per contenuti multimediali dinamici Classic e scegliete una risorsa multimediale dinamica da usare come banner.
+Il secondo metodo consiste nell’utilizzare  Adobe Dynamic Media Classic, un servizio di gestione e pubblicazione di contenuti multimediali dinamici. Un account  Adobe Dynamic Media Classic valido consente di gestire e distribuire i contenuti dei banner direttamente a Target, tramite l&#39;utilizzo di Dynamic Media Classic. Nella ricerca del sito/merchandising, puoi configurare l’accesso al tuo account Dynamic Media Classic. Quindi aprite il browser per contenuti multimediali dinamici Classic e scegliete una risorsa multimediale dinamica da usare come banner.
 
 >[!NOTE]
 >
->Prima di poter usare le risorse multimediali dinamiche come banner nella ricerca e merchandising del sito, le risorse vengono caricate e preparate per la pubblicazione in Scene7 Publishing System. Potete caricare le risorse dall’interno del sito e prepararle automaticamente per la pubblicazione in Scene7 Publishing System. In alternativa, potete caricare e pubblicare tutte le risorse direttamente da Scene7 Publishing System.
+>Prima di poter utilizzare le risorse multimediali dinamiche come banner nella ricerca del sito/merchandising, le risorse vengono caricate e preparate per la pubblicazione in Scene7 Publishing System. Potete caricare le risorse dall’interno della ricerca nel sito/merchandising e prepararle automaticamente per la pubblicazione in Scene7 Publishing System. In alternativa, potete caricare e pubblicare tutte le risorse dall’interno di Scene7 Publishing System.
 
-## Integrazione dei banner con Adobe Scene7 Publishing System {#section_D4D7ADEA6A6348E68EDA138E184FE579}
+## Integrazione dei banner con  Adobe Scene7 Publishing System {#section_D4D7ADEA6A6348E68EDA138E184FE579}
 
-Potete usare i tipi di risorse Dynamic Media Classic come banner nella ricerca e merchandising del sito, incluse immagini, banner dinamici e modelli, ad esempio modelli di immagini o modelli Flash.
+Potete utilizzare i tipi di risorse Dynamic Media Classic come banner nella ricerca e merchandising del sito, incluse immagini, banner dinamici e modelli, ad esempio modelli di immagini o Flash.
 
-I modelli vengono creati in modo dinamico e indirizzabili come file immagine a più livelli in applicazioni di modifica delle immagini come Adobe Photoshop®. A differenza di un file immagine statico, un modello può includere parametri. Tramite i parametri, potete personalizzare le proprietà variabili dell’immagine e il contenuto dell’immagine.
+I modelli vengono creati in modo dinamico e indirizzati a file di immagini con più livelli, come i file con più livelli in applicazioni di modifica delle immagini come  Adobe Photoshop®. A differenza di un file immagine statico, un modello può includere parametri. Tramite i parametri, potete personalizzare le proprietà variabili dell’immagine e il contenuto dell’immagine.
 
 >[!NOTE]
 >
->Potete anche creare modelli da layout utilizzando Pubblicazione modelli in Scene7 Publishing System e file da Adobe Illustrator e Adobe InDesign.
+>Potete anche creare modelli da layout utilizzando Pubblicazione modelli in Scene7 Publishing System e file da  Adobe Illustrator e  Adobe InDesign.
 
-Consultate Pubblicazione [dei](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) modelli nella guida utente di Dynamic Media Classic (Scene7).
+Consultate Pubblicazione [di](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) modelli nella guida utente di Dynamic Media Classic (Scene7).
 
-Un modello può contenere un numero qualsiasi di livelli di immagine e di testo. Potete convertire un file statico contenente livelli, ad esempio un file PSD con livelli, in un modello oppure creare modelli in Dynamic Media Classic. Potete creare livelli di testo nei modelli usando i font caricati in Scene7 Publishing System. Dopo aver aggiunto del testo a un modello, potete formattarlo modificandone giustificazione, font, dimensione font e colore.
+Un modello può contenere un numero qualsiasi di livelli di immagine e di testo. Potete convertire un file statico contenente livelli, ad esempio un file PSD con livelli, in un modello oppure creare modelli in Dynamic Media Classic. Potete creare livelli di testo nei modelli utilizzando i font caricati in Scene7 Publishing System. Dopo aver aggiunto del testo a un modello, potete formattarlo modificandone giustificazione, font, dimensione font e colore.
 
 Utilizzando la schermata Parametri di Dynamic Media Classic, potete convertire qualsiasi aspetto di un modello in un parametro indirizzabile. Così facendo, potete cambiare l’immagine a livelli da usare o il valore di testo da usare nel modello. I parametri vengono passati con la stringa URL, consentendo di modificare qualsiasi parametro per personalizzare in modo dinamico l’immagine di risposta generata dal server immagini.
 
@@ -56,11 +59,11 @@ Consultate Funzioni di base dei [modelli](https://help.adobe.com/en_US/scene7/us
 
 **Caricamento e pubblicazione delle risorse**
 
-Prima di poter utilizzare le risorse per i banner nella ricerca e nel merchandising del sito, è necessario caricarle e pubblicarle in Dynamic Media Classic. Questo prerequisito include anche tutte le risorse utilizzate da un modello di immagine o un modello Flash. Usate il vostro account Dynamic Media Classic per caricare e pubblicare risorse digitali. In alternativa, potete usare la ricerca nel sito/merchandising per caricare una risorsa digitale e farla pubblicare automaticamente da Dynamic Media Classic in base alle impostazioni di caricamento. Se tentate di scegliere una risorsa non ancora caricata e pubblicata, riceverete una notifica nell’interfaccia utente e potrete caricarla prima di procedere.
+Prima di poter utilizzare le risorse per i banner nella ricerca e nel merchandising del sito, è necessario caricarle e pubblicarle in Dynamic Media Classic. Questo prerequisito include anche tutte le risorse utilizzate da un modello di immagine o un modello di Flash. Usate il vostro account Dynamic Media Classic per caricare e pubblicare risorse digitali. In alternativa, potete usare la ricerca nel sito/merchandising per caricare una risorsa digitale e farla pubblicare automaticamente da Dynamic Media Classic in base alle impostazioni di caricamento. Se tentate di scegliere una risorsa non ancora caricata e pubblicata, riceverete una notifica nell’interfaccia utente e potrete caricarla prima di procedere.
 
-Per ulteriori informazioni sul caricamento e la pubblicazione di risorse digitali, consultate Scene7 Publishing System.
+Per ulteriori informazioni sul caricamento e la pubblicazione di risorse digitali, utilizzate Scene7 Publishing System.
 
-Consultate [Caricare e pubblicare le risorse](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) nella guida utente di Dynamic Media Classic (Scene7).
+Consultate [Caricare e pubblicare risorse](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) nella guida utente di Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
@@ -86,11 +89,11 @@ t_adding_a_new_banner.xml
 
  -->
 
-Se disponete di un account Adobe Dynamic Media Classic valido, potete aggiungere i banner pubblicitari tramite Scene7 Publishing System.
+Se disponete di un account  Adobe Dynamic Media Classic valido, potete aggiungere i banner pubblicitari tramite Scene7 Publishing System.
 
-Consultate [Aggiunta di un banner tramite Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+Consultate [Aggiunta di un banner tramite  Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
-Consultate [Configurazione dell’accesso all’account](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)Adobe Dynamic Media Classic.
+Consultate [Configurazione dell’accesso al vostro account](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D) Adobe Dynamic Media Classic.
 
 **Per aggiungere un banner**
 
@@ -112,15 +115,13 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
       </tr> 
       <tr> 
       <td colname="col1"> <p>HTML banner </p> </td> 
-      <td colname="col2"> <p> Consente di incollare il codice HTML associato al banner. </p> <p>Qualsiasi codice HTML è accettabile, incluso il codice CSS circondato da 
-        <userinput>
-          &lt;stile&gt; 
-        </userinput> tag o codice JavaScript circondato da 
-        <userinput>
+      <td colname="col2"> <p> Consente di incollare il codice HTML associato al banner. </p> <p>Qualsiasi codice HTML è accettabile, incluso il codice CSS circondato da <code>
+          &lt;style&gt; 
+        </code> tag o il codice JavaScript circondato da <code>
           &lt;script&gt; 
-        </userinput> tag. Ad esempio, il seguente blocco di codice è relativo a un banner di testo del tipo Orizzontale superiore: Nell' <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
+        </code> tag. Ad esempio, il seguente blocco di codice è relativo a un banner di testo del tipo Orizzontale superiore: <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
           padding-top:&nbsp;10px;&nbsp;padding-bottom:&nbsp;10px;&nbsp;color:&nbsp;white;&nbsp;font-family:&nbsp;verdana;&nbsp; 
-          text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>esempio seguente, il blocco di codice è relativo a un'immagine iniziale completa: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
+          text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>Nell'esempio seguente, il blocco di codice è relativo a un'immagine iniziale completa: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tipo </p> </td> 
@@ -164,9 +165,9 @@ t_editing_a_banner.xml
 
  -->
 
-Se avete aggiunto un banner utilizzando la funzione di ricerca nel sito/merchandising, potete anche modificare il banner utilizzando Adobe Dynamic Media Classic.
+Se avete aggiunto un banner utilizzando la ricerca nel sito/merchandising, potete anche modificare il banner utilizzando  Adobe Dynamic Media Classic.
 
-Consultate anche [Modifica di un banner con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
+Consultate anche [Modifica di un banner con  Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
 **Per modificare un banner**
 
@@ -192,9 +193,9 @@ Consultate anche [Modifica di un banner con Adobe Dynamic Media Classic](../c-ab
 
       Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
 
-## Aggiunta di un banner tramite Adobe Dynamic Media Classic {#task_AD1E0C00A9E04B1FA819EB93288786B3}
+## Aggiunta di un banner tramite  Adobe Dynamic Media Classic {#task_AD1E0C00A9E04B1FA819EB93288786B3}
 
-Potete utilizzare [!DNL Banners] per gestire gli annunci banner sul vostro sito Web. Quando aggiungete un banner utilizzando Adobe Dynamic Media Classic, potete scegliere una delle risorse digitali caricate in Scene7 Publishing System.
+Potete utilizzare [!DNL Banners] per gestire gli annunci banner sul vostro sito Web. Quando aggiungete un banner utilizzando  Adobe Dynamic Media Classic, potete scegliere tra le risorse digitali caricate in Scene7 Publishing System.
 
 <!-- 
 
@@ -202,11 +203,11 @@ t_adding_a_banner_using_adobe_scene7.xml
 
  -->
 
-Per aggiungere un banner utilizzando Adobe Dynamic Media Classic, accertatevi di aver configurato l&#39;accesso al vostro account Dynamic Media Classic valido.
+Per aggiungere un banner utilizzando  Adobe Dynamic Media Classic, accertatevi di aver configurato l&#39;accesso al vostro account Dynamic Media Classic valido.
 
-Consultate [Configurazione dell’accesso all’account](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)Adobe Dynamic Media Classic.
+Consultate [Configurazione dell’accesso al vostro account](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D) Adobe Dynamic Media Classic.
 
-**Per aggiungere un banner con Adobe Dynamic Media Classic**
+**Per aggiungere un banner con  Adobe Dynamic Media Classic**
 
 1. Nel menu del prodotto, fate clic su **[!UICONTROL Design]** > **[!UICONTROL Banners.]**
 1. Nella [!DNL Banners] pagina, nell’elenco a **[!UICONTROL Add Banner]** discesa, fate clic su **[!UICONTROL Adobe Scene7]**.
@@ -220,7 +221,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
    >
    >Le opzioni di navigazione delle risorse non vengono visualizzate quando modificate il banner nella finestra di [!DNL Change Parameters] dialogo.
 
-   Consultate [Modifica di un banner con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
+   Consultate [Modifica di un banner con  Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
    **Opzioni di navigazione delle risorse**
 
@@ -254,7 +255,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_upload.png"> </p> </td> 
-      <td colname="col2"> <p>Apre la finestra di dialogo <span class="wintitle"> Carica </span> , in cui è possibile caricare una risorsa digitale selezionata dal desktop o da un server esterno in modo da poterlo utilizzare come banner. </p> <p>Dopo aver caricato la risorsa, in Scene7 Publishing System viene automaticamente pianificato un processo di pubblicazione. </p> <p>Consultate la tabella delle opzioni in <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Aggiunta di un banner tramite Adobe Dynamic Media Classic </a>. </p> <p>Per ulteriori informazioni sul caricamento e la pubblicazione di risorse digitali, consultate Scene7 Publishing System. </p> <p>Consultate <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Caricare e pubblicare le risorse </a> nella guida utente di Scene7 Publishing System. </p> </td> 
+      <td colname="col2"> <p>Apre la finestra di dialogo <span class="wintitle"> Carica </span> , in cui è possibile caricare una risorsa digitale selezionata dal desktop o da un server esterno in modo da poterlo utilizzare come banner. </p> <p>Dopo aver caricato la risorsa, in Scene7 Publishing System viene automaticamente pianificato un processo di pubblicazione. </p> <p>Consultate la tabella delle opzioni in <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Aggiunta di un banner tramite  Adobe Dynamic Media Classic </a>. </p> <p>Per ulteriori informazioni sul caricamento e la pubblicazione di risorse digitali, utilizzate Scene7 Publishing System. </p> <p>Consultate <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Caricare e pubblicare le risorse </a> nella guida utente di Scene7 Publishing System. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_searchfield.png"> </p> </td> 
@@ -262,11 +263,11 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_addfilter.png"> </p> </td> 
-      <td colname="col2"> <p>Aggiunge un altro filtro di risorse per definire ulteriormente l’elenco delle risorse digitali visualizzate per tipo o per data specifica. </p> </td> 
+      <td colname="col2"> <p>Aggiunge un altro filtro di risorse per perfezionare ulteriormente l’elenco delle risorse digitali visualizzate per tipo o per data specifica. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_Kindfilter.png"> </p> </td> 
-      <td colname="col2"> <p>Potete ridefinire l’elenco delle risorse digitali visualizzate per visualizzarle solo in base a un determinato tipo di risorse, ad esempio Flash, Immagine, Modello o Qualsiasi. </p> <p>Fate clic <img src="assets/s7_deletefilter.png"> per eliminare il filtro dalla ricerca. </p> </td> 
+      <td colname="col2"> <p>Potete ridefinire l’elenco delle risorse digitali visualizzate per visualizzarle solo in base a un determinato tipo di Flash, immagine, modello o qualsiasi. </p> <p>Fate clic <img src="assets/s7_deletefilter.png"> per eliminare il filtro dalla ricerca. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_datefilter.png"> </p> </td> 
@@ -281,7 +282,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
 
    **Opzioni delle proprietà**
 
-   Le opzioni Proprietà vengono visualizzate se avete scelto un modello Flash, un modello immagine o un’immagine. A seconda della risorsa digitale scelta, non tutte le opzioni sono disponibili.
+   Le opzioni Proprietà vengono visualizzate se scegliete un modello di Flash, un modello di immagine o un’immagine. A seconda della risorsa digitale scelta, non tutte le opzioni sono disponibili.
 
    <table> 
     <thead> 
@@ -304,19 +305,19 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
         <li id="li_4EDDFD7C8AB04677BEC20EFC9AEBBF1F">png-alpha </li> 
         <li id="li_4FCB03C29AE647ACBAF5105016DF7579">gif </li> 
         <li id="li_B884BD7DFF1845FAA9C58EF09B888A77">gif-alpha </li> 
-        </ul> <p>Questa opzione non si applica ai modelli Flash. </p> </td> 
+        </ul> <p>Questa opzione non si applica ai modelli di Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Qualità </p> </td> 
-      <td colname="col2"> <p>Controlla il livello di compressione delle immagini in formato JPEG o GIF. Questa impostazione influisce sia sulla dimensione del file che sulla qualità dell’immagine. La scala di qualità è di 1-100. </p> <p>Quando trascinate il cursore verso sinistra o verso destra, l’immagine nella finestra di anteprima viene aggiornata per riflettere la modifica della qualità. </p> <p>Questa opzione non si applica ai modelli Flash. </p> </td> 
+      <td colname="col2"> <p>Controlla il livello di compressione delle immagini in formato JPEG o GIF. Questa impostazione influisce sia sulla dimensione del file che sulla qualità dell’immagine. La scala di qualità è di 1-100. </p> <p>Quando trascinate il cursore verso sinistra o verso destra, l’immagine nella finestra di anteprima viene aggiornata per riflettere la modifica della qualità. </p> <p>Questa opzione non si applica ai modelli di Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Larghezza </p> </td> 
-      <td colname="col2"> <p>Specifica la larghezza della risorsa digitale, in pixel. Questa dimensione corrisponde alla larghezza in cui la risorsa viene visualizzata dai clienti che visitano il sito Web. </p> <p>Questa opzione non si applica ai modelli Flash. </p> </td> 
+      <td colname="col2"> <p>Specifica la larghezza della risorsa digitale, in pixel. Questa dimensione corrisponde alla larghezza in cui la risorsa viene visualizzata dai clienti che visitano il sito Web. </p> <p>Questa opzione non si applica ai modelli di Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Altezza </p> </td> 
-      <td colname="col2"> <p>Specifica l’altezza della risorsa digitale, in pixel. Questa dimensione corrisponde all’altezza in cui la risorsa viene visualizzata dai clienti che visitano il sito Web. </p> <p>Questa opzione non si applica ai modelli Flash. </p> </td> 
+      <td colname="col2"> <p>Specifica l’altezza della risorsa digitale, in pixel. Questa dimensione corrisponde all’altezza in cui la risorsa viene visualizzata dai clienti che visitano il sito Web. </p> <p>Questa opzione non si applica ai modelli di Flash. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -346,7 +347,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
 
    **Modifica collegamenti, opzione**
 
-   L’opzione Modifica collegamenti viene visualizzata solo se avete scelto un modello Flash per il banner.
+   L’opzione Modifica collegamenti viene visualizzata solo se avete scelto un modello di Flash per il banner.
 
    <table> 
     <thead> 
@@ -358,16 +359,16 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img placement="inline" id="image_EBB8159690C74D4692B5DF945B045E0B" src="assets/icon_edit_16.gif" /> </p> </td> 
-      <td colname="col2"> <p>Consente di modificare il campo del collegamento URL utilizzato nel modello Flash. </p> </td> 
+      <td colname="col2"> <p>Consente di modificare il campo del collegamento URL utilizzato nel modello di Flash. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **Opzioni Sostituisci testo**
 
-   Le opzioni Sostituisci testo vengono visualizzate solo se avete scelto un modello Flash per il banner con livelli di testo modificabili.
+   Le opzioni Sostituisci testo vengono visualizzate solo se avete scelto un modello di Flash per il banner con livelli di testo modificabili.
 
-   Eventuali modifiche apportate al testo nel modello Flash vengono riportate nella finestra Anteprima.
+   Eventuali modifiche apportate al testo nel modello di Flash vengono riportate nella finestra Anteprima.
 
    >[!NOTE]
    >
@@ -391,7 +392,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ricerca </p> </td> 
-      <td colname="col2"> <p>Consente di inserire un termine di ricerca per il testo non collegato nei livelli del modello Flash. </p> </td> 
+      <td colname="col2"> <p>Consente di inserire un termine di ricerca per il testo non collegato nei livelli del modello di Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sostituisci </p> </td> 
@@ -402,7 +403,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
 
    **Opzioni parametri**
 
-   Le opzioni relative ai parametri vengono visualizzate solo se avete scelto un modello di immagine o un modello Flash per il banner. Le opzioni effettive dei parametri variano a seconda di come è stato creato il modello e come è stato parametrizzato in Scene7 Publishing System. Ad esempio, il modello potrebbe includere campi con parametri che consentono di modificare elementi quali testo, stile font, prezzo, codici speciali utilizzati per la spedizione gratuita, la dimensione dell&#39;immagine all&#39;interno del banner o persino cercare un&#39;altra immagine da utilizzare.
+   Le opzioni dei parametri vengono visualizzate solo se avete scelto un modello di immagine o un modello di Flash per il banner. Le opzioni effettive dei parametri variano a seconda di come il modello è stato creato e con i parametri in Scene7 Publishing System. Ad esempio, il modello potrebbe includere campi con parametri che consentono di modificare elementi quali testo, stile font, prezzo, codici speciali utilizzati per la spedizione gratuita, la dimensione dell&#39;immagine all&#39;interno del banner o persino cercare un&#39;altra immagine da utilizzare.
 
    >[!NOTE]
    >
@@ -414,7 +415,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
 
    **Attiva/disattiva le opzioni Visibilità livello**
 
-   L’opzione Attiva/Disattiva visibilità livello si applica solo se avete scelto un modello Flash per il banner.
+   L’opzione Attiva/Disattiva visibilità livello si applica solo se avete scelto un modello di Flash per il banner.
 
    <table> 
     <thead> 
@@ -426,7 +427,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_togglelayervisibility.png"> </p> </td> 
-      <td colname="col2"> <p>Consente di attivare o disattivare la visibilità dei vari livelli che compongono il file modello Flash. </p> <p>Ogni volta che attivate o disattivate la visibilità di un livello, la finestra di anteprima viene aggiornata per aggiornare la visualizzazione. </p> </td> 
+      <td colname="col2"> <p>Consente di attivare o disattivare la visibilità dei vari livelli che compongono il file modello di Flash. </p> <p>Ogni volta che attivate o disattivate la visibilità di un livello, la finestra di anteprima viene aggiornata per aggiornare la visualizzazione. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -435,7 +436,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
 
    >[!NOTE]
    >
-   >Per usare la funzionalità di caricamento nel visualizzatore di risorse Scene7, accertatevi che l’account Scene7 usato abbia già impostato il ruolo di &quot;Amministratore società SPS&quot;.
+   >Se desiderate usare la funzionalità di caricamento nel visualizzatore delle risorse Scene7, accertatevi che l’account Scene7 usato abbia già il ruolo di &quot;Amministratore società SPS&quot;.
 
    Consultate Impostazione [](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) amministrazione nella guida utente di Scene7 Publishing System.
 
@@ -466,11 +467,11 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
 
    **Opzioni avanzate**
 
-   Quando caricate i file immagine PostScript (EPS) o Illustrator (AI), potete formattarli in vari modi. Potete rasterizzare i file, convertirli in FXG per Pubblicazione modelli, mantenere lo sfondo trasparente, scegliere una risoluzione e uno spazio colore.
+   Quando caricate i file immagine PostScript (EPS) o  Illustrator (AI), potete formattarli in vari modi. Potete rasterizzare i file, convertirli in FXG per Pubblicazione modelli, mantenere lo sfondo trasparente, scegliere una risoluzione e uno spazio colore.
 
    I file PSD (Photoshop Document Files) vengono utilizzati più spesso in Dynamic Media Classic per creare i modelli. Quando caricate un file PSD, potete creare automaticamente dal file un modello Dynamic Media Classic (selezionate l’ **[!UICONTROL Create Template]** opzione).
 
-   Scene7 Publishing System crea più immagini da un file PSD con livelli, se usate il file per creare un modello; crea un’immagine per ciascun livello.
+   Scene7 Publishing System crea più immagini da un file PSD con livelli, se utilizzate il file per creare un modello; crea un’immagine per ciascun livello.
 
    <table> 
     <thead> 
@@ -496,19 +497,19 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
       <td colname="col2"> <p>Create una maschera per l’immagine in base alle informazioni del tracciato di ritaglio. Questa opzione si applica alle immagini create con applicazioni di modifica delle immagini in cui è stato creato un tracciato di ritaglio. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Opzioni PostScript </p> <p>Opzioni Illustrator </p> </td> 
+      <td colname="col1"> <p>Opzioni PostScript </p> <p> opzioni Illustrator </p> </td> 
       <td colname="col02"> <p>Processing (Completa elaborazione) </p> </td> 
       <td colname="col2"> <p> <span class="uicontrol"> L’ </span> opzione Rasterizza converte la grafica vettoriale nel file in formato bitmap. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Opzioni PostScript </p> <p>Opzioni Illustrator </p> </td> 
+      <td colname="col1"> <p> Opzioni PostScript </p> <p> opzioni Illustrator </p> </td> 
       <td colname="col02"> <p> Risoluzione </p> </td> 
       <td colname="col2"> <p> Determina l’impostazione della risoluzione. Questa impostazione determina la quantità di pixel visualizzati per pollice nel file. Il valore predefinito è 150. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Opzioni PostScript </p> <p>Opzioni Illustrator </p> </td> 
+      <td colname="col1"> <p> Opzioni PostScript </p> <p> opzioni Illustrator </p> </td> 
       <td colname="col02"> <p> Spazio colore </p> </td> 
-      <td colname="col2"> <p>Consente di scegliere uno spazio colore per il file Illustrator. Lo spazio colore RGB è preferibile per la visualizzazione online. </p> <p>Potete scegliere tra le seguenti opzioni: </p> 
+      <td colname="col2"> <p>Consente di scegliere uno spazio colore per il file Illustrator . Lo spazio colore RGB è preferibile per la visualizzazione online. </p> <p>Potete scegliere tra le seguenti opzioni: </p> 
         <ul id="ul_0E83E2762A574480B243F963A7FB2ACD"> 
         <li id="li_B9FEC7D220D04CCABACD30839051DAE4"> <span class="uicontrol"> Rileva automaticamente </span> <p> Conserva lo spazio colore del file PDF. </p> </li> 
         <li id="li_ED0EB3B12BCF41C7AFC435447010B6FF"> <span class="uicontrol"> Forza come RGB </span> <p> Effettua la conversione nello spazio colore RGB. </p> </li> 
@@ -517,7 +518,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
         </ul> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Opzioni PostScript </p> <p>Opzioni Illustrator </p> </td> 
+      <td colname="col1"> <p> Opzioni PostScript </p> <p> opzioni Illustrator </p> </td> 
       <td colname="col02"> <p> Mantieni sfondo trasparente </p> </td> 
       <td colname="col2"> <p>Mantiene la trasparenza dello sfondo del file. </p> </td> 
       </tr> 
@@ -544,11 +545,11 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
       <tr> 
       <td colname="col1"> <p>Opzioni Photoshop </p> </td> 
       <td colname="col02"> <p> Denominazione dei livelli </p> </td> 
-      <td colname="col2"> <p>I livelli nel file PSD vengono caricati come immagini separate. Potete scegliere tra le seguenti opzioni per specificare come denominare queste immagini in Scene7 Publishing System: </p> 
+      <td colname="col2"> <p>I livelli nel file PSD vengono caricati come immagini separate. Potete scegliere tra le seguenti opzioni per decidere come denominare queste immagini in Scene7 Publishing System: </p> 
         <ul id="ul_C2A25177A07740CA90B32C638304D39F"> 
-        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Usa nome livello dal file PSD </span> <p>Denomina le immagini in base ai nomi dei rispettivi livelli nel file PSD. Ad esempio, un livello denominato <span class="codeph"> Price Tag </span> nel file PSD originale diventa un’immagine denominata <span class="codeph"> Price Tag </span>. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei rispettivi livelli nel file PSD, non in base ai nomi dei livelli predefiniti. </p> </li> 
-        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Usa nome file PSD e numero di aggiunta </span> <p>Denomina le immagini in base ai numeri dei rispettivi livelli nel file PSD, ignorando i nomi dei livelli originali. Le immagini vengono denominate con il nome del file Photoshop e un numero del livello aggiunto. Ad esempio, il secondo livello di un file denominato <span class="codeph"> Spring Ad.psd </span> è denominato <span class="codeph"> Spring Ad_2 </span> anche se in Photoshop tale livello aveva un nome non predefinito. </p> </li> 
-        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Usa nome file PSD e nome o numero del livello </span> <p>Denomina le immagini dopo il file PSD seguito dal nome o dal numero del livello. Il numero del livello viene utilizzato se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop. Ad esempio, un livello denominato <span class="codeph"> Price Tag </span> in un file PSD denominato <span class="codeph"> SpringAd </span> è denominato <span class="codeph"> Spring Ad_Price Tag </span>. Un livello con il nome predefinito <span class="codeph"> Livello 2 </span> è denominato <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
+        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Usa nome livello dal file PSD </span> <p>Denomina le immagini in base ai nomi dei rispettivi livelli nel file PSD. Ad esempio, un livello denominato <span class="codeph"> Price Tag </span> nel file PSD originale diventa un’immagine denominata <span class="codeph"> Price Tag </span>. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei rispettivi livelli nel file PSD, non in base ai nomi dei livelli predefiniti. </p> </li> 
+        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Usa nome file PSD e numero di aggiunta </span> <p>Denomina le immagini in base ai numeri dei rispettivi livelli nel file PSD, ignorando i nomi dei livelli originali. Le immagini vengono denominate con il nome del file Photoshop e un numero del livello aggiunto. Ad esempio, il secondo livello di un file denominato <span class="codeph"> Spring Ad.psd </span> è denominato <span class="codeph"> Spring Ad_2 </span> anche se in Photoshop era presente un nome non predefinito. </p> </li> 
+        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Usa nome file PSD e nome o numero del livello </span> <p>Denomina le immagini dopo il file PSD seguito dal nome o dal numero del livello. Il numero del livello viene utilizzato se i nomi del livello nel file PSD sono nomi di livello Photoshop predefiniti. Ad esempio, un livello denominato <span class="codeph"> Price Tag </span> in un file PSD denominato <span class="codeph"> SpringAd </span> è denominato <span class="codeph"> Spring Ad_Price Tag </span>. Un livello con il nome predefinito <span class="codeph"> Livello 2 </span> è denominato <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
         <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Creare una cartella basata sul nome del file PSD </span> <p>Crea una cartella per le immagini dei livelli utilizzando il nome file del file PSD. </p> </li> 
         </ul> </td> 
       </tr> 
@@ -592,7 +593,7 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
     </tbody> 
     </table>
 
-1. Nel riquadro a destra, fate clic sull’immagine, sul modello o sul file Flash desiderato.
+1. Nel riquadro a destra, fate clic sul file di immagine, modello o Flash desiderato.
 
    Viene visualizzata la finestra [!DNL Pick An Asset] a comparsa.
 1. (Facoltativo) Nella finestra [!DNL Pick An Asset] a comparsa, nell’elenco a [!DNL Actions] discesa, effettuate una delle seguenti operazioni:
@@ -623,9 +624,9 @@ Consultate [Configurazione dell’accesso all’account](../c-about-settings-men
 
       Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
 
-## Modifica di un banner con Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
+## Modifica di un banner con  Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
 
-Utilizzate questa opzione [!DNL Edit Banner] per modificare le proprietà e i parametri di un banner aggiunto utilizzando Adobe Dynamic Media Classic.
+Usate [!DNL Edit Banner] per modificare le proprietà e i parametri di un banner aggiunto con  Adobe Dynamic Media Classic.
 
 <!-- 
 
@@ -637,7 +638,7 @@ Se avete aggiunto un banner aggiungendo del codice HTML, modificate il banner ut
 
 Consultate anche [Modifica di un banner](../c-about-design-menu/c-about-banners.md#task_D4081083BE7B40F5A003D1A2F1435AEA).
 
-**Per modificare un banner con Adobe Dynamic Media Classic**
+**Per modificare un banner con  Adobe Dynamic Media Classic**
 
 1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Banners]** dal menu del prodotto.
 1. Nella [!DNL Banners] pagina, fate clic ![](assets/icon_edit_16.gif) sopra la miniatura di un banner con icona S7 nell’angolo inferiore sinistro della finestra del banner.
