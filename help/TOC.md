@@ -1,19 +1,19 @@
 ---
 cloud: experience-cloud
-product: Search&amp;Promote
+product: Adobe Search&amp;Promote
 audience: end-user
-user-guide-title: Search&amp;Promote Guide
-breadcrumb-title: Search&amp;Promote Guide
+user-guide-title: ' Adobe Search&amp;Promote Guide'
+breadcrumb-title: Adobe Search&amp;Promote Guide
 translation-type: tm+mt
-source-git-commit: 8a42d1ee5260adbb88e483a38b107bd76b89a452
+source-git-commit: e211b8d01a8dea5b4232f3daeb430cb7ffe7ea76
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '248'
 ht-degree: 4%
 
 ---
 
 
-# Guida alla ricerca e promozione {#using}
+# Guida alla ricerca e alla promozione  Adobe {#using}
 
 + [Panoramica della documentazione di Search&amp;Promote](sp-home.md)
 + Note sulla versione {#release-notes}
@@ -93,8 +93,8 @@ ht-degree: 4%
    + [Riscrittura regole](c-about-settings-menu/c-about-rewrite-rules-menu.md)
    + [Adobe Analytics](c-about-settings-menu/c-about-adobe-analytics-menu.md)
    + [SEO](c-about-settings-menu/c-about-seo.md)
-   + [Profilo personale](c-about-settings-menu/c-about-my-profile-menu.md)
-   + [Opzioni account](c-about-settings-menu/c-about-account-options-menu.md)
+   + [Indice personale](c-about-settings-menu/c-about-my-profile-menu.md)
+   + [pito account](c-about-settings-menu/c-about-account-options-menu.md)
    + [Utenti](c-about-settings-menu/c-about-users-menu.md)
 + [Utilizzo degli account di Search&amp;Promote](c-about-accounts-menu.md)
 + Appendici {#appendices}
