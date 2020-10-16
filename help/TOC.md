@@ -3,17 +3,17 @@ cloud: experience-cloud
 product: Adobe Search&amp;Promote
 audience: end-user
 user-guide-title: ' Adobe Search&amp;Promote Guide'
-breadcrumb-title: Adobe Search&amp;Promote Guide
+breadcrumb-title: ' Adobe Search&amp;Promote Guide'
 translation-type: tm+mt
 source-git-commit: e211b8d01a8dea5b4232f3daeb430cb7ffe7ea76
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '254'
 ht-degree: 4%
 
 ---
 
 
-# Guida alla ricerca e alla promozione  Adobe {#using}
+# Adobe Search and Promote Guide {#using}
 
 + [Panoramica della documentazione di Search&amp;Promote](sp-home.md)
 + Note sulla versione {#release-notes}
@@ -86,15 +86,15 @@ ht-degree: 4%
    + [Ripristino per gli indici](c-about-index-menu/c-about-rollback-for-indexes.md)
    + [Aggiornamento verticale](c-about-index-menu/c-about-vertical-updates.md)
 + Configurazione delle impostazioni {#settings}
-   + [Profilo](c-about-settings-menu/c-about-crawling-menu.md)
+   + [Ricerca per indicizzazione](c-about-settings-menu/c-about-crawling-menu.md)
    + [Ricerca](c-about-settings-menu/c-about-searching-menu.md)
    + [Metadati](c-about-settings-menu/c-about-metadata-menu.md)
    + [Filtro](c-about-settings-menu/c-about-filtering-menu.md)
    + [Riscrittura regole](c-about-settings-menu/c-about-rewrite-rules-menu.md)
    + [Adobe Analytics](c-about-settings-menu/c-about-adobe-analytics-menu.md)
    + [SEO](c-about-settings-menu/c-about-seo.md)
-   + [Indice personale](c-about-settings-menu/c-about-my-profile-menu.md)
-   + [pito account](c-about-settings-menu/c-about-account-options-menu.md)
+   + [Profilo personale](c-about-settings-menu/c-about-my-profile-menu.md)
+   + [Opzioni account](c-about-settings-menu/c-about-account-options-menu.md)
    + [Utenti](c-about-settings-menu/c-about-users-menu.md)
 + [Utilizzo degli account di Search&amp;Promote](c-about-accounts-menu.md)
 + Appendici {#appendices}
