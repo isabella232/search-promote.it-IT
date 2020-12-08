@@ -1,16 +1,12 @@
 ---
-source-git-commit: 2c0ca6307586f4b63599856bc20aee196cb8b98f
+source-git-commit: c02e937ebe5cfd9dbcb1b3cd1818a826aced3b61
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '509'
-ht-degree: 72%
+source-wordcount: '427'
+ht-degree: 85%
 
 ---
 # Articolo di Contribute per Search &amp; Promote
-
-| EXL-PR | EXL | Anteprima | Attiva | Pubblicato | Aiuto |
-|--- |--- |--- |--- |--- |--- |
-| [![Stato build](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_pr-exl/lastBuild/) | [![Stato build](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_exl/lastBuild/lastBuild) | [URL anteprima](https://experienceleague.corp.adobe.com/docs/search-promote/using/sp-home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL dal vivo](https://experienceleague.adobe.com/docs/search-promote/using/sp-home.html?lang=en) | [Guida all’authoring](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Apprezziamo i contributi della nostra community e dei dipendenti Adobe esterni ai team della documentazione.
 
