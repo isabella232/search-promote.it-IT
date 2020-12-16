@@ -8,17 +8,20 @@ topic: Release Notes,Site search and merchandising
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 6%
 
 ---
 
 
-# Search&amp;Promote 8.15.0 Release Notes (6/19/2014){#search-promote-release-notes}
+# Note sulla versione di Search&amp;Promote 8.15.0 (19/6/2014){#search-promote-release-notes}
 
 **Nuova funzionalità**
 
-* Frase stemming - È ora supportato lo stemming dei sinonimi all&#39;interno di una frase.  Per attivare e utilizzare questa funzione in [!DNL Adobe Search&Promote], contattate il vostro Adobe Technical Account Manager.
+* Frase stemming - È ora supportato lo stemming dei sinonimi all&#39;interno di una frase.  Per attivare e utilizzare questa funzione in [!DNL Adobe Search&Promote], contattare il responsabile dell&#39;account tecnico  Adobe.
 
-   Consultate anche **[!UICONTROL Alternate Word Forms]** nella tabella delle opzioni in [Configurazione della corrispondenza tra i termini di ricerca e il contenuto Web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
+   Vedere anche **[!UICONTROL Alternate Word Forms]** nella tabella delle opzioni in [Configurazione della corrispondenza tra i termini di ricerca e il contenuto Web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
 
 **Problemi risolti e miglioramenti**
 
