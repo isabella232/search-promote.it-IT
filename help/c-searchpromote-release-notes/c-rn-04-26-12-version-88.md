@@ -8,30 +8,33 @@ topic: Release Notes,Site search and merchandising
 uuid: ddb9f1af-92a4-4f85-be8f-a36f34d31add
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 2%
 
 ---
 
 
-# Search&amp;Promote 8.8 Release Notes (04/26/2012){#search-promote-release-notes}
+# Search&amp;Promote 8.8 - Note sulla versione (26/04/2012){#search-promote-release-notes}
 
 **Nuova funzionalità**
 
 * Facet dinamico
 
    Facet dinamico rispetto a un set di attributi a forma libera associato a ciascuna pagina di contenuto del sito, che possono essere modificati (vengono aggiunti nuovi attributi, quelli vecchi rimossi o rinominati) da indice a indice. Il facet dinamico mappa automaticamente i facet degli slot con i facet reali. Il livello Guided Search (Ricerca guidata) facilita questa funzione con le regole aziendali.
-* Interfaccia utente di Adobe Search&amp;Promote
+* Interfaccia utente Search&amp;Promote  Adobe
 
-   Interfaccia utente Adobe implementata in tutte le pagine Web di Adobe Search&amp;Promote.
-* Maggiore integrazione con il portale di accesso di Adobe
+   Implementata  interfaccia utente Adobe in tutte  Adobe Search&amp;Promote pagine Web.
+* Integrazione più stretta con  Adobe  portale di accesso
 
-   I clienti di Adobe Search&amp;Promote possono utilizzare il portale di accesso di Adobe esclusivamente. I clienti attuali [!DNL Adobe Publish], Adobe SiteSearch e Atomz continueranno a utilizzare le credenziali di accesso legacy.
+    Search&amp;Promote di Adobe i clienti possono utilizzare il  Adobe portale di accesso esclusivamente. I clienti [!DNL Adobe Publish],  Adobe SiteSearch e Atomz correnti continueranno a utilizzare l&#39;accesso legacy.
 * Nuovo analizzatore morfologico per il supporto cinese e giapponese
 
    L&#39;analizzatore morfologico è applicato sull&#39;indice e sul tempo di ricerca per sostenere cinese e giapponese.
 * Supporto per nuovi tipi di documenti, ad esempio Microsoft Office 2010
 
    La ricerca può convertire in HTML vari tipi di documenti, ad esempio .doc, .docx, .pdf e .mp3 prima di inserirsi nell’indicizzatore.
-* Nuovo sistema di Aiuto online Adobe Search&amp;Promote
+* Nuovo Adobe di Search&amp;Promote online
 
    Il sistema di Aiuto in linea dispone di una nuova interfaccia utente e ora è basato sulle attività.
 
