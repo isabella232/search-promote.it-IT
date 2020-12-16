@@ -8,6 +8,9 @@ topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
 source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
+workflow-type: tm+mt
+source-wordcount: '3127'
+ht-degree: 0%
 
 ---
 
@@ -48,12 +51,12 @@ Le regole aziendali possono avere uno dei tre stati seguenti: Approvato, sospeso
   </tr> 
   <tr> 
    <td colname="col1"> <p>WIP </p> </td> 
-   <td colname="col2"> <p>WIP (Work In Progress) sono regole aziendali che non sono né approvate né sospese. In altre parole, potreste ancora lavorare su di loro o potreste desiderare testarli prima di approvarli. Le regole aziendali in uno stato di WIP vengono eseguite solo nell'ambiente in cui sono state create le fasi. </p> </td> 
+   <td colname="col2"> <p>WIP (Work In Progress) sono regole aziendali non approvate né sospese. In altre parole, potreste ancora lavorare su di loro o potreste desiderare testarli prima di approvarli. Le regole aziendali in uno stato di WIP vengono eseguite solo nell'ambiente in cui sono state create le fasi. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Approvate le regole di business e le inviate live in modo che vengano eseguite nel vostro ambiente live. Al momento, è possibile trasmettere *tutte* le regole in diretta. Tuttavia, puoi modificare lo stato di una regola per avere il controllo su quali regole vengono eseguite e non vengono eseguite nell&#39;ambiente live.
+Approvate le regole di business e le inviate live in modo che vengano eseguite nel vostro ambiente live. Al momento è possibile inviare live solo le regole *all*. Tuttavia, puoi modificare lo stato di una regola per avere il controllo su quali regole vengono eseguite e non vengono eseguite nell&#39;ambiente live.
 
 Per impostazione predefinita, le regole vengono eseguite ogni volta che vengono soddisfatti i trigger associati. È tuttavia possibile pianificare l&#39;esecuzione di una regola per un intervallo di date e ore specifico.
 
@@ -61,7 +64,7 @@ Inoltre, per impostazione predefinita, le regole vengono eseguite ogni volta che
 
 ## Aggiunta di una nuova regola business {#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7}
 
-Puoi utilizzare [!DNL Visual Rule Builder] o [!DNL Advanced Rule Builder] aggiungere regole di business che adattano l&#39;esperienza di ricerca del cliente.
+Potete utilizzare [!DNL Visual Rule Builder] o [!DNL Advanced Rule Builder] per aggiungere regole business che adattino l&#39;esperienza di ricerca del cliente.
 
 **Aggiunta di una nuova regola business**
 
@@ -69,20 +72,20 @@ Nella procedura seguente si presuppone che si stia utilizzando Visual Rule Build
 
 1. Esegui una delle operazioni seguenti:
 
-   * Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]** dal menu del prodotto. Sulla [!DNL Business Rules] pagina, fate clic su **[!UICONTROL Add New Rule]**.
+   * Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]** dal menu del prodotto. Nella pagina [!DNL Business Rules] fare clic su **[!UICONTROL Add New Rule]**.
 
-   * Scegliere **[!UICONTROL Simulator]**. Sulla **[!UICONTROL Simulator for Today]** pagina, fare clic **[!UICONTROL Add New Rule]** a destra del menu a **[!UICONTROL Options]** discesa.
+   * Scegliere **[!UICONTROL Simulator]** dal menu del prodotto. Nella pagina **[!UICONTROL Simulator for Today]**, fare clic su **[!UICONTROL Add New Rule]** a destra del menu a discesa **[!UICONTROL Options]**.
 
-      Se l’ **[!UICONTROL Add New Rule]** opzione non è visibile sulla pagina, scegliere **[!UICONTROL Options]** dal menu a **[!UICONTROL Simulate Staged]** discesa.
+      Se l&#39;opzione **[!UICONTROL Add New Rule]** non è visibile sulla pagina, scegliere **[!UICONTROL Options]** dal menu a discesa **[!UICONTROL Simulate Staged]**.
 
       ![](assets/Simulator.png)
 
-1. Nel campo di **[!UICONTROL Name]** testo, digitare il nuovo nome della regola business.
+1. Nel campo di testo **[!UICONTROL Name]**, digitare il nuovo nome della regola business.
 
-   Non fate **[!UICONTROL Save Rule]** ancora clic.
-1. (Facoltativo) Se gestite un numero elevato di regole business, potete assegnare alle regole business dei tag etichette specifiche. Nel **[!UICONTROL Tags]** campo, immettere una o più etichette di tag, utilizzare una virgola, una tabulazione o un Invio come delimitatore.
+   Non fare ancora clic su **[!UICONTROL Save Rule]**.
+1. (Facoltativo) Se gestite un gran numero di regole business, potete assegnare alle regole business dei tag etichette specifiche. Nel campo **[!UICONTROL Tags]** immettete una o più etichette di tag, utilizzate una virgola, una tabulazione o un Invio come delimitatore.
 
-   Sulla [!DNL Business Rules] pagina, utilizzate la **[!UICONTROL Filter by tag]** funzione per filtrare le regole che corrispondono a una determinata etichetta. 1. Nella [!DNL Business Rule Builder] pagina, impostate gli attivatori e le azioni che desiderate utilizzare.
+   Nella pagina [!DNL Business Rules], utilizzate la funzione **[!UICONTROL Filter by tag]** per filtrare le regole che corrispondono a una determinata etichetta. 1. Nella pagina [!DNL Business Rule Builder], impostate i trigger e le azioni da utilizzare.
 
    **Opzioni di attivazione**
 
@@ -96,7 +99,7 @@ Nella procedura seguente si presuppone che si stia utilizzando Visual Rule Build
 
       `if a OR b OR c then ...`
 
-   * Risposta in cui è specificata una combinazione personalizzata di trigger. In altre parole, è possibile combinare singoli trigger o &quot;condizioni&quot; con `AND` operatori e `OR` operatori.
+   * Risposta in cui è specificata una combinazione personalizzata di trigger. In altre parole, è possibile combinare singoli trigger o &quot;condizioni&quot; con operatori `AND` e operatori `OR`.
 
       È inoltre possibile modificare la precedenza della valutazione aggiungendo combinazioni di parentesi sinistra e destra come nell&#39;esempio seguente:
 
@@ -104,7 +107,7 @@ Nella procedura seguente si presuppone che si stia utilizzando Visual Rule Build
 
       >[!NOTE]
       >
-      >Se si combinano `AND` operatori con `OR` operatori in un set di regole aziendali personalizzate, assicurarsi di specificare le parentesi in modo appropriato per garantire che i trigger vengano valutati nell&#39;ordine corretto.
+      >Se si combinano operatori `AND` con operatori `OR` in un set di regole aziendali personalizzate, assicurarsi di specificare le parentesi in modo appropriato per garantire che i trigger vengano valutati nell&#39;ordine corretto.
 
       Per impostazione predefinita, questa particolare funzione di personalizzazione di una combinazione di attivatori non è abilitata. Per attivare questa funzione, contattate il supporto tecnico.
    <table> 
@@ -188,7 +191,7 @@ Nella procedura seguente si presuppone che si stia utilizzando Visual Rule Build
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aggiunta di comandi per banner </p> </td> 
-      <td colname="col2"> <p>Si applica solo ai modelli Adobe Dynamic Media Classic. </p> <p>Consente di modificare i parametri predefiniti utilizzati nel modello per banner. </p> <p>Consultate la tabella delle opzioni in <a scope="local" href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita"> Aggiunta di un banner tramite Adobe Dynamic Media Classic </a>. </p> <p>Consultate anche <a href="../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9" type="task" format="dita" scope="local"> Modifica di un banner con Adobe Dynamic Media Classic </a>. </p> </td> 
+      <td colname="col2"> <p>Si applica solo  Adobe modelli Dynamic Media Classic. </p> <p>Consente di modificare i parametri predefiniti utilizzati nel modello per banner. </p> <p>Consultate la tabella delle opzioni in <a scope="local" href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita"> Aggiunta di un banner tramite  Adobe Dynamic Media Classic </a>. </p> <p>Consultate anche <a href="../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9" type="task" format="dita" scope="local"> Modifica di un banner con  Adobe Dynamic Media Classic </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Rimuovi banner </p> </td> 
@@ -227,50 +230,50 @@ Nella procedura seguente si presuppone che si stia utilizzando Visual Rule Build
 
    A seconda del pannello del generatore di regole attivo (non piegato), potete anche effettuare le seguenti operazioni per impostare attivatori e azioni.
 
-   * Quando il **[!UICONTROL Triggers]** pannello è aperto - Nell’area del modello di presentazione della pagina Generatore di regole aziendali, fate clic con il pulsante destro del mouse su qualsiasi risultato di ricerca o facet di ricerca, quindi fate clic su **[!UICONTROL Add "result present" trigger]**.
+   * Quando il pannello **[!UICONTROL Triggers]** è aperto - Nell&#39;area del modello di presentazione della pagina Generatore regole aziendali, fare clic con il pulsante destro del mouse su un risultato di ricerca o un facet di ricerca, quindi fare clic su **[!UICONTROL Add "result present" trigger]**.
 
       Nel pannello Triggers fare clic sulla &quot;X&quot; a sinistra di un trigger per rimuoverlo dall&#39;elenco dei trigger.
 
-   * Quando il **[!UICONTROL Actions]** pannello è aperto - Nell’area del modello di presentazione della pagina Generatore di regole aziendali, fate clic con il pulsante destro del mouse su un risultato di ricerca. Fate clic **[!UICONTROL Add Result]**, **[!UICONTROL Remove Result]**, **[!UICONTROL Push to bottom]** o **[!UICONTROL Push to #`<n>`]** (dove `<n>` è un numero).
+   * Quando il pannello **[!UICONTROL Actions]** è aperto - Nell&#39;area del modello di presentazione della pagina Generatore di regole aziendali, fare clic con il pulsante destro del mouse su un risultato di ricerca. Fare clic su **[!UICONTROL Add Result]**, **[!UICONTROL Remove Result]**, **[!UICONTROL Push to bottom]** o **[!UICONTROL Push to #`<n>`]** (dove `<n>` è un numero).
 
 
-1. (Facoltativo) In qualsiasi pannello Generatore di regole business ( [!DNL Triggers], [!DNL Actions]o [!DNL Schedule]), effettuate una delle seguenti operazioni:
+1. (Facoltativo) In qualsiasi pannello Generatore di regole business ( [!DNL Triggers], [!DNL Actions] o [!DNL Schedule]), effettuate una delle seguenti operazioni:
 
-   * Nell&#39;area del modello di presentazione dell&#39;area della pagina Generatore regole business, fare clic con il pulsante destro del mouse su un banner, quindi fare clic **[!UICONTROL Select different banner]**. Nella **[!UICONTROL Pick Banner]** pagina, fate clic **[!UICONTROL Pick this banner]** sotto la miniatura del banner per aggiungerlo al modello di presentazione. Potete scegliere solo i banner che corrispondono alle dimensioni e all’area del banner originale nel modello di presentazione.
+   * Nell&#39;area del modello di presentazione dell&#39;area della pagina Generatore regole business, fare clic con il pulsante destro del mouse su un banner, quindi scegliere **[!UICONTROL Select different banner]**. Nella pagina **[!UICONTROL Pick Banner]**, fate clic su **[!UICONTROL Pick this banner]** sotto la miniatura del banner per aggiungerlo al modello di presentazione. Potete scegliere solo i banner che corrispondono alle dimensioni e all’area del banner originale nel modello di presentazione.
 
-      L’azione Aggiungi banner viene aggiunta al [!DNL Actions] pannello.
+      L&#39;azione Aggiungi banner viene aggiunta al pannello [!DNL Actions].
 
-   * Nell’area del modello di presentazione della [!DNL Business Rule Builder] pagina, fate clic con il pulsante destro del mouse su un banner modello Adobe Dynamic Media Classic i cui parametri desiderate modificare, quindi fate clic su **[!UICONTROL Add banner commands]**. Nella finestra di [!DNL Change Parameters] dialogo, impostare le opzioni dei parametri desiderate.
+   * Nell&#39;area del modello di presentazione della pagina [!DNL Business Rule Builder], fare clic con il pulsante destro del mouse su un banner modello Dynamic Media Classic di Adobe  cui si desidera modificare i parametri, quindi fare clic su **[!UICONTROL Add banner commands]**. Nella finestra di dialogo [!DNL Change Parameters], impostare le opzioni di parametro desiderate.
 
-      Consultate la tabella delle opzioni in [Aggiunta di un banner tramite Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+      Consultate la tabella delle opzioni in [Aggiunta di un banner tramite  Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
       Clic **[!UICONTROL Save]**.
 
-      Le modifiche ai parametri vengono aggiunte al [!DNL Actions] pannello.
+      Le modifiche ai parametri vengono aggiunte al pannello [!DNL Actions].
 
-      Consultate anche [Modifica di un banner con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
+      Consultate anche [Modifica di un banner con  Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
-   * Nell’area del modello di presentazione della pagina Generatore regole di business, fate clic con il pulsante destro del mouse sul banner da eliminare dalla pagina, quindi fate clic su **[!UICONTROL Remove banner]**. L’azione Rimuovi banner viene aggiunta al pannello Azioni.
+   * Nell’area del modello di presentazione della pagina Generatore regole di business, fare clic con il pulsante destro del mouse sul banner che si desidera eliminare dalla pagina, quindi fare clic su **[!UICONTROL Remove banner]**. L’azione Rimuovi banner viene aggiunta al pannello Azioni.
 
-1. (Facoltativo) Nel **[!UICONTROL Schedule]** pannello, effettuate una delle seguenti operazioni:
+1. (Facoltativo) Nel pannello **[!UICONTROL Schedule]**, effettuate una delle seguenti operazioni:
 
-   * Fare clic **[!UICONTROL Run Indefinitely]** per eseguire la regola ogni volta che vengono soddisfatti i trigger associati. Questa è l&#39;opzione predefinita.
-   * Fare clic **[!UICONTROL Fixed Schedule]**, quindi specificare la data e l&#39;ora di inizio e la data e l&#39;ora di fine per l&#39;esecuzione della regola ogni volta che viene soddisfatto il trigger associato.
+   * Fare clic su **[!UICONTROL Run Indefinitely]** per far eseguire la regola ogni volta che vengono soddisfatti i trigger associati. Questa è l&#39;opzione predefinita.
+   * Fare clic su **[!UICONTROL Fixed Schedule]**, quindi specificare la data e l&#39;ora di inizio e la data e l&#39;ora di fine per l&#39;esecuzione della regola ogni volta che viene soddisfatto il trigger associato.
 
 1. Clic **[!UICONTROL Save Rule]**.
-1. (Facoltativo) Nella [!DNL Business Rules] pagina, effettuare una delle seguenti operazioni:
+1. (Facoltativo) Nella pagina [!DNL Business Rules], effettuare una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica di una regola business {#task_375CFA75D1D94D9E92A35DE1228E5087}
 
@@ -279,57 +282,57 @@ Nella procedura seguente si presuppone che si stia utilizzando Visual Rule Build
 **Per modificare una nuova regola business**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]** dal menu del prodotto.
-1. Nella [!DNL Business Rules] pagina, effettuate una delle seguenti operazioni:
+1. Nella pagina [!DNL Business Rules], effettuare una delle seguenti operazioni:
 
-   * Nella [!DNL Name] colonna fare clic sul nome di una regola business da modificare.
+   * Nella colonna [!DNL Name], fare clic sul nome di una regola business che si desidera modificare.
 
       La regola business viene aperta nell&#39;interfaccia predefinita specificata in **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Preferences]**.
 
-   * Nell&#39;elenco a discesa, accanto al nome di una regola business che si desidera modificare, fare clic **[!UICONTROL Edit in advanced mode]** o **[!UICONTROL Edit in visual mode]**.
+   * Nell&#39;elenco a discesa, accanto al nome di una regola business che si desidera modificare, fare clic su **[!UICONTROL Edit in advanced mode]** o **[!UICONTROL Edit in visual mode]**.
 
-1. Nel campo di [!DNL Name] testo, digitare il nuovo nome della regola business.
+1. Nel campo di testo [!DNL Name], digitare il nuovo nome della regola business.
 
-   Non fate **[!UICONTROL Save Rule]** ancora clic. 1. Nella [!DNL Business Rule Builder] pagina, impostate gli attivatori e le azioni che desiderate utilizzare.
+   Non fare ancora clic su **[!UICONTROL Save Rule]**. 1. Nella pagina [!DNL Business Rule Builder], impostate i trigger e le azioni da utilizzare.
 
-   Vedere la tabella delle opzioni in [Aggiunta di una nuova regola](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)business.
-1. (Facoltativo) In qualsiasi **[!UICONTROL Business Rule Builder]** pannello ( [!DNL Triggers], [!DNL Actions]o [!DNL Schedule], effettuate una delle seguenti operazioni:
+   Vedere la tabella delle opzioni in [Aggiunta di una nuova regola business](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
+1. (Facoltativo) In qualsiasi pannello **[!UICONTROL Business Rule Builder]** ( [!DNL Triggers], [!DNL Actions] o [!DNL Schedule], effettuare una delle seguenti operazioni:
 
-   * Nell’area del modello di presentazione della [!DNL Business Rule Builder] pagina, fate clic con il pulsante destro del mouse su un banner, quindi fate clic **[!UICONTROL Select different banner]**. Fate clic [!DNL Pick Banner page]sotto la miniatura del **[!UICONTROL Pick this banner]** banner per aggiungerlo al modello di presentazione. Potete scegliere solo i banner che corrispondono alle dimensioni e all’area del banner originale nel modello di presentazione.
+   * Nell&#39;area del modello di presentazione della pagina [!DNL Business Rule Builder], fare clic con il pulsante destro del mouse su un banner, quindi scegliere **[!UICONTROL Select different banner]**. In [!DNL Pick Banner page], fate clic su **[!UICONTROL Pick this banner]** sotto la miniatura del banner per aggiungerlo al modello di presentazione. Potete scegliere solo i banner che corrispondono alle dimensioni e all’area del banner originale nel modello di presentazione.
 
-      L’azione Aggiungi banner viene aggiunta al [!DNL Actions] pannello.
+      L&#39;azione Aggiungi banner viene aggiunta al pannello [!DNL Actions].
 
-   * Nell’area del modello di presentazione della [!DNL Business Rule Builder] pagina, fate clic con il pulsante destro del mouse su un banner modello Adobe Dynamic Media Classic i cui parametri desiderate modificare, quindi fate clic su **[!UICONTROL Add banner commands]**. Nella finestra di [!DNL Change Parameters] dialogo, impostare le opzioni dei parametri desiderate.
+   * Nell&#39;area del modello di presentazione della pagina [!DNL Business Rule Builder], fare clic con il pulsante destro del mouse su un banner modello Dynamic Media Classic di Adobe  cui si desidera modificare i parametri, quindi fare clic su **[!UICONTROL Add banner commands]**. Nella finestra di dialogo [!DNL Change Parameters], impostare le opzioni di parametro desiderate.
 
-      Consultate la tabella delle opzioni in [Aggiunta di un banner tramite Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+      Consultate la tabella delle opzioni in [Aggiunta di un banner tramite  Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
       Clic **[!UICONTROL Save]**.
 
-      Le modifiche ai parametri vengono aggiunte al [!DNL Actions] pannello.
+      Le modifiche ai parametri vengono aggiunte al pannello [!DNL Actions].
 
-      Consultate anche [Modifica di un banner con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
+      Consultate anche [Modifica di un banner con  Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
-   * Nell’area del modello di presentazione della [!DNL Business Rule Builder] pagina, fate clic con il pulsante destro del mouse sul banner che desiderate eliminare dalla pagina, quindi fate clic su **[!UICONTROL Remove banner]**. L’azione Rimuovi banner viene aggiunta al [!DNL Actions] pannello.
+   * Nell&#39;area del modello di presentazione della pagina [!DNL Business Rule Builder], fare clic con il pulsante destro del mouse sul banner che si desidera eliminare dalla pagina, quindi fare clic su **[!UICONTROL Remove banner]**. L&#39;azione di rimozione del banner viene aggiunta al pannello [!DNL Actions].
 
-1. (Facoltativo) Nel [!DNL Schedule] pannello, effettuate una delle seguenti operazioni:
+1. (Facoltativo) Nel pannello [!DNL Schedule], effettuate una delle seguenti operazioni:
 
-   * Fare clic **[!UICONTROL Run Indefinitely]** per eseguire la regola ogni volta che vengono soddisfatti i trigger associati. Questa è l&#39;opzione predefinita.
-   * Fare clic **[!UICONTROL Fixed Schedule]**, quindi specificare la data e l&#39;ora di inizio e la data e l&#39;ora di fine per l&#39;esecuzione della regola ogni volta che viene soddisfatto il trigger associato.
+   * Fare clic su **[!UICONTROL Run Indefinitely]** per far eseguire la regola ogni volta che vengono soddisfatti i trigger associati. Questa è l&#39;opzione predefinita.
+   * Fare clic su **[!UICONTROL Fixed Schedule]**, quindi specificare la data e l&#39;ora di inizio e la data e l&#39;ora di fine per l&#39;esecuzione della regola ogni volta che viene soddisfatto il trigger associato.
 
 1. Clic **[!UICONTROL Save Rule]**.
 
-   La [!DNL Business Rule Builder] pagina si chiude e si torna alla **[!UICONTROL Business Rule]** pagina. Le regole vengono visualizzate nella tabella. Fate clic sull’intestazione della **[!UICONTROL Modified]** colonna per ordinare le regole per data di modifica. 1. (Facoltativo) Effettuate una delle seguenti operazioni:
+   La pagina [!DNL Business Rule Builder] si chiude e si torna alla pagina **[!UICONTROL Business Rule]**. Le regole vengono visualizzate nella tabella. Fare clic sull&#39;intestazione di colonna **[!UICONTROL Modified]** per ordinare le regole per data di modifica. 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Copia di una regola business {#task_89F1879C71A54EE9B7454439302C03EC}
 
@@ -338,35 +341,35 @@ Nella procedura seguente si presuppone che si stia utilizzando Visual Rule Build
 **Per copiare una regola business**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]** dal menu del prodotto.
-1. Nella **[!UICONTROL Business Rules]** pagina, nell&#39;elenco a discesa accanto al nome di una regola business che si desidera copiare, fare clic su **[!UICONTROL Copy rule]**.
+1. Nella pagina **[!UICONTROL Business Rules]**, nell&#39;elenco a discesa accanto al nome di una regola business che si desidera copiare, fare clic su **[!UICONTROL Copy rule]**.
 1. Modificate la regola business copiata come di consueto.
 
-   Consultate [Modifica di una regola](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087)aziendale.
+   Vedere [Modifica di una regola business](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
 
 ## Approvazione delle regole aziendali {#task_BD569D18BF664272B8692294C162E2C1}
 
-È possibile attivare regole aziendali con stato WIP (Work In Progress) o sospeso.
+È possibile attivare regole business con stato WIP (Work In Progress) o sospeso.
 
 **Per approvare le regole aziendali**
 
 1. Scegliere **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]** dal menu del prodotto.
-1. Nella [!DNL Business Rules] pagina, utilizzando l&#39;intestazione della colonna di stato nella [!DNL Status] colonna della tabella delle regole business, ordinate le regole che hanno uno stato **[!UICONTROL WIP]** o **[!UICONTROL suspended]**.
+1. Nella pagina [!DNL Business Rules], utilizzando l&#39;intestazione della colonna di stato nella colonna [!DNL Status] della tabella delle regole business, ordinate le regole che hanno uno stato **[!UICONTROL WIP]** o **[!UICONTROL suspended]**.
 
-   Utilizzare l&#39;intestazione della colonna della casella di controllo a sinistra della tabella per controllare tutte le regole visualizzate sulla pagina o solo quelle con uno stato **[!UICONTROL WIP]** o **[!UICONTROL suspended]**. 1. Nella barra dei menu accanto alla parte superiore della pagina, fate clic su **[!UICONTROL Approve]**.
-1. Nella finestra di **[!UICONTROL Confirm Action]** dialogo fare clic su **[!UICONTROL OK]**.
+   Utilizzare l&#39;intestazione della colonna casella di controllo a sinistra della tabella per controllare tutte le regole visualizzate sulla pagina o controllare solo quelle che hanno uno stato **[!UICONTROL WIP]** o **[!UICONTROL suspended]**. 1. Nella barra dei menu accanto alla parte superiore della pagina, fare clic su **[!UICONTROL Approve]**.
+1. Nella finestra di dialogo **[!UICONTROL Confirm Action]**, fare clic su **[!UICONTROL OK]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Sospensione delle regole aziendali {#task_364E1FFB905141C08E306C8F1794A20E}
 
@@ -377,60 +380,60 @@ Quando si sospende una regola, nell&#39;interfaccia utente viene indicato che la
 **Sospensione delle regole aziendali**
 
 1. Scegliere **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]** dal menu del prodotto.
-1. Sulla [!DNL Business Rules] pagina, utilizzando lo stato nella colonna Stato della tabella delle regole aziendali, nella colonna a sinistra della tabella, verificare le regole con stato **[!UICONTROL WIP]**, o **[!UICONTROL approved]**.
-1. Nella barra dei menu accanto alla parte superiore della pagina, fate clic su **[!UICONTROL Suspend]**.
-1. Nella finestra di **[!UICONTROL Confirm Action]** dialogo fare clic su **[!UICONTROL OK]**.
+1. Nella pagina [!DNL Business Rules], utilizzando lo stato nella colonna Stato della tabella delle regole aziendali, nella colonna a sinistra della tabella verificare le regole con stato **[!UICONTROL WIP]** o **[!UICONTROL approved]**.
+1. Nella barra dei menu accanto alla parte superiore della pagina, fare clic su **[!UICONTROL Suspend]**.
+1. Nella finestra di dialogo **[!UICONTROL Confirm Action]**, fare clic su **[!UICONTROL OK]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Riprendere le regole aziendali {#task_E67D678C765B436EA2A3D6ADD7A49ABA}
+## Riprendi regole aziendali {#task_E67D678C765B436EA2A3D6ADD7A49ABA}
 
 È possibile riprendere le regole aziendali per riattivare una regola sospesa. Dopo aver ripreso la regola business, il suo stato è impostato su WIP (Work In Progress).
 
 **Per riprendere le regole business**
 
 1. Scegliere **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]** dal menu del prodotto.
-1. Sulla [!DNL Business Rules] pagina, utilizzando lo stato nella colonna Stato della tabella delle regole business, nella colonna a sinistra della tabella verificare le regole con lo stato **[!UICONTROL suspended]**.
-1. Nella barra dei menu accanto alla parte superiore della pagina, fate clic su **[!UICONTROL Resume]**.
-1. Nella finestra di [!DNL Confirm Action] dialogo fare clic su **[!UICONTROL OK]**.
+1. Nella pagina [!DNL Business Rules], utilizzando lo stato nella colonna Stato della tabella delle regole aziendali, nella colonna a sinistra della tabella verificare le regole con stato **[!UICONTROL suspended]**.
+1. Nella barra dei menu accanto alla parte superiore della pagina, fare clic su **[!UICONTROL Resume]**.
+1. Nella finestra di dialogo [!DNL Confirm Action], fare clic su **[!UICONTROL OK]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica dell&#39;ordine di esecuzione delle regole aziendali {#task_FE3B1C17307F49B49050C2EC5A063991}
 
 Potete riordinare le regole business per modificare l&#39;ordine in cui vengono eseguite sui modelli di presentazione.
 
-Le regole aziendali vengono eseguite nell&#39;ordine in cui sono state definite; più alto è il numero d&#39;ordine di una regola, più tardi verrà eseguito nel processo, trumping regole precedenti. È possibile riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella [!DNL Business Rules] pagina. Potete anche utilizzare le regole di trascinamento per modificarne l&#39;ordine di esecuzione.
+Le regole aziendali vengono eseguite nell&#39;ordine in cui sono state definite; più alto è il numero d&#39;ordine di una regola, più tardi verrà eseguito nel processo, trumping regole precedenti. Riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella pagina [!DNL Business Rules]. Potete anche utilizzare le regole di trascinamento per modificarne l&#39;ordine di esecuzione.
 
 **Per modificare l&#39;ordine di esecuzione delle regole aziendali**
 
 1. Scegliere **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]** dal menu del prodotto.
-1. Nella [!DNL Business Rules] pagina, nella tabella, effettuate una delle seguenti operazioni:
+1. Nella pagina [!DNL Business Rules], nella tabella, effettuare una delle seguenti operazioni:
 
-   * Fate clic sull&#39;intestazione della **[!UICONTROL Order]** colonna per ordinare le regole in ordine crescente o decrescente.
-   * Nella **[!UICONTROL Order]** colonna, nel campo di testo a sinistra del nome di una regola business, digitare il numero di ordine che si desidera che venga eseguita.
+   * Fate clic sull&#39;intestazione della colonna **[!UICONTROL Order]** per ordinare le regole in ordine crescente o decrescente.
+   * Nella colonna **[!UICONTROL Order]**, nel campo di testo a sinistra del nome di una regola business, digitare il numero d&#39;ordine che si desidera eseguire.
    * Trascinare una riga di tabella nella posizione in cui si desidera eseguire la regola. Tutti i numeri di ordine vengono aggiornati in base al nuovo ordine in cui vengono eseguite le regole.
 
 1. Clic **[!UICONTROL Save Changes]**.
@@ -438,17 +441,17 @@ Le regole aziendali vengono eseguite nell&#39;ordine in cui sono state definite;
    Le regole aziendali verranno ora eseguite nell&#39;ordine specificato. L&#39;eccezione è rappresentata dalla presenza di una regola business di reindirizzamento specificata. Se e quando la regola business di reindirizzamento viene attivata o colpita, l&#39;elaborazione della regola business si arresta per consentire il reindirizzamento.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Eliminazione delle regole business {#task_AE37B42412044541BCC6D46CF8793DFF}
 
@@ -457,23 +460,23 @@ Le regole aziendali vengono eseguite nell&#39;ordine in cui sono state definite;
 **Per eliminare le regole business**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]** dal menu del prodotto.
-1. Nella [!DNL Business Rules] pagina, effettuate una delle seguenti operazioni:
+1. Nella pagina [!DNL Business Rules], effettuare una delle seguenti operazioni:
 
    * Utilizzate l&#39;intestazione della colonna della casella di controllo per controllare tutte le regole attualmente visualizzate sulla pagina.
    * Selezionare solo le regole aziendali da eliminare, in base allo stato nella colonna Stato della tabella.
 
-1. Nell’elenco a [!DNL Bulk Actions] discesa, fate clic su **[!UICONTROL Delete]**.
-1. Nella finestra di [!DNL Confirm Action] dialogo fare clic su **[!UICONTROL OK]**.
+1. Nell&#39;elenco a discesa [!DNL Bulk Actions], fare clic su **[!UICONTROL Delete]**.
+1. Nella finestra di dialogo [!DNL Confirm Action], fare clic su **[!UICONTROL OK]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
