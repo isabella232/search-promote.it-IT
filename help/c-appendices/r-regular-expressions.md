@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Un aggiornamento relativo alla sintassi e alle regole per la creazione di espressioni regolari.
 
-Consultate anche [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere anche [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Sintassi delle espressioni regolari**
 
@@ -108,38 +108,38 @@ Consultate anche [Configurazione di un indice incrementale di un sito Web](../c-
 * Un carattere ordinario, non uno dei caratteri speciali descritti di seguito, è un&#39;espressione regolare con un carattere che corrisponde a se stessa.
 * Una barra rovesciata (\) seguita da qualsiasi carattere speciale è un&#39;espressione regolare di un carattere che corrisponde al carattere speciale stesso. I caratteri speciali includono quanto segue:
 
-   * `.` (punto), `*` (asterisco), `?` (punto interrogativo), `+` (segno più), `[` (parentesi quadre sinistra), `|` (barra verticale) e `\` (barra rovesciata) sono sempre caratteri speciali, tranne quando compaiono tra parentesi quadre.
+   * `.` (punto),  `*` (asterisco),  `?` (punto interrogativo),  `+` (segno più),  `[` (parentesi quadre sinistra),  `|` (barra verticale) e  `\` (barra rovesciata) sono sempre caratteri speciali, fatta eccezione per i caratteri visualizzati tra parentesi quadre.
    * `^` (caret o cirflex) è speciale all&#39;inizio di un&#39;espressione regolare, o quando segue immediatamente la sinistra di una coppia di parentesi quadre.
    * `$` (simbolo del dollaro) è speciale alla fine di un&#39;espressione regolare.
    * `.` (punto) è un&#39;espressione regolare con un carattere che corrisponde a qualsiasi carattere, inclusi i caratteri set di codici supplementari ad eccezione di nuova riga.
-   * Una stringa di caratteri non vuota racchiusa tra parentesi quadre `[ ]` (sinistra e destra) è un&#39;espressione regolare di un carattere che corrisponde a un carattere nella stringa, inclusi i caratteri del set di codici supplementari.
+   * Una stringa non vuota di caratteri racchiusa tra `[ ]` (parentesi quadre sinistra e destra) è un&#39;espressione regolare di un carattere che corrisponde a un carattere nella stringa, inclusi i caratteri del set di codici supplementari.
 
-      Se, tuttavia, il primo carattere della stringa è una `^` (cirflex), l&#39;espressione regolare di un carattere corrisponde a qualsiasi carattere, inclusi i caratteri set di codici supplementari, ad eccezione di nuova riga e dei caratteri rimanenti nella stringa.
+      Se, tuttavia, il primo carattere della stringa è un carattere `^` (cirflex), l&#39;espressione regolare di un carattere corrisponde a qualsiasi carattere, inclusi i caratteri set di codici supplementari, ad eccezione di nuova riga e dei caratteri rimanenti nella stringa.
 
-      Questo `^` ha un significato speciale solo se si verifica per la prima volta nella stringa. È possibile utilizzare `-` (segno meno) per indicare un intervallo di caratteri consecutivi, inclusi i caratteri del set di codici supplementari. Ad esempio, [0-9] equivale a [0123456789].
+      Questo significato speciale è assegnato a `^` solo se si verifica per la prima volta nella stringa. È possibile utilizzare `-` (segno meno) per indicare un intervallo di caratteri consecutivi, compresi i caratteri del set di codici supplementari. Ad esempio, [0-9] equivale a [0123456789].
 
-      I caratteri che specificano l&#39;intervallo devono provenire dallo stesso set di codici. Quando i caratteri provengono da set di codici diversi, uno dei caratteri che specifica l’intervallo corrisponde. Questo `-` `^`significato speciale viene perso se si verifica prima (dopo l&#39;eventuale iniziale) o dopo l&#39;ultima nella stringa. La `]` (parentesi quadre destra) non termina con una stringa di questo tipo quando si tratta del primo carattere al suo interno, dopo un&#39;eventuale `^`parentesi iniziale. Ad esempio, `[]a-f]` corrisponde a una `]` (parentesi quadre destra) o a una delle lettere ASCII da a a f incluso. I quattro caratteri elencati come caratteri speciali sopra si trovano all&#39;interno di una tale stringa di caratteri.
+      I caratteri che specificano l&#39;intervallo devono provenire dallo stesso set di codici. Quando i caratteri provengono da set di codici diversi, uno dei caratteri che specifica l’intervallo corrisponde. Il `-` perde questo significato speciale se si verifica per primo (dopo un `^` iniziale, se presente) o per ultimo nella stringa. La `]` (parentesi quadre destra) non termina una stringa di questo tipo quando si tratta del primo carattere al suo interno, dopo un `^` iniziale, se presente. Ad esempio, `[]a-f]` corrisponde a una `]` (parentesi quadre destra) o a una delle lettere ASCII da a a f incluso. I quattro caratteri elencati come caratteri speciali sopra si trovano all&#39;interno di una tale stringa di caratteri.
 
 **Regole per la creazione di espressioni regolari da espressioni regolari con un carattere**
 
 Per creare espressioni regolari a partire da espressioni regolari a un carattere, è possibile utilizzare le regole seguenti:
 
 * Un&#39;espressione regolare con un carattere è un&#39;espressione regolare che corrisponde a qualsiasi corrispondenza dell&#39;espressione regolare con un carattere.
-* Un&#39;espressione regolare di un carattere seguita da un `*` (asterisco) è un&#39;espressione regolare che corrisponde a zero o più occorrenze dell&#39;espressione regolare di un carattere, che può essere un carattere set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
-* Un&#39;espressione regolare di un carattere seguita da un `?` (punto interrogativo) è un&#39;espressione regolare che corrisponde a zero o a una occorrenza dell&#39;espressione regolare di un carattere, che può essere un carattere set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
-* Un&#39;espressione regolare di un carattere seguita da un segno `+` (più) è un&#39;espressione regolare che corrisponde a una o più occorrenze dell&#39;espressione regolare di un carattere, che può essere un carattere set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
-* Un&#39;espressione regolare con un carattere seguita da `{m}`, `{m,}`o `{m,n}` è un&#39;espressione regolare che corrisponde a un intervallo di occorrenze dell&#39;espressione regolare con un carattere. i valori di m e n devono essere numeri interi non negativi inferiori a 256; `{m}` corrisponde esattamente a m occorrenze; `{m,}` corrisponde ad almeno m occorrenze; `{m,n}` corrisponde a qualsiasi numero di occorrenze tra m e n incluso. Ogni volta che esiste una scelta, l&#39;espressione regolare corrisponde al maggior numero possibile di occorrenze.
+* Un&#39;espressione regolare di un carattere seguita da un `*` (asterisco) è un&#39;espressione regolare che corrisponde a zero o più occorrenze dell&#39;espressione regolare di un carattere, che può essere un carattere di set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
+* Un&#39;espressione regolare di un carattere seguita da un `?` (punto interrogativo) è un&#39;espressione regolare che corrisponde a zero o a una occorrenza dell&#39;espressione regolare di un carattere, che può essere un carattere di set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
+* Un&#39;espressione regolare di un carattere seguita da un `+` (segno più) è un&#39;espressione regolare che corrisponde a una o più occorrenze dell&#39;espressione regolare di un carattere, che può essere un carattere di set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
+* Un&#39;espressione regolare di un carattere seguita da `{m}`, `{m,}` o `{m,n}` è un&#39;espressione regolare che corrisponde a un intervallo di occorrenze dell&#39;espressione regolare di un carattere. i valori di m e n devono essere numeri interi non negativi inferiori a 256; `{m}` corrisponde esattamente a m occorrenze; `{m,}` corrisponde ad almeno m occorrenze; `{m,n}` corrisponde a qualsiasi numero di occorrenze tra m e n incluso. Ogni volta che esiste una scelta, l&#39;espressione regolare corrisponde al maggior numero possibile di occorrenze.
 * La concatenazione di espressioni regolari è un&#39;espressione regolare che corrisponde alla concatenazione delle stringhe corrispondenti a ciascun componente dell&#39;espressione regolare.
 * Un&#39;espressione regolare racchiusa tra le sequenze di caratteri ( e ) è un&#39;espressione regolare che corrisponde a qualsiasi corrispondenza dell&#39;espressione regolare non adornata.
 * Un&#39;espressione regolare seguita da una `|` (barra verticale) seguita da un&#39;espressione regolare è un&#39;espressione regolare che corrisponde alla prima espressione regolare (prima della barra verticale) o alla seconda espressione regolare (dopo la barra verticale).
 
 È inoltre possibile vincolare un&#39;espressione regolare affinché corrisponda solo a un segmento iniziale o finale di una linea, oppure a entrambi.
 
-* Un&#39;espressione `^` (cirflex) all&#39;inizio di un&#39;espressione regolare vincola tale espressione regolare a corrispondere a un segmento iniziale di una riga.
+* Un `^` (cirflex) all&#39;inizio di un&#39;espressione regolare vincola tale espressione regolare a corrispondere a un segmento iniziale di una riga.
 * Un `$` (simbolo del dollaro) alla fine di un&#39;intera espressione regolare vincola tale espressione regolare a corrispondere a un segmento finale di una riga.
 * La costruzione ^regolare espressione$ vincola l&#39;espressione regolare a corrispondere all&#39;intera riga.
 
-Esistono nomi predefiniti di classi di caratteri utilizzabili al posto di complesse espressioni regolari raggruppate. Ad esempio, una cifra può essere rappresentata dall&#39;espressione regolare di un carattere [0-9] o dall&#39;espressione regolare di un carattere della classe di caratteri [[:cifra:]].
+Esistono nomi predefiniti di classi di caratteri utilizzabili al posto di complesse espressioni regolari raggruppate. Ad esempio, una cifra può essere rappresentata dall&#39;espressione regolare di un carattere [0-9] o dall&#39;espressione regolare di un carattere della classe di carattere [[:cifra:]].
 
 Le classi di caratteri predefinite e il relativo significato sono i seguenti:
 
@@ -217,7 +217,7 @@ Due nomi di classe di caratteri speciali corrispondono allo spazio null all&#39;
    <td colname="col2"> <p> inizio di una parola </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> [[:&gt;:]] </p> </td> 
+   <td colname="col1"> <p> [[:&gt;:] </p> </td> 
    <td colname="col2"> <p>fine di una parola </p> </td> 
   </tr> 
  </tbody> 
