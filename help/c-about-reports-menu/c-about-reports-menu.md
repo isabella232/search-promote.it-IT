@@ -8,6 +8,9 @@ topic: Reports,Site search and merchandising
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
 source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +48,7 @@ La tabella nel rapporto mostra le seguenti informazioni:
   </tr> 
   <tr> 
    <td colname="col1"> <p>Parole </p> </td> 
-   <td colname="col2"> <p>Il numero di ricerche in cui i visitatori hanno cercato una singola parola o una frase completa. </p> <p>Contiene la frase o la parola immessa da ogni cliente. Ogni frase o parola è collegata in modo da poter controllare facilmente i risultati effettivi della ricerca. Questa colonna può anche contenere il valore query vuota, che indica che un cliente ha fatto clic su <span class="uicontrol"> Cerca</span> senza digitare i termini di ricerca. </p> </td> 
+   <td colname="col2"> <p>Il numero di ricerche in cui i visitatori hanno cercato una singola parola o una frase completa. </p> <p>Contiene la frase o la parola immessa da ogni cliente. Ogni frase o parola è collegata in modo da poter controllare facilmente i risultati effettivi della ricerca. Questa colonna può contenere anche la query vuota del valore, che indica che un cliente ha fatto clic su <span class="uicontrol"> Search</span> senza digitare alcun termine di ricerca. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Conteggio risultati </p> </td> 
@@ -64,22 +67,22 @@ La tabella nel rapporto mostra le seguenti informazioni:
 
 1. Nella pagina del rapporto, nell&#39;elenco a discesa, selezionate un rapporto tra le frasi principali o le parole principali.
 1. Clic **[!UICONTROL View Report]**.
-1. (Facoltativo) Nella tabella, sotto la [!DNL Words] colonna, fare clic su una parola per aprire la [!DNL Live Simulator for Today] pagina.
+1. (Facoltativo) Nella tabella, nella colonna [!DNL Words] fare clic su una parola per aprire la pagina [!DNL Live Simulator for Today].
 
-   Consultate [Informazioni sul simulatore](../c-about-simulator.md#concept_020AA6751E32421A96A3455508364C7E) in cui è possibile visualizzare e verificare i termini di ricerca.
-1. (Facoltativo) Fate clic **[!UICONTROL Reset Terms Report]** per cancellare tutte le informazioni del rapporto sui termini per l&#39;account attualmente connesso.
+   Vedere [Informazioni sul simulatore](../c-about-simulator.md#concept_020AA6751E32421A96A3455508364C7E), dove è possibile visualizzare e testare i termini di ricerca.
+1. (Facoltativo) Fate clic su **[!UICONTROL Reset Terms Report]** per cancellare tutte le informazioni sul rapporto dei termini per l&#39;account attualmente connesso.
 
    Tutti i termini di ricerca immessi dai clienti vengono rimossi in modo definitivo.
 
-## Impostazione delle suite di rapporti di Adobe Analytics {#task_4A80D97030684C65AC2978B2524DE7F5}
+## Impostazione  suite di rapporti Adobe Analytics {#task_4A80D97030684C65AC2978B2524DE7F5}
 
-Per utilizzare i dati della suite di rapporti di Adobe Analytics in una ricerca/merchandising del sito, create delle copie dei dati di Adobe Analytics nel vostro account.
+Per utilizzare  dati delle suite di rapporti Adobe Analytics in una ricerca/merchandising del sito, è necessario creare copie dei dati Adobe Analytics  nel proprio account.
 
-Consultate [Le suite](../c-about-settings-menu/c-about-adobe-analytics-menu.md#concept_1A51AEC5D40E459B813E7891D64B1BAE)di rapporti di Adobe Analytics.
+Vedere [Informazioni  suite di rapporti Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#concept_1A51AEC5D40E459B813E7891D64B1BAE).
 
-Consultate [Caricamento di dati](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181)Adobe Analytics.
+Vedere [Caricamento  dati Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
-La [!DNL Staged Adobe Analytics Terms Report] pagina e la [!DNL Staged Adobe Analytics Report Suites] pagina visualizzano le seguenti informazioni in una tabella:
+La pagina [!DNL Staged Adobe Analytics Terms Report] e la pagina [!DNL Staged Adobe Analytics Report Suites] presentano le seguenti informazioni in una tabella:
 
 <table> 
  <thead> 
@@ -91,24 +94,24 @@ La [!DNL Staged Adobe Analytics Terms Report] pagina e la [!DNL Staged Adobe Ana
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Suite di rapporti </p> </td> 
-   <td colname="col2"> <p>Identifica il nome della suite di rapporti di Adobe Analytics. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"> Aggiunta di una suite</a>di rapporti di Adobe Analytics. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche di Adobe Analytics di una suite</a>di rapporti. </p> </td> 
+   <td colname="col2"> <p>Identifica il nome della  Suite di rapporti Adobe Analytics. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"> Aggiunta di una suite di rapporti Adobe Analytics </a>. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche Adobe Analytics  di una suite di rapporti</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Tipo di rapporto (elemento Adobe Analytics) </p> </td> 
-   <td colname="col2"> <p>L'elemento Adobe Analytics, il valore Classification, o entrambi, utilizzato nella richiesta Suite di rapporti. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche di Adobe Analytics di una suite</a>di rapporti. </p> </td> 
+   <td colname="col1"> <p>Tipo di rapporto ( elemento Adobe Analytics) </p> </td> 
+   <td colname="col2"> <p> elemento Adobe Analytics, il valore Classification, o entrambi, utilizzato nella richiesta Report Suite. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche Adobe Analytics  di una suite di rapporti</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Campo di riferimento incrociato </p> </td> 
-   <td colname="col2"> <p>Il campo di metadati facoltativo, i cui valori vengono utilizzati come "chiavi" di ricerca nella suite di rapporti. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche di Adobe Analytics di una suite</a>di rapporti. </p> </td> 
+   <td colname="col2"> <p>Il campo di metadati facoltativo, i cui valori vengono utilizzati come "chiavi" di ricerca nella suite di rapporti. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Modifica delle metriche Adobe Analytics  di una suite di rapporti</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Azioni </p> </td> 
-   <td colname="col2"> <p>Consente di visualizzare l'anteprima della copia più recente dei dati della suite di rapporti. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0" type="task" format="dita" scope="local"> Anteprima dei dati</a>di Adobe Analytics. </p> </td> 
+   <td colname="col2"> <p>Consente di visualizzare l'anteprima della copia più recente dei dati della suite di rapporti. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0" type="task" format="dita" scope="local"> Anteprima  dati Adobe Analytics</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Per impostare le suite di rapporti di Adobe Analytics**
+**Per impostare  suite di rapporti Adobe Analytics**
 
 1. Nel menu del prodotto, effettuate una delle seguenti operazioni:
 
@@ -120,7 +123,7 @@ La [!DNL Staged Adobe Analytics Terms Report] pagina e la [!DNL Staged Adobe Ana
 
 ## Visualizzazione del rapporto Richiesta di ricerca o Richieste di contenuto {#task_4C6EFB4D51474FC1BDE4326D1A726ECC}
 
-Potete visualizzare il numero [!DNL Search Requests Report] di richieste di ricerca in un determinato periodo di tempo. Potete inoltre visualizzare il [!DNL Content Requests Report] pannello per visualizzare il numero di richieste di contenuto in un determinato periodo di tempo.
+È possibile visualizzare il [!DNL Search Requests Report] per visualizzare il numero di richieste di ricerca in un determinato periodo di tempo. Potete inoltre visualizzare il [!DNL Content Requests Report] per visualizzare il numero di richieste di contenuto in un determinato periodo di tempo.
 
 >[!NOTE]
 >
@@ -134,8 +137,8 @@ Potete visualizzare il numero [!DNL Search Requests Report] di richieste di rice
 
    + Clic **[!UICONTROL Reports]** > **[!UICONTROL Content Requests]**.
 
-1. Nella pagina del rapporto, nell&#39;elenco a **[!UICONTROL Period]** discesa, selezionate il tempo da includere nel rapporto.
-1. Nell&#39;elenco a **[!UICONTROL Chart Type]** discesa, seleziona una delle seguenti opzioni in base al rapporto selezionato:
+1. Nella pagina del rapporto, nell&#39; **[!UICONTROL Period]** elenco a discesa, selezionare il tempo da includere nel rapporto.
+1. Nell&#39;elenco a discesa **[!UICONTROL Chart Type]**, selezionare una delle seguenti opzioni in base al rapporto selezionato:
 
    | Opzione | Descrizione |
    |--- |--- |
@@ -143,9 +146,9 @@ Potete visualizzare il numero [!DNL Search Requests Report] di richieste di rice
    | Conteggio delle richieste di ricerca mensile o Conteggio delle richieste di contenuto mensile | Mostra il numero di richieste al mese. |
    | Larghezza di banda richiesta ricerca giornaliera o larghezza di banda richiesta contenuto giornaliero | Mostra la quantità di larghezza di banda necessaria per elaborare le richieste di ricerca giornaliere o le richieste di contenuto giornaliero. |
 
-1. Nell&#39;elenco a **[!UICONTROL Chart Style]** discesa, selezionate come devono essere rappresentati i dati nel rapporto.
+1. Nell&#39;elenco a discesa **[!UICONTROL Chart Style]**, selezionare la modalità di rappresentazione dei dati nel rapporto.
 
-## Visualizzazione del rapporto Dimensione indice di ricerca {#task_90CF717A53D341F49E8DE17505321950}
+## Visualizzazione del report Dimensione indice di ricerca {#task_90CF717A53D341F49E8DE17505321950}
 
 Il rapporto Dimensione indice ricerca mostra la dimensione dell&#39;indice di ricerca in un periodo specificato.
 
@@ -156,8 +159,8 @@ Il rapporto Dimensione indice ricerca mostra la dimensione dell&#39;indice di ri
 **Per visualizzare il rapporto Dimensione indice di ricerca**
 
 1. Scegliere **[!UICONTROL Reports]** > **[!UICONTROL Index Size]** dal menu del prodotto.
-1. Nella pagina del rapporto, nell&#39;elenco a **[!UICONTROL Period]** discesa, selezionate il tempo da includere nel rapporto.
-1. Nell&#39;elenco a **[!UICONTROL Chart Style]** discesa, selezionate come devono essere rappresentati i dati nel rapporto.
+1. Nella pagina del rapporto, nell&#39; **[!UICONTROL Period]** elenco a discesa, selezionare il tempo da includere nel rapporto.
+1. Nell&#39;elenco a discesa **[!UICONTROL Chart Style]**, selezionare la modalità di rappresentazione dei dati nel rapporto.
 
 ## Visualizzazione del rapporto sulle prestazioni della ricerca per indicizzazione o del rapporto sulle prestazioni della ricerca per indicizzazione in fase {#task_60ED9FD9769C48B1B5EEE7099B1D1899}
 
@@ -169,13 +172,13 @@ Le prestazioni del crawler indice vengono registrate registrando varie metriche 
 
    + Clic **[!UICONTROL Reports]** > **[!UICONTROL Crawl Performance]**.
 
-      Nella pagina del rapporto, nell&#39;elenco a **[!UICONTROL Crawl Ending]** discesa, selezionate il tempo da includere nel rapporto.
+      Nella pagina del rapporto, nell&#39; **[!UICONTROL Crawl Ending]** elenco a discesa, selezionare il tempo da includere nel rapporto.
 
    + Clic **[!UICONTROL Reports]** > **[!UICONTROL Staged Crawl Performance]**.
 
-      Nella pagina del rapporto, nell&#39;elenco a **[!UICONTROL Staged Crawl Ending]** discesa, selezionate il tempo da includere nel rapporto.
+      Nella pagina del rapporto, nell&#39; **[!UICONTROL Staged Crawl Ending]** elenco a discesa, selezionare il tempo da includere nel rapporto.
 
-1. Nell&#39;elenco a **[!UICONTROL Metric]** discesa, seleziona una delle metriche seguenti:
+1. Nell&#39;elenco a discesa **[!UICONTROL Metric]**, seleziona una delle metriche seguenti:
 
    | Opzione | Descrizione |
    |--- |--- |
@@ -193,16 +196,16 @@ Le prestazioni del crawler indice vengono registrate registrando varie metriche 
    | processo di download ms | Tempo totale del processo di scaricamento (incluso il download e il filtro), per pagina. |
    | processo indice ms | Tempo totale del processo di indicizzazione, per pagina. |
 
-1. Nell&#39;elenco a **[!UICONTROL Chart Style]** discesa, selezionate come devono essere rappresentati i dati nel rapporto. Potete selezionare **[!UICONTROL Bars]** o **[!UICONTROL Area]**.
-1. Nell’elenco a **[!UICONTROL Chart Type]** discesa, scegliete il livello di indice su cui desiderate eseguire il rapporto. Potete selezionare **[!UICONTROL Full]**, **[!UICONTROL Incremental]** o **[!UICONTROL Full & Incremental]**.
+1. Nell&#39;elenco a discesa **[!UICONTROL Chart Style]**, selezionare la modalità di rappresentazione dei dati nel rapporto. È possibile selezionare **[!UICONTROL Bars]** o **[!UICONTROL Area]**.
+1. Nell&#39;elenco a discesa **[!UICONTROL Chart Type]**, scegliete il livello di indice su cui desiderate eseguire il rapporto. È possibile selezionare **[!UICONTROL Full]**, **[!UICONTROL Incremental]** o **[!UICONTROL Full & Incremental]**.
 
 ## Visualizzazione del registro delle modifiche {#task_166F1156719F4B3D834BEA8E249C8057}
 
 Il registro delle modifiche mostra una cronologia delle modifiche recenti apportate all’interno dell’account.
 
-Vengono visualizzate solo le modifiche che [!DNL History] compaiono sotto di esse. Le modifiche sono elencate in ordine cronologico inverso. Ciascuna voce mostra la pagina che è stata modificata, il numero di versione in Cronologia, l’indirizzo e-mail dell’utente che ha apportato le modifiche, l’ora della modifica e se la modifica è stata effettuata come salvataggio o le impostazioni della pagina sono state inviate in diretta.
+Vengono visualizzate solo le modifiche che appaiono sotto [!DNL History]. Le modifiche sono elencate in ordine cronologico inverso. Ciascuna voce mostra la pagina che è stata modificata, il numero di versione in Cronologia, l’indirizzo e-mail dell’utente che ha apportato le modifiche, l’ora della modifica e se la modifica è stata effettuata come salvataggio o le impostazioni della pagina sono state inviate in diretta.
 
-Consultate [L&#39;utilizzo dello stage](../c-about-staging.md#concept_08B8F3CA1F4241108F14BA7FC7806CA7).
+Vedere [Informazioni sullo stato di avanzamento](../c-about-staging.md#concept_08B8F3CA1F4241108F14BA7FC7806CA7).
 
 1. Scegliere **[!UICONTROL Reports]** > **[!UICONTROL Change Log]** dal menu del prodotto.
-1. Nella [!DNL Change Log] pagina, utilizzate le opzioni di navigazione e visualizzazione nella parte superiore e inferiore della pagina per visualizzare le informazioni di registro.
+1. Nella pagina [!DNL Change Log], utilizzate le opzioni di navigazione e visualizzazione nella parte superiore e inferiore della pagina per visualizzare le informazioni di registro.
