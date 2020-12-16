@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Ad esempio, supponete di aver popolato pagine nel sito Web con metadati del codi
 <meta name="zipcode" content="84057">
 ```
 
-Quindi configurate il vostro account per indicizzare i metadati del codice ZIP. In **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** > **[!UICONTROL Add New Field]**, sulla [!DNL Add Field] pagina si impostano le seguenti opzioni:
+Quindi configurate il vostro account per indicizzare i metadati del codice ZIP. In **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** > **[!UICONTROL Add New Field]**, nella pagina [!DNL Add Field], impostare le seguenti opzioni:
 
 * Nome campo: `zip`
 * Nome/i tag meta: `zipcode`
@@ -46,7 +49,7 @@ I valori di posizione di cinque o cinque cifre (DDDDD o DDDDD-DDDD) sono trattat
 
 I valori di posizione nella forma esatta di &quot;±DD.DDDDD±DDD.DDDD&quot; sono trattati come una coppia latitudine/longitudine. Il primo valore numerico con segno specifica la latitudine e il secondo valore numerico con segno rappresenta la longitudine.
 
-**Importante**: Se specificate un valore di latitudine positivo, un valore di longitudine positivo o entrambi, il carattere &quot;+&quot; nell’URL deve essere codificato come `%2b`. In caso contrario, il simbolo &quot;+&quot; viene interpretato come uno spazio e il valore non viene riconosciuto come una posizione valida. Ad esempio, se il valore di latitudine era +49.2394 e il valore di longitudine era -123.1892, La parte della posizione dell&#39;URL, con &quot;+&quot; codificato, avrà l&#39;aspetto seguente:
+**Importante**: Se specificate un valore di latitudine positivo, un valore di longitudine positivo o entrambi, il carattere &quot;+&quot; nell’URL deve essere codificato come  `%2b`. In caso contrario, il simbolo &quot;+&quot; viene interpretato come uno spazio e il valore non viene riconosciuto come una posizione valida. Ad esempio, se il valore di latitudine era +49.2394 e il valore di longitudine era -123.1892, La parte della posizione dell&#39;URL, con &quot;+&quot; codificato, avrà l&#39;aspetto seguente:
 
 ```
 ...&sp_q_location_1=%2b49.2394-123.1892...
@@ -61,11 +64,11 @@ Ad esempio, il valore &quot;+48.8577+002.2950&quot; rappresenta 48.8577 gradi a 
 
 Quando si esegue una ricerca per prossimità, per quella ricerca è creato un &quot;campo di output di prossimità&quot; speciale. Il campo viene compilato con la distanza relativa tra la posizione specificata nei criteri di ricerca e la posizione associata a ciascun risultato di ricerca. Questo campo speciale è denominato per il campo di tipo posizione utilizzato nei criteri di ricerca con l’aggiunta di &quot;_proximity&quot; alla fine.
 
-Nella ricerca di esempio sopra, i risultati sono ordinati in ordine crescente in &quot;zip_proximity&quot;. Ovvero, la distanza tra il codice ZIP specificato (84057) e la posizione del campo &quot;zip&quot; di ogni risultato. È inoltre possibile utilizzare questo speciale &quot;campo di output di prossimità&quot; per visualizzare la distanza relativa per ogni risultato di ricerca, in chilometri o miglia, utilizzando il tag modello di `<Search-Display-Field>` ricerca.
+Nella ricerca di esempio sopra, i risultati sono ordinati in ordine crescente in &quot;zip_proximity&quot;. Ovvero, la distanza tra il codice ZIP specificato (84057) e la posizione del campo &quot;zip&quot; di ogni risultato. È inoltre possibile utilizzare questo speciale &quot;campo di output di prossimità&quot; per visualizzare la distanza relativa per ogni risultato della ricerca, in chilometri o miglia, utilizzando il tag del modello di ricerca `<Search-Display-Field>`.
 
-Consultate [Cercare i tag](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)dei modelli.
+Vedere [Cerca tag modello](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
-È inoltre possibile eseguire ricerche senza l&#39;opzione sp_s. In tal caso, i risultati sono ordinati per punteggio (sp_s=0, che è il valore predefinito). La valutazione è influenzata dalla distanza relativa di ciascun risultato dalla posizione di ricerca di prossimità specificata dal parametro sp_q_location[_#] . È stato aggiunto un nuovo parametro cgi sp_q_max_relevant_distanza[#] , per controllare facoltativamente il calcolo della pertinenza applicato alle ricerche di prossimità.
+È inoltre possibile eseguire ricerche senza l&#39;opzione sp_s. In tal caso, i risultati sono ordinati per punteggio (sp_s=0, che è il valore predefinito). La valutazione è influenzata dalla distanza relativa di ciascun risultato dalla posizione di ricerca di prossimità specificata dal parametro sp_q_location[_#]. È stato aggiunto un nuovo parametro cgi sp_q_max_relevant_distanza[#], per controllare facoltativamente il calcolo della rilevanza applicato alle ricerche di prossimità.
 
 Di seguito è riportato un esempio di ricerca per rilevanza per prossimità:
 
@@ -75,8 +78,8 @@ Di seguito è riportato un esempio di ricerca per rilevanza per prossimità:
 
 Il set di risultati contiene tutti i documenti che si trovano entro 100 miglia dal codice ZIP 84057 e contengono la parola &quot;camicia&quot; nel campo del titolo, ordinati per punteggio influenzato dal punteggio di rilevanza relativa alla prossimità. Un punteggio di rilevanza perfetto per il componente di prossimità rappresenterebbe una distanza di 0. Un punteggio minimo di rilevanza per il componente di prossimità rappresenterebbe una distanza di poco più di 50 miglia.
 
-Per ulteriori informazioni sulla ricerca di prossimità, consulta `sp_location`, `sp_location_#`, `sp_q_min`, `sp_q_min_#`, `sp_q_max`, e `sp_q_max_#``sp_s` nell’argomento di riferimento Cerca parametri CGI.
+Per ulteriori informazioni sulla ricerca di prossimità, consultate `sp_location`, `sp_location_#`, `sp_q_min`, `sp_q_min_#`, `sp_q_max`, `sp_q_max_#` e `sp_s` nell&#39;argomento di riferimento Cerca parametri CGI.
 
-Consultate [Cercare i parametri](../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890)CGI.
+Vedere [Cerca parametri CGI](../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890).
 
-Consultate [Aggiunta di un nuovo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)tag meta.
+Vedere [Aggiunta di un nuovo campo tag meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
