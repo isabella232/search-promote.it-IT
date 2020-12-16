@@ -28,7 +28,7 @@ Vengono indicizzate tutte le pagine del sito Web al di sotto di ciascun punto di
 
 Il punto di ingresso principale è in genere l’URL del sito Web che si desidera indicizzare e cercare. Questo punto di ingresso principale viene configurato in Impostazioni account.
 
-Consultate [Configurazione delle impostazioni](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)dell’account.
+Consultate [Configurazione delle impostazioni dell&#39;account](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 Dopo aver specificato il punto di ingresso dell’URL principale, potete specificare facoltativamente altri punti di ingresso che desiderate spostare per indicizzazione in ordine. Nella maggior parte dei casi si specificano punti di ingresso aggiuntivi per le pagine Web che non sono collegate da pagine sotto il punto di ingresso principale. Specificate punti di ingresso aggiuntivi quando il sito Web si estende su più domini, come nell’esempio seguente:
 
@@ -52,11 +52,14 @@ Dopo aver specificato il punto di ingresso dell’URL principale, potete specifi
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Se non si desidera indicizzare il testo nella pagina del punto di ingresso, ma si desidera seguire i collegamenti della pagina, aggiungere <code>
+   <td colname="col2"> <p> Se non si desidera indicizzare il testo nella pagina del punto di ingresso, ma si desidera seguire i collegamenti della pagina, aggiungere 
+     <code>
        noindex 
-     </code> dopo il punto di ingresso. </p> <p>Separate la parola chiave dal punto di ingresso con uno spazio come nell'esempio seguente: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Questa parola chiave equivale a un tag meta robot con <code>
+     </code> dopo il punto di ingresso. </p> <p>Separate la parola chiave dal punto di ingresso con uno spazio come nell'esempio seguente: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Questa parola chiave equivale a un tag meta robot con 
+     <code>
        content="noindex" 
-     </code>) tra i <code>
+     </code>) tra 
+     <code>
        &lt;head&gt; 
      </code>... 
      <code>
@@ -65,31 +68,36 @@ Dopo aver specificato il punto di ingresso dell’URL principale, potete specifi
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Se si desidera indicizzare il testo nella pagina del punto di ingresso ma non si desidera seguire i collegamenti della pagina, aggiungere <code>
+   <td colname="col2"> <p> Se si desidera indicizzare il testo nella pagina del punto di ingresso ma non si desidera seguire i collegamenti della pagina, aggiungere 
+     <code>
        nofollow 
-     </code> dopo il punto di ingresso. </p> <p>Separate la parola chiave dal punto di ingresso con uno spazio come nell'esempio seguente: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Questa parola chiave equivale a un tag meta robot con <code>
+     </code> dopo il punto di ingresso. </p> <p>Separate la parola chiave dal punto di ingresso con uno spazio come nell'esempio seguente: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Questa parola chiave equivale a un tag meta robot con 
+     <code>
        content="nofollow" 
-     </code> un elemento tra <code>
+     </code> tra 
+     <code>
        &lt;head&gt; 
      </code>... 
-     <code>
+     Tag <code>
        &lt;/head&gt; 
-     </code> tag di una pagina punto di ingresso. </p> </td> 
+     </code> di una pagina punto di ingresso. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>form </p> </td> 
-   <td colname="col2"> <p> Quando il punto di ingresso è una pagina di login, <code>
+   <td colname="col2"> <p> Quando il punto di ingresso è una pagina di login, 
+     <code>
        form 
-     </code> viene in genere utilizzato in modo che il robot di ricerca possa inviare il modulo di login e ricevere i cookie appropriati prima di eseguire la ricerca per indicizzazione del sito Web. Quando si utilizza la parola chiave "form", la pagina del punto di ingresso non viene indicizzata e il robot di ricerca non contrassegna la pagina del punto di ingresso come sottoposta a ricerca per indicizzazione. Utilizzate <code>
+     </code> viene in genere utilizzato in modo che il robot di ricerca possa inviare il modulo di login e ricevere i cookie appropriati prima di eseguire il crawling del sito Web. Quando si utilizza la parola chiave "form", la pagina del punto di ingresso non viene indicizzata e il robot di ricerca non contrassegna la pagina del punto di ingresso come sottoposta a ricerca per indicizzazione. Use 
+     <code>
        nofollow 
-     </code> se non desiderate che il robot di ricerca segua i collegamenti della pagina. </p> </td> 
+     </code> se non si desidera che il robot di ricerca segua i collegamenti della pagina. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Consultate anche [I tipi](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07)di contenuto.
+Vedere anche [Informazioni sui tipi di contenuto](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
-Vedere anche [Informazioni sul connettore](../c-about-settings-menu/c-about-crawling-menu.md#concept_CA6921E2FBF641F9B4F60C92B32AFA84)indice.
+Vedere anche [Informazioni sul connettore indice](../c-about-settings-menu/c-about-crawling-menu.md#concept_CA6921E2FBF641F9B4F60C92B32AFA84).
 
 ## Aggiunta di più punti di ingresso URL da indicizzare {#task_2338A47387D74CFDAC4D4EF4A367ED45}
 
@@ -97,33 +105,33 @@ Se il sito Web contiene più domini o sottodomini e desiderate che vengano sotto
 
 Per impostare il punto di accesso dell&#39;URL principale del sito Web, utilizzate le Impostazioni account.
 
-Consultate [Configurazione delle impostazioni](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)dell’account.
+Consultate [Configurazione delle impostazioni dell&#39;account](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 **Per aggiungere più punti di ingresso URL da indicizzare**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**.
-1. Nella [!DNL URL Entrypoints] pagina, nel [!DNL Entrypoints] campo, immettete un indirizzo URL per riga.
-1. (Facoltativo) Nell&#39;elenco a **[!UICONTROL Add Index Connector Configurations]** discesa, selezionare un connettore indice da aggiungere come punto di ingresso per l&#39;indicizzazione.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]** dal menu del prodotto.
+1. Nella pagina [!DNL URL Entrypoints], nel campo [!DNL Entrypoints] immettere un indirizzo URL per riga.
+1. (Facoltativo) Nell&#39;elenco a discesa **[!UICONTROL Add Index Connector Configurations]**, selezionare un connettore indice da aggiungere come punto di ingresso per l&#39;indicizzazione.
 
    L&#39;elenco a discesa è disponibile solo se in precedenza sono state aggiunte una o più definizioni di connettore indice.
 
    ![](assets/url_entrypoints_index_connector.png)
 
-   Vedere [Aggiunta di una definizione](../c-about-settings-menu/c-about-crawling-menu.md#task_96779B651A654E1F871F55D6DBBC8886)del connettore indice.
+   Vedere [Aggiunta di una definizione del connettore indice](../c-about-settings-menu/c-about-crawling-menu.md#task_96779B651A654E1F871F55D6DBBC8886).
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Le maschere URL {#concept_8039DFC53FF3410AA494D602F71BA164}
 
@@ -131,7 +139,7 @@ Le maschere URL sono modelli che determinano quale dei vostri siti Web documenta
 
 Assicuratevi di rigenerare l’indice del sito in modo che i risultati delle maschere URL siano visibili ai clienti.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 Di seguito sono riportati due tipi di maschere URL utilizzabili:
 
@@ -163,7 +171,7 @@ Di seguito è riportato un semplice esempio di maschera di esclusione URL:
 exclude https://www.mydomain.com/photos
 ```
 
-Poiché questo esempio è una maschera URL di esclusione, qualsiasi documento che corrisponda al pattern non viene indicizzato. Il pattern corrisponde a qualsiasi elemento rilevato, sia file che cartelle, in modo che `https://www.mydomain.com/photos.html` e `https://www.mydomain.com/photos/index.html`, entrambi corrispondenti all&#39;URL di esclusione, non siano indicizzati. Per far corrispondere solo i file nella `/photos/` cartella, la maschera URL deve contenere una barra finale, come nell’esempio seguente:
+Poiché questo esempio è una maschera URL di esclusione, qualsiasi documento che corrisponda al pattern non viene indicizzato. Il pattern corrisponde a qualsiasi elemento rilevato, sia file che cartelle, in modo che `https://www.mydomain.com/photos.html` e `https://www.mydomain.com/photos/index.html`, entrambi corrispondenti all&#39;URL di esclusione, non siano indicizzati. Per far corrispondere solo i file presenti nella cartella `/photos/`, la maschera URL deve contenere una barra finale, come nell&#39;esempio seguente:
 
 ```
 exclude https://www.mydomain.com/photos/
@@ -183,7 +191,7 @@ include https://www.mydomain.com/news/
 
 Vengono indicizzati solo i documenti collegati tramite una serie di collegamenti da un punto di ingresso dell’URL o utilizzati come punto di ingresso dell’URL. L&#39;elenco esclusivo dell&#39;URL di un documento come maschera URL inclusa non indicizza alcun documento non collegato. Per aggiungere documenti non collegati all’indice, potete usare la funzione Punti di ingresso URL.
 
-Consultate [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
+Consultate [Informazioni sui punti di ingresso URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 L’inclusione di maschere e l’esclusione di maschere possono funzionare insieme. Potete escludere un’ampia parte del sito Web dall’indicizzazione creando una maschera URL esclusa e tuttavia includendo una o più delle pagine escluse con una maschera URL inclusa. Ad esempio, supponete che l’URL del punto di ingresso sia il seguente:
 
@@ -191,15 +199,15 @@ L’inclusione di maschere e l’esclusione di maschere possono funzionare insie
 https://www.mydomain.com/photos/
 ```
 
-Il robot di ricerca si sposta per indicizzazione e indicizza tutte le pagine sotto `/photos/summer/`, `/photos/spring/` e `/photos/fall/` (supponendo che ci siano collegamenti ad almeno una pagina in ogni directory dalla `photos` cartella). Questo comportamento si verifica perché i percorsi di collegamento consentono al robot di ricerca di trovare i documenti nelle cartelle `/summer/`, `/spring/`, `/fall/`e gli URL delle cartelle e corrispondono alla maschera di inclusione generata automaticamente dall’URL del punto di ingresso.
+Il robot di ricerca ricerca si sposta per indicizzazione e indicizza tutte le pagine in `/photos/summer/`, `/photos/spring/` e `/photos/fall/` (supponendo che siano presenti collegamenti ad almeno una pagina in ciascuna directory dalla cartella `photos`). Questo comportamento si verifica perché i percorsi di collegamento consentono al robot di ricerca di trovare i documenti nelle cartelle `/summer/`, `/spring/` e `/fall/` e gli URL delle cartelle corrispondono alla maschera di inclusione generata automaticamente dall&#39;URL del punto di ingresso.
 
-Potete scegliere di escludere tutte le pagine della `/fall/` cartella con una maschera URL di esclusione, come nell’esempio di seguito:
+Potete scegliere di escludere tutte le pagine della cartella `/fall/` con una maschera URL di esclusione, come nell&#39;esempio seguente:
 
 ```
 exclude https://www.mydomain.com/photos/fall/
 ```
 
-Oppure, includete solo `/photos/fall/redleaves4.html` come parte dell’indice con la seguente maschera URL:
+Oppure, includete solo `/photos/fall/redleaves4.html` come parte dell&#39;indice con la seguente maschera URL:
 
 ```
 include https://www.mydomain.com/photos/fall/redleaves4.html
@@ -212,7 +220,7 @@ include https://www.mydomain.com/photos/fall/redleaves4.html
 exclude https://www.mydomain.com/photos/fall/
 ```
 
-Poiché il robot di ricerca segue le indicazioni nell&#39;ordine in cui sono elencate, il robot di ricerca prima include `/photos/fall/redleaves4.html`, e poi esclude il resto dei file nella `/fall` cartella.
+Poiché il robot di ricerca segue le indicazioni nell&#39;ordine in cui sono elencate, il robot di ricerca prima include `/photos/fall/redleaves4.html`, quindi esclude gli altri file nella cartella `/fall`.
 
 Se le istruzioni sono specificate nel modo opposto come indicato di seguito:
 
@@ -221,13 +229,13 @@ exclude https://www.mydomain.com/photos/fall/
 include https://www.mydomain.com/photos/fall/redleaves4.html
 ```
 
-Non `/photos/fall/redleaves4.html` è incluso, anche se la maschera specifica che è incluso.
+`/photos/fall/redleaves4.html` non è incluso, anche se la maschera specifica che è incluso.
 
 Una maschera URL che viene visualizzata per prima ha sempre la precedenza su una maschera URL che viene visualizzata successivamente nelle impostazioni della maschera. Inoltre, se il robot di ricerca rileva una pagina che corrisponde a una maschera URL di inclusione e a una maschera URL di esclusione, la maschera elencata per prima ha sempre la precedenza.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-## Utilizzo delle parole chiave con le maschere URL {#section_7609A7A6D79B482ABCA8900886541AAB}
+## Utilizzo di parole chiave con maschere URL {#section_7609A7A6D79B482ABCA8900886541AAB}
 
 È possibile qualificare ciascuna maschera con una o più parole chiave separate da spazi, che influiscono sulla modalità di indicizzazione delle pagine corrispondenti.
 
@@ -243,61 +251,73 @@ Una virgola non è valida come separatore tra la maschera e la parola chiave; po
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Se non si desidera indicizzare il testo sulle pagine che corrispondono alla maschera URL, ma si desidera seguire i collegamenti delle pagine corrispondenti, aggiungere <code>
+   <td colname="col2"> <p> Se non si desidera indicizzare il testo sulle pagine che corrispondono alla maschera URL, ma si desidera seguire i collegamenti alle pagine corrispondenti, aggiungere 
+     <code>
        noindex 
-     </code> dopo la maschera URL include. Separate la parola chiave dalla maschera con uno spazio, come nell’esempio di seguito: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>L'esempio precedente specifica che il robot di ricerca segue tutti i collegamenti da file con <code>
+     </code> dopo la maschera URL di inclusione. Separate la parola chiave dalla maschera con uno spazio, come nell’esempio di seguito: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>L'esempio precedente specifica che il robot di ricerca segue tutti i collegamenti da file con 
+     Estensione <code>
        .swf 
-     </code> estensione, ma disabilita l'indicizzazione di tutto il testo contenuto in tali file. </p> <p>La <code>
+     </code>, ma disattiva l'indicizzazione di tutto il testo contenuto in tali file. </p> <p>Il 
+     La parola chiave <code>
        noindex 
-     </code> parola chiave è equivalente a un tag meta robot con <code>
+     </code> equivale a un tag meta robot con 
+     <code>
        content="noindex" 
-     </code> tra i <code>
+     </code> tra 
+     <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </code> tag delle pagine corrispondenti. </p> </td> 
+     </code> tag di pagine corrispondenti. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Se desiderate indicizzare il testo sulle pagine che corrispondono alla maschera URL, ma non volete seguire i collegamenti della pagina corrispondente, aggiungete <code>
+   <td colname="col2"> <p> Se desiderate indicizzare il testo sulle pagine che corrispondono alla maschera URL, ma non desiderate seguire i collegamenti della pagina corrispondente, aggiungete 
+     <code>
        nofollow 
-     </code> dopo la maschera URL di inclusione. Separate la parola chiave dalla maschera con uno spazio, come nell’esempio di seguito: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>La <code>
+     </code> dopo la maschera URL di inclusione. Separate la parola chiave dalla maschera con uno spazio, come nell’esempio di seguito: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Il 
+     La parola chiave <code>
        nofollow 
-     </code> parola chiave è equivalente a un tag meta robot con <code>
+     </code> equivale a un tag meta robot con 
+     <code>
        content="nofollow" 
-     </code> tra i <code>
+     </code> tra 
+     <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </code> tag delle pagine corrispondenti. </p> </td> 
+     </code> tag di pagine corrispondenti. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p>Utilizzata sia per includere che per escludere le maschere. </p> <p>Qualsiasi maschera URL preceduta da <code>
+   <td colname="col2"> <p>Utilizzata sia per includere che per escludere le maschere. </p> <p>Qualsiasi maschera URL preceduta da 
+     <code>
        regexp 
-     </code> viene trattata come espressione regolare. Se il robot di ricerca rileva documenti che corrispondono a una maschera URL con espressione regolare esclusa, tali documenti non vengono indicizzati. Se il robot di ricerca rileva documenti che corrispondono a una maschera URL con espressione regolare, tali documenti vengono indicizzati. Ad esempio, supponete di disporre della seguente maschera URL: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Il robot di ricerca esclude i file corrispondenti, come 
+     </code> viene trattata come un'espressione regolare. Se il robot di ricerca rileva documenti che corrispondono a una maschera URL con espressione regolare esclusa, tali documenti non vengono indicizzati. Se il robot di ricerca rileva documenti che corrispondono a una maschera URL con espressione regolare, tali documenti vengono indicizzati. Ad esempio, supponete di disporre della seguente maschera URL: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Il robot di ricerca esclude i file corrispondenti, come 
      <code>
        https://www.mydomain.com/products/page1.html 
-     </code> </p> <p>Se avevi la seguente maschera URL con espressione regolare esclusa: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Il robot di ricerca non deve includere alcun URL contenente un parametro CGI come <code>
+     </code> </p> <p>Se avevi la seguente maschera URL con espressione regolare esclusa: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Il robot di ricerca non deve includere alcun URL contenente un parametro CGI come 
+     <code>
        https://www.mydomain.com/cgi/prog/?arg1=val1&amp;arg2=val2 
-     </code>. </p> <p>Se avete avuto i seguenti elementi includere una maschera URL con espressione regolare: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Il robot di ricerca segue tutti i collegamenti da file con l'estensione ".swf". La <code>
+     </code>. </p> <p>Se avete avuto i seguenti elementi includere una maschera URL con espressione regolare: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Il robot di ricerca segue tutti i collegamenti da file con l'estensione ".swf". Il 
+     La parola chiave <code>
        noindex 
-     </code> parola chiave specifica inoltre che il testo dei file corrispondenti non è indicizzato. </p> <p>Consultate <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> </td> 
+     </code> specifica inoltre che il testo dei file corrispondenti non è indicizzato. </p> <p>Vedere <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Aggiunta di maschere URL per indicizzare o non indicizzare parti del sito Web {#task_E1AFC17C746048B8843013D979E082C1}
 
-Potete definire [!DNL URL Masks] le parti del sito Web che desiderate o che non desiderate includere nella ricerca per indicizzazione.
+È possibile utilizzare [!DNL URL Masks] per definire quali parti del sito Web si desidera includere o meno nella ricerca per indicizzazione.
 
 Utilizzate il campo Test URL Mask (Prova maschere URL) per verificare se un documento è incluso o meno dopo l&#39;indicizzazione.
 
 Assicuratevi di rigenerare l’indice del sito in modo che i risultati delle maschere URL siano visibili ai clienti.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Per aggiungere maschere URL per indicizzare o non indicizzare parti del sito Web**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**.
-1. (Facoltativo) Nella [!DNL URL Masks] pagina, nel **[!UICONTROL Test URL Masks]** campo, immettete una maschera URL di prova dal sito Web, quindi fate clic su **[!UICONTROL Test]**.
-1. Nel [!DNL URL Masks] campo, digitate `include` (per aggiungere un sito Web che si desidera inserire per indicizzazione e ricerca per indicizzazione) oppure digitate `exclude` (per impedire che un sito Web venga sottoposto a ricerca per indicizzazione e indicizzazione), seguito dall’indirizzo della maschera URL.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]** dal menu del prodotto.
+1. (Facoltativo) Nella pagina [!DNL URL Masks], nel campo **[!UICONTROL Test URL Masks]**, immettere una maschera URL di prova dal sito Web, quindi fare clic su **[!UICONTROL Test]**.
+1. Nel campo [!DNL URL Masks], digitate `include` (per aggiungere un sito Web che si desidera sottoporre a ricerca per indicizzazione) oppure `exclude` (per impedire che un sito Web venga sottoposto a ricerca per indicizzazione e indicizzazione), seguito dall’indirizzo della maschera URL.
 
    Immettete un indirizzo maschera URL per riga. Esempio:
 
@@ -311,25 +331,25 @@ Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Informazioni sulle maschere data {#concept_F4F1F58A646F4A86B8650EC46FDCEF66}
+## Informazioni sulle maschere di data {#concept_F4F1F58A646F4A86B8650EC46FDCEF66}
 
 Potete utilizzare le maschere data per includere o escludere i file dai risultati di ricerca in base alla pagina del file.
 
 Assicuratevi di rigenerare l’indice del sito in modo che i risultati delle maschere URL siano visibili ai clienti.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 Di seguito sono riportati due tipi di maschere data utilizzabili:
 
@@ -346,8 +366,8 @@ Ogni maschera data specificata deve trovarsi su una riga separata.
 
 La maschera può specificare una delle seguenti opzioni:
 
-* Un percorso completo come `https://www.mydomain.com/products.html`
-* Un percorso parziale come `https://www.mydomain.com/products`
+* Un percorso completo come in `https://www.mydomain.com/products.html`
+* Un percorso parziale come in `https://www.mydomain.com/products`
 * Un URL che utilizza caratteri jolly `https://www.mydomain.com/*.html`
 * Un&#39;espressione regolare. Per rendere una maschera un&#39;espressione regolare, inserite la parola chiave `regexp` prima dell&#39;URL.
 
@@ -375,7 +395,7 @@ Di seguito è riportato un semplice esempio di maschera per date di esclusione:
 exclude-days 90 https://www.mydomain.com/docs/archive
 ```
 
-Poiché si tratta di una maschera data di esclusione, qualsiasi file che corrisponda al pattern non viene indicizzato ed ha 90 giorni o meno. Quando si esclude un documento, il testo non viene indicizzato e non vengono seguiti collegamenti da tale file. Il file viene effettivamente ignorato. In questo esempio, sia i file che le cartelle potrebbero corrispondere al pattern URL specificato. Tenere presente che `https://www.mydomain.com/docs/archive.html` e che `https://www.mydomain.com/docs/archive/index.html` corrispondono al pattern e non sono indicizzati se hanno 90 giorni di età o meno. Per far corrispondere solo i file presenti nella `/docs/archive/` cartella, la maschera data deve contenere una barra finale, come illustrato di seguito:
+Poiché si tratta di una maschera data di esclusione, qualsiasi file che corrisponda al pattern non viene indicizzato ed ha 90 giorni o meno. Quando si esclude un documento, il testo non viene indicizzato e non vengono seguiti collegamenti da tale file. Il file viene effettivamente ignorato. In questo esempio, sia i file che le cartelle potrebbero corrispondere al pattern URL specificato. Tenere presente che sia `https://www.mydomain.com/docs/archive.html` che `https://www.mydomain.com/docs/archive/index.html` corrispondono al pattern e non sono indicizzati se hanno 90 giorni di età o meno. Per far corrispondere solo i file presenti nella cartella `/docs/archive/`, la maschera data deve contenere una barra finale, come illustrato di seguito:
 
 ```
 exclude-days 90 https://www.mydomain.com/docs/archive/
@@ -387,7 +407,7 @@ Le maschere data possono essere utilizzate anche con caratteri jolly. La seguent
 exclude-date 2011-02-15 *.pdf
 ```
 
-Includi maschera data ha un aspetto simile, all&#39;indice vengono aggiunti solo i file corrispondenti. L&#39;esempio seguente include maschera data indica al robot di ricerca di indicizzare il testo da qualsiasi file che abbiano zero giorni di età o meno nell&#39; `/docs/archive/manual/` &#39;area del sito Web.
+Includi maschera data ha un aspetto simile, all&#39;indice vengono aggiunti solo i file corrispondenti. L&#39;esempio seguente include maschera data indica al robot di ricerca di indicizzare il testo da qualsiasi file che abbiano zero giorni di età o meno nell&#39;area `/docs/archive/manual/` del sito Web.
 
 ```
 include-days 0 https://www.mydomain.com/docs/archive/manual/
@@ -399,19 +419,19 @@ L’inclusione di maschere e l’esclusione di maschere possono funzionare insie
 https://www.mydomain.com/archive/
 ```
 
-Il robot di ricerca ricerca si sposta per indicizzazione e indicizza tutte le pagine sotto `/archive/summer/`, `/archive/spring/`, e `/archive/fall/` (supponendo che ci siano collegamenti ad almeno una pagina in ciascuna cartella dalla `archive` cartella). Questo comportamento si verifica perché i percorsi di collegamento consentono al robot di ricerca di &quot;trovare&quot; i file nelle `/summer/`, `/spring/`e `/fall/` nelle cartelle e gli URL delle cartelle corrispondono alla maschera di inclusione generata automaticamente dall’URL del punto di ingresso.
+Il robot di ricerca si sposta per indicizzazione e indicizza tutte le pagine in `/archive/summer/`, `/archive/spring/` e `/archive/fall/` (supponendo che siano presenti collegamenti ad almeno una pagina in ciascuna cartella dalla cartella `archive`). Questo comportamento si verifica perché i percorsi di collegamento consentono al robot di ricerca di &quot;trovare&quot; i file nelle cartelle `/summer/`, `/spring/` e `/fall/` e gli URL delle cartelle corrispondono alla maschera di inclusione generata automaticamente dall&#39;URL del punto di ingresso.
 
-Consultate [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
+Consultate [Informazioni sui punti di ingresso URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
-Consultate [Configurazione delle impostazioni](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)dell’account.
+Consultate [Configurazione delle impostazioni dell&#39;account](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
-Potete scegliere di escludere tutte le pagine con più di 90 giorni di età nella `/fall/` cartella con una maschera data di esclusione come illustrato di seguito:
+Potete scegliere di escludere tutte le pagine con più di 90 giorni nella cartella `/fall/` con una maschera data di esclusione come illustrato di seguito:
 
 ```
 exclude-days 90 https://www.mydomain.com/archive/fall/
 ```
 
-Potete includere solo in modo selettivo `/archive/fall/index.html` (indipendentemente dalla data di scadenza, ovvero dalla corrispondenza tra file di 0 giorni o più) come parte dell’indice con la seguente maschera data:
+È possibile includere selettivamente solo `/archive/fall/index.html` (indipendentemente dall&#39;età, ovvero dalla corrispondenza tra file di 0 giorni o versioni precedenti) come parte dell&#39;indice con la seguente maschera data:
 
 ```
 include-days 0 https://www.mydomain.com/archive/fall/index.html
@@ -424,7 +444,7 @@ include-days 0 https://www.mydomain.com/archive/fall/index.html
 exclude-days 90 https://www.mydomain.com/archive/fall/
 ```
 
-Poiché il robot di ricerca segue le indicazioni nell&#39;ordine in cui sono specificate, il robot di ricerca prima include `/archive/fall/index.html`, e poi esclude il resto dei file nella `/fall` cartella.
+Poiché il robot di ricerca segue le indicazioni nell&#39;ordine in cui sono specificate, il robot di ricerca prima include `/archive/fall/index.html`, e poi esclude gli altri file nella cartella `/fall`.
 
 Se le istruzioni sono specificate nel modo opposto come indicato di seguito:
 
@@ -433,11 +453,11 @@ exclude-days 90 https://www.mydomain.com/archive/fall/
 include-days 0 https://www.mydomain.com/archive/fall/index.html 
 ```
 
-Non `/archive/fall/index.html` è incluso, anche se la maschera specifica che dovrebbe essere. Una maschera data che compare per prima ha sempre la precedenza su una maschera data che potrebbe essere visualizzata successivamente nelle impostazioni della maschera. Inoltre, se il robot di ricerca rileva una pagina che corrisponde sia a una maschera data di inclusione che a una maschera data di esclusione, la maschera elencata per prima ha sempre la precedenza.
+Quindi `/archive/fall/index.html` non è incluso, anche se la maschera specifica che dovrebbe essere. Una maschera data che compare per prima ha sempre la precedenza su una maschera data che potrebbe essere visualizzata successivamente nelle impostazioni della maschera. Inoltre, se il robot di ricerca rileva una pagina che corrisponde sia a una maschera data di inclusione che a una maschera data di esclusione, la maschera elencata per prima ha sempre la precedenza.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-## Utilizzo delle parole chiave con le maschere data {#section_CCBB3E3FDBDE4725B2B571FD6594470C}
+## Informazioni sull&#39;utilizzo di parole chiave con maschere di data {#section_CCBB3E3FDBDE4725B2B571FD6594470C}
 
 È possibile qualificare ciascuna maschera con una o più parole chiave separate da spazi, che influiscono sulla modalità di indicizzazione delle pagine corrispondenti.
 
@@ -453,39 +473,49 @@ Una virgola non è valida come separatore tra la maschera e la parola chiave; po
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Se non si desidera indicizzare il testo nelle pagine con data corrispondente o precedente alla data specificata dalla maschera di inclusione, aggiungere <code>
+   <td colname="col2"> <p> Se non si desidera indicizzare il testo nelle pagine con data corrispondente o precedente alla data specificata dalla maschera di inclusione, aggiungere 
+     <code>
        noindex 
-     </code> dopo la maschera di data di inclusione come illustrato di seguito: </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Separate la parola chiave dalla maschera con uno spazio. </p> <p>L'esempio precedente specifica che il robot di ricerca segue tutti i collegamenti da file con estensione ".swf" che hanno un'età di 10 giorni o più. Tuttavia, disabilita l'indicizzazione di tutto il testo contenuto in tali file. </p> <p>Potete verificare che il testo per i file meno recenti non sia indicizzato ma segua comunque tutti i collegamenti da tali file. In questi casi, utilizzate una maschera data di inclusione con la parola chiave "noindex" invece di usare una maschera data di esclusione. </p> </td> 
+     </code> dopo la maschera data di inclusione, come illustrato di seguito: </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Separate la parola chiave dalla maschera con uno spazio. </p> <p>L'esempio precedente specifica che il robot di ricerca segue tutti i collegamenti da file con estensione ".swf" che hanno un'età di 10 giorni o più. Tuttavia, disabilita l'indicizzazione di tutto il testo contenuto in tali file. </p> <p>Potete verificare che il testo per i file meno recenti non sia indicizzato ma segua comunque tutti i collegamenti da tali file. In questi casi, utilizzate una maschera data di inclusione con la parola chiave "noindex" invece di usare una maschera data di esclusione. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Se desiderate indicizzare il testo sulle pagine con data corrispondente o precedente alla data specificata dalla maschera di inclusione, ma non desiderate seguire i collegamenti della pagina corrispondente, aggiungete <code>
+   <td colname="col2"> <p> Se desiderate indicizzare il testo sulle pagine con data corrispondente o precedente alla data specificata dalla maschera di inclusione, ma non desiderate seguire i collegamenti della pagina corrispondente, aggiungete 
+     <code>
        nofollow 
-     </code> dopo la maschera data di inclusione come segue: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Separate la parola chiave dalla maschera con uno spazio. </p> <p>La <code>
+     </code> dopo la maschera data di inclusione, come illustrato di seguito: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Separate la parola chiave dalla maschera con uno spazio. </p> <p>Il 
+     La parola chiave <code>
        nofollow 
-     </code> parola chiave equivale a un tag meta robot con <code>
+     </code> equivale a un tag meta robot con 
+     <code>
        content="nofollow" 
-     </code> un tag tra i <code>
+     </code> tra 
+     Tag <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </code> tag delle pagine corrispondenti. </p> </td> 
+     </code> delle pagine corrispondenti. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>data server </p> </td> 
-   <td colname="col2"> <p>Utilizzata sia per includere che per escludere le maschere. </p> <p>Il robot di ricerca in genere scarica e analizza ogni file prima di controllare le maschere data. Questo comportamento si verifica perché alcuni tipi di file possono specificare una data all'interno del file stesso. Ad esempio, un documento HTML può includere tag meta che impostano la data del file. </p> <p>Se si desidera escludere molti file in base alla data e non si desidera caricare un carico inutile sui server, è possibile utilizzare <code>
+   <td colname="col2"> <p>Utilizzata sia per includere che per escludere le maschere. </p> <p>Il robot di ricerca in genere scarica e analizza ogni file prima di controllare le maschere data. Questo comportamento si verifica perché alcuni tipi di file possono specificare una data all'interno del file stesso. Ad esempio, un documento HTML può includere tag meta che impostano la data del file. </p> <p>Se si desidera escludere molti file in base alla data e non si desidera caricare un carico inutile sui server, è possibile utilizzare 
+     <code>
        server-date 
-     </code> dopo l'URL nella maschera data. </p> <p>Questa parola chiave indica al robot di ricerca di considerare attendibile la data del file restituito dal server invece di analizzare ciascun file. Ad esempio, la maschera data di esclusione seguente ignora le pagine che corrispondono all’URL se i documenti sono di 90 giorni o più, in base alla data restituita dal server nelle intestazioni HTTP: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Se la data restituita dal server supera i 90 giorni, <code>
+     </code> dopo l'URL nella maschera data. </p> <p>Questa parola chiave indica al robot di ricerca di considerare attendibile la data del file restituito dal server invece di analizzare ciascun file. Ad esempio, la maschera data di esclusione seguente ignora le pagine che corrispondono all’URL se i documenti sono di 90 giorni o più, in base alla data restituita dal server nelle intestazioni HTTP: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Se la data restituita dal server è di 90 giorni o più, 
+     <code>
        server-date 
-     </code> specifica che i documenti esclusi non possono essere scaricati dal server. Ciò comporta tempi di indicizzazione più rapidi per i documenti e un carico ridotto sui server. Se non <code>
+     </code> specifica che i documenti esclusi non possono essere scaricati dal server. Ciò comporta tempi di indicizzazione più rapidi per i documenti e un carico ridotto sui server. If 
+     <code>
        server-date 
-     </code> viene specificato, il robot di ricerca ignora la data restituita dal server nelle intestazioni HTTP. Al contrario, ogni file viene scaricato e controllato per verificare se la data è specificata. Se nel file non è specificata alcuna data, il robot di ricerca utilizza la data restituita dal server. </p> <p>Non utilizzare <code>
+     </code> non è specificato, il robot di ricerca ignora la data restituita dal server nelle intestazioni HTTP. Al contrario, ogni file viene scaricato e controllato per verificare se la data è specificata. Se nel file non è specificata alcuna data, il robot di ricerca utilizza la data restituita dal server. </p> <p>Non utilizzare 
+     <code>
        server-date 
      </code> se i file contengono comandi che ignorano la data del server. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p> Utilizzate sia per includere che escludere le maschere. </p> <p>Qualsiasi maschera data preceduta da <code>
+   <td colname="col2"> <p> Utilizzate sia per includere che escludere le maschere. </p> <p>Qualsiasi maschera data preceduta da 
+     <code>
        regexp 
-     </code> viene trattata come espressione regolare. </p> <p>Se il robot di ricerca rileva file che corrispondono a una maschera data con espressione regolare esclusa, non indicizza tali file. </p> <p>Se il robot di ricerca rileva file che corrispondono a una maschera data con espressione regolare, indicizza tali documenti. </p> <p>Ad esempio, si supponga di disporre della maschera data seguente: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>La maschera indica al robot di ricerca di escludere i file corrispondenti di almeno 180 giorni. ovvero file che contengono la parola "archivio" nell’URL. </p> <p>Consultate <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> </td> 
+     </code> viene trattata come un'espressione regolare. </p> <p>Se il robot di ricerca rileva file che corrispondono a una maschera data con espressione regolare esclusa, non indicizza tali file. </p> <p>Se il robot di ricerca rileva file che corrispondono a una maschera data con espressione regolare, indicizza tali documenti. </p> <p>Ad esempio, si supponga di disporre della maschera data seguente: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>La maschera indica al robot di ricerca di escludere i file corrispondenti che abbiano una durata pari o superiore a 180 giorni. ovvero file che contengono la parola "archivio" nell’URL. </p> <p>Vedere <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -498,27 +528,27 @@ Utilizzare i campi **[!UICONTROL Test Date]** e **[!UICONTROL Test URL]** per ve
 
 Assicuratevi di rigenerare l’indice del sito in modo che i risultati delle maschere URL siano visibili ai clienti.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Per aggiungere maschere di data per indicizzare o non indicizzare parti del sito Web**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Date Masks]**.
-1. (Facoltativo) Sulla [!DNL Date Masks] pagina, nel **[!UICONTROL Test Date]** campo, immettere una data formattata come AAAA-MM-GG (ad esempio, `2011-07-25`); nel **[!UICONTROL Test URL]** campo, inserite una maschera URL dal sito Web e fate clic su **[!UICONTROL Test]**.
-1. Nel [!DNL Date Masks] campo, immettere un indirizzo maschera data per riga.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Date Masks]** dal menu del prodotto.
+1. (Facoltativo) Nella pagina [!DNL Date Masks], nel campo **[!UICONTROL Test Date]** immettere una data formattata come AAAA-MM-GG (ad esempio, `2011-07-25`); nel campo **[!UICONTROL Test URL]**, inserite una maschera URL dal sito Web e fate clic su **[!UICONTROL Test]**.
+1. Nel campo [!DNL Date Masks], immettere un indirizzo maschera data per riga.
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Informazioni sulle password {#concept_3EDBD731725D46B891F834D4472774DC}
 
@@ -526,9 +556,9 @@ Per accedere a porzioni del sito Web protette dall&#39;autenticazione di base HT
 
 Prima che gli effetti delle impostazioni Password siano visibili ai clienti, dovete ricreare l&#39;indice del sito.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-Sulla [!DNL Passwords] pagina, digitate ogni password su una sola riga. La password è composta da un URL o un realm, un nome utente e una password, come nell&#39;esempio seguente:
+Nella pagina [!DNL Passwords], digitate ogni password su una sola riga. La password è composta da un URL o un realm, un nome utente e una password, come nell&#39;esempio seguente:
 
 ```
 https://www.mydomain.com/ myname mypassword
@@ -567,20 +597,20 @@ https://www.mysite.com/path1/path5 name5 password5
 https://www.mysite.com/path6 name6 password6
 ```
 
-Nell&#39;elenco di cui sopra, viene utilizzata la prima password che contiene un realm o un URL corrispondente alla richiesta di autenticazione del server. Anche se il file in `https://www.mysite.com/path1/path2/index.html` è in `Realm3`, ad esempio, `name2` e `password2` viene utilizzato perché la password definita con l&#39;URL è elencata sopra quella definita con l&#39;area di autenticazione.
+Nell&#39;elenco di cui sopra, viene utilizzata la prima password che contiene un realm o un URL corrispondente alla richiesta di autenticazione del server. Anche se il file in `https://www.mysite.com/path1/path2/index.html` è in `Realm3`, ad esempio, vengono utilizzati `name2` e `password2` perché la password definita con l&#39;URL è elencata sopra a quella definita con l&#39;area di autenticazione.
 
-## Aggiunta di password per accedere alle aree del sito Web che richiedono l’autenticazione {#task_DED19D476FF04B48BB6456D5ECB8628A}
+## Aggiunta di password per accedere alle aree del sito Web che richiedono l&#39;autenticazione {#task_DED19D476FF04B48BB6456D5ECB8628A}
 
 Potete utilizzare Password per accedere alle aree protette da password del sito Web a scopo di ricerca per indicizzazione e indicizzazione.
 
 Prima che gli effetti della password siano visibili ai clienti, accertatevi di ricreare l&#39;indice del sito
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Aggiunta di password per l&#39;accesso alle aree del sito Web che richiedono l&#39;autenticazione**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Passwords]**.
-1. Nella [!DNL Passwords] pagina, nel **[!UICONTROL Passwords]** campo, immettete un realm o un URL e il nome utente e la password associati, separati da uno spazio.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Passwords]** dal menu del prodotto.
+1. Nella pagina [!DNL Passwords], nel campo **[!UICONTROL Passwords]** immettere un realm o un URL e il nome utente e la password associati, separati da uno spazio.
 
    Esempio di password di un realm e di una password URL su righe separate:
 
@@ -593,31 +623,31 @@ Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Informazioni sui tipi di contenuto {#concept_6FEA1355C0374500B4C53090C34A8A07}
 
-È possibile utilizzare [!DNL Content Types] per selezionare i tipi di file da cercare per indicizzazione e indicizzazione per l&#39;account.
+È possibile utilizzare [!DNL Content Types] per selezionare i tipi di file che si desidera sottoporre a ricerca per indicizzazione e indicizzare per questo account.
 
 I tipi di contenuto che è possibile scegliere per la ricerca per indicizzazione e per indicizzazione includono documenti PDF, documenti di testo, filmati  Flash di Adobe, file da applicazioni Microsoft Office come Word, Excel e Powerpoint e testo in file MP3. Il testo che si trova all’interno dei tipi di contenuto selezionati viene cercato insieme a tutto il testo presente nel sito Web.
 
 Prima che gli effetti delle impostazioni Tipi di contenuto siano visibili ai clienti, dovete ricreare l&#39;indice del sito.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 ## Informazioni sull&#39;indicizzazione di file musicali MP3 {#section_AD2E28BEEE3E46629E2B05C34A963673}
 
-Se selezionate l&#39;opzione **[!UICONTROL Text in MP3 Music Files]** sulla [!DNL Content Types] pagina, un file MP3 viene sottoposto a ricerca per indicizzazione in uno dei due modi disponibili. Il primo e più comune metodo è rappresentato da un tag href di ancoraggio in un file HTML come illustrato di seguito:
+Se selezionate l&#39;opzione **[!UICONTROL Text in MP3 Music Files]** nella pagina [!DNL Content Types], un file MP3 viene sottoposto a ricerca per indicizzazione e indicizzato in uno dei due modi seguenti. Il primo e più comune metodo è rappresentato da un tag href di ancoraggio in un file HTML come illustrato di seguito:
 
 ```
 <a href="MP3-file-URL"></a>
@@ -625,7 +655,7 @@ Se selezionate l&#39;opzione **[!UICONTROL Text in MP3 Music Files]** sulla [!DN
 
 Il secondo modo consiste nell’inserire l’URL del file MP3 come punto di ingresso dell’URL.
 
-Consultate [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
+Consultate [Informazioni sui punti di ingresso URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 Un file MP3 viene riconosciuto dal tipo MIME &quot;audio/mpeg&quot;.
 
@@ -638,48 +668,48 @@ Tenete presente che le dimensioni dei file musicali MP3 possono essere piuttosto
 
 Ogni file MP3 che viene sottoposto a ricerca per indicizzazione e con scorrimento nel sito Web viene contato come una pagina.
 
-Se il sito Web contiene molti file MP3 di grandi dimensioni, potete superare il limite di byte di indicizzazione per il vostro account. In questo caso, potete deselezionare **[!UICONTROL Text in MP3 Music Files]** sulla [!DNL Content Types] pagina per impedire l’indicizzazione di tutti i file MP3 sul sito Web.
+Se il sito Web contiene molti file MP3 di grandi dimensioni, potete superare il limite di byte di indicizzazione per il vostro account. In questo caso, è possibile deselezionare **[!UICONTROL Text in MP3 Music Files]** nella pagina [!DNL Content Types] per impedire l&#39;indicizzazione di tutti i file MP3 sul sito Web.
 
 Se desiderate solo impedire l’indicizzazione di alcuni file MP3 sul vostro sito Web, potete effettuare una delle seguenti operazioni:
 
-* Circondare i tag di ancoraggio che collegano ai file MP3 con `<nofollow>` tag e `</nofollow>` tag. Il robot di ricerca non segue i collegamenti tra tali tag.
+* Circondare i tag di ancoraggio che collegano ai file MP3 con i tag `<nofollow>` e `</nofollow>`. Il robot di ricerca non segue i collegamenti tra tali tag.
 
 * Aggiungete gli URL dei file MP3 come maschere di esclusione.
 
-   Consultate [Le maschere](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+   Consultate [Le maschere URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-## Selezione dei tipi di contenuto per la ricerca per indicizzazione e l&#39;indicizzazione {#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8}
+## Selezione dei tipi di contenuto per la ricerca per indicizzazione e l&#39;indice {#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8}
 
-È possibile utilizzare [!DNL Content Types] per selezionare i tipi di file da cercare per indicizzazione e indicizzazione per l&#39;account.
+È possibile utilizzare [!DNL Content Types] per selezionare i tipi di file che si desidera sottoporre a ricerca per indicizzazione e indicizzare per questo account.
 
 I tipi di contenuto che è possibile scegliere per la ricerca per indicizzazione e per indicizzazione includono documenti PDF, documenti di testo, filmati  Flash di Adobe, file da applicazioni Microsoft Office come Word, Excel e Powerpoint e testo in file MP3. Il testo che si trova all’interno dei tipi di contenuto selezionati viene cercato insieme a tutto il testo presente nel sito Web.
 
 Prima che gli effetti delle impostazioni Tipi di contenuto siano visibili ai clienti, dovete ricreare l&#39;indice del sito.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-Per eseguire ricerche per indicizzazione e indicizzazione di file MP3 cinesi, giapponesi o coreani, completare i passaggi descritti di seguito. Quindi, in **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]**, specificate il set di caratteri utilizzato per codificare i file MP3.
+Per eseguire ricerche per indicizzazione e indicizzazione di file MP3 cinesi, giapponesi o coreani, completare i passaggi descritti di seguito. Quindi, in **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]**, specificare il set di caratteri utilizzato per codificare i file MP3.
 
-Consulta [Informazioni sulle iniezioni](../c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
+Vedere [Informazioni sulle iniezioni](../c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
 
 **Per selezionare i tipi di contenuto da sottoporre a ricerca per indicizzazione e**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**.
-1. Nella [!DNL Content Types] pagina, controlla i tipi di file che desideri cercare per indicizzazione e indicizzare sul tuo sito Web.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]** dal menu del prodotto.
+1. Nella pagina [!DNL Content Types] verificare i tipi di file che si desidera sottoporre a ricerca per indicizzazione e indicizzare sul sito Web.
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Informazioni sulle connessioni {#concept_E2F3B7E7521147479E5948A94BB3A40B}
 
@@ -695,22 +725,22 @@ Tenete presente che ogni connessione aggiuntiva aumenta il carico inserito sul s
 
 **Per aggiungere connessioni per aumentare la velocità di indicizzazione**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Connections]**.
-1. Nella [!DNL Parallel Indexing Connections] pagina, nel **[!UICONTROL Number of Connections]** campo, immettere il numero di connessioni (1-10) che si desidera aggiungere.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Connections]** dal menu del prodotto.
+1. Nella pagina [!DNL Parallel Indexing Connections], nel campo **[!UICONTROL Number of Connections]** immettere il numero di connessioni (1-10) che si desidera aggiungere.
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Informazioni sull&#39;invio del modulo {#concept_CADD5D7CF373497DAA6F8564D7BC8502}
 
@@ -724,17 +754,17 @@ Durante la ricerca per indicizzazione e l&#39;indicizzazione del sito Web, ogni 
 
 Assicuratevi di rigenerare l’indice del sito in modo che i risultati delle modifiche siano visibili ai clienti.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Aggiunta di definizioni di moduli per l&#39;indicizzazione dei moduli nel sito Web**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]**.
-1. Sulla [!DNL Form Submission] pagina, fate clic su **[!UICONTROL Add New Form]**.
-1. Nella [!DNL Add Form Definition] pagina, impostate le [!DNL Form Recognition] opzioni e [!DNL Form Submission] .
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]** dal menu del prodotto.
+1. Nella pagina [!DNL Form Submission] fare clic su **[!UICONTROL Add New Form]**.
+1. Nella pagina [!DNL Add Form Definition], impostare le opzioni [!DNL Form Recognition] e [!DNL Form Submission].
 
-   Le cinque opzioni della [!DNL Form Recognition] sezione della [!DNL Form Definition] pagina consentono di identificare i moduli nelle pagine Web che possono essere elaborati.
+   Le cinque opzioni nella sezione [!DNL Form Recognition] della pagina [!DNL Form Definition] vengono utilizzate per identificare i moduli nelle pagine Web che possono essere elaborati.
 
-   Le tre opzioni della [!DNL Form Submission] sezione vengono utilizzate per specificare i parametri e i valori inviati con un modulo al server Web.
+   Le tre opzioni della sezione [!DNL Form Submission] vengono utilizzate per specificare i parametri e i valori inviati con un modulo al server Web.
 
    Immettere un parametro di riconoscimento o di invio per riga. Ogni parametro deve includere un nome e un valore.
 
@@ -752,47 +782,59 @@ Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Maschera URL pagina </p> </td> 
-      <td colname="col2"> <p>Identificare la pagina Web o le pagine che contengono il modulo. Per identificare un modulo che viene visualizzato su una singola pagina, immettete l’URL della pagina come nell’esempio seguente: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Per identificare i moduli che vengono visualizzati su più pagine, specificare una maschera URL che utilizza i caratteri jolly per descrivere le pagine. Per identificare i moduli rilevati in qualsiasi pagina ASP, <code> https://www.mydomain.com/register/ </code>ad esempio, è necessario specificare quanto segue: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>È inoltre possibile utilizzare un'espressione regolare per identificare più pagine. È sufficiente specificare la <code>
+      <td colname="col2"> <p>Identificare la pagina Web o le pagine che contengono il modulo. Per identificare un modulo che viene visualizzato su una singola pagina, immettete l’URL della pagina come nell’esempio seguente: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Per identificare i moduli che vengono visualizzati su più pagine, specificare una maschera URL che utilizza i caratteri jolly per descrivere le pagine. Per identificare i moduli incontrati in qualsiasi pagina ASP in <code> https://www.mydomain.com/register/ </code>, ad esempio, è necessario specificare quanto segue: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>È inoltre possibile utilizzare un'espressione regolare per identificare più pagine. È sufficiente specificare 
+      <code>
         regexp 
-      </code> parola chiave prima della maschera URL come nell'esempio seguente: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
+      </code> parola chiave prima della maschera URL, come nell'esempio seguente: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>URL azione </p> </td> 
-      <td colname="col2"> <p>Identifica l’attributo action del <code>
+      <td colname="col2"> <p>Identifica l’attributo action del 
+      Tag <code>
         &lt;form&gt; 
-      </code> tag. </p> <p>Come la maschera URL pagina, la maschera URL azione può assumere la forma di un singolo URL, un URL con caratteri jolly o un'espressione regolare. </p> <p>La maschera URL può essere una delle seguenti: 
+      </code>. </p> <p>Come la maschera URL pagina, la maschera URL azione può assumere la forma di un singolo URL, un URL con caratteri jolly o un'espressione regolare. </p> <p>La maschera URL può essere una delle seguenti: 
       <ul id="ul_EDFE7688D3DD4C0BBACCE5D4648D8E44"> 
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> Un percorso completo come nel seguente: <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> Un percorso parziale come nel seguente: <code> https://www.mydomain.com/products </code> </li> 
       <li id="li_8DADA1C8604740FCACBA30B4AAADB2A1"> Un URL che utilizza caratteri jolly come illustrato di seguito: <code> https://www.mydomain.com/*.html </code> </li> 
       <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> Un'espressione regolare come nell'esempio seguente: <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
-      </ul> </p> <p>Se non si desidera indicizzare il testo su pagine identificate da una maschera URL o da una maschera URL azione, oppure se non si desidera che i collegamenti siano seguiti su tali pagine, è possibile utilizzare le <code>
+      </ul> </p> <p>Se non si desidera indicizzare il testo nelle pagine identificate da una maschera URL o da una maschera URL azione, oppure se non si desidera che i collegamenti siano seguiti in tali pagine, è possibile utilizzare la 
+      <code>
         noindex 
-      </code> e <code>
+      </code> e 
+      <code>
         nofollow 
-      </code> le parole chiave. Potete aggiungere queste parole chiave alle maschere utilizzando maschere URL o punti di ingresso. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> I Punti Di Entrata Degli URL </a>. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Le Maschere URL </a>. </p> </td> 
+      </code> parole chiave. Potete aggiungere queste parole chiave alle maschere utilizzando maschere URL o punti di ingresso. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> I punti di ingresso URL </a>. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Le maschere URL </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Maschera nome modulo </p> </td> 
-      <td colname="col2"> <p>Identifica i moduli se i <code>
+      <td colname="col2"> <p>Identifica i moduli se il 
+      I tag <code>
         &lt;form&gt; 
-      </code> tag presenti nelle pagine Web contengono un attributo nome. </p> <p>Potete utilizzare un nome semplice ( <code>
+      </code> presenti nelle pagine Web contengono un attributo name. </p> <p>È possibile utilizzare un nome semplice ( 
+      <code>
         login_form 
-      </code>), un nome con un carattere jolly ( <code>
+      </code>), un nome con un carattere jolly ( 
+      <code>
         form* 
-      </code>) o un'espressione regolare ( <code>
+      </code>) o un'espressione regolare ( 
+      <code>
         regexp ^.*authorize.*$ 
       </code>). </p> <p>In genere è possibile lasciare vuoto questo campo perché i moduli in genere non hanno un attributo nome. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Maschera ID modulo </p> </td> 
-      <td colname="col2"> <p>Identifica i moduli se i <code>
+      <td colname="col2"> <p>Identifica i moduli se il 
+      I tag <code>
         &lt;form&gt; 
-      </code> tag presenti nelle pagine Web contengono un attributo id. </p> <p>Potete utilizzare un nome semplice ( <code>
+      </code> nelle pagine Web contengono un attributo id. </p> <p>È possibile utilizzare un nome semplice ( 
+      <code>
         login_form 
-      </code>), un nome con un carattere jolly ( <code>
+      </code>), un nome con un carattere jolly ( 
+      <code>
         form* 
-      </code>) o un'espressione regolare ( <code>
+      </code>) o un'espressione regolare ( 
+      <code>
         regexp ^.*authorize.*$ 
       </code>). </p> <p>In genere è possibile lasciare vuoto questo campo perché i moduli in genere non hanno un attributo nome. </p> </td> 
       </tr> 
@@ -810,23 +852,29 @@ Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Metodo Override </p> </td> 
-      <td colname="col2"> <p>Specificare quando la destinazione dell'invio del modulo è diversa da quella utilizzata nell'attributo action del modulo e quando il codice JavaScript di invio ha modificato il metodo. </p> <p>I valori predefiniti per tutti i parametri del modulo ( <code>
+      <td colname="col2"> <p>Specificare quando la destinazione dell'invio del modulo è diversa da quella utilizzata nell'attributo action del modulo e quando il codice JavaScript di invio ha modificato il metodo. </p> <p>I valori predefiniti per tutti i parametri del modulo ( 
+      <code>
         &lt;input&gt; 
-      </code> tag, inclusi campi nascosti), per quelli predefiniti <code>
+      </code> tag, inclusi campi nascosti), impostazione predefinita 
+      <code>
         &lt;option&gt; 
-      </code> di un <code>
+      </code> da un 
+      Tag <code>
         &lt;select&gt; 
-      </code> tag e per il testo predefinito tra <code>
+      </code> e testo predefinito compreso tra 
+      <code>
         &lt;textarea&gt;...&lt;/textarea&gt; 
-      </code> i tag) vengono letti dalla pagina Web. Tuttavia, qualsiasi parametro elencato nella sezione <span class="wintitle"> Invio modulo </span> , nel campo <span class="uicontrol"> Parametri, </span> viene sostituito con le impostazioni predefinite del modulo. </p> </td> 
+      </code> tag) vengono letti dalla pagina Web. Tuttavia, qualsiasi parametro elencato nella sezione <span class="wintitle"> Invio modulo </span>, nel campo <span class="uicontrol"> Parametri </span>, viene sostituito con le impostazioni predefinite del modulo. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parametri </p> </td> 
-      <td colname="col2"> <p>È possibile assegnare un prefisso ai parametri di invio del modulo con la <code>
+      <td colname="col2"> <p>È possibile assegnare un prefisso ai parametri di invio del modulo 
+      <code>
         not 
-      </code> parola chiave. </p> <p>Quando si crea un prefisso per un parametro con <code>
+      </code> parola chiave. </p> <p>Quando si assegna un prefisso a un parametro con 
+      <code>
         not 
-      </code>, questo non viene inviato come parte dell'invio del modulo. Questo comportamento è utile per le caselle di controllo che devono essere inviate deselezionate. </p> <p>Ad esempio, si supponga di voler inviare i seguenti parametri: </p> <p> 
+      </code>, non viene inviato come parte dell'invio del modulo. Questo comportamento è utile per le caselle di controllo che devono essere inviate deselezionate. </p> <p>Ad esempio, si supponga di voler inviare i seguenti parametri: </p> <p> 
       <ul id="ul_962D12BACF464FF189DB12BFAFCC93A6"> 
       <li id="li_830C6C3EC8D2448388A453BB8EDE5940"> Il parametro e-mail con il valore 
       <code>
@@ -837,16 +885,19 @@ Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-
         tryme 
       </code> </li> 
       <li id="li_AAA411708ADC464793EADF0D821E282E"> Il parametro myCasella di controllo è deselezionato. </li> 
-      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Tutti gli altri <code>
+      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Tutti gli altri 
+      <code>
         &lt;form&gt; 
       </code> parametri come valori predefiniti </p> </li> 
       </ul> </p> <p>Il parametro di invio del modulo sarà simile al seguente: </p> <p> <code> email=nobody@mydomain.com 
         password=tryme 
-        not&nbsp;mycheckbox </code> </p> <p>L'attributo metodo del <code>
+        not&nbsp;mycheckbox </code> </p> <p>L'attributo metodo della variabile 
+      Il tag <code>
         &lt;form&gt; 
-      </code> tag sulla pagina Web viene utilizzato per stabilire se i dati vengono inviati al server utilizzando il metodo GET o il metodo POST. </p> <p>Se il <code>
+      </code> nella pagina Web viene utilizzato per stabilire se i dati vengono inviati al server utilizzando il metodo GET o il metodo POST. </p> <p>Se 
+      Il tag <code>
         &lt;form&gt; 
-      </code> tag non contiene un attributo del metodo, il modulo viene inviato utilizzando il metodo GET. </p> </td> 
+      </code> non contiene un attributo del metodo, il modulo viene inviato utilizzando il metodo GET. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -856,85 +907,85 @@ Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Modifica di una definizione di modulo {#task_9FB34E9C8A814DFE9BF7F8F8F69BF314}
+## Modifica della definizione del modulo {#task_9FB34E9C8A814DFE9BF7F8F8F69BF314}
 
 È possibile modificare una definizione di modulo esistente se un modulo sul sito Web è stato modificato o se è necessario modificarla.
 
-Tenere presente che non esiste [!DNL History] una funzione sulla [!DNL Form Submission] pagina per ripristinare le modifiche apportate a una definizione del modulo.
+Tenere presente che nella pagina [!DNL Form Submission] non è presente alcuna funzione [!DNL History] per ripristinare le modifiche apportate alla definizione di un modulo.
 
 Assicuratevi di rigenerare l’indice del sito in modo che i risultati delle modifiche siano visibili ai clienti.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Per modificare una definizione di modulo**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]**.
-1. Sulla [!DNL Form Submission] pagina fare clic **[!UICONTROL Edit]** a destra della definizione di un modulo da aggiornare.
-1. Nella [!DNL Edit Form Definition] pagina, impostate le [!DNL Form Recognition] opzioni e [!DNL Form Submission] .
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]** dal menu del prodotto.
+1. Nella pagina [!DNL Form Submission], fare clic su **[!UICONTROL Edit]** a destra della definizione di un modulo da aggiornare.
+1. Nella pagina [!DNL Edit Form Definition], impostare le opzioni [!DNL Form Recognition] e [!DNL Form Submission].
 
-   Vedere la tabella delle opzioni in [Aggiunta delle definizioni dei moduli per l&#39;indicizzazione dei moduli sul sito Web](../c-about-settings-menu/c-about-crawling-menu.md#task_62FBCE9E6DBE4BDA8D1249233ADFC00F).
+   Vedere la tabella delle opzioni in [Aggiunta di definizioni di moduli per l&#39;indicizzazione dei moduli nel sito Web](../c-about-settings-menu/c-about-crawling-menu.md#task_62FBCE9E6DBE4BDA8D1249233ADFC00F).
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Eliminazione di una definizione di modulo {#task_C350FC0CDE344F2786215D544C048B5E}
 
 È possibile eliminare una definizione di modulo esistente se il modulo non esiste più sul sito Web o se non si desidera più elaborare e indicizzare un modulo specifico.
 
-Tenere presente che non esiste [!DNL History] una funzione sulla [!DNL Form Submission] pagina per ripristinare le modifiche apportate a una definizione del modulo.
+Tenere presente che nella pagina [!DNL Form Submission] non è presente alcuna funzione [!DNL History] per ripristinare le modifiche apportate alla definizione di un modulo.
 
 Assicuratevi di rigenerare l’indice del sito in modo che i risultati delle modifiche siano visibili ai clienti.
 
-Consultate [Configurazione di un indice incrementale di un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)in fase.
+Vedere [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Per eliminare una definizione di modulo**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]**.
-1. Sulla [!DNL Form Submission] pagina fare clic **[!UICONTROL Delete]** a destra della definizione di un modulo da rimuovere.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]** dal menu del prodotto.
+1. Nella pagina [!DNL Form Submission], fare clic su **[!UICONTROL Delete]** a destra della definizione di un modulo che si desidera rimuovere.
 
-   Assicurarsi di scegliere la definizione corretta del modulo da eliminare. Quando si fa clic **[!UICONTROL Delete]** nel passaggio successivo non viene visualizzata alcuna finestra di dialogo di conferma.
-1. Sulla [!DNL Delete Form Definition] pagina, fate clic su **[!UICONTROL Delete]**.
+   Assicurarsi di scegliere la definizione corretta del modulo da eliminare. Non è disponibile alcuna finestra di dialogo di conferma dell&#39;eliminazione quando si fa clic su **[!UICONTROL Delete]** nel passaggio successivo.
+1. Nella pagina [!DNL Delete Form Definition] fare clic su **[!UICONTROL Delete]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Informazioni sul connettore indice {#concept_CA6921E2FBF641F9B4F60C92B32AFA84}
 
-Utilizzare [!DNL Index Connector] per definire origini di input aggiuntive per l&#39;indicizzazione di pagine XML o qualsiasi tipo di feed.
+Utilizzate [!DNL Index Connector] per definire origini di input aggiuntive per l&#39;indicizzazione di pagine XML o qualsiasi tipo di feed.
 
 È possibile utilizzare un&#39;origine di input di feed di dati per accedere al contenuto memorizzato in un modulo diverso da quello di solito scoperto in un sito Web utilizzando uno dei metodi disponibili per la ricerca per indicizzazione. Ogni documento sottoposto a ricerca per indicizzazione e indicizzato corrisponde direttamente a una pagina di contenuto del sito Web. Tuttavia, un feed di dati proviene da un documento XML o da un file di testo delimitato da virgole o da tabulazioni e contiene le informazioni sul contenuto da indicizzare.
 
 Un&#39;origine dati XML è costituita da stanzas XML, o record, che contengono informazioni corrispondenti a singoli documenti. Questi singoli documenti vengono aggiunti all’indice. Un feed di dati di testo contiene singoli record delimitati da nuove righe che corrispondono a singoli documenti. All’indice vengono aggiunti anche questi singoli documenti. In entrambi i casi, una configurazione di connettore indice descrive come interpretare il feed. Ogni configurazione descrive la posizione del file e la modalità di accesso dei server. La configurazione descrive anche le informazioni sulla mappatura. In altre parole, in che modo gli elementi di ciascun record vengono utilizzati per compilare i campi di metadati nell&#39;indice risultante.
 
-Dopo aver aggiunto una definizione del connettore indice alla [!DNL Staged Index Connector Definitions] pagina, è possibile modificare qualsiasi impostazione di configurazione, *ad eccezione* dei valori Nome o Tipo.
+Dopo aver aggiunto una definizione del connettore indice alla pagina [!DNL Staged Index Connector Definitions], è possibile modificare qualsiasi impostazione di configurazione, *tranne* per i valori Nome o Tipo.
 
-La [!DNL Index Connector] pagina mostra le informazioni seguenti:
+La pagina [!DNL Index Connector] contiene le informazioni seguenti:
 
 * Nome dei connettori di indice definiti configurati e aggiunti dall&#39;utente.
 * Uno dei seguenti tipi di origini dati per ciascun connettore aggiunto:
 
-   * **Testo** - File semplici, delimitati da virgole, delimitati da tabulazioni o altri formati delimitati in modo coerente.
-   * **Feed** - Feed XML.
-   * **XML** - Raccolte di documenti XML.
+   * **Testo** : semplici file &quot;semplici&quot;, delimitati da virgole, delimitati da tabulazioni o altri formati delimitati in modo coerente.
+   * **Feed**  - Feed XML.
+   * **XML**  - Raccolte di documenti XML.
 
 * Indica se il connettore è abilitato o meno per la ricerca per indicizzazione successiva e se l&#39;indicizzazione è stata completata.
 * Indirizzo dell&#39;origine dati.
@@ -960,20 +1011,20 @@ Vedere anche [Informazioni sul connettore indice](../c-about-settings-menu/c-abo
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Suddivide l'origine dati scaricata in singoli pseudo-documenti. </p> </td> 
-   <td colname="col3"> <p>Per <span class="uicontrol"> Testo </span>, ogni riga di testo delimitata da una nuova riga corrisponde a un singolo documento e viene analizzata utilizzando il delimitatore specificato, ad esempio una virgola o una tabulazione. </p> <p>Per <span class="uicontrol"> Feed </span>, i dati di ciascun documento vengono estratti utilizzando un pattern di espressione regolare nel seguente modulo: </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Utilizzando <span class="uicontrol"> Mappa </span> nella pagina Aggiungi connettore <span class="wintitle"> </span> indice, create una copia memorizzata nella cache dei dati, quindi create un elenco di collegamenti per il crawler. I dati vengono memorizzati in una cache locale e compilati con i campi configurati. </p> <p>I dati analizzati vengono scritti nella cache locale. </p> <p>Questa cache viene letta in seguito per creare i documenti HTML semplici necessari al crawler. Ad esempio, </p> <p> <code> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>Per <span class="uicontrol"> Testo </span>, ogni riga di testo delimitata da una nuova riga corrisponde a un singolo documento ed è analizzata utilizzando il delimitatore specificato, ad esempio una virgola o una tabulazione. </p> <p>Per <span class="uicontrol"> Feed </span>, i dati di ciascun documento vengono estratti utilizzando un pattern di espressione regolare nel seguente modulo: </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Utilizzando <span class="uicontrol"> Mappa </span> nella pagina <span class="wintitle"> Connettore indice Aggiungere </span>, creare una copia memorizzata nella cache dei dati e quindi creare un elenco di collegamenti per il crawler. I dati vengono memorizzati in una cache locale e compilati con i campi configurati. </p> <p>I dati analizzati vengono scritti nella cache locale. </p> <p>Questa cache viene letta in seguito per creare i documenti HTML semplici necessari al crawler. Ad esempio, </p> <p> <code> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
       &lt;/head&gt;&lt;body&gt; 
       {body} 
-      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>L'elemento <span class="codeph"> &lt;title&gt; </span> viene generato solo quando esiste una mappatura nel campo di metadati Titolo. Analogamente, l'elemento <span class="codeph"> &lt;body&gt; </span> viene generato solo quando esiste una mappatura nel campo di metadati Body. </p> <p> <b>Importante</b>: Non è supportato l'assegnazione di valori al tag meta dell'URL predefinito. </p> <p>Per tutte le altre mappature, vengono generati <span class="codeph"> &lt;meta&gt; </span> tag per ogni campo con dati trovati nel documento originale. </p> <p>I campi per ciascun documento vengono aggiunti alla cache. Per ogni documento scritto nella cache, viene generato anche un collegamento come negli esempi seguenti: </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
+      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>L'elemento <span class="codeph"> &lt;title&gt; </span> viene generato solo quando esiste una mappatura al campo di metadati Titolo. Analogamente, l'elemento <span class="codeph"> &lt;body&gt; </span> viene generato solo quando esiste una mappatura al campo di metadati Body. </p> <p> <b>Importante</b>: Non è supportato l'assegnazione di valori al tag meta dell'URL predefinito. </p> <p>Per tutte le altre mappature, vengono generati tag <span class="codeph"> &lt;meta&gt; </span> per ogni campo contenente dati presenti nel documento originale. </p> <p>I campi per ciascun documento vengono aggiunti alla cache. Per ogni documento scritto nella cache, viene generato anche un collegamento come negli esempi seguenti: </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>La mappatura della configurazione deve avere un campo identificato come Chiave primaria. Questa mappatura costituisce la chiave utilizzata quando i dati vengono estratti dalla cache. </p> <p>Il crawler riconosce l’ <span class="codeph"> indice URL: </span> il prefisso dello schema, che può quindi accedere ai dati memorizzati nella cache locale. </p> </td> 
+      .... </code> </p> <p>La mappatura della configurazione deve avere un campo identificato come Chiave primaria. Questa mappatura costituisce la chiave utilizzata quando i dati vengono estratti dalla cache. </p> <p>Il crawler riconosce l'indice URL <span class="codeph">: </span> prefisso dello schema, che può quindi accedere ai dati memorizzati nella cache locale. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Eseguire la ricerca per indicizzazione del set di documenti memorizzato nella cache. </p> </td> 
-   <td colname="col3"> <p>L' <span class="codeph"> indice: </span> i collegamenti vengono aggiunti all’elenco in sospeso del crawler e vengono elaborati nella normale sequenza di ricerca per indicizzazione. </p> </td> 
+   <td colname="col3"> <p>Indice <span class="codeph">: I collegamenti </span> vengono aggiunti all'elenco in sospeso del crawler e elaborati nella normale sequenza di ricerca per indicizzazione. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
@@ -987,7 +1038,7 @@ Vedere anche [Informazioni sul connettore indice](../c-about-settings-menu/c-abo
 
 Il processo di indicizzazione per la configurazione XML è simile al processo per le configurazioni di testo e feed con le seguenti modifiche ed eccezioni minori.
 
-Poiché i documenti per le ricerche per indicizzazione XML sono già separati in singoli file, i passaggi 1 e 2 della tabella precedente non si applicano direttamente. Se specificate un URL nei campi **[!UICONTROL Host Address]** e **[!UICONTROL File Path]** della [!DNL Index Connector Add] pagina, questo viene scaricato ed elaborato come normale documento HTML. Ci si aspetta che il documento di download contenga una raccolta di `<a href="{url}"...` collegamenti, ciascuno dei quali fa riferimento a un documento XML elaborato. Tali collegamenti sono convertiti nel seguente modulo:
+Poiché i documenti per le ricerche per indicizzazione XML sono già separati in singoli file, i passaggi 1 e 2 della tabella precedente non si applicano direttamente. Se si specifica un URL nei campi **[!UICONTROL Host Address]** e **[!UICONTROL File Path]** della pagina [!DNL Index Connector Add], questo viene scaricato ed elaborato come normale documento HTML. Ci si aspetta che il documento di download contenga una raccolta di collegamenti `<a href="{url}"...`, ciascuno dei quali punta a un documento XML elaborato. Tali collegamenti sono convertiti nel seguente modulo:
 
 ```
 <a href="index:<ic_config_name>?url="{url}">
@@ -1002,9 +1053,9 @@ Ad esempio, se l&#39;impostazione del Adobe  restituiva i seguenti collegamenti:
 
 Nella tabella precedente, il punto 3 non si applica e il punto 4 è completato al momento della ricerca per indicizzazione e dell&#39;indicizzazione.
 
-In alternativa, è possibile combinare i documenti XML con altri documenti scoperti naturalmente attraverso il processo di ricerca per indicizzazione. In tali casi, è possibile utilizzare le regole di riscrittura ( **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**) per modificare gli URL dei documenti XML e indirizzarli a Index Connector.
+In alternativa, è possibile combinare i documenti XML con altri documenti scoperti naturalmente attraverso il processo di ricerca per indicizzazione. In tali casi, è possibile utilizzare le regole di riscrittura ( **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**) per modificare gli URL dei documenti XML e indirizzarli al connettore indice.
 
-Consultate [Informazioni Sulle Regole](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA)Per Il Recupero Degli URL Per L’Elenco Di Ricerca Per indicizzazione.
+Vedere [Informazioni sulle regole URL per il recupero dell&#39;elenco di ricerca per indicizzazione](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA).
 
 Ad esempio, supponiamo che si disponga della seguente regola di riscrittura:
 
@@ -1012,15 +1063,15 @@ Ad esempio, supponiamo che si disponga della seguente regola di riscrittura:
 RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 ```
 
-Questa regola converte qualsiasi URL che termina con `.xml` un collegamento del connettore indice. Il crawler riconosce e riscrive lo schema `index:` URL. Il processo di download viene reindirizzato attraverso il server Apache del connettore indice sul server principale. Ogni documento scaricato viene esaminato utilizzando lo stesso pattern di espressione regolare utilizzato con Feeds. In questo caso, tuttavia, il documento HTML prodotto non viene salvato nella cache. Viene invece consegnato direttamente al crawler per l’elaborazione dell’indice.
+Questa regola converte qualsiasi URL che termina con `.xml` in un collegamento del connettore indice. Il crawler riconosce e riscrive lo schema URL `index:`. Il processo di download viene reindirizzato attraverso il server Apache del connettore indice sul server principale. Ogni documento scaricato viene esaminato utilizzando lo stesso pattern di espressione regolare utilizzato con Feeds. In questo caso, tuttavia, il documento HTML prodotto non viene salvato nella cache. Viene invece consegnato direttamente al crawler per l’elaborazione dell’indice.
 
 ## Come configurare più connettori indice {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
-È possibile definire più configurazioni del connettore indice per qualsiasi account. Le configurazioni vengono aggiunte automaticamente all&#39;elenco a discesa in **[!UICONTROL Settings]** > **[!UICONTROL Crawl]** > **[!UICONTROL URL Entrypoints]** , come illustrato nella figura seguente:
+È possibile definire più configurazioni del connettore indice per qualsiasi account. Le configurazioni vengono aggiunte automaticamente all&#39;elenco a discesa in **[!UICONTROL Settings]** > **[!UICONTROL Crawl]** > **[!UICONTROL URL Entrypoints]**, come illustrato nella figura seguente:
 
 ![](assets/url_entrypoints_index_connector.png)
 
-Selezionando una configurazione dall’elenco a discesa, il valore viene aggiunto alla fine dell’elenco dei punti di ingresso dell’URL.
+Selezionando una configurazione dall’elenco a discesa, il valore viene aggiunto alla fine dell’elenco dei punti di immissione dell’URL.
 
 >[!NOTE]
 >
@@ -1034,9 +1085,9 @@ index:<indexconnector_configuration_name>
 
 Il crawler elabora ogni voce aggiunta se questa si trova nella pagina Connettori indice ed è abilitata.
 
-Nota: Poiché l&#39;URL di ciascun documento è costruito utilizzando il nome di configurazione del connettore indice e la chiave primaria del documento, accertatevi di utilizzare lo stesso nome di configurazione del connettore indice durante l&#39;esecuzione degli aggiornamenti incrementali! In questo modo è possibile [!DNL Adobe Search&Promote] aggiornare correttamente i documenti indicizzati in precedenza.
+Nota: Poiché l&#39;URL di ciascun documento è costruito utilizzando il nome di configurazione del connettore indice e la chiave primaria del documento, accertatevi di utilizzare lo stesso nome di configurazione del connettore indice durante l&#39;esecuzione degli aggiornamenti incrementali! Ciò consente a [!DNL Adobe Search&Promote] di aggiornare correttamente i documenti indicizzati in precedenza.
 
-Consultate anche [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
+Vedere anche [Informazioni sui punti di entrata URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 **Utilizzo delle mappe di impostazione quando si aggiunge un connettore indice**
 
@@ -1052,7 +1103,7 @@ Quando si aggiunge un connettore indice, è possibile utilizzare la funzione **[
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Testo </p> </td> 
-   <td colname="col2"> <p>Determina il valore del delimitatore provando prima le tabulazioni, poi le barre verticali ( <span class="codeph"> | </span>) e infine virgole ( <span class="codeph"> , </span>). Se avete già specificato un valore di delimitazione prima di aver fatto clic su <span class="uicontrol"> Mappe di installazione </span>, tale valore viene utilizzato. </p> <p>Lo schema di adattamento ottimale si traduce nella compilazione dei campi Mappa con gli specchietti ai valori appropriati di Tag e Campo. Inoltre, viene visualizzato un esempio dei dati analizzati. Accertatevi di selezionare <span class="uicontrol"> Intestazioni nella prima riga </span> se si è certi che il file include una riga di intestazione. La funzione di configurazione utilizza queste informazioni per identificare meglio le voci di mappa risultanti. </p> </td> 
+   <td colname="col2"> <p>Determina il valore del delimitatore provando prima le tabulazioni, poi le barre verticali ( <span class="codeph"> | </span>) e infine virgole ( <span class="codeph"> , </span>). Se prima di fare clic su <span class="uicontrol"> Mappe di installazione </span> avete già specificato un valore di delimitazione, tale valore viene utilizzato. </p> <p>Lo schema di adattamento ottimale si traduce nella compilazione dei campi Mappa con gli specchietti ai valori appropriati di Tag e Campo. Inoltre, viene visualizzato un esempio dei dati analizzati. Assicurarsi di selezionare <span class="uicontrol"> Intestazioni nella prima riga </span> se si è certi che il file include una riga di intestazione. La funzione di configurazione utilizza queste informazioni per identificare meglio le voci di mappa risultanti. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Feed </p> </td> 
@@ -1060,7 +1111,7 @@ Quando si aggiunge un connettore indice, è possibile utilizzare la funzione **[
   </tr> 
   <tr> 
    <td colname="col1"> <p>XML </p> </td> 
-   <td colname="col2"> <p>Scarica l’URL di un singolo documento rappresentativo, non l’elenco di collegamenti principale. Questo singolo documento viene analizzato utilizzando lo stesso meccanismo utilizzato con i feed, e i risultati vengono visualizzati. </p> <p>Prima di fare clic su <span class="uicontrol"> Aggiungi </span> per salvare la configurazione, accertati di ripristinare l’URL nel documento dell’elenco di collegamenti principale. </p> </td> 
+   <td colname="col2"> <p>Scarica l’URL di un singolo documento rappresentativo, non l’elenco di collegamenti principale. Questo singolo documento viene analizzato utilizzando lo stesso meccanismo utilizzato con i feed, e i risultati vengono visualizzati. </p> <p>Prima di fare clic su <span class="uicontrol"> Aggiungi </span> per salvare la configurazione, assicurarsi di ripristinare l'URL al documento dell'elenco dei collegamenti principale. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1069,7 +1120,7 @@ Quando si aggiunge un connettore indice, è possibile utilizzare la funzione **[
 
 **Utilizzo dell&#39;anteprima quando si aggiunge un connettore indice**
 
-Quando si aggiunge un connettore indice, è possibile utilizzare la funzione **[!UICONTROL Preview]** per convalidare i dati, come se li si stesse salvando. Esegue un test rispetto alla configurazione, ma senza salvare la configurazione nell&#39;account. Il test accede all&#39;origine dati configurata. Tuttavia, scrive la cache di download in un percorso temporaneo; non entra in conflitto con la cartella cache principale utilizzata dal crawler di indicizzazione.
+Al momento dell&#39;aggiunta di un connettore indice, è possibile utilizzare la funzione **[!UICONTROL Preview]** per convalidare i dati, come se li si stesse salvando. Esegue un test rispetto alla configurazione, ma senza salvare la configurazione nell&#39;account. Il test accede all&#39;origine dati configurata. Tuttavia, scrive la cache di download in un percorso temporaneo; non entra in conflitto con la cartella cache principale utilizzata dal crawler di indicizzazione.
 
 Preview elabora solo un predefinito di cinque documenti, come controllato da Acct:IndexConnector-Preview-Max-Documents. I documenti visualizzati in anteprima vengono visualizzati nel modulo di origine, man mano che vengono presentati al crawler di indicizzazione. La visualizzazione è simile alla funzione &quot;Visualizza origine&quot; di un browser Web. Potete spostarvi tra i documenti del set di anteprima utilizzando i collegamenti di navigazione standard.
 
@@ -1083,9 +1134,9 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
 
 **Per aggiungere una definizione del connettore indice**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. Sulla [!DNL Stage Index Connector Definitions] pagina, fate clic su **[!UICONTROL Add New Index Connector]**.
-1. Nella [!DNL Index Connector Add] pagina, impostare le opzioni di connettore desiderate. Le opzioni disponibili dipendono dalla selezione **[!UICONTROL Type]** effettuata.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** dal menu del prodotto.
+1. Nella pagina [!DNL Stage Index Connector Definitions] fare clic su **[!UICONTROL Add New Index Connector]**.
+1. Nella pagina [!DNL Index Connector Add], impostare le opzioni di connettore desiderate. Le opzioni disponibili dipendono dalla **[!UICONTROL Type]** selezionata.
 
    <table> 
     <thead> 
@@ -1101,11 +1152,12 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tipo </p> </td> 
-      <td colname="col2"> <p>Origine dei dati. Il tipo di origine dati selezionato influisce sulle opzioni risultanti disponibili nella pagina <span class="wintitle"> Index Connector Add </span> . Potete scegliere tra le seguenti opzioni: </p> <p> 
+      <td colname="col2"> <p>Origine dei dati. Il tipo di origine dati selezionato influisce sulle opzioni risultanti disponibili nella pagina <span class="wintitle"> Connettore indice Aggiungi </span>. Potete scegliere tra le seguenti opzioni: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Testo </span> <p>File di testo semplici, delimitati da virgole, delimitati da tabulazioni o altri formati delimitati in modo coerente. Ogni riga di testo delimitata da una nuova riga corrisponde a un singolo documento e viene analizzata utilizzando il delimitatore specificato. </p> <p>Potete mappare ciascun valore, o colonna, su un campo di metadati, a cui fa riferimento il numero di colonna, a partire da 1 (uno). </p> </li> 
       <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Scarica un documento XML principale che contiene più "righe" di informazioni. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Consente di scaricare un documento XML principale contenente collegamenti ( <code>
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML  </span> <p>Scarica un documento XML principale contenente collegamenti ( 
+      <code>
         &lt;a&gt; 
       </code>) a singoli documenti XML. </p> </li> 
       </ul> </p> </td> 
@@ -1136,7 +1188,7 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Elimina percorso file </p> </td> 
-      <td colname="col2"> <p>Specifica il percorso del file di testo semplice semplice semplice e semplice, contenente un singolo valore di identificatore del documento per riga. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> <p>Questo file, se specificato, viene scaricato ed elaborato durante le operazioni Incremental Index. I valori trovati in questo file vengono utilizzati per creare richieste di eliminazione per rimuovere documenti indicizzati in precedenza. I valori in questo file devono corrispondere ai valori trovati nei file Percorso file completo o Incrementale, nella colonna identificata come Chiave <span class="uicontrol"> primaria </span>. </p> <p> <b>Nota</b>: Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivare la funzione per l’utilizzo. </p> </td> 
+      <td colname="col2"> <p>Specifica il percorso del file di testo semplice semplice semplice e semplice, contenente un singolo valore di identificatore del documento per riga. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> <p>Questo file, se specificato, viene scaricato ed elaborato durante le operazioni Incremental Index. I valori trovati in questo file vengono utilizzati per creare richieste di eliminazione per rimuovere documenti indicizzati in precedenza. I valori in questo file devono corrispondere ai valori rilevati nei file Percorso file completo o Incrementale, nella colonna identificata come Chiave primaria <span class="uicontrol"> </span>. </p> <p> <b>Nota</b>: Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivare la funzione per l’utilizzo. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protocollo </p> </td> 
@@ -1163,7 +1215,7 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Delimitatore </p> </td> 
-      <td colname="col2"> <p>Specifica il carattere da utilizzare per delineare ogni campo nel file di origine dati specificato. </p> <p>Il carattere virgola ( <span class="codeph"> , </span>) è un esempio di carattere di delimitazione. La virgola funge da delimitatore di campo per separare i campi dati nel file di origine dati specificato. </p> <p>Selezionare <span class="uicontrol"> Tab? </span> per utilizzare il carattere di delimitazione della tabulazione orizzontale. </p> </td> 
+      <td colname="col2"> <p>Specifica il carattere da utilizzare per delineare ogni campo nel file di origine dati specificato. </p> <p>Il carattere virgola ( <span class="codeph"> , </span>) è un esempio di carattere di delimitazione. La virgola funge da delimitatore di campo per separare i campi dati nel file di origine dati specificato. </p> <p>Selezionare la scheda <span class="uicontrol">? </span> per utilizzare il carattere di delimitazione della tabulazione orizzontale. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Intestazioni nella prima riga </p> </td> 
@@ -1177,11 +1229,11 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       <td colname="col1"> <p>Mappa </p> </td> 
       <td colname="col2"> <p>Specifica le mappature tra colonne e metadati utilizzando i numeri di colonna. </p> <p> 
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
-      <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Colonna </span> <p> Specifica un numero di colonna, con la prima colonna pari a 1 (una). Per aggiungere nuove righe di mappa per ciascuna colonna, in <span class="wintitle"> Azione </span>fare clic su <span class="uicontrol"> + </span>. </p> <p>Non è necessario fare riferimento a ogni colonna nell'origine dati. È invece possibile scegliere di saltare i valori. </p> </li> 
+      <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Colonna </span> <p> Specifica un numero di colonna, con la prima colonna pari a 1 (una). Per aggiungere nuove righe di mappa per ciascuna colonna, in <span class="wintitle"> Azione </span> fare clic su <span class="uicontrol"> + </span>. </p> <p>Non è necessario fare riferimento a ogni colonna nell'origine dati. È invece possibile scegliere di saltare i valori. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Campo </span> <p>Definisce il valore dell'attributo name utilizzato per ciascun tag &lt;meta&gt; generato. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che <span class="uicontrol"> Field diventi </span> un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l'account corrente. </p> <p>Se necessario, il valore <span class="uicontrol"> Campo </span> può essere un campo di metadati non definito. Talvolta, un campo di metadati non definito è utile per creare contenuto utilizzato da <span class="wintitle"> Filtraggio script </span>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni Sul Filtro Degli Script </a>. </p> <p>Quando il connettore indice elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati mediante un delimitatore di virgola. Tuttavia, supponiamo che il valore <span class="wintitle"> Campo corrispondente </span> sia un campo di metadati definito. Inoltre, tale campo ha l'attributo <span class="wintitle"> Elenchi consentiti </span> impostato. In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Chiave primaria? </span> <p>Una sola definizione di mappa è identificata come chiave primaria. Questo campo diventa il riferimento univoco presentato quando il documento viene aggiunto all'indice. Questo valore viene utilizzato nell'URL del documento nell'indice. </p> <p>I valori <span class="uicontrol"> Chiave primaria </span> devono essere univoci in tutti i documenti rappresentati dalla configurazione del connettore indice. Eventuali duplicati rilevati verranno ignorati. Se i documenti di origine non contengono un singolo valore univoco da utilizzare come <span class="uicontrol"> Chiave primaria </span>, ma due o più campi considerati insieme <i>possono</i> formare un identificatore univoco, è possibile definire la Chiave <span class="uicontrol"> primaria </span> combinando più valori <span class="uicontrol"> Colonna </span> con una barra verticale ("|") che delimita i valori. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Rimuovere il codice HTML? </span> <p>Quando questa opzione è selezionata, tutti i tag HTML trovati nei dati di questo campo vengono rimossi. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che il campo <span class="uicontrol"> </span> diventi un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l'account corrente. </p> <p>Il valore del campo <span class="uicontrol"> </span> può essere un campo di metadati non definito, se lo si desidera. Un campo di metadati non definito è talvolta utile per creare contenuto utilizzato da <span class="wintitle"> Script di filtraggio </span>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni sul filtraggio degli script </a>. </p> <p>Quando il connettore indice elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati mediante un delimitatore di virgola. Tuttavia, supponiamo che il valore corrispondente del campo <span class="wintitle"> </span> sia un campo di metadati definito. Inoltre, per tale campo è impostato l'attributo <span class="wintitle">  Elenchi consentiti </span>. In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Chiave primaria?  </span> <p>Una sola definizione di mappa è identificata come chiave primaria. Questo campo diventa il riferimento univoco presentato quando il documento viene aggiunto all'indice. Questo valore viene utilizzato nell'URL del documento nell'indice. </p> <p>I valori <span class="uicontrol"> Chiave primaria </span> devono essere univoci in tutti i documenti rappresentati dalla configurazione del connettore indice. Eventuali duplicati rilevati verranno ignorati. Se i documenti di origine non contengono un singolo valore univoco da utilizzare come <span class="uicontrol"> Chiave primaria </span>, ma due o più campi considerati insieme <i>possono</i> formare un identificatore univoco, è possibile definire la <span class="uicontrol"> Chiave primaria </span> combinando più valori <span class="uicontrol"> Colonna </span> con una barra verticale ("|") che delimitano i valori. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Rimuovere il codice HTML?  </span> <p>Quando questa opzione è selezionata, tutti i tag HTML trovati nei dati di questo campo vengono rimossi. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Azione </span> <p>Consente di aggiungere righe alla mappa o rimuovere righe dalla mappa. L'ordine delle righe non è importante. </p> </li> 
       </ul> </p> </td> 
       </tr> 
@@ -1211,7 +1263,7 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Elimina percorso file </p> </td> 
-      <td colname="col2"> <p>Specifica il percorso del file di testo semplice semplice semplice e semplice, contenente un singolo valore di identificatore del documento per riga. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> <p>Questo file, se specificato, viene scaricato ed elaborato durante le operazioni Incremental Index. I valori trovati in questo file vengono utilizzati per creare richieste di eliminazione per rimuovere documenti indicizzati in precedenza. I valori in questo file devono corrispondere ai valori trovati nei file Percorso file completo o Incrementale, nella colonna identificata come Chiave <span class="uicontrol"> primaria </span>. </p> <p> <b>Nota</b>: Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivare la funzione per l’utilizzo. </p> </td> 
+      <td colname="col2"> <p>Specifica il percorso del file di testo semplice semplice semplice e semplice, contenente un singolo valore di identificatore del documento per riga. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> <p>Questo file, se specificato, viene scaricato ed elaborato durante le operazioni Incremental Index. I valori trovati in questo file vengono utilizzati per creare richieste di eliminazione per rimuovere documenti indicizzati in precedenza. I valori in questo file devono corrispondere ai valori rilevati nei file Percorso file completo o Incrementale, nella colonna identificata come Chiave primaria <span class="uicontrol"> </span>. </p> <p> <b>Nota</b>: Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivare la funzione per l’utilizzo. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protocollo </p> </td> 
@@ -1272,16 +1324,16 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>La sintassi di cui sopra è la seguente: </p> <p> 
       <ul id="ul_6400EBD08D424EADA1612FE4F7EFB640"> 
-      <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>L' <span class="codeph"> attributo displayurl </span> dell'elemento del <span class="codeph"> record viene mappato sul campo di metadati </span> page-url <span class="codeph"> </span>. </p> </li> 
-      <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi <span class="codeph"> </span> elemento meta contenuto all'interno di un elemento <span class="codeph"> metadati, contenuto all'interno di un elemento </span> record, il cui attributo name è <span class="codeph"> title </span> <span class="codeph"> </span><span class="codeph"> </span>, viene mappato sul titolo del campo di metadati, in modo da poter essere mappato sull'attributo del campo di metadati . </p> </li> 
-      <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L'attributo <span class="codeph"> di contenuto </span> di qualsiasi <span class="codeph"> </span> elemento meta contenuto all'interno di un elemento <span class="codeph"> metadati, contenuto all'interno dell'elemento </span> record, il cui attributo nome è <span class="codeph"> descrizione </span> <span class="codeph"> </span><span class="codeph"> </span>, viene mappato sul campo di metadati . </p> </li> 
-      <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi <span class="codeph"> </span> elemento meta contenuto all'interno di un <span class="codeph"> elemento di </span> metadati, contenuto all'interno dell' <span class="codeph"> elemento del </span> record, il cui attributo name è <span class="codeph"> description </span><span class="codeph"> </span>, viene mappato sul corpo del campo di metadati . </p> </li> 
-      </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Consultate <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
-      <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Definisce il valore dell'attributo name utilizzato per ciascun tag <span class="codeph"> &lt;meta&gt; </span> generato. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che <span class="uicontrol"> Field diventi </span> un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l'account corrente. </p> <p>Se necessario, il valore <span class="uicontrol"> Campo </span> può essere un campo di metadati non definito. Talvolta, un campo di metadati non definito è utile per creare contenuto utilizzato da <span class="wintitle"> Filtraggio script </span>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni Sul Filtro Degli Script </a>. </p> <p>Quando il connettore indice elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati mediante un delimitatore di virgola. Tuttavia, supponiamo che il valore <span class="wintitle"> Campo corrispondente </span> sia un campo di metadati definito. Inoltre, tale campo ha l'attributo <span class="wintitle"> Elenchi consentiti </span> impostato. In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chiave primaria? </span> <p>Una sola definizione di mappa è identificata come chiave primaria. Questo campo diventa il riferimento univoco presentato quando il documento viene aggiunto all'indice. Questo valore viene utilizzato nell'URL del documento nell'indice. </p> <p>I valori <span class="uicontrol"> Chiave primaria </span> devono essere univoci in tutti i documenti rappresentati dalla configurazione del connettore indice. Eventuali duplicati rilevati verranno ignorati. Se i documenti di origine non contengono un singolo valore univoco da usare come Chiave <span class="uicontrol"> principale </span>, ma due o più campi considerati insieme <i>possono</i> formare un unico identificatore, potete definire la Chiave <span class="uicontrol"> primaria </span> combinando più <span class="uicontrol"> </span> definizioni di Tag con una barra verticale ("|") che delimita i valori. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> Rimuovere il codice HTML? </span> <p>Quando questa opzione è selezionata, tutti i tag HTML trovati nei dati di questo campo vengono rimossi. </p> </li> 
-      <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Utilizzate Elimina? </span> <p>Utilizzato solo durante le operazioni dell'indice incrementale. I record corrispondenti a questo pattern XPath identificano gli elementi da eliminare. Il valore <span class="uicontrol"> Chiave primaria </span> per ciascun record viene utilizzato per creare richieste di eliminazione, come con Elimina percorso file. </p> <p> <b>Nota</b>: Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivare la funzione per l’utilizzo. </p> </li> 
+      <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>L'attributo <span class="codeph"> display url </span> del record <span class="codeph"> </span> viene mappato sul campo di metadati <span class="codeph"> page-url </span>. </p> </li> 
+      <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L'attributo <span class="codeph"> contenuto </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> di metadati </span> contenuto all'interno di un elemento <span class="codeph"> di record </span> il cui attributo nome è <span class="codeph"> titolo </span> viene mappato sul campo di metadati <span class="codeph"> titolo &lt;a1/&gt;</span> </p> </li> 
+      <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L'attributo <span class="codeph"> contenuto </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> di metadati </span> contenuto all'interno del record <span class="codeph"> </span>, il cui attributo nome è <span class="codeph"> descrizione </span>, viene mappato sul campo di metadati <span class="codeph"> desc &lt;a1/&gt;</span> </p> </li> 
+      <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attributo <span class="codeph"> contenuto </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> di metadati </span> contenuto all'interno del record <span class="codeph"> </span>, il cui attributo nome è <span class="codeph"> descrizione </span>, viene mappato sul campo di metadati <span class="codeph"> corpo &lt;a1/&gt;</span> </p> </li> 
+      </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Vedere <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Definisce il valore dell'attributo name utilizzato per ciascun tag generato <span class="codeph"> &lt;meta&gt; </span>. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che il campo <span class="uicontrol"> </span> diventi un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l'account corrente. </p> <p>Il valore del campo <span class="uicontrol"> </span> può essere un campo di metadati non definito, se lo si desidera. Un campo di metadati non definito è talvolta utile per creare contenuto utilizzato da <span class="wintitle"> Script di filtraggio </span>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni sul filtraggio degli script </a>. </p> <p>Quando il connettore indice elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati mediante un delimitatore di virgola. Tuttavia, supponiamo che il valore corrispondente del campo <span class="wintitle"> </span> sia un campo di metadati definito. Inoltre, per tale campo è impostato l'attributo <span class="wintitle">  Elenchi consentiti </span>. In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chiave primaria?  </span> <p>Una sola definizione di mappa è identificata come chiave primaria. Questo campo diventa il riferimento univoco presentato quando il documento viene aggiunto all'indice. Questo valore viene utilizzato nell'URL del documento nell'indice. </p> <p>I valori <span class="uicontrol"> Chiave primaria </span> devono essere univoci in tutti i documenti rappresentati dalla configurazione del connettore indice. Eventuali duplicati rilevati verranno ignorati. Se i documenti di origine non contengono un singolo valore univoco da utilizzare come <span class="uicontrol"> Chiave primaria </span>, ma due o più campi considerati insieme <i>possono</i> formare un identificatore univoco, è possibile definire la <span class="uicontrol"> Chiave primaria </span> combinando più definizioni di tag <span class="uicontrol"> con una barra verticale ("|") che delimitano i valori.</span> </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> Rimuovere il codice HTML?  </span> <p>Quando questa opzione è selezionata, tutti i tag HTML trovati nei dati di questo campo vengono rimossi. </p> </li> 
+      <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Utilizzate Elimina?  </span> <p>Utilizzato solo durante le operazioni dell'indice incrementale. I record corrispondenti a questo pattern XPath identificano gli elementi da eliminare. Il valore <span class="uicontrol"> Chiave primaria </span> per ciascun record di questo tipo viene utilizzato per creare richieste di eliminazione, come con Elimina percorso file. </p> <p> <b>Nota</b>: Questa funzione non è abilitata per impostazione predefinita. Contattate il supporto tecnico per attivare la funzione per l’utilizzo. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Azione </span> <p>Consente di aggiungere righe alla mappa o rimuovere righe dalla mappa. L'ordine delle righe non è importante. </p> </li> 
       </ul> </p> </td> 
       </tr> 
@@ -1299,7 +1351,8 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Percorso file </p> </td> 
-      <td colname="col2"> <p>Specifica il percorso del documento XML principale che contiene i collegamenti ( <code>
+      <td colname="col2"> <p>Specifica il percorso del documento XML principale contenente i collegamenti ( 
+      <code>
         &lt;a&gt; 
       </code>) a singoli documenti XML. </p> <p>Il percorso è relativo alla radice dell'indirizzo host. </p> </td> 
       </tr> 
@@ -1322,45 +1375,45 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
       <td colname="col1"> <p>Mappa </p> </td> 
       <td colname="col2"> <p>Consente di specificare le mappature tra colonne e metadati utilizzando i numeri di colonna. </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tag </span> <p>Specifica una rappresentazione XPath dei dati XML analizzati. Utilizzando l'esempio  documento XML di Adobe sopra, sotto l'opzione Tag elemento, è possibile eseguire la mappatura utilizzando la sintassi seguente: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tag  </span> <p>Specifica una rappresentazione XPath dei dati XML analizzati. Utilizzando l'esempio  documento XML di Adobe sopra, sotto l'opzione Tag elemento, è possibile eseguire la mappatura utilizzando la sintassi seguente: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>La sintassi di cui sopra è la seguente: </p> <p> 
       <ul id="ul_F8C536E6E54546D9AA5B22B879C0AF39"> 
-      <li id="li_78A35DFFF1B4496CAC6EDC7B1E991F29"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>L' <span class="codeph"> attributo displayurl </span> dell'elemento del <span class="codeph"> record viene mappato sul campo di metadati </span> page-url <span class="codeph"> </span>. </p> </li> 
-      <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi <span class="codeph"> </span> elemento meta contenuto all'interno di un elemento <span class="codeph"> metadati, contenuto all'interno di un elemento </span> record, il cui attributo name è <span class="codeph"> title </span> <span class="codeph"> </span><span class="codeph"> </span>, viene mappato sul titolo del campo di metadati, in modo da poter essere mappato sull'attributo del campo di metadati . </p> </li> 
-      <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L'attributo <span class="codeph"> di contenuto </span> di qualsiasi <span class="codeph"> </span> elemento meta contenuto all'interno di un elemento <span class="codeph"> metadati, contenuto all'interno dell'elemento </span> record, il cui attributo nome è <span class="codeph"> descrizione </span> <span class="codeph"> </span><span class="codeph"> </span>, viene mappato sul campo di metadati . </p> </li> 
-      <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi <span class="codeph"> </span> elemento meta contenuto all'interno di un <span class="codeph"> elemento di </span> metadati, contenuto all'interno dell' <span class="codeph"> elemento del </span> record, il cui attributo name è <span class="codeph"> description </span><span class="codeph"> </span>, viene mappato sul corpo del campo di metadati . </p> </li> 
-      </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Consultate <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      <li id="li_78A35DFFF1B4496CAC6EDC7B1E991F29"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>L'attributo <span class="codeph"> display url </span> del record <span class="codeph"> </span> viene mappato sul campo di metadati <span class="codeph"> page-url </span>. </p> </li> 
+      <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L'attributo <span class="codeph"> contenuto </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> di metadati </span> contenuto all'interno di un elemento <span class="codeph"> di record </span> il cui attributo nome è <span class="codeph"> titolo </span> viene mappato sul campo di metadati <span class="codeph"> titolo &lt;a1/&gt;</span> </p> </li> 
+      <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L'attributo <span class="codeph"> contenuto </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> di metadati </span> contenuto all'interno del record <span class="codeph"> </span>, il cui attributo nome è <span class="codeph"> descrizione </span>, viene mappato sul campo di metadati <span class="codeph"> desc &lt;a1/&gt;</span> </p> </li> 
+      <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attributo <span class="codeph"> contenuto </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> di metadati </span> contenuto all'interno del record <span class="codeph"> </span>, il cui attributo nome è <span class="codeph"> descrizione </span>, viene mappato sul campo di metadati <span class="codeph"> corpo &lt;a1/&gt;</span> </p> </li> 
+      </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Vedere <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Campo </span> <p>Definisce il valore dell'attributo name utilizzato per ciascun tag &lt;meta&gt; generato. </p> </li> 
-      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che <span class="uicontrol"> Field diventi </span> un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l'account corrente. </p> <p>Se necessario, il valore <span class="uicontrol"> Campo </span> può essere un campo di metadati non definito. Talvolta, un campo di metadati non definito è utile per creare contenuto utilizzato da <span class="wintitle"> Filtraggio script </span>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni Sul Filtro Degli Script </a>. </p> <p>Quando il connettore indice elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati mediante un delimitatore di virgola. Tuttavia, supponiamo che il valore <span class="wintitle"> Campo corrispondente </span> sia un campo di metadati definito. Inoltre, tale campo ha l'attributo <span class="wintitle"> Elenchi consentiti </span> impostato. In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
-      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Chiave primaria? </span> <p>Una sola definizione di mappa è identificata come chiave primaria. Questo campo diventa il riferimento univoco presentato quando il documento viene aggiunto all'indice. Questo valore viene utilizzato nell'URL del documento nell'indice. </p> <p>I valori <span class="uicontrol"> Chiave primaria </span> devono essere univoci in tutti i documenti rappresentati dalla configurazione del connettore indice. Eventuali duplicati rilevati verranno ignorati. Se i documenti di origine non contengono un singolo valore univoco da usare come Chiave <span class="uicontrol"> principale </span>, ma due o più campi considerati insieme <i>possono</i> formare un unico identificatore, potete definire la Chiave <span class="uicontrol"> primaria </span> combinando più <span class="uicontrol"> </span> definizioni di Tag con una barra verticale ("|") che delimita i valori. </p> </li> 
-      <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Rimuovere il codice HTML? </span> <p>Quando questa opzione è selezionata, tutti i tag HTML trovati nei dati di questo campo vengono rimossi. </p> </li> 
+      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che il campo <span class="uicontrol"> </span> diventi un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l'account corrente. </p> <p>Il valore del campo <span class="uicontrol"> </span> può essere un campo di metadati non definito, se lo si desidera. Un campo di metadati non definito è talvolta utile per creare contenuto utilizzato da <span class="wintitle"> Script di filtraggio </span>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni sul filtraggio degli script </a>. </p> <p>Quando il connettore indice elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati mediante un delimitatore di virgola. Tuttavia, supponiamo che il valore corrispondente del campo <span class="wintitle"> </span> sia un campo di metadati definito. Inoltre, per tale campo è impostato l'attributo <span class="wintitle">  Elenchi consentiti </span>. In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
+      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Chiave primaria?  </span> <p>Una sola definizione di mappa è identificata come chiave primaria. Questo campo diventa il riferimento univoco presentato quando il documento viene aggiunto all'indice. Questo valore viene utilizzato nell'URL del documento nell'indice. </p> <p>I valori <span class="uicontrol"> Chiave primaria </span> devono essere univoci in tutti i documenti rappresentati dalla configurazione del connettore indice. Eventuali duplicati rilevati verranno ignorati. Se i documenti di origine non contengono un singolo valore univoco da utilizzare come <span class="uicontrol"> Chiave primaria </span>, ma due o più campi considerati insieme <i>possono</i> formare un identificatore univoco, è possibile definire la <span class="uicontrol"> Chiave primaria </span> combinando più definizioni di tag <span class="uicontrol"> con una barra verticale ("|") che delimitano i valori.</span> </p> </li> 
+      <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Rimuovere il codice HTML?  </span> <p>Quando questa opzione è selezionata, tutti i tag HTML trovati nei dati di questo campo vengono rimossi. </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Azione </span> <p>Consente di aggiungere righe alla mappa o rimuovere righe dalla mappa. L'ordine delle righe non è importante. </p> </li> 
       </ul> </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-1. (Facoltativo) Fai clic **[!UICONTROL Setup Maps]** per scaricare un esempio dell’origine dati. I dati vengono esaminati per verificare l&#39;idoneità all&#39;indicizzazione. Questa funzione è disponibile solo per i tipi di testo e feed.
-1. (Facoltativo) Fate clic **[!UICONTROL Preview]** per verificare il funzionamento effettivo della configurazione. Questa funzione è disponibile solo per i tipi di testo e feed.
-1. Fate clic **[!UICONTROL Add]** per aggiungere la configurazione alla [!DNL Index Connector Definitions] pagina e all’elenco a [!DNL Index Connector Configurations] discesa sulla [!DNL URL Entrypoints] pagina.
+1. (Facoltativo) Fare clic su **[!UICONTROL Setup Maps]** per scaricare un esempio dell&#39;origine dati. I dati vengono esaminati per verificare l&#39;idoneità all&#39;indicizzazione. Questa funzione è disponibile solo per i tipi di testo e feed.
+1. (Facoltativo) Fate clic su **[!UICONTROL Preview]** per verificare il funzionamento effettivo della configurazione. Questa funzione è disponibile solo per i tipi di testo e feed.
+1. Fare clic su **[!UICONTROL Add]** per aggiungere la configurazione alla pagina [!DNL Index Connector Definitions] e all&#39;elenco a discesa [!DNL Index Connector Configurations] nella pagina [!DNL URL Entrypoints].
 
-   Consultate [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
-1. Sulla [!DNL Index Connector Definitions] pagina, fate clic su **[!UICONTROL rebuild your staged site index]**.
-1. (Facoltativo) Nella [!DNL Index Connector Definitions] pagina, effettuate una delle seguenti operazioni:
+   Consultate [Informazioni sui punti di ingresso URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
+1. Nella pagina [!DNL Index Connector Definitions] fare clic su **[!UICONTROL rebuild your staged site index]**.
+1. (Facoltativo) Nella pagina [!DNL Index Connector Definitions], effettuare una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica della definizione del connettore indice {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
 
@@ -1368,106 +1421,106 @@ Prima che gli effetti della definizione nuova e abilitata siano visibili ai clie
 
 >[!NOTE]
 >
->Non tutte le opzioni possono essere modificate, ad esempio Nome connettore indice o Tipo, dall&#39;elenco a [!DNL Type] discesa.
+>Non tutte le opzioni possono essere modificate, ad esempio Nome connettore indice o Tipo, dall&#39;elenco a discesa [!DNL Type].
 
 **Per modificare una definizione del connettore indice**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. Nella [!DNL Index Connector] pagina, sotto l&#39;intestazione della [!DNL Actions] colonna, fare clic **[!UICONTROL Edit]** per specificare il nome di definizione del connettore indice di cui si desidera modificare le impostazioni.
-1. Nella [!DNL Index Connector Edit] pagina, impostate le opzioni desiderate.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** dal menu del prodotto.
+1. Nella pagina [!DNL Index Connector], sotto l&#39;intestazione di colonna [!DNL Actions], fare clic su **[!UICONTROL Edit]** per un nome di definizione del connettore indice di cui si desidera modificare le impostazioni.
+1. Nella pagina [!DNL Index Connector Edit], impostate le opzioni desiderate.
 
-   Vedere la tabella delle opzioni in [Aggiunta di una definizione](../c-about-settings-menu/c-about-crawling-menu.md#task_96779B651A654E1F871F55D6DBBC8886)del connettore indice.
+   Vedere la tabella delle opzioni in [Aggiunta di una definizione del connettore indice](../c-about-settings-menu/c-about-crawling-menu.md#task_96779B651A654E1F871F55D6DBBC8886).
 1. Clic **[!UICONTROL Save Changes]**.
-1. (Facoltativo) Nella [!DNL Index Connector Definitions] pagina, fare clic su **[!UICONTROL rebuild your staged site index]**.
-1. (Facoltativo) Nella [!DNL Index Connector Definitions] pagina, effettuate una delle seguenti operazioni:
+1. (Facoltativo) Nella pagina [!DNL Index Connector Definitions] fare clic su **[!UICONTROL rebuild your staged site index]**.
+1. (Facoltativo) Nella pagina [!DNL Index Connector Definitions], effettuare una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Visualizzazione delle impostazioni di una definizione del connettore indice {#task_D0B71A7426E54247BDB3468EC576D871}
 
 È possibile esaminare le impostazioni di configurazione di una definizione di connettore indice esistente.
 
-Dopo che alla [!DNL Index Connector Definitions] pagina è stata aggiunta la definizione del connettore indice, non è possibile modificarne l&#39;impostazione Tipo. Al contrario, è necessario eliminare la definizione e aggiungerne una nuova.
+Dopo aver aggiunto la definizione del connettore indice alla pagina [!DNL Index Connector Definitions], non è possibile modificarne l&#39;impostazione Tipo. Al contrario, è necessario eliminare la definizione e aggiungerne una nuova.
 
 **Per visualizzare le impostazioni di una definizione del connettore indice**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. Nella [!DNL Index Connector] pagina, sotto l&#39;intestazione della [!DNL Actions] colonna, fare clic **[!UICONTROL Edit]** per specificare il nome di definizione del connettore indice di cui si desidera esaminare o modificare le impostazioni.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** dal menu del prodotto.
+1. Nella pagina [!DNL Index Connector], sotto l&#39;intestazione di colonna [!DNL Actions], fare clic su **[!UICONTROL Edit]** per un nome di definizione del connettore indice le cui impostazioni si desidera rivedere o modificare.
 
-## Copia della definizione di un connettore indice {#task_3AD55DF07FC44A748D0EFDAB7B35699B}
+## Copia della definizione del connettore indice {#task_3AD55DF07FC44A748D0EFDAB7B35699B}
 
 È possibile copiare una definizione del connettore indice esistente da usare come base per la creazione di un nuovo connettore indice.
 
-Quando si copia una definizione del connettore indice, per impostazione predefinita la definizione copiata viene disabilitata. Per abilitare o &quot;attivare&quot; la definizione, è necessario modificarla dalla [!DNL Index Connector Edit] pagina e selezionare **[!UICONTROL Enable]**.
+Quando si copia una definizione del connettore indice, per impostazione predefinita la definizione copiata viene disabilitata. Per abilitare o &quot;attivare&quot; la definizione, è necessario modificarla dalla pagina [!DNL Index Connector Edit] e selezionare **[!UICONTROL Enable]**.
 
-Vedere [Modifica della definizione](../c-about-settings-menu/c-about-crawling-menu.md#task_DCFC9C6A9964421DB5AB6C25DEE98DE9)di un connettore indice.
+Vedere [Modifica della definizione di un connettore indice](../c-about-settings-menu/c-about-crawling-menu.md#task_DCFC9C6A9964421DB5AB6C25DEE98DE9).
 
 **Per copiare una definizione del connettore indice**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. Nella [!DNL Index Connector] pagina, sotto l&#39;intestazione della [!DNL Actions] colonna, fare clic **[!UICONTROL Copy]** per specificare il nome di definizione del connettore indice di cui si desidera duplicare le impostazioni.
-1. Nella [!DNL Index Connector Copy] pagina, immettete il nuovo nome della definizione.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** dal menu del prodotto.
+1. Nella pagina [!DNL Index Connector], sotto l&#39;intestazione di colonna [!DNL Actions], fare clic su **[!UICONTROL Copy]** per un nome di definizione del connettore indice di cui si desidera duplicare le impostazioni.
+1. Nella pagina [!DNL Index Connector Copy], immettete il nuovo nome della definizione.
 1. Clic **[!UICONTROL Copy]**.
-1. (Facoltativo) Nella [!DNL Index Connector Definitions] pagina, effettuate una delle seguenti operazioni:
+1. (Facoltativo) Nella pagina [!DNL Index Connector Definitions], effettuare una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Ridenominazione della definizione del connettore indice {#task_5132118FC21B47D99881E0ED425225D7}
 
 È possibile modificare il nome di una definizione del connettore indice esistente.
 
-Dopo aver rinominato la definizione, selezionare **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Accertarsi che il nuovo nome della definizione sia riportato nell’elenco a discesa della [!DNL URL Entrypoints] pagina.
+Dopo aver rinominato la definizione, selezionare **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Assicurarsi che il nuovo nome della definizione sia riportato nell&#39;elenco a discesa della pagina [!DNL URL Entrypoints].
 
-Consultate [Aggiunta di più punti di ingresso URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consultate [Aggiunta di più punti di immissione URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 **Per rinominare una definizione del connettore indice**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. Nella [!DNL Index Connector] pagina, sotto l’intestazione della [!DNL Actions] colonna, fare clic **[!UICONTROL Rename]** per il nome della definizione del connettore indice che si desidera modificare.
-1. Nella [!DNL Index Connector Rename] pagina, immettere il nuovo nome della definizione nel [!DNL Name] campo.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** dal menu del prodotto.
+1. Nella pagina [!DNL Index Connector], sotto l&#39;intestazione di colonna [!DNL Actions], fare clic su **[!UICONTROL Rename]** per il nome della definizione del connettore indice che si desidera modificare.
+1. Nella pagina [!DNL Index Connector Rename], immettere il nuovo nome della definizione nel campo [!DNL Name].
 1. Clic **[!UICONTROL Rename]**.
 1. Fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Se nell&#39;elenco è presente il nome del connettore indice precedente, rimuoverlo e aggiungere la voce rinominata di recente.
 
-   Consultate [Aggiunta di più punti di ingresso URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45). 1. (Facoltativo) Nella [!DNL Index Connector Definitions] pagina, effettuate una delle seguenti operazioni:
+   Consultate [Aggiunta di più punti di immissione URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45). 1. (Facoltativo) Nella pagina [!DNL Index Connector Definitions], effettuare una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Eliminazione di una definizione del connettore indice {#task_6B0BD5D0C09F4597A401B0F3AC7C7EA7}
+## Eliminazione della definizione del connettore indice {#task_6B0BD5D0C09F4597A401B0F3AC7C7EA7}
 
 È possibile eliminare una definizione del connettore indice esistente non più necessaria o utilizzata.
 
 **Per eliminare una definizione del connettore indice**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. Nella [!DNL Index Connector Definitions] pagina, sotto l’intestazione della [!DNL Actions] colonna, fare clic **[!UICONTROL Delete]** sul nome della definizione del connettore indice da rimuovere.
-1. Sulla [!DNL Index Connector Delete] pagina, fate clic su **[!UICONTROL Delete]**.
+1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** dal menu del prodotto.
+1. Nella pagina [!DNL Index Connector Definitions], sotto l&#39;intestazione di colonna [!DNL Actions], fare clic su **[!UICONTROL Delete]** per il nome della definizione del connettore indice che si desidera rimuovere.
+1. Nella pagina [!DNL Index Connector Delete] fare clic su **[!UICONTROL Delete]**.
