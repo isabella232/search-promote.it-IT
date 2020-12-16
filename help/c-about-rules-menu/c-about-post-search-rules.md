@@ -8,6 +8,9 @@ topic: Rules,Site search and merchandising
 uuid: 312d1e4a-f5b6-4629-8645-17e6f6c09fc4
 translation-type: tm+mt
 source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+workflow-type: tm+mt
+source-wordcount: '2121'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ Potete definire il set di risultati della ricerca per un massimo di tre cicli di
 
 L&#39;elaborazione post-ricerca si basa sui moduli di elaborazione precedenti, ovvero Pulizia query ed elaborazione pre-ricerca. Di conseguenza, tutte le variabili personalizzate impostate in tali moduli sono disponibili per l&#39;uso nelle regole di elaborazione post-ricerca. Analogamente, l’elaborazione di pre-ricerca ha creato un’istanza di tutti i modelli in cui ogni ricerca denominata associata al modello di presentazione ha una propria copia locale dei parametri CGI. A sua volta, potete personalizzare ogni ricerca singolarmente.
 
-Vedere [Informazioni sulle regole](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C)di pulizia delle query.
+Vedere [Informazioni sulle regole di pulizia delle query](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C).
 
-Vedere [Informazioni sulle regole](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F)di pre-ricerca.
+Vedere [Informazioni sulle regole di pre-ricerca](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
 
 ## Informazioni sulle condizioni della regola post-ricerca {#section_C43EB77CC0AC43B8B9D38569264BF1B5}
 
@@ -36,7 +39,7 @@ Le condizioni sono facoltative. Se si specifica che le azioni vengono specificat
 
 ## Informazioni sulle azioni della regola post-ricerca {#section_0E15FE683A894ECAAA386267EEC7F7C5}
 
-Vengono esercitate tutte le azioni di una regola post-ricerca con condizioni corrispondenti. Le azioni in genere consistono in un&#39;operazione, nei dati su cui eseguire l&#39;operazione e nel valore da utilizzare. L&#39;azione più semplice consiste nel cambiare il modello di presentazione da utilizzare in base alle condizioni della regola di post-ricerca. Potete utilizzare azioni più avanzate per modificare i parametri di una ricerca che determina la ripetizione della ricerca. Quando eseguite un&#39;operazione sul parametro di ricerca di un modello, specificate un modello di presentazione ed effettuate una ricerca.
+Vengono esercitate tutte le azioni di una regola post-ricerca con condizioni corrispondenti. Le azioni sono in genere costituite da un&#39;operazione, dai dati su cui eseguire l&#39;operazione e dal valore da utilizzare. L&#39;azione più semplice consiste nel cambiare il modello di presentazione da utilizzare in base alle condizioni della regola di post-ricerca. Potete utilizzare azioni più avanzate per modificare i parametri di una ricerca che determina la ripetizione della ricerca. Quando eseguite un&#39;operazione sul parametro di ricerca di un modello, specificate un modello di presentazione ed effettuate una ricerca.
 
 ## Regole generali {#section_AEE923988CC748FF9DEF2233FBF333B5}
 
@@ -90,14 +93,14 @@ Perform the following actions:
 
 ## Aggiunta di una nuova regola di post-ricerca {#task_52F6F9AAD65B45B5ACA1FF245DFFADD9}
 
-Potete utilizzare [!DNL Post-Search Rules] per selezionare il modello di presentazione utilizzato per visualizzare i risultati di ricerca in base alla query in arrivo.
+Potete utilizzare [!DNL Post-Search Rules] per selezionare il modello di presentazione utilizzato per visualizzare i risultati della ricerca in base alla query in entrata.
 
 **Per aggiungere una nuova regola di post-ricerca**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]** dal menu del prodotto.
-1. Sulla [!DNL Post-Search Rules] pagina, fate clic su **[!UICONTROL Add New Rule]**.
-1. Nel [!DNL Name] campo, digitare il nome della nuova regola di pulizia query.
-1. Nella [!DNL Add Post-Search Rule] pagina, utilizzare gli elenchi a discesa e i campi di testo per creare la query.
+1. Nella pagina [!DNL Post-Search Rules] fare clic su **[!UICONTROL Add New Rule]**.
+1. Nel campo [!DNL Name] digitare il nome della nuova regola di pulizia della query.
+1. Nella pagina [!DNL Add Post-Search Rule], utilizzare gli elenchi a discesa e i campi di testo per creare la query.
 
    <table> 
     <thead> 
@@ -119,9 +122,9 @@ Potete utilizzare [!DNL Post-Search Rules] per selezionare il modello di present
       <td colname="col1"> <p>Variabile di sistema </p> </td> 
       <td colname="col2"> <p>Variabili di sola lettura impostate dal sistema interno che è possibile controllare. Sono supportate le seguenti variabili di sistema: </p> <p> 
         <ul id="ul_BC17F1637F27424CA4E8F530C28A3245"> 
-          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> hostname </span> <p>Nome dell'host del server. </p> </li> 
-          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri </span> <p>Identificatore risorsa uniforme richiesto senza la stringa di query. </p> </li> 
-          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args </span> <p>L'intera stringa di query. </p> </li> 
+          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> hostname  </span> <p>Nome dell'host del server. </p> </li> 
+          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri  </span> <p>Identificatore risorsa uniforme richiesto senza la stringa di query. </p> </li> 
+          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args  </span> <p>L'intera stringa di query. </p> </li> 
           <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> ambiente </span> <p>"Stage" o "live" a seconda che la query in entrata sia stata inviata all'ambiente in cui è stato eseguito lo stage o meno. </p> </li> 
           <li id="li_15902AA49B144D42A5E95D7E8B0FB1E1"> <span class="uicontrol"> referrer </span> <p>Uniform Resource Locator di provenienza del cliente. </p> </li> 
         </ul> </p> </td> 
@@ -140,7 +143,7 @@ Potete utilizzare [!DNL Post-Search Rules] per selezionare il modello di present
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parametro back-end del modello </p> </td> 
-      <td colname="col2"> <p>I parametri di query in entrata vengono infine convertiti in parametri di back-end utilizzati per eseguire la ricerca. </p> <p>Consultate <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parametri CGI di ricerca di back-end </a>. </p> <p>I parametri di back-end non vengono visualizzati sugli elementi di navigazione. Di conseguenza, potete nascondere ai clienti eventuali parametri aggiuntivi da applicare a una ricerca. </p> <p>Il parametro è locale per una ricerca specifica all’interno di un modello di presentazione. Le azioni sui parametri di backend sono ritardate; in altre parole, vengono applicate subito prima dell’invio della ricerca. </p> </td> 
+      <td colname="col2"> <p>I parametri di query in entrata vengono infine convertiti in parametri di back-end utilizzati per eseguire la ricerca. </p> <p>Vedere <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parametri CGI di ricerca back-end </a>. </p> <p>I parametri di back-end non vengono visualizzati sugli elementi di navigazione. Di conseguenza, potete nascondere ai clienti eventuali parametri aggiuntivi da applicare a una ricerca. </p> <p>Il parametro è locale per una ricerca specifica all’interno di un modello di presentazione. Le azioni sui parametri di backend sono ritardate; in altre parole, vengono applicate subito prima dell’invio della ricerca. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Modello di destinazione </p> </td> 
@@ -164,43 +167,43 @@ Potete utilizzare [!DNL Post-Search Rules] per selezionare il modello di present
 1. Clic **[!UICONTROL Add]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica di una regola di post-ricerca {#task_ECB00334C0A74C87AF857DB3EB372119}
 
-Potete modificare le regole di post-ricerca esistenti aggiunte alla [!DNL Post-Search Rules] pagina.
+È possibile modificare le regole di post-ricerca esistenti aggiunte alla pagina [!DNL Post-Search Rules].
 
 **Per modificare una regola di post-ricerca**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** dal menu del prodotto.
-1. Nella [!DNL Post-Search Rules] pagina, nella **[!UICONTROL Actions]** colonna della tabella, fare clic **[!UICONTROL Edit]** sulla regola associata da modificare.
-1. Nella [!DNL Edit Post-Search Rule] pagina, utilizzare gli elenchi a discesa e i campi di testo per creare la query.
+1. Nella pagina [!DNL Post-Search Rules], nella colonna **[!UICONTROL Actions]** della tabella fare clic su **[!UICONTROL Edit]** per la regola associata da modificare.
+1. Nella pagina [!DNL Edit Post-Search Rule], utilizzare gli elenchi a discesa e i campi di testo per creare la query.
 
-   Consultate la tabella delle opzioni in [Aggiunta di una nuova regola](../c-about-rules-menu/c-about-post-search-rules.md#task_52F6F9AAD65B45B5ACA1FF245DFFADD9)di post-ricerca.
+   Vedere la tabella delle opzioni in [Aggiunta di una nuova regola di post-ricerca](../c-about-rules-menu/c-about-post-search-rules.md#task_52F6F9AAD65B45B5ACA1FF245DFFADD9).
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Eliminazione di una regola di post-ricerca {#task_0F4653AB20D54B769A4FA8D1491AB4CF}
 
@@ -211,48 +214,48 @@ Quando si elimina una regola, l&#39;ordine di esecuzione delle regole rimanenti 
 **Per eliminare una regola di post-ricerca**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]** dal menu del prodotto.
-1. Nella [!DNL Post-Search Rules] pagina, nella **[!UICONTROL Actions]** colonna della tabella, fare clic **[!UICONTROL Delete]** per la regola associata da eliminare.
-1. Nella finestra di [!DNL Confirmation] dialogo fare clic su **[!UICONTROL OK]**.
+1. Nella pagina [!DNL Post-Search Rules], nella colonna **[!UICONTROL Actions]** della tabella fare clic su **[!UICONTROL Delete]** per la regola associata da eliminare.
+1. Nella finestra di dialogo [!DNL Confirmation], fare clic su **[!UICONTROL OK]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Modifica dell&#39;ordine di esecuzione delle regole di post-ricerca {#task_40542FCD32234BBF881A81BF5477F78F}
+## Modifica dell&#39;ordine in cui vengono eseguite le regole di post-ricerca {#task_40542FCD32234BBF881A81BF5477F78F}
 
 Potete riordinare le regole di post-ricerca per modificare l&#39;ordine in cui vengono eseguite sui modelli di presentazione.
 
-Le regole di post-ricerca vengono eseguite nell&#39;ordine in cui sono state definite. Più alto è il numero dell&#39;ordine di una regola, più tardi verrà eseguito nel processo, trumping regole precedenti. È possibile riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella [!DNL Post-Search Rules] pagina. Potete anche utilizzare le regole di trascinamento per modificarne l&#39;ordine di esecuzione.
+Le regole di post-ricerca vengono eseguite nell&#39;ordine in cui sono state definite. Più alto è il numero dell&#39;ordine di una regola, più tardi verrà eseguito nel processo, trumping regole precedenti. Riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella pagina [!DNL Post-Search Rules]. Potete anche utilizzare le regole di trascinamento per modificarne l&#39;ordine di esecuzione.
 
 **Per modificare l&#39;ordine di esecuzione delle regole di post-ricerca**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]** dal menu del prodotto.
-1. Nella [!DNL Post-Search Rules] pagina, effettuate una delle seguenti operazioni:
+1. Nella pagina [!DNL Post-Search Rules], effettuare una delle seguenti operazioni:
 
-   * Fate clic sull&#39;intestazione della **[!UICONTROL Order]** colonna per ordinare le regole in ordine crescente o decrescente.
-   * Nella [!DNL Order] colonna, nel campo di testo a sinistra del nome di una regola di pre-ricerca, digitare il numero di ordine che si desidera eseguire.
+   * Fate clic sull&#39;intestazione della colonna **[!UICONTROL Order]** per ordinare le regole in ordine crescente o decrescente.
+   * Nella colonna [!DNL Order], digitare il numero di ordine che si desidera eseguire nel campo di testo a sinistra del nome di una regola di pre-ricerca.
    * Trascinare una riga di tabella nella posizione in cui si desidera eseguire la regola. Tutti i numeri di ordine vengono aggiornati in base al nuovo ordine in cui vengono eseguite le regole.
 
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
