@@ -8,11 +8,14 @@ topic: Linguistics,Site search and merchandising
 uuid: 1c879462-1b19-44f6-a3b2-20aa786b3221
 translation-type: tm+mt
 source-git-commit: 46cdbdf94ba8f92dba7d03ce80b25a2ae73b228a
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 0%
 
 ---
 
 
-# Informazioni sulle parole escluse{#about-excluded-words}
+# Parole escluse{#about-excluded-words}
 
 È possibile utilizzare Escludi parole per specificare frasi e parole comuni utilizzate di frequente, come &quot;a&quot; e &quot;the&quot;, che si desidera escludere dai risultati della ricerca.
 
@@ -22,7 +25,7 @@ Vedere anche [Informazioni sulle ricerche](../c-about-settings-menu/c-about-sear
 
 Senza parole escluse, le ricerche che contengono tali parole possono identificare numerosi risultati irrilevanti. Quando si escludono parole e frasi, i risultati della ricerca vengono omessi e corrispondono solo ai termini esclusi specificati. Se una query di ricerca contiene una parola esclusa, per trovare i documenti vengono utilizzate solo le parole non escluse.
 
-Le parole di ricerca escluse non sono evidenziate nei risultati della ricerca. Tuttavia, il punteggio di rilevanza di ciascun risultato è influenzato dalle parole escluse. In altre parole, le parole escluse vengono ignorate quando si trovano documenti, ma vengono comunque utilizzate quando si classificano i documenti nella pagina dei risultati della ricerca. Prima che gli effetti delle impostazioni Parole escluse (o modifiche a tali impostazioni) siano disponibili per i clienti, accertatevi di rigenerare l’indice del sito.
+Le parole di ricerca escluse non sono evidenziate nei risultati della ricerca. Tuttavia, il punteggio di rilevanza di ciascun risultato è influenzato dalle parole escluse. In altre parole, le parole escluse vengono ignorate durante la ricerca di documenti, ma vengono comunque utilizzate per classificare i documenti nella pagina dei risultati della ricerca. Prima che gli effetti delle impostazioni Parole escluse (o modifiche a tali impostazioni) siano disponibili per i clienti, accertatevi di rigenerare l’indice del sito.
 
 Quando si immettono parole da escludere dai risultati della ricerca, si separano parole o frasi tra loro con virgole. È possibile immettere una o più parole escluse per riga. Di seguito è riportato un esempio di parole escluse su righe separate e divise per virgole.
 
@@ -49,27 +52,27 @@ Quando una frase viene esclusa, le singole parole che la compongono vengono anco
 **Per configurare le parole escluse**
 
 1. Scegliere **[!UICONTROL Linguistics]** > **[!UICONTROL Excluded Words]** dal menu del prodotto.
-1. Nella [!DNL Excluded Words] pagina, nel campo di **[!UICONTROL Words and Phrases]** testo, immettete le parole che desiderate escludere dai risultati della ricerca.
-1. (Facoltativo) Fate clic **[!UICONTROL Show results when all words in the query are excluded words]**.
+1. Nella pagina [!DNL Excluded Words], nel campo di testo **[!UICONTROL Words and Phrases]** immettere le parole che si desidera escludere dai risultati della ricerca.
+1. (Facoltativo) Fare clic su **[!UICONTROL Show results when all words in the query are excluded words]**.
 
    Quando tutte le parole nella ricerca del cliente sono escluse, tutte le parole vengono utilizzate insieme per eseguire la ricerca.
 1. Clic **[!UICONTROL Save Changes]**.
-1. Per visualizzare in anteprima i risultati delle modifiche, fate clic **[!UICONTROL regenerate your staged site index]** per ricreare l’indice del sito Web in fase di creazione.
+1. Per visualizzare in anteprima i risultati delle modifiche, fate clic su **[!UICONTROL regenerate your staged site index]** per ricreare l&#39;indice del sito Web in fase di creazione.
 
-   Consultate [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Vedere [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consultate [Esecuzione di un indice incrementale di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+   Vedere [Esecuzione di un indice incrementale di un sito Web live o in fase...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 1. (Facoltativo) Scegliere **[!UICONTROL Linguistics]** > **[!UICONTROL Excluded Words]** dal menu del prodotto, quindi effettuare una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
