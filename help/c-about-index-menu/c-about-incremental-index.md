@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# Informazioni sull&#39;indice incrementale{#about-incremental-index}
+# Informazioni su Indice incrementale{#about-incremental-index}
 
 Potete utilizzare l&#39;indice incrementale per indicizzare &quot;parti&quot; del sito Web dal vivo o sullo stage, ad esempio una raccolta di pagine modificate di frequente.
 
@@ -36,8 +36,8 @@ Potete configurare quali pagine Web includere nell’indice incrementale specifi
 
 **Per configurare un indice incrementale di un sito Web in fase di progettazione**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]**.
-1. Nella **[!UICONTROL Incremental Index Configuration]** pagina, utilizzare i vari campi per specificare le pagine da indicizzare.
+1. Scegliere **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]** dal menu del prodotto.
+1. Nella pagina **[!UICONTROL Incremental Index Configuration]**, utilizzate i vari campi per specificare le pagine da indicizzare.
 
    <table> 
     <thead> 
@@ -57,25 +57,29 @@ Potete configurare quali pagine Web includere nell’indice incrementale specifi
           <li id="li_32C2B21DE75C4459908384CC44822F7D"> 
           <code>
             noindex 
-          </code> <p>Se non si desidera indicizzare il testo sulla pagina che corrisponde a un URL specificato, ma si desidera seguire i collegamenti della pagina, aggiungere <code>
+          </code> <p>Se non si desidera indicizzare il testo sulla pagina che corrisponda a un URL specificato, ma si desidera seguire i collegamenti della pagina, aggiungere 
+            <code>
               noindex 
             </code> dopo l'URL come nell'esempio seguente: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html noindex 
-            </code> </p> <p>Separate <code>
+            </code> </p> <p>Assicurati di separarti 
+            <code>
               noindex 
-            </code> l’URL con uno spazio; una virgola non è un separatore valido. </p> </li> 
+            </code> dall'URL con uno spazio; una virgola non è un separatore valido. </p> </li> 
           <li id="li_33AB62B669084BF7B976F4308715E435"> 
           <code>
             nofollow 
-          </code> <p>Se desiderate indicizzare il testo sulla pagina che corrisponde all'URL specificato, ma non desiderate seguire i collegamenti della pagina, aggiungete <code>
+          </code> <p>Se desiderate indicizzare il testo nella pagina che corrisponde all'URL specificato, ma non desiderate seguire i collegamenti della pagina, aggiungete 
+            <code>
               nofollow 
             </code> dopo l'URL come nell'esempio seguente: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html nofollow 
-            </code> </p> <p> Separate <code>
+            </code> </p> <p> Assicurati di separarti 
+            <code>
               nofollow 
-            </code> l’URL con uno spazio; una virgola non è un separatore valido. </p> </li> 
+            </code> dall'URL con uno spazio; una virgola non è un separatore valido. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -86,11 +90,13 @@ Potete configurare quali pagine Web includere nell’indice incrementale specifi
       </code> </p> <p>È inoltre possibile utilizzare espressioni regolari come nell'esempio seguente: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/household/.*\.html$ 
-      </code> </p> <p>Consultate <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni</a>regolari. </p> <p>Potete anche usare le parole chiave <code>
+      </code> </p> <p>Vedere <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari</a>. </p> <p>È inoltre possibile utilizzare le parole chiave 
+      <code>
         nofollow 
-      </code> e <code>
+      </code> e 
+      <code>
         noindex 
-      </code> come descritto in <span class="uicontrol"> Aggiungi o Aggiorna URL </span> qui sopra. </p> </td> 
+      </code> come descritto in <span class="uicontrol"> Aggiungere o aggiornare URL </span> sopra. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Includi ed Escludi maschere URL </p> </td> 
@@ -100,15 +106,19 @@ Potete configurare quali pagine Web includere nell’indice incrementale specifi
       </code> </p> <p> 
       <code>
         exclude https://www.mydomain.com/products/ 
-      </code> </p> <p>indicizza le pagine <code>
+      </code> </p> <p>indicizza le pagine 
+      <code>
         lightbulbs1.html 
-      </code> e <code>
+      </code> e 
+      <code>
         lightbulbs2.html 
-      </code>. Tuttavia, non indicizza altre pagine elencate nella directory products. </p> <p>Una maschera URL visualizzata per prima ha sempre la precedenza su una visualizzata successivamente nell’elenco. Inoltre, se il robot di ricerca rileva un documento che corrisponde sia a una maschera di inclusione che a una maschera di esclusione, la maschera elencata per prima ha la precedenza. </p> <p>Potete anche usare le parole chiave <code>
+      </code>. Tuttavia, non indicizza altre pagine elencate nella directory products. </p> <p>Una maschera URL visualizzata per prima ha sempre la precedenza su una visualizzata successivamente nell’elenco. Inoltre, se il robot di ricerca rileva un documento che corrisponde sia a una maschera di inclusione che a una maschera di esclusione, la maschera elencata per prima ha la precedenza. </p> <p>È inoltre possibile utilizzare le parole chiave 
+      <code>
         nofollow 
-      </code> e <code>
+      </code> e 
+      <code>
         noindex 
-      </code> come descritto in <span class="uicontrol"> Aggiungi o Aggiorna URL </span> qui sopra. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Le Maschere</a>URL. </p> </td> 
+      </code> come descritto in <span class="uicontrol"> Aggiungere o aggiornare URL </span> sopra. </p> <p>Consultate <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Informazioni sulle maschere URL</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Includi ed Escludi maschere di data </p> </td> 
@@ -141,7 +151,8 @@ Potete configurare quali pagine Web includere nell’indice incrementale specifi
       <li id="li_172692DEDA8744B3AA492701D24C2D80"> 
       <code>
         exclude-days NNN 
-      </code> <p>Disattivate l’indicizzazione di tutti i documenti che corrispondono alla maschera URL specificata e che hanno una durata pari o superiore a NNN giorni. </p> <p>Facoltativamente, potete seguire la maschera URL tramite la parola chiave <code>
+      </code> <p>Disattivate l’indicizzazione di tutti i documenti che corrispondono alla maschera URL specificata e che hanno una durata pari o superiore a NNN giorni. </p> <p>Facoltativamente, potete seguire la maschera URL tramite la parola chiave 
+        <code>
           server-date 
         </code>. </p> <p>L’esempio di maschera seguente esclude dall’indice tutti i file PDF vecchi o precedenti di 90 giorni: </p> <p> 
         <code>
@@ -150,13 +161,14 @@ Potete configurare quali pagine Web includere nell’indice incrementale specifi
       <li id="li_26078517744D4AECBE1351008926CBAE"> 
       <code>
         exclude-date YYYY-MM-DD 
-      </code> <p>Disattivate l’indicizzazione di tutti i documenti che corrispondono alla maschera URL specificata e che hanno la stessa data o meno della data AAAA-MM-GG. </p> <p>Facoltativamente, potete seguire la maschera URL tramite la parola chiave <code>
+      </code> <p>Disattivate l’indicizzazione di tutti i documenti che corrispondono alla maschera URL specificata e che hanno la stessa data o meno della data AAAA-MM-GG. </p> <p>Facoltativamente, potete seguire la maschera URL tramite la parola chiave 
+        <code>
           server-date 
         </code>. </p> <p>L'esempio di maschera seguente esclude tutti i documenti presenti nella cartella /archive/ con data del 23 aprile 2004 o precedente: </p> <p> 
         <code>
           exclude-date 2004-04-23 https://www.mydomain.com/archive/ 
         </code> </p> </li> 
-      </ul> </p> <p>Consultate <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Le Maschere</a>Data. </p> </td> 
+      </ul> </p> <p>Vedere <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Informazioni sulle maschere di data</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Eliminare gli URL </p> </td> 
@@ -170,7 +182,7 @@ Potete configurare quali pagine Web includere nell’indice incrementale specifi
       </code> </p> <p>È inoltre possibile utilizzare espressioni regolari come nell'esempio seguente: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/199[567]/.*$ 
-      </code> </p> <p>Consultate <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni</a>regolari. </p> </td> 
+      </code> </p> <p>Vedere <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari</a>. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -178,17 +190,17 @@ Potete configurare quali pagine Web includere nell’indice incrementale specifi
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Impostazione della pianificazione dell&#39;indice incrementale per un sito Web live {#task_2A46BA189ECC4317A9D5C6E99A336F33}
 
@@ -196,7 +208,7 @@ Potete selezionare la frequenza dell&#39;indice incrementale e il tempo di base 
 
 L&#39;ora selezionata è locale in base al fuso orario configurato in Impostazioni account.
 
-Consultate [Configurazione delle impostazioni](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)dell’account.
+Consultate [Configurazione delle impostazioni dell&#39;account](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 I server Web sono spesso programmati per la manutenzione nel bel mezzo della notte. Se il server è inattivo durante un periodo di tempo di indicizzazione pianificato, il processo di indicizzazione non riuscirà. Accertatevi di selezionare un&#39;ora del giorno in cui il server Web sarà disponibile.
 
@@ -204,12 +216,12 @@ La pianificazione dell&#39;indice si applica solo all&#39;indice live; non è po
 
 **Per impostare la pianificazione incrementale dell&#39;indice per un sito Web live**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]**.
-1. Nella **[!UICONTROL Incremental Index Schedule]** pagina dell’elenco a **[!UICONTROL Incrementally Index]** discesa, selezionare la frequenza di indicizzazione in ore o minuti.
-1. Nell&#39;elenco a **[!UICONTROL Base Time]** discesa, selezionare l&#39;ora di inizio per la rigenerazione di un nuovo indice incrementale.
+1. Scegliere **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]** dal menu del prodotto.
+1. Nella pagina **[!UICONTROL Incremental Index Schedule]**, nell&#39;elenco a discesa **[!UICONTROL Incrementally Index]**, selezionare la frequenza di indicizzazione in ore o minuti.
+1. Nell&#39;elenco a discesa **[!UICONTROL Base Time]**, selezionare l&#39;ora di inizio per la rigenerazione di un nuovo indice incrementale.
 1. Clic **[!UICONTROL Save Changes]**.
 
-## Esecuzione di un indice incrementale di un sito Web live o in uno stage {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
+## Esecuzione di un indice incrementale di un sito Web live o in fase di esecuzione {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
 
 Potete utilizzare l&#39;indice incrementale per indicizzare &quot;parti&quot; del sito Web dal vivo o sullo stage, ad esempio una raccolta di pagine modificate di frequente.
 
@@ -222,9 +234,9 @@ Potete utilizzare l&#39;indice incrementale per indicizzare &quot;parti&quot; de
    * Fai clic su **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Staged Index]**.
 
 1. Clic **[!UICONTROL Incremental Index Now]**.
-1. (Facoltativo) In caso di errori di indicizzazione, fare clic **[!UICONTROL View Errors]** per visualizzare il registro associato.
+1. (Facoltativo) In caso di errori di indicizzazione, fare clic su **[!UICONTROL View Errors]** per visualizzare il registro associato.
 
-## Visualizzazione del registro dell&#39;indice incrementale di un sito Web live o in una fase {#task_E668E1F1240C476DAA1CA783DC728232}
+## Visualizzazione del registro dell&#39;indice incrementale di un sito Web live o in fase {#task_E668E1F1240C476DAA1CA783DC728232}
 
 Quando un indice incrementale dinamico o un indice incrementale in fase è completo, potete visualizzare il registro associato per risolvere eventuali errori che si sono verificati.
 
@@ -241,7 +253,7 @@ Non è possibile esportare i file di registro né salvarli. Il registro rimane d
 
 1. Nella pagina di registro, in alto o in basso, effettuate una delle seguenti operazioni:
 
-   * Utilizzate le opzioni di navigazione **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** per spostarsi nel registro.
+   * Utilizzare le opzioni di navigazione **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** per spostarsi all&#39;interno del registro.
 
    * Utilizzate le opzioni di visualizzazione **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** per perfezionare il contenuto visualizzato.
 
