@@ -15,7 +15,7 @@ ht-degree: 4%
 ---
 
 
-# Adobe Search and Promote Guide {#using}
+#  Guida alla ricerca e promozione di Adobi {#using}
 
 + [Panoramica della documentazione di Search&amp;Promote](sp-home.md)
 + Note sulla versione {#release-notes}
@@ -74,7 +74,7 @@ ht-degree: 4%
    + [Frasi comuni](c-about-linguistics-menu/c-about-common-phrases.md)
 + [Simulatore](c-about-simulator.md)
 + [Staging](c-about-staging.md)
-+ Generazione di rapporti di ricerca {#reports}
++ Generazione di report di ricerca {#reports}
    + [Utilizzo dei rapporti di ricerca](c-about-reports-menu/c-about-reports-menu.md)
    + [Visualizzazioni dati](c-about-reports-menu/c-about-data-views.md)
    + [Avvisi](c-about-reports-menu/c-about-alerts.md)
