@@ -8,6 +8,9 @@ topic: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
 translation-type: tm+mt
 source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -37,15 +40,15 @@ La pagina Avvisi offre una posizione centrale per visualizzare e gestire tutti g
 **Per visualizzare gli avvisi**
 
 1. Scegliere **[!UICONTROL Reports]** > **[!UICONTROL Alerts]** dal menu del prodotto.
-1. Nella pagina Avvisi, nell’ **[!UICONTROL Filter By: Level]** area, selezionare o deselezionare gli avvisi che si desidera visualizzare o nascondere.
+1. Nella pagina Avvisi, nell&#39;area **[!UICONTROL Filter By: Level]**, selezionare o deselezionare gli avvisi che si desidera visualizzare o nascondere.
 1. Nella tabella, fare clic su un avviso per visualizzarlo.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Per filtrare gli avvisi in base alla data, nel campo di [!DNL Start Date] testo, nel campo di [!DNL End Date] testo o in entrambi immettere una data in formato MM/GG/AAAA.
+   * Per filtrare gli avvisi in base alla data, nel campo di testo [!DNL Start Date], nel campo di testo [!DNL End Date] o in entrambi, immettere una data in formato MM/GG/AAAA.
 
-   * Nel campo di [!DNL Sent To] testo, il campo di [!DNL Subject] testo, o entrambi, immettere parole o frasi per individuare gli avvisi che corrispondono al testo immesso.
+   * Nel campo di testo [!DNL Sent To], immettere il campo di testo [!DNL Subject] o entrambi i termini o frasi per individuare gli avvisi che corrispondono al testo immesso.
 
-   * Per eliminare uno o più avvisi, nella colonna a sinistra verificare gli avvisi che si desidera eliminare, quindi fare clic su **Elimina avvisi** selezionati.
+   * Per eliminare uno o più avvisi, nella colonna a sinistra verificare gli avvisi che si desidera eliminare, quindi fare clic su **Elimina avvisi selezionati**.
    * Per selezionare tutti gli avvisi visualizzati, seleziona la casella di controllo nella parte superiore della colonna sinistra.
 
       Se si desidera selezionare tutti gli avvisi corrispondenti anziché una singola pagina, nell&#39;elenco a discesa a destra selezionare **[!UICONTROL All Alerts]**, quindi selezionare la casella di controllo nella parte superiore della colonna.
