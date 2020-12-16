@@ -16,15 +16,15 @@ ht-degree: 1%
 ---
 
 
-# Completamento automatico{#about-auto-complete}
+# Informazioni sulla funzione di completamento automatico{#about-auto-complete}
 
 È possibile configurare diverse aree della funzione di completamento automatico per controllare la generazione del modulo di ricerca con completamento automatico abilitato e il file autocomplete_data.js, incluso nel modulo di ricerca con completamento automatico attivato.
 
-## Completamento automatico {#concept_093A9CD754864BA79B456FE4BEB64578}
+## Informazioni sulla funzione di completamento automatico {#concept_093A9CD754864BA79B456FE4BEB64578}
 
-Il file [!DNL autocomplete_data.js] viene rigenerato e pubblicato nella rete di contenuti di ricerca ogni volta che vengono salvate modifiche dalla pagina di impostazione della funzione di completamento automatico.
+Il file [!DNL autocomplete_data.js] viene rigenerato e pubblicato nella rete di contenuti di ricerca ogni volta che viene salvata la pagina di impostazione della funzione di completamento automatico.
 
-## Configurazione del completamento automatico {#task_F491F2BFC4D24A61BBDC48B9059C11BB}
+## Configurazione della funzione di completamento automatico {#task_F491F2BFC4D24A61BBDC48B9059C11BB}
 
 È possibile configurare e impostare le opzioni che controllano la generazione del modulo di ricerca abilitato per il completamento automatico e il file.
 
@@ -38,14 +38,14 @@ Dopo aver configurato il completamento automatico, potete visualizzare l&#39;ori
 
 Vedere [Anteprima del modulo di ricerca così come apparirebbe sul modulo...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
-Vedere [Configurazione dell&#39;elenco](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)di parole con completamento automatico.
+Vedere [Configurazione dell&#39;elenco di parole con completamento automatico](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4).
 
-Consultate [Configurazione della funzione di completamento automatico del CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
+Vedere [Configurazione della funzione di completamento automatico del CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
 **Per configurare la funzione di completamento automatico**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Setup]**.
-1. Nella [!DNL Auto-Complete Setup] pagina, impostate le opzioni desiderate.
+1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Setup]** dal menu del prodotto.
+1. Nella pagina [!DNL Auto-Complete Setup], impostate le opzioni desiderate.
 
    Vedere anche [Anteprima del modulo di ricerca così come apparirebbe sul modulo...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
@@ -99,17 +99,17 @@ Consultate [Configurazione della funzione di completamento automatico del CSS](c
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Configurazione dell&#39;elenco di parole con completamento automatico {#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
@@ -121,14 +121,14 @@ t_configuring_auto-complete_word_list.xml
 
  -->
 
-Consultate [Configurazione della funzione di completamento](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)automatico.
+Vedere [Configurazione della funzione di completamento automatico](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB).
 
-Consultate [Configurazione della funzione di completamento automatico del CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
+Vedere [Configurazione della funzione di completamento automatico del CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
 **Per configurare l&#39;elenco di parole con completamento automatico**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Word List]**.
-1. Nella [!DNL Auto-Complete Word List] pagina, impostate le opzioni desiderate.
+1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Word List]** dal menu del prodotto.
+1. Nella pagina [!DNL Auto-Complete Word List], impostate le opzioni desiderate.
 
    Vedere [Anteprima del modulo di ricerca così come apparirebbe sul modulo...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
@@ -158,19 +158,21 @@ Consultate [Configurazione della funzione di completamento automatico del CSS](c
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aggiungi queste parole e frasi </p> </td> 
-      <td colname="col2"> <p> L'elenco di parole completo viene compilato con le parole e le frasi elencate in questa area. </p> <p> Fare clic su <span class="uicontrol"> Modifica </span> per visualizzare l'elenco o per aggiungere parole ed espressioni all'elenco. Al termine, fate clic su <span class="uicontrol"> Salva modifiche </span>. </p> </td> 
+      <td colname="col2"> <p> L'elenco di parole completo viene compilato con le parole e le frasi elencate in questa area. </p> <p> Fare clic su <span class="uicontrol"> Modifica </span> per visualizzare l'elenco o per aggiungere parole e frasi all'elenco. Al termine, fare clic su <span class="uicontrol"> Salva modifiche </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Rimuovere queste parole e frasi </p> </td> 
-      <td colname="col2"> <p> Le voci in questa area non vengono visualizzate nell'elenco di parole completo automatico. </p> <p> Fare clic su <span class="uicontrol"> Modifica </span> per visualizzare l'elenco o per aggiungere parole ed espressioni all'elenco. Al termine, fate clic su <span class="uicontrol"> Salva modifiche </span>. </p> <p> In questo elenco sono consentite espressioni regolari. Per specificare un'espressione regolare in questo elenco, iniziare la riga con <code>regexp</code> seguito da un singolo spazio, seguito dall'espressione regolare. Vengono rimosse tutte le righe dell'elenco di parole che corrispondono all'espressione regolare. </p> <p> <b>Importante</b>: È consigliabile utilizzare espressioni regolari solo se in precedenza sono state utilizzate con esse in altre applicazioni. </p> <p>Consultate <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> </td> 
+      <td colname="col2"> <p> Le voci in questa area non vengono visualizzate nell'elenco di parole completo automatico. </p> <p> Fare clic su <span class="uicontrol"> Modifica </span> per visualizzare l'elenco o per aggiungere parole e frasi all'elenco. Al termine, fare clic su <span class="uicontrol"> Salva modifiche </span>. </p> <p> In questo elenco sono consentite espressioni regolari. Per specificare un'espressione regolare in questo elenco, iniziare la riga con <code>regexp</code> seguito da un singolo spazio, seguito dall'espressione regolare. Vengono rimosse tutte le righe dell'elenco di parole che corrispondono all'espressione regolare. </p> <p> <b>Importante</b>: È consigliabile utilizzare espressioni regolari solo se in precedenza sono state utilizzate con esse in altre applicazioni. </p> <p>Vedere <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Espressioni regolari </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ignora maiuscole </p> </td> 
-      <td colname="col2"> <p>Vengono rimosse le voci duplicate nell'elenco di parole complete automaticamente che differiscono solo in lettere maiuscole e minuscole; tutte le voci dell'elenco di parole sono forzate a essere minuscole. </p> <p>Se desiderate che i suggerimenti di completamento automatico vengano visualizzati come "prima lettera con maiuscole" o "tutte le didascalie", aggiungete le proprietà di testo <code>
+      <td colname="col2"> <p>Vengono rimosse le voci duplicate nell'elenco di parole complete automaticamente che differiscono solo in lettere maiuscole e minuscole; tutte le voci dell'elenco di parole sono forzate a essere minuscole. </p> <p>Se desiderate che i suggerimenti di completamento automatico siano visualizzati come "prima lettera maiuscola" o "tutte maiuscole", aggiungete il 
+        <code>
           text-transform : capitalize; 
-        </code> o <code>
+        </code> oppure 
+        <code>
           text-transform : uppercase; 
-        </code> CSS al contenuto CSS di completamento automatico, in "/* stili per l'elemento risultato */". </p> <p>Consultate <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Configurazione della funzione di completamento automatico del CSS </a>. </p> </td> 
+        </code> Proprietà del testo CSS per la Completamento automatico del contenuto CSS, in "/* stili per l'elemento risultato */". </p> <p>Consultate <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Configurazione della funzione di completamento automatico del CSS </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aggiorna su reindicizzazione </p> </td> 
@@ -182,18 +184,18 @@ Consultate [Configurazione della funzione di completamento automatico del CSS](c
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
-   * Fate clic **[!UICONTROL Preview Word List]** [!DNL Auto-Complete Word List Preview] per salvare le modifiche apportate, quindi aprite la pagina in cui potete visualizzare l’elenco dei suggerimenti per la compilazione automatica. Utilizzate le opzioni di navigazione accanto alla parte superiore della pagina per esaminare e perfezionare l&#39;elenco visualizzato. Al termine, fate clic **[!UICONTROL Close]** per tornare alla [!DNL Auto-Complete Word List] pagina.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL Preview Word List]** per salvare le modifiche apportate, quindi aprire la pagina [!DNL Auto-Complete Word List Preview] in cui è possibile esaminare l&#39;elenco dei suggerimenti di completamento automatico. Utilizzate le opzioni di navigazione accanto alla parte superiore della pagina per esaminare e perfezionare l&#39;elenco visualizzato. Al termine, fare clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL Auto-Complete Word List].
 
-      Consultate [Utilizzo dell’opzione](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Configurazione della funzione di completamento automatico del CSS {#task_EECE35DEB6C94F4A8A5B42B4DED76D96}
 
@@ -205,13 +207,13 @@ t_configuring_auto-complete_css.xml
 
  -->
 
-La funzione di completamento automatico del codice CSS controlla il contenuto di [!DNL autocomplete_styles.css], incluso nel modulo di ricerca abilitato automaticamente. Il CSS specificato qui controlla la presentazione visiva dell&#39;elenco di suggerimenti auto-completi. Per un esempio delle idee di presentazione visiva possibili, consultate le seguenti risorse:
+La funzione di completamento automatico del codice CSS controlla il contenuto di [!DNL autocomplete_styles.css], incluso nel modulo di ricerca abilitato automatico. Il CSS specificato qui controlla la presentazione visiva dell&#39;elenco di suggerimenti auto-completi. Per un esempio delle idee di presentazione visiva possibili, consultate le seguenti risorse:
 
 [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html).
 
-[Configurazione dell&#39;elenco](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)di parole con completamento automatico.
+[Configurazione dell&#39;elenco](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4) di parole con completamento automatico.
 
-[Configurazione della funzione di completamento](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)automatico.
+[Configurazione della funzione di completamento](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB) automatico.
 
 Una volta completata la configurazione della funzione di completamento automatico del CSS, potete visualizzare in anteprima il modulo di ricerca per verificare se il CSS specificato è accettabile in termini di aspetto e layout.
 
@@ -223,24 +225,24 @@ Vedere [Copia del codice HTML del modulo di ricerca in corso...](c-about-auto-co
 
 **Per configurare la funzione di completamento automatico del CSS**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete CSS]**.
-1. Nel campo [!DNL Auto-Complete CSS] di testo, incollate o digitate le informazioni del foglio di stile CSS da associare all&#39;elenco dei suggerimenti per il completamento automatico.
+1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete CSS]** dal menu del prodotto.
+1. Nel campo di testo [!DNL Auto-Complete CSS], incollate o digitate le informazioni del foglio di stile CSS da associare all&#39;elenco dei suggerimenti con completamento automatico.
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Visualizzazione in anteprima del modulo di ricerca così come apparirebbe sul sito Web {#task_437B35EFA5424603A08AF8E79E6B4714}
+## Visualizzazione dell&#39;anteprima del modulo di ricerca così come apparirebbe sul sito Web {#task_437B35EFA5424603A08AF8E79E6B4714}
 
 In base alla configurazione del CSS con completamento automatico e completamento automatico, è possibile visualizzare l’anteprima del modulo di ricerca se si desidera aggiungere il codice HTML al sito Web.
 
@@ -250,26 +252,26 @@ t_previewing_the_search_form_as_it_would_appear_on_your_website.xml
 
  -->
 
-Consultate [Configurazione della funzione di completamento](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)automatico.
+Vedere [Configurazione della funzione di completamento automatico](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB).
 
-Consultate [Configurazione della funzione di completamento automatico del CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
+Vedere [Configurazione della funzione di completamento automatico del CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
 Vedere [Copia del codice HTML del modulo di ricerca in corso...](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
-Vedere [Uso delle raccolte nei moduli](c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3)di ricerca.
+Vedere [Uso delle raccolte nei moduli di ricerca](c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3).
 
-Vedere [Uso delle cornici con i moduli](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5).
+Vedere [Utilizzo di frame con form](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5).
 
-Vedere [Esempio di modulo](c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)di ricerca avanzato.
+Vedere [Esempio di modulo di ricerca avanzato](c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
-Vedere Codice [HTML per moduli di ricerca](c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)avanzati.
+Vedere [Codice HTML del modulo di ricerca avanzata](c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
-Vedere Codice [modello di modulo di ricerca](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)avanzata.
+Vedere [Codice modello di modulo di ricerca avanzata](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579).
 
 **Per visualizzare in anteprima il modulo di ricerca così come apparirebbe sul sito Web**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Search Form]**.
-1. (Facoltativo) Fate clic **[!UICONTROL HTML code]** per visualizzare l’HTML copiato e incollato nelle pagine del sito Web.
+1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Search Form]** dal menu del prodotto.
+1. (Facoltativo) Fate clic su **[!UICONTROL HTML code]** per visualizzare l’HTML copiato e incollato nelle pagine del sito Web.
 
 ## Copia del codice HTML del modulo di ricerca nelle pagine del sito Web {#task_A3A01EA800F24C0AA33902387E0362C7}
 
@@ -281,29 +283,29 @@ t_copying_the_html_code_of_the_search_form_into_the_pages_of_your_website.xml
 
  -->
 
-Consultate [Configurazione della funzione di completamento](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)automatico.
+Vedere [Configurazione della funzione di completamento automatico](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB).
 
-Consultate [Configurazione della funzione di completamento automatico del CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
+Vedere [Configurazione della funzione di completamento automatico del CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
 Vedere [Copia del codice HTML del modulo di ricerca in corso...](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
-Vedere [Uso delle raccolte nei moduli](c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3)di ricerca.
+Vedere [Uso delle raccolte nei moduli di ricerca](c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3).
 
-Vedere [Uso delle cornici con i moduli](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5).
+Vedere [Utilizzo di frame con form](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5).
 
-Vedere [Esempio di modulo](c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)di ricerca avanzato.
+Vedere [Esempio di modulo di ricerca avanzato](c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
-Vedere Codice [HTML per moduli di ricerca](c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)avanzati.
+Vedere [Codice HTML del modulo di ricerca avanzata](c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
-Vedere Codice [modello di modulo di ricerca](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)avanzata.
+Vedere [Codice modello di modulo di ricerca avanzata](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579).
 
 **Per copiare il codice HTML del modulo di ricerca nelle pagine del sito Web**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
+1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]** dal menu del prodotto.
 
    >[!NOTE]
    >
-   >Non modificare il `form name=` valore nell&#39;origine del modulo.
+   >Non modificare il valore `form name=` nell&#39;origine del modulo.
 
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
