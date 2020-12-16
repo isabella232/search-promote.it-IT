@@ -9,6 +9,9 @@ topic: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
 source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ Potete specificare l’ora e i giorni in cui eseguire la ricerca per indicizzazi
 
 L&#39;ora selezionata è locale in base al fuso orario configurato in Impostazioni account.
 
-Consultate [Configurazione delle impostazioni](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)dell’account.
+Consultate [Configurazione delle impostazioni dell&#39;account](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 I server Web sono spesso programmati per la manutenzione nel bel mezzo della notte. Se il server è inattivo durante un periodo di tempo di indicizzazione pianificato, il processo di indicizzazione non riuscirà. Accertatevi di selezionare un&#39;ora del giorno in cui il server Web sarà disponibile.
 
@@ -41,12 +44,12 @@ La pianificazione dell&#39;indice si applica solo all&#39;indice live; non è po
 
 **Impostazione della pianificazione completa dell&#39;indice per un sito Web live**
 
-1. Nel menu del prodotto, fate clic su **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Schedule]**.
-1. Nell&#39;elenco a **[!UICONTROL Time]** discesa, selezionare l&#39;ora di inizio dell&#39;indicizzazione completa.
+1. Scegliere **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Schedule]** dal menu del prodotto.
+1. Nell&#39;elenco a discesa **[!UICONTROL Time]**, selezionare l&#39;ora di inizio dell&#39;indicizzazione completa.
 1. Selezionare uno o più giorni in cui si desidera eseguire l&#39;indicizzazione completa.
 1. Clic **[!UICONTROL Save Changes]**.
 
-## Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione {#task_F7FE04D8A1654A7787FCCA31B45EB42D}
+## Esecuzione di un indice completo di un sito Web live o in fase {#task_F7FE04D8A1654A7787FCCA31B45EB42D}
 
 Potete utilizzare Indice completo per indicizzare tutte le pagine del sito Web in stato di esecuzione o in stato di esecuzione. L’indicizzazione consente ai clienti di trovare più facilmente ciò che cercano o ciò di cui hanno bisogno quando effettuano una ricerca.
 
@@ -95,9 +98,9 @@ Potete utilizzare Indice completo per indicizzare tutte le pagine del sito Web i
     </table>
 
 1. Clic **[!UICONTROL Full Index Now]**.
-1. (Facoltativo) In caso di errori di indicizzazione, fare clic **[!UICONTROL View Errors]** per visualizzare il registro associato.
+1. (Facoltativo) In caso di errori di indicizzazione, fare clic su **[!UICONTROL View Errors]** per visualizzare il registro associato.
 
-## Visualizzazione dell&#39;intero registro dell&#39;indice di un sito Web live o in fase di esecuzione {#task_02E5E944C56B4EB19CC1FF321F3221B8}
+## Visualizzazione dell&#39;intero registro indice di un sito Web live o in fase {#task_02E5E944C56B4EB19CC1FF321F3221B8}
 
 Quando un indice completo attivo o un indice completo in fase è completo, potete visualizzare il registro associato per risolvere eventuali errori che si sono verificati.
 
@@ -113,7 +116,7 @@ Non è possibile esportare i file di registro né salvarli. Il registro rimane d
 
 1. Nella pagina di registro, in alto o in basso, effettuate una delle seguenti operazioni:
 
-   * Utilizzate le opzioni di navigazione **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** per spostarsi nel registro.
+   * Utilizzare le opzioni di navigazione **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** per spostarsi all&#39;interno del registro.
 
    * Utilizzate le opzioni di visualizzazione **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** per perfezionare il contenuto visualizzato.
 
