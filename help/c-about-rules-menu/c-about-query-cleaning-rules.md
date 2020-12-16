@@ -8,11 +8,14 @@ topic: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
 source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+workflow-type: tm+mt
+source-wordcount: '1611'
+ht-degree: 0%
 
 ---
 
 
-# Informazioni sulle regole di pulizia delle query{#about-query-cleaning-rules}
+# Informazioni sulle regole di pulizia query{#about-query-cleaning-rules}
 
 Utilizzare le regole di pulizia query per analizzare e modificare la query in entrata.
 
@@ -24,7 +27,7 @@ Le regole di pulizia query in un modulo di pulizia query vengono esaminate per d
 
 Al termine della pulizia delle query, i parametri CGI risultanti vengono utilizzati in futuro. Tutte le variabili personalizzate impostate sono disponibili per l&#39;utilizzo in fasi successive del flusso di elaborazione. Per impostazione predefinita, il sistema rimuove automaticamente lo spazio vuoto iniziale e finale dal termine della query.
 
-## Informazioni sulle condizioni di pulizia delle query {#section_BF6F25F94FED4DDEA8600D921EA43A66}
+## Informazioni sulle condizioni di pulizia query {#section_BF6F25F94FED4DDEA8600D921EA43A66}
 
 Le condizioni sono facoltative. Se si decide che le azioni vengono specificate per ogni query, vengono sempre eseguite. Le condizioni possono essere basate su qualsiasi parametro di query CGI, cookie esistente o variabile personalizzata impostata da una regola precedente. La prima regola di pulizia query viene considerata &quot;best practice&quot; per ogni query, in cui vengono definite e inizializzate tutte le variabili personalizzate che si intende utilizzare.
 
@@ -32,7 +35,7 @@ Le condizioni sono facoltative. Se si decide che le azioni vengono specificate p
 
 Tutte le azioni all&#39;interno di una regola di pulizia query con condizioni corrispondenti vengono esercitate. Le azioni sono in genere costituite da un&#39;operazione, dai dati su cui eseguire l&#39;operazione e dal valore da utilizzare.
 
-Vedere la tabella delle opzioni in [Aggiunta di una regola](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)di pulizia query.
+Vedere la tabella delle opzioni in [Aggiunta di una regola di pulizia query](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
 
 ## Informazioni sui reindirizzamenti {#section_597481E6194440C0A7B9E6FC901A81C0}
 
@@ -76,14 +79,14 @@ Potete definire regole per la pulizia o la modifica della query di ricerca in ar
 
 È possibile selezionare solo i modelli attualmente esistenti. Se non avete alcun modello, dovete prima definirlo.
 
-Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18A8AE2BCD1D6EF0B5).
+Vedere [Informazioni sui modelli](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18A8AE2BCD1D6EF0B5).
 
 **Aggiunta di una regola di pulizia query**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Query Cleaning]** dal menu del prodotto.
-1. Sulla [!DNL Query Cleaning Rules] pagina, fate clic su **[!UICONTROL Add New Rule]**.
-1. Nel [!DNL Name] campo, digitare il nome della nuova regola di pulizia query.
-1. Nella [!DNL Add Query Cleaning Rule] pagina, utilizzare gli elenchi a discesa e i campi di testo per creare la query.
+1. Nella pagina [!DNL Query Cleaning Rules] fare clic su **[!UICONTROL Add New Rule]**.
+1. Nel campo [!DNL Name] digitare il nome della nuova regola di pulizia della query.
+1. Nella pagina [!DNL Add Query Cleaning Rule], utilizzare gli elenchi a discesa e i campi di testo per creare la query.
 
    <table> 
     <thead> 
@@ -105,12 +108,12 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       <td colname="col1"> <p>Variabile di sistema </p> </td> 
       <td colname="col2"> <p>Variabili di sola lettura impostate dal sistema interno che è possibile controllare. Sono supportate le seguenti variabili di sistema: </p> <p> 
         <ul id="ul_BC17F1637F27424CA4E8F530C28A3245"> 
-          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> hostname </span> <p>Nome dell'host del server. </p> </li> 
-          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri </span> <p>L'URI richiesto senza la stringa di query. </p> </li> 
-          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args </span> <p>L'intera stringa di query. </p> </li> 
+          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> hostname  </span> <p>Nome dell'host del server. </p> </li> 
+          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri  </span> <p>L'URI richiesto senza la stringa di query. </p> </li> 
+          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args  </span> <p>L'intera stringa di query. </p> </li> 
           <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> ambiente </span> <p>"Stage" o "live" a seconda che la query in entrata sia stata inviata o meno all'ambiente in cui è stato eseguito lo stage o dal vivo. </p> </li> 
           <li id="li_15902AA49B144D42A5E95D7E8B0FB1E1"> <span class="uicontrol"> referrer </span> <p>L’URL dal quale proveniva il cliente. </p> </li> 
-          <li id="li_6FEE352DB7A842FCB2EBE1398AD03666"> <span class="uicontrol"> user agent </span> <p>Stringa "user-agent" del browser del cliente. </p> </li> 
+          <li id="li_6FEE352DB7A842FCB2EBE1398AD03666"> <span class="uicontrol"> user agent  </span> <p>Stringa "user-agent" del browser del cliente. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -119,7 +122,7 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parametro di backend </p> </td> 
-      <td colname="col2"> <p>I parametri di query in entrata vengono infine convertiti in parametri di back-end utilizzati per eseguire la ricerca. </p> <p>Consultate <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parametri CGI di ricerca di back-end </a>. </p> <p>I parametri di back-end non vengono visualizzati sugli elementi di navigazione. Di conseguenza, potete nascondere ai clienti eventuali parametri aggiuntivi da applicare a una ricerca. Le azioni sui parametri di backend sono ritardate; in altre parole, vengono applicate subito prima dell’invio della ricerca. </p> </td> 
+      <td colname="col2"> <p>I parametri di query in entrata vengono infine convertiti in parametri di back-end utilizzati per eseguire la ricerca. </p> <p>Vedere <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parametri CGI di ricerca back-end </a>. </p> <p>I parametri di back-end non vengono visualizzati sugli elementi di navigazione. Di conseguenza, potete nascondere ai clienti eventuali parametri aggiuntivi da applicare a una ricerca. Le azioni sui parametri di backend sono ritardate; in altre parole, vengono applicate subito prima dell’invio della ricerca. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Facet </p> </td> 
@@ -131,7 +134,7 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
       </tr> 
       <tr> 
       <td colname="col1"> <p>Store </p> </td> 
-      <td colname="col2"> <p>Il motore di ricerca rileva automaticamente in quale archivio si trova l'utente in base al nome host o al parametro di query <span class="codeph"> gs_store </span> , con quest'ultimo che ha la precedenza. È possibile creare condizioni fuori dal negozio. Solo per la pulizia delle query, potete anche utilizzare un'azione per ignorare lo store corrente. </p> </td> 
+      <td colname="col2"> <p>Il motore di ricerca rileva automaticamente in quale archivio si trova l'utente in base al nome host o al parametro di query <span class="codeph"> gs_store </span>, con quest'ultimo che ha la precedenza. È possibile creare condizioni fuori dal negozio. Solo per la pulizia delle query, potete anche utilizzare un'azione per ignorare lo store corrente. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ultima regola </p> </td> 
@@ -147,17 +150,17 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
 1. Clic **[!UICONTROL Add]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica di una regola di pulizia query {#task_FA2FF1A7E2634350AD703485CBC27CB3}
 
@@ -166,24 +169,24 @@ Consultate [I Modelli](../c-about-design-menu/c-about-templates.md#concept_06EB4
 **Per modificare una regola di pulizia query**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Query Cleaning]** dal menu del prodotto.
-1. Nella [!DNL Query Cleaning Rules] pagina, nella **[!UICONTROL Actions]** colonna della tabella, fare clic **[!UICONTROL Edit]** sulla regola associata da modificare.
-1. Nella [!DNL Edit Query Cleaning Rule] pagina, utilizzare gli elenchi a discesa e i campi di testo per creare la query.
+1. Nella pagina [!DNL Query Cleaning Rules], nella colonna **[!UICONTROL Actions]** della tabella fare clic su **[!UICONTROL Edit]** per la regola associata da modificare.
+1. Nella pagina [!DNL Edit Query Cleaning Rule], utilizzare gli elenchi a discesa e i campi di testo per creare la query.
 
-   Vedere la tabella delle opzioni in [Aggiunta di una regola](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)di pulizia query.
+   Vedere la tabella delle opzioni in [Aggiunta di una regola di pulizia query](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Eliminazione di una regola di pulizia query {#task_C52D17226B824590B087CAB6970CBB01}
 
@@ -194,49 +197,49 @@ Quando si elimina una regola, l&#39;ordine di esecuzione delle regole rimanenti 
 **Per eliminare una regola di pulizia query**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Query Cleaning]** dal menu del prodotto.
-1. Nella [!DNL Query Cleaning Rules] pagina, nella **[!UICONTROL Actions]** colonna della tabella, fare clic **[!UICONTROL Delete]** per la regola associata da eliminare.
-1. Nella finestra di [!DNL Confirmation] dialogo fare clic su **[!UICONTROL OK]**.
+1. Nella pagina [!DNL Query Cleaning Rules], nella colonna **[!UICONTROL Actions]** della tabella fare clic su **[!UICONTROL Delete]** per la regola associata da eliminare.
+1. Nella finestra di dialogo [!DNL Confirmation], fare clic su **[!UICONTROL OK]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica dell&#39;ordine di esecuzione delle regole di pulizia della query {#task_C24012C45A4445468A7FD998017388CA}
 
 Potete riordinare le regole di pulizia delle query per modificare l&#39;ordine in cui vengono eseguite sui modelli di presentazione.
 
-Le regole di pulizia delle query vengono eseguite nell&#39;ordine in cui sono state definite. Più alto è il numero dell&#39;ordine di una regola, più tardi verrà eseguito nel processo, trumping regole precedenti. È possibile riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella [!DNL Query Cleaning Rules] pagina. Potete anche utilizzare le regole di trascinamento per modificarne l&#39;ordine di esecuzione.
+Le regole di pulizia delle query vengono eseguite nell&#39;ordine in cui sono state definite. Più alto è il numero dell&#39;ordine di una regola, più tardi verrà eseguito nel processo, trumping regole precedenti. Riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella pagina [!DNL Query Cleaning Rules]. Potete anche utilizzare le regole di trascinamento per modificarne l&#39;ordine di esecuzione.
 
 **Per modificare l&#39;ordine di esecuzione delle regole di pulizia della query**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Query Cleaning]** dal menu del prodotto.
-1. Nella [!DNL Query Cleaning Rules] pagina, effettuate una delle seguenti operazioni:
+1. Nella pagina [!DNL Query Cleaning Rules], effettuare una delle seguenti operazioni:
 
-   * Fate clic sull&#39;intestazione della [!DNL Order] colonna per ordinare le regole in ordine crescente o decrescente.
-   * Nella [!DNL Order] colonna, nel campo di testo a sinistra del nome di una regola di pulizia query, digitare il numero di ordine che si desidera eseguire.
+   * Fate clic sull&#39;intestazione della colonna [!DNL Order] per ordinare le regole in ordine crescente o decrescente.
+   * Nella colonna [!DNL Order], nel campo di testo a sinistra del nome di una regola di pulizia query, digitare il numero di ordine che si desidera eseguire.
    * Trascinare una riga di tabella nella posizione in cui si desidera eseguire la regola. Tutti i numeri di ordine vengono aggiornati in base al nuovo ordine in cui vengono eseguite le regole.
 
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
