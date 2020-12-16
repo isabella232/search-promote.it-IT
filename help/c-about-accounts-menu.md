@@ -8,6 +8,9 @@ topic: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 2%
 
 ---
 
@@ -16,9 +19,9 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 Utilizzate Account nel menu del prodotto per selezionare un account a cui accedere e utilizzare.
 
-## Selezione di un account diverso da usare {#task_03C0FE918E2D44529CDC3B8DB75D1B26}
+## Selezione di un account diverso da utilizzare {#task_03C0FE918E2D44529CDC3B8DB75D1B26}
 
-Utilizzare la [!DNL Select Account] pagina per selezionare l&#39;account che si desidera utilizzare e gestire.
+Utilizzare la pagina [!DNL Select Account] per selezionare l&#39;account che si desidera utilizzare e gestire.
 
 <!-- 
 
@@ -32,11 +35,11 @@ Dopo aver selezionato un account, viene visualizzata la home page di ricerca del
 
 1. Esegui una delle operazioni seguenti:
 
-   * Scegliere **[!UICONTROL Accounts]**.
-   * In the upper-right corner of the page, click **[!UICONTROL Select Account]**.
+   * Scegliere **[!UICONTROL Accounts]** dal menu del prodotto.
+   * Nell&#39;angolo superiore destro della pagina, fare clic su **[!UICONTROL Select Account]**.
 
-1. Nella [!DNL Select Account] pagina, effettuate una delle seguenti operazioni:
+1. Nella pagina [!DNL Select Account], effettuate una delle seguenti operazioni:
 
-   * Nella tabella, sotto l’intestazione della [!DNL Name] colonna, fare clic sul nome di un account che si desidera utilizzare e gestire.
-   * Nella tabella, sotto l’intestazione della [!DNL Number] colonna, fare clic su un numero di account che si desidera utilizzare e gestire.
+   * Nella tabella, sotto l&#39;intestazione di colonna [!DNL Name], fare clic sul nome di un account che si desidera utilizzare e gestire.
+   * Nella tabella, sotto l&#39;intestazione di colonna [!DNL Number], fare clic su un numero di account che si desidera utilizzare e gestire.
 
