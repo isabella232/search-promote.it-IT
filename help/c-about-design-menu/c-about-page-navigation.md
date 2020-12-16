@@ -9,19 +9,22 @@ topic: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
 source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 1%
 
 ---
 
 
-# Informazioni sulla navigazione delle pagine{#about-page-navigation}
+# Informazioni su Navigazione pagina{#about-page-navigation}
 
 Potete utilizzare **[!UICONTROL Page Navigation]** per personalizzare il controllo di navigazione della pagina del livello di ricerca della presentazione.
 
-## Utilizzo della navigazione nelle pagine {#concept_4488C73B2F59457CB76B658FF71B9E4B}
+## Utilizzo della navigazione delle pagine {#concept_4488C73B2F59457CB76B658FF71B9E4B}
 
 Se il livello della presentazione ha più di un set di risultati di ricerca, il controllo di navigazione della pagina è destinato alla ricerca principale nella pagina.
 
-## Aggiunta della navigazione alla pagina Web {#task_8FC098E36A7D495695F3FA4F85DA600C}
+## Aggiunta della navigazione della pagina Web {#task_8FC098E36A7D495695F3FA4F85DA600C}
 
 Potete utilizzare [!DNL Page Navigation] per personalizzare il controllo di navigazione della pagina del livello di ricerca della presentazione.
 
@@ -34,8 +37,8 @@ t_configuring_web_page_navigation.xml
 **Per aggiungere la navigazione nella pagina Web**
 
 1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]** dal menu del programma.
-1. Sulla [!DNL Page Navigation] pagina, fate clic su **[!UICONTROL Add New Page Navigation]**.
-1. Nella [!DNL Add Page Navigation] pagina, impostate le opzioni desiderate.
+1. Nella pagina [!DNL Page Navigation] fare clic su **[!UICONTROL Add New Page Navigation]**.
+1. Nella pagina [!DNL Add Page Navigation], impostate le opzioni desiderate.
 
    <!-- 
    r_page_navigation_options.xml
@@ -55,7 +58,7 @@ t_configuring_web_page_navigation.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>Visualizza tutte le soglie </p> </td> 
-      <td colname="col2"> <p>Specifica il numero massimo di pagine che un cliente può vedere se è selezionata l'opzione <span class="uicontrol"> Visualizza tutto</span> . </p> </td> 
+      <td colname="col2"> <p>Specifica il numero massimo di pagine che un cliente può vedere se è selezionata l'opzione <span class="uicontrol"> Visualizza tutto</span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Mostra collegamento alla prima pagina </p> </td> 
@@ -83,17 +86,17 @@ t_configuring_web_page_navigation.xml
 1. Clic **[!UICONTROL Add]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica della navigazione della pagina Web {#task_D0938D15521F4139B23C643DA609F881}
 
@@ -110,22 +113,22 @@ Se il livello della presentazione ha più di un set di risultati di ricerca, il 
 **Per modificare la navigazione della pagina Web**
 
 1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]** dal menu del programma.
-1. Nella [!DNL Page Navigation] pagina, nella tabella, fare clic **[!UICONTROL Edit]** sull’estrema destra del nome di navigazione della pagina.
-1. Nella [!DNL Edit Page Navigation] pagina, impostate le opzioni desiderate.
+1. Nella pagina [!DNL Page Navigation], nella tabella fare clic su **[!UICONTROL Edit]** all&#39;estrema destra del nome di navigazione della pagina.
+1. Nella pagina [!DNL Edit Page Navigation], impostate le opzioni desiderate.
 
-   Consultate la tabella delle opzioni in [Aggiunta della navigazione](../c-about-design-menu/c-about-page-navigation.md#task_8FC098E36A7D495695F3FA4F85DA600C)delle pagine Web.
+   Vedere la tabella delle opzioni in [Aggiunta della navigazione della pagina Web](../c-about-design-menu/c-about-page-navigation.md#task_8FC098E36A7D495695F3FA4F85DA600C).
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
