@@ -8,6 +8,9 @@ topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 1%
 
 ---
 
@@ -16,24 +19,24 @@ source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
 
 Utilizzate Simulator per vedere l&#39;aspetto della ricerca se doveste spingere in diretta tutto ciò che è attualmente in fase.
 
-## Informazioni su Simulator {#concept_020AA6751E32421A96A3455508364C7E}
+## Informazioni sul simulatore {#concept_020AA6751E32421A96A3455508364C7E}
 
 Utilizzate Simulator per vedere l&#39;aspetto della ricerca se doveste spingere in diretta tutto ciò che è attualmente in fase.
 
 È inoltre possibile simulare la ricerca live corrente a scopo di confronto. Il simulatore dispone di un debugger integrato per mostrare quali regole business vengono attivate per una determinata ricerca. Se deselezionate una regola associata, Simulator simula nuovamente la ricerca del sito come se la regola non esistesse. Le regole sono elencate tra la priorità più alta e la priorità più bassa, dove le regole di priorità più elevate superano le regole di priorità più basse.
 
-Vedere anche [Aggiunta di una nuova regola](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)business.
+Vedere anche [Aggiunta di una nuova regola business](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
 ## Utilizzo del simulatore {#task_739E14F61F8D47B196515F815E3F3BD9}
 
 È possibile utilizzare Simulator per vedere come verrebbe visualizzata la ricerca se si inviasse in tempo reale tutto ciò che è attualmente in fase.
 
-Consultate [Aggiunta di una nuova regola](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)business.
+Vedere [Aggiunta di una nuova regola business](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
 **Per utilizzare il simulatore**
 
-1. Scegliere **[!UICONTROL Simulator]**.
-1. Dall’elenco a **[!UICONTROL Options]** discesa, selezionate l’opzione da eseguire.
+1. Scegliere **[!UICONTROL Simulator]** dal menu del prodotto.
+1. Nell&#39;elenco a discesa **[!UICONTROL Options]**, selezionare l&#39;opzione da eseguire.
 
    <!-- 
    
