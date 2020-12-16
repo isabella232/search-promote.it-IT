@@ -8,6 +8,9 @@ topic: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
 source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+workflow-type: tm+mt
+source-wordcount: '1709'
+ht-degree: 1%
 
 ---
 
@@ -22,13 +25,13 @@ Le regole di pre-ricerca vengono in genere utilizzate per selezionare quale mode
 
 Nel modulo Pre-Search Processing (Elaborazione pre-ricerca) vengono istanziati tutti i modelli definiti e le relative ricerche con nome, a cui viene assegnata una copia locale dei parametri cgi. Di conseguenza, potete personalizzare una ricerca aggiungendo, eliminando o modificando uno dei parametri cgi utilizzati dalla ricerca senza alterare altre ricerche denominate utilizzate dal modello né influenzare gli altri modelli. Di conseguenza, se disponete di un modello di presentazione che visualizza più set di risultati, potete personalizzare ogni ricerca singolarmente. Se si desidera apportare modifiche ai parametri CGI globali prima che vengano copiati in ogni ricerca per ciascun modello, utilizzare il modulo Pulizia query.
 
-## Condizioni della regola di pre-ricerca {#section_B5568ADEB28546A280720309498B045D}
+## Condizioni pre-ricerca regola {#section_B5568ADEB28546A280720309498B045D}
 
 Le condizioni sono facoltative. Se si sceglie di specificare le azioni per ogni query, le azioni vengono sempre eseguite. È consigliabile che la prima regola venga eseguita per ogni query, in cui viene selezionato il modello di presentazione predefinito. In questo modo potete essere certi che, indipendentemente dalla query in entrata, avete selezionato un modello di presentazione con scenario peggiore da utilizzare. Le condizioni possono essere basate su qualsiasi parametro di query CGI, cookie o variabile personalizzata impostata da una regola precedente o da una variabile di sistema.
 
-## Azioni regole di pre-ricerca {#section_3B8E19D287554C1C969F5B8D81226981}
+## Azioni regola di pre-ricerca {#section_3B8E19D287554C1C969F5B8D81226981}
 
-Tutte le azioni all&#39;interno di una regola di pre-ricerca con condizioni corrispondenti vengono esercitate. Le azioni in genere consistono in un&#39;operazione, nei dati su cui eseguire l&#39;operazione e nel valore da utilizzare. L&#39;azione più semplice consiste nel specificare quale modello di presentazione utilizzare quando la query corrisponde alle condizioni della regola di pre-ricerca. Quindi impostate il modello di destinazione sul nome del modello di presentazione. Per modificare la ricerca utilizzata per un determinato modello è possibile utilizzare azioni più complesse, eseguendo un&#39;operazione sul parametro di ricerca di un modello. Quando eseguite un&#39;operazione sul parametro di ricerca di un modello, specificate un modello di presentazione ed effettuate una ricerca.
+Tutte le azioni all&#39;interno di una regola di pre-ricerca con condizioni corrispondenti vengono esercitate. Le azioni sono in genere costituite da un&#39;operazione, dai dati su cui eseguire l&#39;operazione e dal valore da utilizzare. L&#39;azione più semplice consiste nel specificare quale modello di presentazione utilizzare quando la query corrisponde alle condizioni della regola di pre-ricerca. Quindi impostate il modello di destinazione sul nome del modello di presentazione. Per modificare la ricerca utilizzata per un determinato modello è possibile utilizzare azioni più complesse, eseguendo un&#39;operazione sul parametro di ricerca di un modello. Quando eseguite un&#39;operazione sul parametro di ricerca di un modello, specificate un modello di presentazione ed effettuate una ricerca.
 
 ## Regole generiche {#section_885ECB9DBF0C4D539C14F82BCAA35B4E}
 
@@ -63,14 +66,14 @@ Impostate il modello predefinito su Guidata.tmpl, quando l&#39;utente passa un p
 
 ## Aggiunta di una nuova regola di pre-ricerca {#task_182B95918462490D8BDA7F16A81CAC11}
 
-Potete utilizzare [!DNL Pre-Search Rules] per selezionare il modello di presentazione utilizzato per visualizzare i risultati di ricerca in base alla query in arrivo.
+Potete utilizzare [!DNL Pre-Search Rules] per selezionare il modello di presentazione utilizzato per visualizzare i risultati della ricerca in base alla query in entrata.
 
 **Per aggiungere una nuova regola di pre-ricerca**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** dal menu del prodotto.
-1. Sulla [!DNL Pre-Search Rules] pagina, fate clic su **[!UICONTROL Add New Rule]**.
-1. Nel [!DNL Name] campo, digitare il nome della nuova regola di pulizia query.
-1. Nella [!DNL Add Pre-Search Rule] pagina, utilizzare gli elenchi a discesa e i campi di testo per creare la query.
+1. Nella pagina [!DNL Pre-Search Rules] fare clic su **[!UICONTROL Add New Rule]**.
+1. Nel campo [!DNL Name] digitare il nome della nuova regola di pulizia della query.
+1. Nella pagina [!DNL Add Pre-Search Rule], utilizzare gli elenchi a discesa e i campi di testo per creare la query.
 
    <table> 
     <thead> 
@@ -92,9 +95,9 @@ Potete utilizzare [!DNL Pre-Search Rules] per selezionare il modello di presenta
       <td colname="col1"> <p>Variabile di sistema </p> </td> 
       <td colname="col2"> <p>Variabili di sola lettura impostate dal sistema interno che è possibile controllare. Sono supportate le seguenti variabili di sistema: </p> <p> 
         <ul id="ul_BC17F1637F27424CA4E8F530C28A3245"> 
-          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> hostname </span> <p>Nome dell'host del server. </p> </li> 
-          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri </span> <p>L'URI richiesto senza la stringa di query. </p> </li> 
-          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args </span> <p>L'intera stringa di query. </p> </li> 
+          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> hostname  </span> <p>Nome dell'host del server. </p> </li> 
+          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri  </span> <p>L'URI richiesto senza la stringa di query. </p> </li> 
+          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args  </span> <p>L'intera stringa di query. </p> </li> 
           <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> ambiente </span> <p>"Stage" o "live" a seconda che la query in entrata sia stata inviata o meno all'ambiente in cui è stato eseguito lo stage o dal vivo. </p> </li> 
           <li id="li_15902AA49B144D42A5E95D7E8B0FB1E1"> <span class="uicontrol"> referrer </span> <p>L’URL dal quale proveniva il cliente. </p> </li> 
         </ul> </p> </td> 
@@ -113,7 +116,7 @@ Potete utilizzare [!DNL Pre-Search Rules] per selezionare il modello di presenta
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parametro back-end del modello </p> </td> 
-      <td colname="col2"> <p>I parametri di query in entrata vengono infine convertiti in parametri di back-end utilizzati per eseguire la ricerca. </p> <p>Consultate <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parametri CGI di ricerca di back-end </a>. </p> <p>I parametri di back-end non vengono visualizzati sugli elementi di navigazione. Di conseguenza, potete nascondere ai clienti eventuali parametri aggiuntivi da applicare a una ricerca. Il parametro è locale per una ricerca specifica all’interno di un modello di presentazione. Le azioni sui parametri di backend sono ritardate; in altre parole, vengono applicate subito prima dell’invio della ricerca. </p> </td> 
+      <td colname="col2"> <p>I parametri di query in entrata vengono infine convertiti in parametri di back-end utilizzati per eseguire la ricerca. </p> <p>Vedere <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parametri CGI di ricerca back-end </a>. </p> <p>I parametri di back-end non vengono visualizzati sugli elementi di navigazione. Di conseguenza, potete nascondere ai clienti eventuali parametri aggiuntivi da applicare a una ricerca. Il parametro è locale per una ricerca specifica all’interno di un modello di presentazione. Le azioni sui parametri di backend sono ritardate; in altre parole, vengono applicate subito prima dell’invio della ricerca. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Modello di destinazione </p> </td> 
@@ -125,7 +128,7 @@ Potete utilizzare [!DNL Pre-Search Rules] per selezionare il modello di presenta
       </tr> 
       <tr> 
       <td colname="col1"> <p>Store </p> </td> 
-      <td colname="col2"> <p>Il motore di ricerca rileva automaticamente in quale archivio si trova il cliente in base al nome host o al parametro di query <span class="codeph"> gs_store </span> , con quest'ultimo che ha la precedenza. È possibile creare condizioni fuori dal negozio. Solo per la pulizia delle query, potete anche utilizzare un'azione per ignorare lo store corrente. </p> </td> 
+      <td colname="col2"> <p>Il motore di ricerca rileva automaticamente in quale archivio si trova il cliente in base al nome host o al parametro di query <span class="codeph"> gs_store </span>, con quest'ultimo che ha la precedenza. È possibile creare condizioni fuori dal negozio. Solo per la pulizia delle query, potete anche utilizzare un'azione per ignorare lo store corrente. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ultima regola </p> </td> 
@@ -141,43 +144,43 @@ Potete utilizzare [!DNL Pre-Search Rules] per selezionare il modello di presenta
 1. Clic **[!UICONTROL Add]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica di una regola di pre-ricerca {#task_25F77050C5DA42B29DFD1C9718FB8C64}
 
-Potete modificare le regole di pre-ricerca esistenti aggiunte alla [!DNL Pre-Search Rules] pagina.
+È possibile modificare le regole di pre-ricerca esistenti aggiunte alla pagina [!DNL Pre-Search Rules].
 
 **Per modificare una regola di pre-ricerca**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** dal menu del prodotto.
-1. Nella [!DNL Pre-Search Rules] pagina, nella **[!UICONTROL Actions]** colonna della tabella, fare clic **[!UICONTROL Edit]** sulla regola associata da modificare.
-1. Nella [!DNL Edit Pre-Search Rule] pagina, utilizzare gli elenchi a discesa e i campi di testo per creare la query.
+1. Nella pagina [!DNL Pre-Search Rules], nella colonna **[!UICONTROL Actions]** della tabella fare clic su **[!UICONTROL Edit]** per la regola associata da modificare.
+1. Nella pagina [!DNL Edit Pre-Search Rule], utilizzare gli elenchi a discesa e i campi di testo per creare la query.
 
-   Vedere la tabella delle opzioni in [Aggiunta di una nuova regola](../c-about-rules-menu/c-about-pre-search-rules.md#task_182B95918462490D8BDA7F16A81CAC11)di pre-ricerca.
+   Vedere la tabella delle opzioni in [Aggiunta di una nuova regola di pre-ricerca](../c-about-rules-menu/c-about-pre-search-rules.md#task_182B95918462490D8BDA7F16A81CAC11).
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Eliminazione di una regola di pre-ricerca {#task_128B6A79CA6C451C991AEDAD58F51743}
 
@@ -188,49 +191,49 @@ Quando si elimina una regola, l&#39;ordine di esecuzione delle regole rimanenti 
 **Per eliminare una regola di pre-ricerca**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** dal menu del prodotto.
-1. Nella [!DNL Pre-Search Rules] pagina, nella **[!UICONTROL Actions]** colonna della tabella, fare clic **[!UICONTROL Delete]** per la regola associata da eliminare.
-1. Nella finestra di [!DNL Confirmation] dialogo fare clic su **[!UICONTROL OK]**.
+1. Nella pagina [!DNL Pre-Search Rules], nella colonna **[!UICONTROL Actions]** della tabella fare clic su **[!UICONTROL Delete]** per la regola associata da eliminare.
+1. Nella finestra di dialogo [!DNL Confirmation], fare clic su **[!UICONTROL OK]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Modifica dell&#39;ordine di esecuzione delle regole di pre-ricerca {#task_C18817276A3C459089C97448076365D1}
 
 Potete riordinare le regole di pre-ricerca per modificare l&#39;ordine in cui vengono eseguite sui modelli di presentazione.
 
-Le regole di pre-ricerca vengono eseguite nell&#39;ordine in cui sono state definite. Più alto è il numero dell&#39;ordine di una regola, più tardi verrà eseguito nel processo, trumping regole precedenti. È possibile riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella [!DNL Pre-Search Rules] pagina. Potete anche utilizzare le regole di trascinamento per modificarne l&#39;ordine di esecuzione.
+Le regole di pre-ricerca vengono eseguite nell&#39;ordine in cui sono state definite. Più alto è il numero dell&#39;ordine di una regola, più tardi verrà eseguito nel processo, trumping regole precedenti. Riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella pagina [!DNL Pre-Search Rules]. Potete anche utilizzare le regole di trascinamento per modificarne l&#39;ordine di esecuzione.
 
 **Per modificare l&#39;ordine di esecuzione delle regole di pre-ricerca**
 
 1. Scegliere **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** dal menu del prodotto.
-1. Nella [!DNL Pre-Search Rules] pagina, effettuate una delle seguenti operazioni:
+1. Nella pagina [!DNL Pre-Search Rules], effettuare una delle seguenti operazioni:
 
-   * Fate clic sull&#39;intestazione della **[!UICONTROL Order]** colonna per ordinare le regole in ordine crescente o decrescente.
-   * Nella **[!UICONTROL Order]** colonna, nel campo di testo a sinistra del nome di una regola di pre-ricerca, digitare il numero di ordine che si desidera eseguire.
+   * Fate clic sull&#39;intestazione della colonna **[!UICONTROL Order]** per ordinare le regole in ordine crescente o decrescente.
+   * Nella colonna **[!UICONTROL Order]**, digitare il numero di ordine che si desidera eseguire nel campo di testo a sinistra del nome di una regola di pre-ricerca.
    * Trascinare una riga di tabella nella posizione in cui si desidera eseguire la regola. Tutti i numeri di ordine vengono aggiornati in base al nuovo ordine in cui vengono eseguite le regole.
 
 1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
