@@ -9,6 +9,9 @@ topic: Design,Site search and merchandising
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 1%
 
 ---
 
@@ -21,12 +24,12 @@ La pagina Ricerche recenti consente di configurare il comportamento delle ricerc
 
 Per ulteriori informazioni sui vari tag che potete utilizzare per visualizzare le ricerche recenti nel modello di presentazione, consultate l’argomento di riferimento del tag del modello di presentazione.
 
-Consultate Tag [dei modelli di](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)presentazione.
+Vedere [Tag del modello di presentazione](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
 
 **Per configurare le ricerche recenti**
 
 1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]** dal menu del programma.
-1. Nella [!DNL Recent Searches] pagina, impostate le opzioni desiderate.
+1. Nella pagina [!DNL Recent Searches], impostate le opzioni desiderate.
 
    <!-- 
    
@@ -59,15 +62,15 @@ Consultate Tag [dei modelli di](../c-appendices/c-templates.md#reference_F1BBF61
 
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Fate clic **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
 
-      Consultate [Utilizzo dell’opzione](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Cronologia.
+      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Consultate [Visualizzazione delle impostazioni](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)dal vivo.
+      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Consultate [Invio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)delle impostazioni dell’area di visualizzazione.
+      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
