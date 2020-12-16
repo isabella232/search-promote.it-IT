@@ -1,6 +1,6 @@
 ---
-description: Potete personalizzare l'output in qualsiasi formato basato su testo, inclusi XML o JSON.
-seo-description: Potete personalizzare l'output in qualsiasi formato basato su testo, inclusi XML o JSON.
+description: Potete personalizzare l’output in qualsiasi formato basato su testo, inclusi XML o JSON.
+seo-description: Potete personalizzare l’output in qualsiasi formato basato su testo, inclusi XML o JSON.
 seo-title: Uscita di ricerca guidata
 solution: Target
 title: Uscita di ricerca guidata
@@ -8,29 +8,32 @@ topic: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '6298'
+ht-degree: 2%
 
 ---
 
 
 # Uscita di ricerca guidata{#guided-search-output}
 
-Potete personalizzare l&#39;output in qualsiasi formato basato su testo, inclusi XML o JSON.
+Potete personalizzare l’output in qualsiasi formato basato su testo, inclusi XML o JSON.
 
-## Utilizzo dell’output di ricerca guidata {#concept_2A1BA3AD413848A1AC2A3ABC4FFE481F}
+## Utilizzo dell&#39;output di ricerca guidata {#concept_2A1BA3AD413848A1AC2A3ABC4FFE481F}
 
 Il formato di output è personalizzabile per supportare il facet, l&#39;ordinamento e altre decisioni specifiche per l&#39;implementazione che vengono prese durante il processo di progettazione. Potete adattare il formato stesso per semplificare lo sviluppo del front-end del cliente, se necessario.
 
-L&#39;intero output è contenuto all&#39;interno `<result>` dei tag e la maggior parte dei dati dinamici è racchiusa tra `<![CDATA[ ]]>` tag. Tale organizzazione consente ai risultati di contenere HTML e altre entità non XML.
+L&#39;intero output è contenuto all&#39;interno dei tag `<result>` e la maggior parte dei dati dinamici è racchiusa tra `<![CDATA[ ]]>` tag. Tale organizzazione consente ai risultati di contenere HTML e altre entità non XML.
 
 Se vengono forniti collegamenti verso altre pagine, questi vengono presentati sotto forma di URL relativo. Questo risultato include anche i parametri della stringa di query passati per generare il risultato desiderato.
 
-## Implementazione della ricerca guidata {#section_95483980930C4325BAB50A40BD47245A}
+## Introduzione all&#39;implementazione di una ricerca guidata {#section_95483980930C4325BAB50A40BD47245A}
 
-Quando iniziate l’implementazione di una ricerca guidata, ricordate che [!DNL Adobe Search&Promote] è responsabile per il Business Layer. Ovvero, la logica che circonda i risultati e i facet vengono mostrati a un cliente in qualsiasi momento.
+Quando iniziate l&#39;implementazione di una ricerca guidata, ricordate che [!DNL Adobe Search&Promote] è responsabile per il livello aziendale. Ovvero, la logica che circonda i risultati e i facet vengono mostrati a un cliente in qualsiasi momento.
 
 Quando si implementa il front-end dell&#39;applicazione Web che analizza e visualizza i risultati come HTML, limitare la funzionalità alla sola visualizzazione. In altre parole, qualsiasi logica lato server utilizzata per creare il Livello presentazione non prende decisioni su cosa presentare al cliente, a meno che non sia necessario. Le regole business non funzionano come previsto se lo script front-end modifica i risultati della ricerca.
 
-[!DNL Adobe Search&Promote] mantiene lo stato utente delle opzioni di perfezionamento ricerca selezionate tramite i parametri dell’URL. Tutti `<link>` i nodi contengono i parametri pertinenti delle selezioni del cliente. Questi parametri possono includere breadcrumb, impaginazione, ordinamento e facet. Se applicabile, `<undolink>` vengono restituiti dei nodi per consentire al cliente di &quot;eseguire nuovamente&quot; una selezione. Facet e breadcrumb offrono questi tipi di collegamenti.
+[!DNL Adobe Search&Promote] mantiene lo stato utente delle opzioni di perfezionamento ricerca selezionate tramite i parametri dell’URL. Tutti i nodi `<link>` contengono i parametri pertinenti delle selezioni del cliente. Questi parametri possono includere breadcrumb, impaginazione, ordinamento e facet. Se applicabile, vengono restituiti `<undolink>` nodi per consentire al cliente di &quot;eseguire il backup&quot; di una selezione. Facet e breadcrumb offrono questi tipi di collegamenti.
 
 ## Utilizzo del server di ricerca {#section_8DBEACDECD714E59BDED6315E6041B8D}
 
@@ -45,15 +48,15 @@ Il primo URI esegue le ricerche rispetto al relativo indice live e il secondo ri
 
 Le richieste di ricerca sono costituite dall’URI di base e da un set di parametri CGI o coppie chiave-valore che indicano la ricerca desiderata per l’account associato all’URI di base.
 
-Sono supportati tre formati di parametri CGI. Per impostazione predefinita, il vostro account è configurato per separare i parametri CGI con un punto e virgola ( `;`), come nell’esempio seguente:
+Sono supportati tre formati di parametri CGI. Per impostazione predefinita, il vostro account è configurato per separare i parametri CGI con un punto e virgola ( `;`), come nell&#39;esempio seguente:
 
 * `https://search.megacorp.com?q=shoes ;page=2`
 
-Se preferite, potete chiedere al vostro account manager di configurare il vostro account in modo che utilizzi le e commerciale ( `&`) per separare i parametri CGI, come nell&#39;esempio seguente:
+Se preferite, potete fare in modo che il vostro account manager configuri il vostro account in modo che utilizzi le e commerciale ( `&`) per separare i parametri CGI, come nell&#39;esempio seguente:
 
 * `https://search.megacorp.com?q=shoes &page=2`
 
-È inoltre supportato un terzo formato, denominato formato SEO, in cui viene utilizzata una barra ( `/`) al posto del separatore e un segno di uguale per generare collegamenti &quot;puliti&quot;, come nell’esempio seguente:
+È inoltre supportato un terzo formato, denominato formato SEO, in cui viene utilizzata una barra ( `/`) al posto del separatore e un segno di uguale per generare collegamenti &quot;puliti&quot;, come nell&#39;esempio seguente:
 
 * `https://search.megacorp.com/q/shoes/page/2`
 
@@ -73,57 +76,57 @@ Nella tabella seguente sono descritti i parametri standard di query di ricerca &
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> q </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> q= stringa </span> </p> </td> 
-   <td colname="col3"> <p> Specifica la stringa di query per la ricerca. Questo parametro viene mappato sul parametro di ricerca <span class="codeph"> sp_q </span> . </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> q  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> q= stringa  </span> </p> </td> 
+   <td colname="col3"> <p> Specifica la stringa di query per la ricerca. Questo parametro viene mappato sul parametro di ricerca di back-end <span class="codeph"> sp_q </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> q# </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> q#= stringa </span> </p> </td> 
-   <td colname="col3"> <p>I parametri <span class="codeph"> q </span> e <span class="codeph"> x numerati </span> consentono di eseguire operazioni di facet o ricerche all’interno di un dato campo. </p> <p>Il parametro <span class="codeph"> q </span> definisce il termine che state cercando nel facet come i corrispondenti valori numerici <span class="codeph"> x </span> del parametro. Ad esempio, se avete due facet denominati dimensione e colore, potreste avere qualcosa come il seguente: </p> <p> <span class="codeph"> q1=piccolo;x1=dimensione;q2=rosso;x2=colore </span> </p> <p>Questo parametro viene mappato sui parametri di ricerca <span class="codeph"> sp_q_exact_# </span> . </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> q#  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> q#= stringa  </span> </p> </td> 
+   <td colname="col3"> <p>I parametri <span class="codeph"> q </span> e <span class="codeph"> x </span> numerati consentono di eseguire operazioni di facet o ricerche all'interno di un dato campo. </p> <p>Il parametro <span class="codeph"> q </span> definisce il termine che si sta cercando nel facet come il parametro numero corrispondente <span class="codeph"> x </span> denotes. Ad esempio, se avete due facet denominati dimensione e colore, potreste avere qualcosa come il seguente: </p> <p> <span class="codeph"> q1=piccolo;x1=dimensione;q2=rosso;x2=colore  </span> </p> <p>Questo parametro viene mappato sui parametri di ricerca di back-end <span class="codeph"> sp_q_exact_# </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> x# </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> x#= stringa </span> </p> </td> 
-   <td colname="col3"> <p> I parametri <span class="codeph"> q </span> e <span class="codeph"> x numerati </span> consentono di eseguire operazioni di facet o ricerche all’interno di un dato campo. </p> <p>Il parametro <span class="codeph"> q </span> definisce il termine che state cercando nel facet come i corrispondenti valori numerici <span class="codeph"> x </span> del parametro. Ad esempio, se avete due facet denominati dimensione e colore, potreste avere qualcosa come il seguente: </p> <p> <span class="codeph"> q1=piccolo;x1=dimensione;q2=rosso;x2=colore </span> </p> <p>Questo parametro viene mappato sui parametri di ricerca <span class="codeph"> sp_x_# </span> . </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> x#= stringa  </span> </p> </td> 
+   <td colname="col3"> <p> I parametri <span class="codeph"> q </span> e <span class="codeph"> x </span> numerati consentono di eseguire operazioni di facet o ricerche all'interno di un dato campo. </p> <p>Il parametro <span class="codeph"> q </span> definisce il termine che si sta cercando nel facet come il parametro numero corrispondente <span class="codeph"> x </span> denotes. Ad esempio, se avete due facet denominati dimensione e colore, potreste avere qualcosa come il seguente: </p> <p> <span class="codeph"> q1=piccolo;x1=dimensione;q2=rosso;x2=colore  </span> </p> <p>Questo parametro viene mappato sui parametri di ricerca di back-end <span class="codeph"> sp_x_# </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> raccolta </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> collection= string </span> </p> </td> 
-   <td colname="col3"> <p> Specifica la raccolta da utilizzare per la ricerca. Questo parametro viene mappato sul parametro di ricerca <span class="codeph"> sp_k </span> di back-end. </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> collection= string  </span> </p> </td> 
+   <td colname="col3"> <p> Specifica la raccolta da utilizzare per la ricerca. Questo parametro viene mappato sul parametro di ricerca di back-end <span class="codeph"> sp_k </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> count </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> count= number </span> </p> </td> 
-   <td colname="col3"> <p> Specifica il conteggio totale dei risultati visualizzati. Il valore predefinito è definito in <span class="uicontrol"> Settings (Impostazioni) </span> &gt; <span class="uicontrol"> Searching ( </span> Ricerca) <span class="uicontrol"> &gt; </span>Searches (Ricerche). Questo parametro viene mappato sul parametro di ricerca <span class="codeph"> sp_c </span> back-end. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> count  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> count= number  </span> </p> </td> 
+   <td colname="col3"> <p> Specifica il conteggio totale dei risultati visualizzati. Il valore predefinito è definito in <span class="uicontrol"> Impostazioni </span> &gt; <span class="uicontrol"> Ricerca </span> &gt; <span class="uicontrol"> Ricerche </span>. Questo parametro viene mappato sul parametro di ricerca di back-end <span class="codeph"> sp_c </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> page </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> page= number </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> page= number  </span> </p> </td> 
    <td colname="col3"> <p> Specifica la pagina dei risultati restituiti. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> rank </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> rank= field </span> </p> </td> 
-   <td colname="col3"> <p> Specifica il campo di classificazione da utilizzare per la classificazione statica. Il campo deve essere un campo di tipo Classifica con rilevanza maggiore di 0. Questo parametro viene mappato sul parametro <span class="codeph"> sp_sr </span> backend. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> rank  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> rank= field  </span> </p> </td> 
+   <td colname="col3"> <p> Specifica il campo di classificazione da utilizzare per la classificazione statica. Il campo deve essere un campo di tipo Classifica con rilevanza maggiore di 0. Questo parametro viene mappato sul parametro di backend <span class="codeph"> sp_sr </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> gs_store </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> gs_store= stringa </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> gs_store  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> gs_store= stringa  </span> </p> </td> 
    <td colname="col3"> <p> Specifica lo store da cercare. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> sort </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> sort= number </span> </p> </td> 
-   <td colname="col3"> <p> Specifica l'ordinamento. "0" è l'impostazione predefinita e ordina per punteggio di rilevanza; "1", per data; "-1" non esegue l'ordinamento. </p> <p>Gli utenti possono specificare un nome di campo per il valore del <span class="codeph"> parametro sp_s </span> . Ad esempio, <span class="codeph"> sp_s=title </span> ordina i risultati in base ai valori contenuti nel campo title. Quando un nome di campo viene utilizzato per il valore di un parametro <span class="codeph"> sp_s </span> , i risultati vengono ordinati in base a tale campo e quindi suddivisi per rilevanza. </p> <p>Per attivare questa funzione, effettuate le seguenti operazioni: </p> 
+   <td colname="col1"> <p> <span class="codeph"> sort  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> sort= number  </span> </p> </td> 
+   <td colname="col3"> <p> Specifica l'ordinamento. "0" è l'impostazione predefinita e ordina per punteggio di rilevanza; "1", per data; "-1" non esegue l'ordinamento. </p> <p>Gli utenti possono specificare un nome di campo per il valore del parametro <span class="codeph"> sp_s </span>. Ad esempio, <span class="codeph"> sp_s=title </span> ordina i risultati in base ai valori contenuti nel campo title. Quando un nome di campo viene utilizzato per il valore di un parametro <span class="codeph"> sp_s </span>, i risultati vengono ordinati in base a tale campo e quindi suddivisi per rilevanza. </p> <p>Per attivare questa funzione, effettuate le seguenti operazioni: </p> 
     <ol id="ol_3894F81EA7BF4827A84DE8662111ABEF"> 
      <li id="li_C040C0B88F174A4885E1A8E721FD032A">Nel menu del prodotto, fate clic su <span class="uicontrol"> Impostazioni </span> &gt; <span class="uicontrol"> Metadati </span> &gt; <span class="uicontrol"> Definizioni </span>. </li> 
-     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">Nella <span class="wintitle"> pagina Definizioni </span> in fase, effettuate una delle seguenti operazioni: 
+     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">Nella pagina <span class="wintitle"> Definizioni intermedie </span>, effettuare una delle seguenti operazioni: 
       <ul id="ul_8018FEE10E0A4C96A74F84A897080580"> 
-       <li id="li_E9A7CE43E2734F4D9522A1283CA111FB">Click <span class="uicontrol"> Add New Field </span>. </li> 
-       <li id="li_9D2434A321924FBD874569CA9AD2EEF7">Fate clic su <span class="uicontrol"> Modifica </span> per specificare un nome di campo. </li> 
+       <li id="li_E9A7CE43E2734F4D9522A1283CA111FB">Fare clic su <span class="uicontrol"> Aggiungi nuovo campo </span>. </li> 
+       <li id="li_9D2434A321924FBD874569CA9AD2EEF7">Fare clic su <span class="uicontrol"> Modifica </span> per specificare il nome di un campo. </li> 
       </ul> </li> 
-     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">Nell’elenco a <span class="wintitle"> discesa Ordinamento </span> , fare clic su <span class="uicontrol"> Crescente </span> o <span class="uicontrol"> Discendente </span>. <p>Questo parametro viene mappato sul parametro di ricerca <span class="codeph"> sp_s </span> di back-end. </p> </li> 
+     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">Nell'elenco a discesa <span class="wintitle"> Ordinamento </span>, fare clic su <span class="uicontrol"> Crescente </span> o <span class="uicontrol"> Decrescente </span>. <p>Questo parametro viene mappato sul parametro di ricerca di back-end <span class="codeph"> sp_s </span>. </p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
@@ -135,19 +138,19 @@ Di seguito sono riportati alcuni suggerimenti per l&#39;integrazione con il sist
 
 * Comunicazione con il server di ricerca.
 
-   Potete comunicare con i server [!DNL Adobe Search&Promote] Web utilizzando le richieste http GET. I server generano tali richieste o sul lato client che esegue una richiesta Ajax.
+   È possibile comunicare con i server Web [!DNL Adobe Search&Promote] utilizzando le richieste HTTP. I server generano tali richieste o sul lato client che esegue una richiesta Ajax.
 * Salvataggio della cronologia di ricerca.
 
 [!DNL Adobe Search&Promote] è stateless in cui viene passato l’intero stato nella richiesta http.
 * Analisi dei risultati restituiti.
 
-   Si consiglia di utilizzare un parser XML basato su SAX per analizzare la risposta XML. Se state generando una richiesta Ajax, configurate [!DNL Adobe Search&Promote] per restituire le risposte JSON per tali richieste, in modo da facilitare l’analisi della risposta.
+   Si consiglia di utilizzare un parser XML basato su SAX per analizzare la risposta XML. Se state generando una richiesta Ajax, configurate [!DNL Adobe Search&Promote] per restituire le risposte JSON per tali richieste, in modo da facilitare l&#39;analisi della risposta.
 
 ## Ricerca guidata Output JSON {#reference_EB8182A564DE4374BB84158F2AABEF74}
 
 Tabelle che descrivono l’output di risposta JSON standard.
 
-Consultate anche [Guided Search JSON Output](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74).
+Vedere anche [Guided Search JSON Output](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74).
 
 Potete esaminare la risposta JSON per i seguenti elementi:
 
@@ -239,11 +242,11 @@ Esempio:
 
 ## Facet {#section_65932C95931743A1BFAF1DF16D7E6D92}
 
-I facet sono opzioni di perfezionamento che consentono ai clienti di filtrare in base ai risultati. I facet sono comunemente utilizzati per la categorizzazione, le gamme di prezzo, le selezioni di colore e altri miglioramenti degli attributi. I metadati nell&#39;indice sono i fattori che determinano la gestione dei facet.
+I facet sono opzioni di perfezionamento che consentono ai clienti di filtrare in base ai risultati. I facet sono comunemente utilizzati per la categorizzazione, le fasce di prezzo, le selezioni di colore e altri miglioramenti degli attributi. I metadati nell&#39;indice sono i fattori che determinano la gestione dei facet.
 
 È comune nascondere o mostrare i facet di categorizzazione quando un cliente passa attraverso la categorizzazione. Il livello più elevato di classificazione (categoria) è noto come livello 1. Quando un cliente fa clic su un&#39;opzione di livello 1, vengono visualizzate le opzioni di perfezionamento di livello 2 (sottocategoria) e le opzioni di livello 1 scompaiono. Quando un cliente fa clic su un&#39;opzione Livello 2, vengono visualizzate le opzioni di perfezionamento Livello 3 (sottocategoria) e le opzioni Livello 2 scompaiono. Come indicato in precedenza, queste opzioni sono nascoste e l&#39;applicazione Web non viene influenzata da esse.
 
-Ogni facet è contenuto all’interno `<facet-item>` dei tag. Nell&#39;esempio seguente, viene visualizzato un facet che consente al cliente di perfezionare i risultati della ricerca per &quot;festività&quot;.
+Ogni facet è contenuto all&#39;interno di `<facet-item>` tag. Nell&#39;esempio seguente, viene visualizzato un facet che consente al cliente di perfezionare i risultati della ricerca per &quot;festività&quot;.
 
 Esempio:
 
@@ -379,29 +382,29 @@ Utilizzati insieme, questi tag presentano un messaggio come: &quot;Risultati 1-1
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;query utente&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
    <td colname="col2"> <p> Query parola chiave inviata con la richiesta. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;risultati inferiori&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;lower-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> Numero elemento del primo risultato in questa pagina. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;risultati superiori&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;upper-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> Il numero dell'ultimo risultato su questa pagina. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;totale-risultati&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;total-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> Il numero totale di risultati che corrispondono alla query utente. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;campo personalizzato&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;custom-field&gt; </span> </p> </td> 
    <td colname="col2"> <p> Un campo facoltativo che si applica globalmente ai risultati della ricerca. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Paginazione {#section_504E7AB570BD49AF9839530DC438EE96}
+## Impaginazione {#section_504E7AB570BD49AF9839530DC438EE96}
 
 Esempio:
 
@@ -436,7 +439,7 @@ Esempio:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;totale pagine&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;total-pages&gt; </span> </p> </td> 
    <td colname="col2"> <p> Numero totale di pagine di risultati, in base al numero di risultati diviso per il numero di risultati per pagina. </p> </td> 
   </tr> 
   <tr> 
@@ -456,11 +459,11 @@ Esempio:
    <td colname="col2"> <p> Contiene un collegamento relativo all'ultima pagina del set di risultati, a meno che il cliente non visualizzi l'ultima pagina. In tal caso, è vuota. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x" </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
    <td colname="col2"> <p> Contiene un collegamento relativo a un particolare numero di pagina. Vengono visualizzati dieci numeri di pagina contigui. A pagina 1, sarebbero le pagine 1-10. Alla fine del set di risultati (in questo caso, 39), sarebbero le pagine 30-39. Ad esempio, al centro del set di risultati, pagina 15, si trovano le pagine 11-20. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt;  </span> </p> </td> 
    <td colname="col2"> <p> Applicato come attributo alla pagina attualmente selezionata. </p> </td> 
   </tr> 
  </tbody> 
@@ -490,7 +493,7 @@ Esempio:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;ricerca recente&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
    <td colname="col2"> <p> Un singolo nodo di ricerca recente. Potete avere più nodi di ricerca recenti. </p> </td> 
   </tr> 
   <tr> 
@@ -685,7 +688,7 @@ Esempio:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Facoltativo. Se presente in JSON, un valore pari a 1 indica che l’account è collegato a <span class="keyword"> Test&amp;Target </span> e che ha almeno una regola business inclusa in un test A:B. </p> </td> 
+   <td colname="col2"> <p> Facoltativo. Se presente in JSON, un valore pari a 1 indica che l'account è collegato a <span class="keyword"> Test&amp;Target </span> e ha almeno una regola business che si trova in un test A:B. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
@@ -696,7 +699,7 @@ Esempio:
    <td colname="col2"> <p> Il CSS associato al completamento automatico. Per migliorare il rendering della pagina, si consiglia di posizionare questo tag in alto nella pagina. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;content-form&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;form-content&gt; </span> </p> </td> 
    <td colname="col2"> <p> Contenuto richiesto all'interno della ricerca per l'utilità di completamento automatico per collegarsi al controllo corretto. </p> </td> 
   </tr> 
   <tr> 
@@ -750,7 +753,7 @@ Esempio:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Rappresenta il valore del parametro della stringa di query di ordinamento per questa opzione. Questo tag non è necessario se viene utilizzato il valore <span class="codeph"> &lt;link&gt; </span> . </p> </td> 
+   <td colname="col2"> <p> Rappresenta il valore del parametro della stringa di query di ordinamento per questa opzione. Questo tag non è necessario se viene utilizzato il valore <span class="codeph"> &lt;link&gt; </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -817,7 +820,7 @@ Esempio:
    <td colname="col2"> <p> Un singolo nodo di zona. È possibile avere più nodi di area. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;nome&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;name&gt; </span> </p> </td> 
    <td colname="col2"> <p> Nome della zona. </p> </td> 
   </tr> 
   <tr> 
@@ -827,7 +830,7 @@ Esempio:
  </tbody> 
 </table>
 
-## Ricerca guidata Output XML {#reference_D93E859A277643068B10AE7A61C973EA}
+## Uscita XML di ricerca guidata {#reference_D93E859A277643068B10AE7A61C973EA}
 
 Tabelle che descrivono l&#39;output di risposta XML standard.
 
@@ -925,7 +928,7 @@ I facet sono opzioni di perfezionamento che consentono ai clienti di filtrare in
 
 È comune nascondere o mostrare i facet di categorizzazione quando un cliente passa attraverso la categorizzazione. Il livello più elevato di classificazione (categoria) è noto come livello 1. Quando un cliente fa clic su un&#39;opzione di livello 1, vengono visualizzate le opzioni di perfezionamento di livello 2 (sottocategoria) e le opzioni di livello 1 scompaiono. Quando un cliente fa clic su un&#39;opzione Livello 2, vengono visualizzate le opzioni di perfezionamento Livello 3 (sottocategoria) e le opzioni Livello 2 scompaiono. Come indicato in precedenza, queste opzioni sono nascoste e l&#39;applicazione Web non viene influenzata da esse.
 
-Ogni facet è contenuto all’interno `<facet-item>` dei tag. Nell&#39;esempio seguente, viene visualizzato un facet che consente al cliente di perfezionare i risultati della ricerca per &quot;festività&quot;.
+Ogni facet è contenuto all&#39;interno di `<facet-item>` tag. Nell&#39;esempio seguente, viene visualizzato un facet che consente al cliente di perfezionare i risultati della ricerca per &quot;festività&quot;.
 
 Esempio:
 
@@ -1062,29 +1065,29 @@ Utilizzati insieme, questi tag presentano un messaggio come: &quot;Risultati 1-1
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;query utente&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
    <td colname="col2"> <p> Query parola chiave inviata con la richiesta. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;risultati inferiori&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;lower-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> Numero elemento del primo risultato in questa pagina. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;risultati superiori&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;upper-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> Il numero dell'ultimo risultato su questa pagina. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;totale-risultati&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;total-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> Il numero totale di risultati che corrispondono alla query utente. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;campo personalizzato&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;custom-field&gt; </span> </p> </td> 
    <td colname="col2"> <p> Un campo facoltativo che si applica globalmente ai risultati della ricerca. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Paginazione {#section_72DB86DDE1284B1EA295CFFBC16A3150}
+## Impaginazione {#section_72DB86DDE1284B1EA295CFFBC16A3150}
 
 Esempio:
 
@@ -1119,7 +1122,7 @@ Esempio:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;totale pagine&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;total-pages&gt; </span> </p> </td> 
    <td colname="col2"> <p> Numero totale di pagine di risultati, in base al numero di risultati diviso per il numero di risultati per pagina. </p> </td> 
   </tr> 
   <tr> 
@@ -1139,11 +1142,11 @@ Esempio:
    <td colname="col2"> <p> Contiene un collegamento relativo all'ultima pagina del set di risultati, a meno che il cliente non visualizzi l'ultima pagina. In tal caso, è vuota. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x" </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
    <td colname="col2"> <p> Contiene un collegamento relativo a un particolare numero di pagina. Vengono visualizzati dieci numeri di pagina contigui. A pagina 1, sarebbero le pagine 1-10. Alla fine del set di risultati (in questo caso, 39), sarebbero le pagine 30-39. Ad esempio, al centro del set di risultati, pagina 15, si trovano le pagine 11-20. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt;  </span> </p> </td> 
    <td colname="col2"> <p> Applicato come attributo alla pagina attualmente selezionata. </p> </td> 
   </tr> 
  </tbody> 
@@ -1173,7 +1176,7 @@ Esempio:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;ricerca recente&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
    <td colname="col2"> <p> Un singolo nodo di ricerca recente. Potete avere più nodi di ricerca recenti. </p> </td> 
   </tr> 
   <tr> 
@@ -1368,7 +1371,7 @@ Esempio:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Facoltativo. Quando è presente nel codice XML, un valore pari a 1 indica che l’account è collegato a <span class="keyword"> Test&amp;Target </span> e ha almeno una regola business presente in un test A:B. </p> </td> 
+   <td colname="col2"> <p> Facoltativo. Quando è presente nel codice XML, un valore pari a 1 indica che l'account è collegato a <span class="keyword"> Test&amp;Target </span> e ha almeno una regola business presente in un test A:B. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
@@ -1379,7 +1382,7 @@ Esempio:
    <td colname="col2"> <p> Il CSS associato al completamento automatico. Per migliorare il rendering della pagina, si consiglia di posizionare questo tag in alto nella pagina. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;content-form&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;form-content&gt; </span> </p> </td> 
    <td colname="col2"> <p> Contenuto richiesto all'interno della ricerca per l'utilità di completamento automatico per collegarsi al controllo corretto. </p> </td> 
   </tr> 
   <tr> 
@@ -1433,7 +1436,7 @@ Esempio:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Rappresenta il valore del parametro della stringa di query di ordinamento per questa opzione. Questo tag non è necessario se viene utilizzato il valore <span class="codeph"> &lt;link&gt; </span> . </p> </td> 
+   <td colname="col2"> <p> Rappresenta il valore del parametro della stringa di query di ordinamento per questa opzione. Questo tag non è necessario se viene utilizzato il valore <span class="codeph"> &lt;link&gt; </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -1500,7 +1503,7 @@ Esempio:
    <td colname="col2"> <p> Un singolo nodo di zona. È possibile avere più nodi di area. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;nome&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;name&gt; </span> </p> </td> 
    <td colname="col2"> <p> Nome della zona. </p> </td> 
   </tr> 
   <tr> 
@@ -1510,9 +1513,9 @@ Esempio:
  </tbody> 
 </table>
 
-## Guided Search XML Output per Adobe Experience Manager {#reference_DBE13C606C3A4BB185DE53F88D0D3048}
+## Ricerca guidata Output XML per Adobe Experience Manager {#reference_DBE13C606C3A4BB185DE53F88D0D3048}
 
-Tabelle che descrivono l’output di risposta XML standard per AEM (Adobe Experience Manager).
+Tabelle che descrivono l&#39;output di risposta XML standard per AEM (Adobe Experience Manager).
 
 Vedi anche . [Ricerca guidata Output XML](../c-appendices/c-guidedsearchoutput.md#reference_D93E859A277643068B10AE7A61C973EA)
 
@@ -1584,7 +1587,7 @@ Di seguito è riportato un esempio di un banner posizionato nell&#39;area delle 
 
 ## Breadcrumb {#section_49EA7043FBE44315A79A4E738BE30114}
 
-Sono supportate più breadcrumb. Potete definire le breadcrumb e il relativo comportamento in **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**. Dovete inoltre assegnare un nome univoco a ogni breadcrumb definito. Il nodo XML di breadcrumb si ripete su tutte le breadcrumb definite. È consigliabile visualizzare solo una breadcrumb nei risultati della ricerca.
+Sono supportate più breadcrumb. È possibile definire le breadcrumb e il relativo comportamento in **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**. Dovete inoltre assegnare un nome univoco a ogni breadcrumb definito. Il nodo XML di breadcrumb si ripete su tutte le breadcrumb definite. È consigliabile visualizzare solo una breadcrumb nei risultati della ricerca.
 
 Nell&#39;esempio seguente, ogni volta che il cliente si restringe ulteriormente attraverso i facet, la selezione viene aggiunta alla breadcrumb. Ogni elemento è rappresentato come `<breadcrumb-item>`.
 
@@ -1696,7 +1699,7 @@ I facet sono opzioni di perfezionamento che consentono ai clienti di filtrare in
 
 È comune nascondere o mostrare i facet di categorizzazione quando un cliente passa attraverso la categorizzazione. Il livello più elevato di classificazione (categoria) è noto come livello 1. Quando un cliente fa clic su un&#39;opzione di livello 1, vengono visualizzate le opzioni di perfezionamento di livello 2 (sottocategoria) e le opzioni di livello 1 scompaiono. Quando un cliente fa clic su un&#39;opzione di livello 2, vengono visualizzate le opzioni di rifinitura di livello 3 (sottocategoria) e le opzioni di livello 2 scompaiono. Come indicato sopra, queste opzioni sono nascoste e visualizzate; l’applicazione Web non li influisce.
 
-Ogni facet è contenuto all’interno `<facet-item>` dei tag. Nell&#39;esempio seguente, viene visualizzato un facet che consente al cliente di perfezionare i risultati della ricerca per &quot;festività&quot;.
+Ogni facet è contenuto all&#39;interno di `<facet-item>` tag. Nell&#39;esempio seguente, viene visualizzato un facet che consente al cliente di perfezionare i risultati della ricerca per &quot;festività&quot;.
 
 Esempio di blocco facet:
 
@@ -1948,7 +1951,7 @@ L&#39;esempio seguente mostra i dati per un menu di ordinamento e un menu di nav
   <tr> 
    <td colname="col1"> <p>  </p> </td> 
    <td colname="col2"> <p>menu </p> </td> 
-   <td colname="col3"> <p>Una singola istanza di un menu (corrisponde a un menu definito in <span class="uicontrol"> Design </span> &gt; <span class="uicontrol"> Navigation </span> &gt; <span class="uicontrol"> Menu </span>). </p> </td> 
+   <td colname="col3"> <p>Una singola istanza di un menu (corrisponde a un menu definito in <span class="uicontrol"> Progettazione </span> &gt; <span class="uicontrol"> Navigazione </span> &gt; <span class="uicontrol"> Menu </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
@@ -1958,7 +1961,7 @@ L&#39;esempio seguente mostra i dati per un menu di ordinamento e un menu di nav
   <tr> 
    <td colname="col1"> <p>elemento </p> </td> 
    <td colname="col2"> <p>  </p> </td> 
-   <td colname="col3"> <p>Definisce ciascuna voce del menu. L'attributo facoltativo selezionato è impostato su true se la voce di menu specificata è attualmente selezionata. </p> </td> 
+   <td colname="col3"> <p>Definisce ciascuna voce del menu. L'attributo opzionale selezionato è impostato su true se la voce di menu specificata è attualmente selezionata. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>label </p> </td> 
@@ -1978,7 +1981,7 @@ L&#39;esempio seguente mostra i dati per un menu di ordinamento e un menu di nav
  </tbody> 
 </table>
 
-## Paginazione {#section_E52F81C6A6EB4B8F996157B657EC540F}
+## Impaginazione {#section_E52F81C6A6EB4B8F996157B657EC540F}
 
 I set di risultati sono suddivisi su più pagine. In genere i clienti visualizzano 10-20 risultati su una singola pagina. I risultati successivi vengono visualizzati nella pagina successiva. L’XML di impaginazione consente di creare un set di collegamenti di navigazione che consentono ai clienti di sfogliare, pagina per pagina, i set di risultati. Sono disponibili quattro collegamenti di navigazione: first, last, next e previous. Ogni tipo di collegamento consente ai clienti di spostarsi rapidamente tra le pagine in modo che possano rivedere e perfezionare facilmente ciò che cercano.
 
@@ -2064,7 +2067,7 @@ Esempio di nodo di query:
   <tr> 
    <td colname="col1"> <p>user-query </p> </td> 
    <td colname="col2"> <p>query </p> </td> 
-   <td colname="col3"> <p> La parola chiave cercata. Se <span class="uicontrol"> intendete cercare </span> automaticamente un termine suggerito a causa del termine originale senza risultati, questo si riflette nella nuova parola chiave cercata (consultate il nodo dei suggerimenti per ottenere la parola chiave originale). </p> </td> 
+   <td colname="col3"> <p> La parola chiave cercata. Se <span class="uicontrol"> Avete inteso </span> ricercato automaticamente un termine suggerito a causa del termine originale che non genera risultati, questo si riflette nella nuova parola chiave cercata (consultate il nodo dei suggerimenti per ottenere la parola chiave originale). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>minor risultato </p> </td> 
@@ -2302,7 +2305,7 @@ Esempio di modulo di ricerca XML:
 
 ## Suggerimenti {#section_2899FACB9AD84F60B3687C1B4EF09E15}
 
-I clienti possono configurare **[!UICONTROL Did You Mean]** le funzionalità in tre modi: fate suggerimenti a causa di nessun risultato, cercate automaticamente in base al primo suggerimento quando non abbiamo risultati, o fate suggerimenti a causa di risultati bassi (dove i suggerimenti hanno un conteggio di risultati più alto). Tutti i suggerimenti danno risultati.
+I clienti possono configurare la funzionalità **[!UICONTROL Did You Mean]** in tre modi: fate suggerimenti a causa di nessun risultato, cercate automaticamente in base al primo suggerimento quando non abbiamo risultati, o fate suggerimenti a causa di risultati bassi (dove i suggerimenti hanno un conteggio di risultati più alto). Tutti i suggerimenti danno risultati.
 
 Questo nodo di suggerimenti contiene i termini che generano query di successo. Viene inoltre restituito il collegamento in modo che il cliente possa passare alla nuova query.
 
@@ -2369,7 +2372,7 @@ Esempio di output per la creazione di suggerimenti a causa di risultati ridotti:
   <tr> 
    <td colname="col1"> <p>suggerimenti-risultati bassi </p> </td> 
    <td colname="col2"> <p>suggerimenti </p> </td> 
-   <td colname="col3"> <p>Se presente, indica se la ricerca del sito/merchandising sta dando suggerimenti a causa del termine di ricerca corrente che genera risultati bassi e un suggerimento che genera risultati notevolmente più alti. Le due soglie sono configurabili in <span class="uicontrol"> Vero </span>. </p> </td> 
+   <td colname="col3"> <p>Se presente, indica se la ricerca del sito/merchandising sta dando suggerimenti a causa del termine di ricerca corrente che genera risultati bassi e un suggerimento che genera risultati notevolmente più alti. Le due soglie sono configurabili in <span class="uicontrol"> </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>sug-item </p> </td> 
@@ -2465,14 +2468,14 @@ Esempio di nodi di zona:
 
 ## Esempi {#reference_64B7D8D228AF4B8D90EDF4DE507B0F84}
 
-Esempio di output per una ricerca * in un sito Web fittizio denominato Geometrixx e un modello di presentazione di esempio utilizzato per generare l’output di esempio.
+Esempio di output per una ricerca * in un sito Web fittizio denominato Geometrixx e un modello di presentazione di esempio utilizzato per generare l&#39;output di esempio.
 
 * [Esempio di output](../c-appendices/c-guidedsearchoutput.md#section_515C000A18B847D59097D0A9CCC02636)
 * [Esempio di modello di presentazione](../c-appendices/c-guidedsearchoutput.md#section_AD42571DFB88491AA7F0FDF0929EBE97)
 
 ## Esempio di output {#section_515C000A18B847D59097D0A9CCC02636}
 
-Esempio di output per una ricerca * in un sito Web fittizio denominato Geometrixx.
+Esempio di output per una ricerca * in un sito web fittizio denominato Geometrixx.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?> 
