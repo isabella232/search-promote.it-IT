@@ -8,13 +8,16 @@ topic: Appendices,Site search and merchandising
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
 translation-type: tm+mt
 source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+workflow-type: tm+mt
+source-wordcount: '8639'
+ht-degree: 0%
 
 ---
 
 
 # Domande frequenti{#frequently-asked-questions}
 
-## Adobe Flash {#reference_4A25BBDE32214AF5A1A454F38FD51243}
+## Flash Adobe  {#reference_4A25BBDE32214AF5A1A454F38FD51243}
 
 Pagina delle domande frequenti in cui viene illustrato il supporto dell’indicizzazione e della ricerca di file SWF in un sito Web.
 
@@ -43,17 +46,17 @@ Un file SWF viene sottoposto a ricerca per indicizzazione e indicizzazione se è
 
 Un file SWF viene riconosciuto anche se l’URL del file è elencato come punto di ingresso.
 
-Consultate [Aggiunta di più punti di ingresso URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consultate [Aggiunta di più punti di immissione URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## Cosa devo fare per indicizzare un file SWF? {#section_0A6A52CC70D4495BBE14D91906318F95}
 
-Per eseguire la ricerca per indicizzazione e indicizzare i file SWF, selezionate il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
+Per eseguire ricerche per indicizzazione e indicizzare i file SWF, selezionare il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-Fintanto che al file Flash viene fatto riferimento da un `<embed>` tag o un `<object>` tag in un documento HTML, il testo viene indicizzato e tutti gli URL elencati nel file vengono sottoposti a ricerca per indicizzazione.
+Fintanto che al file di Flash viene fatto riferimento da un tag `<embed>` o `<object>` in un documento HTML, il testo viene indicizzato e tutti gli URL elencati nel file vengono sottoposti a ricerca per indicizzazione.
 
-Se al file non viene fatto riferimento da un `<embed>` tag o da un `<object>` tag, potete elencare il file SWF in un `<a href=...>` tag in un documento HTML o come punto di ingresso dell’URL.
+Se al file non viene fatto riferimento da un tag `<embed>` o `<object>`, è possibile elencare il file SWF in un tag `<a href=...>` in un documento HTML o come punto di ingresso dell&#39;URL.
 
-Consultate [Aggiunta di più punti di ingresso URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consultate [Aggiunta di più punti di immissione URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## Come vengono riconosciuti i file SWF? {#section_B36C0536AB544F509601DC6A11A8E656}
 
@@ -61,7 +64,7 @@ I file SWF sono identificati dal seguente tipo MIME:
 
 `application/x-shockwave-flash`
 
-I file SWF sono riconosciuti anche con tipi `application/octet-stream`&quot; o `text/plain` MIME, a condizione che l&#39;estensione sia .swf.
+I file SWF vengono riconosciuti anche con i tipi `application/octet-stream`&quot; o `text/plain` MIME, a condizione che l&#39;estensione del file sia .swf.
 
 Un server non configurato correttamente potrebbe utilizzare un tipo MIME diverso per i file SWF. Accertatevi di controllare la configurazione del server in caso di problemi di ricerca per indicizzazione e indicizzazione dei file SWF.
 
@@ -71,11 +74,11 @@ Il testo contenuto in un file SWF è indicizzato come se fosse `<body>` testo ne
 
 Se un file SWF contiene un URL come azione &quot;Carica filmato&quot;, il testo nel file SWF a cui viene fatto riferimento viene indicizzato come parte della pagina HTML di cui fa riferimento.
 
-Se un file SWF contiene un URL come azione &quot;Ottieni URL&quot;, l’URL viene sottoposto a ricerca per indicizzazione in un secondo momento, proprio come un riferimento HTML `<a href=...>` viene sottoposto a ricerca per indicizzazione in un secondo momento.
+Se un file SWF contiene un URL come azione &quot;Ottieni URL&quot;, l&#39;URL viene sottoposto a ricerca per indicizzazione e viene quindi indicizzato, proprio come un riferimento HTML `<a href=...>` viene sottoposto a ricerca per indicizzazione in un secondo momento.
 
 Se un file SWF è elencato come punto di ingresso URL, il testo del file SWF viene indicizzato come una singola pagina. Un risultato di ricerca che trova testo da un collegamento SWF punto di ingresso direttamente al filmato, non a una pagina HTML di inclusione.
 
-Consultate [Aggiunta di più punti di ingresso URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consultate [Aggiunta di più punti di immissione URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## Un file SWF viene conteggiato come pagina? {#section_0158D6DE70BC40D78E2374787B9F58AB}
 
@@ -85,15 +88,15 @@ Se un file SWF è elencato come punto di ingresso dell&#39;URL, tale file SWF e 
 
 ## Come posso impedire l&#39;indicizzazione di singoli file SWF? {#section_E38AD37989EF410B97AF5125057BFD22}
 
-Per impedire l’indicizzazione di un file SWF, al documento HTML di cui fa parte potete aggiungere un tag meta ( `<meta name="ROBOTS" content="NOINDEX">`) o un `<noindex>` tag . Ovvero, il documento che contiene il `<embed>` tag o `<object>` .
+Per impedire l&#39;indicizzazione di un file SWF, è possibile aggiungere al documento HTML che lo contiene un tag meta robot ( `<meta name="ROBOTS" content="NOINDEX">`) o un tag `<noindex>`. ovvero il documento contenente il tag `<embed>` o `<object>`.
 
-Potete anche usare il tag meta ( `<meta name="ROBOTS" content="NOFOLLOW">`) robot per impedire che i seguenti URL siano contenuti nel file SWF. Se il documento HTML di cui fa parte è disattivato, le azioni &quot;Ottieni URL&quot; elencate nel file SWF non vengono seguite.
+È inoltre possibile utilizzare il tag meta robot ( `<meta name="ROBOTS" content="NOFOLLOW">`) per impedire i seguenti URL contenuti nel file SWF. Se il documento HTML di cui fa parte è disattivato, le azioni &quot;Ottieni URL&quot; elencate nel file SWF non vengono seguite.
 
 ## Come posso impedire che i file SWF vengano indicizzati sul mio sito Web? {#section_DF2606A50E9A44859CFA0D44D7C5F2E4}
 
 Per disattivare l&#39;indicizzazione SWF, deselezionare il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-Potete anche scegliere di disattivare [!DNL URL Masks] l’indicizzazione dei file SWF.
+Potete anche scegliere di utilizzare [!DNL URL Masks] per disattivare l&#39;indicizzazione dei file SWF.
 
 Consultate [Aggiunta di maschere URL per indicizzare o meno parti indice di...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
@@ -102,68 +105,68 @@ Per disattivare l’indicizzazione SWF, immettete una delle seguenti maschere UR
 * `exclude *.swf` (se non si utilizzano espressioni regolari)
 * `exclude regexp ^.*\.swf$` (se utilizzate espressioni regolari)
 
-Consultate Espressioni [](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A)regolari.
+Vedere [Espressioni regolari](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## Com&#39;è possibile che non sia possibile effettuare ricerche nei file SWF cinesi, giapponesi o coreani sul sito Web? {#section_EE1A3A705AE74148BD195A0CE513A5C4}
 
-La ricerca nel sito/merchandising ottiene l’UTF-8 dai file SWF creati con Adobe Flash. L&#39;UTF-8 non contiene alcuna indicazione di lingua. Se avete selezionato il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), dovete usare le iniezioni di metadati per specificare la lingua utilizzata dal file SWF.
+Ricerca nel sito/merchandising ottiene UTF-8 dai file SWF creati con  Flash di Adobe. L&#39;UTF-8 non contiene alcuna indicazione di lingua. Se è stato selezionato il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare le iniezioni di metadati per specificare la lingua utilizzata dal file SWF.
 
-Vedere [Aggiunta di definizioni](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)di iniezione di campi.
+Vedere [Aggiunta di definizioni di inserimento di campi](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 I file SWF precedenti non specificano neanche un set di caratteri. Se è stato selezionato il tipo di contenuto SWF **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare i metadati Iniezioni per specificare il set di caratteri utilizzato nel file SWF.
 
 ## Ricerca generale {#reference_E2C675162789452A9B99C6633B12CBEF}
 
-Una pagina di domande frequenti in cui viene spiegato in che modo la ricerca del sito/merchandising aiuta i clienti che visitano il sito Web a trovare le informazioni che stanno cercando.
+Pagina delle domande frequenti in cui viene illustrato come la ricerca/merchandising dei siti consente ai clienti che visitano il sito Web di trovare ciò che cercano.
 
-Di seguito sono riportate alcune domande comuni relative alla ricerca generale:
+Di seguito sono riportate le domande comuni relative alla ricerca generale:
 
-* [Devo installare un software per utilizzare il sito...](#section_02AB2AFF71984F9DAA3AF2B7C0847A22)
-* [Cosa succede quando il sito supera il limite di pagine?](#section_ECA5FA01032D4322BABA4E2C7FE498C1)
-* [Come posso cambiare l&#39;indirizzo e-mail in cui si trova la settimana...](#section_AE27F63DD13F425B940C8E7D9ED5C614)
-* [Quanto sono sicure le informazioni del cliente sulla ricerca del sito/merchandising?](#section_5484CB954167412BB7F0480CB0C504B8)
+* [È necessario installare un software per utilizzare il sito?...](#section_02AB2AFF71984F9DAA3AF2B7C0847A22)
+* [Cosa accade quando il sito supera il limite di pagine?](#section_ECA5FA01032D4322BABA4E2C7FE498C1)
+* [Come si modifica l&#39;indirizzo e-mail in cui la settimana...](#section_AE27F63DD13F425B940C8E7D9ED5C614)
+* [Quanto sono sicure le informazioni dei clienti sulla ricerca/merchandising sul sito?](#section_5484CB954167412BB7F0480CB0C504B8)
 * [E la privacy delle informazioni sui clienti?](#section_8FB493F15E51454BA92A0C83E14C0CC7)
-* [Posso mostrare i miei banner pubblicitari sulla ricerca...](#section_611EB8B32C16418386CB7DC7FB6954B8)
+* [Posso mostrare i miei banner pubblicitari nella ricerca...](#section_611EB8B32C16418386CB7DC7FB6954B8)
 
-Seguono alcune domande comuni sulle funzioni di ricerca:
+Di seguito sono riportate alcune domande comuni sulle funzioni di ricerca:
 
 * [È possibile personalizzare i risultati della ricerca per il sito?](#section_A64B3A621B794DF78D35ED06D9C43D0B)
 * [Posso vedere quali clienti stanno cercando sul mio...](#section_73709E1B0E82478DA7B4D15B6C845F33)
-* [Come è possibile controllare quali tipi di contenuto (PDF, testo, Flash, MP3 e Microsoft Office) vengono indicizzati e cercati?](#section_0AB8CB4B6BFA4286AA082055FEBFBE1C)
-* [Sono supportate pagine Web generate dinamicamente tramite contenuti basati su ASP, JSP, PHP, CFM o Perl?](#section_E279F004F1C542A2B9773B832E7B013F)
+* [Come è possibile controllare quali tipi di contenuto (PDF, testo, Flash, MP3 e Microsoft Office) vengono indicizzati e sottoposti a ricerca?](#section_0AB8CB4B6BFA4286AA082055FEBFBE1C)
+* [Le pagine Web generate in modo dinamico tramite contenuti basati su ASP, JSP, PHP, CFM o Perl sono supportate?](#section_E279F004F1C542A2B9773B832E7B013F)
 * [Come posso utilizzare i sinonimi per migliorare i risultati della ricerca...](#section_E6E36E12514F4D7BAB01F8D1AB61D57B)
-* [Ho il controllo sull&#39;ordine dei risultati della ricerca...](#section_C6361048502745779D9749A842C4C370)
+* [Posso controllare l&#39;ordine dei risultati della ricerca?](#section_C6361048502745779D9749A842C4C370)
 * [Posso cambiare la lingua della pagina dei risultati della ricerca...](#section_6EE41DA8241247D48BBEB061A50599C5)
-* [Posso avere più siti sul mio Adobe?](#section_AFA8825182094660A71EEC84B8329D6D)
-* [Posso eseguire la ricerca in più domini?](#section_BFBB0E9861D942F095B56CF0A8F16596)
+* [Posso avere più siti nel mio Adobe ...](#section_AFA8825182094660A71EEC84B8329D6D)
+* [È possibile eseguire la ricerca in più di un dominio?](#section_BFBB0E9861D942F095B56CF0A8F16596)
 * [Posso suddividere il mio sito in sezioni separate in modo che...](#section_52153A9DE9F9493B967A70583848B2A4)
-* [Come posso escludere parti del mio sito web da...](#section_D452EDE153654EF398F4A87780C6D43B)
+* [Come posso escludere parti del mio sito Web dall&#39;essere...](#section_D452EDE153654EF398F4A87780C6D43B)
 * [Quali set di caratteri sono supportati?](#section_A62A6F8F15804F968C77F2DEBDE8F8FD)
 * [Cosa succede se si modifica o si aggiorna il sito Web?](#section_489050E0EBC14D0594DBBAA0CCF4F6BA)
-* [È possibile indicizzare automaticamente il sito?](#section_9C7D41636238488691ECDFEE4D4E5103)
-* [Io uso delle password sul mio sito web. Posso ancora utilizzare la ricerca nel sito/merchandising?](#section_4618EB5B66704640B5502D1B5CB4B32E)
+* [Il sito può essere indicizzato automaticamente?](#section_9C7D41636238488691ECDFEE4D4E5103)
+* [Io uso delle password sul mio sito web. È ancora possibile utilizzare la ricerca/merchandising del sito?](#section_4618EB5B66704640B5502D1B5CB4B32E)
 * [Supportate la ricerca per indicizzazione e l&#39;indicizzazione di https o...](#section_D5BB8B8FBEA4405583E86B4AEC37151B)
-* [La ricerca del sito/merchandising rispetta il file robots.txt sul mio sito Web?](#section_73BBF6FE93C64C109F45CBC2FA394DB2)
+* [Il sito Web di ricerca/merchandising rispetta il file robots.txt?](#section_73BBF6FE93C64C109F45CBC2FA394DB2)
 * [Alcune parti del mio sito Web devono essere aggiornate frequentemente in modo che...](#section_6D2FB1DE1B8A49729F9CCAE2A2770AB3)
 * [È possibile utilizzare script o programmi per avviare un&#39;operazione incrementale...](#section_0B6BB039557A42AA876D35D748E17DD0)
 
-## Devo installare un software per utilizzare la ricerca del sito/merchandising? {#section_02AB2AFF71984F9DAA3AF2B7C0847A22}
+## È necessario installare un software per utilizzare la ricerca/merchandising del sito? {#section_02AB2AFF71984F9DAA3AF2B7C0847A22}
 
-No. Questo è il vantaggio principale della ricerca del sito/merchandising. Il motore è un&#39;applicazione professionale ospitata e mantenuta interamente sui nostri server ad alte prestazioni. Questo rende il software più facile da usare di altre soluzioni di ricerca. L’unica cosa da fare è aggiungere una piccola quantità di codice HTML alle pagine in modo che i clienti del sito Web possano inserire delle ricerche. Ricerca nel sito/merchandising si occupa di tutto il resto.
+No. Questo è il vantaggio principale della ricerca/merchandising del sito. Il motore è un&#39;applicazione professionale ospitata e mantenuta interamente sui nostri server ad alte prestazioni. Questo rende il software più facile da usare di altre soluzioni di ricerca. L’unica cosa da fare è aggiungere una piccola quantità di codice HTML alle pagine in modo che i clienti del sito Web possano inserire delle ricerche. Ricerca nel sito/merchandising si prende cura di tutto il resto.
 
 ## Cosa succede quando il sito supera il limite di pagine? {#section_ECA5FA01032D4322BABA4E2C7FE498C1}
 
 Continuiamo a servire le tue ricerche in modo che i visitatori possano cercare il tuo sito Web senza interruzioni. Per verificare se il sito Web supera il limite di pagine, controlla il tuo stato Indice completo o Registro dal vivo.
 
-Consultate [L’indice](../c-about-index-menu/c-about-full-index.md#concept_C69BD21863FD4856B49326F35DB570D3)completo.
+Vedere [Informazioni sull&#39;indice completo](../c-about-index-menu/c-about-full-index.md#concept_C69BD21863FD4856B49326F35DB570D3).
 
-Consultate [Visualizzazione dell&#39;intero registro indice di una pagina live o in una pagina temporanea...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
+Vedere [Visualizzazione dell&#39;intero registro di indice di un live o di uno stage...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
 ## Come posso cambiare l&#39;indirizzo e-mail in cui vengono inviati i rapporti settimanali? {#section_AE27F63DD13F425B940C8E7D9ED5C614}
 
-I rapporti settimanali vengono inviati al proprietario di ciascun account attivo. Potete cambiare l’indirizzo e-mail facendo clic su **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. Se disponete di più account di ricerca attivi, tutte le newsletter vengono inviate al nuovo indirizzo.
+I rapporti settimanali vengono inviati al proprietario di ciascun account attivo. Per modificare l&#39;indirizzo e-mail, fare clic su **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. Se disponete di più account di ricerca attivi, tutte le newsletter vengono inviate al nuovo indirizzo.
 
-Consultate [Configurazione delle informazioni](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6)utente personali.
+Vedere [Configurazione delle informazioni personali dell&#39;utente](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
 ## Quanto sono sicure le informazioni del cliente sulla ricerca del sito/merchandising? {#section_5484CB954167412BB7F0480CB0C504B8}
 
@@ -171,7 +174,7 @@ Ricerca e merchandising sul sito sono sicuri, veloci, stabili e facili da usare.
 
 ## E la privacy delle informazioni sui clienti? {#section_8FB493F15E51454BA92A0C83E14C0CC7}
 
-Adobe si impegna a rispettare la privacy dei propri clienti e visitatori. Consultate il Centro [per la](https://www.adobe.com/privacy.html)privacy di Adobe.
+ Adobe si impegna a rispettare la privacy dei propri clienti e visitatori. Vedere l&#39;Adobe  [Centro per la privacy](https://www.adobe.com/privacy.html).
 
 ## Posso mostrare i miei banner pubblicitari sulle pagine dei risultati della ricerca? {#section_611EB8B32C16418386CB7DC7FB6954B8}
 
@@ -181,9 +184,9 @@ Sì. Potete controllare l’aspetto e il contenuto dei risultati della ricerca. 
 
 Sì. Questa è una funzione esclusiva di ricerca del sito/merchandising. Grazie alla nostra tecnologia avanzata per i modelli e alla poca conoscenza di HTML, potete controllare esattamente come vengono visualizzati i risultati della ricerca.
 
-Consultate [Cercare i tag](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)dei modelli.
+Vedere [Cerca tag modello](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
-La transizione tra i propri server e i server di ricerca/merchandising del sito è completamente invisibile per i clienti. Se non conoscete l’HTML o non avete il tempo di creare un modello personalizzato, potete scegliere tra un assortimento di modelli attraenti e pronti all’uso creati dal team interno di sviluppatori Web professionisti di Adobe.
+La transizione tra i propri server e i server di ricerca/merchandising del sito è completamente invisibile per i clienti. Se non conoscete l’HTML o non avete il tempo di creare un modello personalizzato, potete scegliere tra un assortimento di modelli attraenti e pronti all’uso che  Adobe  team interno di sviluppatori Web professionisti.
 
 ## Posso vedere quali clienti stanno cercando sul mio sito? {#section_73709E1B0E82478DA7B4D15B6C845F33}
 
@@ -191,11 +194,11 @@ Sì. Teniamo le statistiche di ricerca per le ricerche effettuate dai visitatori
 
 ## Come è possibile controllare quali tipi di contenuto (PDF, testo, Flash, MP3 e Microsoft Office) vengono indicizzati e cercati? {#section_0AB8CB4B6BFA4286AA082055FEBFBE1C}
 
-È possibile configurare facilmente gli account per attivare o disattivare l&#39;indicizzazione e la ricerca del testo contenuto nei documenti PDF, nei documenti di testo normale, nei filmati Flash, nei file MP3 o nei documenti di Microsoft Office.
+È possibile configurare facilmente gli account per attivare o disattivare l&#39;indicizzazione e la ricerca del testo contenuto nei documenti PDF, nei documenti di testo normale, nei filmati di Flash, nei file MP3 o nei documenti di Microsoft Office.
 
-Queste impostazioni sono controllate sulla [!DNL Staged Content Types] pagina.
+Queste impostazioni sono controllate sulla pagina [!DNL Staged Content Types].
 
-Consultate [I Tipi](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07)Di Contenuto.
+Vedere [Informazioni sui tipi di contenuto](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## Sono supportate pagine Web generate dinamicamente tramite contenuti basati su ASP, JSP, PHP, CFM o Perl? {#section_E279F004F1C542A2B9773B832E7B013F}
 
@@ -203,9 +206,9 @@ Le pagine Web HTML statiche o generate dinamicamente sono indicizzate, comprese 
 
 Il robot di ricerca passa per il sito Web iniziando dalla prima pagina all&#39;indirizzo del sito Web specificato in [!DNL Account Settings], e segue i collegamenti da una pagina all&#39;altra.
 
-Consultate [Configurazione delle impostazioni](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)dell’account.
+Consultate [Configurazione delle impostazioni dell&#39;account](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
-Quando il robot di ricerca si aggancia e indicizza tutte le pagine del tuo sito web, allora puoi usare il motore di ricerca per cercare il tuo sito. In altre parole, se nel sito Web sono collegati documenti generati dinamicamente con collegamenti provenienti da altre pagine, il robot di ricerca può comunque eseguire ricerche per indicizzazione e indicizzare il contenuto dinamico.
+Quando il robot di ricerca si aggancia e indicizza tutte le pagine del tuo sito web, puoi usare il motore di ricerca per cercare il tuo sito. In altre parole, se nel sito Web sono collegati documenti generati dinamicamente con collegamenti provenienti da altre pagine, il robot di ricerca può comunque eseguire ricerche per indicizzazione e indicizzare il contenuto dinamico.
 
 Una volta che il contenuto del sito Web è sottoposto a ricerca per indicizzazione e ricerca per indicizzazione, i clienti possono cercare informazioni all’interno del contenuto indicizzato.
 
@@ -213,7 +216,7 @@ Una volta che il contenuto del sito Web è sottoposto a ricerca per indicizzazio
 
 È possibile utilizzare i sinonimi quando si desidera che i visitatori trovino pagine correlate alla query di ricerca.
 
-Ad esempio, supponete di avere una pagina contenente un listino prezzi dei prodotti in vendita sul sito. Tuttavia, dopo aver esaminato i report di ricerca forniti dalla ricerca del sito/merchandising, si scopre che i clienti cercano nella ricerca la parola &quot;costo&quot;, &quot;spesa&quot;, &quot;addebito&quot; o &quot;tassa&quot;. Queste parole non visualizzano la pagina del listino prezzi nei risultati della ricerca. Con la [!DNL Add Synonyms] funzione in [!DNL Dictionaries], è possibile specificare che queste parole sono tutti sinonimi, e il cliente può trovare il proprio listino prezzi, indipendentemente dal termine utilizzato.
+Ad esempio, supponete di avere una pagina contenente un listino prezzi dei prodotti in vendita sul sito. Tuttavia, dopo aver esaminato i report di ricerca forniti dalla ricerca del sito/merchandising, si scopre che i clienti cercano nella ricerca la parola &quot;costo&quot;, &quot;spesa&quot;, &quot;addebito&quot; o &quot;tassa&quot;. Queste parole non visualizzano la pagina del listino prezzi nei risultati della ricerca. Con la funzione [!DNL Add Synonyms] in [!DNL Dictionaries], è possibile specificare che queste parole sono tutti sinonimi e che il cliente può trovare il proprio listino prezzi, indipendentemente dal termine utilizzato.
 
 Vedere [Informazioni sui dizionari](../c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034).
 
@@ -221,7 +224,7 @@ Vedere [Informazioni sui dizionari](../c-about-linguistics-menu/c-about-dictiona
 
 Sì. Utilizzando l&#39;interfaccia di rilevanza avanzata, è possibile controllare le pagine restituite per una specifica query di ricerca. Questa funzione è utile se desiderate essere certi che i clienti visualizzino una pagina specifica quando effettuano una query per determinate parole.
 
-Consultate [Aggiunta di un nuovo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)tag meta.
+Vedere [Aggiunta di un nuovo campo tag meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
 ## È possibile modificare la lingua della pagina dei risultati della ricerca? {#section_6EE41DA8241247D48BBEB061A50599C5}
 
@@ -229,29 +232,29 @@ Sì. Il modello di ricerca del sito/merchandising è flessibile quando si tratta
 
 Il modello è costituito da una combinazione di testo, tag HTML standard e tag speciali definiti per visualizzare i risultati della ricerca. Quando un cliente esegue una ricerca, il robot di ricerca legge il modello, genera il testo utilizzando tag HTML standard e inserisce i collegamenti dei risultati in base ai tag modello speciali.
 
-Consultate [Cercare i tag](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)dei modelli.
+Vedere [Cerca tag modello](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
 Se desiderate modificare la lingua dei risultati, potete modificare il testo in inglese che appare sul modello.
 
-Consultate [Modifica di una presentazione o di un modello](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3)di trasporto.
+Vedere [Modifica di una presentazione o di un modello di trasporto](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3).
 
-## Posso avere più di un sito sul mio Adobe Customer Login? {#section_AFA8825182094660A71EEC84B8329D6D}
+## Posso avere più di un sito sul mio  Adobe Customer Login? {#section_AFA8825182094660A71EEC84B8329D6D}
 
-Sì. Con un singolo accesso cliente Adobe, potete gestire un motore di ricerca diverso per molti siti Web diversi. Seleziona e gestisci gli account in &quot;Account&quot;.
+Sì. Con un singolo accesso  Adobe al cliente, potete gestire un motore di ricerca diverso per molti siti Web diversi. Seleziona e gestisci gli account in &quot;Account&quot;.
 
-Consultate [Selezione di un account diverso da usare](../c-about-accounts-menu.md#task_03C0FE918E2D44529CDC3B8DB75D1B26).
+Vedere [Selezione di un account diverso da utilizzare](../c-about-accounts-menu.md#task_03C0FE918E2D44529CDC3B8DB75D1B26).
 
 ## Posso eseguire la ricerca in più domini? {#section_BFBB0E9861D942F095B56CF0A8F16596}
 
-Sì. Puoi configurare l&#39;accesso a più domini utilizzando [!DNL URL Entrypoints]. Immetti i punti di ingresso URL per altri domini di tua proprietà. Ricorda che devi disporre dell&#39;autorizzazione per indicizzare domini che non possiedi.
+Sì. È possibile configurare l&#39;accesso a più domini utilizzando [!DNL URL Entrypoints]. Immetti i punti di ingresso URL per altri domini di tua proprietà. Ricorda che devi disporre dell&#39;autorizzazione per indicizzare domini che non possiedi.
 
-Consultate [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
+Consultate [Informazioni sui punti di ingresso URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## È possibile suddividere il sito in sezioni distinte in modo che i clienti possano eseguire una ricerca in una di queste aree singolarmente o in tutto il sito? {#section_52153A9DE9F9493B967A70583848B2A4}
 
 Sì. È inclusa una funzione &quot;Raccolte&quot; che consente ai clienti di cercare aree specifiche del sito Web per trovare rapidamente ciò che stanno cercando.
 
-Consultate [Le Raccolte](../c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
+Vedere [Informazioni sulle raccolte](../c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
 
 Ad esempio, i clienti possono cercare una raccolta di URL relativi alle informazioni di vendita del prodotto o una raccolta di URL relativi ai servizi di supporto. Potete impostare le raccolte in modo che i clienti visualizzino un elenco a discesa di raccolte o un gruppo di caselle di controllo.
 
@@ -259,11 +262,11 @@ Ad esempio, i clienti possono cercare una raccolta di URL relativi alle informaz
 
 Sì. Specificate le maschere URL per determinare quali pagine Web includere o escludere dall’indicizzazione. Le maschere URL determinano se nei risultati di ricerca vengono visualizzate le pagine del sito Web.
 
-Consultate [Le maschere](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+Consultate [Le maschere URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Consultate [Lo script](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)delle maschere URL.
+Vedere [Lo script delle maschere URL](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
 
-Per impedire la ricerca di parti di singole pagine Web, è possibile escludere parti di una pagina dall’indicizzazione. Circondare il testo con `<noindex>` tag e `</noindex>` tag. Questo metodo è utile per escludere il testo di navigazione dalle ricerche.
+Per impedire la ricerca di parti di singole pagine Web, è possibile escludere parti di una pagina dall’indicizzazione. Circondare il testo con i tag `<noindex>` e `</noindex>`. Questo metodo è utile per escludere il testo di navigazione dalle ricerche.
 
 ## Quali set di caratteri sono supportati? {#section_A62A6F8F15804F968C77F2DEBDE8F8FD}
 
@@ -344,13 +347,13 @@ Per informazioni sui set di caratteri non elencati sopra, contattate il supporto
 
 Dopo aver modificato il contenuto del sito Web, potete eseguire un indice completo o un indice incrementale. Consente di scaricare e indicizzare i contenuti dei siti Web modificati mediante la ricerca nel sito/merchandising. Al termine dell’indicizzazione, i clienti possono effettuare ricerche nel nuovo contenuto. Potete anche pianificare un&#39;indicizzazione automatica del sito in un determinato momento e in un giorno specifico.
 
-Consultate [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Vedere [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consultate [Esecuzione di un indice incrementale di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Vedere [Esecuzione di un indice incrementale di un sito Web live o in fase...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
-Consultate [Impostazione della pianificazione completa dell&#39;indice per un sito Web](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0)live.
+Vedere [Impostazione della pianificazione dell&#39;indice completa per un sito Web live](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0).
 
-Consultate [Impostazione della pianificazione incrementale dell&#39;indice per un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33)live.
+Vedere [Impostazione della pianificazione incrementale dell&#39;indice per un sito Web live](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
 ## È possibile indicizzare automaticamente il sito? {#section_9C7D41636238488691ECDFEE4D4E5103}
 
@@ -358,15 +361,15 @@ Sì. Potete pianificare un indice automatico del sito ogni giorno.
 
 Oltre all&#39;indicizzazione automatica giornaliera, è possibile scegliere di aver modificato frequentemente porzioni del sito indicizzate in modo incrementale. Nei giorni in cui è pianificato un indice automatico, potete controllare l&#39;ora del giorno in cui ha luogo l&#39;indice. Inoltre, potete sempre avviare manualmente un indice del sito ogni volta che lo desiderate.
 
-Consultate [Impostazione della pianificazione completa dell&#39;indice per un sito Web](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0)live.
+Vedere [Impostazione della pianificazione dell&#39;indice completa per un sito Web live](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0).
 
-Consultate [Impostazione della pianificazione incrementale dell&#39;indice per un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33)live.
+Vedere [Impostazione della pianificazione incrementale dell&#39;indice per un sito Web live](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
 ## Io uso delle password sul mio sito web. Posso ancora utilizzare la ricerca nel sito/merchandising? {#section_4618EB5B66704640B5502D1B5CB4B32E}
 
 Se utilizzate l&#39;autenticazione di base HTTP per proteggere con password determinate porzioni del sito Web, potete specificare aree di autenticazione e password che la ricerca o il merchandising del sito possono utilizzare per indicizzare il sito.
 
-Consultate [Aggiunta di password per l’accesso alle aree del sito Web che richiedono...](../c-about-settings-menu/c-about-crawling-menu.md#task_DED19D476FF04B48BB6456D5ECB8628A).
+Vedere [Aggiunta di password per l&#39;accesso alle aree del sito Web che richiedono...](../c-about-settings-menu/c-about-crawling-menu.md#task_DED19D476FF04B48BB6456D5ECB8628A).
 
 ## Supportate la ricerca per indicizzazione e l&#39;indicizzazione di https o contenuto server protetto? {#section_D5BB8B8FBEA4405583E86B4AEC37151B}
 
@@ -394,9 +397,9 @@ Per ulteriori informazioni sui robot web e sul protocollo di esclusione dei robo
 
 Sì. Questo scenario è il risultato della funzione di indicizzazione incrementale creata per facilitare la ricerca nel sito/merchandising. Il vantaggio principale dell&#39;indicizzazione incrementale è che consente alle aziende di indicizzare frequentemente parti del sito Web che cambiano dinamicamente. Questa funzionalità assicura che i risultati della ricerca vengano visualizzati con precisione &quot;fino al minuto&quot;.
 
-Consultate [Esecuzione di un indice incrementale di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Vedere [Esecuzione di un indice incrementale di un sito Web live o in fase...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
-Consultate [Impostazione della pianificazione incrementale dell&#39;indice per un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33)live.
+Vedere [Impostazione della pianificazione incrementale dell&#39;indice per un sito Web live](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
 ## Le pagine Web generate dinamicamente sono supportate da un database back-end, come cataloghi di prodotti o sistemi di gestione delle scorte? {#section_26896C556483457E879785E751583B16}
 
@@ -404,27 +407,27 @@ Le pagine Web HTML statiche o generate dinamicamente, incluse le pagine create d
 
 Il robot di ricerca passa per il sito Web iniziando dalla prima pagina all&#39;indirizzo del sito Web specificato in [!DNL Account Settings], e segue i collegamenti da una pagina all&#39;altra.
 
-Consultate [Configurazione delle impostazioni](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)dell’account.
+Consultate [Configurazione delle impostazioni dell&#39;account](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
-Quando il robot di ricerca si aggancia e indicizza tutte le pagine del tuo sito web, allora puoi usare il motore di ricerca per cercare il tuo sito. In altre parole, se nel sito Web sono collegati documenti generati dinamicamente con collegamenti provenienti da altre pagine, il robot di ricerca può comunque eseguire ricerche per indicizzazione e indicizzare il contenuto del database dinamico.
+Quando il robot di ricerca si aggancia e indicizza tutte le pagine del tuo sito web, puoi usare il motore di ricerca per cercare il tuo sito. In altre parole, se nel sito Web sono collegati documenti generati dinamicamente con collegamenti provenienti da altre pagine, il robot di ricerca può comunque eseguire ricerche per indicizzazione e indicizzare il contenuto del database dinamico.
 
 Una volta che il contenuto del sito Web è sottoposto a ricerca per indicizzazione e ricerca per indicizzazione, i clienti possono cercare informazioni all’interno del contenuto indicizzato.
 
 Potete facilmente abilitare la ricerca per contenuti completi o una ricerca basata su argomenti più ristretta, limitata alle informazioni contenute nel titolo, nella meta-descrizione, nei tag del documento delle parole chiave meta o in tutti e tre i tag. Utilizzando le definizioni dei metadati, potete anche creare campi di visualizzazione personalizzati, come un&#39;immagine di prodotto, nei risultati effettivi della ricerca.
 
-Consultate [Aggiunta di un nuovo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)tag meta.
+Vedere [Aggiunta di un nuovo campo tag meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
 ## È possibile utilizzare script o programmi per avviare un indice incrementale del sito? {#section_0B6BB039557A42AA876D35D748E17DD0}
 
 Sì. È possibile utilizzare script o programmi per avviare un indice incrementale del sito Web, nonché per eseguire il ping dei server per indicizzare il sito ogni volta che il contenuto viene modificato o aggiornato.
 
-Vedere [Informazioni sull&#39;indice](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D)con script.
+Vedere [Informazioni sull&#39;indice con script](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D).
 
 ## Implementazioni delle funzioni {#reference_2D0C4A80B8D64051BA9694D562DCE663}
 
-Una pagina di domande frequenti in cui vengono illustrate le diverse implementazioni delle funzioni in [!DNL Search&Promote].
+Una pagina di domande frequenti che illustra le diverse implementazioni delle funzioni in [!DNL Search&Promote].
 
-Seguono alcune domande comuni relative alle implementazioni di funzionalità in [!DNL Search&Promote] un sito Web:
+Seguono alcune domande comuni relative alle implementazioni di funzionalità in [!DNL Search&Promote] su un sito Web:
 
 * [Perché le mie regole aziendali non sono in esecuzione?](#section_7FEB60383D8A4B11A60DFF9067274699)
 * [Perché si verificano problemi durante la programmazione dell&#39;indicizzazione, errori durante l&#39;avvio dell&#39;indicizzazione e problemi durante l&#39;avvio dell&#39;indicizzazione in fase?](#section_E05758193DF5436784B0145839989F75)
@@ -435,25 +438,25 @@ Seguono alcune domande comuni relative alle implementazioni di funzionalità in 
 Configurate le regole di business quando vengono visualizzati i banner o per determinare quali risultati vengono visualizzati e in quale ordine. Potete anche configurare la posizione di un elemento nel facet e il modello da usare per una determinata ricerca.
 Riordinate le regole business per modificare l&#39;ordine in cui vengono eseguite sui modelli di presentazione. Le regole aziendali vengono eseguite nell&#39;ordine in cui sono state definite; ossia, più alto è il numero dell&#39;ordine di una regola, più tardi verrà eseguito nel processo, superando le regole precedenti. Riordinare le regole immettendo un nuovo numero nella colonna Ordine della tabella nella pagina Regole business.
 
-Vedere [Informazioni sulle regole](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD)aziendali.
+Vedere [Informazioni sulle regole aziendali](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 ## Perché si verificano problemi durante la programmazione dell&#39;indicizzazione, errori durante l&#39;avvio dell&#39;indicizzazione e problemi durante l&#39;avvio dell&#39;indicizzazione in fase? {#section_E05758193DF5436784B0145839989F75}
 
 Quando si genera un indice, pieno o incrementale, le informazioni sullo stato di ricerca per indicizzazione vengono visualizzate in tempo reale. Ad esempio, potete visualizzare il tempo di inizio, il tempo trascorso e tutti gli errori che si sono verificati durante il processo di indicizzazione. Vengono visualizzate anche informazioni sullo stato dell&#39;ultimo indice. Utilizzate queste informazioni per risolvere eventuali errori di indicizzazione riscontrati.
 
-Per la pianificazione di un indice, consultate [Impostazione della pianificazione dell&#39;indice completo per un sito Web](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0) live e [Impostazione della pianificazione dell&#39;indice incrementale per un sito Web](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33)live.
+Per pianificare un indice, vedere [Impostazione della pianificazione dell&#39;indice completo per un sito Web live](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0) e [Impostazione della pianificazione dell&#39;indice incrementale per un sito Web live](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
-Per iniziare un indice in fase, consultate [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D) o [Esecuzione di un indice incrementale di un sito Web live o in fase di esecuzione...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Per iniziare un indice in fase, vedere [Esecuzione di un indice completo di un sito Web attivo o in fase...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D) o [Esecuzione di un indice incrementale di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
 ## Il limite di dimensione dell&#39;indice supera il limite consentito. Perché sta accadendo e come lo riparo? {#section_12E7DA979C4C4B1D8A3A6415FC3DDA70}
 
-Un sito Web può tendere a crescere e nel tempo Search&amp;Promote &quot;scopre&quot; più documenti e pagine Web che sono stati aggiunti. Alla fine, il tuo account potrebbe superare il limite di dimensioni di indicizzazione. In questi casi, puoi prendere in considerazione l&#39;utilizzo di **[!UICONTROL URL Mask]**. Questa funzione consente di nascondere documenti e pagine Web dalla ricerca per indicizzazione che non si desidera o non è necessario includere nell&#39;indice, riducendo così la dimensione dell&#39;indice. Un&#39;altra opzione potrebbe consistere nel contattare il supporto tecnico per impostare il limite di dimensioni di indicizzazione su un valore maggiore nell&#39;account.
+Un sito Web può tendere a crescere e nel tempo &quot;scopre&quot; più documenti e pagine Web che sono stati aggiunti. Alla fine, il tuo account potrebbe superare il limite di dimensioni di indicizzazione. In questi casi, puoi prendere in considerazione l&#39;utilizzo di **[!UICONTROL URL Mask]**. Questa funzione consente di nascondere documenti e pagine Web dalla ricerca per indicizzazione che non si desidera o non è necessario includere nell&#39;indice, riducendo così la dimensione dell&#39;indice. Un&#39;altra opzione potrebbe consistere nel contattare il supporto tecnico per impostare il limite di dimensioni di indicizzazione su un valore maggiore nell&#39;account.
 
-Consultate [Le maschere](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+Consultate [Le maschere URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
 Se non sai cosa fare, contatta il supporto tecnico. Possono essere presenti molte altre variabili che influiscono sulla dimensione dell&#39;indice e che, se modificate, possono anche influenzare la fatturazione dell&#39;account.
 
-## International {#reference_F017C2968BFB446499EF1D3CE2CAC0FE}
+## Internazionale {#reference_F017C2968BFB446499EF1D3CE2CAC0FE}
 
 Una pagina di domande frequenti che illustra il supporto dell’indicizzazione e della ricerca di più di 19 lingue, incluse le lingue asiatiche multibyte come cinese (semplificato e tradizionale), giapponese e coreano.
 
@@ -476,11 +479,11 @@ La sezione &quot;Moduli Web&quot; dell&#39;account di ricerca contiene moduli di
 
 `<input type=hidden name="sp_f" value="iso-8859-1">`
 
-Questa riga di codice indica al motore di ricerca che la query in entrata è codificata in iso-8859-1, una codifica comune per le lingue dell&#39;Europa occidentale. Per modificare questa impostazione, vai al menu prodotto e fai clic su **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. Nella [!DNL Personal Information] pagina, nell’elenco a **[!UICONTROL Character Encoding]** discesa, selezionate una nuova codifica.
+Questa riga di codice indica al motore di ricerca che la query in entrata è codificata in iso-8859-1, una codifica comune per le lingue dell&#39;Europa occidentale. Per modificare questa impostazione, vai al menu prodotto e fai clic su **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. Nella pagina [!DNL Personal Information], nell&#39;elenco a discesa **[!UICONTROL Character Encoding]**, selezionare una nuova codifica.
 
-Consultate [Configurazione delle informazioni](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6)utente personali.
+Vedere [Configurazione delle informazioni personali dell&#39;utente](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
-È inoltre possibile modificare manualmente il valore di codifica nelle pagine Web modificando la `sp_f` riga del modulo di ricerca. Tenere presente che il `sp_f` valore del modulo di ricerca deve corrispondere alla codifica set di caratteri della pagina in cui viene visualizzato.
+È inoltre possibile modificare manualmente il valore di codifica nelle pagine Web modificando la riga `sp_f` del modulo di ricerca. Tenere presente che il valore `sp_f` del modulo di ricerca deve corrispondere alla codifica set di caratteri della pagina in cui viene visualizzato.
 
 ## Vengono cercate solo le pagine la cui codifica corrisponde alla codifica della query di ricerca? {#section_9E544F3DB7DE41618DC1BC8224B32C5A}
 
@@ -490,60 +493,60 @@ Per impostazione predefinita, no. Fintanto che le pagine del sito Web identifica
 
 La codifica set di caratteri dell’account determina la codifica predefinita per il modello di risultati.
 
-Consultate [Configurazione delle informazioni](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6)utente personali.
+Vedere [Configurazione delle informazioni personali dell&#39;utente](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
 Per ulteriori informazioni sulla specifica di un set di caratteri in un modello HTML.
 
-Consultate [Cercare i tag](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)dei modelli.
+Vedere [Cerca tag modello](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
 ## È possibile utilizzare la ricerca del sito/merchandising su pagine codificate Unicode, UTF-8? {#section_130997CB08934A13A5261D85CF88040C}
 
 Sì. Tuttavia, i set di caratteri Unicode, come UTF-8, non forniscono informazioni sufficienti per determinare la lingua in cui sono scritte le pagine. Per eseguire correttamente la ricerca in queste pagine, è necessario specificare la lingua. Per determinare la lingua del documento, le informazioni vengono elaborate nel seguente ordine:
 
 * Intestazione HTTP Content-Language consegnata dal server al documento.
-* Elementi META (ad esempio, `META HTTP-EQUIV="Content-Language" Content="ja_JP"`) nella `<HEAD>` sezione del documento.
+* Elementi META (ad esempio, `META HTTP-EQUIV="Content-Language" Content="ja_JP"`) nella sezione `<HEAD>` del documento.
 
-* Attributo LANG del `<HTML>` tag (ad esempio, `<HTML LANG="ja_JP">`).
+* Attributo LANG del tag `<HTML>` (ad esempio, `<HTML LANG="ja_JP">`).
 
-Se il server non è configurato per inviare l’intestazione HTTP Content-Language e i documenti non contengono né l’elemento META della lingua né l’attributo della lingua per il `<HTML>` tag, potete utilizzare le iniezioni di metadati per specificare la lingua appropriata.
+Se il server non è configurato per distribuire l&#39;intestazione HTTP Content-Language e i documenti non contengono né l&#39;elemento META della lingua né l&#39;attributo della lingua per il tag `<HTML>`, potete utilizzare le iniezioni di metadati per specificare la lingua appropriata.
 
-Vedere [Aggiunta di definizioni](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)di iniezione di campi.
+Vedere [Aggiunta di definizioni di iniezione di campi](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Com&#39;è possibile che non sia possibile effettuare ricerche nei file PDF cinesi, giapponesi o coreani sul sito Web? {#section_539AFF482F814D28B5929F683D2F2175}
 
-Ricerca nel sito/merchandising ottiene l&#39;UTF-8 da file Adobe PDF senza indicazione di lingua. Se avete selezionato **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), dovete utilizzare le iniezioni di metadati per specificare la lingua utilizzata nel file PDF.
+Ricerca nel sito/merchandising ottiene UTF-8 da  file Adobe PDF senza indicazione della lingua. Se è stato selezionato **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare le iniezioni di metadati per specificare la lingua utilizzata nel file PDF.
 
-Vedere [Aggiunta di definizioni](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)di iniezione di campi.
+Vedere [Aggiunta di definizioni di iniezione di campi](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Com&#39;è possibile che non sia possibile effettuare ricerche nei file SWF cinesi, giapponesi o coreani sul sito Web? {#section_9C0849528AFF4C10AA97A2C912992638}
 
-La ricerca nel sito/merchandising ottiene l&#39;UTF-8 dai file di filmati Adobe Flash creati con Adobe Flash senza indicazione di lingua. Se avete selezionato il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), dovete usare le iniezioni di metadati per specificare la lingua utilizzata nel file SWF.
+Ricerca nel sito/merchandising ottiene UTF-8 da  file di filmati Flash di Adobe creati con  Flash Adobe senza indicazione della lingua. Se è stato selezionato il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare le iniezioni di metadati per specificare la lingua utilizzata nel file SWF.
 
-Per Flash versione 4 o versioni precedenti di file SWF, il set di caratteri dei caratteri nel file non è specificato. Se avete selezionato il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), dovete usare le iniezioni di metadati per specificare il set di caratteri utilizzato nel file SWF.
+Ad Flash, versione 4 o versioni precedenti dei file SWF, il set di caratteri dei caratteri nel file non è specificato. Se è stato selezionato il tipo di contenuto **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare le iniezioni di metadati per specificare il set di caratteri utilizzato nel file SWF.
 
-Vedere [Aggiunta di definizioni](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)di iniezione di campi.
+Vedere [Aggiunta di definizioni di iniezione di campi](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Com&#39;è possibile che non sia possibile effettuare ricerche nei file Microsoft Office cinesi, giapponesi o coreani sul sito Web? {#section_6764BA6863AF492EBA9BE5CCC12CDD1F}
 
-Ricerca nel sito/merchandising ottiene UTF-8 da file di Microsoft Office (Microsoft Word, Microsoft Excel e Microsoft PowerPoint) senza alcuna indicazione di lingua. Se avete selezionato il tipo di contenuto **[!UICONTROL Microsoft Office Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), dovete usare le iniezioni di metadati per specificare la lingua utilizzata nei file di Microsoft Office.
+Ricerca nel sito/merchandising ottiene UTF-8 da file di Microsoft Office (Microsoft Word, Microsoft Excel e Microsoft PowerPoint) senza alcuna indicazione di lingua. Se è stato selezionato il tipo di contenuto **[!UICONTROL Microsoft Office Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare le iniezioni di metadati per specificare la lingua utilizzata nei file di Microsoft Office.
 
-Vedere [Aggiunta di definizioni](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)di iniezione di campi.
+Vedere [Aggiunta di definizioni di iniezione di campi](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Com&#39;è possibile che non sia possibile effettuare ricerche nei file MP3 cinesi, giapponesi o coreani sul sito Web? {#section_DB6D60CF46F94125BF4E54AF3036DBFC}
 
-Se selezionate il tipo di contenuto **[!UICONTROL Text in MP3 Music Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), dovete usare le iniezioni di metadati per specificare il set di caratteri utilizzato per codificare i file MP3.
+Se si seleziona il tipo di contenuto **[!UICONTROL Text in MP3 Music Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare le iniezioni di metadati per specificare il set di caratteri utilizzato per codificare i file MP3.
 
-Vedere [Aggiunta di definizioni](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)di iniezione di campi.
+Vedere [Aggiunta di definizioni di iniezione di campi](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Devo fare qualcosa di speciale per far sì che i file .txt sul mio sito Web vengano indicizzati correttamente? {#section_A8BA6DDD3A6048319D3530BCFD6DA1A5}
 
-Se avete selezionato il tipo di contenuto **[!UICONTROL Text Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), dovete usare le iniezioni di metadati per specificare il set di caratteri utilizzato per codificare i file .txt.
+Se è stato selezionato il tipo di contenuto **[!UICONTROL Text Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare le iniezioni di metadati per specificare il set di caratteri utilizzato per codificare i file .txt.
 
-Vedere [Aggiunta di definizioni](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)di iniezione di campi.
+Vedere [Aggiunta di definizioni di iniezione di campi](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Com&#39;è possibile che i font cinesi, giapponesi o coreani vengano visualizzati nei risultati di ricerca in Netscape 4.7 e versioni precedenti? {#section_DF42567063304F918D406AC76529DFB7}
 
-Se l&#39;account utilizza il modello predefinito, uno dei modelli pronti per l&#39;uso o un modello basato su uno di questi modelli, potrebbe contenere dei tag di font che specificano Arial o Helvetica come facce di font. Ad esempio, `<font face="arial, helvetica" size="+1">`. Netscape 4.7 e versioni precedenti non visualizza i caratteri cinesi, giapponesi o coreani quando si utilizza il carattere Arial o Helvetica. Rimuovete l&#39; `face` attributo o sostituite la faccia del font con una che sia più appropriata per cinese, giapponese o coreano.
+Se l&#39;account utilizza il modello predefinito, uno dei modelli pronti per l&#39;uso o un modello basato su uno di questi modelli, potrebbe contenere dei tag di font che specificano Arial o Helvetica come facce di font. Ad esempio, `<font face="arial, helvetica" size="+1">`. Netscape 4.7 e versioni precedenti non visualizza i caratteri cinesi, giapponesi o coreani quando si utilizza il carattere Arial o Helvetica. Rimuovete l&#39;attributo `face` o sostituite il tipo di carattere con uno più adatto per cinese, giapponese o coreano.
 
 ## Conteggio pagine basso {#reference_4344E3E3CB2948939860F8C078BD7773}
 
@@ -567,15 +570,15 @@ Di seguito sono riportate alcune domande comuni relative ai conteggi di pagina c
 
 Il registro indice contiene informazioni dettagliate che il robot di ricerca/merchandising raccoglie nel momento in cui indicizza il sito Web. Il registro include un elenco di collegamenti sottoposti a ricerca per indicizzazione ed errori rilevati. Esaminare il registro indice è il punto migliore per iniziare a determinare il motivo per cui tutte le pagine del sito Web non sono indicizzate.
 
-Consultate [Visualizzazione dell&#39;intero registro indice di una pagina live o in una pagina temporanea...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
+Vedere [Visualizzazione dell&#39;intero registro di indice di un live o di uno stage...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
-Consultate [Visualizzazione del registro dell&#39;indice incrementale di una pagina live o in uno stage...](../c-about-index-menu/c-about-incremental-index.md#task_E668E1F1240C476DAA1CA783DC728232).
+Vedere [Visualizzazione del registro di indice incrementale di un live o di uno stage...](../c-about-index-menu/c-about-incremental-index.md#task_E668E1F1240C476DAA1CA783DC728232).
 
 ## Si verificano errori di digitazione nell’URL? {#section_BD2CEABC5D0F4A0DA38F3AD72ABBA676}
 
 Quando si digitano URL lunghi nei moduli HTML, è possibile che si verifichino uno o più errori tipografici. Tenete presente che gli URL non devono contenere spazi. Inoltre, alcuni server Web gestiscono gli URL in modo sensibile alle maiuscole/minuscole.
 
-Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Nella [!DNL Staged URL Entrypoints] pagina, verifica quanto segue:
+Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]** dal menu del prodotto. Nella pagina [!DNL Staged URL Entrypoints], verifica quanto segue:
 
 * Negli URL non sono presenti errori tipografici.
 * I caratteri negli URL utilizzano tutti la combinazione di maiuscole e minuscole corretta.
@@ -583,19 +586,19 @@ Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Cr
 
 Per verificare i punti di ingresso dell’URL, copiate e incollate un URL in un browser Web per verificare se il sito Web è visualizzato. Se non viene visualizzato, verificate nuovamente di non aver commesso errori nel percorso dell’URL.
 
-Consultate [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
+Consultate [Informazioni sui punti di ingresso URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## La pagina Web entrypoint contiene collegamenti verso altre pagine del sito Web? {#section_1C2D6ED54E7249268B555D9DC33352B3}
 
 Il robot di ricerca del sito/merchandising passa per il sito Web proprio come fa il cliente; tramite collegamenti da una pagina all’altra. I collegamenti devono essere presenti nella pagina Web del punto di ingresso prima che il robot di ricerca possa trovare e indicizzare altre pagine sul sito.
 
-Consultate [Aggiunta di più punti di ingresso URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consultate [Aggiunta di più punti di immissione URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## I collegamenti ad altre pagine del sito Web sono incorporati in JavaScript? {#section_EE34A67D60A844EBB0921C03544FF63E}
 
 Potete utilizzare sofisticate tecniche di navigazione sul sito Web, ad esempio azioni di rollover e menu, che utilizzano JavaScript per il collegamento ad altre pagine. Tuttavia, il robot di ricerca del sito/merchandising non può seguire i collegamenti incorporati in JavaScript.
 
-Una soluzione che è possibile utilizzare per superare questo problema consiste nell&#39;inserire collegamenti nascosti ad altre pagine nell&#39;HTML che contiene il codice JavaScript. Anche se i clienti del tuo sito Web non vedono questi collegamenti, il robot di ricerca li trova ancora e li setaccia. Potete posizionare i tag nascosti nella parte inferiore della pagina immediatamente prima del `</body>` tag . Potrebbero essere come segue:
+Una soluzione che è possibile utilizzare per superare questo problema consiste nell&#39;inserire collegamenti nascosti ad altre pagine nell&#39;HTML che contiene il codice JavaScript. Anche se i clienti del tuo sito Web non vedono questi collegamenti, il robot di ricerca li trova ancora e li setaccia. Potete posizionare i tag nascosti nella parte inferiore della pagina immediatamente prima del tag `</body>`. Potrebbero essere come segue:
 
 ```
 <a href="/mydir/mypag1.html"></a> 
@@ -609,11 +612,11 @@ https://www.mydomain.com/mydir/mypag1.html
 https://www.mydomain.com/mydir/mypag2.html
 ```
 
-Consultate [Aggiunta di più punti di ingresso URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consultate [Aggiunta di più punti di immissione URL da indicizzare](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## I tag HTML presenti nella pagina Web sono in una sequenza non valida? {#section_F31A2F5D2C284AC084158A5BD763DC5D}
 
-La specifica HTML richiede che i `<html>`, `<head>`e `<body>` i tag seguano una sequenza specifica in un documento HTML. I tag in tutte le pagine Web devono avere la seguente sequenza:
+La specifica HTML richiede che i tag `<html>`, `<head>` e `<body>` seguano una sequenza specifica in un documento HTML. I tag in tutte le pagine Web devono avere la seguente sequenza:
 
 ```
 <html> 
@@ -641,13 +644,13 @@ Se i tag HTML non sono nell&#39;ordine corretto, il robot di ricerca/merchandisi
 </body>
 ```
 
-In tal caso, inserite i `<html>`, `<head>`e `<body>` i tag nella sequenza corretta sulla pagina Web.
+In tal caso, posizionare i tag `<html>`, `<head>` e `<body>` nella sequenza corretta della pagina Web.
 
 ## Sono presenti tag di commento HTML non formattati correttamente nella pagina Web? {#section_D1C39D79341845CB9C38579AABDF3A24}
 
 Verificate attentamente e correggete eventuali commenti HTML non validi presenti nelle pagine Web.
 
-La specifica HTML richiede che un commento HTML inizi con i caratteri `<!--` e termini con i caratteri `-->`. È facile ignorare i commenti formattati in modo errato che causano l&#39;analisi errata dei tag nella pagina Web da parte del robot di ricerca del sito/merchandising. Un commento formato in modo errato può causare la perdita di altri tag importanti da parte del robot di ricerca/merchandising del sito. Ricorda i commenti immediatamente prima del `<body>` tag nella pagina Web.
+La specifica HTML richiede che un commento HTML inizi con i caratteri `<!--` e termini con i caratteri `-->`. È facile ignorare i commenti formattati in modo errato che causano l&#39;analisi errata dei tag nella pagina Web da parte del robot di ricerca del sito/merchandising. Un commento formato in modo errato può causare la perdita di altri tag importanti da parte del robot di ricerca/merchandising del sito. Ricorda i commenti immediatamente prima del tag `<body>` nella pagina Web.
 
 Esempio di commento con formato corretto:
 
@@ -672,7 +675,7 @@ Il sito Web può anche contenere pagine in un altro dominio, ad esempio:
 
 Per impostazione predefinita, il robot di ricerca del sito/merchandising non segue collegamenti su un dominio diverso da quello principale. Tuttavia, impostando altri punti di ingresso per l’account di ricerca, potete facilmente indicizzare più domini.
 
-Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Aggiungete l&#39;URL del &quot;sito Web principale&quot; del sito. Quindi, aggiungete altri punti di ingresso URL a qualsiasi altro dominio che contenga pagine del sito. Ad esempio, potete impostare il punto di ingresso dell’URL principale su:
+Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]** dal menu del prodotto. Aggiungete l&#39;URL del &quot;sito Web principale&quot; del sito. Quindi, aggiungete altri punti di ingresso URL a qualsiasi altro dominio che contenga pagine del sito. Ad esempio, impostate il punto di ingresso dell’URL principale su:
 
 `https://www.mydomain.com/`
 
@@ -696,7 +699,7 @@ Tuttavia, potete utilizzare un servizio di dominio virtuale per consentire ai cl
 
 Per impostazione predefinita, il robot di ricerca del sito/merchandising non segue collegamenti su un dominio diverso da quello principale. Tuttavia, impostando altri punti di ingresso per l’account di ricerca, potete facilmente indicizzare più domini.
 
-Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Aggiungete il &quot;punto di ingresso dell’URL del sito Web principale&quot; al nome del dominio virtuale del sito. Quindi, aggiungete altri punti di ingresso al dominio in cui vive effettivamente il sito Web.
+Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]** dal menu del prodotto. Aggiungete il &quot;punto di ingresso dell’URL del sito Web principale&quot; al nome del dominio virtuale del sito. Quindi, aggiungete altri punti di ingresso al dominio in cui vive effettivamente il sito Web.
 
 Ad esempio, impostate il punto di ingresso dell’URL principale su quanto segue:
 
@@ -708,17 +711,17 @@ Aggiungete il seguente punto di ingresso URL del sito Web:
 
 ## La pagina Web utilizza un tag di aggiornamento meta? {#section_5A2F544C237C49B8B1A7FE0C45371C0D}
 
-Molti siti Web presentano una pagina anteriore che include un tag di aggiornamento meta tra `<head>...</head>` tag simili ai seguenti:
+Molti siti Web dispongono di una pagina anteriore che include un tag di aggiornamento meta tra i tag `<head>...</head>`, simile al seguente:
 
 `<meta http-equiv="Refresh" content="0;URL=https://www.adomain.com/apath/afile.html">`
 
 In alcune circostanze, il robot di ricerca del sito/merchandising non è in grado di seguire l’URL di aggiornamento meta per indicizzare il contenuto del sito Web. Questo problema è facile da risolvere impostando altri punti di ingresso.
 
-Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > Ricerca per indicizzazione > **[!UICONTROL URL Entrypoints]**. Aggiungete un altro punto di ingresso all’URL del tag di aggiornamento meta.
+Scegliere **[!UICONTROL Settings]** > Ricerca per indicizzazione > **[!UICONTROL URL Entrypoints]** dal menu del prodotto. Aggiungete un altro punto di ingresso all’URL del tag di aggiornamento meta.
 
 ## La vostra pagina Web utilizza un tag meta robots? {#section_36275A33DDFE4620BABA948F8A63DBD2}
 
-Talvolta le pagine Web utilizzano tag meta-robot per controllare i robot Web che tentano periodicamente di sfogliare un sito Web. I tag meta-robot vengono visualizzati tra i `<head>...</head>` tag di una pagina Web e hanno un aspetto simile al seguente:
+Talvolta le pagine Web utilizzano tag meta-robot per controllare i robot Web che tentano periodicamente di sfogliare un sito Web. I tag meta-robot vengono visualizzati tra i tag `<head>...</head>` di una pagina Web e hanno un aspetto simile al seguente tag:
 
 `<meta name="robots" content="noindex, nofollow">`
 
@@ -732,7 +735,7 @@ Rimuovete o modificate il tag meta robot nelle pagine Web da indicizzare sul sit
 
 ## Il vostro sito Web utilizza un file di esclusione robot? {#section_BF7B663347814F58AD736066C86B7D25}
 
-A volte un sito Web ha una pagina chiamata robots.txt che esclude tutti o alcuni robot dalla ricerca per indicizzazione. Per verificare se nel sito Web è presente un file robots.txt, cercarlo appena sotto il dominio di primo livello come illustrato di seguito:
+A volte un sito Web ha una pagina chiamata robots.txt che esclude tutti o alcuni robot dalla ricerca per indicizzazione. Per verificare se nel sito Web è presente un file robots.txt, cercatelo appena sotto il dominio di primo livello come illustrato di seguito:
 
 `https://www.yourdomain.com/robots.txt`
 
@@ -832,7 +835,7 @@ Immettete le seguenti maschere URL:
 
 Consultate [Aggiunta di maschere URL per indicizzare o meno parti indice di...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
-Consultate Espressioni [](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A)regolari.
+Vedere [Espressioni regolari](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## MP3 {#reference_7614250EE81C4EEFA43E57A6A74E83D7}
 
@@ -857,13 +860,13 @@ I file MP3 vengono sottoposti a ricerca per indicizzazione in due modi. Il metod
 
 Un secondo modo consiste nell’inserire l’URL del file MP3 come punto di ingresso dell’URL.
 
-Consultate [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
+Consultate [Informazioni sui punti di ingresso URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## Cosa devo fare per cercare e indicizzare i file MP3 sul mio sito? {#section_3CD794446E3545379C14E9F222118665}
 
-Per attivare la ricerca per indicizzazione MP3 e l&#39;indicizzazione per il proprio account, scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]** dal menu del prodotto. Nella [!DNL Staged Content Types] pagina, selezionare **[!UICONTROL Text in MP3 Music Files]**.
+Per attivare la ricerca per indicizzazione MP3 e l&#39;indicizzazione per il proprio account, scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]** dal menu del prodotto. Nella pagina [!DNL Staged Content Types], selezionare **[!UICONTROL Text in MP3 Music Files]**.
 
-Consultate [I Tipi](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07)Di Contenuto.
+Vedere [Informazioni sui tipi di contenuto](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## Come viene riconosciuto un file MP3? {#section_230E7336965A424F96C5CCF1D3C2D103}
 
@@ -884,19 +887,19 @@ Sì, ogni file MP3 che viene sottoposto a ricerca per indicizzazione sul sito We
 
 ## Come posso impedire l&#39;indicizzazione di singoli file MP3? {#section_C989DC1D3D3841B38F683A462195DC05}
 
-Circondare i tag di ancoraggio che collegano ai file MP3 con `<nofollow>` tag e `</nofollow>` tag. Il robot di ricerca non segue i collegamenti tra tali tag.
+Circondare i tag di ancoraggio che collegano ai file MP3 con i tag `<nofollow>` e `</nofollow>`. Il robot di ricerca non segue i collegamenti tra tali tag.
 
 Un altro metodo consiste nell’aggiungere gli URL dei file MP3 come maschere di esclusione.
 
-Consultate [Le maschere](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+Consultate [Le maschere URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Consultate [Lo script](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)delle maschere URL.
+Vedere [Lo script delle maschere URL](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
 
 ## Come posso impedire che i file MP3 vengano indicizzati? {#section_305D2B28D1124776B6DC0C62A17827C6}
 
-Il modo più semplice per controllare l&#39;indicizzazione MP3 per il vostro account è deselezionando **[!UICONTROL Text in MP3 Music Files]** sulla [!DNL Staged Content Types] pagina.
+Il modo più semplice per controllare l&#39;indicizzazione MP3 per il tuo account è deselezionare **[!UICONTROL Text in MP3 Music Files]** nella pagina [!DNL Staged Content Types].
 
-Consultate [Selezione dei tipi di contenuto per la ricerca per indicizzazione e l’indicizzazione](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
+Vedere [Selezione dei tipi di contenuto per la ricerca per indicizzazione e l&#39;indice](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
 Potete inoltre utilizzare la funzione Maschere URL per disattivare l&#39;indicizzazione MP3 per estensione di file. A tale scopo, scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]** dal menu del prodotto. Inserite una delle seguenti maschere:
 
@@ -910,7 +913,7 @@ Potete inoltre utilizzare la funzione Maschere URL per disattivare l&#39;indiciz
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Non utilizza espressioni regolari </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> exclude *.mp3 </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> exclude *.mp3  </span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Utilizza espressioni regolari </p> </td> 
@@ -919,15 +922,15 @@ Potete inoltre utilizzare la funzione Maschere URL per disattivare l&#39;indiciz
  </tbody> 
 </table>
 
-Consultate Espressioni [](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A)regolari.
+Vedere [Espressioni regolari](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## Perché non è possibile effettuare ricerche nei file MP3 cinesi, giapponesi o coreani sul sito? {#section_06A48DA3F9E742CC93CC8B5CCD7382FA}
 
-Per cercare file MP3 cinesi, giapponesi o coreani, nel menu del prodotto fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]** > **[!UICONTROL Text in MP3 Music Files]**. Quindi, fate clic **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]**, quindi specificate il set di caratteri utilizzato per codificare i file MP3.
+Per cercare file MP3 cinesi, giapponesi o coreani, nel menu del prodotto fare clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]** > **[!UICONTROL Text in MP3 Music Files]**. Quindi, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]** e specificate il set di caratteri utilizzato per codificare i file MP3.
 
-Consultate [Selezione dei tipi di contenuto per la ricerca per indicizzazione e l’indicizzazione](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
+Vedere [Selezione dei tipi di contenuto per la ricerca per indicizzazione e l&#39;indice](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
-Consulta [Informazioni sulle iniezioni](../c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
+Vedere [Informazioni sulle iniezioni](../c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
 
 ## PDF {#reference_F127C4915A0D436DA34E5D75ABFBB21B}
 
@@ -962,7 +965,7 @@ Ogni file PDF viene conteggiato come singolo documento, inclusi i PDF che conten
 
 ## I risultati della ricerca possono visualizzare un&#39;icona PDF? {#section_829CE82CC3544502A13D27C4DB820189}
 
-Sì. Usate il `<search-if-link-extension>` tag all’interno del modello per includere nei risultati della ricerca un’icona PDF o altri elementi grafici o testo:
+Sì. Utilizzate il tag `<search-if-link-extension>` all&#39;interno del modello per includere nei risultati di ricerca un&#39;icona PDF o altri elementi grafici o testo:
 
 ```
 <search-results> 
@@ -978,21 +981,21 @@ Le icone PDF consentono ai clienti di sapere che il risultato di una ricerca è 
 
 ## È possibile collegare i risultati della ricerca a una particolare pagina in un file PDF? {#section_A06E7F7017E6441E98209D288EE57BF6}
 
-Sì. Utilizzando il tag modello di collegamenti avanzati ( `<search-smart-link>...</search-smart-link>`), i clienti possono fare clic per aprire la prima pagina PDF contenente il risultato della ricerca.
+Sì. Utilizzando il tag del modello di collegamenti intelligenti ( `<search-smart-link>...</search-smart-link>`), i clienti possono fare clic per aprire la prima pagina PDF che contiene il risultato della ricerca.
 
-Per utilizzare i collegamenti avanzati, sostituite i `<search-link>...</search-link>` tag presenti nella sezione dei risultati di ricerca del modello con `<search-smart-link>...</search-smart-link>` i tag . Quando un cliente fa clic su un collegamento generato dai tag di collegamento avanzato, passa alla prima pagina PDF rilevante per la query di ricerca.
+Per utilizzare i collegamenti intelligenti, sostituite i tag `<search-link>...</search-link>` nella sezione dei risultati di ricerca del modello con i tag `<search-smart-link>...</search-smart-link>`. Quando un cliente fa clic su un collegamento generato dai tag di collegamento avanzato, passa alla prima pagina PDF rilevante per la query di ricerca.
 
 >[!NOTE]
 >
->Per utilizzare questa funzione, il cliente deve utilizzare una versione recente di Adobe Acrobat o Adobe Acrobat Reader, che deve includere il plug-in di evidenziazione e il plug-in EWH (External Window Handler). Inoltre, il browser deve utilizzare il plug-in Adobe Acrobat per Netscape Navigator (è possibile utilizzare qualsiasi browser che accetta questo plug-in Netscape Navigator) o il controllo Acrobat ActiveX per Internet Explorer 4.0 e versioni successive.
+>Per utilizzare questa funzione, il cliente deve utilizzare una versione recente dell&#39;Adobe Acrobat , o  Reader Adobe Acrobat, che deve includere il plug-in di evidenziazione e il plug-in EWH (External Window Handler). Inoltre, il browser deve utilizzare il  plug-in Adobe Acrobat per Netscape Navigator (è possibile utilizzare qualsiasi browser che accetta questo plug-in Netscape Navigator) o il  controllo Acrobat ActiveX per Internet Explorer 4.0 e versioni successive.
 
-Consultate [Cercare i tag](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)dei modelli.
+Vedere [Cerca tag modello](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
 ## Come si evita che i file PDF vengano indicizzati sul sito Web? {#section_96671419A822486AAC654D8DAD819940}
 
 Se non si desidera che il robot di ricerca esegua ricerche per indicizzazione e indicizzi i file PDF, deselezionare il tipo di contenuto **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-È inoltre possibile scegliere di disabilitare [!DNL URL Masks] l&#39;indicizzazione PDF.
+È inoltre possibile scegliere di utilizzare [!DNL URL Masks] per disattivare l&#39;indicizzazione PDF.
 
 Consultate [Aggiunta di maschere URL per indicizzare o meno parti indice di...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
@@ -1001,13 +1004,13 @@ Per disattivare l&#39;indicizzazione PDF, immettere una delle seguenti maschere 
 * `exclude *.pdf` (se non si utilizzano espressioni regolari)
 * `exclude regexp ^.*\.pdf$` (se utilizzate espressioni regolari)
 
-Consultate Espressioni [](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A)regolari.
+Vedere [Espressioni regolari](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## Com&#39;è possibile che non sia possibile effettuare ricerche nei file PDF cinesi, giapponesi o coreani sul sito Web? {#section_D41CA8EFCA0242EA8CF5F8F1924E4CD8}
 
 Ricerca nel sito/merchandising ottiene l&#39;UTF-8 da file PDF senza indicazione di lingua. Se è stato selezionato il tipo di contenuto **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), è necessario utilizzare le iniezioni di metadati per specificare la lingua utilizzata nel file PDF.
 
-Vedere [Aggiunta di definizioni](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)di iniezione di campi.
+Vedere [Aggiunta di definizioni di iniezione di campi](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Troppe pagine {#reference_48A748BC1ED14844ACAC2735C8388E8A}
 
@@ -1027,31 +1030,31 @@ Se siete certi che il sito Web è al di sotto del limite della pagina, ma l&#39;
 
 Il registro indice contiene informazioni dettagliate raccolte dal robot di ricerca del sito/merchandising mentre indicizza il sito Web. Il registro include un elenco di tutti i collegamenti sottoposti a ricerca per indicizzazione ed è stato rilevato un errore. La verifica del registro di indice è la soluzione migliore per iniziare quando si tenta di determinare quali pagine vengono indicizzate.
 
-Consultate [Visualizzazione dell&#39;intero registro indice di una pagina live o in una pagina temporanea...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
+Vedere [Visualizzazione dell&#39;intero registro di indice di un live o di uno stage...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
-Consultate [Visualizzazione del registro dell&#39;indice incrementale di una pagina live o in uno stage...](../c-about-index-menu/c-about-incremental-index.md#task_E668E1F1240C476DAA1CA783DC728232).
+Vedere [Visualizzazione del registro di indice incrementale di un live o di uno stage...](../c-about-index-menu/c-about-incremental-index.md#task_E668E1F1240C476DAA1CA783DC728232).
 
 Vedere [Visualizzazione del registro di indice incrementale con script di un live o...](../c-about-index-menu/c-about-scripted-index.md#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7).
 
-Consultate [Visualizzazione del registro di indice rigenerato di un live o di uno stage...](../c-about-index-menu/c-about-regenerate-index.md#task_61CE8F9E7BF84BA89A8D482B2106BB15).
+Vedere [Visualizzazione del registro di indice rigenerato di un live o di uno stage...](../c-about-index-menu/c-about-regenerate-index.md#task_61CE8F9E7BF84BA89A8D482B2106BB15).
 
-Consultate [Visualizzazione del registro di indice ri-classifica di un sito Web](../c-about-index-menu/c-about-re-rank-index.md#task_3C76107DFAC1495FACD3ABB0A688208D)attivo o in fase di esecuzione.
+Vedere [Visualizzazione del registro di indice ri-classifica di un sito Web live o in fase](../c-about-index-menu/c-about-re-rank-index.md#task_3C76107DFAC1495FACD3ABB0A688208D).
 
 ## I programmi CGI vengono indicizzati sul sito Web? {#section_86ED8A641B3841EC80153B4F107548FD}
 
-I programmi CGI utilizzano parametri URL che talvolta causano la ricerca per indicizzazione di più URL &quot;falsi&quot;. Se la ricerca del sito/merchandising sta leggendo i vostri programmi CGI e i seguenti URL con parametri CGI, probabilmente ci sono diversi multipli di pagine sottoposte a ricerca per indicizzazione e indicizzazione che non sono utili per il vostro indice di ricerca. I parametri CGI tipici vengono visualizzati negli URL con `?` o `&` caratteri.
+I programmi CGI utilizzano parametri URL che talvolta causano la ricerca per indicizzazione di più URL &quot;falsi&quot;. Se la ricerca del sito/merchandising sta leggendo i vostri programmi CGI e i seguenti URL con parametri CGI, probabilmente ci sono diversi multipli di pagine sottoposte a ricerca per indicizzazione e indicizzazione che non sono utili per il vostro indice di ricerca. I parametri CGI tipici vengono visualizzati negli URL con caratteri `?` o `&`.
 
 Potete mascherare i programmi CGI dall’indicizzazione utilizzando la funzione Maschere URL. Potete mascherare un prefisso URL o usare espressioni regolari per mascherare gli script CGI.
 
-Consultate [Le maschere](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+Consultate [Le maschere URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Consultate [Lo script](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)delle maschere URL.
+Vedere [Lo script delle maschere URL](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
 
-Consultate Espressioni [](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A)regolari.
+Vedere [Espressioni regolari](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## Nel server è abilitata la navigazione nella directory? {#section_073C88EEE74F4CA0AD2C7145D4810B22}
 
-Quando un server Web ha attivato la navigazione nelle directory e non esiste alcun file index.html presente in una determinata directory, una visita a tale directory può mostrare l’elenco dei file presenti in tale directory. In genere, nella parte superiore della pagina sono presenti dei collegamenti che consentono di ordinare l’elenco in modi diversi semplicemente facendo clic **[!UICONTROL Name]**, **[!UICONTROL Last modified]**, **[!UICONTROL Size]** e così via. In genere, questi vengono visualizzati nel registro dell’indice di ricerca/merchandising del sito come URL con caratteri quali `?M=A` alla fine. L’indicizzatore di ricerca/merchandising del sito segue questi collegamenti, e questo può causare l’indicizzazione di più URL &quot;falsi&quot;.
+Quando un server Web ha attivato la navigazione nelle directory e non esiste alcun file index.html presente in una determinata directory, una visita a tale directory può mostrare l’elenco dei file presenti in tale directory. In genere, nella parte superiore della pagina sono presenti collegamenti che consentono di ordinare l&#39;elenco in modi diversi semplicemente facendo clic su **[!UICONTROL Name]**, **[!UICONTROL Last modified]**, **[!UICONTROL Size]** e così via. In genere, questi vengono visualizzati nel registro dell&#39;indice di ricerca/merchandising del sito come URL con caratteri come ad esempio `?M=A` alla fine. L’indicizzatore di ricerca/merchandising del sito segue questi collegamenti, e questo può causare l’indicizzazione di più URL &quot;falsi&quot;.
 
 In genere, un sito Web ben progettato ha file indice situati in ogni directory, o ha la navigazione directory disabilitata per quelle directory senza file indice. Fortunatamente, c&#39;è un modo semplice per mascherare questi &quot;falsi&quot; URL se non si è in grado di cambiare le pagine o disabilitare gli elenchi di directory sul lato server.
 
@@ -1061,41 +1064,41 @@ Per eseguire questa operazione, fare clic su **[!UICONTROL Settings]** > **[!UIC
 
 Dopo aver creato la maschera, accertatevi di reindicizzare il sito Web.
 
-Consultate [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Vedere [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consultate [Esecuzione di un indice incrementale di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Vedere [Esecuzione di un indice incrementale di un sito Web live o in fase...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
 ## Ci sono forum o newsgroup sul vostro sito Web? {#section_8DCB94F0850A41B9B2EA885F779E2F84}
 
 Se i forum o i newsgroup vengono sottoposti a ricerca per indicizzazione sul sito Web, potrebbero essere presenti URL per opzioni di visualizzazione o ordinamento diverse. Questo significa che la stessa pagina viene indicizzata più volte.
 
-In genere, i forum o i newsgroup sono dotati di motori di ricerca personalizzati. In tal caso, potete usare [!DNL URL Masks] per mascherare i forum da ricerche e merchandising sul sito.
+In genere, i forum o i newsgroup sono dotati di motori di ricerca personalizzati. In tal caso, potete utilizzare [!DNL URL Masks] per mascherare i forum da ricerche e merchandising sul sito.
 
-Nel menu del prodotto, fate clic su **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. Nella [!DNL Staged URL Masks] pagina, mascherate i forum immettendo i relativi URL come maschere URL escluse.
+Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]** dal menu del prodotto. Nella pagina [!DNL Staged URL Masks], mascherate i forum immettendo i relativi URL come maschere URL di esclusione.
 
 Consultate [Aggiunta di maschere URL per indicizzare o meno parti indice di...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
 Dopo aver creato le maschere, accertatevi di reindicizzare il sito Web.
 
-Consultate [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Vedere [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consultate [Esecuzione di un indice incrementale di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Vedere [Esecuzione di un indice incrementale di un sito Web live o in fase...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
 ## Nel sito Web sono presenti file PDF o Microsoft Office? {#section_455FC5438DF74E68AB9A31D359EAD4D9}
 
 Se sul sito Web sono presenti file PDF o [!DNL Microsoft Office] file, è possibile che la dimensione indice di pochi file conteggi molte pagine. Il motivo per cui ci sono più pagine da indicizzare rispetto ai documenti è che ogni pagina di un file PDF o Microsoft Office viene conteggiata come una pagina separata.
 
-Nel menu del prodotto, fate clic su **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Index]**. Nella [!DNL Full Index] pagina, selezionare **[!UICONTROL Count All Pages]**, quindi fare clic **[!UICONTROL Full Index Now]** per visualizzare il conteggio totale delle pagine. Se non si desidera indicizzare file PDF o file di Microsoft Office, è possibile disattivare questo tipo di contenuto in **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**.
+Scegliere **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Index]** dal menu del prodotto. Nella pagina [!DNL Full Index], selezionare **[!UICONTROL Count All Pages]**, quindi fare clic su **[!UICONTROL Full Index Now]** per visualizzare il conteggio totale delle pagine. Se non si desidera che i file PDF o i file di Microsoft Office siano indicizzati, è possibile disattivare questo tipo di contenuto in **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**.
 
-Consultate [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Vedere [Esecuzione di un indice completo di un sito Web attivo o in fase di esecuzione...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consultate [I Tipi](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07)Di Contenuto.
+Vedere [Informazioni sui tipi di contenuto](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## Hai più punti di ingresso URL? {#section_8C54AFD7DF56472A9364D516482B534C}
 
-Il robot di ricerca del sito/merchandising inizia la ricerca per indicizzazione in corrispondenza di specifici punti di ingresso URL e segue tutti i collegamenti trovati a tutto il contenuto in quel particolare dominio. Se avete specificato molti punti di ingresso URL, è possibile che venga applicato il crawled a un numero significativo di pagine.
+Il robot di ricerca del sito/merchandising inizia a eseguire ricerche per indicizzazione nei punti di ingresso dell’URL specificati e segue tutti i collegamenti trovati a tutto il contenuto in quel particolare dominio. Se avete specificato molti punti di ingresso URL, è possibile che venga applicato il crawled a un numero significativo di pagine.
 
-Utilizzate il `nofollow` tag Robots Exclusion Protocol nelle intestazioni dei documenti di entrata sui domini aggiuntivi, come segue:
+Utilizzate il tag `nofollow` del protocollo di esclusione dei robot nelle intestazioni dei documenti di ingresso sui domini aggiuntivi come segue:
 
 ```
 <html> 
@@ -1112,7 +1115,7 @@ Per ulteriori informazioni sui robot web e sul protocollo di esclusione dei robo
 
 Se non disponete dell&#39;accesso all&#39;origine delle pagine su domini aggiuntivi, potete rimuovere i diversi punti di ingresso URL. In questo modo potete limitare l&#39;attività di indicizzazione solo ai domini di cui desiderate che i clienti siano in grado di effettuare ricerche.
 
-Consultate [I punti di ingresso](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)URL.
+Consultate [Informazioni sui punti di ingresso URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## Hai superato i byte interni o i limiti di tempo di ricerca/merchandising del sito? {#section_AE1BE61A58864FFE81F0BCEED2EBB15D}
 
