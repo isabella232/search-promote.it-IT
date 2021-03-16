@@ -1,29 +1,27 @@
 ---
-description: nulle
-seo-description: nulle
-seo-title: Ricerca di moduli
+description: Scopri i moduli di ricerca in Search&amp;Promote
 solution: Target
-title: Ricerca di moduli
-topic: Appendices,Site search and merchandising
+title: Moduli di ricerca
+topic: Appendici, Ricerca nel sito e merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2931'
 ht-degree: 0%
 
 ---
 
 
-# Cerca moduli{#search-forms}
+# Moduli di ricerca{#search-forms}
 
-## Uso delle raccolte nei moduli di ricerca {#reference_5A079AEEEFB84457892EF0870D0605C3}
+## Utilizzo delle raccolte nei moduli di ricerca {#reference_5A079AEEEFB84457892EF0870D0605C3}
 
-Le raccolte consentono ai clienti di effettuare ricerche in aree specifiche del sito Web. A seconda se implementate un elenco a discesa o un elenco di caselle di controllo, potete consentire ai clienti di cercare una o più raccolte.
+Le raccolte consentono ai clienti di cercare aree specifiche del sito web. A seconda che si implementi un elenco a discesa o un elenco di caselle di controllo, è possibile consentire ai clienti di cercare una o più raccolte.
 
 Vedere anche [Informazioni sulle raccolte](../c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
 
-L&#39;esempio seguente mostra quattro nomi di raccolta diversi e le aree associate del sito Web che coprono:
+L’esempio seguente mostra quattro nomi di raccolta diversi e le aree associate del sito web a cui si riferiscono:
 
 <table> 
  <thead> 
@@ -51,13 +49,13 @@ L&#39;esempio seguente mostra quattro nomi di raccolta diversi e le aree associa
    <td colname="col2"> <p>https://www.mycompany.com/news/ </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Informazioni  Adobe </p> </td> 
+   <td colname="col1"> <p>Adobe </p> </td> 
    <td colname="col2"> <p>https://www.mycompany.com/company/ </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-L&#39;interfaccia del modulo di ricerca a discesa consente agli utenti di selezionare una raccolta ed è simile alla seguente:
+L’interfaccia del modulo di ricerca a discesa consente agli utenti di selezionare una raccolta ed è simile alla seguente:
 
 ![](assets/DropdownsearchformUI.png)
 
@@ -89,7 +87,7 @@ Il modulo di ricerca casella di controllo viene generato con il seguente codice 
 
 ## Risultati ricerca {#section_BBDD5B44E2B349BC88D937F44583D350}
 
-Il tag del modello di ricerca `<search-input-collections>` genera la casella di riepilogo della raccolta HTML nei risultati della ricerca e seleziona automaticamente la raccolta specificata nella ricerca. Se invece si desidera generare le caselle di controllo, utilizzare il tag `<search-input>` invece del tag `<input>` come segue:
+Il tag del modello di ricerca `<search-input-collections>` genera la casella di riepilogo della raccolta HTML nei risultati della ricerca e seleziona automaticamente la raccolta specificata nella ricerca. Se invece desideri generare delle caselle di controllo, utilizza il tag `<search-input>` invece del tag `<input>` come segue:
 
 ```
 <search-input type="checkbox" name="sp_k" value="">All of Adobe<br> 
@@ -99,26 +97,26 @@ Il tag del modello di ricerca `<search-input-collections>` genera la casella di 
 <search-input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-Il tag `<search-input>` produce un tag `<input>` e include l&#39;attributo `checked` se la raccolta è stata specificata nella ricerca.
+Il tag `<search-input>` restituisce un tag `<input>` e include l&#39;attributo `checked` se la raccolta è stata specificata nella ricerca.
 
-## Utilizzo di frame con moduli {#reference_82CDDDA1E37042E4849EBF7EA05407C5}
+## Uso dei fotogrammi con i moduli {#reference_82CDDDA1E37042E4849EBF7EA05407C5}
 
-Potete configurare i set di frame in modo che funzionino con la ricerca e il merchandising del sito.
+È possibile configurare i set di frame in modo che funzionino con la ricerca/merchandising del sito.
 
-Per ulteriori informazioni sui frame HTML e l’elemento del set di frame HTML, consultate il seguente URL:
+Per ulteriori informazioni sui frame HTML e sull&#39;elemento del set di frame HTML, consulta il seguente URL:
 
 [https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp)
 
-Se il sito utilizza frame, potete specificare una cornice di destinazione per i collegamenti dei risultati di ricerca. Il target predefinito è _self, che apre i collegamenti nel frame corrente o nella finestra del browser. Potete, invece, specificare target specifici per il sito o riservati ai browser:
+Se il sito utilizza frame, è possibile specificare un frame di destinazione per i collegamenti ai risultati di ricerca. Il target predefinito è _self, che apre i collegamenti nel frame corrente o nella finestra del browser. È invece possibile specificare destinazioni specifiche per il sito o riservate al browser:
 
-* _top (riservato al browser) risultati aperti nella finestra del browser corrente e sostituiti tutti i fotogrammi correnti.
-* _blank (i risultati riservati ai browser) vengono aperti in una nuova finestra del browser.
-* _parent (i risultati riservati ai browser) vengono aperti nel frame principale del frame corrente.
-* i risultati di frame2 (specifici per il sito) si aprono in un frame denominato &quot;frame2&quot;. Potete specificare il nome di qualsiasi fotogramma come valore (ad esempio, principale o contenuto).
+* _top (riservato al browser) si apre nella finestra del browser corrente e sostituisce tutti i frame correnti.
+* _vuoto (riservato al browser) si apre in una nuova finestra del browser.
+* _parent (riservato al browser) si apre nel frame principale del frame corrente.
+* frame2 (specifico del sito) si apre in un frame denominato &quot;frame2&quot;. È possibile specificare il nome di un fotogramma come valore (ad esempio principale o contenuto).
 
-Se il sito non utilizza frame, è probabile che non si desideri modificare il nome di destinazione predefinito.
+Se il sito non utilizza frame, è molto probabile che non si desideri modificare il nome di destinazione predefinito.
 
-Se create un modello di risultati di ricerca personalizzato per il sito Web, potete ignorare l&#39;impostazione specificata utilizzando l&#39;attributo `target` del tag `<search-link>`.
+Se crei un modello di risultati di ricerca personalizzato per il sito web, puoi sovrascrivere l’impostazione specificata utilizzando l’attributo `target` del tag `<search-link>` .
 
 La procedura per la configurazione dei set di frame è la seguente:
 
@@ -126,30 +124,30 @@ La procedura per la configurazione dei set di frame è la seguente:
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> <p>Passaggio processo </p> </th> 
-   <th colname="col02" class="entry"> <p>Descrizione processo </p> </th> 
+   <th colname="col02" class="entry"> <p>Descrizione del processo </p> </th> 
    <th colname="col2" class="entry"> <p>Collegamento </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
-   <td colname="col02"> <p>Aggiungere il modulo alla cornice desiderata nella pagina Web. </p> </td> 
-   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Aggiunta del codice del modulo di ricerca a una cornice dell'utente in corso...  </a> </p> </td> 
+   <td colname="col02"> <p>Aggiungere il modulo al fotogramma desiderato nella pagina Web. </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Aggiunta del codice del modulo di ricerca a una cornice del tuo...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
-   <td colname="col02"> <p>Impostate il frame di destinazione per la pagina dei risultati di ricerca. </p> </td> 
+   <td colname="col02"> <p>Imposta il frame di destinazione per la pagina dei risultati di ricerca. </p> </td> 
    <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Impostazione del frame di destinazione per la pagina dei risultati di ricerca  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
-   <td colname="col02"> <p>Impostate la destinazione per i collegamenti creati dalla pagina dei risultati della ricerca. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Impostazione della destinazione per i collegamenti provenienti dai risultati della ricerca...  </a> </p> </td> 
+   <td colname="col02"> <p>Imposta la destinazione per i collegamenti effettuati dalla pagina dei risultati della ricerca. </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Impostazione della destinazione per i collegamenti effettuati dai risultati della ricerca...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
-   <td colname="col02"> <p>Modificate le pagine delle cornici di navigazione per evitare che vengano indicizzate. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Modifica delle pagine delle cornici di navigazione per impedirne l’utilizzo...  </a> </p> </td> 
+   <td colname="col02"> <p>Modifica le pagine dei frame di navigazione per impedirne l’indicizzazione. </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Modifica delle pagine dei frame di navigazione per impedirne l'esecuzione...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
@@ -159,9 +157,9 @@ La procedura per la configurazione dei set di frame è la seguente:
  </tbody> 
 </table>
 
-## Aggiunta del codice del modulo di ricerca a una cornice della pagina Web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
+## Aggiunta di codice del modulo di ricerca a un frame nella pagina Web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
 
-1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]** dal menu del prodotto.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
 
    Il codice del modulo di ricerca HTML è simile al seguente:
 
@@ -174,20 +172,20 @@ La procedura per la configurazione dei set di frame è la seguente:
    </form>
    ```
 
-1. Nella pagina [!DNL Standard Form Source], selezionare e copiare il codice del modulo di ricerca HTML che viene visualizzato nel campo di testo.
-1. Incollate il codice del modulo di ricerca nella cornice desiderata nel set di frame.
+1. Nella pagina [!DNL Standard Form Source] , seleziona e copia il codice del modulo di ricerca HTML visualizzato nel campo di testo.
+1. Incolla il codice del modulo di ricerca nel frame desiderato nel set di frame.
 
-   Nell&#39;esempio seguente, il codice del modulo di ricerca viene incollato nella cornice di navigazione, la cornice verticale stretta sul lato sinistro dello schermo.
+   Nell’esempio seguente, il codice del modulo di ricerca viene incollato nella cornice di navigazione, la cornice verticale stretta sul lato sinistro dello schermo.
 
    ![](assets/frames1.gif)
 
 ## Impostazione del frame di destinazione per la pagina dei risultati di ricerca {#section_532CACB90888467093D95EACB64FDFA1}
 
-Se il codice del modulo di ricerca è stato inserito nella cornice di navigazione verticale come sopra, è possibile visualizzare i risultati della ricerca nella cornice principale più grande. In questo esempio, il fotogramma principale viene chiamato &quot;corpo&quot; e lo si imposta come fotogramma di destinazione.
+Se hai inserito il codice del modulo di ricerca nella cornice di navigazione verticale come sopra, puoi visualizzare i risultati della ricerca nella cornice principale più grande. In questo esempio, si chiama il frame principale &quot;body&quot; e lo si imposta come frame di destinazione.
 
 ![](assets/frames2.gif)
 
-1. Per specificare il frame di destinazione per la pagina dei risultati, aggiungere una destinazione e un valore al modulo modificando la seguente riga nel codice del modulo di ricerca da quanto segue:
+1. Per specificare il frame di destinazione per la pagina dei risultati, aggiungere un target e un valore al modulo modificando la seguente riga nel codice del modulo di ricerca utilizzando:
 
    `<form method="get" action="https://search.atomz.com/search/">`
 
@@ -195,54 +193,54 @@ Se il codice del modulo di ricerca è stato inserito nella cornice di navigazion
 
    `<form target="body" method="get" action="https://search.atomz.com/search/">`
 
-   Assicurarsi di inserire delle virgolette intorno al valore di destinazione del modulo.
+   Assicurati di inserire virgolette intorno al valore di destinazione del modulo.
 
-Quando un cliente esegue una ricerca nel sito Web, i risultati della ricerca vengono visualizzati nella cornice &quot;body&quot; della pagina Web.
+Quando un cliente esegue una ricerca del sito web, i risultati della ricerca vengono visualizzati nel frame &quot;body&quot; della pagina web.
 
 ## Impostazione della destinazione per i collegamenti effettuati dalla pagina dei risultati di ricerca {#section_523248C5AC424D878321C21A23A5CD66}
 
-Potete impostare la cornice di destinazione modificando direttamente il modello.
+Puoi impostare il fotogramma di destinazione modificando direttamente il modello.
 
-Se i risultati della ricerca vengono visualizzati nella cornice &quot;body&quot;, è probabile che anche i collegamenti si aprano nella cornice &quot;body&quot;. Poiché si tratta dello stesso fotogramma, il valore di destinazione `"_self"` che è l&#39;impostazione predefinita, non è necessario apportare alcuna modifica.
+Se i risultati della ricerca appaiono nella cornice &quot;corpo&quot;, probabilmente si desidera che i collegamenti si aprano anche nella cornice &quot;corpo&quot;. Poiché si tratta dello stesso fotogramma, il valore di destinazione `"_self"` che è l&#39;impostazione predefinita, non è necessario apportare alcuna modifica.
 
-Potete anche impostare il frame di destinazione per i collegamenti dei risultati. Di seguito sono riportati diversi esempi di operazioni che è possibile eseguire:
+Puoi anche impostare il frame di destinazione per i collegamenti ai risultati. Di seguito sono riportati diversi esempi di operazioni che è possibile eseguire:
 
-* Specificate fotogrammi diversi per i risultati della ricerca e i relativi collegamenti in modo che i risultati rimangano attivi nella propria cornice mentre ogni risultato su cui si fa clic si apre in una cornice separata.
-* Specificate che i risultati della ricerca si aprano in una nuova finestra vuota, in modo che la vecchia finestra rimanga attiva con i contenuti originali, mantenendo anche i risultati della ricerca.
+* Specifica frame diversi per i risultati della ricerca e i relativi collegamenti in modo che i risultati della ricerca rimangano attivi nel proprio frame mentre ogni risultato selezionato si apre in un frame separato.
+* Specifica che i risultati della ricerca si aprono in una nuova finestra vuota, in modo che la vecchia finestra rimanga attiva con il suo contenuto originale, conservando anche i risultati della ricerca.
 
-Il nome di destinazione può essere il nome di un fotogramma specificato nel codice HTML oppure può essere uno dei seguenti valori HTML predefiniti:
+Il nome di destinazione può essere il nome di un frame specificato nel codice HTML oppure può essere uno dei seguenti valori predefiniti HTML:
 
-* `target="_blank"` Aprite i collegamenti in una nuova finestra vuota senza nome.
+* `target="_blank"` Apri i collegamenti in una nuova finestra vuota senza nome.
 
-* `target="_self"` impostazione predefinita. Aprite i collegamenti nella stessa finestra in cui risiedono i risultati della ricerca. In questo caso, la finestra dei risultati della ricerca originale. Utilizzate questa opzione per ignorare una destinazione di base assegnata a livello globale.
+* `target="_self"` impostazione predefinita. Apri i collegamenti nella stessa finestra in cui risiedono i risultati della ricerca. In questo caso, la finestra dei risultati della ricerca originale. Utilizzare questa opzione per sostituire un target di base assegnato a livello globale.
 
-* `target="_parent"` Apri i collegamenti nel set di frame principale della pagina di collegamento. Se il documento non ha un elemento padre, per impostazione predefinita funziona come `"_self"`.
+* `target="_parent"` Apri i collegamenti nel set di frame principale della pagina di collegamento . Se il documento non ha un elemento padre, funziona come `"_self"` per impostazione predefinita.
 
-* `target="_top"` Aprite i collegamenti nella finestra completa. Se il documento è già nella parte superiore, per impostazione predefinita funziona come `"_self"`. Utilizzate questa opzione per uscire da una nidificazione arbitraria dei fotogrammi profondi.
+* `target="_top"` Apri i collegamenti nella finestra completa. Se il documento è già nella parte superiore, funziona come `"_self"` per impostazione predefinita. Utilizza questa opzione per uscire da una nidificazione arbitrariamente profonda dei fotogrammi.
 
 Ad esempio, per impostare il frame di destinazione `_blank` è possibile modificare il modello nel modo seguente:
 
 1. Scegliere **[!UICONTROL Design]** > **[!UICONTROL Templates]** dal menu del prodotto.
 
-1. Nella pagina [!DNL Staged Templates], nella tabella, fate clic sul nome del modello con la cornice di destinazione.
-1. Individuate il tag `<search-link>`. Il tag predefinito `<search-link>` deve essere simile al seguente:
+1. Nella tabella della pagina [!DNL Staged Templates] fare clic sul nome del modello con il frame di destinazione di destinazione.
+1. Individua il tag `<search-link>` . Il tag `<search-link>` predefinito deve essere simile al seguente:
 
    `<search-link><search-title length=100></search-link>`
 
-1. Aggiungete la destinazione del fotogramma al tag `<search-link>`. Nell&#39;esempio precedente, immettere `target="_blank"`. Accertatevi di includere il carattere di sottolineatura e le virgolette intorno al valore di destinazione.
+1. Aggiungi la destinazione del frame al tag `<search-link>` . Nell’esempio precedente, immetti `target="_blank"`. Accertati di includere il carattere di sottolineatura e le virgolette intorno al valore di destinazione.
 
    Il tag `<search-link>` ora viene visualizzato come segue:
 
    `<search-link target="_blank"><search-title length=100></search-link>`
 
-Quando un visitatore sceglie un collegamento per i risultati della ricerca, la pagina collegata ora si apre in una nuova finestra vuota.
+Quando un visitatore sceglie un collegamento ai risultati di ricerca, la pagina collegata ora si apre in una nuova finestra vuota.
 
-## Modifica delle pagine delle cornici di navigazione per evitare che vengano indicizzate{#section_C62E5F0EE1294D5EBD97E123E54433FC}
+## Modifica delle pagine dei frame di navigazione per impedire l&#39;indicizzazione {#section_C62E5F0EE1294D5EBD97E123E54433FC}
 
-In genere, si desidera escludere le cornici di navigazione dall’indicizzazione con i risultati della ricerca. Per ottenere questa funzionalità, potete aggiungere il tag meta `noindex` a tali pagine.
+In genere, si desidera escludere i frame di navigazione dall’indicizzazione con i risultati della ricerca. Per eseguire questa funzionalità, puoi aggiungere il tag meta `noindex` a tali pagine.
 
-1. Aprite l’origine della pagina HTML per il frame di navigazione.
-1. Aggiungete il seguente tag meta nella sezione `<head>` del codice HTML:
+1. Apri l&#39;origine della pagina HTML per il frame di navigazione.
+1. Aggiungi il seguente tag meta all&#39;interno della sezione `<head>` del codice HTML:
 
    `<meta name="robots" content="noindex">`
 
@@ -259,47 +257,47 @@ In genere, si desidera escludere le cornici di navigazione dall’indicizzazione
 
 ## Verifica del modulo di ricerca {#section_43D8D4A7BF524DC480DFE5442F6A2E3C}
 
-1. Passare al sito Web e individuare un modulo.
-1. Nel campo di ricerca, immettete alcuni termini di ricerca e fate clic su **[!UICONTROL Search]**.
+1. Passa al sito web e passa a un modulo.
+1. Nel campo di ricerca, immetti alcuni termini di ricerca e fai clic su **[!UICONTROL Search]**.
 
    È vero quanto segue:
 
    * La pagina dei risultati della ricerca viene visualizzata nel frame di destinazione specificato.
-   * I collegamenti dai risultati della ricerca si trovano nella cornice di destinazione specificata.
-   * I risultati della cornice di navigazione non vengono visualizzati.
+   * I collegamenti dai risultati della ricerca si trovano nel frame di destinazione specificato.
+   * I risultati del frame di navigazione non vengono visualizzati.
 
-   In caso di problemi con i frame dopo aver verificato il modulo di ricerca, contatta l’Assistenza clienti.
+   Se si verificano problemi con i fotogrammi dopo aver verificato il modulo di ricerca, contatta l’Assistenza clienti.
 
 ## Esempio di modulo di ricerca avanzato {#reference_82E1051918744EBA88A01E9E6AE42C4A}
 
 È possibile modificare il codice modulo avanzato in base alle esigenze di progettazione e di contenuto, oppure aggiungere o rimuovere ulteriori parametri di ricerca.
 
-La home page è un luogo ideale per inserire un modulo di ricerca avanzato, in quanto molti clienti si aspettano di trovare funzionalità di ricerca. Potete anche creare una pagina HTML che include il modulo di ricerca e altre informazioni utili, e quindi il collegamento a tale pagina all&#39;interno del sito Web.
+La home page è una buona posizione per inserire un modulo di ricerca avanzato, in quanto molti clienti si aspettano di trovare funzionalità di ricerca. Puoi anche creare una pagina HTML che include il modulo di ricerca e altre informazioni utili, e quindi collegarti a tale pagina in tutto il tuo sito web.
 
-Se si sta effettuando l&#39;indicizzazione di contenuto protetto, è possibile ottenere i risultati della ricerca da server Web di ricerca sicuri. Modificate l’URL nell’attributo dell’azione del modulo di ricerca in: action=&quot;https://search.atomz.com/search/&quot; per eseguire questa operazione.
+Se si sta effettuando l’indicizzazione del contenuto protetto, è possibile che i risultati della ricerca siano serviti da server Web di ricerca sicuri. Modifica l’URL nell’attributo dell’azione modulo di ricerca in: action=&quot;https://search.atomz.com/search/&quot; per eseguire questa operazione.
 
 >[!NOTE]
 >
->Alcuni editor HTML non riescono a incollare il codice HTML da altre applicazioni. Se il codice HTML viene visualizzato sulla pagina Web come testo, copiate e incollate il codice di ricerca in un semplice editor di testo, come Blocco note in Windows o Testo semplice in Mac, quindi copiate e incollate di nuovo dal semplice editor di testo al vostro editor HTML.
+>Alcuni editor HTML non riescono a incollare il codice HTML da altre applicazioni. Se il codice HTML viene visualizzato nella pagina web come testo, copia e incolla il codice di ricerca in un semplice editor di testo, come Blocco note su Windows o Testo semplice su Mac, quindi copia e incolla di nuovo dal semplice editor di testo al tuo editor HTML.
 
-I parametri di ricerca vengono utilizzati nel codice modulo di ricerca avanzato per creare pulsanti di scelta, caselle di controllo e caselle di riepilogo che i clienti possono utilizzare per personalizzare le singole ricerche. I clienti possono specificare il numero di risultati di ricerca visualizzati, ad esempio, o un intervallo di date, oppure se i riepiloghi vengono visualizzati con i risultati di ricerca attraverso le opzioni visualizzate nei moduli di ricerca avanzati.
+I parametri di ricerca vengono utilizzati nel codice modulo di ricerca avanzato per creare pulsanti di scelta, caselle di controllo e caselle di riepilogo che i clienti possono utilizzare per personalizzare singole ricerche. I clienti possono specificare il numero di risultati di ricerca visualizzati, ad esempio, o un intervallo di date, o se i riepiloghi vengono visualizzati con i risultati di ricerca, tutte le opzioni visualizzate nei moduli di ricerca avanzati.
 
-Utilizzando il seguente modulo di ricerca avanzato di esempio, il resto di questo argomento mostra come ogni opzione del modulo viene creata utilizzando i parametri di ricerca.
+Utilizzando il seguente modulo di ricerca avanzato di esempio, il resto di questo argomento mostra come viene creata ogni opzione del modulo utilizzando i parametri di ricerca.
 
 ![](assets/advancedsearchform.png)
 
-È possibile visualizzare l&#39;intero codice HTML del modulo di ricerca avanzata dell&#39;esempio precedente.
+Puoi visualizzare l’intero codice HTML del modulo di ricerca avanzato dell’esempio precedente.
 
-Vedere [Codice HTML del modulo di ricerca avanzata](#reference_9AAD4A46B68D4D48865508982CB86DB9).
+Vedere [Codice HTML del modulo di ricerca avanzato](#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
-Vedere [Configurazione della funzione di completamento automatico del CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
+Consulta [Configurazione del CSS con completamento automatico](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
-Vedere [Copia del codice HTML del modulo di ricerca in corso...](../c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
+Vedere [Copia del codice HTML del modulo di ricerca in...](../c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
 <table> 
  <thead> 
   <tr> 
-   <th colname="col2" class="entry"> <p>Posizione nel modulo </p> </th> 
+   <th colname="col2" class="entry"> <p>Posizione sul modulo </p> </th> 
    <th colname="col1" class="entry"> <p>Parametro </p> </th> 
    <th colname="col3" class="entry"> <p>Codice HTML </p> </th> 
    <th colname="col4" class="entry"> <p>Descrizione </p> </th> 
@@ -310,27 +308,27 @@ Vedere [Copia del codice HTML del modulo di ricerca in corso...](../c-about-auto
    <td colname="col2"> <p>Abilitare le opzioni avanzate del modulo di ricerca (campo nascosto) </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_advanced  </span> </p> </td> 
    <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type="hidden" name="sp_advanced" value="1"&gt; </span> </p> </td> 
-   <td colname="col4"> <p>Abilitare o disabilitare le opzioni di ricerca avanzate. Ad esempio, è possibile inserire un modulo di ricerca standard nella home page con un collegamento a una seconda pagina contenente un modulo avanzato. In questo caso, è possibile inserire una copia del modulo standard all'interno di <span class="codeph"> &lt;search-if-not-advanced&gt;...&lt;/search-if-not-advanced&gt; </span> tag modello. </p> <p>Un cliente che esegue una ricerca dal modulo standard visualizza un modulo di ricerca standard quando vengono visualizzati i risultati della ricerca. Nella schermata del modulo di ricerca avanzata, è possibile includere il tag <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> con le altre opzioni avanzate del modulo. </p> <p>È inoltre inclusa una copia del modulo di ricerca avanzata all'interno di &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt; tag modello. Un cliente che esegue una ricerca dal modulo di ricerca avanzato vede un modulo di ricerca avanzato quando vengono visualizzati i risultati della ricerca. </p> </td> 
+   <td colname="col4"> <p>Attiva o disattiva le opzioni di ricerca avanzate. Ad esempio, è possibile inserire un modulo di ricerca standard nella home page con un collegamento a una seconda pagina contenente un modulo avanzato. In questo caso, inserisci una copia del modulo standard all’interno di <span class="codeph"> &lt;search-if-not-advanced&gt;...&lt;/search-if-not-advanced&gt; </span> tag modello. </p> <p>Un cliente che esegue una ricerca dal modulo standard visualizza un modulo di ricerca standard quando vengono visualizzati i risultati della ricerca. Nella schermata del modulo di ricerca avanzata, includi il tag <span class="codeph"> &lt;tipo di input=hidden name="sp_advanced" value=1&gt; </span> con le altre opzioni avanzate del modulo. </p> <p>È inoltre inclusa una copia del modulo di ricerca avanzata all’interno dei tag modello &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt;. Un cliente che esegue una ricerca dal modulo di ricerca avanzato vede un modulo di ricerca avanzato quando vengono visualizzati i risultati della ricerca. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p> Corrispondenza con qualsiasi, tutti o frase </p> </td> 
+   <td colname="col2"> <p> Corrispondenza a qualsiasi, tutto o frase </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_p  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Allow&nbsp;"any,"&nbsp;"all,"&nbsp;or&nbsp;"phrase"&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="any"&gt;Any&nbsp;word 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="all"&nbsp;checked&gt;All&nbsp;words 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="phrase"&gt;Exact&nbsp;phrase </code> </p> </td> 
-   <td colname="col4"> <p>Consentire al cliente di specificare che "qualsiasi parola," "tutte le parole" o "la frase esatta" deve essere presente affinché un documento corrisponda. Quando viene specificato il parametro <span class="codeph"> sp_p </span>, i clienti non devono utilizzare "+", "-" o entrambi nella query di ricerca. </p> <p> Se il parametro <span class="codeph"> sp_p </span> viene omesso o se è impostato su "" o "any", i clienti possono comunque utilizzare gli identificatori "+" e "-". Se il parametro <span class="codeph"> sp_p </span> è impostato su "all" o "phrase", i valori specificati "+" e "-" vengono ignorati. </p> <p>Per ulteriori informazioni sull’utilizzo di "+" e "-" in una ricerca, </p> <p>Vedere <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local"> Informazioni sulle ricerche </a>. </p> </td> 
+   <td colname="col4"> <p>Consentire al cliente di specificare che "qualsiasi parola," "tutte le parole" o "la frase esatta" deve essere presente affinché un documento corrisponda. Quando viene specificato il parametro <span class="codeph"> sp_p </span> , i clienti non devono utilizzare "+" o "-" o entrambi nella query di ricerca. </p> <p> Se il parametro <span class="codeph"> sp_p </span> viene omesso o se è impostato su "" o "any", i clienti possono comunque utilizzare gli identificatori "+" e "-". Se il parametro <span class="codeph"> sp_p </span> è impostato su "all" o "phrase", i valori specificati saranno "+" e "-" verranno ignorati. </p> <p>Puoi trovare ulteriori informazioni sull’utilizzo di "+" e "-" in una ricerca. </p> <p>Consulta <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local"> Informazioni sulle ricerche </a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p> Corrispondenza audio simile </p> </td> 
+   <td colname="col2"> <p> Corrispondenza audio-simile </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_w  </span> </p> <p>e </p> <p> <span class="codeph"> sp_w_control  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;enables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=1&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="alike"&gt;&nbsp;Sound-alike&nbsp;matching </code> </p> </td> 
-   <td colname="col4"> <p>Consente ai clienti di abilitare o disabilitare la corrispondenza audio-simili. La corrispondenza sonora simile consente alle query di ricerca errate di corrispondere alle parole che "suonano allo stesso modo" nei documenti. </p> <p>Quando il parametro <span class="codeph"> sp_w_control </span> è impostato su 1 e il parametro <span class="codeph"> sp_w </span> è impostato su "similar", la casella di controllo generata è selezionata e consente la corrispondenza audio-simili per impostazione predefinita. </p> <p>Se il parametro <span class="codeph"> sp_w </span> è impostato su "", la casella di controllo non è selezionata. </p> <p>Se non è stata abilitata la corrispondenza audio-simili durante l'operazione di indicizzazione più recente, la corrispondenza audio-simile non è possibile e il parametro <span class="codeph"> sp_w </span> viene ignorato. Per abilitare la corrispondenza tra suoni e simili, nel menu del prodotto fare clic su <span class="uicontrol"> Linguistics </span> &gt; <span class="uicontrol"> Words &amp; Language </span> &gt; <span class="uicontrol"> Corrispondenza audio simile </span>. </p> <p>È inoltre possibile assegnare i parametri <span class="codeph"> sp_w </span> e <span class="codeph"> sp_w_control </span> nel modo seguente: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
+   <td colname="col4"> <p>Consente ai clienti di abilitare o disabilitare la corrispondenza audio-simile. La corrispondenza Sound-alike consente alle query di ricerca errate di corrispondere a parole che "suonano uguali" nei documenti. </p> <p>Quando il parametro <span class="codeph"> sp_w_control </span> è impostato su 1 e il parametro <span class="codeph"> sp_w </span> è impostato su "alike", la casella di controllo generata è selezionata, consentendo la corrispondenza simile al suono per impostazione predefinita. </p> <p>Se il parametro <span class="codeph"> sp_w </span> è impostato su "", la casella di controllo non è selezionata. </p> <p>Se non hai abilitato la corrispondenza audio-simile durante l'operazione di indicizzazione più recente, la corrispondenza audio-simile non è possibile e il parametro <span class="codeph"> sp_w </span> viene ignorato. Per abilitare la corrispondenza audio-simile, scegliere <span class="uicontrol"> Linguistica </span> &gt; <span class="uicontrol"> Parole e lingua </span> &gt; <span class="uicontrol"> Corrispondenza audio-simile </span> dal menu prodotto. </p> <p>Puoi anche assegnare i parametri <span class="codeph"> sp_w </span> e <span class="codeph"> sp_w_control </span> nel modo seguente: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=0&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="exact"&gt; 
-      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>In questo caso, quando il parametro <span class="codeph"> sp_w_control </span> è impostato su 0 e il parametro <span class="codeph"> sp_w </span> è impostato su "exact", per impostazione predefinita la corrispondenza della somiglianza audio è disattivata. Se il parametro <span class="codeph"> sp_w </span> è impostato su "", la corrispondenza della somiglianza audio è abilitata. </p> </td> 
+      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>In questo caso, quando il parametro <span class="codeph"> sp_w_control </span> è impostato su 0 e il parametro <span class="codeph"> sp_w </span> è impostato su "esatto", per impostazione predefinita la corrispondenza di tipo sound-alike è disabilitata. Se il parametro <span class="codeph"> sp_w </span> è impostato su "", viene abilitata la corrispondenza per l'aspetto sonoro. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Corrispondenza intervallo date </p> </td> 
@@ -338,10 +336,10 @@ Vedere [Copia del codice HTML del modulo di ricerca in corso...](../c-about-auto
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Specifies&nbsp;type&nbsp;of&nbsp;date&nbsp;range&nbsp;searching&nbsp;to&nbsp;perform.--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="custom"&nbsp;checked&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="specific"&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Il parametro <span class="codeph"> sp_d </span> specifica un intervallo di dati personalizzato che corrisponde a quello da eseguire o un intervallo di date specifico che corrisponde a quello da eseguire. </p> <p>Nel modulo di ricerca avanzata predefinito, questa opzione viene presentata come un gruppo di pulsanti di scelta con un elenco a discesa di intervalli di date "personalizzati", come generato con un parametro <span class="codeph"> sp_date_range </span>. Include inoltre un gruppo di date di inizio e di fine "specifiche" generate con <span class="codeph"> sp_start_day </span>, <span class="codeph"> sp_start_month </span>, <span class="codeph"> sp_start_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span> e a10/&gt; parametri sp_end_year </span>.<span class="codeph"> </span></p> <p>Un intervallo di date "personalizzato" è un intervallo di date con nome da cercare. Ad esempio, "In qualsiasi momento" "Oggi", "Nell'ultimo anno" e così via. </p> <p>Un intervallo di date "specifico" è costituito da una data di inizio e una data di fine. Ad esempio, da "8 settembre 2009 a 18 ottobre 2011". </p> </td> 
+   <td colname="col4"> <p>Il parametro <span class="codeph"> sp_d </span> specifica un intervallo di dati personalizzato corrispondente a quello da eseguire oppure un intervallo di date specifico corrispondente a quello da eseguire. </p> <p>Nel modulo di ricerca avanzato predefinito, questa opzione viene presentata come un gruppo di pulsanti di scelta con un elenco a discesa di intervalli di date "personalizzati" generato con un parametro <span class="codeph"> sp_date_range </span> . Include inoltre e un gruppo di date di inizio e fine "specifiche" generate con <span class="codeph"> sp_start_day </span>, <span class="codeph"> sp_start_month </span>, <span class="codeph"> sp_start_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span> e Parametri a10/&gt; sp_end_year </span> .<span class="codeph"> </span></p> <p>Un intervallo di date "personalizzato" è un intervallo di date denominato da cercare. Ad esempio, "In qualsiasi momento", "Oggi", "Nell'ultimo anno" e così via. </p> <p>Un intervallo di date "specifico" è costituito da una data di inizio e una data di fine. Ad esempio, da "8 settembre 2009 a 18 ottobre 2011". </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Corrispondenza intervallo date: intervallo date personalizzato </p> </td> 
+   <td colname="col2"> <p>Corrispondenza intervallo di date: intervallo date personalizzato </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_date_range  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Selection&nbsp;list&nbsp;for&nbsp;custom&nbsp;date&nbsp;range.--&gt; 
       &lt;select&nbsp;name="sp_date_range"&nbsp;size=1&gt; 
@@ -355,31 +353,31 @@ Vedere [Copia del codice HTML del modulo di ricerca in corso...](../c-about-auto
       &lt;option&nbsp;value=365&gt;Within&nbsp;the&nbsp;last&nbsp;year&lt;/option&gt; 
       &lt;option&nbsp;value=730&gt;Within&nbsp;the&nbsp;last&nbsp;two&nbsp;years&lt;/option&gt; 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Il parametro <span class="codeph"> sp_date_range </span> viene utilizzato per creare un intervallo di date "personalizzato". Ad esempio, "In qualsiasi momento" "Oggi", "Nell'ultimo anno" e così via. </p> <p>Valori maggiori o uguali a zero specificano il numero di giorni in cui eseguire la ricerca prima di oggi. Ad esempio, un valore pari a 0 specifica "Today", un valore pari a "1" specifica "Today and YIeri", un valore pari a "30" specifica "Within the Last 30 Days," e così via. Valori inferiori a zero specificano un intervallo personalizzato come segue: </p> <p> 
+   <td colname="col4"> <p>Il parametro <span class="codeph"> sp_date_range </span> viene utilizzato per creare un intervallo di date "personalizzato". Ad esempio, "In qualsiasi momento", "Oggi", "Nell’ultimo anno" e così via. </p> <p>Valori maggiori o uguali a zero specificano il numero di giorni in cui eseguire la ricerca prima della data odierna. Ad esempio, un valore pari a 0 specifica "Today", un valore pari a "1" specifica "Today and Ieri", un valore pari a "30" specifica "Within the Last 30 Days" e così via. Valori inferiori a zero specificano un intervallo personalizzato come segue: </p> <p> 
      <ul id="ul_E65DDE33883F441F9730F315E485AD98"> 
       <li id="li_83E9466AB9D7438A8544001F6B007186"> <p>-1 = "In qualsiasi momento", come se non si specificasse alcun intervallo di date. </p> </li> 
-      <li id="li_38AB8D97179A47F9B860A96EA09119BB"> <p>-2 = "Questa settimana", che esegue la ricerca da domenica a sabato della settimana corrente. </p> </li> 
-      <li id="li_F4C3A8658428418A8A06FBAAB4733C68"> <p>-3 = "Ultima settimana", che esegue la ricerca da domenica a sabato della settimana precedente la settimana corrente. </p> </li> 
-      <li id="li_DF2D0B043A4E4DE9BE8D82E69A76E793"> <p>-4 = "Questo mese", che esegue la ricerca delle date entro il mese corrente. </p> </li> 
-      <li id="li_76BC4C2CED574E2A81448158828BFF1B"> <p>-5 = "Ultimo mese", che esegue la ricerca nelle date entro il mese precedente quello corrente. </p> </li> 
-      <li id="li_17FF849384FB46D58AF6FF1D3BC408C8"> <p>-6 = "Quest'anno", che esegue la ricerca delle date entro l'anno corrente. </p> </li> 
-      <li id="li_E2B8B4DFF3914BBDB86D0EB77F52B305"> <p>-7 = "Last year", che esegue la ricerca delle date entro l'anno precedente l'anno corrente. </p> </li> 
+      <li id="li_38AB8D97179A47F9B860A96EA09119BB"> <p>-2 = "Questa settimana", che cerca da domenica a sabato della settimana corrente. </p> </li> 
+      <li id="li_F4C3A8658428418A8A06FBAAB4733C68"> <p>-3 = "Ultima settimana", che cerca da domenica a sabato della settimana precedente la settimana corrente. </p> </li> 
+      <li id="li_DF2D0B043A4E4DE9BE8D82E69A76E793"> <p>-4 = "Questo mese", che cerca le date entro il mese corrente. </p> </li> 
+      <li id="li_76BC4C2CED574E2A81448158828BFF1B"> <p>-5 = "Ultimo mese", che esegue la ricerca nelle date entro il mese precedente il mese corrente. </p> </li> 
+      <li id="li_17FF849384FB46D58AF6FF1D3BC408C8"> <p>-6 = "Quest'anno", che cerca le date entro l'anno corrente. </p> </li> 
+      <li id="li_E2B8B4DFF3914BBDB86D0EB77F52B305"> <p>-7 = "Ultimo anno", che cerca le date entro l'anno precedente l'anno corrente. </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Corrispondenza intervallo date: date di inizio </p> </td> 
+   <td colname="col2"> <p>Corrispondenza intervallo di date: date di inizio </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_start_day, sp_start_month, sp_start_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>Questo triplo di valori numerici specifica la data di inizio di un intervallo di date specifico da cercare. Accertatevi di specificare tutti e tre i valori perché una data specificata parzialmente viene ignorata. </p> <p>È legale specificare solo la data di inizio, solo la data di fine o sia la data di inizio che la data di fine. Se viene specificata solo la data di inizio, la ricerca include documenti corrispondenti con data corrispondente o successiva alla data di inizio. Se viene specificata solo la data di fine, la ricerca include documenti corrispondenti alla data di fine o prima di essa. Se sono specificate sia la data di inizio che la data di fine, la ricerca include documenti corrispondenti dalla data di inizio alla data di fine. </p> <p>Vengono cercate tutte le date relative all’ora media di Greenwich. </p> </td> 
+   <td colname="col4"> <p>Questo triplet di valori numerici specifica la data di inizio di un intervallo di date specifico da cercare. Assicurati di specificare tutti e tre i valori perché una data parzialmente specificata viene ignorata. </p> <p>È legale specificare solo la data di inizio, solo la data di fine o sia la data di inizio che la data di fine. Se viene specificata solo la data di inizio, la ricerca include documenti corrispondenti datati alla data di inizio o dopo quella di inizio. Se viene specificata solo la data di fine, la ricerca include i documenti corrispondenti alla data di fine o prima di essa. Se sono specificate sia la data di inizio che la data di fine, la ricerca include i documenti corrispondenti dalla data di inizio alla data di fine. </p> <p>Ricerca in tutte le date relativa all'ora di Greenwich. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p> Corrispondenza intervallo date: date di fine </p> </td> 
+   <td colname="col2"> <p> Corrispondenza intervallo di date: date di fine </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>Questo triplo di valori numerici specifica la data di fine dell'intervallo di date specifico da cercare. Accertatevi di specificare tutti e tre i valori perché una data specificata parzialmente viene ignorata. </p> <p>È legale specificare solo la data di inizio, solo la data di fine o sia la data di inizio che la data di fine. Se viene specificata solo la data di inizio, la ricerca include documenti corrispondenti con data corrispondente o successiva alla data di inizio. Se viene specificata solo la data di fine, la ricerca include documenti corrispondenti alla data di fine o prima di essa. Se sono specificate sia la data di inizio che la data di fine, la ricerca include documenti corrispondenti dalla data di inizio alla data di fine. </p> <p>Vengono cercate tutte le date relative all’ora media di Greenwich. </p> </td> 
+   <td colname="col4"> <p>Questo triplo di valori numerici specifica la data di fine dell’intervallo di date specifico da cercare. Assicurati di specificare tutti e tre i valori perché una data parzialmente specificata viene ignorata. </p> <p>È legale specificare solo la data di inizio, solo la data di fine o sia la data di inizio che la data di fine. Se viene specificata solo la data di inizio, la ricerca include documenti corrispondenti datati alla data di inizio o dopo quella di inizio. Se viene specificata solo la data di fine, la ricerca include i documenti corrispondenti alla data di fine o prima di essa. Se sono specificate sia la data di inizio che la data di fine, la ricerca include i documenti corrispondenti dalla data di inizio alla data di fine. </p> <p>Ricerca in tutte le date relativa all'ora di Greenwich. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>All'interno del campo di ricerca </p> </td> 
+   <td colname="col2"> <p>All’interno del campo di ricerca </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_x  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;the&nbsp;search&nbsp;field&nbsp;--&gt; 
       Within&nbsp;&lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
@@ -393,7 +391,7 @@ Vedere [Copia del codice HTML del modulo di ricerca in corso...](../c-about-auto
       &lt;option&nbsp;value="target"&gt;Target&lt;/option&gt; 
       &lt;option&nbsp;value="date"&gt;Date&lt;/option&gt;* 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>La casella di riepilogo <span class="codeph"> sp_x </span> consente ai clienti di specificare il campo in cui cercare le stringhe di query. </p> <p>I clienti possono scegliere tutti i campi, il titolo, la descrizione del documento, le parole chiave del documento, il corpo, il testo alternativo, l'URL del documento, la data o le parole chiave di destinazione. </p> <p>Quando si utilizza il parametro <span class="codeph"> sp_x </span>, i clienti non devono specificare "title:", "desc:", "keys:", "body:", "alt:", "url:" e "target:" nelle stringhe di query di ricerca. </p> <p>Se il parametro <span class="codeph"> sp_x </span> viene omesso, o se è impostato su "" o "any", i clienti possono comunque utilizzare le stringhe di identificatore del campo. Se il parametro <span class="codeph"> sp_x </span> è impostato su un campo specifico, tutte le altre stringhe di identificatore di campo vengono ignorate. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local"> Informazioni sulle ricerche </a>. </p> </td> 
+   <td colname="col4"> <p>La casella di riepilogo <span class="codeph"> sp_x </span> consente ai clienti di specificare il campo in cui cercare le stringhe di query. </p> <p>I clienti possono scegliere tutti i campi, il titolo, la descrizione del documento, le parole chiave del documento, il corpo, il testo alternativo, l’URL, la data o le parole chiave di destinazione del documento. </p> <p>Quando si utilizza il parametro <span class="codeph"> sp_x </span> , i clienti non devono specificare "title:", "desc:", "keys:", "body:", "alt:", "url:" e "target:" nelle stringhe di query di ricerca. </p> <p>Se il parametro <span class="codeph"> sp_x </span> viene omesso o se è impostato su "" o "any", i clienti possono comunque utilizzare le stringhe dell'identificatore di campo. Se il parametro <span class="codeph"> sp_x </span> è impostato su un campo specifico, tutte le altre stringhe di specificatori di campo vengono ignorate. </p> <p>Consulta <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local"> Informazioni sulle ricerche </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Mostra conteggio risultati </p> </td> 
@@ -406,17 +404,17 @@ Vedere [Copia del codice HTML del modulo di ricerca in corso...](../c-about-auto
       &lt;option&nbsp;value=50&gt;50&lt;/option&gt; 
       &lt;option&nbsp;value=100&gt;100&lt;/option&gt; 
       &lt;/select&gt;&nbsp;results </code> </p> </td> 
-   <td colname="col4"> <p>Consente ai clienti di scegliere il numero di risultati di ricerca che vengono visualizzati su ogni pagina di risultati di ricerca. </p> <p>Nel modulo è possibile avere un numero di opzioni pari o inferiore a quello desiderato. Verificate che il valore "value=" corrisponda al valore visualizzato. </p> </td> 
+   <td colname="col4"> <p>Consente ai clienti di scegliere il numero di risultati di ricerca visualizzati in ogni pagina dei risultati di ricerca. </p> <p>È possibile disporre di un numero di opzioni pari o inferiore a quello desiderato nel modulo. Assicurati che il valore "value=" corrisponda al valore visualizzato. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Mostrare o nascondere i riepiloghi </p> </td> 
+   <td colname="col2"> <p>Mostra o nascondi riepiloghi </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_m  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Show&nbsp;or&nbsp;hide&nbsp;summaries&nbsp;in&nbsp;search&nbsp;results&nbsp;--&gt; 
       &lt;select&nbsp;name="sp_m"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=1&nbsp;selected&gt;with&lt;/option&gt; 
       &lt;option&nbsp;value=0&gt;without&lt;/option&gt; 
       &lt;/select&gt;&nbsp;summaries&nbsp; </code> </p> </td> 
-   <td colname="col4"> <p>Consente ai clienti di scegliere se visualizzare il testo di riepilogo per ogni corrispondenza. </p> <p>Impostate il valore su 1 se desiderate visualizzare i riepiloghi. Impostate il valore su 0 se desiderate nascondere i riepiloghi. È inoltre possibile utilizzare il parametro con un set di pulsanti di scelta, come nell'esempio seguente: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Show&nbsp;or&nbsp;hide&nbsp;summaries&nbsp;in&nbsp;search&nbsp;results&nbsp;--&gt; 
+   <td colname="col4"> <p>Consente ai clienti di scegliere se visualizzare il testo di riepilogo per ogni corrispondenza. </p> <p>Impostare il valore su 1 se si desidera visualizzare i riepiloghi. Impostare il valore su 0 se si desidera nascondere i riepiloghi. È inoltre possibile utilizzare il parametro con un set di pulsanti di scelta, come nell’esempio seguente: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Show&nbsp;or&nbsp;hide&nbsp;summaries&nbsp;in&nbsp;search&nbsp;results&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_m"&nbsp;value=1&nbsp;selected&gt;Show&nbsp;summaries 
       &lt;input&nbsp;type=radio&nbsp;name="sp_m"&nbsp;value=0&gt;Hide&nbsp;summaries </code> </p> </td> 
   </tr> 
@@ -428,22 +426,22 @@ Vedere [Copia del codice HTML del modulo di ricerca in corso...](../c-about-auto
       &lt;option&nbsp;value=0&nbsp;selected&gt;relevance&lt;/option&gt; 
       &lt;option&nbsp;value=1&gt;date&lt;/option&gt; 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Consente ai clienti di scegliere se i risultati sono elencati in ordine di rilevanza o data. </p> <p>Quando il valore è impostato su 1, i risultati vengono elencati dal documento modificato più di recente al documento modificato meno di recente. Quando il valore è impostato su 0, i risultati sono elencati tra quelli più rilevanti e quelli meno rilevanti. È inoltre possibile utilizzare questo parametro con i pulsanti di scelta come nell'esempio seguente: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
+   <td colname="col4"> <p>Consente ai clienti di scegliere se i risultati sono elencati in ordine di rilevanza o data. </p> <p>Quando il valore è impostato su 1, i risultati vengono elencati dal documento modificato più di recente al documento modificato meno di recente. Quando il valore è impostato su 0, i risultati sono elencati tra quelli più rilevanti e quelli meno rilevanti. È inoltre possibile utilizzare questo parametro con i pulsanti di scelta come nell’esempio seguente: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_s"&nbsp;value=0&nbsp;selected&gt;Sort&nbsp;by&nbsp;relevance 
       &lt;input&nbsp;type=radio&nbsp;name="sp_s"&nbsp;value=1&gt;Sort&nbsp;by&nbsp;date </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Codice HTML per modulo di ricerca avanzato {#reference_9AAD4A46B68D4D48865508982CB86DB9}
+## Codice HTML del modulo di ricerca avanzato {#reference_9AAD4A46B68D4D48865508982CB86DB9}
 
-Il codice del modulo HTML utilizzato per generare il modulo di ricerca avanzata che viene visualizzato nella parte superiore dell&#39;argomento Modulo di ricerca avanzata di esempio.
+Il codice del modulo HTML utilizzato per generare il modulo di ricerca avanzata visualizzato nella parte superiore dell’argomento Modulo di ricerca avanzata di esempio.
 
-Vedere [Esempio di modulo di ricerca avanzato](#reference_82E1051918744EBA88A01E9E6AE42C4A).
+Consultare [Esempio di modulo di ricerca avanzato](#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
-Se utilizzate questo codice, ricordate di sostituire il valore `sp_a` di `sp99999999` con il numero di account effettivo.
+Se utilizzi questo codice, ricorda di sostituire il valore `sp_a` di `sp99999999` con il numero di account effettivo.
 
-Per trovare il numero di account, scegliere **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]** dal menu del prodotto.
+Per trovare il numero di account, scegliere **[!UICONTROL Settings]** dal menu prodotto > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]**.
 
 ```
 <form method="get" action="https://search.atomz.com/search/"> 
@@ -635,13 +633,13 @@ Sound-alike matching
 </form>
 ```
 
-## Codice modello di modulo di ricerca avanzato {#reference_D762C22E754E462DBEECD88D2C3FA579}
+## Codice del modello di modulo di ricerca avanzato {#reference_D762C22E754E462DBEECD88D2C3FA579}
 
-È possibile aggiungere al modello il codice HTML del modulo di ricerca avanzata in modo che la scelta predefinita per qualsiasi parametro sia la stessa della ricerca precedente.
+Puoi aggiungere al modello il codice HTML del modulo di ricerca avanzato in modo che la scelta predefinita per qualsiasi parametro sia la stessa della ricerca precedente.
 
 In altre parole, se un cliente fa clic sul pulsante di scelta **[!UICONTROL Exact phrase]**, è possibile assicurarsi che il pulsante di scelta sia selezionato per impostazione predefinita quando vengono visualizzati i risultati della ricerca.
 
-Questa funzionalità viene realizzata rimuovendo tutti gli identificatori &quot;selezionati&quot; o &quot;selezionati&quot; dai tag HTML standard, quindi sostituendo i seguenti tag HTML:
+Questa funzionalità viene eseguita rimuovendo tutti gli identificatori &quot;controllati&quot; o &quot;selezionati&quot; dai tag HTML standard e sostituendo i seguenti tag HTML:
 
 * `<input>`
 * `<select>`
@@ -649,7 +647,7 @@ Questa funzionalità viene realizzata rimuovendo tutti gli identificatori &quot;
 * `</option>`
 * `</select>`
 
-con i seguenti tag di modello corrispondenti:
+con i seguenti tag modello corrispondenti:
 
 * `<search-input>`
 * `<search-select>`
@@ -657,7 +655,7 @@ con i seguenti tag di modello corrispondenti:
 * `</search-option>`
 * `</search-select>`
 
-A tal fine, utilizzate il seguente codice come tag `<form>` nel modello di ricerca.
+A questo scopo, utilizza il seguente codice come tag `<form>` nel modello di ricerca.
 
 ```
 <!-- Adobe Target results section.--> 
