@@ -1,15 +1,13 @@
 ---
-description: Visualizzazioni dati mostra i risultati della ricerca con i campi meta. Ogni colonna è un campo meta e ogni riga è il risultato di una query di ricerca. Personalizzare le visualizzazioni dati scegliendo e ridisponendo le colonne. Le visualizzazioni dati possono anche avere titoli e descrizioni personalizzati.
-seo-description: Visualizzazioni dati mostra i risultati della ricerca con i campi meta. Ogni colonna è un campo meta e ogni riga è il risultato di una query di ricerca. Personalizzare le visualizzazioni dati scegliendo e ridisponendo le colonne. Le visualizzazioni dati possono anche avere titoli e descrizioni personalizzati.
-seo-title: Informazioni sulle visualizzazioni dati
+description: Visualizzazioni dati mostra i risultati della ricerca con i campi meta. Ogni colonna è un campo meta e ogni riga è il risultato di una query di ricerca. Personalizza visualizzazioni dati scegliendo e ridisponendo le colonne. Le visualizzazioni dati possono anche avere titoli e descrizioni personalizzati.
 solution: Target
 title: Informazioni sulle visualizzazioni dati
-topic: Reports,Site search and merchandising
+topic: Rapporti, ricerca nel sito e merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -17,13 +15,13 @@ ht-degree: 1%
 
 # Informazioni sulle visualizzazioni dati{#about-data-views}
 
-Visualizzazioni dati mostra i risultati della ricerca con i campi meta. Ogni colonna è un campo meta e ogni riga è il risultato di una query di ricerca. Personalizzare le visualizzazioni dati scegliendo e ridisponendo le colonne. Le visualizzazioni dati possono anche avere titoli e descrizioni personalizzati.
+Visualizzazioni dati mostra i risultati della ricerca con i campi meta. Ogni colonna è un campo meta e ogni riga è il risultato di una query di ricerca. Personalizza visualizzazioni dati scegliendo e ridisponendo le colonne. Le visualizzazioni dati possono anche avere titoli e descrizioni personalizzati.
 
-## Uso delle visualizzazioni dati {#concept_DCA897D074464BC1861AA47B40CC86C3}
+## Utilizzo delle visualizzazioni dati {#concept_DCA897D074464BC1861AA47B40CC86C3}
 
-Ogni account ha la convenienza di creare più viste dati. Utilizzare la pagina Visualizzazioni dati per creare e modificare tali viste dati.
+Ogni account ha la comodità di creare più visualizzazioni dati. Utilizza la pagina Visualizzazioni dati per creare e modificare queste visualizzazioni dati.
 
-Dopo aver aggiunto una visualizzazione dati, è necessario modificarla per configurare e personalizzare la visualizzazione.
+Dopo aver aggiunto una visualizzazione dati, è necessario modificarla per configurarla e personalizzarla.
 
 Vedere [Modifica di una visualizzazione dati](../c-about-reports-menu/c-about-data-views.md#task_258A367896C24DD498C755925EA8F516).
 
@@ -35,20 +33,20 @@ Vedere [Copia di una visualizzazione dati](../c-about-reports-menu/c-about-data-
 
 È possibile aggiungere una visualizzazione dati alla pagina [!DNL Data Views] per visualizzare i valori di ciascun campo meta con una query di ricerca.
 
-Dopo aver aggiunto una visualizzazione dati, è necessario modificarla per configurare e personalizzare la visualizzazione.
+Dopo aver aggiunto una visualizzazione dati, è necessario modificarla per configurarla e personalizzarla.
 
 Vedere [Modifica di una visualizzazione dati](../c-about-reports-menu/c-about-data-views.md#task_258A367896C24DD498C755925EA8F516).
 
 **Aggiunta di una visualizzazione dati**
 
 1. Scegliere **[!UICONTROL Reports]** > **[!UICONTROL Data Views]** dal menu del prodotto.
-1. Nella pagina [!DNL Data Views] fare clic su **[!UICONTROL Add New Data View]**.
-1. Nella finestra di dialogo [!DNL Add New Data View], nel campo [!DNL Title] immettere il nome della visualizzazione dati che si desidera creare.
+1. Nella pagina [!DNL Data Views], fai clic su **[!UICONTROL Add New Data View]**.
+1. Nella finestra di dialogo [!DNL Add New Data View], immettere il nome della visualizzazione dati da creare nel campo [!DNL Title].
 1. Clic **[!UICONTROL Add]**.
 
 ## Modifica di una visualizzazione dati {#task_258A367896C24DD498C755925EA8F516}
 
-Quando si aggiunge una visualizzazione dati alla pagina [!DNL Data Views], è possibile utilizzare Modifica per modificare il nome e la descrizione della visualizzazione dati o per spostare, visualizzare o nascondere la visualizzazione di ciascun campo meta.
+Quando si aggiunge una visualizzazione dati alla pagina [!DNL Data Views], è possibile utilizzare Modifica per modificare il nome e la descrizione della visualizzazione dati o per spostare, visualizzare o nascondere la visualizzazione di ciascun campo metadati.
 
 È inoltre possibile bloccare o sbloccare una visualizzazione dati selezionata.
 
@@ -57,12 +55,12 @@ Vedere [Aggiunta di una visualizzazione dati](../c-about-reports-menu/c-about-da
 **Per modificare una visualizzazione dati**
 
 1. Scegliere **[!UICONTROL Reports]** > **[!UICONTROL Data Views]** dal menu del prodotto.
-1. Nella pagina [!DNL Data Views], nella colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL Edit]** nella riga con la visualizzazione dati che si desidera modificare.
-1. Nella pagina [!DNL Data Views Editor], impostate le opzioni desiderate.
+1. Nella pagina [!DNL Data Views] della colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL Edit]** nella riga con la visualizzazione dati che si desidera modificare.
+1. Nella pagina [!DNL Data Views Editor] , imposta le opzioni desiderate.
 
-   L&#39;Editor visualizzazione dati dispone di tutti i controlli per nascondere, visualizzare e spostare le colonne dei campi nella pagina Visualizzazione dati.
+   L’Editor visualizzazione dati dispone di tutti i controlli per nascondere, visualizzare e spostare le colonne dei campi nella pagina Visualizzazione dati.
 
-   Quando si visualizza una visualizzazione dati, la tabella risultante mostra anche i seguenti campi di colonna aggiuntivi, che non sono modificabili: Classificazione, rilevanza e punteggio (nel complesso). Questi tre campi speciali rappresentano i punteggi di rilevanza, i punteggi di classifica e i punteggi complessivi per ciascun risultato.
+   Quando visualizzi una visualizzazione dati, la tabella risultante mostra anche i seguenti campi di colonna aggiuntivi non modificabili: Classifica, pertinenza e punteggio (nel complesso). Questi tre campi speciali rappresentano i punteggi di rilevanza, i punteggi di classifica e i punteggi complessivi per ciascun risultato.
 
    <table> 
     <thead> 
@@ -82,15 +80,15 @@ Vedere [Aggiunta di una visualizzazione dati](../c-about-reports-menu/c-about-da
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parametri di ricerca </p> </td> 
-      <td colname="col2"> <p>Consente di specificare i parametri di ricerca predefiniti. Quando la visualizzazione dei dati viene visualizzata per la prima volta, questi parametri CGI vengono aggiunti automaticamente. </p> <p>Non modificare o eliminare <span class="codeph"> sp_cs</span> o <span class="codeph"> sp_f</span>. Questi parametri sono essenziali per la visualizzazione dati, indipendentemente dal set di caratteri preferito dall'account. </p> <p>Vedere <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parametri CGI di ricerca back-end</a>. </p> </td> 
+      <td colname="col2"> <p>Consente di specificare i parametri di ricerca predefiniti. Quando la visualizzazione dati viene visualizzata per la prima volta, questi parametri CGI vengono aggiunti automaticamente. </p> <p>Non modificare o eliminare <span class="codeph"> sp_cs</span> o <span class="codeph"> sp_f</span>. Questi parametri sono essenziali per la visualizzazione dati indipendentemente dal set di caratteri preferito dell’account. </p> <p>Consulta <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parametri CGI di ricerca back-end</a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Blocca stato </p> </td> 
-      <td colname="col2"> <p>Consente di bloccare o sbloccare la visualizzazione dati. </p> <p>È possibile visualizzare una visualizzazione di dati bloccata solo con una password e un nome utente. L'utente deve essere un membro corrente dell'account. </p> <p>È possibile accedere a una visualizzazione dati sbloccata senza una password o un account utente. </p> </td> 
+      <td colname="col1"> <p>Stato blocco </p> </td> 
+      <td colname="col2"> <p>Consente di bloccare o sbloccare la visualizzazione dati. </p> <p>È possibile visualizzare una visualizzazione dati bloccata solo con una password e un nome utente. L'utente deve essere un membro corrente dell'account. </p> <p>È possibile accedere a una visualizzazione dati sbloccata senza password o account utente. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ordine </p> </td> 
-      <td colname="col2"> <p> Consente di modificare l'ordine delle colonne modificando il numero nella casella di testo <span class="wintitle"> Order</span>. È inoltre possibile trascinare una riga per modificare l'ordine delle colonne. </p> </td> 
+      <td colname="col2"> <p> Consente di modificare l'ordine delle colonne modificando il numero nella casella di testo <span class="wintitle"> Ordine</span>. Puoi anche trascinare una riga per modificare l’ordine delle colonne. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Includi </p> </td> 
@@ -98,93 +96,93 @@ Vedere [Aggiunta di una visualizzazione dati](../c-about-reports-menu/c-about-da
       </tr> 
       <tr> 
       <td colname="col1"> <p>Visualizza URL come immagine </p> </td> 
-      <td colname="col2"> <p>Visualizzare miniature e immagini in questa colonna se il risultato della ricerca per questa colonna restituisce un URL. </p> <p>L'URL viene rimosso dal nome o dal protocollo dello schema prima di diventare un valore dell'attributo <span class="codeph"> src</span> di un tag immagine. </p> <p>Se il risultato della ricerca di ritorno non ha l’aspetto di un URL per un’immagine, viene visualizzato un messaggio. </p> </td> 
+      <td colname="col2"> <p>Visualizza miniature e immagini in questa colonna se il risultato della ricerca per questa colonna restituisce un URL. </p> <p>L'URL viene rimosso dal nome o dal protocollo dello schema prima di diventare un valore dell'attributo <span class="codeph"> src</span> di un tag immagine. </p> <p>Se il risultato della ricerca di ritorno non assomiglia a un URL di un'immagine, viene visualizzato un . </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Lunghezza campo </p> </td> 
-      <td colname="col2"> <p>Imposta il numero di caratteri visualizzati come risultato nella visualizzazione dati. </p> <p>Il valore predefinito è 100 caratteri. </p> <p>Alcuni campi, come la valutazione della classifica e il campo data, non dispongono di lunghezze di campo regolabili. </p> </td> 
+      <td colname="col2"> <p>Imposta il numero di caratteri visualizzati come risultato nella visualizzazione dati. </p> <p>Il valore predefinito è 100 caratteri. </p> <p>Alcuni campi, come il punteggio di classificazione e il campo data, non dispongono di lunghezze di campo regolabili. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 1. Clic **[!UICONTROL Save Changes]**.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fai clic su **[!UICONTROL History]** per ripristinare le modifiche apportate.
 
-      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
+      Vedere [Uso dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulta [Visualizzazione delle impostazioni live](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Copia di una visualizzazione dati {#task_78D4C2799BC84677843ED4CA1CD205AF}
 
-È possibile copiare una visualizzazione dati esistente nella pagina [!DNL Data Views] da utilizzare come base per la creazione di una nuova visualizzazione dati.
+Puoi copiare una visualizzazione dati esistente nella pagina [!DNL Data Views] da utilizzare come base per la creazione di una nuova visualizzazione dati.
 
-Dopo aver copiato una visualizzazione dati, potete personalizzarla ulteriormente modificando la visualizzazione.
+Dopo aver copiato una visualizzazione dati, puoi personalizzarla ulteriormente modificando la visualizzazione.
 
 Vedere [Modifica di una visualizzazione dati](../c-about-reports-menu/c-about-data-views.md#task_258A367896C24DD498C755925EA8F516).
 
 **Per copiare una visualizzazione dati**
 
 1. Scegliere **[!UICONTROL Reports]** > **[!UICONTROL Data Views]** dal menu del prodotto.
-1. Nella pagina [!DNL Data Views], nella colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL Copy]** nella riga con la visualizzazione dati che si desidera copiare.
-1. Nella pagina [!DNL Copy Data View], nel campo di testo [!DNL New Title] immettere il nuovo nome che si desidera assegnare alla visualizzazione dati.
+1. Nella pagina [!DNL Data Views] della colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL Copy]** nella riga con la visualizzazione dati da copiare.
+1. Nella pagina [!DNL Copy Data View] del campo di testo [!DNL New Title] immettere il nuovo nome che si desidera assegnare alla visualizzazione dati.
 1. Clic **[!UICONTROL Copy]**.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fai clic su **[!UICONTROL History]** per ripristinare le modifiche apportate.
 
-      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
+      Vedere [Uso dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulta [Visualizzazione delle impostazioni live](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Eliminazione di una visualizzazione dati {#task_61C32F8F00A549A5A3E7EDDA6F537098}
 
-È possibile eliminare una visualizzazione dati sulla pagina [!DNL Data Views] che non è più necessaria o che non è più utilizzata.
+È possibile eliminare una visualizzazione dati sulla pagina [!DNL Data Views] che non è più necessaria o utilizzata.
 
-**Per eliminare una visualizzazione dati**
+**Eliminazione di una visualizzazione dati**
 
 1. Scegliere **[!UICONTROL Reports]** > **[!UICONTROL Data Views]** dal menu del prodotto.
-1. Nella pagina [!DNL Data Views], nella colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL Delete]** nella riga con la visualizzazione dati da rimuovere.
-1. Nella pagina [!DNL Delete Data View] fare clic su **Elimina**.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. Nella pagina [!DNL Data Views] della colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL Delete]** nella riga con la visualizzazione dati da rimuovere.
+1. Nella pagina [!DNL Delete Data View], fai clic su **Elimina**.
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fai clic su **[!UICONTROL History]** per ripristinare le modifiche apportate.
 
-      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
+      Vedere [Uso dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulta [Visualizzazione delle impostazioni live](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Visualizzazione di una visualizzazione dati {#task_FD0D2CE53DF84CBD9220AD7CA920011F}
 
-È possibile utilizzare [!DNL View] nella pagina [!DNL Data Views] per visualizzare una visualizzazione dati selezionata.
+Puoi utilizzare [!DNL View] nella pagina [!DNL Data Views] per visualizzare una visualizzazione dati selezionata.
 
-La visualizzazione dati selezionata viene aperta in una finestra browser separata.
+La visualizzazione dati selezionata viene aperta in una finestra separata del browser.
 
-**Visualizzazione di dati**
+**Visualizzazione di una visualizzazione dati**
 
 1. Scegliere **[!UICONTROL Reports]** > **[!UICONTROL Data Views]** dal menu del prodotto.
-1. Effettuate una delle seguenti operazioni:
+1. Effettua una delle seguenti operazioni:
 
-   * Nella pagina [!DNL Data Views], nella colonna [!DNL Title] della tabella fare clic sul nome di una visualizzazione dati che si desidera aprire.
+   * Nella colonna [!DNL Title] della tabella della pagina [!DNL Data Views] fare clic sul nome di una visualizzazione dati che si desidera aprire.
 
-   * Nella pagina [!DNL Data Views], nella colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL View]** nella riga con la visualizzazione dati che si desidera aprire.
+   * Nella pagina [!DNL Data Views] della colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL View]** nella riga con la visualizzazione dati che si desidera aprire.
 
