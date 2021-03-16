@@ -1,37 +1,35 @@
 ---
-description: È possibile ignorare l'espansione dei risultati della query di ricerca.
-seo-description: È possibile ignorare l'espansione dei risultati della query di ricerca.
-seo-title: Informazioni sulle sostituzioni di espansione delle query
+description: È possibile ignorare l’espansione dei risultati della query di ricerca.
 solution: Target
 title: Informazioni sulle sostituzioni di espansione delle query
-topic: Linguistics,Site search and merchandising
+topic: Linguistica, Ricerca sul sito e merchandising
 uuid: dfe18004-b8fd-4889-b01c-72a3b0c82b9c
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
 
 
-# Informazioni sulle sostituzioni di espansione query{#about-query-expansion-overrides}
+# Informazioni sulle sostituzioni di espansione delle query{#about-query-expansion-overrides}
 
-È possibile ignorare l&#39;espansione dei risultati della query di ricerca.
+È possibile ignorare l’espansione dei risultati della query di ricerca.
 
-## Utilizzo delle sostituzioni di espansione query {#concept_6895B469B0E044299E93361BFA06B554}
+## Utilizzo delle sostituzioni di espansione delle query {#concept_6895B469B0E044299E93361BFA06B554}
 
-Quando configurate una sostituzione di espansione query, create un set di &quot;regole&quot;. Ogni regola dice, essenzialmente, &quot;Non espandere `<this>` in `<that>` al momento della ricerca&quot; dove `<this>` è una parola o una frase di testo semplice, e `<that>` è una parola o una frase di testo, o una classificazione.
+Quando configuri una sostituzione di espansione della query, crea un set di &quot;regole&quot;. Ogni regola dice, essenzialmente, &quot;Non espandere `<this>` in `<that>` al momento della ricerca&quot; dove `<this>` è una parola o una frase di testo semplice e `<that>` è una parola o una frase di testo o una classificazione.
 
 >[!NOTE]
 >
->Per impostazione predefinita, questa funzione non è abilitata nelle Search&amp;Promote. Contattate il supporto tecnico per attivare la funzione per l’utilizzo. Una volta attivata la funzione di esclusione dell&#39;espansione delle query, è necessario &quot;attivarla&quot; nell&#39;interfaccia utente.
+>Per impostazione predefinita, questa funzione non è abilitata in Search&amp;Promote. Contatta il supporto tecnico per attivare la funzione. Dopo aver abilitato la funzione di sovrascrittura dell’espansione delle query, devi &quot;attivarla&quot; nell’interfaccia utente.
 
-**Funzionamento dell&#39;override di espansione query**
+**Funzionamento dell’override di espansione query**
 
-Quando un valore di testo e termine viene specificato nella pagina Aggiungi sostituzioni di espansione query, il codice agisce sul accoppiamento specifico. Quando un tipo di classificazione è specificato come Termine, ad esempio Dizionari o Forms Word alternativo, il valore Non espandere non viene convertito in nessun modulo creato dalla classificazione indicata.
+Quando un valore di Testo e Termine viene specificato nella pagina Aggiungi sostituzioni di espansione query, il codice agisce sull&#39;associazione specifica. Quando un tipo di classificazione è specificato come Termine, ad esempio Dizionari o Forms Word alternativo, il valore Do Not Expand non viene convertito in alcun modulo creato dalla classificazione indicata.
 
-Ad esempio, supponete di avere la seguente definizione:
+Ad esempio, supponi di avere la seguente definizione:
 
 `Do Not Expand = "dog"`
 
@@ -47,19 +45,19 @@ Tuttavia, se la definizione era la seguente:
 
 `Type = Alternate Word Forms`
 
-La query non include &quot;cane&quot; o &quot;cani&quot; (la disponibile Alternate Word Forms per &quot;cane&quot;).
+La query non include &quot;cane&quot; o &quot;cani&quot; (la disponibile Forms di parole alternative per &quot;cane&quot;).
 
-Potete specificare più termini, più classificazioni o entrambi. Tuttavia, se selezionate All come Tipo, qualsiasi elenco a più termini viene compresso in una sola voce &quot;All&quot;.
+Puoi specificare più termini, più classificazioni o entrambi. Tuttavia, se si seleziona Tutto come Tipo, qualsiasi elenco a più termini viene compresso in una sola voce &quot;Tutto&quot;.
 
-Se le voci di testo e classificazione sono miste in una regola, vengono riorganizzate nell&#39;interfaccia utente per mostrare prima i valori di testo. Tuttavia, ciò non implica né incide sull&#39;ordine di valutazione al momento della ricerca.
+Se le voci di testo e classificazione sono miste in una regola, vengono riorganizzate nell’interfaccia utente per mostrare prima i valori di testo. Tuttavia, ciò non implica né influisce sull&#39;ordine di valutazione al momento della ricerca.
 
-I termini di testo vengono convalidati per rimuovere i riferimenti privi di significato. In altre parole, confronta il termine con il valore Non espandere e rimuove il termine in presenza di una corrispondenza. Inoltre, i valori di termine duplicati, testo o classificazione, vengono rimossi.
+I termini di testo vengono convalidati per rimuovere i riferimenti privi di significato. In altre parole, confronta il termine con il valore Do Not Expand e rimuove il termine in caso di corrispondenza. Inoltre, i valori dei termini duplicati, testo o classificazione, vengono rimossi.
 
-Se si aggiunge una nuova regola con un valore Non espandere che replica una definizione precedente, i Termini della nuova definizione vengono aggiunti all&#39;originale.
+Se aggiungi una nuova regola con un valore Do Not Expand che replica una definizione precedente, i Termini della nuova definizione vengono aggiunti all&#39;originale.
 
-## Configurazione delle sostituzioni di espansione query {#task_A087354A509D4997BA275186C224160E}
+## Configurazione delle sostituzioni di espansione della query {#task_A087354A509D4997BA275186C224160E}
 
-Definizione e aggiunta di una sostituzione di espansione query in Search&amp;Promote.
+Definizione e aggiunta di un override di espansione query in Search&amp;Promote.
 
 <!-- 
 
@@ -68,17 +66,17 @@ t_configuring_query_expansion_overrides.xml
  -->
 
 >[!NOTE]
-Per impostazione predefinita, questa funzione non è abilitata nelle Search&amp;Promote. Contattate il supporto tecnico per attivare la funzione per l’utilizzo. Una volta attivata la funzione di esclusione dell&#39;espansione delle query, è necessario &quot;attivarla&quot; nell&#39;interfaccia utente. I primi passaggi descritti di seguito illustrano come farlo.
+Per impostazione predefinita, questa funzione non è abilitata in Search&amp;Promote. Contatta il supporto tecnico per attivare la funzione. Dopo aver abilitato la funzione di sovrascrittura dell’espansione delle query, devi &quot;attivarla&quot; nell’interfaccia utente. I primi passi sotto delineano come farlo.
 
-**Per configurare le sostituzioni di espansione delle query**
+**Per configurare le sostituzioni dell’espansione delle query**
 
-1. In Search&amp;Promote, fare clic su **Impostazioni** > **Utente** > **Visualizza ruoli**.
-1. Nella pagina Visualizza ruoli, nella colonna Azioni della tabella, fare clic su **Modifica** a destra del ruolo che si desidera assegnare all&#39;accesso alle sostituzioni di espansione query nel menu Linguistica.
-1. Nella pagina Modifica ruolo, espandere la struttura Linguistica.
-1. Selezionare **Sostituzioni espansione query**, quindi fare clic su **Salva modifiche**.
-1. Fare clic su **Linguistics** > **Query Expansion Overrides**.
-1. Fare clic su **Aggiungi sostituzioni di espansione query**.
-1. Nella pagina Aggiungi sostituzioni di espansione query, impostate le opzioni desiderate.
+1. In Search&amp;Promote, fai clic su **Impostazioni** > **Utente** > **Visualizza ruoli**.
+1. Nella colonna Azioni della tabella della pagina Visualizza ruoli fare clic su **Modifica** a destra del ruolo a cui si desidera concedere l&#39;accesso a Sostituzioni espansione query nel menu Linguistica.
+1. Nella pagina Modifica ruolo espandere la struttura Linguistica.
+1. Controlla **Sostituzioni espansione query**, quindi fai clic su **Salva modifiche**.
+1. Fare clic su **LinguStatistics** > **Overrides di espansione delle query**.
+1. Fai clic su **Aggiungi sostituzioni di espansione della query**.
+1. Nella pagina Aggiungi sostituzioni di espansione della query impostare le opzioni desiderate.
 
    <!-- 
    
@@ -100,30 +98,30 @@ Per impostazione predefinita, questa funzione non è abilitata nelle Search&amp;
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tipo </p> </td> 
-      <td colname="col2"> <p>Selezionare <b>Testo</b> per specificare un'associazione di parole o frasi specifica. In alternativa, selezionare una classificazione per specificare che la parola o la frase Non espandere non viene convertita tramite la classificazione selezionata. </p> </td> 
+      <td colname="col2"> <p>Selezionare <b>Testo</b> per specificare un'associazione di parole o frasi specifica. In alternativa, selezionare una classificazione per specificare che la parola o la frase Do Not Expand non viene convertita tramite la classificazione selezionata. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Termine </p> </td> 
-      <td colname="col2"> <p>Disponibile solo se è stato selezionato come Tipo <b>Testo</b>. Specifica la parola o la frase da escludere dall'espansione della ricerca. </p> </td> 
+      <td colname="col2"> <p>Disponibile solo se come tipo è stato selezionato <b>Testo</b>. Specifica la parola o la frase da escludere dall'espansione della ricerca. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Azione </p> </td> 
-      <td colname="col2"> <p> Fare clic su <b>+</b> o <b>-</b> per aggiungere o eliminare i termini, rispettivamente, alla definizione. </p> </td> 
+      <td colname="col2"> <p> Fare clic su <b>+</b> o <b>-</b> per aggiungere o eliminare rispettivamente i Termini alla definizione. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-1. Al termine, fare clic su **Aggiungi**.
+1. Al termine, fai clic su **Aggiungi**.
 
-   Dalla pagina Definizioni di esclusione dell&#39;espansione delle query è possibile modificare o eliminare le definizioni aggiunte.
-1. Per visualizzare in anteprima i risultati delle aggiunte, fate clic su **rigenerate l&#39;indice del sito in fase** nella casella blu per ricreare rapidamente l&#39;indice del sito Web in fase di creazione.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+   Nella pagina Definizioni di sostituzione dell’espansione della query è possibile modificare o eliminare le definizioni aggiunte.
+1. Per visualizzare in anteprima i risultati delle aggiunte, fai clic su **rigenera l&#39;indice del sito in staging** nella casella blu per ricostruire rapidamente l&#39;indice del sito web in staging.
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * Fare clic su **Live**.
+   * Fai clic su **Live**.
 
-      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)
+      Vedere [Visualizzazione delle impostazioni live](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)
 
-   * Fare clic su **Push Live**.
+   * Fai clic su **Push Live**.
 
-      Vedere [Impostazione passaggio live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)
+      Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)
 
