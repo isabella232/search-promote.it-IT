@@ -1,33 +1,31 @@
 ---
-description: Utilizzate il menu  Adobe Analytics per impostare 'autenticazione delle metriche Adobe Analytics, gestire  metriche Adobe Analytics di una suite di rapporti o utilizzare SAINT per migliorare  rapporti Adobe Analytics mediante l'accettazione di dati tabulari provenienti da origini esterne.
-seo-description: Utilizzate il menu  Adobe Analytics per impostare 'autenticazione delle metriche Adobe Analytics, gestire  metriche Adobe Analytics di una suite di rapporti o utilizzare SAINT per migliorare  rapporti Adobe Analytics mediante l'accettazione di dati tabulari provenienti da origini esterne.
-seo-title: 'Informazioni sul menu Adobe Analytics '
+description: Utilizza il menu Adobe Analytics per configurare l’autenticazione delle metriche Adobe Analytics, gestire le metriche Adobe Analytics di una suite di rapporti o utilizzare SAINT per migliorare i rapporti Adobe Analytics tramite l’accettazione di dati tabulari provenienti da fonti esterne.
 solution: Target
 subtopic: Adobe Analytics
-title: 'Informazioni sul menu Adobe Analytics '
-topic: Settings,Site search and merchandising
+title: Informazioni sul menu Adobe Analytics
+topic: Impostazioni, Ricerca nel sito e merchandising
 uuid: 5536edf1-d3a4-47af-a307-6e46f385f738
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3412'
 ht-degree: 0%
 
 ---
 
 
-# Informazioni sul menu Adobe Analytics {#about-the-adobe-analytics-menu}
+# Informazioni sul menu Adobe Analytics{#about-the-adobe-analytics-menu}
 
-Utilizzate il menu  Adobe Analytics per impostare &#39;autenticazione delle metriche Adobe Analytics, gestire  metriche Adobe Analytics di una suite di rapporti o utilizzare SAINT per migliorare  rapporti Adobe Analytics mediante l&#39;accettazione di dati tabulari provenienti da origini esterne.
+Utilizza il menu Adobe Analytics per configurare l’autenticazione delle metriche Adobe Analytics, gestire le metriche Adobe Analytics di una suite di rapporti o utilizzare SAINT per migliorare i rapporti Adobe Analytics tramite l’accettazione di dati tabulari provenienti da fonti esterne.
 
-## Impostazione &#39;autenticazione delle metriche Adobe Analytics {#task_8AA93F6273B747F9B4DE9E8DFBCBDC42}
+## Configurazione dell&#39;autenticazione delle metriche Adobe Analytics {#task_8AA93F6273B747F9B4DE9E8DFBCBDC42}
 
-Per includere  metriche Adobe Analytics nelle classificazioni di ricerca/merchandising del sito, è innanzitutto necessario ottenere un  accesso ai servizi Web Adobe Analytics. Dopo aver ottenuto le informazioni di accesso, potete utilizzarle per configurare &#39;autenticazione Adobe Analytics nella ricerca del sito/merchandising.
+Per incorporare le metriche Adobe Analytics nelle classificazioni di ricerca/merchandising del sito, è innanzitutto necessario ottenere un accesso Adobe Analytics Web Services. Dopo aver ottenuto le informazioni di accesso, puoi utilizzarle per configurare l’autenticazione Adobe Analytics in ricerca/merchandising del sito.
 
-**Per impostare &#39;autenticazione delle metriche Adobe Analytics**
+**Configurazione dell’autenticazione delle metriche Adobe Analytics**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Authentication]** dal menu del prodotto.
-1. Nella pagina [!DNL Setup Adobe Analytics Metrics Authentication], specificate le informazioni richieste in ciascun campo.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Authentication]**.
+1. Nella pagina [!DNL Setup Adobe Analytics Metrics Authentication] , specifica le informazioni richieste in ciascun campo.
 
    <table> 
     <thead> 
@@ -38,75 +36,75 @@ Per includere  metriche Adobe Analytics nelle classificazioni di ricerca/merchan
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p> nome società Adobe Analytics </p> </td> 
-      <td colname="col2"> <p>La stessa impostazione Nome società utilizzata per accedere al tuo account Adobe Analytics . </p> </td> 
+      <td colname="col1"> <p>Nome società Adobe Analytics </p> </td> 
+      <td colname="col2"> <p>La stessa impostazione Nome società utilizzata per accedere al tuo account Adobe Analytics. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome utente Servizi Web </p> </td> 
-      <td colname="col2"> <p>Nome utente servizi Web associato al tuo account Adobe Analytics . </p> <p>Potete ottenere queste informazioni in  Adobe Analytics. Nella barra dei menu  Adobe Analytics, fare clic su <span class="uicontrol"> <b>Admin</b> </span> &gt; <span class="uicontrol"> <b> Admin Console</b> </span> &gt; <span class="uicontrol"> &lt;a8/&gt; <b>Company</b> </span> &gt; <span class="uicontrol"> <b>Servizi Web</b> </span>. Le informazioni si trovano nella tabella Informazioni di accesso API. </p> </td> 
+      <td colname="col2"> <p>Nome utente dei servizi Web associato al tuo account Adobe Analytics. </p> <p>Puoi ottenere queste informazioni in Adobe Analytics. Nella barra dei menu di Adobe Analytics, fai clic su <span class="uicontrol"> <b>Amministratore</b> </span> &gt; <span class="uicontrol"> <b>Admin Console</b> </span> &gt; <span class="uicontrol"> <b>Società</b> </span> &gt; <span class="uicontrol"> <b>Servizi Web</b> </span>. Le informazioni si trovano nella tabella Informazioni di accesso API . </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Segreto condiviso servizi Web </p> </td> 
-      <td colname="col2"> <p>Segreto condiviso di Web Services associato al tuo account Adobe Analytics . </p> <p>Potete ottenere queste informazioni in  Adobe Analytics. Nella barra dei menu  Adobe Analytics, fare clic su <span class="uicontrol"> <b>Admin</b> </span> &gt; <span class="uicontrol"> <b> Admin Console</b> </span> &gt; <span class="uicontrol"> &lt;a8/&gt; <b>Company</b> </span> &gt; <span class="uicontrol"> <b>Servizi Web</b> </span>. Le informazioni si trovano nella tabella Informazioni di accesso API. </p> </td> 
+      <td colname="col2"> <p>Segreto condiviso di Web Services associato al tuo account Adobe Analytics. </p> <p>Puoi ottenere queste informazioni in Adobe Analytics. Nella barra dei menu di Adobe Analytics, fai clic su <span class="uicontrol"> <b>Amministratore</b> </span> &gt; <span class="uicontrol"> <b>Admin Console</b> </span> &gt; <span class="uicontrol"> <b>Società</b> </span> &gt; <span class="uicontrol"> <b>Servizi Web</b> </span>. Le informazioni si trovano nella tabella Informazioni di accesso API . </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 1. Clic **[!UICONTROL Save Changes]**.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fai clic su **[!UICONTROL History]** per ripristinare le modifiche apportate.
 
-      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
+      Vedere [Uso dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulta [Visualizzazione delle impostazioni live](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Informazioni  suite di rapporti Adobe Analytics {#concept_1A51AEC5D40E459B813E7891D64B1BAE}
+## Informazioni sulle suite di rapporti di Adobe Analytics {#concept_1A51AEC5D40E459B813E7891D64B1BAE}
 
-Per utilizzare  dati delle suite di rapporti Adobe Analytics nella ricerca del sito/merchandising, è innanzitutto necessario creare copie dei dati Adobe Analytics  nel vostro account di ricerca del sito/merchandising.
+Per utilizzare i dati della suite di rapporti di Adobe Analytics nella ricerca/merchandising del sito, devi prima creare copie dei dati di Adobe Analytics nel tuo account di ricerca/merchandising del sito.
 
-Puoi creare nuove definizioni  suite di rapporti Adobe Analytics, oppure puoi visualizzare o modificare le suite  rapporti Adobe Analytics esistenti e le metriche associate.
+Puoi creare nuove definizioni delle suite di rapporti di Adobe Analytics oppure visualizzare o modificare le suite di rapporti di Adobe Analytics esistenti e le metriche associate.
 
-La prima volta che accedete  Adobe Analytics dalla ricerca del sito/merchandising, viene scaricato e memorizzato nella cache un elenco delle suite di rapporti disponibili per la vostra azienda. Se sono state aggiunte di recente nuove suite di rapporti o ne sono state rimosse altre esistenti, puoi aggiornare l’elenco delle suite di rapporti per scaricare nuovamente l’elenco delle suite di rapporti.
+La prima volta che accedi ad Adobe Analytics da site search/merchandising, viene scaricato e memorizzato nella cache un elenco delle suite di rapporti disponibili per la tua azienda. Se sono state aggiunte di recente nuove suite di rapporti o rimosse quelle esistenti, puoi aggiornare l’elenco delle suite di rapporti per scaricare nuovamente l’elenco delle suite di rapporti.
 
-## Aggiunta di  suite di rapporti Adobe Analytics {#task_6DE17305EA7146DA8C30FF8FDF68A3C0}
+## Aggiunta di una suite di rapporti Adobe Analytics {#task_6DE17305EA7146DA8C30FF8FDF68A3C0}
 
-Potete selezionare  Suite di rapporti Adobe Analytics su cui basare le regole di classificazione di ricerca e merchandising del sito.
+Puoi selezionare una suite di rapporti Adobe Analytics su cui basare le regole di classificazione di ricerca/merchandising del sito.
 
-L&#39;elenco da cui potete selezionare deve corrispondere alle suite di rapporti disponibili dall&#39;account Adobe Analytics . La Suite di rapporti selezionata determina le metriche disponibili per l&#39;utilizzo nelle regole di classificazione di ricerca e merchandising del sito.
+L’elenco da cui puoi selezionare deve corrispondere alle suite di rapporti disponibili dall’account Adobe Analytics. La suite di rapporti selezionata determina le metriche disponibili per l’utilizzo all’interno delle regole di classificazione di ricerca/merchandising del sito.
 
-Vedere [Informazioni sulle regole di classificazione](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397).
+Consulta [Informazioni sulle regole di classificazione](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397).
 
-Dopo aver aggiunto una suite di rapporti Adobe Analytics , puoi modificarne le metriche.
+Dopo aver aggiunto una suite di rapporti di Adobe Analytics, puoi modificarne le metriche.
 
-Consultate [Modifica delle metriche Adobe Analytics  di una suite di rapporti](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664).
+Consulta [Modifica delle metriche Adobe Analytics di una suite di rapporti](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664).
 
-**Per aggiungere una suite di rapporti Adobe Analytics**
+**Aggiungere una suite di rapporti Adobe Analytics**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]** dal menu del prodotto.
-1. Nella pagina  suite di rapporti di Adobe Analytics, fate clic su **[!UICONTROL Add Report Suite]**.
-1. Nell&#39;elenco a discesa della riga di tabella appena aggiunta, selezionate la suite di rapporti desiderata.
-1. Modificare le metriche Adobe Analytics  di una suite di rapporti.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]**.
+1. Nella pagina Suite di rapporti di Adobe Analytics, fai clic su **[!UICONTROL Add Report Suite]**.
+1. Nell’elenco a discesa della riga di tabella appena aggiunta, seleziona la suite di rapporti desiderata.
+1. Modificare le metriche Adobe Analytics di una suite di rapporti.
 
-## Modifica delle metriche Adobe Analytics  di una suite di rapporti {#task_360904CCBBB140238ADA036C3CC07664}
+## Modifica delle metriche di Adobe Analytics di una suite di rapporti {#task_360904CCBBB140238ADA036C3CC07664}
 
-Per includere  metriche Adobe Analytics nelle regole di classificazione nella ricerca e nel merchandising del sito, selezionate una o più metriche associate alla suite di rapporti selezionata. Quindi si configurano le opzioni utilizzate per recuperare i dati delle metriche tramite il  Adobe Analytics Web Service.
+Per incorporare le metriche di Adobe Analytics nelle regole di classificazione nella ricerca/merchandising del sito, seleziona una o più metriche associate alla suite di rapporti selezionata. Quindi configura le opzioni utilizzate per recuperare i dati delle metriche tramite Adobe Analytics Web Service.
 
-Consultate [Aggiunta di una suite di rapporti Adobe Analytics ](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0).
+Consulta [Aggiunta di una suite di rapporti Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0).
 
-Vedere [Configurazione di opzioni avanzate  Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_C0FF2D69F59D44D8943A7831ED7FEC19).
+Consulta [Configurazione delle opzioni avanzate di Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_C0FF2D69F59D44D8943A7831ED7FEC19).
 
-**Per modificare le metriche Adobe Analytics  di una suite di rapporti**
+**Per modificare le metriche Adobe Analytics di una suite di rapporti**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]** dal menu del prodotto.
-1. Nella pagina [!DNL Adobe Analytics Report Suites], nella colonna **[!UICONTROL Actions]**, fare clic su **[!UICONTROL Edit]** per la suite di rapporti di cui si desidera configurare le metriche.
-1. Nella pagina [!DNL Edit Adobe Analytics Metrics], imposta le metriche richieste. Le metriche che non hanno un asterisco (*) accanto al nome della metrica sono facoltative.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]**.
+1. Nella pagina [!DNL Adobe Analytics Report Suites], nella colonna **[!UICONTROL Actions]**, fai clic su **[!UICONTROL Edit]** per la suite di rapporti di cui desideri configurare le metriche.
+1. Nella pagina [!DNL Edit Adobe Analytics Metrics] , imposta le metriche richieste. Le metriche prive di un asterisco (*) accanto al nome della metrica sono facoltative.
 
    <table> 
     <thead> 
@@ -121,36 +119,36 @@ Vedere [Configurazione di opzioni avanzate  Adobe Analytics](../c-about-settings
       <td colname="col2"> <p>Visualizza il nome della suite di rapporti attualmente aggiunta. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Nome visualizzazione suite di rapporti </p> </td> 
-      <td colname="col2"> <p>Fornisce un nome "alias" per il nome  suite di rapporti Adobe Analytics. Questo nome alternativo è utile se la stessa Suite di rapporti viene utilizzata in più definizioni. </p> </td> 
+      <td colname="col1"> <p>Nome della visualizzazione della suite di rapporti </p> </td> 
+      <td colname="col2"> <p>Fornisce un nome "alias" per il nome della suite di rapporti di Adobe Analytics. Questo nome alternativo è utile se la stessa suite di rapporti viene utilizzata in più definizioni. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Seleziona tipo di rapporto </p> </td> 
-      <td colname="col2"> <p>Specifica il valore del tipo di rapporto da utilizzare con la suite di rapporti selezionata. Il valore identifica la chiave per ogni riga di risultati restituita. </p> <p>Il tipo di rapporto è anche noto come elemento Adobe Analytics . </p> <p>Questa metrica è obbligatoria. </p> </td> 
+      <td colname="col2"> <p>Specifica il valore del tipo di rapporto da utilizzare con la suite di rapporti selezionata. Il valore identifica la chiave per ogni riga di risultati restituita. </p> <p>Il tipo di rapporto è anche noto come elemento Adobe Analytics. </p> <p>Questa metrica è obbligatoria. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Nome campo rimando </p> </td> 
-      <td colname="col2"> <p>Specifica un campo di metadati i cui valori vengono utilizzati come "chiavi" di ricerca nei dati della suite di rapporti. </p> <p>Se non è selezionato alcun valore ("— None —"), i dati di questa Suite di rapporti non sono disponibili per l'utilizzo nei calcoli di classificazione ( <span class="uicontrol"> <b>Rules</b> </span> &gt; <span class="uicontrol"> <b>Regole di classificazione</b> </span> &gt; <span class="uicontrol"> <b>Modifica regole</b> 11/&gt;).</span> </p> <p>Quando si seleziona un valore, i valori di questo campo vengono utilizzati per fare riferimento incrociato ai documenti di ricerca e merchandising del sito con i dati Adobe Analytics  suite di rapporti, utilizzando il valore selezionato Tipo di rapporto impostato in precedenza. </p> </td> 
+      <td colname="col1"> <p>Nome campo di riferimento incrociato </p> </td> 
+      <td colname="col2"> <p>Specifica un campo di metadati i cui valori vengono utilizzati come "chiavi" di ricerca nei dati della suite di rapporti. </p> <p>Se non è selezionato alcun valore ("— Nessuno —"), i dati di questa suite di rapporti non sono disponibili per l'uso nei calcoli di classificazione ( <span class="uicontrol"> <b>Regole</b> </span> &gt; <span class="uicontrol"> <b>Regole di classificazione</b> </span> &gt; <span class="uicontrol"> <b>Modifica regole</b> &lt;a 11/&gt;).</span> </p> <p>Quando selezioni un valore, i valori di questo campo vengono utilizzati per fare riferimento a documenti di ricerca/merchandising del sito con i dati Adobe Analytics della suite di rapporti, utilizzando il valore del tipo di rapporto selezionato impostato in precedenza. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Rapporto termini di ricerca </p> </td> 
-      <td colname="col2"> <p>Consente di creare regole business e simulare i termini di ricerca dalla pagina <b>Stage  Adobe Analytics Data Preview</b>. </p> <p>Vedere <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0" type="task" format="dita" scope="local">Anteprima  dati Adobe Analytics</a>. </p> <p>Su ogni riga viene visualizzato un menu a discesa contenente due opzioni: <b>Simula termini di ricerca</b> e <b>Crea nuova regola business</b>. </p> <p>Entrambe le opzioni utilizzano i dati del tipo di rapporto come termini di ricerca. Pertanto, questa funzione ha senso solo se il tipo di rapporto rappresenta i termini di ricerca. </p> </td> 
+      <td colname="col2"> <p>Consente di accedere per creare regole business e simulare i termini di ricerca dalla pagina <b>Stage Adobe Analytics Data Preview</b>. </p> <p>Consulta <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0" type="task" format="dita" scope="local">Anteprima dei dati di Adobe Analytics</a>. </p> <p>Su ogni riga viene visualizzato un menu a discesa contenente due opzioni: <b>Simula termini di ricerca</b> e <b>Crea nuova regola di business</b>. </p> <p>Entrambe le opzioni utilizzano i dati del tipo di rapporto come termini di ricerca. Pertanto, questa funzione ha senso solo se il tipo di rapporto rappresenta i termini di ricerca. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Metrics (Metriche) </p> </td> 
-      <td colname="col2"> <p>Identifica i valori delle metriche da scaricare e utilizzare nelle regole di classificazione di ricerca e merchandising del sito. </p> <p>Le metriche configurate qui vengono visualizzate come scelte nelle <span class="uicontrol"> <b>Regole</b> </span> &gt; <span class="uicontrol"> <b>Regole di classificazione</b> </span> &gt; <span class="uicontrol"> <b>Modifica regole</b> </span> &lt;a11/&gt; pagine centrali dei membri, quando il tipo di dati della regola è impostato su <span class="uicontrol">  Adobe Analytics Metric (Number) </span>. Le opzioni disponibili mostrano una combinazione dei nomi delle suite di rapporti o delle visualizzazioni delle suite di rapporti, se specificate, e dei singoli nomi delle metriche. </p> <p>Questa metrica è obbligatoria. </p> </td> 
+      <td colname="col2"> <p>Identifica i valori delle metriche che desideri scaricare e utilizzare nelle regole di classificazione di ricerca/merchandising del sito. </p> <p>Le metriche configurate vengono visualizzate come scelte nelle pagine centrali dei membri <span class="uicontrol"> <b>Regole</b> </span> <span class="uicontrol"> <b>Regole di classificazione</b> </span> &gt; <span class="uicontrol"> <b>Modifica regole</b> </span>  quando il tipo di dati della regola è impostato su <span class="uicontrol"> Metrica Adobe Analytics (numero) </span>. Le scelte mostrano una combinazione dei nomi delle suite di rapporti o delle visualizzazioni delle suite di rapporti, se specificato, e dei singoli nomi delle metriche. </p> <p>Questa metrica è obbligatoria. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valore della metrica minima </p> </td> 
-      <td colname="col2"> <p>Consente di immettere un valore diverso da zero per specificare un valore minimo per la metrica. </p> <p>Se vuoto o zero, vengono scaricati tutti i valori della metrica; in caso contrario, il download di questa metrica si interrompe quando viene passato il valore della metrica minima. </p> <p> le metriche Adobe Analytics vengono recuperate in ordine decrescente. </p> <p>Fare clic su <span class="uicontrol"> <b>+</b> </span> per aggiungere definizioni metriche aggiuntive; fate clic su <span class="uicontrol"> <b>-</b> </span> per rimuovere le definizioni delle metriche non più necessarie o desiderate. </p> </td> 
+      <td colname="col2"> <p>Consente di immettere un valore diverso da zero per specificare un valore minimo per la metrica. </p> <p>Se vuoto o zero, vengono scaricati tutti i valori della metrica; in caso contrario, il download di questa metrica si interrompe quando viene passato il valore della metrica minima. </p> <p>Le metriche di Adobe Analytics vengono recuperate in ordine decrescente. </p> <p>Fai clic su <span class="uicontrol"> <b>+</b> </span> per aggiungere definizioni metriche aggiuntive; fai clic su <span class="uicontrol"> <b>-</b> </span> per rimuovere le definizioni metriche non più necessarie o desiderate. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> periodo di aggregazione delle metriche Adobe Analytics (giorni) </p> </td> 
-      <td colname="col2"> <p> Controlla il numero di giorni di  metriche Adobe Analytics da recuperare, contando dalla data di ieri. Nessun tentativo di recupero dati dal giorno corrente. </p> <p>Il valore predefinito è 7. </p> <p>Questa metrica è obbligatoria. </p> </td> 
+      <td colname="col1"> <p>Periodo di aggregazione della metrica Adobe Analytics (giorni) </p> </td> 
+      <td colname="col2"> <p> Controlla il numero di giorni di metriche Adobe Analytics da recuperare, conteggiando dalla data di ieri. Nessun tentativo di recupero dati dal giorno corrente. </p> <p>Il valore predefinito è 7. </p> <p>Questa metrica è obbligatoria. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Frequenza di aggiornamento del download di Adobe Analytics (giorni) </p> </td> 
-      <td colname="col2"> <p> Imposta l'intervallo minimo tra i download  dati Adobe Analytics utilizzati nei calcoli di classifica. </p> <p>I download attivati dall'indice che si verificano entro l'intervallo di frequenza di aggiornamento del download vengono ignorati. Tuttavia, i download manuali ignorano questo valore. </p> <p>Se si imposta questo valore sul valore predefinito 1,  i dati Adobe Analytics non vengono scaricati più di una volta entro un periodo di 24 ore. Tutti gli indici di ricerca che si verificano entro l’intervallo di frequenza di aggiornamento del download utilizzano l’ultimo set di dati scaricato. </p> <p>Questa metrica è obbligatoria. </p> </td> 
+      <td colname="col1"> <p>Frequenza di aggiornamento del download di Adobe Analytics (giorni) </p> </td> 
+      <td colname="col2"> <p> Imposta l’intervallo minimo tra i download dei dati di Adobe Analytics utilizzati nei calcoli di classificazione. </p> <p>I download attivati dall'indice che si verificano nell'intervallo di frequenza di aggiornamento del download vengono ignorati. Tuttavia, i download manuali ignorano questo valore. </p> <p>Se imposti questo valore come impostazione predefinita di 1, i dati di Adobe Analytics non vengono scaricati più di una volta entro un periodo di 24 ore. Tutti gli indici di ricerca che si verificano all'interno dell'intervallo di frequenza di aggiornamento del download utilizzano l'ultimo set di dati scaricato. </p> <p>Questa metrica è obbligatoria. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -158,85 +156,85 @@ Vedere [Configurazione di opzioni avanzate  Adobe Analytics](../c-about-settings
    Vedere anche [Informazioni sulle regole di classificazione](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397).
 1. Clic **[!UICONTROL Save Changes]**.
 
-   Viene nuovamente visualizzata la pagina [!DNL Adobe Analytics Report Suites] in fase.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+   Viene visualizzata nuovamente la pagina Staged [!DNL Adobe Analytics Report Suites] .
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fai clic su **[!UICONTROL History]** per ripristinare le modifiche apportate.
 
-      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
+      Vedere [Uso dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulta [Visualizzazione delle impostazioni live](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Eliminazione di  suite di rapporti Adobe Analytics {#task_0ACA172214D14654ABDB139F417B9F7D}
+## Eliminazione di una suite di rapporti Adobe Analytics {#task_0ACA172214D14654ABDB139F417B9F7D}
 
-Puoi utilizzare Elimina per rimuovere una suite di rapporti dalla pagina [!DNL Adobe Analytics Report Suites]. L&#39;eliminazione di una suite di rapporti rimuove solo la copia dei dati dai server di ricerca/merchandising del sito; non influisce sui dati  sistemi Adobe Analytics.
+Puoi utilizzare Elimina per rimuovere una suite di rapporti dalla pagina [!DNL Adobe Analytics Report Suites]. L’eliminazione di una suite di rapporti rimuove solo la copia dei dati dai server di ricerca/merchandising del sito; non influisce sui dati sui sistemi Adobe Analytics.
 
-**Per eliminare una  suite di rapporti Adobe Analytics**
+**Eliminare una suite di rapporti di Adobe Analytics**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]** dal menu del prodotto.
-1. Nella pagina [!DNL Adobe Analytics Report Suites], nella colonna **[!UICONTROL Actions]** fare clic su **[!UICONTROL Delete]** per la suite di rapporti da rimuovere.
-1. Nella pagina [!DNL Adobe Analytics Delete Report Suite] fare clic su **[!UICONTROL Delete]**.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]**.
+1. Nella pagina [!DNL Adobe Analytics Report Suites], nella colonna **[!UICONTROL Actions]** fare clic su **[!UICONTROL Delete]** per la suite di rapporti che si desidera rimuovere.
+1. Nella pagina [!DNL Adobe Analytics Delete Report Suite], fai clic su **[!UICONTROL Delete]**.
 
-## Anteprima  dati Adobe Analytics {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
+## Anteprima dei dati di Adobe Analytics {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
 
-Potete utilizzare Anteprima per visualizzare le metriche Adobe Analytics caricate più di recente .
+Puoi utilizzare Anteprima per visualizzare le metriche di Adobe Analytics caricate più di recente.
 
-La colonna Riga della tabella mostra il numero per ogni riga di dati delle metriche, indicando l&#39;ordine originale in cui sono state caricate le metriche Adobe Analytics .
+La colonna Riga della tabella mostra il numero per ogni riga di dati di metrica, indicando l’ordine originale in cui sono state caricate le metriche di Adobe Analytics.
 
-La colonna Prodotto mostra l&#39;elemento Adobe Analytics  associato a ogni riga di dati delle metriche. I valori di questa colonna vengono utilizzati per associare le pagine di ricerca e merchandising del sito ai valori delle metriche corrispondenti, come configurato nelle definizioni delle classificazioni.
+La colonna Prodotto mostra l’elemento Adobe Analytics associato a ogni riga di dati metrici. I valori in questa colonna vengono utilizzati per associare le pagine di ricerca/merchandising del sito ai loro valori di metrica corrispondenti, come configurato nelle definizioni di classificazione.
 
-Vedere [Informazioni sulle regole di classificazione](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397).
+Consulta [Informazioni sulle regole di classificazione](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397).
 
-Vedere [Configurazione della classificazione](../c-about-rules-menu/c-about-ranking-rules.md#task_4CEBC13925B047FC95BDC217B48089C5).
+Consulta [Configurazione della classificazione](../c-about-rules-menu/c-about-ranking-rules.md#task_4CEBC13925B047FC95BDC217B48089C5).
 
-Le colonne rimanenti mostrano i valori delle metriche associati a ciascuna voce.
+Le colonne rimanenti mostrano i valori di metrica associati a ciascuna voce.
 
-Se la tabella è vuota, significa che non sono ancora stati caricati  dati Adobe Analytics. È possibile chiudere la pagina [!DNL Adobe Analytics Data Preview], quindi caricare  dati Adobe Analytics.
+Se la tabella è vuota, significa che non hai ancora caricato alcun dato Adobe Analytics. È possibile chiudere la pagina [!DNL Adobe Analytics Data Preview] e quindi caricare i dati di Adobe Analytics.
 
-Vedere [Caricamento  dati Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
-Se la tabella è stata designata come rapporto di termini di ricerca, in ogni riga viene visualizzato un piccolo triangolo. È possibile fare clic sull&#39;elenco a discesa e selezionare **Simula termine di ricerca** o **Crea nuova regola business**. L&#39;azione selezionata viene applicata al termine di ricerca della riga, i dati che risiedono nella seconda colonna
+Consulta [Caricamento di dati Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
+Se la tabella è stata designata come rapporto dei termini di ricerca, viene visualizzato un piccolo triangolo in ogni riga. Puoi fare clic sull’elenco a discesa e selezionare **Simula termine ricerca** o **Crea nuova regola business**. L’azione selezionata viene applicata al termine di ricerca della riga, i dati che si trovano nella seconda colonna
 
-**Per visualizzare in anteprima  dati Adobe Analytics**
+**Visualizzazione in anteprima dei dati di Adobe Analytics**
 
-1. Nel menu del prodotto, effettuate una delle seguenti operazioni:
+1. Scegliere una delle seguenti operazioni dal menu prodotto:
 
-   * Fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]**. Nella pagina [!DNL Adobe Analytics Report Suites], nella colonna [!DNL Actions], fare clic su **[!UICONTROL Preview]** per la suite di rapporti di cui si desidera visualizzare i dati scaricati.
+   * Fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]**. Nella pagina [!DNL Adobe Analytics Report Suites], sotto la colonna [!DNL Actions], fai clic su **[!UICONTROL Preview]** per la suite di rapporti di cui desideri visualizzare i dati scaricati.
 
-   * Clic **[!UICONTROL Reports]** > **[!UICONTROL Adobe Analytics Terms Reports]**. Nella pagina [!DNL Adobe Analytics Terms Report], nella colonna [!DNL Actions], fare clic su **[!UICONTROL Preview]** per la suite di rapporti di cui si desidera visualizzare i dati scaricati.
+   * Clic **[!UICONTROL Reports]** > **[!UICONTROL Adobe Analytics Terms Reports]**. Nella pagina [!DNL Adobe Analytics Terms Report], sotto la colonna [!DNL Actions], fai clic su **[!UICONTROL Preview]** per la suite di rapporti di cui desideri visualizzare i dati scaricati.
 
-1. Nella pagina [!DNL Adobe Analytics Data Preview], utilizzate le opzioni di navigazione e visualizzazione nella parte superiore e inferiore della pagina per visualizzare i dati.
+1. Nella pagina [!DNL Adobe Analytics Data Preview] , utilizza le opzioni di navigazione e visualizzazione nella parte superiore e inferiore della pagina per visualizzare i dati.
 
-   Fai clic sull’intestazione di una colonna nella tabella per ordinare i dati in ordine crescente o decrescente.
-1. Effettuate una delle seguenti operazioni:
+   Fai clic su un’intestazione di colonna nella tabella per ordinare i dati in ordine crescente o decrescente.
+1. Effettua una delle seguenti operazioni:
 
-   * Fare clic su **[!UICONTROL Download to Desktop]** per scaricare e salvare la tabella come file `.xlt`.
+   * Fai clic su **[!UICONTROL Download to Desktop]** per scaricare e salvare la tabella come file `.xlt`.
 
-   * Chiudi la pagina al termine dell’anteprima dei dati Adobe Analytics  e torna alla pagina visualizzata in precedenza.
+   * Chiudi la pagina al termine della visualizzazione dell’anteprima dei dati di Adobe Analytics e torna alla pagina visualizzata in precedenza.
 
-## Visualizzazione del registro dal caricamento di dati Adobe Analytics più recente  {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
+## Visualizzazione del registro dal caricamento dati Adobe Analytics più recente {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
 
-È possibile utilizzare Visualizza registro per esaminare  file di registro dati Adobe Analytics del processo di download più recente. Potete inoltre utilizzare la visualizzazione del registro per monitorare un download in esecuzione.
+Puoi utilizzare Visualizza registro per esaminare il file di registro dati di Adobe Analytics del più recente processo di download. È inoltre possibile utilizzare la visualizzazione del registro per monitorare un download in esecuzione.
 
-Vedere [Caricamento  dati Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
+Consulta [Caricamento di dati Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
-**Per visualizzare il registro dal caricamento dei dati Adobe Analytics  più recente**
+**Per visualizzare il registro dal caricamento dati più recente di Adobe Analytics**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]** dal menu del prodotto.
-1. Nella pagina [!DNL Adobe Analytics Report Suites] fare clic su **[!UICONTROL View Log]**. Pagina di registro,
-1. Nella pagina [!DNL Adobe Analytics Data Log], utilizzate le opzioni di navigazione e visualizzazione nella parte superiore e inferiore della pagina per visualizzare le informazioni di registro.
-1. Al termine, chiudete la pagina per tornare alla pagina [!DNL Adobe Analytics Report Suites].
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]**.
+1. Nella pagina [!DNL Adobe Analytics Report Suites], fai clic su **[!UICONTROL View Log]**. Pagina di log,
+1. Nella pagina [!DNL Adobe Analytics Data Log] , utilizza le opzioni di navigazione e visualizzazione nella parte superiore e inferiore della pagina per visualizzare le informazioni sul registro.
+1. Al termine, chiudi la pagina per tornare alla pagina [!DNL Adobe Analytics Report Suites] .
 
-## Caricamento  dati Adobe Analytics {#task_2F3C55189B0A4049AB2113F2291CC181}
+## Caricamento dei dati di Adobe Analytics {#task_2F3C55189B0A4049AB2113F2291CC181}
 
-Puoi scaricare i dati  suite di rapporti Adobe Analytics configurati nella ricerca del sito/merchandising.
+Puoi scaricare i dati della suite di rapporti Adobe Analytics configurati in ricerca/merchandising del sito.
 
-La pagina Caricamento dati mostra lo stato dell’ultima operazione di caricamento dati Adobe Analytics  con le seguenti informazioni:
+La pagina Caricamento dati mostra lo stato dell’ultima operazione di caricamento dati di Adobe Analytics con le seguenti informazioni:
 
 <table> 
  <thead> 
@@ -248,60 +246,60 @@ La pagina Caricamento dati mostra lo stato dell’ultima operazione di caricamen
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Stato </p> </td> 
-   <td colname="col2"> <p>Indica l'esito positivo o negativo dell'ultimo tentativo di caricamento dei dati. Oppure, visualizza lo stato di un'operazione di caricamento dati già in corso. </p> </td> 
+   <td colname="col2"> <p>Indica il successo o l'errore dell'ultimo tentativo di caricamento dei dati. In alternativa, visualizza lo stato di un'operazione di caricamento dati già in corso. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Risultati </p> </td> 
-   <td colname="col2"> <p>Visualizza il numero di righe di dati delle metriche scaricate durante l'ultimo tentativo di caricamento dei dati. </p> </td> 
+   <td colname="col2"> <p>Visualizza il numero di righe di dati metrici scaricate durante l’ultimo tentativo di caricamento dei dati. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ora di inizio </p> </td> 
-   <td colname="col2"> <p>Visualizza la data e l'ora di inizio dell'ultima operazione di caricamento dei dati. </p> </td> 
+   <td colname="col2"> <p>Visualizza la data e l’ora di inizio dell’ultima operazione di caricamento dati. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ora di interruzione </p> </td> 
-   <td colname="col2"> <p>Visualizza la data e l'ora di completamento dell'ultima operazione di caricamento dei dati. Oppure indica che l'operazione di caricamento dei dati corrente è ancora in corso. </p> </td> 
+   <td colname="col2"> <p>Visualizza la data e l’ora di completamento dell’ultima operazione di caricamento dati. Oppure indica che l'operazione di caricamento dati corrente è ancora in corso. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Per caricare  dati Adobe Analytics**
+**Per caricare i dati di Adobe Analytics**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]** dal menu del prodotto.
-1. Nella pagina [!DNL Stage Adobe Analytics Report Suites] fare clic su **[!UICONTROL Load Adobe Analytics Data]**.
-1. Nella pagina **[!UICONTROL Adobe Analytics Data Load]**, effettuare una delle seguenti operazioni:
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]**.
+1. Nella pagina [!DNL Stage Adobe Analytics Report Suites], fai clic su **[!UICONTROL Load Adobe Analytics Data]**.
+1. Nella pagina **[!UICONTROL Adobe Analytics Data Load]** , effettua una delle seguenti operazioni:
 
    * Fare clic su **[!UICONTROL Start Load]** per avviare l&#39;operazione di caricamento.
 
-      Durante un&#39;operazione di caricamento dei dati, la riga **Progress** fornisce informazioni sull&#39;avanzamento.
+      Durante un&#39;operazione di caricamento dei dati, la riga **Avanzamento** fornisce informazioni sull&#39;avanzamento.
 
-   * Fare clic su **[!UICONTROL Stop Load]** per arrestare l&#39;operazione di caricamento.
+   * Fare clic su **[!UICONTROL Stop Load]** per interrompere l&#39;operazione di caricamento.
 
-1. Fare clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL Stage Adobe Analytics Reports Suite].
+1. Fai clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL Stage Adobe Analytics Reports Suite].
 
-## Aggiornamento dell&#39;elenco Suite di rapporti {#task_EA6215D438CA4185B106657D9712ED34}
+## Aggiornamento dell’elenco delle suite di rapporti {#task_EA6215D438CA4185B106657D9712ED34}
 
-La prima volta che accedete  Adobe Analytics dall’interfaccia utente di ricerca del sito/merchandising, viene scaricato e memorizzato nella cache un elenco delle suite di rapporti Adobe Analytics  della società disponibili. Se sono state aggiunte di recente nuove suite di rapporti o ne sono state eliminate di esistenti, potete utilizzare Aggiorna elenco suite di rapporti per aggiornare l&#39;elenco attualmente visualizzato nella ricerca del sito/merchandising.
+La prima volta che accedi ad Adobe Analytics dall’interfaccia utente di ricerca/merchandising del sito, viene scaricato e memorizzato nella cache un elenco delle suite di rapporti Adobe Analytics disponibili per la tua azienda. Se sono state aggiunte di recente nuove suite di rapporti o se sono state eliminate quelle esistenti, puoi utilizzare Aggiorna elenco suite di rapporti per aggiornare l’elenco attualmente visualizzato in Ricerca/merchandising del sito.
 
-Consultate [Aggiunta di una suite di rapporti Adobe Analytics ](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0).
+Consulta [Aggiunta di una suite di rapporti Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0).
 
-Vedere [Eliminazione di una suite di rapporti Adobe Analytics ](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_0ACA172214D14654ABDB139F417B9F7D).
+Consulta [Eliminazione di una suite di rapporti Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_0ACA172214D14654ABDB139F417B9F7D).
 
-**Per aggiornare l&#39;elenco Suite di rapporti**
+**Per aggiornare l’elenco Suite di rapporti**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]** dal menu del prodotto.
-1. Nella pagina [!DNL Adobe Analytics Report Suites] fare clic su **[!UICONTROL Refresh Report Suite List]**.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Metrics]**.
+1. Nella pagina [!DNL Adobe Analytics Report Suites], fai clic su **[!UICONTROL Refresh Report Suite List]**.
 
-## Configurazione delle opzioni avanzate  Adobe Analytics {#task_C0FF2D69F59D44D8943A7831ED7FEC19}
+## Configurazione delle opzioni avanzate di Adobe Analytics {#task_C0FF2D69F59D44D8943A7831ED7FEC19}
 
-È possibile utilizzare [!DNL Advanced Adobe Analytics Options] per controllare le impostazioni volte a migliorare il comportamento del processo di download  suite di rapporti Adobe Analytics.
+Puoi utilizzare [!DNL Advanced Adobe Analytics Options] per controllare le impostazioni volte a ottimizzare il comportamento del processo di download delle suite di rapporti di Adobe Analytics.
 
-Consultate [Modifica delle metriche Adobe Analytics  di una suite di rapporti](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664).
+Consulta [Modifica delle metriche Adobe Analytics di una suite di rapporti](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664).
 
-**Per configurare le opzioni avanzate  Adobe Analytics**
+**Per configurare le opzioni avanzate di Adobe Analytics**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Advanced Options]** dal menu del prodotto.
-1. Nella pagina [!DNL Advanced Adobe Analytics Options], impostate le seguenti opzioni:
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Advanced Options]**.
+1. Nella pagina [!DNL Advanced Adobe Analytics Options] , imposta le seguenti opzioni:
 
    <table> 
     <thead> 
@@ -313,155 +311,155 @@ Consultate [Modifica delle metriche Adobe Analytics  di una suite di rapporti](.
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Righe massime, qualsiasi metrica </p> </td> 
-      <td colname="col2"> <p>Un'impostazione di ottimizzazione che impedisce il download di troppi dati Adobe Analytics . </p> <p>Se si imposta questa opzione su un valore diverso da zero, il recupero dati  Adobe Analytics viene interrotto quando il numero totale di righe recuperate per ogni metrica supera il valore specificato. </p> <p>Il valore predefinito è 0; nessun valore massimo applicato. </p> </td> 
+      <td colname="col2"> <p>Impostazione di ottimizzazione che impedisce il download di troppi dati Adobe Analytics. </p> <p>Se imposti questa opzione su un valore diverso da zero, il recupero dati di Adobe Analytics viene interrotto quando il numero totale di righe recuperate per ogni metrica supera il valore specificato. </p> <p>Il valore predefinito è 0; nessun valore massimo applicato. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Metrica Dimensione recupero ripetuto (righe) </p> </td> 
-      <td colname="col2"> <p> Controlla il numero  valori delle metriche Adobe Analytics da recuperare alla volta. Le righe dei dati delle metriche vengono recuperate ripetutamente fino al recupero di tutti i dati o fino al raggiungimento del limite massimo di righe. </p> <p>Normalmente non è necessario modificare questa impostazione. Tuttavia, potrebbe essere utile ottimizzare la fase di download delle metriche di un reindice completo del sito. </p> <p>Il valore predefinito è 5000. </p> </td> 
+      <td colname="col2"> <p> Controlla il numero di valori delle metriche Adobe Analytics da recuperare alla volta. Le righe di dati della metrica vengono recuperate ripetutamente fino al recupero di tutti i dati o fino al raggiungimento del limite massimo di righe. </p> <p>Normalmente non è necessario modificare questa impostazione. Tuttavia, potrebbe essere utile ottimizzare la fase di download delle metriche di un reindice completo del sito. </p> <p>Il valore predefinito è 5000. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 1. Clic **[!UICONTROL Save Changes]**.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
-   * Fare clic su **[!UICONTROL History]** per annullare le modifiche apportate.
+   * Fai clic su **[!UICONTROL History]** per ripristinare le modifiche apportate.
 
-      Vedere [Utilizzo dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
+      Vedere [Uso dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clic **[!UICONTROL Live]**.
 
-      Vedere [Visualizzazione delle impostazioni dal vivo](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulta [Visualizzazione delle impostazioni live](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clic **[!UICONTROL Push Live]**.
 
-      Vedere [Invio live delle impostazioni dell&#39;area di visualizzazione](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Informazioni sui feed di classificazione SAINT {#concept_C55609DA24914BBC92CD90ED0259199D}
 
-Puoi utilizzare  SAINT Adobe Analytics per migliorare i tuoi report di analisi tramite l&#39;accettazione di dati tabulari da origini esterne. Ad esempio, potete utilizzare la ricerca nel sito/merchandising per recuperare i dati dai propri indici ed esportare tali dati in  Adobe Analytics.
+Puoi utilizzare Adobe Analytics SAINT per migliorare i rapporti di analisi tramite l’accettazione di dati tabulari provenienti da fonti esterne. Ad esempio, puoi utilizzare la funzione di ricerca/merchandising del sito per recuperare i dati dai propri indici ed esportarli in Adobe Analytics.
 
-Per utilizzare con successo la funzione SAINT Adobe Analytics  nella ricerca del sito/merchandising, è necessario essere consapevoli dei seguenti requisiti:
+Per utilizzare correttamente la funzione Adobe Analytics SAINT nella ricerca/merchandising dei siti, è necessario essere consapevoli dei seguenti requisiti:
 
-* È necessario disporre di una  società Adobe Analytics e di una suite di rapporti.
+* Devi disporre di una società Adobe Analytics e di una suite di rapporti.
 
-   Vedere [Informazioni sul menu Adobe Analytics ](../c-about-settings-menu/c-about-adobe-analytics-menu.md#concept_5FD2D13C9D0D40988E6E51480D690411).
-* L&#39;account utente  Adobe Analytics deve disporre dei privilegi per modificare la Suite di rapporti.
+   Consulta [Informazioni sul menu Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#concept_5FD2D13C9D0D40988E6E51480D690411).
+* L’account utente Adobe Analytics deve disporre dei privilegi necessari per modificare la suite di rapporti.
 
-   Vedere [Configurazione &#39;autenticazione delle metriche Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_8AA93F6273B747F9B4DE9E8DFBCBDC42).
-* L&#39;utente Adobe Analytics  deve appartenere al gruppo API Web in modo che possa utilizzare l&#39;API Web  Adobe Analytics.
-* L&#39;indice di ricerca deve avere dati che  Adobe Analytics può utilizzare, ad esempio dati nel formato corretto.
+   Consulta [Configurazione dell&#39;autenticazione delle metriche Adobe Analytics](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_8AA93F6273B747F9B4DE9E8DFBCBDC42).
+* L’utente Adobe Analytics deve appartenere al gruppo API Web in modo che possa utilizzare l’API Web di Adobe Analytics.
+* L&#39;indice di ricerca deve avere dati utilizzabili da Adobe Analytics, ad esempio dati nel formato corretto.
 
-Prima di creare un feed, esaminate le seguenti domande e informazioni in modo da poter completare correttamente la procedura guidata Feed SAINT:
+Prima di creare un feed, controlla le domande e le informazioni seguenti per consentire il corretto completamento della procedura guidata di feed di SAINT:
 
 * Con quale suite di rapporti lavorerai?
-* Per quale set di classificazioni, ad esempio prodotto, e-var e così via, fornisci i dati?
-* Quali classificazioni esistono nei rapporti? La risposta a questa domanda è determinata dal tipo di dati prontamente disponibili dalla ricerca sul sito/merchandising e dal tipo di rapporti che  Adobe Analytics segnala come desiderati.
-* Il SAINT accetta i dati provenienti dalla ricerca del sito/merchandising come tipo di testo. Il formato di tali dati influisce sulla presentazione dei report Adobe Analytics .
+* Per quale set di classificazioni, ad esempio product, e-var e così via, fornirai i dati?
+* Quali classificazioni esistono nei rapporti? La risposta a questa domanda è determinata dal tipo di dati prontamente disponibili nella ricerca/merchandising del sito e dal tipo di rapporti che Adobe Analytics segnala come desiderabili.
+* SAINT accetta i dati derivanti dalla ricerca/merchandising del sito come tipo di testo. Il formato di tali dati influisce sulla presentazione dei rapporti di Adobe Analytics.
 
-## Creazione di un feed SAINT Adobe Analytics  {#task_914B5AB821E84627953D8EF9339A7DD0}
+## Creazione di un feed Adobe Analytics SAINT {#task_914B5AB821E84627953D8EF9339A7DD0}
 
-Potete utilizzare  SAINT Adobe Analytics per migliorare  rapporti Adobe Analytics accettando dati tabulari provenienti da fonti esterne.
+Puoi utilizzare Adobe Analytics SAINT per migliorare i rapporti di Adobe Analytics accettando dati tabulari da fonti esterne.
 
-Ad esempio, potete utilizzare la ricerca nel sito/merchandising per recuperare dati dai propri indici ed esportare tali dati in  Adobe Analytics.
+Ad esempio, puoi utilizzare la funzione di ricerca/merchandising del sito per recuperare i dati dai propri indici ed esportarli in Adobe Analytics.
 
-**Per creare un feed SAINT Adobe Analytics**
+**Per creare un feed Adobe Analytics SAINT**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]** dal menu del prodotto.
-1. Nella pagina [!DNL SAINT Classification Feeds] fare clic su **[!UICONTROL Create SAINT Feed]**.
-1. Nella finestra di dialogo [!DNL Create Feed], nel campo di testo **Feed Name**, immettere il nuovo nome del feed, quindi fare clic su **[!UICONTROL Next]**.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]**.
+1. Nella pagina [!DNL SAINT Classification Feeds], fai clic su **[!UICONTROL Create SAINT Feed]**.
+1. Nella finestra di dialogo [!DNL Create Feed], immettere il nuovo nome feed nel campo di testo **Nome feed**, quindi fare clic su **[!UICONTROL Next]**.
 
-   A questo punto, il feed viene salvato e aggiunto alla pagina [!DNL SAINT Classification Feed]. Se lo scegliete, potete uscire e modificare il feed in un secondo momento per completare la procedura guidata.
-1. Nella pagina [!DNL Authentication], specificate il nome  società Adobe Analytics, il nome utente e il segreto Web nei rispettivi campi di testo, quindi fate clic su **[!UICONTROL Next]**.
+   A questo punto, il feed viene salvato e aggiunto alla pagina [!DNL SAINT Classification Feed] . Se lo scegli, puoi uscire e modificare il feed in un secondo momento per completare la procedura guidata.
+1. Nella pagina [!DNL Authentication] , specifica il nome dell’azienda Adobe Analytics, il nome utente e il segreto web nei rispettivi campi di testo, quindi fai clic su **[!UICONTROL Next]**.
 
-   Accertatevi che sia autorizzato a utilizzare l&#39;API Web con  Adobe Analytics.
-1. Nella pagina **[!UICONTROL Report Suite]**, scegli una suite di rapporti e il relativo set di dati di classificazione, quindi fai clic su **[!UICONTROL Next]**.
-1. Nella pagina [!DNL Field Maps] mappare  classificazioni Adobe Analytics con campi di metadati di ricerca nel sito/merchandising, quindi fare clic su **[!UICONTROL Next]**.
+   Assicurati che sia autorizzato a utilizzare l’API web con Adobe Analytics.
+1. Nella pagina **[!UICONTROL Report Suite]** , scegli una suite di rapporti e il relativo set di dati di classificazione, quindi fai clic su **[!UICONTROL Next]**.
+1. Nella pagina [!DNL Field Maps] mappare le classificazioni Adobe Analytics con i campi di metadati di ricerca/merchandising del sito, quindi fare clic su **[!UICONTROL Next]**.
 
-   Per regolare  classificazioni Adobe Analytics, fare clic su **[!UICONTROL Edit]**  Classificazioni Adobe Analytics per accedere  Adobe Analytics. Dopo aver apportato le modifiche, fare clic su **[!UICONTROL Refresh Classifications]** per aggiornare le scelte di classificazione.
-1. Nella pagina [!DNL Search Criteria], i dati provenienti dalla ricerca del sito/merchandising possono essere filtrati prima che vengano inviati a  SAINT Adobe Analytics. Create qui le regole del filtro utilizzando l&#39;interfaccia del generatore di regole, quindi fate clic su **[!UICONTROL Next]**.
-1. Nella pagina [!DNL Configure FTP], seleziona il server FTP. Specificate la frequenza con cui desiderate caricare i dati, quindi fate clic su **[!UICONTROL Next]**.
+   Per regolare le classificazioni di Adobe Analytics, fai clic su **[!UICONTROL Edit]** Classificazioni Adobe Analytics per accedere ad Adobe Analytics. Una volta apportate le modifiche, fai clic su **[!UICONTROL Refresh Classifications]** per aggiornare le scelte delle classificazioni.
+1. Nella pagina [!DNL Search Criteria] è possibile filtrare i dati provenienti da ricerca/merchandising del sito prima di inviarli ad Adobe Analytics SAINT. Crea qui le regole di filtro utilizzando l&#39;interfaccia del generatore di regole, quindi fai clic su **[!UICONTROL Next]**.
+1. Nella pagina [!DNL Configure FTP] , seleziona il server FTP. Specifica la frequenza con cui caricare i dati, quindi fai clic su **[!UICONTROL Next]**.
 
-   Come procedura ottimale, ogni feed dispone di un proprio account FTP per evitare la perdita accidentale di dati. Puoi creare un nuovo account Adobe Analytics FTP  qui.
-1. Nella pagina [!DNL Verification], fare clic su **[!UICONTROL Show Data View]** per controllare la rappresentazione della visualizzazione dati dell&#39;output. Se esistono dei file di feed effettivi, questi sono elencati qui e sono disponibili per il download.
+   Come best practice, ogni feed dispone di un proprio account FTP per evitare la perdita accidentale di dati. Puoi creare un nuovo account Adobe Analytics FTP qui.
+1. Nella pagina [!DNL Verification] , fai clic su **[!UICONTROL Show Data View]** per controllare la rappresentazione della visualizzazione dati dell’output. Se esistono dei file di feed effettivi, questi sono elencati qui e sono disponibili per il download.
 1. Clic **[!UICONTROL Close]**.
 
-## Modifica di un feed SAINT Adobe Analytics  {#task_5BF34D02D0D14359B1CF4B3C1B0ACC84}
+## Modifica di un feed Adobe Analytics SAINT {#task_5BF34D02D0D14359B1CF4B3C1B0ACC84}
 
-Potete modificare tutti gli aspetti di un feed SAINT esistente creato.
+È possibile modificare tutti gli aspetti di un feed SAINT esistente creato.
 
-**Per modificare un feed SAINT Adobe Analytics**
+**Per modificare un feed di Adobe Analytics SAINT**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]** dal menu del prodotto.
-1. Nella pagina [!DNL Saint Classification Feeds], nella colonna **[!UICONTROL Name]**, nell&#39;elenco a discesa accanto a un feed, fare clic su **[!UICONTROL Edit feed]**.
-1. Nella finestra di dialogo Feed SAINT, nel campo di testo **Nome feed**, immettete il nuovo nome per il feed, quindi fate clic su **[!UICONTROL Next]**.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]**.
+1. Nella pagina [!DNL Saint Classification Feeds], sotto la colonna **[!UICONTROL Name]**, nell’elenco a discesa accanto a un feed, fai clic su **[!UICONTROL Edit feed]**.
+1. Nella finestra di dialogo Feed di SAINT, immettere il nuovo nome feed nel campo di testo **Nome feed**, quindi fare clic su **[!UICONTROL Next]**.
 
-   A questo punto, il feed viene salvato e aggiunto alla pagina [!DNL SAINT Classification Feed]. Se lo scegliete, potete uscire e modificare il feed in un secondo momento per completare la procedura guidata.
-1. Nella pagina [!DNL Authentication], specificate il nome  società Adobe Analytics, il nome utente e il segreto Web nei rispettivi campi di testo, quindi fate clic su **[!UICONTROL Next]**.
+   A questo punto, il feed viene salvato e aggiunto alla pagina [!DNL SAINT Classification Feed] . Se lo scegli, puoi uscire e modificare il feed in un secondo momento per completare la procedura guidata.
+1. Nella pagina [!DNL Authentication] , specifica il nome dell’azienda Adobe Analytics, il nome utente e il segreto web nei rispettivi campi di testo, quindi fai clic su **[!UICONTROL Next]**.
 
-   Accertatevi che sia autorizzato a utilizzare l&#39;API Web con  Adobe Analytics.
-1. Nella pagina **[!UICONTROL Report Suite]**, scegli una suite di rapporti e il relativo set di dati di classificazione, quindi fai clic su **[!UICONTROL Next]**.
-1. Nella pagina [!DNL Field Maps] mappare  classificazioni Adobe Analytics con campi di metadati di ricerca nel sito/merchandising, quindi fare clic su **[!UICONTROL Next]**.
+   Assicurati che sia autorizzato a utilizzare l’API web con Adobe Analytics.
+1. Nella pagina **[!UICONTROL Report Suite]** , scegli una suite di rapporti e il relativo set di dati di classificazione, quindi fai clic su **[!UICONTROL Next]**.
+1. Nella pagina [!DNL Field Maps] mappare le classificazioni Adobe Analytics con i campi di metadati di ricerca/merchandising del sito, quindi fare clic su **[!UICONTROL Next]**.
 
-   Per regolare  classificazioni Adobe Analytics, fare clic su **[!UICONTROL Edit]**  Classificazioni Adobe Analytics per accedere  Adobe Analytics. Dopo aver apportato le modifiche, fare clic su **[!UICONTROL Refresh Classifications]** per aggiornare le scelte di classificazione.
-1. Nella pagina [!DNL Search Criteria], i dati provenienti dalla ricerca del sito/merchandising possono essere filtrati prima che vengano inviati a  SAINT Adobe Analytics. Create qui le regole del filtro utilizzando l&#39;interfaccia del generatore di regole, quindi fate clic su **[!UICONTROL Next]**.
-1. Nella pagina [!DNL Configure FTP], seleziona il server FTP. Specificate la frequenza con cui desiderate caricare i dati, quindi fate clic su **[!UICONTROL Next]**.
+   Per regolare le classificazioni di Adobe Analytics, fai clic su **[!UICONTROL Edit]** Classificazioni Adobe Analytics per accedere ad Adobe Analytics. Una volta apportate le modifiche, fai clic su **[!UICONTROL Refresh Classifications]** per aggiornare le scelte delle classificazioni.
+1. Nella pagina [!DNL Search Criteria] è possibile filtrare i dati provenienti da ricerca/merchandising del sito prima di inviarli ad Adobe Analytics SAINT. Crea qui le regole di filtro utilizzando l&#39;interfaccia del generatore di regole, quindi fai clic su **[!UICONTROL Next]**.
+1. Nella pagina [!DNL Configure FTP] , seleziona il server FTP. Specifica la frequenza con cui caricare i dati, quindi fai clic su **[!UICONTROL Next]**.
 
-   Come procedura ottimale, ogni feed dispone di un proprio account FTP per evitare la perdita accidentale di dati. Puoi creare un nuovo account Adobe Analytics FTP  qui.
-1. Nella pagina [!DNL Verification], fare clic su **[!UICONTROL Show Data View]** per controllare la rappresentazione della visualizzazione dati dell&#39;output. Se esistono dei file di feed effettivi, questi sono elencati qui e sono disponibili per il download.
+   Come best practice, ogni feed dispone di un proprio account FTP per evitare la perdita accidentale di dati. Puoi creare un nuovo account Adobe Analytics FTP qui.
+1. Nella pagina [!DNL Verification] , fai clic su **[!UICONTROL Show Data View]** per controllare la rappresentazione della visualizzazione dati dell’output. Se esistono dei file di feed effettivi, questi sono elencati qui e sono disponibili per il download.
 1. Clic **[!UICONTROL Close]**.
 
-## Eliminazione di un feed SAINT Adobe Analytics  {#task_5319B1F4CA1A406393CFD7AE97258CEB}
+## Eliminazione di un feed Adobe Analytics SAINT {#task_5319B1F4CA1A406393CFD7AE97258CEB}
 
-È possibile eliminare un feed SAINT Adobe Analytics  esistente che non è più necessario né utilizzato.
+È possibile eliminare un feed Adobe Analytics SAINT esistente che non è più necessario o utilizzato.
 
-**Per eliminare un feed SAINT Adobe Analytics**
+**Per eliminare un feed di Adobe Analytics SAINT**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]** dal menu del prodotto.
-1. Nella pagina [!DNL Saint Classification Feeds], nella colonna **[!UICONTROL Name]**, nell&#39;elenco a discesa accanto al feed che si desidera rimuovere, fare clic su **[!UICONTROL Delete feed]**.
-1. Nella finestra di dialogo Elimina, fate clic su **Sì** per verificare l&#39;eliminazione del feed.
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]**.
+1. Nella pagina [!DNL Saint Classification Feeds], sotto la colonna **[!UICONTROL Name]**, nell’elenco a discesa accanto a un feed da rimuovere, fai clic su **[!UICONTROL Delete feed]**.
+1. Nella finestra di dialogo Elimina, fare clic su **Sì** per verificare l’eliminazione del feed.
 
-## Visualizzazione di un file di feed SAINT Adobe Analytics  {#task_F0C8BADD25E14E5DB30BF31D1F879FDB}
+## Visualizzazione di un file di feed di Adobe Analytics SAINT {#task_F0C8BADD25E14E5DB30BF31D1F879FDB}
 
-È possibile aprire la pagina [!DNL Verification] di un feed SAINT esistente per controllare la rappresentazione della visualizzazione dati dell&#39;output.
+È possibile aprire la pagina [!DNL Verification] di un feed di SAINT esistente per esaminare la rappresentazione della visualizzazione dati dell’output.
 
-Se esistono dei file di feed effettivi, questi vengono elencati qui e possono essere scaricati come file di testo.
+Se esistono dei file di feed effettivi, questi sono elencati qui e sono disponibili per il download come file di testo.
 
-**Per visualizzare un file di feed SAINT Adobe Analytics**
+**Per visualizzare un file di feed di Adobe Analytics SAINT**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]** dal menu del prodotto.
-1. Nella pagina [!DNL Saint Classification Feeds], nella colonna **[!UICONTROL Name]**, nell&#39;elenco a discesa accanto a un feed, fare clic su **[!UICONTROL View Feed Files]**.
-1. (Facoltativo) Fate clic su **[!UICONTROL Download File]** per salvare il file di feed come file di testo.
-1. Fare clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL SAINT Classification Feeds].
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]**.
+1. Nella pagina [!DNL Saint Classification Feeds], sotto la colonna **[!UICONTROL Name]**, nell’elenco a discesa accanto a un feed, fai clic su **[!UICONTROL View Feed Files]**.
+1. (Facoltativo) Fai clic su **[!UICONTROL Download File]** per salvare il file di feed come file di testo.
+1. Fai clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL SAINT Classification Feeds].
 
-## Verifica di un feed SAINT Adobe Analytics  {#task_9864D69BE3824FC29C10B36EE4855D25}
+## Verifica di un feed Adobe Analytics SAINT {#task_9864D69BE3824FC29C10B36EE4855D25}
 
-Potete testare un feed di SAINT Adobe Analytics  esistente senza caricamento di file.
+Puoi testare un feed Adobe Analytics SAINT esistente senza caricamento file.
 
-Consultate [Generazione e caricamento di un feed SAINT Adobe Analytics ](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_47AED946AA964334A877FDC8D4F6F00A).
+Consulta [Generazione e caricamento di un feed Adobe Analytics SAINT](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_47AED946AA964334A877FDC8D4F6F00A).
 
-Vedere [Visualizzazione di un file di feed SAINT Adobe Analytics ](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_F0C8BADD25E14E5DB30BF31D1F879FDB).
+Consulta [Visualizzazione di un file di feed di Adobe Analytics SAINT](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_F0C8BADD25E14E5DB30BF31D1F879FDB).
 
-**Per testare un file di feed SAINT Adobe Analytics**
+**Per testare un file di feed di Adobe Analytics SAINT**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]** dal menu del prodotto.
-1. Nella pagina [!DNL Saint Classification Feeds], nella colonna **[!UICONTROL Name]**, nell&#39;elenco a discesa accanto a un feed, fare clic su **[!UICONTROL Test Feed (No file upload)]**.
-1. Al termine dell&#39;elaborazione del feed, fate clic su **[!UICONTROL View Feed Files]** dall&#39;elenco a discesa del nome del feed.
-1. Nella pagina [!DNL Verification], fate clic su **[!UICONTROL Download File]** per scaricare il file del feed.
-1. Fare clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL SAINT Classification Feeds].
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]**.
+1. Nella pagina [!DNL Saint Classification Feeds], sotto la colonna **[!UICONTROL Name]**, nell’elenco a discesa accanto a un feed, fai clic su **[!UICONTROL Test Feed (No file upload)]**.
+1. Al termine dell’elaborazione del feed, fai clic su **[!UICONTROL View Feed Files]** dall’elenco a discesa del nome del feed.
+1. Nella pagina [!DNL Verification] , fai clic su **[!UICONTROL Download File]** per scaricare il file di feed.
+1. Fai clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL SAINT Classification Feeds].
 
-## Generazione e caricamento di un feed SAINT Adobe Analytics  {#task_47AED946AA964334A877FDC8D4F6F00A}
+## Generazione e caricamento di un feed Adobe Analytics SAINT {#task_47AED946AA964334A877FDC8D4F6F00A}
 
-Potete generare e caricare i file di feed per un feed Adobe Analytics  esistente creato.
+Puoi generare e caricare file di feed per un feed Adobe Analytics esistente creato.
 
-Vedere [Verifica di un feed SAINT Adobe Analytics ](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_9864D69BE3824FC29C10B36EE4855D25).
+Consulta [Verifica di un feed Adobe Analytics SAINT](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_9864D69BE3824FC29C10B36EE4855D25).
 
-Vedere [Visualizzazione di un file di feed SAINT Adobe Analytics ](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_F0C8BADD25E14E5DB30BF31D1F879FDB).
+Consulta [Visualizzazione di un file di feed di Adobe Analytics SAINT](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_F0C8BADD25E14E5DB30BF31D1F879FDB).
 
-**Per generare e caricare un file di feed SAINT Adobe Analytics**
+**Per generare e caricare un file di feed Adobe Analytics SAINT**
 
-1. Scegliere **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]** dal menu del prodotto.
-1. Nella pagina [!DNL Saint Classification Feeds], nella colonna **[!UICONTROL Name]**, nell&#39;elenco a discesa accanto a un feed, fare clic su **[!UICONTROL Generate and Upload Feed]**.
-1. Al termine dell&#39;elaborazione del feed, fate clic su **[!UICONTROL View Feed Files]** dall&#39;elenco a discesa del nome del feed.
-1. Nella pagina [!DNL Verification], fate clic su **[!UICONTROL Download File]** per scaricare il file del feed.
-1. Fare clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL SAINT Classification Feeds].
+1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Adobe Analytics]** > **[!UICONTROL SAINT Classification Feeds]**.
+1. Nella pagina [!DNL Saint Classification Feeds], sotto la colonna **[!UICONTROL Name]**, nell’elenco a discesa accanto a un feed, fai clic su **[!UICONTROL Generate and Upload Feed]**.
+1. Al termine dell’elaborazione del feed, fai clic su **[!UICONTROL View Feed Files]** dall’elenco a discesa del nome del feed.
+1. Nella pagina [!DNL Verification] , fai clic su **[!UICONTROL Download File]** per scaricare il file di feed.
+1. Fai clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL SAINT Classification Feeds].
