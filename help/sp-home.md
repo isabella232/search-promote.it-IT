@@ -5,10 +5,10 @@ solution: Target
 topic: Ricerca nel sito e merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 1914d67d2634cb13368ab72d54da7da5988de13f
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 15%
+source-wordcount: '139'
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ## Notizie e annunci {#topic_02625547D07F411DBAC9593FCBD4741B}
 
-* **Attenzione:** [Adobe Annuncio fine servizio di Search&amp;Promote](/help/sp-eol.md).
+<!-- * **Attention:** [Adobe Search&amp;Promote End-of-Service Announcement](/help/sp-eol.md). -->
 
 * Note sulla versione di Adobe Marketing Cloud - Contiene nuove funzioni, correzioni e problemi noti in tutte le soluzioni del Marketing Cloud. I rilasci di funzionalità hanno luogo in primavera e autunno, mentre i rilasci di manutenzione hanno cadenza mensile.
 
