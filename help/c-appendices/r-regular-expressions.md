@@ -1,15 +1,13 @@
 ---
-description: Un aggiornamento relativo alla sintassi e alle regole per la creazione di espressioni regolari.
-seo-description: Un aggiornamento relativo alla sintassi e alle regole per la creazione di espressioni regolari.
-seo-title: Espressioni regolari
+description: Un aggiornamento della sintassi e delle regole per la costruzione di espressioni regolari.
 solution: Target
 title: Espressioni regolari
-topic: Appendices,Site search and merchandising
+topic: Appendici, Ricerca nel sito e merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
-source-git-commit: 7b883870bb16284d8070a21547cdb62cc79d7632
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -17,9 +15,9 @@ ht-degree: 0%
 
 # Espressioni regolari{#regular-expressions}
 
-Un aggiornamento relativo alla sintassi e alle regole per la creazione di espressioni regolari.
+Un aggiornamento della sintassi e delle regole per la costruzione di espressioni regolari.
 
-Vedere anche [Configurazione di un indice incrementale di un sito Web in fase](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+Vedi anche [Configurazione di un indice incrementale di un sito web organizzato](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Sintassi delle espressioni regolari**
 
@@ -33,17 +31,17 @@ Vedere anche [Configurazione di un indice incrementale di un sito Web in fase](.
   <tr> 
    <td colname="col1"> </td> 
    <td colname="col2"> <p> [caratteri] </p> </td> 
-   <td colname="col3"> <p> Classe carattere: Uno dei caratteri </p> </td> 
+   <td colname="col3"> <p> Classe di caratteri: Uno dei caratteri </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> </td> 
-   <td colname="col2"> <p> [^chars] </p> </td> 
-   <td colname="col3"> <p>Classe carattere: Nessuno dei caratteri </p> </td> 
+   <td colname="col2"> <p> [^caratteri] </p> </td> 
+   <td colname="col3"> <p>Classe di caratteri: Nessun carattere </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> </td> 
    <td colname="col2"> <p> text1|text2 </p> </td> 
-   <td colname="col3"> <p> Alternativa: text1 o text2 </p> </td> 
+   <td colname="col3"> <p> Alternativa: testo1 o testo2 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Quantificatori</b> </p> </td> 
@@ -73,7 +71,7 @@ Vedere anche [Configurazione di un indice incrementale di un sito Web in fase](.
   <tr> 
    <td colname="col1"> </td> 
    <td colname="col2"> <p> (testo) </p> </td> 
-   <td colname="col3"> <p> Raggruppamento di testo, per impostare i bordi di un'alternativa o per ripristinare i riferimenti quando il nth group viene utilizzato sull'RHS di una regola di riscrittura con $N) </p> </td> 
+   <td colname="col3"> <p> Raggruppamento di testo, per impostare i bordi di un'alternativa o per restituire i riferimenti quando il nth gruppo viene utilizzato sull'RHS di una RewriteRule con $N) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Ancoraggi</b> </p> </td> 
@@ -83,7 +81,7 @@ Vedere anche [Configurazione di un indice incrementale di un sito Web in fase](.
   <tr> 
    <td colname="col1"> </td> 
    <td colname="col2"> <p> ^ </p> </td> 
-   <td colname="col3"> <p> Inizio dell'ancoraggio della linea. </p> </td> 
+   <td colname="col3"> <p> Inizio ancoraggio linea. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> </td> 
@@ -91,57 +89,57 @@ Vedere anche [Configurazione di un indice incrementale di un sito Web in fase](.
    <td colname="col3"> <p> Ancoraggio fine linea. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Sfuggita</b> </p> </td> 
+   <td colname="col1"> <p> <b>Fuga</b> </p> </td> 
    <td colname="col2"> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> </p> </td> 
    <td colname="col2"> <p>\char </p> </td> 
-   <td colname="col3"> <p>Esc il carattere particolare. Ad esempio, per specificare i caratteri ".[]()" e così via. </p> </td> 
+   <td colname="col3"> <p>Scappa il carattere particolare. Ad esempio, per specificare i caratteri ".[]()" e così via. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Regole sulle espressioni regolari**
 
-* Un carattere ordinario, non uno dei caratteri speciali descritti di seguito, è un&#39;espressione regolare con un carattere che corrisponde a se stessa.
-* Una barra rovesciata (\) seguita da qualsiasi carattere speciale è un&#39;espressione regolare di un carattere che corrisponde al carattere speciale stesso. I caratteri speciali includono quanto segue:
+* Un carattere comune, non uno dei caratteri speciali descritti di seguito, è un&#39;espressione regolare a un carattere che corrisponde a se stessa.
+* Una barra rovesciata (\) seguita da qualsiasi carattere speciale è un&#39;espressione regolare a un carattere che corrisponde al carattere speciale stesso. I caratteri speciali includono quanto segue:
 
-   * `.` (punto),  `*` (asterisco),  `?` (punto interrogativo),  `+` (segno più),  `[` (parentesi quadre sinistra),  `|` (barra verticale) e  `\` (barra rovesciata) sono sempre caratteri speciali, fatta eccezione per i caratteri visualizzati tra parentesi quadre.
-   * `^` (caret o cirflex) è speciale all&#39;inizio di un&#39;espressione regolare, o quando segue immediatamente la sinistra di una coppia di parentesi quadre.
+   * `.` (punto),  `*` (asterisco),  `?` (punto interrogativo),  `+` (segno più),  `[` (parentesi quadra sinistra),  `|` (barra verticale) e  `\` (barra rovesciata) sono sempre caratteri speciali, tranne quando compaiono tra parentesi quadre.
+   * `^` (accento circonflesso) è speciale all&#39;inizio di un&#39;espressione regolare, o quando segue immediatamente la sinistra di una coppia di parentesi quadre.
    * `$` (simbolo del dollaro) è speciale alla fine di un&#39;espressione regolare.
-   * `.` (punto) è un&#39;espressione regolare con un carattere che corrisponde a qualsiasi carattere, inclusi i caratteri set di codici supplementari ad eccezione di nuova riga.
-   * Una stringa non vuota di caratteri racchiusa tra `[ ]` (parentesi quadre sinistra e destra) è un&#39;espressione regolare di un carattere che corrisponde a un carattere nella stringa, inclusi i caratteri del set di codici supplementari.
+   * `.` (punto) è un&#39;espressione regolare a un carattere che corrisponde a qualsiasi carattere, inclusi i caratteri del set di codici supplementari ad eccezione di new-line.
+   * Una stringa non vuota di caratteri racchiusi tra `[ ]` (parentesi quadre sinistra e destra) è un&#39;espressione regolare di un carattere che corrisponde a un carattere, inclusi i caratteri del set di codici supplementari, in quella stringa.
 
-      Se, tuttavia, il primo carattere della stringa è un carattere `^` (cirflex), l&#39;espressione regolare di un carattere corrisponde a qualsiasi carattere, inclusi i caratteri set di codici supplementari, ad eccezione di nuova riga e dei caratteri rimanenti nella stringa.
+      Se, tuttavia, il primo carattere della stringa è un carattere `^` (cirflex), l&#39;espressione regolare a un carattere corrisponde a qualsiasi carattere, inclusi i caratteri del set di codici supplementari, ad eccezione di new-line e dei caratteri rimanenti nella stringa.
 
-      Questo significato speciale è assegnato a `^` solo se si verifica per la prima volta nella stringa. È possibile utilizzare `-` (segno meno) per indicare un intervallo di caratteri consecutivi, compresi i caratteri del set di codici supplementari. Ad esempio, [0-9] equivale a [0123456789].
+      Il `^` ha questo significato speciale solo se si verifica per primo nella stringa. È possibile utilizzare `-` (segno meno) per indicare un intervallo di caratteri consecutivi, inclusi i caratteri del set di codici supplementari. Ad esempio, [0-9] equivale a [0123456789].
 
-      I caratteri che specificano l&#39;intervallo devono provenire dallo stesso set di codici. Quando i caratteri provengono da set di codici diversi, uno dei caratteri che specifica l’intervallo corrisponde. Il `-` perde questo significato speciale se si verifica per primo (dopo un `^` iniziale, se presente) o per ultimo nella stringa. La `]` (parentesi quadre destra) non termina una stringa di questo tipo quando si tratta del primo carattere al suo interno, dopo un `^` iniziale, se presente. Ad esempio, `[]a-f]` corrisponde a una `]` (parentesi quadre destra) o a una delle lettere ASCII da a a f incluso. I quattro caratteri elencati come caratteri speciali sopra si trovano all&#39;interno di una tale stringa di caratteri.
+      I caratteri che specificano l&#39;intervallo devono provenire dallo stesso set di codici. Quando i caratteri provengono da set di codice diversi, uno dei caratteri che specificano l’intervallo corrisponde. Il `-` perde questo significato speciale se si verifica per primo (dopo un `^` iniziale, se presente) o per ultimo nella stringa. La `]` (parentesi quadra destra) non termina una stringa di questo tipo quando si tratta del primo carattere al suo interno, dopo un `^` iniziale, se presente. Ad esempio, `[]a-f]` corrisponde a una `]` (parentesi quadra destra) o a una delle lettere ASCII da a a a f inclusive. I quattro caratteri elencati come caratteri speciali sopra si trovano all’interno di una stringa di caratteri di questo tipo.
 
-**Regole per la creazione di espressioni regolari da espressioni regolari con un carattere**
+**Regole per la costruzione di espressioni regolari da espressioni regolari con un carattere**
 
-Per creare espressioni regolari a partire da espressioni regolari a un carattere, è possibile utilizzare le regole seguenti:
+Puoi utilizzare le seguenti regole per creare espressioni regolari a partire da espressioni regolari a un carattere:
 
-* Un&#39;espressione regolare con un carattere è un&#39;espressione regolare che corrisponde a qualsiasi corrispondenza dell&#39;espressione regolare con un carattere.
-* Un&#39;espressione regolare di un carattere seguita da un `*` (asterisco) è un&#39;espressione regolare che corrisponde a zero o più occorrenze dell&#39;espressione regolare di un carattere, che può essere un carattere di set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
-* Un&#39;espressione regolare di un carattere seguita da un `?` (punto interrogativo) è un&#39;espressione regolare che corrisponde a zero o a una occorrenza dell&#39;espressione regolare di un carattere, che può essere un carattere di set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
-* Un&#39;espressione regolare di un carattere seguita da un `+` (segno più) è un&#39;espressione regolare che corrisponde a una o più occorrenze dell&#39;espressione regolare di un carattere, che può essere un carattere di set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra che consente la corrispondenza.
-* Un&#39;espressione regolare di un carattere seguita da `{m}`, `{m,}` o `{m,n}` è un&#39;espressione regolare che corrisponde a un intervallo di occorrenze dell&#39;espressione regolare di un carattere. i valori di m e n devono essere numeri interi non negativi inferiori a 256; `{m}` corrisponde esattamente a m occorrenze; `{m,}` corrisponde ad almeno m occorrenze; `{m,n}` corrisponde a qualsiasi numero di occorrenze tra m e n incluso. Ogni volta che esiste una scelta, l&#39;espressione regolare corrisponde al maggior numero possibile di occorrenze.
-* La concatenazione di espressioni regolari è un&#39;espressione regolare che corrisponde alla concatenazione delle stringhe corrispondenti a ciascun componente dell&#39;espressione regolare.
+* Un&#39;espressione regolare con un carattere è un&#39;espressione regolare che corrisponde a qualsiasi tipo di corrispondenza dell&#39;espressione regolare con un carattere.
+* Un&#39;espressione regolare a un carattere seguita da un `*` (asterisco) è un&#39;espressione regolare che corrisponde a zero o più occorrenze dell&#39;espressione regolare a un carattere, che può essere un carattere aggiuntivo del set di codici. In caso di scelta, viene scelta la stringa più a sinistra più lunga che consente una corrispondenza.
+* Un&#39;espressione regolare a un carattere seguita da un `?` (punto interrogativo) è un&#39;espressione regolare che corrisponde a zero o a una occorrenza dell&#39;espressione regolare a un carattere, che può essere un carattere aggiuntivo del set di codici. In caso di scelta, viene scelta la stringa più a sinistra più lunga che consente una corrispondenza.
+* Un&#39;espressione regolare a un carattere seguita da un `+` (segno più) è un&#39;espressione regolare che corrisponde a una o più occorrenze dell&#39;espressione regolare a un carattere, che può essere un carattere di set di codici supplementare. In caso di scelta, viene scelta la stringa più a sinistra più lunga che consente una corrispondenza.
+* Un&#39;espressione regolare a un carattere seguita da `{m}`, `{m,}` o `{m,n}` è un&#39;espressione regolare che corrisponde a un intervallo di occorrenze dell&#39;espressione regolare a un carattere. i valori di m e n devono essere numeri interi non negativi inferiori a 256; `{m}` corrisponde esattamente a m occorrenze; `{m,}` corrisponde ad almeno m occorrenze; `{m,n}` corrisponde a qualsiasi numero di occorrenze tra m e n inclusive. Ogni volta che esiste una scelta, l&#39;espressione regolare corrisponde al maggior numero possibile di occorrenze.
+* La concatenazione di espressioni regolari è un’espressione regolare che corrisponde alla concatenazione delle stringhe abbinate a ciascun componente dell’espressione regolare.
 * Un&#39;espressione regolare racchiusa tra le sequenze di caratteri ( e ) è un&#39;espressione regolare che corrisponde a qualsiasi corrispondenza dell&#39;espressione regolare non adornata.
 * Un&#39;espressione regolare seguita da una `|` (barra verticale) seguita da un&#39;espressione regolare è un&#39;espressione regolare che corrisponde alla prima espressione regolare (prima della barra verticale) o alla seconda espressione regolare (dopo la barra verticale).
 
-È inoltre possibile vincolare un&#39;espressione regolare affinché corrisponda solo a un segmento iniziale o finale di una linea, oppure a entrambi.
+Puoi anche vincolare un’espressione regolare affinché corrisponda solo a un segmento iniziale o finale di una riga, oppure a entrambi.
 
-* Un `^` (cirflex) all&#39;inizio di un&#39;espressione regolare vincola tale espressione regolare a corrispondere a un segmento iniziale di una riga.
-* Un `$` (simbolo del dollaro) alla fine di un&#39;intera espressione regolare vincola tale espressione regolare a corrispondere a un segmento finale di una riga.
-* La costruzione ^regolare espressione$ vincola l&#39;espressione regolare a corrispondere all&#39;intera riga.
+* Un `^` (circonflex) all&#39;inizio di un&#39;espressione regolare vincola tale espressione regolare affinché corrisponda a un segmento iniziale di una riga.
+* Un `$` (simbolo del dollaro) alla fine di un&#39;intera espressione regolare vincola tale espressione regolare affinché corrisponda a un segmento finale di una riga.
+* La costruzione ^espressione regolare$ vincola l&#39;espressione regolare affinché corrisponda all&#39;intera riga.
 
-Esistono nomi predefiniti di classi di caratteri utilizzabili al posto di complesse espressioni regolari raggruppate. Ad esempio, una cifra può essere rappresentata dall&#39;espressione regolare di un carattere [0-9] o dall&#39;espressione regolare di un carattere della classe di carattere [[:cifra:]].
+Esistono alcuni nomi di classe di caratteri predefiniti che è possibile utilizzare al posto di complesse espressioni regolari tra parentesi quadre. Ad esempio, una cifra può essere rappresentata dall&#39;espressione regolare a un carattere [0-9] o dall&#39;espressione regolare a un carattere della classe di caratteri [[:cifra:]].
 
-Le classi di caratteri predefinite e il relativo significato sono i seguenti:
+Le classi di caratteri predefinite e il loro significato sono i seguenti:
 
 <table> 
  <thead> 
@@ -177,11 +175,11 @@ Le classi di caratteri predefinite e il relativo significato sono i seguenti:
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:lower:]] </p> </td> 
-   <td colname="col2"> <p>Un carattere alfabetico minuscolo. </p> </td> 
+   <td colname="col2"> <p>Carattere alfabetico minuscolo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:print:]] </p> </td> 
-   <td colname="col2"> <p> Qualsiasi carattere di stampa, incluso lo spazio. </p> </td> 
+   <td colname="col2"> <p> Qualsiasi carattere di stampa, compreso lo spazio. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:punct:]] </p> </td> 
@@ -189,11 +187,11 @@ Le classi di caratteri predefinite e il relativo significato sono i seguenti:
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:space:]] </p> </td> 
-   <td colname="col2"> <p> Spazio vuoto, ad esempio uno spazio, una scheda o un'estremità della riga. </p> </td> 
+   <td colname="col2"> <p> Spazio vuoto, ad esempio uno spazio, una scheda o una fine riga. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:high:]] </p> </td> 
-   <td colname="col2"> <p> Un carattere alfabetico maiuscolo. </p> </td> 
+   <td colname="col2"> <p> Carattere alfabetico maiuscolo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:xcifra:]] </p> </td> 
@@ -202,7 +200,7 @@ Le classi di caratteri predefinite e il relativo significato sono i seguenti:
  </tbody> 
 </table>
 
-Due nomi di classe di caratteri speciali corrispondono allo spazio null all&#39;inizio e alla fine di una parola. In altre parole, non corrispondono a un carattere effettivo. Una parola è considerata una sequenza di caratteri alfabetici, numeri o caratteri di sottolineatura (_).
+Due nomi di classe di caratteri speciali corrispondono allo spazio null all&#39;inizio e alla fine di una parola. In altre parole, non corrispondono a un carattere effettivo. Una parola è considerata una qualsiasi sequenza di caratteri alfabetici, cifre o caratteri di sottolineatura (_).
 
 <table> 
  <thead> 
@@ -217,7 +215,7 @@ Due nomi di classe di caratteri speciali corrispondono allo spazio null all&#39;
    <td colname="col2"> <p> inizio di una parola </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> [[:&gt;:] </p> </td> 
+   <td colname="col1"> <p> [[:&gt;:]] </p> </td> 
    <td colname="col2"> <p>fine di una parola </p> </td> 
   </tr> 
  </tbody> 
