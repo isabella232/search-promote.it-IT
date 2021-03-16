@@ -1,32 +1,30 @@
 ---
-description: nulle
-seo-description: nulle
-seo-title: Search&amp;Promote 8.15.0 - Note sulla versione (19/6/2014)
+description: Search&amp;Note sulla versione di Promote 8.15.0.
 solution: Target
-title: Search&amp;Promote 8.15.0 - Note sulla versione (19/6/2014)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promuovi note sulla versione 8.15.0 (19/6/2014)
+topic: Note sulla versione, Ricerca nel sito e merchandising
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 6%
+source-wordcount: '112'
+ht-degree: 4%
 
 ---
 
 
-# Note sulla versione di Search&amp;Promote 8.15.0 (19/6/2014){#search-promote-release-notes}
+# Note sulla versione di Search&amp;Promote 8.15.0 (19/06/2014){#search-promote-release-notes}
 
 **Nuova funzionalità**
 
-* Frase stemming - È ora supportato lo stemming dei sinonimi all&#39;interno di una frase.  Per attivare e utilizzare questa funzione in [!DNL Adobe Search&Promote], contattare il responsabile dell&#39;account tecnico  Adobe.
+* Frase stemming - È ora supportato lo stemma di sinonimi all&#39;interno di una frase.  Per abilitare e utilizzare questa funzione in [!DNL Adobe Search&Promote], contatta il tuo Adobe Technical Account Manager.
 
-   Vedere anche **[!UICONTROL Alternate Word Forms]** nella tabella delle opzioni in [Configurazione della corrispondenza tra i termini di ricerca e il contenuto Web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
+   Consulta anche **[!UICONTROL Alternate Word Forms]** nella tabella delle opzioni in [Configurazione della corrispondenza dei termini di ricerca con il contenuto web..](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
 
 **Problemi risolti e miglioramenti**
 
-* Sono stati apportati miglioramenti in termini di velocità alle prestazioni complessive di ricerca guidata.
-* Errore 404 restituito dal loader degli attributi.
-* Se SPIN tentava di generare un modello troppo grande, veniva visualizzato un avviso.
+* Sono stati apportati miglioramenti a livello di velocità alle prestazioni generali di ricerca guidata.
+* Il caricatore di attributi generava un errore 404.
+* Se SPIN ha tentato di generare un modello troppo grande, è stato visualizzato un avviso.
 * Aggiornamenti all&#39;analizzatore morfologico cinese, coreano e giapponese.
 
