@@ -1,51 +1,49 @@
 ---
-description: nulle
-seo-description: nulle
-seo-title: Search&amp;Promote 8.8 - Note sulla versione (26/04/2012)
+description: Search&amp;Note sulla versione di Promote 8.8.
 solution: Target
-title: Search&amp;Promote 8.8 - Note sulla versione (26/04/2012)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.8 Note sulla versione (26/04/2012)
+topic: Note sulla versione, Ricerca nel sito e merchandising
 uuid: ddb9f1af-92a4-4f85-be8f-a36f34d31add
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 2%
+source-wordcount: '328'
+ht-degree: 1%
 
 ---
 
 
-# Search&amp;Promote 8.8 - Note sulla versione (26/04/2012){#search-promote-release-notes}
+# Note sulla versione di Search&amp;Promote 8.8 (26/04/2012){#search-promote-release-notes}
 
 **Nuova funzionalità**
 
 * Facet dinamico
 
-   Facet dinamico rispetto a un set di attributi a forma libera associato a ciascuna pagina di contenuto del sito, che possono essere modificati (vengono aggiunti nuovi attributi, quelli vecchi rimossi o rinominati) da indice a indice. Il facet dinamico mappa automaticamente i facet degli slot con i facet reali. Il livello Guided Search (Ricerca guidata) facilita questa funzione con le regole aziendali.
-* Interfaccia utente Search&amp;Promote  Adobe
+   Possibilità di eseguire il facet dinamico rispetto a un set gratuito di attributi associati a ciascuna pagina di contenuto del sito, che potenzialmente cambiano (vengono aggiunti nuovi attributi, quelli vecchi vengono rimossi o rinominati) da indice a indice. Il facet dinamico mappa automaticamente i facet di slot con i facet reali. Il livello di ricerca guidata facilita questa funzione con le regole aziendali.
+* Interfaccia utente di Adobe Search&amp;Promote
 
-   Implementata  interfaccia utente Adobe in tutte  Adobe Search&amp;Promote pagine Web.
-* Integrazione più stretta con  Adobe  portale di accesso
+   Implementazione dell’interfaccia utente Adobe in tutte le pagine web di Adobe Search&amp;Promote.
+* Integrazione più stretta con il portale di accesso di Adobe
 
-    Search&amp;Promote di Adobe i clienti possono utilizzare il  Adobe portale di accesso esclusivamente. I clienti [!DNL Adobe Publish],  Adobe SiteSearch e Atomz correnti continueranno a utilizzare l&#39;accesso legacy.
-* Nuovo analizzatore morfologico per il supporto cinese e giapponese
+   I clienti di Adobe Search&amp;Promote possono utilizzare esclusivamente il portale di accesso di Adobe. I clienti attuali [!DNL Adobe Publish], Adobe SiteSearch e Atomz continueranno a utilizzare l’accesso legacy.
+* Nuovo analizzatore morfologico per il supporto di cinesi e giapponesi
 
-   L&#39;analizzatore morfologico è applicato sull&#39;indice e sul tempo di ricerca per sostenere cinese e giapponese.
+   L&#39;analizzatore morfologico viene applicato sull&#39;indice e sul tempo di ricerca per supportare cinese e giapponese.
 * Supporto per nuovi tipi di documenti, ad esempio Microsoft Office 2010
 
    La ricerca può convertire in HTML vari tipi di documenti, ad esempio .doc, .docx, .pdf e .mp3 prima di inserirsi nell’indicizzatore.
-* Nuovo Adobe di Search&amp;Promote online
+* Nuovo Adobe Guida in linea di Search&amp;Promote
 
-   Il sistema di Aiuto in linea dispone di una nuova interfaccia utente e ora è basato sulle attività.
+   Il sistema di Guida in linea dispone di una nuova interfaccia utente e ora è basato su attività.
 
 **Problemi risolti e miglioramenti**
 
-* È stato corretto l&#39;invio live di un banner tramite Stage Manager, con conseguente interruzione delle funzionalità di Dynamic Media Classic in tempo reale.
-* È stato risolto un problema a causa del quale la modifica di una regola con l&#39;attivatore &quot;Il parametro query non esiste&quot; veniva tradotta in modo non corretto in &quot;La parola chiave contiene&quot;.
-* È stato risolto un problema per il quale non era possibile modificare il parametro la seconda volta.
-* È stato risolto un problema con il connettore indice a causa del quale due o più definizioni di mappa non potevano puntare allo stesso valore di metadati/campi.
-* Sono stati risolti alcuni problemi di ricerca per indicizzazione di documenti PDF. L’aggiornamento alla versione 3.03 risolve i recenti arresti anomali.
-* Aggiunta la possibilità di una descrizione più breve delle regole di business (ad esempio, la mancata visualizzazione di field_table nel manager).
-* Nel menu di navigazione della Ricerca guidata erano presenti al massimo nove elementi. Ora il massimo è 20.
+* È stato corretto il push in diretta di un banner utilizzando Stage Manager, con conseguente interruzione delle funzionalità di Dynamic Media Classic in tempo reale.
+* È stato risolto un problema a causa del quale la modifica di una regola con il trigger &quot;Query Parameter does not exist&quot; (Parametro query non esiste) veniva tradotta in modo errato in &quot;Keyword contains&quot; (Parola chiave contiene).
+* È stato risolto un problema che impediva di modificare il parametro la seconda volta.
+* È stato risolto un problema relativo al connettore indice a causa del quale due o più definizioni di mappa non potevano puntare allo stesso valore di metadati/campi.
+* Sono stati risolti dei problemi relativi alla ricerca per indicizzazione di alcuni documenti PDF. L&#39;aggiornamento a 3.03 risolve i recenti arresti anomali.
+* Aggiunta la possibilità di descrizioni più brevi delle regole business (ad esempio, non visualizzare field_table nel manager).
+* Il menu di navigazione Ricerca guidata contiene un massimo di nove elementi. Ora il massimo è 20.
 * Miglioramenti delle prestazioni apportati al connettore indice.
 
