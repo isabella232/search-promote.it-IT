@@ -1,85 +1,83 @@
 ---
-description: La ricerca per prossimità consente di associare una posizione univoca a qualsiasi pagina del sito Web, quindi di cercare e ordinare i risultati per prossimità (distanza) da una determinata posizione.
-seo-description: La ricerca per prossimità consente di associare una posizione univoca a qualsiasi pagina del sito Web, quindi di cercare e ordinare i risultati per prossimità (distanza) da una determinata posizione.
-seo-title: Informazioni sulla ricerca di prossimità
+description: La ricerca per prossimità ti consente di associare una posizione univoca a qualsiasi pagina del sito web, quindi di cercare e ordinare i risultati per prossimità (distanza) da una determinata posizione.
 solution: Target
-title: Informazioni sulla ricerca di prossimità
-topic: Appendices,Site search and merchandising
+title: Informazioni sulla ricerca in prossimità
+topic: Appendici, Ricerca nel sito e merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
 
 
-# Informazioni sulla ricerca di prossimità{#about-proximity-search}
+# Informazioni sulla ricerca in prossimità{#about-proximity-search}
 
-La ricerca per prossimità consente di associare una posizione univoca a qualsiasi pagina del sito Web, quindi di cercare e ordinare i risultati per prossimità (distanza) da una determinata posizione.
+La ricerca per prossimità ti consente di associare una posizione univoca a qualsiasi pagina del sito web, quindi di cercare e ordinare i risultati per prossimità (distanza) da una determinata posizione.
 
-Ad esempio, supponete di aver popolato pagine nel sito Web con metadati del codice postale statunitense quali:
+Ad esempio, supponiamo di aver popolato pagine sul sito web con metadati del codice postale degli Stati Uniti, come ad esempio:
 
 ```
 <meta name="zipcode" content="84057">
 ```
 
-Quindi configurate il vostro account per indicizzare i metadati del codice ZIP. In **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** > **[!UICONTROL Add New Field]**, nella pagina [!DNL Add Field], impostare le seguenti opzioni:
+Poi configura il tuo account per indicizzare i metadati del tuo codice ZIP. In **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** > **[!UICONTROL Add New Field]**, nella pagina [!DNL Add Field], imposta le seguenti opzioni:
 
 * Nome campo: `zip`
-* Nome/i tag meta: `zipcode`
+* Nome/i del tag Meta: `zipcode`
 * Tipo di dati: **[!UICONTROL Location]**
 * Ordinamento: **[!UICONTROL Ascending]**
 * Unità predefinite: **[!UICONTROL Miles]**
 
-Dopo aver indicizzato il sito, effettuate la ricerca seguente:
+Dopo aver indicizzato il sito, esegui la seguente ricerca:
 
 ```
 ...&sp_q_location_1=84057&sp_x_1=zip&sp_q_max_1=100&sp_s=zip_proximity
 ```
 
-Il set di risultati contiene tutti i documenti ubicati entro 100 miglia dal codice ZIP 84057, ordinati in ordine crescente di distanza dal codice ZIP.
+Il set di risultati contiene tutti i documenti che si trovano entro 100 miglia di CAP 84057, ordinati in ordine crescente di distanza da questo CAP.
 
-È inoltre possibile utilizzare i codici dell&#39;area telefonica per le ubicazioni negli Stati Uniti. In alternativa, potete utilizzare coppie latitudine/longitudine per specificare le posizioni nei metadati del sito e nei criteri di ricerca. Il tipo di posizione viene determinato automaticamente dal modulo dei dati forniti.
+È inoltre possibile utilizzare i codici dell&#39;area telefonica per le località degli Stati Uniti. In alternativa, puoi utilizzare le coppie latitudine/longitudine per specificare le posizioni nei metadati del sito e nei criteri di ricerca. Il tipo di posizione viene determinato automaticamente dal modulo dei dati forniti.
 
-I valori di posizione a tre cifre (&quot;DDD&quot;, dove ogni &quot;D&quot; rappresenta una cifra decimale da 0 a 9) sono trattati come un codice dell&#39;area telefonica statunitense.
+I valori di posizione a tre cifre (&quot;DDD&quot;, in cui ogni &quot;D&quot; rappresenta una cifra decimale da 0 a 9) sono trattati come un prefisso telefonico degli Stati Uniti.
 
-I valori di posizione di cinque o cinque cifre (DDDDD o DDDDD-DDDD) sono trattati come codice postale statunitense.
+I valori di posizione a cinque o quattro cifre (&quot;DDDD&quot; o &quot;DDDD-DDD&quot;) sono trattati come CAP degli Stati Uniti.
 
-I valori di posizione nella forma esatta di &quot;±DD.DDDDD±DDD.DDDD&quot; sono trattati come una coppia latitudine/longitudine. Il primo valore numerico con segno specifica la latitudine e il secondo valore numerico con segno rappresenta la longitudine.
+I valori di posizione nella forma esatta di &quot;±DD.DDDD±DDD.DDDD&quot; sono trattati come una coppia di latitudine/longitudine. Il primo valore numerico firmato specifica la latitudine e il secondo valore numerico firmato rappresenta la longitudine.
 
-**Importante**: Se specificate un valore di latitudine positivo, un valore di longitudine positivo o entrambi, il carattere &quot;+&quot; nell’URL deve essere codificato come  `%2b`. In caso contrario, il simbolo &quot;+&quot; viene interpretato come uno spazio e il valore non viene riconosciuto come una posizione valida. Ad esempio, se il valore di latitudine era +49.2394 e il valore di longitudine era -123.1892, La parte della posizione dell&#39;URL, con &quot;+&quot; codificato, avrà l&#39;aspetto seguente:
+**Importante**: Se specifichi un valore di latitudine positivo o un valore di longitudine positivo o entrambi, il carattere &quot;+&quot; nell’URL deve essere codificato come  `%2b`. In caso contrario, il simbolo &quot;+&quot; viene interpretato come uno spazio e il valore non viene riconosciuto come posizione valida. Ad esempio, supponi di avere un valore di latitudine di +49.2394 e un valore di longitudine di -123.1892. La porzione di posizione dell’URL, con codifica &quot;+&quot;, sarà simile alla seguente:
 
 ```
 ...&sp_q_location_1=%2b49.2394-123.1892...
 ```
 
-* I valori di latitudine positivi rappresentano i gradi a nord dell’equatore.
-* I valori di latitudine negativi rappresentano i gradi a sud dell’equatore.
-* I valori di longitudine positivi rappresentano i gradi a est del Primo Meridiano.
-* I valori di longitudine negativi rappresentano i gradi ad ovest del primo Meridian.
+* I valori di latitudine positiva rappresentano i gradi a nord dell&#39;equatore.
+* I valori di latitudine negativi rappresentano i gradi a sud dell&#39;equatore.
+* I valori di longitudine positiva rappresentano i gradi a est del Primo Meridiano.
+* I valori negativi di longitudine rappresentano i gradi ad ovest del Primo Meridiano.
 
-Ad esempio, il valore &quot;+48.8577+002.2950&quot; rappresenta 48.8577 gradi a nord dell&#39;equatore, 2.295 gradi a est del Primo Meridiano, la posizione esatta della Torre Eiffel a Parigi, Francia. I segni numerici e ogni cifra sono obbligatori, anche gli zero iniziali e finali. Ad esempio, i tre valori &quot;48.8577+2.2950&quot;, &quot;+48.8577+2.2950&quot; e &quot;+48.8577+02.295&quot; non sono posizioni. Nel primo valore manca il segno iniziale sulla latitudine. Nel secondo valore mancano i due zeri iniziali sulla longitudine. Nel terzo valore manca lo zero finale sulla longitudine. Accertatevi di esaminare attentamente il registro di indice per eventuali problemi relativi alla posizione.
+Ad esempio, il valore &quot;+48.8577+002.2950&quot; rappresenta 48.8577 gradi a nord dell&#39;equatore, 2.295 gradi a est del Primo Meridian, la posizione esatta della Torre Eiffel a Parigi, Francia. Sono richiesti i segni numerici e ogni cifra, anche gli zeri iniziali e finali. Ad esempio, i tre valori &quot;48.8577+2.2950&quot;, &quot;+48.8577+2.2950&quot; e &quot;+48.8577+02.295&quot; non sono posizioni. Nel primo valore manca il segno iniziale sulla latitudine. Nel secondo valore mancano i due zeri iniziali sulla longitudine. Nel terzo valore manca lo zero finale sulla longitudine. Assicurati di esaminare attentamente il log degli indici per eventuali problemi relativi alla posizione.
 
-Quando si esegue una ricerca per prossimità, per quella ricerca è creato un &quot;campo di output di prossimità&quot; speciale. Il campo viene compilato con la distanza relativa tra la posizione specificata nei criteri di ricerca e la posizione associata a ciascun risultato di ricerca. Questo campo speciale è denominato per il campo di tipo posizione utilizzato nei criteri di ricerca con l’aggiunta di &quot;_proximity&quot; alla fine.
+Quando si cerca per prossimità c&#39;è un &quot;campo di output di prossimità&quot; speciale creato per quella ricerca. Il campo viene compilato con la distanza relativa tra la posizione specificata nei criteri di ricerca e la posizione associata a ciascun risultato di ricerca. Questo campo speciale viene denominato per il campo di tipo posizione utilizzato nei criteri di ricerca con &quot;_proximity&quot; aggiunto alla fine.
 
-Nella ricerca di esempio sopra, i risultati sono ordinati in ordine crescente in &quot;zip_proximity&quot;. Ovvero, la distanza tra il codice ZIP specificato (84057) e la posizione del campo &quot;zip&quot; di ogni risultato. È inoltre possibile utilizzare questo speciale &quot;campo di output di prossimità&quot; per visualizzare la distanza relativa per ogni risultato della ricerca, in chilometri o miglia, utilizzando il tag del modello di ricerca `<Search-Display-Field>`.
+Nella ricerca di esempio di cui sopra, i risultati sono ordinati in ordine crescente di &quot;zip_proximity&quot;. Cioè, la distanza tra il codice ZIP specificato (84057) e la posizione del campo &quot;zip&quot; di ogni risultato. È inoltre possibile utilizzare questo speciale &quot;campo di uscita di prossimità&quot; per visualizzare la distanza relativa per ogni risultato della ricerca, in chilometri o miglia, utilizzando il tag modello `<Search-Display-Field>` Cerca .
 
-Vedere [Cerca tag modello](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
+Consulta [Ricerca tag modello](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
-È inoltre possibile eseguire ricerche senza l&#39;opzione sp_s. In tal caso, i risultati sono ordinati per punteggio (sp_s=0, che è il valore predefinito). La valutazione è influenzata dalla distanza relativa di ciascun risultato dalla posizione di ricerca di prossimità specificata dal parametro sp_q_location[_#]. È stato aggiunto un nuovo parametro cgi sp_q_max_relevant_distanza[#], per controllare facoltativamente il calcolo della rilevanza applicato alle ricerche di prossimità.
+Puoi anche eseguire ricerche senza l’opzione sp_s . In questo caso, i risultati sono ordinati per punteggio (sp_s=0, che è il valore predefinito). Il punteggio è influenzato dalla distanza relativa di ciascun risultato dalla posizione di ricerca di prossimità specificata dal parametro sp_q_location[_#]. Viene aggiunto un nuovo parametro cgi sp_q_max_relevant_distanza[#] per controllare facoltativamente il calcolo della pertinenza applicato alle ricerche di prossimità.
 
-Di seguito è riportato un esempio di ricerca per rilevanza per prossimità:
+Di seguito è riportato un esempio di ricerca rilevante per la vicinanza:
 
 ```
 ...&sp_q_location_1=84057&sp_x_1=zip&sp_q_max_1=100&sp_q_2=shirt&sp_x_2=title&sp_q_max_relevant_distance_2=50
 ```
 
-Il set di risultati contiene tutti i documenti che si trovano entro 100 miglia dal codice ZIP 84057 e contengono la parola &quot;camicia&quot; nel campo del titolo, ordinati per punteggio influenzato dal punteggio di rilevanza relativa alla prossimità. Un punteggio di rilevanza perfetto per il componente di prossimità rappresenterebbe una distanza di 0. Un punteggio minimo di rilevanza per il componente di prossimità rappresenterebbe una distanza di poco più di 50 miglia.
+Il set di risultati contiene tutti i documenti che si trovano entro 100 miglia dal codice ZIP 84057 e contengono la parola &quot;camicia&quot; nel campo titolo, ordinati in base al punteggio influenzato dal punteggio di rilevanza in prossimità. Un punteggio di pertinenza perfetto per il componente di prossimità rappresenterebbe una distanza di 0. Un punteggio minimo di pertinenza per la componente di prossimità rappresenterebbe una distanza di appena 50 miglia.
 
-Per ulteriori informazioni sulla ricerca di prossimità, consultate `sp_location`, `sp_location_#`, `sp_q_min`, `sp_q_min_#`, `sp_q_max`, `sp_q_max_#` e `sp_s` nell&#39;argomento di riferimento Cerca parametri CGI.
+Per ulteriori informazioni sulla ricerca per prossimità, leggi `sp_location`, `sp_location_#`, `sp_q_min`, `sp_q_min_#`, `sp_q_max`, `sp_q_max_#` e `sp_s` nell’argomento di riferimento Cerca parametri CGI.
 
-Vedere [Cerca parametri CGI](../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890).
+Consulta [Ricerca parametri CGI](../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890).
 
-Vedere [Aggiunta di un nuovo campo tag meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
+Consulta [Aggiunta di un nuovo campo meta tag](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
