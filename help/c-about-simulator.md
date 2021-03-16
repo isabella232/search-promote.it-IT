@@ -1,42 +1,40 @@
 ---
-description: Utilizzate Simulator per vedere l'aspetto della ricerca se doveste spingere in diretta tutto ciò che è attualmente in fase.
-seo-description: Utilizzate Simulator per vedere l'aspetto della ricerca se doveste spingere in diretta tutto ciò che è attualmente in fase.
-seo-title: Informazioni su Simulator
+description: Utilizza Simulatore per vedere come si presenterà la tua ricerca se invii tutto ciò che è attualmente in esecuzione.
 solution: Target
-title: Informazioni su Simulator
-topic: Simulator,Site search and merchandising
+title: Informazioni sul simulatore
+topic: Simulatore, Ricerca nel sito e merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
-source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
 
 
-# Informazioni su Simulator{#about-simulator}
+# Informazioni sul simulatore{#about-simulator}
 
-Utilizzate Simulator per vedere l&#39;aspetto della ricerca se doveste spingere in diretta tutto ciò che è attualmente in fase.
+Utilizza Simulatore per vedere come si presenterà la tua ricerca se invii tutto ciò che è attualmente in esecuzione.
 
 ## Informazioni sul simulatore {#concept_020AA6751E32421A96A3455508364C7E}
 
-Utilizzate Simulator per vedere l&#39;aspetto della ricerca se doveste spingere in diretta tutto ciò che è attualmente in fase.
+Utilizza Simulatore per vedere come si presenterà la tua ricerca se invii tutto ciò che è attualmente in esecuzione.
 
-È inoltre possibile simulare la ricerca live corrente a scopo di confronto. Il simulatore dispone di un debugger integrato per mostrare quali regole business vengono attivate per una determinata ricerca. Se deselezionate una regola associata, Simulator simula nuovamente la ricerca del sito come se la regola non esistesse. Le regole sono elencate tra la priorità più alta e la priorità più bassa, dove le regole di priorità più elevate superano le regole di priorità più basse.
+Puoi anche simulare la ricerca live corrente a scopo di confronto. Il simulatore dispone di un debugger integrato per mostrare quali regole business vengono attivate per una determinata ricerca. Se deselezioni una regola associata, Simulator simula nuovamente la ricerca del sito come se quella regola non esistesse. Le regole sono elencate dalla priorità più alta alla priorità più bassa, dove le regole di priorità più elevate superano le regole di priorità più basse.
 
 Vedere anche [Aggiunta di una nuova regola business](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
 ## Utilizzo del simulatore {#task_739E14F61F8D47B196515F815E3F3BD9}
 
-È possibile utilizzare Simulator per vedere come verrebbe visualizzata la ricerca se si inviasse in tempo reale tutto ciò che è attualmente in fase.
+Puoi utilizzare Simulatore per vedere come si presenterà la ricerca se invii tutto ciò che è attualmente in esecuzione.
 
-Vedere [Aggiunta di una nuova regola business](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
+Consulta [Aggiunta di una nuova regola business](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
 **Per utilizzare il simulatore**
 
 1. Scegliere **[!UICONTROL Simulator]** dal menu del prodotto.
-1. Nell&#39;elenco a discesa **[!UICONTROL Options]**, selezionare l&#39;opzione da eseguire.
+1. Nell’elenco a discesa **[!UICONTROL Options]** , seleziona l’opzione da eseguire.
 
    <!-- 
    
@@ -44,7 +42,7 @@ Vedere [Aggiunta di una nuova regola business](c-about-rules-menu/c-about-busine
    
    -->
 
-   (Facoltativo) Utilizzate la colonna della casella di controllo nella tabella nella pagina Simulatore per attivare o disattivare una determinata regola nella simulazione.
+   (Facoltativo) Utilizza la colonna della casella di controllo nella tabella nella pagina Simulatore per attivare o disattivare una determinata regola nella simulazione.
 
    <table> 
     <thead> 
@@ -55,8 +53,8 @@ Vedere [Aggiunta di una nuova regola business](c-about-rules-menu/c-about-busine
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p><span class="uicontrol">Simula in tempo reale</span> </p> </td> 
-      <td colname="col2"> <p>Alternativamente tra la simulazione dell’ambiente live o dell’ambiente di visualizzazione. </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simula in tempo reale/Simula in tempo reale</span> </p> </td> 
+      <td colname="col2"> <p>Alternate la simulazione dell’ambiente live o dell’ambiente stage. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p><span class="uicontrol">Mostra/Nascondi regole di elaborazione</span> </p> </td> 
@@ -64,22 +62,22 @@ Vedere [Aggiunta di una nuova regola business](c-about-rules-menu/c-about-busine
       </tr> 
       <tr> 
       <td colname="col1"> <p><span class="uicontrol">Modifica data simulazione</span> </p> </td> 
-      <td colname="col2"> <p>Simulare i risultati della ricerca per una data specificata. </p> </td> 
+      <td colname="col2"> <p>Simula i risultati della ricerca per una data specificata. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p><span class="uicontrol">Simula su PC</span> </p> </td> 
-      <td colname="col2"> <p>Simulare i risultati della ricerca come se si stesse utilizzando un personal computer. </p> </td> 
+      <td colname="col2"> <p>Simulare i risultati della ricerca come se si stesse utilizzando un computer personale. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p><span class="uicontrol">Simula su dispositivo mobile</span> </p> </td> 
-      <td colname="col2"> <p>Simulare i risultati della ricerca come se steste utilizzando un cellulare o un tablet. </p> <p>Quando selezionate questa opzione, potete scegliere tra le seguenti opzioni associate: </p> 
+      <td colname="col1"> <p><span class="uicontrol">Simula su dispositivi mobili</span> </p> </td> 
+      <td colname="col2"> <p>Simula i risultati della ricerca come se steste utilizzando un cellulare o un tablet. </p> <p>Quando selezioni questa opzione, puoi scegliere tra le seguenti opzioni associate: </p> 
         <ul id="ul_2A9901418212486A8EE67A78CB99CBE4"> 
-        <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">Dispositivo</span></b> <p>Simulare i risultati della ricerca su un cellulare o un tablet. </p> </li> 
-        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">Risoluzione</span></b> <p>In base al dispositivo selezionato, potete scegliere la risoluzione associata. </p> </li> 
+        <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">Dispositivo</span></b> <p>Simula i risultati della ricerca su un cellulare o un tablet. </p> </li> 
+        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">Risoluzione</span></b> <p>In base al dispositivo selezionato, puoi scegliere la risoluzione associata. </p> </li> 
         <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">Vista orizzontale</span></b> <p>Visualizzare l’aspetto orizzontale dei risultati della ricerca simulata sul dispositivo selezionato. </p> </li> 
         </ul> </td> 
       </tr> 
     </tbody> 
     </table>
 
-1. Utilizzate la funzione di ricerca del sito Web per verificare i risultati della ricerca in base alle impostazioni correnti e alle regole attive. Se necessario, regolate le regole e le impostazioni per ottenere i risultati desiderati.
+1. Utilizza la funzione di ricerca del sito web per testare i risultati della ricerca in base alle impostazioni correnti e alle regole attive. Se necessario, regola le regole e le impostazioni per ottenere i risultati desiderati.
