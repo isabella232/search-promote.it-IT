@@ -7,17 +7,18 @@ audience: end-user
 user-guide-title: Adobe Search&amp;Guida alla promozione
 breadcrumb-title: Adobe Search&amp;Guida alla promozione
 translation-type: tm+mt
-source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
+source-git-commit: 4d86ec6033843099c61a4af4f87a9963fe87d649
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 5%
+source-wordcount: '261'
+ht-degree: 4%
 
 ---
 
 
 # Guida a Adobe Search and Promote {#using}
 
-+ [Annuncio fine servizio di Search&amp;Promote](sp-eol.md)
++ Attenzione {#attention}
+   + [Annuncio sulla fine del servizio di Adobe Search&amp;Promote](sp-eol.md)
 + [Panoramica della documentazione di Search&amp;Promote](sp-home.md)
 + Note sulla versione {#release-notes}
    + [Note sulla versione di Search&amp;Promote 18.1.1 (13/02/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
