@@ -3,10 +3,10 @@ title: Annuncio sulla fine del servizio di Adobe Search&Promote
 description: Ulteriori informazioni sull’annuncio della fine del servizio di Adobe Search&Promote.
 feature: null
 role: Amministratore,Business Practitioner,Data Engineer,Sviluppatore
-hide: false
+hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 5f9f371274f591f746d43ea1dfe33ceeda3513c9
+source-git-commit: 681e3e6768f214759598482526ce7ffba27e860e
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
