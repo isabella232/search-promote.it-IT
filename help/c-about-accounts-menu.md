@@ -2,7 +2,7 @@
 description: Utilizzare Account nel menu del prodotto per selezionare un account a cui si desidera accedere e utilizzare.
 solution: Target
 title: Informazioni sul menu Account
-topic: Impostazioni, Ricerca nel sito e merchandising
+topic: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

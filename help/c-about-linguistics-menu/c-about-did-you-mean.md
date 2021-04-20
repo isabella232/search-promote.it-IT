@@ -2,7 +2,7 @@
 description: È possibile configurare Did You Signan in modo che i clienti ricevano suggerimenti per termini di ricerca validi quando tentano ricerche non riuscite. I suggerimenti vengono formati cercando ortografia e digitando correzioni ai termini di ricerca che si traducono in una ricerca valida.
 solution: Target
 title: A Riguardo Intendevi
-topic: Linguistica, Ricerca sul sito e merchandising
+topic: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

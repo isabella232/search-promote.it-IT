@@ -2,7 +2,7 @@
 description: La ricerca per prossimità ti consente di associare una posizione univoca a qualsiasi pagina del sito web, quindi di cercare e ordinare i risultati per prossimità (distanza) da una determinata posizione.
 solution: Target
 title: Informazioni sulla ricerca in prossimità
-topic: Appendici, Ricerca nel sito e merchandising
+topic: Appendices,Site search and merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

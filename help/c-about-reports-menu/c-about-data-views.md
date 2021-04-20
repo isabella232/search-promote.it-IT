@@ -2,7 +2,7 @@
 description: Visualizzazioni dati mostra i risultati della ricerca con i campi meta. Ogni colonna è un campo meta e ogni riga è il risultato di una query di ricerca. Personalizza visualizzazioni dati scegliendo e ridisponendo le colonne. Le visualizzazioni dati possono anche avere titoli e descrizioni personalizzati.
 solution: Target
 title: Informazioni sulle visualizzazioni dati
-topic: Rapporti, ricerca nel sito e merchandising
+topic: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

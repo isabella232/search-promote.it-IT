@@ -3,7 +3,7 @@ description: È possibile utilizzare Navigazione pagina per personalizzare il co
 solution: Target
 subtopic: Navigation
 title: Informazioni sulla navigazione nelle pagine
-topic: Progettazione, ricerca nel sito e merchandising
+topic: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

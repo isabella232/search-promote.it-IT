@@ -2,7 +2,7 @@
 description: Puoi utilizzare le Regole aziendali per merchandising della ricerca.
 solution: Target
 title: Informazioni sulle regole aziendali
-topic: Regole,Ricerca nel sito e merchandising
+topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

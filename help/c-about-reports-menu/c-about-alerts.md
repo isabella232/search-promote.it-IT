@@ -2,7 +2,7 @@
 description: La pagina Avvisi offre una posizione centrale per visualizzare e gestire tutti gli avvisi relativi all’account.
 solution: Target
 title: Informazioni sugli avvisi
-topic: Rapporti, ricerca nel sito e merchandising
+topic: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

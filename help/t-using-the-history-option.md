@@ -2,7 +2,7 @@
 description: È possibile utilizzare History (Cronologia) per esaminare un elenco di tutte le revisioni apportate a una funzionalità implementata, ad esempio un facet, una breadcrumb, un banner o un modello, per citarne alcuni.
 solution: Target
 title: Utilizzo dell’opzione Cronologia
-topic: Utilizzo di History (Cronologia), Site search (Ricerca siti) e merchandising
+topic: Using History,Site search and merchandising
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

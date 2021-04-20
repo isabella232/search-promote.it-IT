@@ -3,7 +3,7 @@ description: È possibile utilizzare Indice completo per indicizzare tutte le pa
 solution: Target
 subtopic: Full Index
 title: Informazioni sull'indice completo
-topic: Indice, Ricerca nel sito e merchandising
+topic: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

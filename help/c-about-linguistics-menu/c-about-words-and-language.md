@@ -2,7 +2,7 @@
 description: È possibile utilizzare Parole e lingua per determinare la corrispondenza dei termini di ricerca con il contenuto delle pagine web.
 solution: Target
 title: Parole e lingua
-topic: Linguistica, Ricerca sul sito e merchandising
+topic: Linguistics,Site search and merchandising
 uuid: 793d7a40-4609-44b8-a170-536eb1434537
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

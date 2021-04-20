@@ -3,7 +3,7 @@ description: È possibile configurare diverse aree di Completamento automatico p
 solution: Target
 subtopic: Auto-Complete
 title: Informazioni sul completamento automatico
-topic: Progettazione, ricerca nel sito e merchandising
+topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Se hai poca esperienza con la navigazione Search&Promote e dinamica, inizia qui per iniziare a usare il tuo account. Tra le altre cose, imparerai come indicizzare il tuo sito web e personalizzare l'aspetto dei tuoi risultati di ricerca.
 solution: Target
 title: Introduzione
-topic: Guida introduttiva, ricerca nel sito e merchandising
+topic: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Utilizzare le regole di pre-ricerca per analizzare la query in arrivo e determinare quale modello di presentazione utilizzare. Le regole di pre-ricerca vengono eseguite in sequenza per ogni query. Per modificare l’ordine delle regole, puoi utilizzare il trascinamento della selezione. L'ordine effettivo non cambia finché non viene salvato.
 solution: Target
 title: Informazioni sulle regole di pre-ricerca
-topic: Regole,Ricerca nel sito e merchandising
+topic: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

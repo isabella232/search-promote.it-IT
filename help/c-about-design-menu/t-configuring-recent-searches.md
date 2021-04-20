@@ -3,7 +3,7 @@ description: Ricerche recenti è un sistema basato su cookie che consente di uti
 solution: Target
 subtopic: Navigation
 title: Configurazione delle ricerche recenti
-topic: Progettazione, ricerca nel sito e merchandising
+topic: Design,Site search and merchandising
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

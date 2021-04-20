@@ -3,7 +3,7 @@ description: È possibile utilizzare l'aggiornamento verticale per aggiornare ra
 solution: Target
 subtopic: Vertical Update
 title: Informazioni sull'aggiornamento verticale
-topic: Indice, Ricerca nel sito e merchandising
+topic: Index,Site search and merchandising
 uuid: ded09e89-5a52-4e8c-a6f7-3e25b4191183
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

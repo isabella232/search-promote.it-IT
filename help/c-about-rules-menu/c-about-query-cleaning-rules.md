@@ -2,7 +2,7 @@
 description: Utilizza le regole di pulizia delle query per analizzare e modificare la query in arrivo.
 solution: Target
 title: Informazioni sulle regole di pulizia delle query
-topic: Regole,Ricerca nel sito e merchandising
+topic: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

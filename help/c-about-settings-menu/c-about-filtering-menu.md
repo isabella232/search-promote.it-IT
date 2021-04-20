@@ -3,7 +3,7 @@ description: Utilizzare il menu Filtro per utilizzare gli script che modificano 
 solution: Target
 subtopic: Filtering
 title: Informazioni sul menu Filtro
-topic: Impostazioni, Ricerca nel sito e merchandising
+topic: Settings,Site search and merchandising
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

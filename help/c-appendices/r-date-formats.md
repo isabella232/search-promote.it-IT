@@ -2,7 +2,7 @@
 description: È possibile definire i formati di data utilizzati per l’analisi e l’indicizzazione di qualsiasi campo con un tipo di dati "date".
 solution: Target
 title: Formati data
-topic: Appendici, Ricerca nel sito e merchandising
+topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

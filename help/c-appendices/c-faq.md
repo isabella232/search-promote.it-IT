@@ -2,7 +2,7 @@
 description: Leggi le domande frequenti su Search&amp;Promote
 solution: Target
 title: Domande frequenti
-topic: Appendici, Ricerca nel sito e merchandising
+topic: Appendices,Site search and merchandising
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: Utilizza il menu Utenti per visualizzare e aggiungere utenti, visua
 solution: Target
 subtopic: Users
 title: Informazioni sul menu Utenti
-topic: Impostazioni, Ricerca nel sito e merchandising
+topic: Settings,Site search and merchandising
 uuid: 6242b73c-5e8a-44b7-9942-0684530940bc
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

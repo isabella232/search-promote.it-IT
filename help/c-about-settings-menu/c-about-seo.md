@@ -3,7 +3,7 @@ description: È possibile utilizzare i meta tag SEO (Search Engine Optimization)
 solution: Target
 subtopic: SEO
 title: Informazioni sul SEO
-topic: Impostazioni, Ricerca nel sito e merchandising
+topic: Settings,Site search and merchandising
 uuid: 5c5d64f5-fe79-4489-85c6-399d1437f2c4
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

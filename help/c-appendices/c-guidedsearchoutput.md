@@ -2,7 +2,7 @@
 description: Scopri come personalizzare l’output in qualsiasi formato basato su testo, inclusi XML o JSON.
 solution: Target
 title: Uscita Ricerca guidata
-topic: Appendici, Ricerca nel sito e merchandising
+topic: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

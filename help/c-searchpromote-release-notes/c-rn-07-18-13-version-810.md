@@ -2,7 +2,7 @@
 description: Search&amp;Note sulla versione di Promote 8.10.1.
 solution: Target
 title: Search&amp;Promuovi note sulla versione 8.10.1 (18/07/2013)
-topic: Note sulla versione, Ricerca nel sito e merchandising
+topic: Release Notes,Site search and merchandising
 uuid: 161d678a-6393-4adb-a47a-e28e108acc31
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Utilizza Simulatore per vedere come si presenterà la tua ricerca se invii tutto ciò che è attualmente in esecuzione.
 solution: Target
 title: Informazioni sul simulatore
-topic: Simulatore, Ricerca nel sito e merchandising
+topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

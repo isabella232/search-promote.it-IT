@@ -2,7 +2,7 @@
 description: Gli hit diretti consentono di reindirizzare un cliente a un URL specifico quando il cliente cerca un termine corrispondente. Questo tipo di funzionalità consente di migliorare la navigazione nella ricerca del sito web.
 solution: Target
 title: Informazioni sugli hit diretti
-topic: Regole,Ricerca nel sito e merchandising
+topic: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

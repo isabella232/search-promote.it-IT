@@ -2,7 +2,7 @@
 description: Un aggiornamento della sintassi e delle regole per la costruzione di espressioni regolari.
 solution: Target
 title: Espressioni regolari
-topic: Appendici, Ricerca nel sito e merchandising
+topic: Appendices,Site search and merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

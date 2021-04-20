@@ -3,7 +3,7 @@ description: Puoi utilizzare Rollback per eseguire il backup e archiviare gli in
 solution: Target
 subtopic: Rollback
 title: Informazioni sul rollback per gli indici
-topic: Indice, Ricerca nel sito e merchandising
+topic: Index,Site search and merchandising
 uuid: abed878a-71b3-4122-9822-7410f4427a9a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

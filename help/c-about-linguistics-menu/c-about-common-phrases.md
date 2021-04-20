@@ -2,7 +2,7 @@
 description: È possibile definire frasi comuni utilizzate sul sito web in modo che, quando un cliente inserisce una query di ricerca, non debba inserire virgolette intorno a una delle frasi definite.
 solution: Target
 title: Informazioni sulle frasi comuni
-topic: Linguistica, Ricerca sul sito e merchandising
+topic: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

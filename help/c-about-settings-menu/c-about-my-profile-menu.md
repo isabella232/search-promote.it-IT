@@ -3,7 +3,7 @@ description: Utilizzare il menu Profilo personale per impostare le informazioni 
 solution: Target
 subtopic: My Profile
 title: Informazioni sul menu Profilo personale
-topic: Impostazioni, Ricerca nel sito e merchandising
+topic: Settings,Site search and merchandising
 uuid: 6a0a4e57-59fa-48fb-b712-eb16a9f47c3a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

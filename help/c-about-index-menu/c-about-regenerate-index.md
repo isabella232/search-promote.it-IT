@@ -3,7 +3,7 @@ description: È possibile utilizzare l'indice di rigenerazione per aggiornare l'
 solution: Target
 subtopic: Regenerate Index
 title: Indice di rigenerazione
-topic: Indice, Ricerca nel sito e merchandising
+topic: Index,Site search and merchandising
 uuid: 9d1f1d88-0453-4422-a625-a348febbf224
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

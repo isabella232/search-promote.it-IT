@@ -3,7 +3,7 @@ description: Utilizza il menu Metadati per personalizzare le definizioni di rice
 solution: Target
 subtopic: Metadata
 title: Informazioni sul menu Metadati
-topic: Impostazioni, Ricerca nel sito e merchandising
+topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

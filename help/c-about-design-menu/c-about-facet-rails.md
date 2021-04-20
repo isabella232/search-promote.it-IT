@@ -3,7 +3,7 @@ description: Utilizza la barra laterale facet per riordinare gruppi di facet in 
 solution: Target
 subtopic: Navigation
 title: Informazioni sulla barra laterale
-topic: Progettazione, ricerca nel sito e merchandising
+topic: Design,Site search and merchandising
 uuid: 6da2bd67-8c20-4955-9836-bc8ba88546c5
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

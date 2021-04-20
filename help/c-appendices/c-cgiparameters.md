@@ -2,7 +2,7 @@
 description: Scopri come utilizzare vari parametri CGI.
 solution: Target
 title: Parametri CGI
-topic: Appendici, Ricerca nel sito e merchandising
+topic: Appendices,Site search and merchandising
 uuid: a5f43547-bc15-44aa-ba23-6b8b573e09d2
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

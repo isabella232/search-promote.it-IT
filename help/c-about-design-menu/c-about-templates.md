@@ -2,7 +2,7 @@
 description: È possibile utilizzare Modelli per gestire i modelli di presentazione e di trasporto.
 solution: Target
 title: Informazioni sui modelli
-topic: Progettazione, ricerca nel sito e merchandising
+topic: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

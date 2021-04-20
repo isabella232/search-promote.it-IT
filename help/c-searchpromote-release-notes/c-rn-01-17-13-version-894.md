@@ -2,7 +2,7 @@
 description: Search&amp;Note sulla versione di Promote 8.9.4.
 solution: Target
 title: Search&amp;Promote 8.9.4 Note sulla versione (17/01/2013)
-topic: Note sulla versione, Ricerca nel sito e merchandising
+topic: Release Notes,Site search and merchandising
 uuid: a9d550f6-0a23-4c71-b123-c31b997e7384
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: La gestione temporanea consente di verificare e visualizzare in anteprima le modifiche alle impostazioni e alle configurazioni senza influire sull'indice live.
 solution: Target
 title: Informazioni sullo staging
-topic: Staging, ricerca del sito e merchandising
+topic: Staging,Site search and merchandising
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

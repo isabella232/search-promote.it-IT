@@ -2,7 +2,7 @@
 description: Puoi utilizzare Home per visualizzare diversi widget di report che ti forniscono una rapida panoramica del tuo account Search&amp;Promote.
 solution: Target
 title: Informazioni su Home
-topic: Home,Ricerca nel sito e merchandising
+topic: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
