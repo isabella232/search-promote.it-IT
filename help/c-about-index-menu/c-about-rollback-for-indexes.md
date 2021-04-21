@@ -3,16 +3,16 @@ description: Puoi utilizzare Rollback per eseguire il backup e archiviare gli in
 solution: Target
 subtopic: Rollback
 title: Informazioni sul rollback per gli indici
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: abed878a-71b3-4122-9822-7410f4427a9a
+exl-id: bc75f6ba-d919-4dff-8ee2-e17568892626
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sul rollback per gli indici{#about-rollback-for-indexes}
 
@@ -81,4 +81,3 @@ Visualizzare la data e l&#39;ora di tutte le operazioni relative al rollback.
    * Utilizza le opzioni di navigazione **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** per spostarsi all’interno del registro.
 
    * Utilizza le opzioni di visualizzazione **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** per perfezionare la visualizzazione.
-
