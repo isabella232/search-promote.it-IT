@@ -2,16 +2,16 @@
 description: Ogni volta che il tuo sito web cambia, puoi eseguire uno script o un programma che richiede che il robot di ricerca esegua un indice utilizzando il telecomando.
 solution: Target
 title: Informazioni sul telecomando per l'indicizzazione
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
+exl-id: 1a7689f9-1e3f-48c8-a5f1-abe0efdb7768
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sul telecomando per l&#39;indicizzazione{#about-remote-control-for-indexing}
 
@@ -66,7 +66,7 @@ Per effettuare una richiesta di controllo remoto, utilizzare i seguenti esempi d
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> sp_lines= N  </span> </p> </td> 
-   <td colname="col2"> <p>Consente di controllare lo stato di una ricerca per indicizzazione in esecuzione. </p> <p> <span class="codeph">  N  </span> è un numero intero positivo o  <span class="codeph"> tutto  </span>. Se si tratta di un valore numerico, le ultime <span class="codeph"> N </span> righe del file di log dell'indice corrispondente sono incluse nella risposta JSON. </p> <p>Se il valore è <span class="codeph"> tutto </span>, viene restituito l’intero file. </p> <p>Se il valore è <span class="codeph"> 0 </span>, non vengono restituite informazioni di registro. Questo valore è il valore predefinito per una query di stato dell'indice in esecuzione. </p> </td> 
+   <td colname="col2"> <p>Consente di controllare lo stato di una ricerca per indicizzazione in esecuzione. </p> <p> <span class="codeph">  N  </span> è un numero intero positivo o  <span class="codeph"> tutto  </span>. Se si tratta di un valore numerico, le ultime <span class="codeph"> N </span> righe del corrispondente file di registro dell'indice sono incluse nella risposta JSON. </p> <p>Se il valore è <span class="codeph"> tutto </span>, viene restituito l’intero file. </p> <p>Se il valore è <span class="codeph"> 0 </span>, non vengono restituite informazioni di registro. Questo valore è il valore predefinito per una query di stato dell'indice in esecuzione. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> sp_operation= op  </span> </p> </td> 
