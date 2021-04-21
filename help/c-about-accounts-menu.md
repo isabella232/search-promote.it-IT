@@ -2,16 +2,16 @@
 description: Utilizzare Account nel menu del prodotto per selezionare un account a cui si desidera accedere e utilizzare.
 solution: Target
 title: Informazioni sul menu Account
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
+exl-id: f3f43b71-cbcb-4325-88de-72db1c049700
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
-
 
 # Informazioni sul menu Account{#about-the-accounts-menu}
 
@@ -40,4 +40,3 @@ Dopo aver selezionato un account, viene visualizzata la home page di ricerca/mer
 
    * Nella tabella, sotto l&#39;intestazione di colonna [!DNL Name], fare clic sul nome di un account che si desidera utilizzare e gestire.
    * Nella tabella, sotto l&#39;intestazione della colonna [!DNL Number], fare clic sul numero di account che si desidera utilizzare e gestire.
-
