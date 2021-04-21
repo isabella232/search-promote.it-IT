@@ -3,16 +3,16 @@ description: Utilizza il menu Opzioni account per aggiornare le impostazioni del
 solution: Target
 subtopic: Account Options
 title: Informazioni sul menu Opzioni account
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 0f830033-de9e-4197-8d76-906c818662eb
+exl-id: 0acaeeed-1649-46bb-af41-20f144400d7c
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1657'
 ht-degree: 2%
 
 ---
-
 
 # Informazioni sul menu Opzioni account{#about-the-account-options-menu}
 
