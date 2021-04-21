@@ -2,16 +2,16 @@
 description: La pagina Avvisi offre una posizione centrale per visualizzare e gestire tutti gli avvisi relativi all’account.
 solution: Target
 title: Informazioni sugli avvisi
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
+exl-id: b6d637c9-2a2c-49b3-828b-3ae272bf28aa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sugli avvisi{#about-alerts}
 
@@ -50,4 +50,3 @@ La pagina Avvisi offre una posizione centrale per visualizzare e gestire tutti g
    * Per selezionare tutti gli avvisi visualizzati, seleziona la casella di controllo nella parte superiore della colonna a sinistra.
 
       Per selezionare tutti gli avvisi corrispondenti anziché una singola pagina, nell’elenco a discesa a destra, seleziona **[!UICONTROL All Alerts]**, quindi seleziona la casella di controllo nella parte superiore della colonna.
-
