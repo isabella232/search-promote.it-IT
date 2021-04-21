@@ -2,16 +2,16 @@
 description: Utilizzare il menu Rapporti per visualizzare o reimpostare i rapporti delle query di ricerca dei clienti.
 solution: Target
 title: Informazioni sul menu Rapporti
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
+exl-id: 12532fc1-c465-4bd6-805d-94793a490087
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1240'
 ht-degree: 1%
 
 ---
-
 
 # Informazioni sul menu Rapporti{#about-the-reports-menu}
 
