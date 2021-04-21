@@ -3,16 +3,16 @@ description: Utilizzare il menu Ricerca per impostare parole, raccolte, restrizi
 solution: Target
 subtopic: Searching
 title: Informazioni sul menu Ricerca
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
+exl-id: 4cb70240-051b-4bf3-ae2a-b151acc7cba1
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11170'
+source-wordcount: '11165'
 ht-degree: 1%
 
 ---
-
 
 # Informazioni sul menu Ricerca{#about-the-searching-menu}
 
@@ -266,7 +266,7 @@ Consulta [Informazioni sui modelli](../c-about-design-menu/c-about-templates.md#
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ricerca in evidenza </p> </td> 
-      <td colname="col2"> <p>Elimina un certo numero di risultati dalla ricerca principale che desideri evidenziare in una "zona-eroe". </p> <p>In genere, le ricerche con evidenziazione hanno un criterio di ricerca simile a quello principale, ma con un meccanismo di classificazione diverso per evidenziare determinati risultati. Il software rimuove i duplicati dalla ricerca principale. </p> </td> 
+      <td colname="col2"> <p>Elimina un numero selezionato di risultati dalla ricerca principale che desideri evidenziare in una "zona-eroe". </p> <p>In genere, le ricerche con evidenziazione hanno un criterio di ricerca simile a quello principale, ma con un meccanismo di classificazione diverso per evidenziare determinati risultati. Il software rimuove i duplicati dalla ricerca principale. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ricerca di base </p> </td> 
@@ -507,7 +507,7 @@ Quando salvi i risultati della ricerca, puoi visualizzare di nuovo i risultati i
 
 I risultati della ricerca sono spesso ordinati in base al punteggio di pertinenza. Tuttavia, un risultato di ricerca bloccato ignora il punteggio di pertinenza e tenta di ignorare l’ordine naturale con la sua posizione predeterminata. Assicurando che il risultato rimanga relativamente dove si trova, altri risultati di ricerca noti sopra devono essere fissati.
 
-I risultati della ricerca visualizzati nel pannello simulano quello che appare dopo l&#39;indice successivo. Tuttavia, le modifiche apportate al documento originale o ad alcune modifiche di configurazione nel Centro membri possono produrre risultati con discrepanze. Ad esempio, la modifica del contenuto di un documento non è nota fino a dopo l’indice.
+I risultati della ricerca visualizzati nel pannello simulano quello che appare dopo l&#39;indice successivo. Tuttavia, le modifiche apportate al documento originale o ad alcune modifiche di configurazione nel Centro membri possono produrre risultati con discrepanze. Ad esempio, la modifica del contenuto di un documento è nota solo dopo l’indice.
 
 I risultati bloccati appaiono in un ordine simile o uguale dopo l&#39;indice, perché ignorano la rilevanza. I risultati non fissati ritornano alla loro posizione naturale dopo un indice; l&#39;ordine dei risultati non bloccati non è garantito.
 
@@ -1141,7 +1141,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>1 </p> </td> 
+      <td colname="col1"> <p>3 </p> </td> 
       <td colname="col2"> <p>Nome feed </p> </td> 
       <td colname="col3"> <p>Specifica il nome del feed. </p> </td> 
       </tr> 
@@ -1157,7 +1157,7 @@ t_creating_a_feed.xml
         </ul> <p>I feed generici richiedono un parametro CGI speciale specificato. Per eseguire il binding del modello speciale associato a questo feed, è necessario definire il parametro <span class="codeph"> sp_t </span> . Imposta il valore di <span class="codeph"> sp_t </span> sul nome del file del modello di trasporto. Ad esempio, se hai aggiunto un file modello di trasporto denominato <span class="codeph"> super_feed.tpl </span>, crea un parametro di ricerca CGI personalizzato come <span class="codeph"> sp_t=super_feed </span>. La casella di testo per l'immissione di <span class="codeph"> sp_t </span> non viene visualizzata finché non si seleziona <span class="uicontrol"> Modulo libero </span> dall'elenco a discesa <span class="wintitle"> Campo metadati </span>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>1 </p> </td> 
+      <td colname="col1"> <p>3 </p> </td> 
       <td colname="col2"> <p>Invio file </p> </td> 
       <td colname="col3"> <p>Consente di configurare la pianificazione per l’invio dei file di feed e di impostare il metodo da utilizzare per caricare i file. </p> 
         <ul id="ul_30E830C41F6A4526822AF1FD3083075A"> 
@@ -1199,7 +1199,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>1 </p> </td> 
+      <td colname="col1"> <p>3 </p> </td> 
       <td colname="col2"> <p>Nome feed </p> </td> 
       <td colname="col3"> <p>Specifica il nome del feed. </p> </td> 
       </tr> 
@@ -1264,7 +1264,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>1 </p> </td> 
+      <td colname="col1"> <p>3 </p> </td> 
       <td colname="col2"> <p>Nome feed </p> </td> 
       <td colname="col3"> <p>Specifica il nome del feed. </p> </td> 
       </tr> 
