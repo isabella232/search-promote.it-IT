@@ -2,16 +2,16 @@
 description: Scopri come utilizzare vari parametri CGI.
 solution: Target
 title: Parametri CGI
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: a5f43547-bc15-44aa-ba23-6b8b573e09d2
+exl-id: 9f24aebf-5fa3-433e-b66d-4129bdd3f7f6
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1938'
 ht-degree: 1%
 
 ---
-
 
 # Parametri CGI{#cgi-parameters}
 
@@ -226,4 +226,3 @@ Le seguenti query del modulo visualizzano i risultati `25` a partire dal risulta
 <input type=hidden name=sp_date_range value=30> 
 </form>
 ```
-
