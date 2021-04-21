@@ -3,16 +3,16 @@ description: Utilizza il set di date e URL del menu di ricerca per indicizzazion
 solution: Target
 subtopic: Crawling
 title: Informazioni sul menu di ricerca per indicizzazione
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
+exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11016'
+source-wordcount: '11011'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sul menu di ricerca per indicizzazione{#about-the-crawling-menu}
 
