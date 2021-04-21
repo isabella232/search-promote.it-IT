@@ -2,16 +2,16 @@
 description: È possibile definire i formati di data utilizzati per l’analisi e l’indicizzazione di qualsiasi campo con un tipo di dati "date".
 solution: Target
 title: Formati data
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
+exl-id: d3b4561b-6359-4b12-b0ff-40ca342a2faa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '744'
 ht-degree: 2%
 
 ---
-
 
 # Formati data{#date-formats}
 
@@ -61,7 +61,7 @@ La tabella seguente descrive le stringhe del formato data disponibili:
   </tr> 
   <tr> 
    <td colname="col1"> <p>%D </p> </td> 
-   <td colname="col2"> <p> è equivalente a "%m/%d/%y", ad esempio "06/06/01" </p> </td> 
+   <td colname="col2"> <p> equivale a "%m/%d/%y", ad esempio "06/06/01" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%d </p> </td> 
@@ -192,4 +192,3 @@ Le seguenti stringhe di formato predefinite vengono utilizzate dai modelli. È p
   </tr> 
  </tbody> 
 </table>
-
