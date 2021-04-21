@@ -2,16 +2,16 @@
 description: Search&amp;Note sulla versione di Promote 8.9.
 solution: Target
 title: Search&amp;Promote 8.9 Note sulla versione (19/07/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
+exl-id: d61bf0ee-60a9-4c89-8381-5514ba85cb99
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 1%
 
 ---
-
 
 # Note sulla versione di Search&amp;Promote 8.9 (19/07/2012){#search-promote-release-notes}
 
@@ -39,4 +39,3 @@ ht-degree: 1%
 * Quando si fa clic su Modifica su alcuni banner, la pagina Modifica non viene visualizzata.
 * A volte la riclassificazione del codice di aggiornamento potrebbe essere straordinariamente lenta.
 * La rimozione o il push di un elemento facet non funzionava se il nome del facet utilizzava lettere maiuscole/minuscole.
-
