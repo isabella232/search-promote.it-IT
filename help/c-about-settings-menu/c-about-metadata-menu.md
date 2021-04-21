@@ -3,16 +3,16 @@ description: Utilizza il menu Metadati per personalizzare le definizioni di rice
 solution: Target
 subtopic: Metadata
 title: Informazioni sul menu Metadati
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
+exl-id: 53d62da9-c5bd-4c4a-bb89-743704f66f7f
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '8029'
+source-wordcount: '8024'
 ht-degree: 1%
 
 ---
-
 
 # Informazioni sul menu Metadati{#about-the-metadata-menu}
 
