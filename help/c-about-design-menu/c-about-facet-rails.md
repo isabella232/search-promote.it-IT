@@ -3,16 +3,16 @@ description: Utilizza la barra laterale facet per riordinare gruppi di facet in 
 solution: Target
 subtopic: Navigation
 title: Informazioni sulla barra laterale
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 6da2bd67-8c20-4955-9836-bc8ba88546c5
+exl-id: 389b2f5e-c1aa-48d7-ab3e-c8a1d1e4ecb4
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sulla barra laterale{#about-facet-rail}
 
