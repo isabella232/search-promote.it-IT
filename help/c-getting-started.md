@@ -2,16 +2,16 @@
 description: Se hai poca esperienza con la navigazione Search&Promote e dinamica, inizia qui per iniziare a usare il tuo account. Tra le altre cose, imparerai come indicizzare il tuo sito web e personalizzare l'aspetto dei tuoi risultati di ricerca.
 solution: Target
 title: Introduzione
-topic: Getting Started,Site search and merchandising
+topic-legacy: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
+exl-id: f2772d7a-b558-403e-9e77-8c87302e2b02
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
-
 
 # Introduzione{#getting-started}
 
@@ -142,4 +142,3 @@ Ci sono molte opzioni aggiuntive che ti permettono di personalizzare e controlla
 * Configura i dizionari per consentire di specificare gruppi di parole correlate (ad esempio, acquisto, acquisto e procura). Queste parole correlate aiutano a restituire risultati rilevanti anche quando la query di ricerca di un cliente non corrisponde esattamente alla terminologia utilizzata nelle pagine web. Con il sinonimo utilizzato nell&#39;esempio precedente, la query di ricerca del cliente &quot;purchase&quot; restituisce pagine contenenti la parola &quot;buy&quot;.
 
    Vedere [Informazioni sui dizionari](c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034).
-
