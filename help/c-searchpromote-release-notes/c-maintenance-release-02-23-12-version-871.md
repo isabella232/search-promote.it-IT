@@ -2,16 +2,16 @@
 description: Search&amp;Note sulla versione di Promote 8.7.1.
 solution: Target
 title: Search&amp;Promuovi note sulla versione 8.7.1 (23/02/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3fabf7b2-4a27-4f0a-862a-52f701a0631d
+exl-id: b10f0081-ed69-4c6b-86c9-816326b647f0
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
-
 
 # Note sulla versione di Search&amp;Promote 8.7.1 (23/02/2012){#search-promote-release-notes}
 
@@ -38,4 +38,3 @@ Miglioramento delle prestazioni dei tempi di ricerca grazie al supporto per la m
 * Mantenimento delle marche temporali in modo che le cache dei modelli non vengano invalidate.
 * Alcuni campi dei parametri di modifica sono stati tagliati quando la barra di scorrimento è stata visualizzata nella finestra di dialogo del banner Dynamic Media Classic.
 * Eventuali modifiche apportate alla Regola aziendale ai parametri del banner Dynamic Media Classic funzionavano nell’area Staging, ma non avevano effetto quando si eseguiva il push in diretta.
-
