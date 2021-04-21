@@ -2,16 +2,16 @@
 description: Search&amp;Note sulla versione di Promote 8.9.1.
 solution: Target
 title: Search&amp;Promuovi note sulla versione 8.9.1 (16/08/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 6f3284ed-660f-477f-a863-b961b185eaf3
+exl-id: fcea6adc-e43f-4c7f-a6fe-3417427a6421
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
-
 
 # Note sulla versione di Search&amp;Promote 8.9.1 (16/08/2012){#search-promote-release-notes}
 
@@ -29,4 +29,3 @@ ht-degree: 2%
 
 * Sono stati risolti diversi problemi relativi al push live delle regole di business in fase di staging.
 * È stato corretto un errore che impediva la ricerca dei tag banner.
-
