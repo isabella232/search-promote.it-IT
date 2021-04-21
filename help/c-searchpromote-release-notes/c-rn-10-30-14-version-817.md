@@ -2,16 +2,16 @@
 description: Search&amp;Note sulla versione di Promote 8.17.0.
 solution: Target
 title: Search&amp;Promote 8.17.0 Note sulla versione (30/10/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: ea1725df-778c-4875-a269-f33d0c367126
+exl-id: aa185a62-9823-462c-b56c-402bee8fa80b
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 14%
+source-wordcount: '166'
+ht-degree: 15%
 
 ---
-
 
 # Note sulla versione di Search&amp;Promote 8.17.0 (30/10/2014){#search-promote-release-notes}
 
@@ -40,4 +40,3 @@ ht-degree: 14%
 
 * Apache veniva arrestato se utilizzato con il browser agente-utente Silk di Kindle Fire.
 * È stato risolto un problema di indicizzazione.
-
