@@ -2,16 +2,16 @@
 description: Un aggiornamento della sintassi e delle regole per la costruzione di espressioni regolari.
 solution: Target
 title: Espressioni regolari
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
+exl-id: 6deb9385-9b17-47c2-b6d9-b63f13df8399
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # Espressioni regolari{#regular-expressions}
 
@@ -220,4 +220,3 @@ Due nomi di classe di caratteri speciali corrispondono allo spazio null all&#39;
   </tr> 
  </tbody> 
 </table>
-
