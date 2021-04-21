@@ -2,16 +2,16 @@
 description: È possibile definire frasi comuni utilizzate sul sito web in modo che, quando un cliente inserisce una query di ricerca, non debba inserire virgolette intorno a una delle frasi definite.
 solution: Target
 title: Informazioni sulle frasi comuni
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
+exl-id: 72305fcd-8f9a-4ce2-b416-aa1b58486312
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
-
 
 # Informazioni sulle frasi comuni{#about-common-phrases}
 
@@ -211,4 +211,3 @@ Vedere [Uso dell&#39;opzione Cronologia](../t-using-the-history-option.md#task_7
    * Clic **[!UICONTROL Push Live]**.
 
       Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
