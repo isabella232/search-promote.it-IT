@@ -3,16 +3,16 @@ description: È possibile utilizzare Navigazione pagina per personalizzare il co
 solution: Target
 subtopic: Navigation
 title: Informazioni sulla navigazione nelle pagine
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
+exl-id: ed1ba6a8-1bab-4616-a447-50cfe319dac8
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 1%
+source-wordcount: '400'
+ht-degree: 2%
 
 ---
-
 
 # Informazioni sulla navigazione pagina{#about-page-navigation}
 
@@ -129,4 +129,3 @@ Se il livello di presentazione presenta più di un set di risultati di ricerca, 
    * Clic **[!UICONTROL Push Live]**.
 
       Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
