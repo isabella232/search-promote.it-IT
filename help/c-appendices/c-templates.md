@@ -2,16 +2,16 @@
 description: Scopri come utilizzare i tag presentazione e modello in Search&amp;Promote.
 solution: Target
 title: Modelli
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
+exl-id: f8cc4b5c-4e75-426b-8234-76af8bb0f4c5
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '15153'
+source-wordcount: '15148'
 ht-degree: 2%
 
 ---
-
 
 # Modelli{#templates}
 
@@ -255,7 +255,7 @@ Consulta [Informazioni sui facet dinamici](../c-about-design-menu/c-about-dynami
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--NEW 02/27/2014--> <span class="codeph"> &lt;guided-dynamic-facets&gt;&lt;/guided-dynamic-facets&gt; </span> </p> </td> 
    <td colname="col2"> 
@@ -620,7 +620,7 @@ Consultare [Informazioni sulle breadcrumb](../c-about-design-menu/c-about-breadc
       &lt;/guided-breadcrumb&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-breadcrumb-value /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Il tag valore stampa il valore trasformato dell’iterazione di breadcrumb corrente. Viene utilizzato solo nel contesto di un blocco <span class="codeph"> breadcrumb guidato </span>. </p> <p> <code class="syntax html"> &lt;guided-breadcrumb&gt; 
@@ -757,7 +757,7 @@ I tag di navigazione della pagina possono essere utilizzati per creare un set di
    <td colname="col2"> <p>Crea un collegamento nella navigazione della pagina. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-page-link gsname="first|prev|next|last|viewall|viewpages"&gt;&lt;/guided-page-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Crea un collegamento alla prima, alla pagina precedente, alla pagina successiva o all’ultima pagina. Può anche creare un collegamento per visualizzare tutte le pagine su una sola pagina. </p> </td> 
@@ -900,7 +900,7 @@ Consulta [Configurazione delle ricerche recenti](../c-about-design-menu/t-config
    <td colname="col2"> <p>Consente di creare un collegamento a una ricerca recente. Supporta il passaggio di eventuali attributi HTML direttamente al tag di ancoraggio. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-recent-searches-path /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Consente di acquisire il percorso URL relativo per una ricerca recente, all’interno di un ciclo <span class="codeph"> guidato-recenti-ricerche </span>. In genere si utilizza il collegamento di ricerca guidato <span class="codeph"> </span>. Tuttavia, se desideri creare un collegamento personalizzato, puoi utilizzare questo tag . Ecco un esempio: </p> <p> <code class="syntax html"> &lt;guided-lt/&gt;a&amp;nbsp;href="&lt;guided_recent_searches_path&gt;"&gt;&lt;guided-recent-searches-value&gt;&lt;/a&gt; </code> </p> </td> 
   </tr> 
@@ -954,7 +954,7 @@ Consultare [Informazioni su intendete](../c-about-linguistics-menu/c-about-did-y
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matches search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-suggestions&gt;&lt;/guided-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questo è il tag del ciclo per sovrapporre i suggerimenti. </p> </td> 
@@ -966,7 +966,7 @@ Consultare [Informazioni su intendete](../c-about-linguistics-menu/c-about-did-y
    <td colname="col2"> <p>Crea un collegamento al suggerimento specificato. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Newly added from search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-suggestion-value /&gt; </span> </p> </td> 
    <td colname="col2"> </td> 
@@ -1050,7 +1050,7 @@ Consultare [Informazioni sul completamento automatico](../c-about-auto-complete.
    <td colname="col2"> <p>Utilizzato nella parte superiore del modello di presentazione e sostituito dallo script CSS appropriato include per il completamento automatico. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-ac-form-content /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Utilizzato nel modulo di ricerca (tra i tag <span class="codeph"> &lt;form&gt; </span> e <span class="codeph"> &lt;/form&gt; </span>) del modello di presentazione, anziché codificare i tag di completamento automatico all’interno del modulo. I tag vengono sostituiti con l’HTML appropriato necessario per il funzionamento automatico. </p> </td> 
   </tr> 
@@ -1105,7 +1105,7 @@ Utilizza i seguenti tag per testare e visualizzare l&#39;archivio in cui si trov
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-zone gsname="zone area"&gt; </span> </p> </td> 
    <td colname="col2"> <p>È possibile racchiudere qualsiasi contenuto nei tag di zona per creare una zona all’esterno di tale area. Questo consente di utilizzare le regole business per visualizzare la zona in base alle esigenze. Per impostazione predefinita, le aree vengono sempre visualizzate. Puoi utilizzare i parametri di ricerca e facet facoltativi per indicare quale ricerca o facet è associato alla zona. Questa funzionalità consente al software di saltare ricerche o facet quando una zona è nascosta, migliorando le prestazioni in fase di ricerca. Gli attributi relativi all'altezza e alla larghezza sono facoltativi e vengono utilizzati per configurare la modalità di visualizzazione del segnaposto nel Generatore di regole di visualizzazione quando viene rimossa una zona. </p> <p> Utilizza il tag <span class="codeph"> guidato-if-facet[-not]-visible </span> invece della zona, se possibile. Semplifica il modello di presentazione. </p> </td> 
   </tr> 
@@ -1137,7 +1137,7 @@ Utilizza i seguenti tag per testare e visualizzare l&#39;archivio in cui si trov
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng version, 2/1/2013--> <code> &lt;guided-if[-not]-first&gt;&lt;guided-else[-not]-first&gt; 
       &lt;/guided-if[-not]-first&gt; </code> </p> </td> 
@@ -1586,7 +1586,7 @@ Vedere [Informazioni sui tag loop dei risultati](../c-appendices/c-templates.md#
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-index&gt; </span> </p> </td> 
    <td colname="col2"> <p>Restituisce l'indice numerico del risultato corrente. </p> </td> 
   </tr> 
@@ -1756,7 +1756,7 @@ Vedere [Informazioni sui tag loop dei risultati](../c-appendices/c-templates.md#
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-link target="frame-name" hbx-enable="yes/no" hbx-linkid-name="field-name" hbx-linkid-none="text" hbx-linkid-length="XX"&gt; ...  &lt;/search-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questa coppia di tag crea un collegamento di ancoraggio intorno all’HTML che li circonda. Quando fai clic sul collegamento, viene visualizzata la pagina dei risultati. Un attributo di destinazione facoltativo specifica la finestra denominata in cui i browser compatibili con frame devono visualizzare la pagina dei risultati. </p> <p>Imposta l'attributo hbx-enable su "yes" per sfruttare l'analisi disponibile tramite HBX. Imposta hbx-linkid-name sul nome di un campo Meta-data che desideri monitorare. Ad esempio, per tenere traccia dei risultati della ricerca in base al numero SKU, imposta hbx-linkid-name sul nome del campo Meta-data contenente le informazioni SKU. </p> <p>I campi tipo data non sono attualmente supportati. Il valore di hbx-linkid-name viene aggiunto all'ID del collegamento nell'ancoraggio generato. Il valore dell'attributo hbx-linkid-none viene aggiunto all'ID del collegamento ogni volta che il campo dei metadati denominato è vuoto. Il valore di hbx-linboy-length limita il numero di caratteri recuperati e visualizzati dal tag Meta . Il numero predefinito di caratteri è 12. </p> </td> 
   </tr> 
@@ -1789,7 +1789,7 @@ Vedere [Informazioni sui tag loop dei risultati](../c-appendices/c-templates.md#
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-first&gt; ...  &lt;/search-if-first&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-first&gt; ...  &lt;/search-if-not-first&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questi tag includono il testo tra di essi se il risultato corrente è (o non è) il primo risultato della pagina (quando utilizzato all'interno di <span class="codeph"> &lt;search-results&gt; </span>) o il primo valore del campo (se utilizzato all'interno di <span class="codeph"> &lt;search-field-values&gt; </span>). </p> </td> 
   </tr> 
@@ -1837,7 +1837,7 @@ Vedere [Informazioni sui tag loop dei risultati](../c-appendices/c-templates.md#
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Primo risultato </p> </td> 
    <td colname="col3"> <p>No </p> </td> 
    <td colname="col4"> <p>No </p> </td> 
@@ -1849,7 +1849,7 @@ Vedere [Informazioni sui tag loop dei risultati](../c-appendices/c-templates.md#
    <td colname="col4"> <p>Sì </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Terzo risultato </p> </td> 
    <td colname="col3"> <p>No </p> </td> 
    <td colname="col4"> <p>No </p> </td> 
@@ -1966,7 +1966,7 @@ I seguenti tag avanzati enumerano e producono i valori dei campi e i dati correl
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-values name="field-name" sortby="none/values/counts/results" max-items="XX"&gt; ...  &lt;/search-field-values&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questo tag crea un ciclo per l’enumerazione dei valori dei campi e dei dati correlati per un particolare campo nell’intero set di risultati. Non nidificare questo tag all’interno di un altro tag <span class="codeph"> &lt;search-field-values&gt; </span> . L'attributo "name" specifica il nome del campo contenente i valori da enumerare. L’attributo "sortby" facoltativo controlla l’ordine di enumerazione: "nessuno" significa nessun ordine particolare, "valori" significa ordinamento per valori di campo (in ordine crescente o decrescente in base alla proprietà Ordinamento del campo), sortby="conteggi" significa ordinamento in ordine decrescente dei conteggi dei valori dei campi e sortby="results" significa ordinamento in ordine decrescente del numero di risultati contenenti ciascun valore. </p> <p>Sortby="conteggi" e sortby="risultati" sono equivalenti per i campi non di tipo elenco. . L’attributo opzionale "max-items" limita il numero di iterazioni al valore specificato. Il valore predefinito per "max-items" è -1, il che significa "enumerare tutti i valori". </p> </td> 
   </tr> 
@@ -2016,7 +2016,7 @@ Suggest fornisce un user friendly &quot;Intende?&quot; servizio per suggerire te
    <td colname="col2"> <p>Questo tag genera il ciclo "Suggerisci", che contiene un elenco di termini di ricerca suggeriti (ad esempio, "intendete", "intenzionale" e "intende", per una query originariamente inserita come "intendds"). Quando si genera l’elenco di termini, il motore di ricerca ripete tutti i tag HTML e/o modello nidificati fino a cinque volte, che è il numero massimo di suggerimenti. Utilizza l’attributo count per specificare il numero di suggerimenti generati (tra 0 e 5). </p> <p>Il tag <span class="codeph"> &lt;search-suggestione&gt; </span> può essere visualizzato più volte sulla pagina per ripetere l’elenco di suggerimenti. I suggerimenti multipli vengono ordinati in base al numero di risultati ottenuti. </p> <p>Nidifica il tag <span class="codeph"> &lt;search-Sugers&gt; </span> tra i tag aperti e chiusi <span class="codeph"> &lt;search-if-sugg&gt; </span> . </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-suggestion-link&gt; ...  &lt;/search-suggestion-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questo tag genera un collegamento alla query di ricerca originale utilizzando il termine di ricerca suggerito selezionato invece del termine originale. Il tag accetta e stampa semplicemente qualsiasi attributo HTML, ad esempio classe, destinazione e stile. Il tag può anche accettare un attributo URL, il cui valore è utilizzato come URL di base per il collegamento generato. I tag possono essere visualizzati solo all'interno del ciclo <span class="codeph"> &lt;search-suggerimenti&gt; </span> . </p> </td> 
   </tr> 
@@ -2074,7 +2074,7 @@ I tag seguenti producono una stringa nell&#39;HTML in quel punto del modello.
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-body&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Il tag HTML body con le impostazioni di colore del collegamento Search Link impostate dalla sezione Basic Look sotto il collegamento Template (Modello). Aggiungi un attributo di sfondo a questo tag per visualizzare le immagini di sfondo nella pagina dei risultati. Qualsiasi attributo di colore aggiunto al tag sovrascrive le impostazioni di Colore collegamento ricerca impostate nella sezione Aspetto di base. </p> </td> 
+   <td colname="col2"> <p>Tag HTML body con le impostazioni di colore dei collegamenti di ricerca impostate dalla sezione Look base sotto il collegamento Modello. Aggiungi un attributo di sfondo a questo tag per visualizzare le immagini di sfondo nella pagina dei risultati. Qualsiasi attributo di colore aggiunto al tag sovrascrive le impostazioni di Colore collegamento ricerca impostate nella sezione Aspetto di base. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
@@ -2200,7 +2200,7 @@ Di seguito sono riportati i tag che consentono a un collegamento di ancoraggio d
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-next URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-next&gt; </span> </p> <p> <span class="codeph"> &lt;search-prev URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-prev&gt; </span> </p> </td> 
    <td colname="col2"> <p>Visualizza la pagina successiva o precedente dei risultati. </p> </td> 
   </tr> 
@@ -2210,7 +2210,7 @@ Di seguito sono riportati i tag che consentono a un collegamento di ancoraggio d
    <td colname="col2"> <p>Ordina i risultati per data o per rilevanza. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-show-summaries URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-show-summaries&gt; </span> </p> <p> <span class="codeph"> &lt;search-hide-summaries URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-hide-summaries&gt; </span> </p> </td> 
    <td colname="col2"> <p>Mostra o nasconde i riepiloghi. </p> </td> 
   </tr> 
@@ -2292,7 +2292,7 @@ Tag che consentono di controllare lo stato di selezione predefinito per le casel
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-input&gt; </span> </p> </td> 
    <td colname="col2"> <p>Utilizzato in un modello al posto di un tag <span class="codeph"> &lt;input&gt; </span> . Quando il tag viene scritto nel browser, la parola <span class="codeph"> input </span> sostituisce <span class="codeph"> search-input </span> e tutte le altre informazioni nel tag vengono inviate così come sono. Inoltre, se il <span class="codeph"> nome </span> specificato nel tag è elencato come parametro CGI e se il valore <span class="codeph"> </span> specificato nel tag è il valore di quel parametro CGI, alla fine del tag viene aggiunta la parola <span class="codeph"> selezionata </span>. In questo modo, è possibile impostare automaticamente lo stato predefinito del pulsante di scelta o della casella di controllo nel risultato della ricerca allo stesso modo della query corrente. </p> <p>Ad esempio, il codice HTML di una casella di controllo potrebbe avere un aspetto simile al seguente: </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact"&gt;Nessuna corrispondenza audio-simile  </span> </p> <p>Il codice modello corrispondente per quella casella di controllo è il seguente: </p> <p> <span class="codeph"> &lt;search-input type="checkbox" name="sp_w" value="exact"&gt;Nessuna corrispondenza audio-simile  </span> </p> <p>Se la stringa del parametro CGI per la query contiene <span class="codeph"> sp_w=esatto </span>, il tag scritto nel browser con i risultati della ricerca sarà simile al seguente (la parola <span class="codeph"> selezionata </span> viene inserita alla fine del tag): </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact" checked=""&gt;Nessuna corrispondenza audio-simile  </span> </p> <p>Se la stringa del parametro CGI per la query non contiene <span class="codeph"> sp_w=esatto </span>, il tag scritto nel browser con i risultati della ricerca sarà simile al seguente (la parola <span class="codeph"> selezionata </span> non è elencata nel tag ): </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact"&gt;Nessuna corrispondenza audio-simile  </span> </p> <p>Il tag <span class="codeph"> &lt;search-input&gt; </span> è utile per inserire caselle di controllo e pulsanti di scelta nel modello di ricerca. Se nel modello di ricerca sono presenti caselle di controllo o pulsanti di scelta che si desidera aggiungere a <span class="codeph"> &lt;form&gt; </span>, utilizzare <span class="codeph"> &lt;search-input...&gt; </span> al posto di <span class="codeph"> &lt;input..&gt; </span>. </p> </td> 
   </tr> 
@@ -2320,7 +2320,7 @@ Tag che consentono di controllare lo stato di selezione predefinito per le casel
       &lt;/search-select&gt; </code> </p> <p>Se nel modello di ricerca sono presenti caselle di riepilogo da aggiungere a <span class="codeph"> &lt;form&gt; </span>, utilizzare <span class="codeph"> &lt;search-select...&gt; </span> al posto di <span class="codeph"> &lt;select...&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span> al posto di <span class="codeph"> &lt;/select&gt; </span>/&gt;, <span class="codeph"> &lt;search-option..&gt; </span> al posto di <span class="codeph"> &lt;option..&gt; </span> e <span class="codeph"> &lt;/search-option&gt; </span> al posto di <span class="codeph"> &lt;/option&gt; </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-sort-by-field name="field-name" count="XX"&gt; ...  &lt;/search-sort-by-field&gt; </span> </p> </td> 
    <td colname="col2"> <p>Questi tag avanzati creano un collegamento di ancoraggio intorno all’HTML che li circonda. Quando fai clic su questo ancoraggio, viene visualizzata una pagina di risultati ordinati nel campo specificato. L'attributo <span class="codeph"> count </span> facoltativo specifica il numero di risultati da visualizzare nella pagina dei risultati. Se viene omesso il conteggio <span class="codeph"> </span>, viene utilizzato il conteggio utilizzato nella pagina corrente. </p> </td> 
   </tr> 
