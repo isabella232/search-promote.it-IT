@@ -3,16 +3,16 @@ description: È possibile utilizzare Indice completo per indicizzare tutte le pa
 solution: Target
 subtopic: Full Index
 title: Informazioni sull'indice completo
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
+exl-id: cb702bd6-8702-469b-8ce9-0368ccdd55d9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
-
 
 # Informazioni sull&#39;indice completo{#about-full-index}
 
@@ -117,4 +117,3 @@ Non puoi esportare i registri né salvarli. Il registro rimane disponibile per l
    * Utilizza le opzioni di navigazione **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** per spostarsi all’interno del registro.
 
    * Utilizza le opzioni di visualizzazione **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** per perfezionare la visualizzazione.
-
