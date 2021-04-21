@@ -2,16 +2,16 @@
 description: Visualizzazioni dati mostra i risultati della ricerca con i campi meta. Ogni colonna è un campo meta e ogni riga è il risultato di una query di ricerca. Personalizza visualizzazioni dati scegliendo e ridisponendo le colonne. Le visualizzazioni dati possono anche avere titoli e descrizioni personalizzati.
 solution: Target
 title: Informazioni sulle visualizzazioni dati
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
+exl-id: 9ef5eaef-85d6-41e9-af44-b4775755e5bf
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
-
 
 # Informazioni sulle visualizzazioni dati{#about-data-views}
 
@@ -185,4 +185,3 @@ La visualizzazione dati selezionata viene aperta in una finestra separata del br
    * Nella colonna [!DNL Title] della tabella della pagina [!DNL Data Views] fare clic sul nome di una visualizzazione dati che si desidera aprire.
 
    * Nella pagina [!DNL Data Views] della colonna [!DNL Actions] della tabella fare clic su **[!UICONTROL View]** nella riga con la visualizzazione dati che si desidera aprire.
-
