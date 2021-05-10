@@ -7,9 +7,9 @@ topic-legacy: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 exl-id: cff17ead-6997-4ff6-a995-7ca020b06d50
 translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: aa095add9eb656913792b3f14001dda66cdd7d67
 workflow-type: tm+mt
-source-wordcount: '10197'
+source-wordcount: '10178'
 ht-degree: 0%
 
 ---
@@ -281,14 +281,14 @@ t_adding_a_crawl_list_store_url_rule.xml
 
  -->
 
-**Per aggiungere regole URL dell’archivio elenchi di ricerca per indicizzazione**
+**Per aggiungere regole URL dell’archivio degli elenchi di ricerca per indicizzazione:**
 
 1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]**.
 1. Nel campo [!DNL Crawl List Store URL Rules] , immetti le regole desiderate.
 
    Sono consentite righe vuote e di commento che iniziano con un carattere &#39;#&#39; (hash).
-1. (Facoltativo) Nella pagina [!DNL Crawl List Store URL Rules], nel campo [!DNL Test Crawl List Store URL Rules], immetti un URL di test di cui desideri verificare le regole di ricerca per indicizzazione, quindi fai clic su **Test**.
-1. Fai clic su **Salva le modifiche**.
+1. (Facoltativo) Nella pagina [!DNL Crawl List Store URL Rules], nel campo [!DNL Test Crawl List Store URL Rules] , immetti un URL di test di cui desideri verificare le regole di ricerca per indicizzazione, quindi fai clic su **[!UICONTROL Test]**.
+1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Ricostruisci l&#39;indice del sito di staging per visualizzare in anteprima i risultati.
 
    Consulta [Configurazione di un indice incrementale di un sito web organizzato](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -566,14 +566,14 @@ t_adding_crawl_list_retrieve_url_rules.xml
 
  -->
 
-**Per aggiungere regole URL di recupero degli elenchi di ricerca per indicizzazione**
+**Per aggiungere l’elenco di ricerca per indicizzazione recuperare le regole URL:**
 
 1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**.
 1. Nel campo [!DNL Crawl List Retrieve URL Rules] , immetti le regole desiderate.
 
    Sono consentite righe vuote e di commento che iniziano con un carattere &#39;#&#39; (hash).
-1. (Facoltativo) Nella pagina [!DNL Crawl List Retrieve URL Rules], nel campo [!DNL Test Crawl List Retrieve URL Rules], immetti un URL di test di cui desideri verificare le regole di ricerca per indicizzazione, quindi fai clic su **Test**.
-1. Fai clic su **Salva le modifiche**.
+1. (Facoltativo) Nella pagina [!DNL Crawl List Retrieve URL Rules], nel campo [!DNL Test Crawl List Retrieve URL Rules] , immetti un URL di test di cui desideri verificare le regole di ricerca per indicizzazione, quindi fai clic su **[!UICONTROL Test]**.
+1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Ricostruisci l&#39;indice del sito di staging per visualizzare in anteprima i risultati.
 
    Consulta [Configurazione di un indice incrementale di un sito web organizzato](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -637,22 +637,21 @@ RewriteRule Pattern Substitution [Flags]
 
 Consulta [Espressioni regolari](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
-È possibile utilizzare il carattere &quot;not&quot; (&#39;!&#39;) per preimpostare il pattern. Il carattere &quot;not&quot; consente di negare un pattern, ovvero di essere true solo se il titolo corrente NON corrisponde al pattern. Il carattere &quot;not&quot; può essere utilizzato quando è meglio corrispondere a un pattern negativo o come regola predefinita finale. Nota: Non è possibile utilizzare sia il carattere &quot;not&quot; che i caratteri jolly raggruppati in un pattern. Inoltre, non è possibile utilizzare un pattern negato quando la stringa di sostituzione contiene $N.
+È possibile utilizzare il carattere &quot;not&quot; (&#39;!&#39;) per preimpostare il pattern. Il carattere &quot;not&quot; consente di negare un pattern, ovvero di essere true solo se il titolo corrente NON corrisponde al pattern. Il carattere &quot;not&quot; può essere utilizzato quando è meglio corrispondere a un pattern negativo o come regola predefinita finale. Nota: Non è possibile utilizzare sia il carattere &quot;not&quot; che i caratteri jolly raggruppati in un pattern. Inoltre, non è possibile utilizzare un pattern negato quando la stringa di sostituzione contiene `$N`.
 
 È possibile utilizzare le parentesi per creare un riferimento di sfondo, a cui possono fare riferimento i parametri Sostituzione e Modello di consenso.
 
-**** SostituzioneIl titolo viene sostituito dalla stringa di sostituzione. La stringa può contenere quanto segue:
+Sostituzione - Il titolo viene sostituito dalla stringa di sostituzione. La stringa può contenere quanto segue:
 
 Testo normale : testo trasmesso senza modifiche.
 
 I riferimenti di sfondo consentono di accedere alle parti raggruppate (tra parentesi) della serie o della serie di cond. Di seguito sono riportati due tipi di riferimenti di sfondo:
 
-* Backreferences RewriteRule
+* RewriteRule Backreferences - Questi corrispondono a riferimenti precedenti nel pattern RewriteRule corrispondente e si presentano come $N (0 &lt;= N &lt;= 9).
 
-   Questi corrispondono ai riferimenti precedenti nel pattern RewriteRule corrispondente e si presentano come $N (0 &lt;= N &lt;= 9). Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* Backreferences RewriteCond
+   Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-   Questi corrispondono ai riferimenti precedenti nell&#39;ultimo pattern di cond RewriteCond corrispondente e prendono il formato %N (0 &lt;= N &lt;= 9).
+* RewriteCond Backreferences - Questi corrispondono a backreferences nell’ultimo pattern di cond RewriteCond corrispondente e prendono la forma %N (0 &lt;= N &lt;= N &lt;= 9).
 
 Variabili Si tratta di variabili del modulo %{NAME_OF_VARIABLE} in cui NAME_OF_VARIABLE può essere una stringa per il nome di una variabile definita. Per ulteriori informazioni sull’impostazione delle variabili di ambiente, consulta il flag `[E]` .
 
@@ -720,8 +719,11 @@ Testo normale : testo trasmesso senza modifiche.
 
 I riferimenti di sfondo consentono di accedere alle parti raggruppate (tra parentesi) della serie o della serie di cond. Esistono due tipi di riferimenti retrospettivi:
 
-* RewriteRule Backreferences Questi corrispondono a backreferences nel pattern RewriteRule corrispondente e prendono il formato $N (0 &lt;= N &lt;= 9). Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* RewriteCond Backreferences Questi backreferences corrispondono all’ultimo pattern di cond RewriteCond corrispondente e prendono la forma %N (0 &lt;= N &lt;= N &lt;= 9).
+* RewriteRule Backreferences - Questi corrispondono a riferimenti precedenti nel pattern RewriteRule corrispondente e si presentano come $N (0 &lt;= N &lt;= 9).
+
+   Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond Backreferences - Questi corrispondono a backreferences nell’ultimo pattern di cond RewriteCond corrispondente e prendono la forma %N (0 &lt;= N &lt;= N &lt;= 9).
 
 Variabili Si tratta di variabili del modulo %{NAME_OF_VARIABLE} in cui NAME_OF_VARIABLE può essere una stringa per il nome di una variabile definita. Per ulteriori informazioni sull’impostazione delle variabili di ambiente, consulta il flag `[E]` .
 
@@ -797,7 +799,15 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>}
 ```
 
-Il Pattern della regola `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene un riferimento di sfondo `(.*)` che corrisponde al contenuto del titolo che segue &quot;La mia azienda-&quot;. Tenere presente che l&#39;area circostante una parte di un pattern con parentesi ( ) crea un riferimento di sfondo a cui può fare riferimento la Sostituzione. In questo esempio, la sostituzione (${toupper:**$1**}) riscrive il riferimento di backreference (**$1**) utilizzando la funzione di contagocce.
+Pattern della regola
+
+`(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))`
+
+contiene un riferimento di sfondo `(.*)` che corrisponde al contenuto del titolo che segue &quot;La mia azienda-&quot;. Tenere presente che l&#39;area circostante una parte di un pattern con parentesi ( ) crea un riferimento di sfondo a cui può fare riferimento la Sostituzione. In questo esempio, la sostituzione
+
+`(${toupper:**$1**})`
+
+riscrive il riferimento a sfondo (`**$1**`) utilizzando la funzione di contagocce.
 
 Così, un titolo del modulo &quot;La mia azienda - Benvenuto&quot; è riscritto come &quot;BENVENUTO&quot;.
 
@@ -815,14 +825,14 @@ t_adding_crawl_title_rules.xml
 
  -->
 
-**Per aggiungere regole del titolo di ricerca per indicizzazione**
+**Per aggiungere regole del titolo di ricerca per indicizzazione:**
 
 1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]**.
 1. Nel campo [!DNL Crawl Title Rules] , immetti le regole desiderate.
 
    Sono consentite righe vuote e di commento che iniziano con un carattere &#39;#&#39; (hash).
-1. (Facoltativo) Nella pagina [!DNL Crawl Title Rules], nel campo [!DNL Test Crawl Title Rules], immetti un URL di test di cui desideri verificare le regole di ricerca, quindi fai clic su **Test**.
-1. Fai clic su **Salva le modifiche**.
+1. (Facoltativo) Nella pagina [!DNL Crawl Title Rules], nel campo [!DNL Test Crawl Title Rules] , immetti un URL di test di cui desideri verificare le regole di ricerca, quindi fai clic su **[!UICONTROL Test]**.
+1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Ricostruisci l&#39;indice del sito di staging per visualizzare in anteprima i risultati.
 
    Consulta [Configurazione di un indice incrementale di un sito web organizzato](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -983,15 +993,17 @@ Testo normale: Testo passato attraverso invariato.
 
 I riferimenti di sfondo consentono di accedere alle parti raggruppate (tra parentesi) della serie o della serie di cond. Esistono due tipi di riferimenti retrospettivi:
 
-* ** RewriteRule Backreferences** Questi corrispondono a backreferences nel pattern RewriteRule corrispondente e prendono il modulo $N (0 &lt;= N &lt;= N &lt;= 9). Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule Backreferences - Questi corrispondono a riferimenti precedenti nel pattern RewriteRule corrispondente e si presentano come $N (0 &lt;= N &lt;= 9).
 
-* **RewriteCond** BackreferencesQuesti corrispondono a backreferences nell’ultimo pattern di cond RewriteCond corrispondente e prendono il modulo %N (0  &lt;>
+   Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond Backreferences - Questi corrispondono a backreferences nell’ultimo pattern di cond RewriteCond corrispondente e prendono la forma %N (0 &lt;= N &lt;= N &lt;= 9).
 
 Variabili Si tratta di variabili del modulo %{NAME_OF_VARIABLE} in cui NAME_OF_VARIABLE può essere una stringa per il nome di una variabile definita. Per ulteriori informazioni sull’impostazione delle variabili, consulta il flag RewriteRule *`[E]`* .
 
 >[!NOTE]
 >
->Le regole di riscrittura generalmente utilizzano le variabili. Tutti i parametri CGI dall’URL corrente vengono automaticamente trasformati in variabili. Ad esempio, l’URL di ricerca `"https://search.atomz.com/search/?sp_a=sp00000000&sp_q="Product"&session=1234&id=5678"` fornirà automaticamente quattro variabili, alle quali è possibile fare riferimento nelle regole di riscrittura. In questo esempio, una variabile è chiamata &quot;session&quot; e il suo valore è &quot;1234&quot;, mentre un&#39;altra variabile è chiamata &quot;id&quot; e il suo valore è &quot;5678&quot;. (Le altre due variabili sono `sp_a` e `sp_q`.) È necessario passare tutte le variabili necessarie come campi nascosti dal modulo di ricerca sulla pagina Web. In questo esempio, è necessario trasmettere i valori &quot;session&quot; e &quot;id&quot;, che identificano l&#39;utente del sito Web che esegue la ricerca. Per passare un campo nascosto al modulo di ricerca, utilizza un tag come `<input type=hidden name="session" value="1234">`.
+>Le regole di riscrittura generalmente utilizzano le variabili. Tutti i parametri CGI dall’URL corrente vengono automaticamente trasformati in variabili. Ad esempio, l’URL di ricerca `"https://search.atomz.com/search/?sp_a=sp00000000&sp_q="Product"&session=1234&id=5678"` fornisce automaticamente quattro variabili, alle quali è possibile fare riferimento nelle regole di riscrittura. In questo esempio, una variabile è chiamata &quot;session&quot; e il suo valore è &quot;1234&quot;, mentre un&#39;altra variabile è chiamata &quot;id&quot; e il suo valore è &quot;5678&quot;. (Le altre due variabili sono `sp_a` e `sp_q`.) È necessario passare tutte le variabili necessarie come campi nascosti dal modulo di ricerca sulla pagina Web. In questo esempio, è necessario trasmettere i valori &quot;session&quot; e &quot;id&quot;, che identificano l&#39;utente del sito Web che esegue la ricerca. Per passare un campo nascosto al modulo di ricerca, utilizza un tag come `<input type=hidden name="session" value="1234">`.
 
 Funzioni Queste sono funzioni del modulo ${NAME_OF_FUNCTION:key} dove NAME_OF_FUNCTION è:
 
@@ -1070,14 +1082,15 @@ t_adding_search_url_rules.xml
 
  -->
 
-**Per aggiungere regole URL di ricerca**
+**Per aggiungere regole URL di ricerca:**
 
 1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]**.
 1. Nel campo [!DNL Search URL Rules] , immetti le regole desiderate.
 
    Sono consentite righe vuote e di commento che iniziano con un carattere &#39;#&#39; (hash).
-1. (Facoltativo) Nella pagina [!DNL Search URL Rules], nel campo [!DNL Test Search URL Rules], immetti un URL di test di cui desideri verificare le regole di ricerca per indicizzazione, quindi fai clic su **Test**.
-1. Fai clic su **Salva le modifiche**.
+
+1. (Facoltativo) Nella pagina [!DNL Search URL Rules], nel campo [!DNL Test Search URL Rules] , immetti un URL di test di cui desideri verificare le regole di ricerca per indicizzazione, quindi fai clic su **[!UICONTROL Test]**.
+1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Ricostruisci l&#39;indice del sito di staging per visualizzare in anteprima i risultati.
 
    Consulta [Configurazione di un indice incrementale di un sito web organizzato](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -1143,9 +1156,11 @@ Consulta [Espressioni regolari](../c-appendices/r-regular-expressions.md#referen
 
 Testo normale : testo trasmesso senza modifiche.
 
-**** BackreferencesFornisci l’accesso alle parti raggruppate (tra parentesi) del pattern o del pattern di consenso. Di seguito sono riportati due tipi di riferimenti di sfondo:
+* Backreferences - Consente di accedere alle parti raggruppate (tra parentesi) del pattern o del pattern di consenso. Di seguito sono riportati due tipi di riferimenti di sfondo:
 
-* **RewriteRule** BackreferencesQuesti corrispondono a riferimenti precedenti nel pattern RewriteRule corrispondente e si presentano come $N (0  &lt;> Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule Backreferences - Questi corrispondono a riferimenti precedenti nel pattern RewriteRule corrispondente e si presentano come $N (0 &lt;= N &lt;= 9).
+
+   Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
 * ** Backreferences RewriteCond** Questi corrispondono a backreferences nell’ultimo pattern di cond RewriteCond corrispondente e prendono la forma %N (0 &lt;= N &lt;= N &lt;= 9).
 
@@ -1213,9 +1228,11 @@ Testo normale : testo trasmesso senza modifiche.
 
 I riferimenti di sfondo consentono di accedere alle parti raggruppate (tra parentesi) della serie o della serie di cond. Esistono due tipi di riferimenti retrospettivi:
 
-* **RewriteRule** BackreferencesQuesti corrispondono a riferimenti precedenti nel pattern RewriteRule corrispondente e si presentano come $N (0  &lt;> Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule Backreferences - Questi corrispondono a riferimenti precedenti nel pattern RewriteRule corrispondente e si presentano come $N (0 &lt;= N &lt;= 9).
 
-* **RewriteCond** BackreferencesQuesti corrispondono a backreferences nell’ultimo pattern di cond RewriteCond corrispondente e prendono il modulo %N (0  &lt;>
+   Ad esempio, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond Backreferences - Questi corrispondono a backreferences nell’ultimo pattern di cond RewriteCond corrispondente e prendono la forma %N (0 &lt;= N &lt;= N &lt;= 9).
 
 **** VariabiliSi tratta di variabili del modulo %{NAME_OF_VARIABLE} in cui NAME_OF_VARIABLE può essere una stringa per il nome di una variabile definita. Per ulteriori informazioni sull’impostazione delle variabili di ambiente, consulta il flag `[E]` . È inoltre possibile definire le variabili nel modulo di ricerca che ha generato i risultati della ricerca.
 
@@ -1291,7 +1308,11 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>} 
 ```
 
-Il Pattern della regola `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene un riferimento di sfondo **`(.*)`** che corrisponde al contenuto del titolo che segue &quot;La mia azienda-&quot;. Tenere presente che l&#39;area circostante una parte di un pattern con parentesi ( ) crea un riferimento di sfondo a cui può fare riferimento la Sostituzione. In questo esempio, la sostituzione (${toupper:**$1**}) riscrive il riferimento di backreference (**$1**) utilizzando la funzione di contagocce.
+Il Pattern della regola `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene un riferimento di sfondo **`(.*)`** che corrisponde al contenuto del titolo che segue &quot;La mia azienda-&quot;. Tenere presente che l&#39;area circostante una parte di un pattern con parentesi ( ) crea un riferimento di sfondo a cui può fare riferimento la Sostituzione. In questo esempio, la sostituzione
+
+`(${toupper:**$1**})`
+
+riscrive il riferimento di sfondo (**$1**) utilizzando la funzione del contagocce.
 
 Così, un titolo del modulo &quot;La mia azienda - Benvenuto&quot; è riscritto come &quot;BENVENUTO&quot;.
 
@@ -1309,14 +1330,14 @@ t_adding_search_title_rules.xml
 
  -->
 
-**Per aggiungere regole del titolo di ricerca**
+**Per aggiungere le regole del titolo di ricerca:**
 
 1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]**.
 1. Nel campo [!DNL Search Title Rules] , immetti le regole desiderate.
 
    Sono consentite righe vuote e di commento che iniziano con un carattere &#39;#&#39; (hash).
-1. (Facoltativo) Nella pagina [!DNL Search Title Rules], immetti un titolo di test nel campo [!DNL Test Search Title Rules] , quindi fai clic su **Test**.
-1. Fai clic su **Salva le modifiche**.
+1. (Facoltativo) Nella pagina [!DNL Search Title Rules], immetti un titolo di test nel campo [!DNL Test Search Title Rules] , quindi fai clic su **[!UICONTROL Test]**.
+1. Clic **[!UICONTROL Save Changes]**.
 1. (Facoltativo) Ricostruisci l&#39;indice del sito di staging per visualizzare in anteprima i risultati.
 
    Consulta [Configurazione di un indice incrementale di un sito web organizzato](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
