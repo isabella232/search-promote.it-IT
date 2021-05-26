@@ -4,10 +4,9 @@ description: Ulteriori informazioni sull’annuncio della fine del servizio di A
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-translation-type: tm+mt
-source-git-commit: 99d23647ba5d30ed90d9e8ac377d627f6266c618
+source-git-commit: 27dca9caf3e59d5ed20fdea3d5ef279bd5aac097
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 0%
 
 ### **_A che data cesserà di funzionare la Search&amp;Promote?_**
 
-La fine del servizio, ad Adobe, è pianificata per il **1 settembre 2022**. A tale data, l’interfaccia utente amministrativa di Search&amp;Promote non sarà più accessibile e le richieste alle API di Search&amp;Promote non produrranno più risultati. Prima di questa data, il servizio sarà completamente disponibile e funzionante.
+La fine del servizio, ad Adobe, è pianificata per il **1 settembre 2022**. A tale data, l’interfaccia utente amministrativa di Search&amp;Promote non sarà più accessibile e le richieste alle API di Search&amp;Promote non produrranno più risultati. Prima di questa data, il servizio sarà completamente disponibile e funzionante. In previsione del 1° settembre 2022, i diritti contrattuali alla Search&amp;Promote non saranno consentiti oltre il 31 agosto 2022.
 
 ### **_Cosa succede se si effettua una ricerca o un’altra richiesta API ad Search&amp;Promote?_**
 
