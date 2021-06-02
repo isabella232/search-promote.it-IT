@@ -4,7 +4,7 @@ description: Ulteriori informazioni sull’annuncio della fine del servizio di A
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: 27dca9caf3e59d5ed20fdea3d5ef279bd5aac097
+source-git-commit: cffbd6a62e1ffe1f5fe1f2f6123e8bc5199b55dc
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -39,4 +39,4 @@ Rivolgiti al tuo Customer Success Manager (CSM) per qualsiasi domanda o contatta
 
 ### **_Posso ancora rinnovare la mia licenza di Search&amp;Promote applicabile prima della fine del servizio?_**
 
-Sì. Rivolgiti al tuo rappresentante di Adobe per rinnovare la licenza con una data di fine contratto entro il **1° settembre 2022**.
+Sì. Rivolgiti al tuo rappresentante di Adobe per rinnovare la licenza con una data di fine contratto entro il **31 agosto 2022**.
