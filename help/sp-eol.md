@@ -4,9 +4,9 @@ description: Ulteriori informazioni sull’annuncio della fine del servizio di A
 feature: null
 role: Admin,User,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: dd301b1be029f8f9e4e0a0738d61c19f0e6ba2be
+source-git-commit: 2465f73573d96f96be3cc39d0ba9962af8c2b990
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ La ricerca e altre richieste API effettuate a Search&amp;Promote non restituiran
 
 Sì. Per la ricerca di prodotti e soluzioni commerce, [Live Search from Magenti Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html) è l’applicazione di ricerca di Adobe che continua. La funzione Live Search dal Magento Commerce verrà avviata nella prima metà del 2021.
 
-### **_Ad Adobe, è possibile consigliare framework o piattaforme che offrono funzionalità simili a Search&amp;Promote?_**
+<!-- ### **_Can Adobe recommend any frameworks or platforms that offer features similar to Search&Promote?_**
 
-Sì. Se la funzionalità di Search&amp;Promote è fondamentale per la strategia di marketing, considera i numerosi framework open-source esistenti per la ricerca di energia, inclusi [Apache Solr](https://solr.apache.org/) e [Elastic Free e Open](https://www.elastic.co/about/free-and-open).
+  Yes. If the Search&Promote feature is critical to your marketing strategy, consider the many open-source frameworks that exist to power search, including [Apache Solr](https://solr.apache.org/) and [Elastic Free and Open](https://www.elastic.co/about/free-and-open).  
 
-Inoltre, sia [AWS](https://aws.amazon.com/cloudsearch/) che [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) forniscono funzionalità di ricerca nativa per il cloud sulle rispettive piattaforme cloud. È possibile integrare entrambe le opzioni in Adobe Experience Manager Sites per potenziare la ricerca nel sito e altro ancora.
+  Also, both [AWS](https://aws.amazon.com/cloudsearch/) and [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) provide cloud-native search capabilities on their respective cloud platforms. You can integrate both options into Adobe Experience Manager Sites to power site search and more. -->
 
 ### **_Chi posso contattare per ulteriori informazioni?_**
 
