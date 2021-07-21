@@ -1,10 +1,9 @@
 ---
 title: Annuncio sulla fine del servizio di Adobe Search&Promote
 description: Ulteriori informazioni sull’annuncio della fine del servizio di Adobe Search&Promote.
-feature: null
 role: Admin,User,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: 2465f73573d96f96be3cc39d0ba9962af8c2b990
+source-git-commit: bbd1877e3f3942097c2f9348204279aec992ed5a
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
