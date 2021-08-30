@@ -6,10 +6,9 @@ title: Informazioni sul menu di ricerca per indicizzazione
 topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '11011'
+source-wordcount: '11015'
 ht-degree: 0%
 
 ---
@@ -455,7 +454,7 @@ Quindi `/archive/fall/index.html` non è incluso, anche se la maschera specifica
 
 Consulta [Configurazione di un indice incrementale di un sito web organizzato](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-## Informazioni sull’utilizzo delle parole chiave con le maschere data {#section_CCBB3E3FDBDE4725B2B571FD6594470C}
+## Utilizzo delle parole chiave con le maschere di data {#section_CCBB3E3FDBDE4725B2B571FD6594470C}
 
 È possibile qualificare ogni maschera di inclusione con una o più parole chiave separate da spazio, che influiscono sulla modalità di indicizzazione delle pagine corrispondenti.
 
@@ -676,7 +675,7 @@ Se si desidera solo impedire l&#39;indicizzazione di alcuni file MP3 sul tuo sit
 
    Consulta [Informazioni sulle maschere URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-## Selezione dei tipi di contenuto per la ricerca per indicizzazione e l&#39;indice {#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8}
+## Selezione dei tipi di contenuto per la ricerca per indicizzazione e per la ricerca per indicizzazione {#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8}
 
 È possibile utilizzare [!DNL Content Types] per selezionare i tipi di file da esaminare e indicizzare per questo account.
 
@@ -911,7 +910,7 @@ Consulta [Configurazione di un indice incrementale di un sito web organizzato](.
 
       Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Modifica della definizione del modulo {#task_9FB34E9C8A814DFE9BF7F8F8F69BF314}
+## Modifica di una definizione di modulo {#task_9FB34E9C8A814DFE9BF7F8F8F69BF314}
 
 È possibile modificare una definizione di modulo esistente se un modulo sul sito web è stato modificato o se è sufficiente modificarla.
 
@@ -1326,7 +1325,7 @@ Prima che gli effetti della nuova definizione abilitata siano visibili ai client
       <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto all'interno di un elemento <span class="codeph"> record </span>, il cui attributo name è <span class="codeph"> titolo </span>, viene mappato sul campo metadati <span class="codeph"> titolo </span> </p> </li> 
       <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto all'interno del record <span class="codeph"> </span>, il cui attributo name è <span class="codeph"> descrizione </span>, è mappato al campo metadati <span class="codeph"> desc </span> </p> </li> 
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto nel record <span class="codeph"> </span>, il cui attributo name è <span class="codeph"> descrizione </span>, viene mappato sul campo metadati <span class="codeph"> corpo </span> </p> </li> 
-      </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Vedere <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Vedere <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Definisce il valore dell'attributo name utilizzato per ciascun tag <span class="codeph"> &lt;meta&gt; </span> generato. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che il campo <span class="uicontrol"> </span> diventi un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l’account corrente. </p> <p>Il valore del campo <span class="uicontrol"> </span> può essere un campo di metadati non definito, se necessario. Un campo di metadati non definito è talvolta utile per creare contenuti utilizzati da <span class="wintitle"> Script di filtro </span>. </p> <p>Consultare <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni sul filtro degli script </a>. </p> <p>Quando il connettore indice elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati utilizzando un delimitatore virgola. Supponiamo tuttavia che il valore corrispondente del campo <span class="wintitle"> </span> sia un campo metadati definito. Inoltre, per quel campo è impostato l'attributo <span class="wintitle"> Elenchi consentiti </span> . In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chiave principale?  </span> <p>Solo una definizione di mappa è identificata come chiave primaria. Questo campo diventa il riferimento univoco presentato quando il documento viene aggiunto all'indice. Questo valore viene utilizzato nell’URL del documento nell’indice. </p> <p>I valori <span class="uicontrol"> Chiave primaria </span> devono essere univoci in tutti i documenti rappresentati dalla configurazione del connettore indice. Eventuali duplicati rilevati verranno ignorati. Se i documenti di origine non contengono un singolo valore univoco da utilizzare come <span class="uicontrol"> Chiave primaria </span>, ma due o più campi insieme <i>possono</i> formare un identificatore univoco, puoi definire la <span class="uicontrol"> Chiave primaria </span> combinando più definizioni <span class="uicontrol"> Tag </span> con una barra verticale ("|") che delimitano i valori. </p> </li> 
@@ -1382,7 +1381,7 @@ Prima che gli effetti della nuova definizione abilitata siano visibili ai client
       <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto all'interno di un elemento <span class="codeph"> record </span>, il cui attributo name è <span class="codeph"> titolo </span>, viene mappato sul campo metadati <span class="codeph"> titolo </span> </p> </li> 
       <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto all'interno del record <span class="codeph"> </span>, il cui attributo name è <span class="codeph"> descrizione </span>, è mappato al campo metadati <span class="codeph"> desc </span> </p> </li> 
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto nel record <span class="codeph"> </span>, il cui attributo name è <span class="codeph"> descrizione </span>, viene mappato sul campo metadati <span class="codeph"> corpo </span> </p> </li> 
-      </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Vedere <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Vedere <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Campo </span> <p>Definisce il valore dell'attributo name utilizzato per ciascun tag &lt;meta&gt; generato. </p> </li> 
       <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che il campo <span class="uicontrol"> </span> diventi un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l’account corrente. </p> <p>Il valore del campo <span class="uicontrol"> </span> può essere un campo di metadati non definito, se necessario. Un campo di metadati non definito è talvolta utile per creare contenuti utilizzati da <span class="wintitle"> Script di filtro </span>. </p> <p>Consultare <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni sul filtro degli script </a>. </p> <p>Quando il connettore indice elabora documenti XML con più hit su qualsiasi campo mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati utilizzando un delimitatore virgola. Supponiamo tuttavia che il valore corrispondente del campo <span class="wintitle"> </span> sia un campo metadati definito. Inoltre, per quel campo è impostato l'attributo <span class="wintitle"> Elenchi consentiti </span> . In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Chiave principale?  </span> <p>Solo una definizione di mappa è identificata come chiave primaria. Questo campo diventa il riferimento univoco presentato quando il documento viene aggiunto all'indice. Questo valore viene utilizzato nell’URL del documento nell’indice. </p> <p>I valori <span class="uicontrol"> Chiave primaria </span> devono essere univoci in tutti i documenti rappresentati dalla configurazione del connettore indice. Eventuali duplicati rilevati verranno ignorati. Se i documenti di origine non contengono un singolo valore univoco da utilizzare come <span class="uicontrol"> Chiave primaria </span>, ma due o più campi insieme <i>possono</i> formare un identificatore univoco, puoi definire la <span class="uicontrol"> Chiave primaria </span> combinando più definizioni <span class="uicontrol"> Tag </span> con una barra verticale ("|") che delimitano i valori. </p> </li> 
@@ -1413,7 +1412,7 @@ Prima che gli effetti della nuova definizione abilitata siano visibili ai client
 
       Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Modifica della definizione del connettore indice {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
+## Modifica della definizione di un connettore indice {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
 
 Puoi modificare un connettore indice esistente definito.
 

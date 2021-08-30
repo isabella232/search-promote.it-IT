@@ -5,10 +5,9 @@ title: Moduli di ricerca
 topic-legacy: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 exl-id: 9771a19d-86a8-41db-9c80-d734fbd10ab7
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2899'
 ht-degree: 0%
 
 ---
@@ -85,7 +84,7 @@ Il modulo di ricerca casella di controllo viene generato con il seguente codice 
 <input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-## Risultati ricerca {#section_BBDD5B44E2B349BC88D937F44583D350}
+## Risultati della ricerca {#section_BBDD5B44E2B349BC88D937F44583D350}
 
 Il tag del modello di ricerca `<search-input-collections>` genera la casella di riepilogo della raccolta HTML nei risultati della ricerca e seleziona automaticamente la raccolta specificata nella ricerca. Se invece desideri generare delle caselle di controllo, utilizza il tag `<search-input>` invece del tag `<input>` come segue:
 
@@ -103,9 +102,9 @@ Il tag `<search-input>` restituisce un tag `<input>` e include l&#39;attributo `
 
 È possibile configurare i set di frame in modo che funzionino con la ricerca/merchandising del sito.
 
-Per ulteriori informazioni sui frame HTML e sull&#39;elemento del set di frame HTML, consulta il seguente URL:
+<!-- 404 DEAD LINK To learn more about HTML frames and the HTML frameset element, see the following URL:
 
-[https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp)
+[https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp) -->
 
 Se il sito utilizza frame, è possibile specificare un frame di destinazione per i collegamenti ai risultati di ricerca. Il target predefinito è _self, che apre i collegamenti nel frame corrente o nella finestra del browser. È invece possibile specificare destinazioni specifiche per il sito o riservate al browser:
 
@@ -157,7 +156,7 @@ La procedura per la configurazione dei set di frame è la seguente:
  </tbody> 
 </table>
 
-## Aggiunta di codice del modulo di ricerca a un frame nella pagina Web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
+## Aggiunta del codice del modulo di ricerca a un frame nella pagina web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
 
 1. Dal menu del prodotto, fai clic su **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
 
@@ -197,7 +196,7 @@ Se hai inserito il codice del modulo di ricerca nella cornice di navigazione ver
 
 Quando un cliente esegue una ricerca del sito web, i risultati della ricerca vengono visualizzati nel frame &quot;body&quot; della pagina web.
 
-## Impostazione della destinazione per i collegamenti effettuati dalla pagina dei risultati di ricerca {#section_523248C5AC424D878321C21A23A5CD66}
+## Impostazione della destinazione per i collegamenti effettuati dalla pagina dei risultati della ricerca {#section_523248C5AC424D878321C21A23A5CD66}
 
 Puoi impostare il fotogramma di destinazione modificando direttamente il modello.
 
@@ -235,7 +234,7 @@ Ad esempio, per impostare il frame di destinazione `_blank` è possibile modific
 
 Quando un visitatore sceglie un collegamento ai risultati di ricerca, la pagina collegata ora si apre in una nuova finestra vuota.
 
-## Modifica delle pagine dei frame di navigazione per impedire l&#39;indicizzazione {#section_C62E5F0EE1294D5EBD97E123E54433FC}
+## Modifica delle pagine dei frame di navigazione per impedirne l’indicizzazione {#section_C62E5F0EE1294D5EBD97E123E54433FC}
 
 In genere, si desidera escludere i frame di navigazione dall’indicizzazione con i risultati della ricerca. Per eseguire questa funzionalità, puoi aggiungere il tag meta `noindex` a tali pagine.
 

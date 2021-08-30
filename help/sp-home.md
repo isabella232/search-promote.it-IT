@@ -5,10 +5,10 @@ solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-source-git-commit: bd8341e6bd955dbf5496351594938b65e1bd2948
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 16%
+source-wordcount: '106'
+ht-degree: 17%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 16%
 
 * **IMPORTANTE:** [Adobe Annuncio della fine del servizio di Search&amp;Promote](/help/sp-eol.md).
 
-* Note sulla versione di Adobe Marketing Cloud - Contiene nuove funzioni, correzioni e problemi noti in tutte le soluzioni di Marketing Cloud. I rilasci di funzionalità hanno luogo in primavera e autunno, mentre i rilasci di manutenzione hanno cadenza mensile.
+* Note sulla versione di Adobe Experience Cloud - Contiene nuove funzioni, correzioni e problemi noti in tutte le soluzioni Experience Cloud. I rilasci di funzionalità hanno luogo in primavera e autunno, mentre i rilasci di manutenzione hanno cadenza mensile.
 
-   Accesso anticipato: Iscriviti a [Adobe Priority Product Update](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) per ricevere le note sulla versione di Adobe Marketing Cloud una settimana prima di ogni versione.
+<!--   Early Access: Sign up for the [Adobe Priority Product Update](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) to receive Adobe Marketing Cloud release notes one week before each release. -->
 
 * Note aggiornate sulla versione di Adobe Search&amp;Promote:
 
@@ -32,6 +32,6 @@ ht-degree: 16%
 
 ## Altre informazioni {#topic_34A00195904D4AE7AE982D3746F693AA}
 
-[Sito web Adobe Search&amp;Promote](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
+<!-- [Adobe Search&amp;Promote website](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html) -->
 
 [Approfondimenti settore](https://blog.adobe.com/en/topics/digital-transformation.html)  - Il blog Adobe per il marketing digitale.

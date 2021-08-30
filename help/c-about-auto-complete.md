@@ -6,10 +6,9 @@ title: Informazioni sul completamento automatico
 topic-legacy: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 exl-id: a1d08c0a-6c68-4da2-88d2-fe953d333536
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---
@@ -109,7 +108,7 @@ Consulta [Configurazione del CSS con completamento automatico](c-about-auto-comp
 
       Consulta [Pushing stage settings live](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Configurazione dell&#39;elenco di parole con completamento automatico {#task_1F8E0F346263443383F8CFD2C7AB35D4}
+## Configurazione dell’elenco di parole con completamento automatico {#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
 Configura l’elenco di parole e frasi che il completamento automatico visualizza a un cliente come suggerimenti.
 
@@ -174,7 +173,7 @@ Consulta [Configurazione del CSS con completamento automatico](c-about-auto-comp
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aggiornamento sul reindice </p> </td> 
-      <td colname="col2"> <p>L'elenco di parole completo viene rigenerato automaticamente dopo ogni reindicizzazione dell'account riuscita. </p> </td> 
+      <td colname="col2"> <p>L'elenco di parole completo automatico viene rigenerato automaticamente dopo ogni reindicizzazione dell'account riuscita. </p> </td> 
       </tr> 
     </tbody> 
    </table>
@@ -207,7 +206,7 @@ t_configuring_auto-complete_css.xml
 
 Il CSS con completamento automatico controlla il contenuto di [!DNL autocomplete_styles.css], incluso come parte del modulo di ricerca abilitato automatico. Il CSS specificato qui controlla la presentazione visiva dell’elenco dei suggerimenti con completamento automatico. Per un esempio delle idee di presentazione visiva possibili, consulta:
 
-[https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html).
+<!-- 404 DEAD LINK [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html). -->
 
 [Configurazione dell’elenco di parole con completamento automatico](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4).
 
@@ -217,7 +216,7 @@ Una volta completata la configurazione del CSS con completamento automatico, puo
 
 Vedere [Anteprima del modulo di ricerca così come apparirebbe sul proprio...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
-**Importante**: Per applicare il CSS personalizzato con completamento automatico, devi rimuovere i tag di commento dalla seconda riga visualizzata nel codice HTML. Quindi si sposta la stessa riga all’interno della sezione iniziale della pagina che contiene il modulo di ricerca.
+**Importante**: Per applicare il CSS personalizzato con completamento automatico, devi rimuovere i tag commento dalla seconda riga visualizzata nel codice HTML. Quindi si sposta la stessa riga all’interno della sezione iniziale della pagina che contiene il modulo di ricerca.
 
 Vedere [Copia del codice HTML del modulo di ricerca in...](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
@@ -240,7 +239,7 @@ Vedere [Copia del codice HTML del modulo di ricerca in...](c-about-auto-complete
 
       Consulta [Pushing stage settings live](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Visualizzazione dell&#39;anteprima del modulo di ricerca così come apparirebbe sul sito web {#task_437B35EFA5424603A08AF8E79E6B4714}
+## Visualizzazione dell’anteprima del modulo di ricerca così come apparirebbe sul sito web {#task_437B35EFA5424603A08AF8E79E6B4714}
 
 In base alla configurazione del CSS con completamento automatico e completamento automatico, è possibile visualizzare in anteprima l’aspetto del modulo di ricerca se si desidera aggiungere il codice HTML al sito web.
 

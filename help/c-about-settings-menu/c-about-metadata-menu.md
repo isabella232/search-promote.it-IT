@@ -6,10 +6,9 @@ title: Informazioni sul menu Metadati
 topic-legacy: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 exl-id: 53d62da9-c5bd-4c4a-bb89-743704f66f7f
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '8024'
+source-wordcount: '8028'
 ht-degree: 1%
 
 ---
@@ -292,7 +291,7 @@ Prima che gli effetti della nuova definizione del tag meta siano visibili ai cli
 
       Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Modifica di campi meta tag predefiniti o definiti dall&#39;utente {#task_0A7657B63596421BB6DB3ED44F827AB3}
+## Modifica di campi meta tag predefiniti o definiti dall’utente {#task_0A7657B63596421BB6DB3ED44F827AB3}
 
 È possibile modificare solo determinati campi nei tag meta predefiniti oppure tutti i campi nei tag meta definiti dall’utente.
 
@@ -326,7 +325,7 @@ Prima che gli effetti delle modifiche ai tag meta siano visibili ai clienti, dev
 
       Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Eliminazione di un campo meta tag definito dall&#39;utente {#task_9361EF38B5E743038B6672FA6CF70FD3}
+## Eliminazione di un campo meta tag definito dall’utente {#task_9361EF38B5E743038B6672FA6CF70FD3}
 
 È possibile eliminare un campo meta tag definito dall’utente che non è più necessario o utilizzato.
 
@@ -472,7 +471,7 @@ Facoltativamente, puoi utilizzare **[!UICONTROL Test]** nella pagina [!DNL Injec
 
       Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Informazioni sul caricatore di attributi {#concept_9EF38E98811B42CDA41996432B9AD209}
+## Informazioni su Attribute Loader {#concept_9EF38E98811B42CDA41996432B9AD209}
 
 Utilizza [!DNL Attribute Loader] per definire sorgenti di input aggiuntive per incrementare i dati sottoposti a ricerca per indicizzazione da un sito web.
 
@@ -770,7 +769,7 @@ Prima che gli effetti della nuova definizione abilitata siano visibili ai client
         <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto all'interno di un elemento <span class="codeph"> record </span>, il cui attributo name è <span class="codeph"> titolo </span>, viene mappato sul campo metadati <span class="codeph"> titolo </span> </p> </li> 
         <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto all'interno del record <span class="codeph"> </span>, il cui attributo name è <span class="codeph"> descrizione </span>, è mappato al campo metadati <span class="codeph"> desc </span> </p> </li> 
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attributo <span class="codeph"> content </span> di qualsiasi elemento <span class="codeph"> meta </span> contenuto all'interno di un elemento <span class="codeph"> metadati </span> contenuto nel record <span class="codeph"> </span>, il cui attributo name è <span class="codeph"> descrizione </span>, viene mappato sul campo metadati <span class="codeph"> corpo </span> </p> </li> 
-        </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Vedere <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+        </ul> </p> <p>XPath è una notazione relativamente complicata. Ulteriori informazioni sono disponibili nel seguente percorso: </p> <p>Vedere <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xml/xpath_intro.asp </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Definisce il valore dell'attributo name utilizzato per ciascun tag <span class="codeph"> &lt;meta&gt; </span> generato. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadati? </span> <p>Fa sì che il campo <span class="uicontrol"> </span> diventi un elenco a discesa dal quale è possibile selezionare campi di metadati definiti per l’account corrente. </p> <p>Il valore del campo <span class="uicontrol"> </span> può essere un campo di metadati non definito, se necessario. Un campo di metadati non definito è talvolta utile per creare contenuti utilizzati da <span class="wintitle"> Script di filtro </span>. </p> <p>Consultare <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Informazioni sul filtro degli script </a>. </p> <p>Quando Attribute Loader elabora documenti XML con più hit su qualsiasi campo di mappa, i più valori vengono concatenati in un singolo valore nel documento memorizzato nella cache risultante. Per impostazione predefinita, questi valori vengono combinati utilizzando un delimitatore virgola. Supponiamo tuttavia che il valore corrispondente del campo <span class="wintitle"> </span> sia un campo metadati definito. Inoltre, per quel campo è impostato l'attributo <span class="wintitle"> Elenchi consentiti </span> . In questo caso, il valore Delimitatori elenco del campo, che è il primo delimitatore definito, viene utilizzato nella concatenazione. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chiave principale?  </span> <p>Solo un campo è identificato come chiave primaria. Questo campo verrà utilizzato come "chiave esterna" per far corrispondere i dati del Caricatore di attributi con il documento corrispondente nell'indice. </p> </li> 
@@ -863,7 +862,7 @@ Vedere [Modifica della definizione di un caricatore di attributi](../c-about-set
 
       Consulta [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ridenominazione della definizione del caricatore di attributi {#task_58D5DFD7EBC04111BCB91118E4440DB4}
+## Ridenominazione di una definizione del caricatore di attributi {#task_58D5DFD7EBC04111BCB91118E4440DB4}
 
 È possibile modificare il nome di una definizione di Caricatore di Attributi esistente.
 
@@ -934,7 +933,7 @@ La pagina [!DNL Data Load] mostra le seguenti informazioni sullo stato dell&#39;
 
 1. Fai clic su **[!UICONTROL Close]** per tornare alla pagina [!DNL Attribute Loader Definitions].
 
-## Anteprima dei dati del caricatore di attributi {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
+## Anteprima dei dati del caricamento attributi {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
 
 È possibile utilizzare Anteprima per visualizzare i dati del caricatore di attributi caricato più di recente.
 
@@ -973,7 +972,7 @@ Dopo aver aggiunto una definizione di Caricatore attributi alla pagina [!DNL Att
 1. Dal menu del prodotto, fai clic su **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
 1. Nella pagina [!DNL Attribute Loader], sotto l&#39;intestazione della colonna [!DNL Actions], fare clic su **[!UICONTROL Edit]** per il nome di una definizione di Caricatore di Attributi di cui si desidera esaminare o modificare le impostazioni.
 
-## Visualizzazione del registro dal caricamento dati più recente del caricatore di attributi {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
+## Visualizzazione del registro dal caricamento dati più recente di Attribute Loader {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
 
 È possibile utilizzare [!DNL View Log] per esaminare il file di log dei dati del caricatore di attributi del processo di download più recente. È inoltre possibile utilizzare la visualizzazione del registro per monitorare un download in esecuzione.
 
