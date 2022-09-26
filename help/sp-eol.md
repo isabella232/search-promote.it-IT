@@ -2,8 +2,7 @@
 title: Annuncio sulla fine del servizio di Adobe Search&Promote
 description: Ulteriori informazioni sull’annuncio della fine del servizio di Adobe Search&Promote.
 role: Admin,User,Data Engineer,Developer
-exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: 47092ce7c0839090789d43d63d2144128868088d
+source-git-commit: 8884e7d100e6a9feddcd8e205f5f3652d79e152c
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -24,13 +23,13 @@ La ricerca e altre richieste API effettuate a Search&amp;Promote non restituiran
 
 ### **_Adobe dispone di opzioni alternative per la ricerca nel sito e la ricerca commerciale?_**
 
-Sì. Ricerca di prodotti e commercio, [Ricerca live dal Magento Commerce](https://devdocs.magento.com/live-search/overview.html) è l’applicazione di ricerca di Adobe in corso.
+Sì. Ricerca di prodotti e commercio, [Ricerca live dal Magento Commerce](https://devdocs.magento.com/live-search/overview.html) è l&#39;applicazione di ricerca Adobe in corso.
 
 <!-- ### **_Can Adobe recommend any frameworks or platforms that offer features similar to Search&Promote?_**
 
   Yes. If the Search&Promote feature is critical to your marketing strategy, consider the many open-source frameworks that exist to power search, including [Apache Solr](https://solr.apache.org/) and [Elastic Free and Open](https://www.elastic.co/about/free-and-open).  
 
-  Also, both [AWS](https://aws.amazon.com/cloudsearch/) and [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) provide cloud-native search capabilities on their respective cloud platforms. You can integrate both options into Adobe Experience Manager Sites to power site search and more. -->
+  Also, both [AWS](https://aws.amazon.com/cloudsearch/) and [Microsoft&reg; Azure](https://azure.microsoft.com/en-us/services/search/) provide cloud-native search capabilities on their respective cloud platforms. You can integrate both options into Adobe Experience Manager Sites to power site search and more. -->
 
 ### **_Chi posso contattare per ulteriori informazioni?_**
 
